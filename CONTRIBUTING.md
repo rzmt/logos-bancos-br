@@ -47,6 +47,29 @@ gravadas automaticamente. Para promover uma sugestão:
 3. Adicione em `pipeline/config.json` → `forcedMatches`: `"<ISPB(8)>": "<CNPJ(14) da organização>"`.
 4. `npm run pipeline` e confira o diff das imagens no PR (o GitHub renderiza PNG).
 
+### Descobrindo ícones de sites oficiais (`npm run discover`)
+
+Para instituições **fora do Open Finance**, a fonte é o ícone que a própria instituição publica
+no site oficial dela:
+
+1. Adicione o domínio oficial em `pipeline/sites.json` (`"<ISPB>": "https://site-oficial"`).
+   **Em dúvida sobre o domínio, fique de fora.**
+2. `npm run discover` — visita os sites, extrai candidatos (apple-touch-icon, ícones, og:image),
+   filtra (sanitização de SVG, tamanho mínimo, proporção) e gera `pipeline/discovery-report.md`
+   + `pipeline/discovery-sheet.png` (thumbnails com o **domínio** exposto).
+3. **Curadoria visual obrigatória**: confira marca e domínio na folha; rejeite banners/fotos de
+   og:image e qualquer host que não seja claramente da instituição.
+4. Promova os aprovados a `forcedUris` (linha pronta no relatório) e rode `npm run pipeline`.
+
+### Descoberta assistida por IA (`npm run discover:ai`)
+
+Para o **resíduo** (sem logo e sem entrada no sites.json), a IA atua como *batedora* — encontra
+o site oficial com busca na web e apresenta a evidência; o código determinístico valida o ícone
+com os mesmos guardrails. Requer `ANTHROPIC_API_KEY`; `--limit` (padrão 15) controla o lote.
+A saída é o `pipeline/discovery-ai-report.md` com domínio + evidência + linhas prontas. **Nada
+é gravado automaticamente** — o risco específico desse fluxo é domínio parecido/falso, então a
+curadoria aqui confere o domínio antes de tudo.
+
 Outras ferramentas do `pipeline/config.json`:
 
 - `denylistUris` — URLs de logo quebradas/erradas publicadas pela instituição. Com a URL banida, o

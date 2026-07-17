@@ -31,8 +31,10 @@
    COMPE da lista de participantes do STR do **Banco Central** (hoje 470), com nome oficial,
    nome reduzido, código COMPE e ISPB, em [`data/bancos.json`](data/bancos.json). Você nunca
    mais mantém uma lista de bancos à mão.
-2. **Logos oficiais.** Hoje 107, em PNG 256×256 (+ SVG quando disponível), vindos do diretório
-   público do **Open Finance Brasil** — onde cada instituição publica e mantém a própria marca.
+2. **Logos oficiais.** Hoje 152, em PNG 256×256 (+ SVG quando disponível), de duas origens —
+   ambas oficiais e identificadas no dataset (`logo.source.type`): o diretório público do
+   **Open Finance Brasil** (`openfinance`), onde cada instituição publica a própria marca, e o
+   **site oficial da própria instituição** (`direct-uri`), com curadoria visual antes de entrar.
    Cada arquivo carrega proveniência: URI de origem, SHA-256 e data.
 3. **Atualização automática, sem curadoria manual.** Toda segunda-feira um GitHub Action
    ([`update-logos.yml`](.github/workflows/update-logos.yml)) reconstrói **a lista E os logos**
@@ -49,8 +51,10 @@ redesenham suas marcas. As bibliotecas existentes ou trazem **só dados** (sem l
 **coletados manualmente** de sites variados, sem rastreabilidade. A abordagem aqui:
 
 - **Fontes oficiais, e apenas elas** — o CSV de participantes do STR (que o próprio BCB atualiza
-  diariamente) e o diretório de participantes do Open Finance Brasil. Nenhuma imagem "achada no
-  Google".
+  diariamente), o diretório de participantes do Open Finance Brasil e, para quem não participa do
+  Open Finance, o ícone que a própria instituição publica **no site oficial dela** (revisado à
+  mão). Nenhuma imagem "achada no Google" ou de agregador. Quem quiser só a fonte Open Finance
+  filtra: `banks().filter(b => b.logo?.source.type === 'openfinance')`.
 - **Proveniência por logo** — `data/bancos.json` registra a URI de origem, o SHA-256 do arquivo
   original e a data de cada logo. O diff do git é a auditoria.
 - **Correspondência segura** — match automático **somente por ISPB** (= raiz do CNPJ).
@@ -59,9 +63,10 @@ redesenham suas marcas. As bibliotecas existentes ou trazem **só dados** (sem l
 - **Assets seguros** — download só via https com teto de tamanho e de pixels; SVGs
   redistribuídos apenas após sanitização (sem `script`, event handlers, `foreignObject` ou
   referências externas).
-- **Trade-off honesto** — 107 das 470 instituições têm logo (as participantes do Open Finance,
-  que cobrem a esmagadora maioria das contas do país). As demais são SCDs/cooperativas pequenas
-  sem logo oficial publicado; para elas seu app usa o fallback que preferir.
+- **Trade-off honesto** — 152 das 470 instituições têm logo (todas as participantes do Open
+  Finance + ~45 bancos e IPs cobertos pelos sites oficiais, o que inclui a esmagadora maioria
+  das contas do país). As demais são SCDs/cooperativas/corretoras pequenas; para elas seu app
+  usa o fallback que preferir — e a cobertura cresce a cada release.
 
 ## Instalação e uso
 
@@ -191,7 +196,9 @@ Um registro de `data/bancos.json`:
 
 - `logo.png` — PNG normalizado **256×256**, fundo transparente, `fit: contain`.
 - `logo.svg` — vetor original, presente só quando passa na sanitização.
-- `logo.source` — proveniência completa: de onde veio, hash e quando mudou.
+- `logo.source` — proveniência completa: de onde veio, hash e quando mudou. `source.type`:
+  `openfinance` (diretório Open Finance, match automático por ISPB ou revisado), `direct-uri`
+  (URL no site oficial da instituição, revisada à mão) ou `override` (arte mantida no repo).
 - `logo: null` — instituição sem logo nas fontes oficiais (use seu fallback).
 
 ## Como funciona a atualização automática
@@ -204,8 +211,11 @@ Um registro de `data/bancos.json`:
 3. **Ponte**: `ISPB == 8 primeiros dígitos do CNPJ` (é assim que o BCB os atribui na esmagadora
    maioria dos casos). Quando não bate — segundas marcas como XP CCTVM, Nu Invest, Bradesco BBI —
    entra o `forcedMatches`, revisado à mão a partir das sugestões do relatório.
-4. **Normalização**: cada arte vira PNG 256×256; o SVG original é mantido quando seguro.
-5. **Cadência**: o workflow roda **toda segunda-feira** (e sob demanda), regenera
+4. **Fora do Open Finance**: ferramentas de descoberta (`npm run discover` e `discover:ai`)
+   acham o ícone publicado no site oficial da instituição; **nada entra sem curadoria visual**
+   (o revisor confere marca e domínio) — aprovados viram `forcedUris`.
+5. **Normalização**: cada arte vira PNG 256×256; o SVG original é mantido quando seguro.
+6. **Cadência**: o workflow roda **toda segunda-feira** (e sob demanda), regenera
    `data/bancos.json`, `logos/`, `PREVIEW.md` e `react-native.js`, e **abre um PR** com o
    relatório e o diff visual dos PNGs. Depois da revisão e merge, o mantenedor publica uma
    nova versão no npm (Release no GitHub). Nada é editado à mão.
@@ -215,8 +225,9 @@ Detalhes de manutenção (rodar o pipeline localmente, promover sugestões, over
 
 ## Limitações conhecidas
 
-- Cobertura de logos = instituições ativas no Open Finance com URL de logo válida. Hoje são 107;
-  o número cresce conforme o ecossistema.
+- Cobertura de logos: 152 hoje (Open Finance + sites oficiais curados); cresce conforme o
+  ecossistema e a curadoria. **Sua instituição está sem logo?** Abra uma issue com o template
+  "Sugestão de match"/"Adicionar logo" apontando a URL no domínio oficial — promovemos rápido.
 - Algumas instituições publicam no diretório o logo da sua **marca de produto** (ex.: Banco CSF →
   cartão Atacadão). É a escolha oficial da própria instituição; se preferir outra arte no seu app,
   use um override local seu.

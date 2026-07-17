@@ -32,9 +32,11 @@
    Central Bank of Brazil STR participants list (currently 470), with official name, short name,
    COMPE code and ISPB, in [`data/bancos.json`](data/bancos.json). You never hand-maintain a
    bank list again.
-2. **Official logos.** Currently 107, as 256×256 PNGs (+ SVG when available), sourced from the
-   public **Open Finance Brasil** directory — where each institution publishes and maintains its
-   own brand. Every file carries provenance: source URI, SHA-256 and date.
+2. **Official logos.** Currently 152, as 256×256 PNGs (+ SVG when available), from two origins —
+   both official and identified in the dataset (`logo.source.type`): the public **Open Finance
+   Brasil** directory (`openfinance`), where each institution publishes its own brand, and the
+   **institution's own official website** (`direct-uri`), visually curated before shipping.
+   Every file carries provenance: source URI, SHA-256 and date.
 3. **Automatic updates, no manual curation.** Every Monday a GitHub Action
    ([`update-logos.yml`](.github/workflows/update-logos.yml)) rebuilds **both the list AND the
    logos** from the sources and opens a PR with the visual diff. A bank created, renamed or
@@ -50,7 +52,10 @@ and banks redesign their brands. Existing libraries ship either **data only** (n
 logos **hand-collected** from assorted websites with no traceability. The approach here:
 
 - **Official sources, and only them** — the STR participants CSV (updated daily by the Central
-  Bank itself) and the Open Finance Brasil participants directory. No images "found on Google".
+  Bank itself), the Open Finance Brasil participants directory and, for non-participants, the
+  icon the institution publishes **on its own official website** (hand-reviewed). No images
+  "found on Google" or from aggregators. Open Finance purists can filter:
+  `banks().filter(b => b.logo?.source.type === 'openfinance')`.
 - **Per-logo provenance** — `data/bancos.json` records each logo's source URI, SHA-256 of the
   original artwork and last-change date. The git diff is the audit trail.
 - **Safe matching** — automatic matches happen **only via ISPB** (= first 8 digits of the CNPJ).
@@ -58,9 +63,10 @@ logos **hand-collected** from assorted websites with no traceability. The approa
   In a banking context, a wrong logo is worse than no logo.
 - **Safe assets** — https-only downloads with size/pixel caps; SVGs redistributed only after
   sanitization (no scripts, event handlers, `foreignObject` or external references).
-- **Honest trade-off** — 107 of the 470 institutions have a logo (the Open Finance participants,
-  which cover the vast majority of accounts in Brazil). The rest are small credit unions/SCDs
-  with no officially published logo — your app picks the fallback.
+- **Honest trade-off** — 152 of the 470 institutions have a logo (all Open Finance participants
+  plus ~45 banks/payment institutions covered via official sites — the vast majority of accounts
+  in Brazil). The rest are small credit unions/SCDs/brokers — your app picks the fallback, and
+  coverage grows every release.
 
 ## Install & use
 
@@ -157,7 +163,10 @@ redistributable; `logo: null` means the institution has no logo in the official 
 
 The pipeline joins the STR list (which institutions exist) with the Open Finance directory
 (their logos), bridged by `ISPB == first 8 digits of the CNPJ`; hand-reviewed `forcedMatches`
-cover second brands (XP CCTVM, Nu Invest, Bradesco BBI…). The weekly workflow regenerates
+cover second brands (XP CCTVM, Nu Invest, Bradesco BBI…). For institutions outside Open Finance,
+discovery tools (`npm run discover` / `discover:ai`) find the icon published on the institution's
+official website — nothing ships without visual curation (brand + domain reviewed); approvals
+become `forcedUris` (`source.type: "direct-uri"`). The weekly workflow regenerates
 `data/bancos.json`, `logos/`, `PREVIEW.md` and `react-native.js` and opens a PR with the report
 and the visual PNG diff. After review and merge, the maintainer publishes a new version to npm
 (GitHub Release). Nothing is edited by hand. Maintenance details:
