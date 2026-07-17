@@ -1,0 +1,83 @@
+{
+  "name": "logos-bancos-br",
+  "version": "0.1.0",
+  "description": "Logos e dados de bancos brasileiros a partir de fontes 100% oficiais (Banco Central + Open Finance Brasil), com proveniência por logo. Brazilian bank logos and data from official sources only.",
+  "keywords": [
+    "bancos",
+    "brasil",
+    "logos",
+    "banks",
+    "brazil",
+    "ispb",
+    "compe",
+    "pix",
+    "open-finance",
+    "banco-central",
+    "fintech"
+  ],
+  "license": "MIT",
+  "author": "Rafael Matos (https://github.com/rafael-matos-dev)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafael-matos-dev/logos-bancos-br.git"
+  },
+  "homepage": "https://github.com/rafael-matos-dev/logos-bancos-br#readme",
+  "bugs": {
+    "url": "https://github.com/rafael-matos-dev/logos-bancos-br/issues"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./node": {
+      "types": "./dist/node.d.ts",
+      "import": "./dist/node.js",
+      "require": "./dist/node.cjs"
+    },
+    "./react-native": {
+      "types": "./react-native.d.ts",
+      "default": "./react-native.js"
+    },
+    "./data/bancos.json": "./data/bancos.json",
+    "./logos/*": "./logos/*",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "logos-bancos-br": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "data",
+    "logos",
+    "react-native.js",
+    "react-native.d.ts"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "pipeline": "tsx pipeline/run.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.4",
+    "@types/node": "^26.1.1",
+    "sharp": "^0.35.3",
+    "tsup": "^8.5.1",
+    "tsx": "^4.23.1",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
+  }
+}

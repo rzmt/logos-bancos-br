@@ -1,0 +1,9 @@
+node_modules/
+dist/
+coverage/
+*.tgz
+*.log
+.DS_Store
+
+# Gerado a cada rodada do pipeline; vira corpo do PR automático, não precisa ser versionado.
+pipeline/report.md
