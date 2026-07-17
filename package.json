@@ -1,6 +1,6 @@
 {
   "name": "logos-bancos-br",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Dataset + logos de instituições financeiras e de pagamento do Brasil (bancos, fintechs, IPs, cooperativas), gerados de fontes 100% oficiais: listas de participantes do STR e do Pix do Banco Central do Brasil (BCB) e o diretório de participantes do Open Finance Brasil. Atualização automática semanal e proveniência por logo. Brazilian financial institutions dataset & official logos from BCB (STR/Pix participants) + Open Finance Brasil, auto-updated weekly.",
   "keywords": [
     "bancos",
