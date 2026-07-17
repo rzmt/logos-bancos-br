@@ -191,14 +191,67 @@ interface Rejection {
   reason: string;
 }
 
-interface SiteResult {
+export interface SiteProbe {
+  best: (IconCandidate & { assessment: Assessment; bytes: Buffer }) | null;
+  rejected: Rejection[];
+  error: string | null;
+}
+
+export interface SiteResult extends SiteProbe {
   ispb: string;
   compe4: string;
   name: string;
   site: string;
-  best: (IconCandidate & { assessment: Assessment; bytes: Buffer }) | null;
-  rejected: Rejection[];
-  error: string | null;
+}
+
+/**
+ * Fetches an official site, extracts icon candidates from its HTML and
+ * returns the first candidate that passes assessment. Shared by the manual
+ * (sites.json) and the AI-assisted (discover-ai.ts) flows.
+ */
+export async function probeSite(site: string): Promise<SiteProbe> {
+  const probe: SiteProbe = { best: null, rejected: [], error: null };
+  try {
+    const response = await fetch(site, {
+      headers: { 'user-agent': BROWSER_USER_AGENT, accept: 'text/html,*/*' },
+      signal: AbortSignal.timeout(20_000),
+      redirect: 'follow',
+    });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const html = (await response.text()).slice(0, 500_000);
+    const candidates = extractIconCandidates(html, response.url || site);
+
+    for (const candidate of candidates) {
+      const outcome = await tryCandidate(candidate);
+      if (outcome.best) {
+        probe.best = outcome.best;
+        break;
+      }
+      if (outcome.rejection) probe.rejected.push(outcome.rejection);
+    }
+    if (!probe.best && candidates.length === 0) probe.error = 'nenhum candidato no HTML';
+  } catch (error) {
+    probe.error = error instanceof Error ? error.message : String(error);
+  }
+  return probe;
+}
+
+/** Downloads and assesses one candidate URL. */
+export async function tryCandidate(
+  candidate: IconCandidate,
+): Promise<{ best: SiteProbe['best']; rejection: Rejection | null }> {
+  try {
+    const bytes = await downloadLogo(candidate.url, { timeoutMs: 15_000, attempts: 1 });
+    const assessment = await assessCandidate(bytes);
+    if (assessment.ok) return { best: { ...candidate, assessment, bytes }, rejection: null };
+    return {
+      best: null,
+      rejection: { url: candidate.url, reason: assessment.reason ?? 'reprovado' },
+    };
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    return { best: null, rejection: { url: candidate.url, reason: message } };
+  }
 }
 
 function describeAssessment(assessment: Assessment): string {
@@ -258,7 +311,7 @@ function buildReport(results: SiteResult[], skippedWithLogo: string[]): string {
   return lines.join('\n');
 }
 
-async function buildSheet(results: SiteResult[]): Promise<number> {
+export async function buildSheet(results: SiteResult[], sheetPath = SHEET_PATH): Promise<number> {
   const approvable = results.filter((result) => result.best);
   if (approvable.length === 0) return 0;
 
@@ -297,7 +350,7 @@ async function buildSheet(results: SiteResult[]): Promise<number> {
   }
   svg += '</svg>';
 
-  await sharp(Buffer.from(svg)).png().composite(composites).toFile(SHEET_PATH);
+  await sharp(Buffer.from(svg)).png().composite(composites).toFile(sheetPath);
   return approvable.length;
 }
 
@@ -343,43 +396,14 @@ async function main(): Promise<void> {
   const results: SiteResult[] = [];
 
   await withConcurrency(targets, 4, async ({ bank, site }) => {
+    const probe = await probeSite(site);
     const result: SiteResult = {
       ispb: bank.ispb,
       compe4: bank.compe4,
       name: bank.shortName || bank.name,
       site,
-      best: null,
-      rejected: [],
-      error: null,
+      ...probe,
     };
-    try {
-      const response = await fetch(site, {
-        headers: { 'user-agent': BROWSER_USER_AGENT, accept: 'text/html,*/*' },
-        signal: AbortSignal.timeout(20_000),
-        redirect: 'follow',
-      });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      const html = (await response.text()).slice(0, 500_000);
-      const candidates = extractIconCandidates(html, response.url || site);
-
-      for (const candidate of candidates) {
-        try {
-          const bytes = await downloadLogo(candidate.url, { timeoutMs: 15_000, attempts: 1 });
-          const assessment = await assessCandidate(bytes);
-          if (assessment.ok) {
-            result.best = { ...candidate, assessment, bytes };
-            break;
-          }
-          result.rejected.push({ url: candidate.url, reason: assessment.reason ?? 'reprovado' });
-        } catch (error) {
-          const message = error instanceof Error ? error.message : String(error);
-          result.rejected.push({ url: candidate.url, reason: message });
-        }
-      }
-      if (!result.best && candidates.length === 0) result.error = 'nenhum candidato no HTML';
-    } catch (error) {
-      result.error = error instanceof Error ? error.message : String(error);
-    }
     results.push(result);
     const status = result.best ? '✓' : '·';
     console.log(`  ${status} ${result.compe4} ${result.name}`);

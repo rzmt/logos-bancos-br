@@ -75,9 +75,11 @@
     "lint:fix": "biome check --write .",
     "pipeline": "tsx pipeline/run.ts",
     "discover": "tsx pipeline/discover.ts",
+    "discover:ai": "tsx pipeline/discover-ai.ts",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
+    "@anthropic-ai/sdk": "^0.112.1",
     "@biomejs/biome": "^2.5.4",
     "@types/node": "^26.1.1",
     "sharp": "^0.35.3",
