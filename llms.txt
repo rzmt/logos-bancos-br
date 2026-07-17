@@ -1,0 +1,48 @@
+# logos-bancos-br
+
+> Brazilian bank institution list + official bank logos, rebuilt automatically every week from
+> official sources only: the Central Bank of Brazil (BCB) STR participants list and the Open
+> Finance Brasil participants directory. npm package: `logos-bancos-br`. Code and dataset are
+> MIT; the logos are trademarks of their respective institutions, redistributed for nominative
+> use (see DISCLAIMER.md).
+
+Key facts:
+
+- The **institution list is auto-updated**: every institution with a COMPE code in the BCB STR
+  participants list (currently ~470) ships in `data/bancos.json` with `ispb` (8 digits),
+  `compe`, `compe4` (zero-padded), official `name`, `shortName`, and `logo` (or `logo: null`).
+- The **logos are auto-updated** too: currently ~107 institutions, as normalized transparent
+  256×256 PNGs (`logos/png/<ISPB>.png`) plus sanitized original SVGs (`logos/svg/<ISPB>.svg`)
+  when available. Assets are keyed by **ISPB**, not COMPE.
+- **Update cadence**: a GitHub Action (`.github/workflows/update-logos.yml`) runs every Monday
+  (and on demand), rebuilds the list and the logos from the official sources, and opens a pull
+  request with a report and the visual diff. Nothing is hand-curated.
+- **Per-logo provenance**: each logo records the source URI, the SHA-256 of the original artwork
+  and the last-change date in `data/bancos.json`.
+- **Matching safety**: a logo is assigned automatically only when the institution's ISPB equals
+  the first 8 digits of the Open Finance organisation's CNPJ. Name similarity never assigns a
+  logo — it only produces suggestions that a human reviews and promotes to `forcedMatches` in
+  `pipeline/config.json`.
+- **JavaScript API** (`logos-bancos-br`): `banks()`, `byCompe('341' | 341 | '0341')`,
+  `byIspb('60701190')`, `findBank(code)`, `logoCdnUrl(code, { format: 'png' | 'svg' })`.
+  Node-only paths: `logoPngPath()` / `logoSvgPath()` from `logos-bancos-br/node`. React Native
+  static require() map: `logos-bancos-br/react-native` (keys: 4-digit COMPE and 8-digit ISPB).
+- **CLI for any stack** (Flutter, Kotlin, Swift, .NET, PHP…):
+  `npx logos-bancos-br copy --dest <dir> [--by compe|ispb] [--format png|svg|both] [--only 341,001]`
+  and `npx logos-bancos-br list [--json]`.
+- **CDN, no install** (pin a version):
+  `https://cdn.jsdelivr.net/npm/logos-bancos-br@<version>/logos/png/<ISPB>.png`. The COMPE→ISPB
+  mapping lives in `data/bancos.json`.
+
+## Docs
+
+- [README (português)](README.md)
+- [README (English)](README.en.md)
+- [Gallery of all shipped logos](PREVIEW.md)
+- [Trademark notice and takedown policy](DISCLAIMER.md)
+- [Maintenance and pipeline guide](CONTRIBUTING.md)
+
+## Official sources
+
+- [BCB STR participants CSV](https://www.bcb.gov.br/content/estabilidadefinanceira/str1/ParticipantesSTR.csv)
+- [Open Finance Brasil participants directory](https://data.directory.openbankingbrasil.org.br/participants)

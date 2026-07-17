@@ -1,9 +1,11 @@
 # logos-bancos-br
 
-> Logos e dados de bancos brasileiros a partir de **fontes 100% oficiais** — com proveniência
-> verificável por logo e atualização automatizada. **[English version](README.en.md)**
+> **Lista de bancos brasileiros + logos oficiais, sempre atualizados.** Tudo derivado de fontes
+> 100% oficiais (Banco Central e Open Finance Brasil) e **reconstruído automaticamente toda
+> semana por CI** — com proveniência verificável por logo. **[English version](README.en.md)**
 
 [![CI](https://github.com/rafael-matos-dev/logos-bancos-br/actions/workflows/ci.yml/badge.svg)](https://github.com/rafael-matos-dev/logos-bancos-br/actions/workflows/ci.yml)
+[![atualização](https://github.com/rafael-matos-dev/logos-bancos-br/actions/workflows/update-logos.yml/badge.svg)](https://github.com/rafael-matos-dev/logos-bancos-br/actions/workflows/update-logos.yml)
 [![npm](https://img.shields.io/npm/v/logos-bancos-br)](https://www.npmjs.com/package/logos-bancos-br)
 [![licença](https://img.shields.io/badge/licen%C3%A7a-MIT-blue)](LICENSE)
 
@@ -23,24 +25,43 @@
 </p>
 <p align="center"><a href="PREVIEW.md"><strong>→ galeria completa (PREVIEW.md)</strong></a></p>
 
-## Por que esta biblioteca?
+## O que este pacote entrega
 
-Todo app que exibe transferências, Pix ou boletos precisa mostrar o logo da instituição — e as
-opções existentes ou trazem **só dados** (sem logos), ou logos **coletados à mão** de sites
-aleatórios, sem rastreabilidade e desatualizados. Aqui a abordagem é outra:
+1. **A lista de instituições — atualizada automaticamente.** Todas as instituições com código
+   COMPE da lista de participantes do STR do **Banco Central** (hoje 470), com nome oficial,
+   nome reduzido, código COMPE e ISPB, em [`data/bancos.json`](data/bancos.json). Você nunca
+   mais mantém uma lista de bancos à mão.
+2. **Logos oficiais.** Hoje 107, em PNG 256×256 (+ SVG quando disponível), vindos do diretório
+   público do **Open Finance Brasil** — onde cada instituição publica e mantém a própria marca.
+   Cada arquivo carrega proveniência: URI de origem, SHA-256 e data.
+3. **Atualização automática, sem curadoria manual.** Toda segunda-feira um GitHub Action
+   ([`update-logos.yml`](.github/workflows/update-logos.yml)) reconstrói **a lista E os logos**
+   a partir das fontes e abre um PR com o diff visual. Banco criado, renomeado ou extinto pelo
+   BCB? Instituição trocou o logo? Entra na atualização da semana.
+4. **Uso em qualquer stack.** API JavaScript/TypeScript, mapa pronto para React Native, CLI que
+   copia os assets para projetos Flutter/Kotlin/Swift/.NET/PHP, URLs de CDN sem instalar nada —
+   ou só o JSON.
 
-| | logos-bancos-br |
-|---|---|
-| **Fontes oficiais** | Lista de participantes do **STR (Banco Central)** — ISPB, código COMPE e nomes oficiais, atualizada diariamente — cruzada com o **diretório de participantes do Open Finance Brasil**, onde **cada instituição publica e mantém o próprio logo**. |
-| **Proveniência por logo** | `data/bancos.json` registra, para cada logo: URI de origem, SHA-256 do arquivo original e data de atualização. Nada entra "de paraquedas". |
-| **Atualização automatizada** | GitHub Action semanal roda o pipeline e **abre um PR com o diff visual** (o GitHub renderiza os PNGs) — revisão humana antes de publicar, nunca push direto. |
-| **Correspondência segura** | Match automático **somente por ISPB** (= raiz do CNPJ). Semelhança de nome nunca atribui logo sozinha — vira sugestão para revisão humana. Em contexto bancário, logo errado é pior que logo nenhum. |
-| **Assets seguros** | Download só via https com teto de tamanho e limite de pixels; SVGs redistribuídos apenas se passarem por sanitização (sem `script`, event handlers, `foreignObject` ou referências externas). |
+## Por que não manter uma lista à mão?
 
-O trade-off, dito com franqueza: **107 das 470 instituições** com código COMPE têm logo — as que
-participam do Open Finance (que cobrem a esmagadora maioria das contas do país). As demais são
-SCDs/cooperativas pequenas sem logo oficial publicado; para elas seu app usa o fallback que
-preferir. Cobertura menor que a de repositórios manuais; confiança maior em cada arquivo.
+Porque ela envelhece: o BCB inclui, renomeia e exclui instituições ao longo do ano, e os bancos
+redesenham suas marcas. As bibliotecas existentes ou trazem **só dados** (sem logos), ou logos
+**coletados manualmente** de sites variados, sem rastreabilidade. A abordagem aqui:
+
+- **Fontes oficiais, e apenas elas** — o CSV de participantes do STR (que o próprio BCB atualiza
+  diariamente) e o diretório de participantes do Open Finance Brasil. Nenhuma imagem "achada no
+  Google".
+- **Proveniência por logo** — `data/bancos.json` registra a URI de origem, o SHA-256 do arquivo
+  original e a data de cada logo. O diff do git é a auditoria.
+- **Correspondência segura** — match automático **somente por ISPB** (= raiz do CNPJ).
+  Semelhança de nome nunca atribui logo sozinha: vira sugestão para revisão humana. Em contexto
+  bancário, logo errado é pior que logo nenhum.
+- **Assets seguros** — download só via https com teto de tamanho e de pixels; SVGs
+  redistribuídos apenas após sanitização (sem `script`, event handlers, `foreignObject` ou
+  referências externas).
+- **Trade-off honesto** — 107 das 470 instituições têm logo (as participantes do Open Finance,
+  que cobrem a esmagadora maioria das contas do país). As demais são SCDs/cooperativas pequenas
+  sem logo oficial publicado; para elas seu app usa o fallback que preferir.
 
 ## Instalação e uso
 
@@ -101,6 +122,8 @@ npx logos-bancos-br copy --dest ./assets/banks --format both --only 341,001,260
 npx logos-bancos-br list                                  # tabela COMPE · ISPB · nome · tem logo
 ```
 
+Rode de novo a cada atualização do pacote para receber lista e logos novos.
+
 ### CDN — sem instalar nada
 
 ```
@@ -111,11 +134,11 @@ https://cdn.jsdelivr.net/npm/logos-bancos-br@0.1.0/logos/svg/18236120.svg
 Fixe sempre uma versão (`@0.1.0`) — a correspondência COMPE→ISPB está em
 [`data/bancos.json`](data/bancos.json).
 
-### Só os dados
+### Só os dados (lista de bancos)
 
 ```ts
 import dados from 'logos-bancos-br/data/bancos.json';
-// 470 instituições: ispb, compe, compe4, nome oficial, nome reduzido, logo (ou null)
+// todas as instituições: ispb, compe, compe4, nome oficial, nome reduzido, logo (ou null)
 ```
 
 ## O dataset
@@ -149,19 +172,23 @@ Um registro de `data/bancos.json`:
 - `logo.source` — proveniência completa: de onde veio, hash e quando mudou.
 - `logo: null` — instituição sem logo nas fontes oficiais (use seu fallback).
 
-## Como funciona
+## Como funciona a atualização automática
 
 1. **Espinha dorsal**: o CSV público de participantes do STR do Banco Central define *quais
-   instituições existem* (ISPB + COMPE + nomes oficiais).
+   instituições existem* (ISPB + COMPE + nomes oficiais). O BCB atualiza esse arquivo
+   diariamente.
 2. **Logos**: o diretório público de participantes do Open Finance Brasil traz, por CNPJ, o logo
    que cada instituição publica para ser exibido por terceiros.
 3. **Ponte**: `ISPB == 8 primeiros dígitos do CNPJ` (é assim que o BCB os atribui na esmagadora
    maioria dos casos). Quando não bate — segundas marcas como XP CCTVM, Nu Invest, Bradesco BBI —
    entra o `forcedMatches`, revisado à mão a partir das sugestões do relatório.
 4. **Normalização**: cada arte vira PNG 256×256; o SVG original é mantido quando seguro.
-5. Tudo idempotente e versionado — o diff do git *é* a auditoria.
+5. **Cadência**: o workflow roda **toda segunda-feira** (e sob demanda), regenera
+   `data/bancos.json`, `logos/`, `PREVIEW.md` e `react-native.js`, e **abre um PR** com o
+   relatório e o diff visual dos PNGs. Depois da revisão e merge, uma nova versão vai para o
+   npm. Nada é editado à mão.
 
-Detalhes de manutenção (rodar o pipeline, promover sugestões, overrides, denylist):
+Detalhes de manutenção (rodar o pipeline localmente, promover sugestões, overrides, denylist):
 **[CONTRIBUTING.md](CONTRIBUTING.md)**.
 
 ## Limitações conhecidas
@@ -183,6 +210,13 @@ público do Open Finance Brasil. Detalhes e base de uso: **[DISCLAIMER.md](DISCL
 
 Representa uma instituição e quer corrigir ou remover um logo? Abra uma issue com o template
 **"Remoção de marca"** — removemos prontamente.
+
+## Para ferramentas e assistentes de IA
+
+Um resumo machine-readable do projeto está em [`llms.txt`](llms.txt) (também incluído no pacote
+npm). Fatos-chave: **a lista de instituições e os logos são regenerados automaticamente toda
+semana** a partir do Banco Central (STR) e do Open Finance Brasil; arquivos nomeados por ISPB;
+consultas por COMPE ou ISPB; dataset completo em `data/bancos.json`.
 
 ## Licença
 

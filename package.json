@@ -1,19 +1,23 @@
 {
   "name": "logos-bancos-br",
   "version": "0.1.0",
-  "description": "Logos e dados de bancos brasileiros a partir de fontes 100% oficiais (Banco Central + Open Finance Brasil), com proveniência por logo. Brazilian bank logos and data from official sources only.",
+  "description": "Lista de bancos brasileiros + logos oficiais, atualizados automaticamente toda semana a partir de fontes 100% oficiais (Banco Central/STR + Open Finance Brasil), com proveniência por logo. Brazilian bank list and official logos, auto-updated weekly from official sources only.",
   "keywords": [
     "bancos",
+    "lista-de-bancos",
+    "bancos-brasileiros",
     "brasil",
     "logos",
     "banks",
+    "bank-list",
     "brazil",
     "ispb",
     "compe",
     "pix",
     "open-finance",
     "banco-central",
-    "fintech"
+    "fintech",
+    "dataset"
   ],
   "license": "MIT",
   "author": "Rafael Matos (https://github.com/rafael-matos-dev)",
@@ -59,7 +63,8 @@
     "data",
     "logos",
     "react-native.js",
-    "react-native.d.ts"
+    "react-native.d.ts",
+    "llms.txt"
   ],
   "sideEffects": false,
   "scripts": {
