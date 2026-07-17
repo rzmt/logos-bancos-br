@@ -59,6 +59,26 @@ Outras ferramentas do `pipeline/config.json`:
 
 Logo errado em produção? Abra issue com o template **"Logo incorreto"**.
 
+## Revisando o PR automático da semana
+
+Toda segunda-feira o workflow `update-logos.yml` abre um PR quando há mudança (sem mudança, não
+abre nada). Checklist de revisão:
+
+1. **Leia o resumo** no corpo do PR: novos · atualizados · falhas · sugestões · órfãos.
+2. **Confira o diff visual dos PNGs** (o GitHub renderiza antes/depois). Todo logo `atualizado`
+   deve fazer sentido — rebrand real da instituição. Se um logo virou algo estranho (página de
+   erro rasterizada, marca de parceiro), a fonte quebrou: adicione a URL em `denylistUris`,
+   rode o pipeline de novo e atualize o PR.
+3. **Novos bancos** na lista (o BCB incluiu/renomeou instituições) não exigem nada — só conferir
+   que os nomes fazem sentido.
+4. **Falhas persistentes** (semanas seguidas): alguns WAFs bloqueiam os IPs do GitHub Actions
+   mas aceitam requisições locais. Falha nunca remove um logo já publicado; se precisar forçar a
+   atualização de um logo que o CI não alcança, rode `npm run pipeline` localmente e suba num PR.
+5. **Sugestões novas** → avalie promover a `forcedMatches` (seção acima).
+6. **Merge** → publique: `npm version patch` → `git push && git push --tags` → Release no
+   GitHub (o workflow publica no npm sozinho). Sem release, o npm/CDN continuam na versão
+   anterior — o repositório fica na frente do pacote.
+
 ## Testes
 
 `tests/` cobre parsing do CSV do BCB, indexação do diretório, precedência de matches, desempates

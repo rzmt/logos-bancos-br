@@ -68,6 +68,10 @@ logos **hand-collected** from assorted websites with no traceability. The approa
 npm install logos-bancos-br
 ```
 
+Requires **Node ≥ 20** for Node/CLI usage (web and React Native follow your bundler's
+environment). Zero runtime dependencies. Published with **npm provenance** — verify integrity
+with `npm audit signatures`.
+
 Files are named by **ISPB** (8 digits). Lookups accept **COMPE or ISPB**.
 
 ```ts
@@ -78,7 +82,8 @@ byIspb('00000000');  // Banco do Brasil
 logoCdnUrl(341);     // https://cdn.jsdelivr.net/npm/logos-bancos-br@x.y.z/logos/png/60701190.png
 ```
 
-**React Native (Expo/Metro)** — static require() map (bundles all logos, ~1.3 MB):
+**React Native (Expo/Metro)** — static require() map (bundles all logos, ~1.3 MB; keys accept
+both the 4-digit COMPE and the 8-digit ISPB):
 
 ```tsx
 import logos from 'logos-bancos-br/react-native';
@@ -111,6 +116,23 @@ https://cdn.jsdelivr.net/npm/logos-bancos-br@0.1.0/logos/png/60701190.png
 import data from 'logos-bancos-br/data/bancos.json';
 ```
 
+### API quick reference
+
+| Import | Function | Returns |
+|---|---|---|
+| `logos-bancos-br` | `banks()` | every institution (`Bank[]`) |
+| | `byCompe(code)` | `Bank \| undefined` — `341`, `'341'` and `'0341'` are equivalent |
+| | `byIspb(ispb)` | `Bank \| undefined` |
+| | `findBank(code)` | `Bank \| undefined` — more than 4 digits is treated as ISPB |
+| | `logoCdnUrl(code, { format?, version? })` | jsDelivr URL, or `null` when there is no logo |
+| | `normalizeCompe(x)` · `normalizeIspb(x)` | `'0341'` · `'60701190'` |
+| | `version` | package version (string) |
+| `logos-bancos-br/node` | `logoPngPath(code)` · `logoSvgPath(code)` | absolute asset path, or `null` |
+| | `copyLogos({ dest, format?, by?, only? })` | copies assets into a directory (what the CLI uses) |
+| `logos-bancos-br/react-native` | `logos` (default export) | require() map keyed by COMPE4 **and** ISPB |
+
+Exported TypeScript types: `Bank`, `BankLogo`, `BankLogoSource`.
+
 ## Dataset shape
 
 ```json
@@ -137,8 +159,9 @@ The pipeline joins the STR list (which institutions exist) with the Open Finance
 (their logos), bridged by `ISPB == first 8 digits of the CNPJ`; hand-reviewed `forcedMatches`
 cover second brands (XP CCTVM, Nu Invest, Bradesco BBI…). The weekly workflow regenerates
 `data/bancos.json`, `logos/`, `PREVIEW.md` and `react-native.js` and opens a PR with the report
-and the visual PNG diff. After review and merge, a new version is published to npm. Nothing is
-edited by hand. Maintenance details: [CONTRIBUTING.md](CONTRIBUTING.md).
+and the visual PNG diff. After review and merge, the maintainer publishes a new version to npm
+(GitHub Release). Nothing is edited by hand. Maintenance details:
+[CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Trademarks
 

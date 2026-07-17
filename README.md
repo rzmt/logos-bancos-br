@@ -69,6 +69,10 @@ redesenham suas marcas. As bibliotecas existentes ou trazem **só dados** (sem l
 npm install logos-bancos-br
 ```
 
+Requer **Node ≥ 20** para uso via Node/CLI (em web e React Native vale o ambiente do seu
+bundler). Zero dependências de runtime. Publicado com **npm provenance** — verifique a
+integridade com `npm audit signatures`.
+
 Os arquivos são nomeados pelo **ISPB** (8 dígitos, estável e universal — inclusive para
 instituições Pix sem COMPE, no roadmap). As consultas aceitam **COMPE ou ISPB**.
 
@@ -100,6 +104,7 @@ import logos from 'logos-bancos-br/react-native'; // mapa require() estático
 <Image source={logos[codigoBanco.padStart(4, '0')]} style={{ width: 40, height: 40 }} />
 ```
 
+> As chaves do mapa aceitam o COMPE com 4 dígitos (`'0341'`) **e** o ISPB (`'60701190'`).
 > Importar esse entry adiciona **todos** os logos (~1,3 MB) ao bundle. Se preferir empacotar só
 > alguns, use o CLI abaixo e faça `require()` dos arquivos copiados.
 
@@ -140,6 +145,23 @@ Fixe sempre uma versão (`@0.1.0`) — a correspondência COMPE→ISPB está em
 import dados from 'logos-bancos-br/data/bancos.json';
 // todas as instituições: ispb, compe, compe4, nome oficial, nome reduzido, logo (ou null)
 ```
+
+### Referência rápida da API
+
+| Import | Função | Retorna |
+|---|---|---|
+| `logos-bancos-br` | `banks()` | todas as instituições (`Bank[]`) |
+| | `byCompe(codigo)` | `Bank \| undefined` — `341`, `'341'` e `'0341'` são equivalentes |
+| | `byIspb(ispb)` | `Bank \| undefined` |
+| | `findBank(codigo)` | `Bank \| undefined` — mais de 4 dígitos trata como ISPB |
+| | `logoCdnUrl(codigo, { format?, version? })` | URL do jsDelivr, ou `null` se não houver logo |
+| | `normalizeCompe(x)` · `normalizeIspb(x)` | `'0341'` · `'60701190'` |
+| | `version` | versão do pacote (string) |
+| `logos-bancos-br/node` | `logoPngPath(codigo)` · `logoSvgPath(codigo)` | caminho absoluto do asset, ou `null` |
+| | `copyLogos({ dest, format?, by?, only? })` | copia os assets para um diretório (o que o CLI usa) |
+| `logos-bancos-br/react-native` | `logos` (default export) | mapa `require()` com chaves COMPE4 **e** ISPB |
+
+Tipos TypeScript exportados: `Bank`, `BankLogo`, `BankLogoSource`.
 
 ## O dataset
 
@@ -185,8 +207,8 @@ Um registro de `data/bancos.json`:
 4. **Normalização**: cada arte vira PNG 256×256; o SVG original é mantido quando seguro.
 5. **Cadência**: o workflow roda **toda segunda-feira** (e sob demanda), regenera
    `data/bancos.json`, `logos/`, `PREVIEW.md` e `react-native.js`, e **abre um PR** com o
-   relatório e o diff visual dos PNGs. Depois da revisão e merge, uma nova versão vai para o
-   npm. Nada é editado à mão.
+   relatório e o diff visual dos PNGs. Depois da revisão e merge, o mantenedor publica uma
+   nova versão no npm (Release no GitHub). Nada é editado à mão.
 
 Detalhes de manutenção (rodar o pipeline localmente, promover sugestões, overrides, denylist):
 **[CONTRIBUTING.md](CONTRIBUTING.md)**.
