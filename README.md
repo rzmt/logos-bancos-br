@@ -34,20 +34,19 @@
    principal** ([`data/bancos.json`](data/bancos.json)) traz as **470 instituições com código
    COMPE** da lista de participantes do STR do Banco Central. As **643 instituições só-Pix**
    (fintechs, IPs e cooperativas afiliadas, sem COMPE) ficam num conjunto separado
-   ([`data/instituicoes-pix.json`](data/instituicoes-pix.json)) — a lista principal permanece
-   limpa e quem precisa do universo completo do Pix tem tudo. Ambos com nomes oficiais, ISPB,
-   CNPJ (só-Pix) e atributos de participação no Pix. Você nunca mais mantém uma lista de
-   instituições no seu projeto.
+   ([`data/instituicoes-pix.json`](data/instituicoes-pix.json)), mantendo a lista principal
+   enxuta. Ambos trazem nomes oficiais, ISPB, CNPJ (só-Pix) e os atributos de participação no
+   Pix.
 2. **Logos oficiais, sem duplicação.** **473 instituições com logo** usando **160 arquivos
    distintos** (~1,7 MB): afiliadas de sistemas cooperativos de marca única (Sicoob, Sicredi,
    Cresol, Unicred) **compartilham um único arquivo por sistema** e são marcadas com
    `logo.source.type: "brand"`. Logos próprios vêm do diretório público do **Open Finance
    Brasil** (`openfinance`) ou do **site oficial da instituição** (`direct-uri`, com curadoria
    visual). Cada arquivo carrega proveniência: URI, SHA-256 e data.
-3. **Atualização automática, sem curadoria manual.** Toda segunda-feira um GitHub Action
-   ([`update-logos.yml`](.github/workflows/update-logos.yml)) reconstrói **a lista E os logos**
-   a partir das fontes e abre um PR com o diff visual. Banco criado, renomeado ou extinto pelo
-   BCB? Instituição trocou o logo? Entra na atualização da semana.
+3. **Atualização automática.** Toda segunda-feira um GitHub Action
+   ([`update-logos.yml`](.github/workflows/update-logos.yml)) reconstrói a lista e os logos a
+   partir das fontes e abre um PR com o diff visual para revisão. Inclusões, renomeações e
+   exclusões feitas pelo BCB — e trocas de logo — entram na atualização seguinte.
 4. **Uso em qualquer stack.** API JavaScript/TypeScript, mapa pronto para React Native, CLI que
    copia os assets para projetos Flutter/Kotlin/Swift/.NET/PHP, URLs de CDN sem instalar nada —
    ou só o JSON.
@@ -75,6 +74,19 @@ logos), ou logos **coletados de sites variados**, sem rastreabilidade. A abordag
   afiliadas dos sistemas cooperativos e ~45 instituições cobertas pelos sites oficiais — a
   esmagadora maioria das contas do país). As demais são SCDs/corretoras/IPs pequenas; para elas
   seu app usa o fallback que preferir — e a cobertura cresce a cada release.
+
+### As fontes, para conferência
+
+Os mesmos endereços públicos que o pipeline consome — qualquer pessoa pode verificar:
+
+| Fonte | Publicador | O que fornece | Consulta |
+|---|---|---|---|
+| Lista de participantes do STR | Banco Central do Brasil | ISPB, código COMPE e nomes oficiais (lista principal) | [página](https://www.bcb.gov.br/estabilidadefinanceira/participantesstr) · [CSV](https://www.bcb.gov.br/content/estabilidadefinanceira/str1/ParticipantesSTR.csv) |
+| Lista de participantes ativos do Pix | Banco Central do Brasil | Instituições do Pix (inclusive sem COMPE), CNPJ e atributos de participação | [página](https://www.bcb.gov.br/estabilidadefinanceira/participantespix) (o CSV diário é linkado nela) |
+| Diretório de participantes | Open Finance Brasil | Logo publicado pela própria instituição, identificado por CNPJ | [JSON público](https://data.directory.openbankingbrasil.org.br/participants) |
+
+O campo `logo.source.uri` de cada logo em [`data/bancos.json`](data/bancos.json) aponta o
+arquivo exato baixado, com SHA-256 e data.
 
 ## Instalação e uso
 

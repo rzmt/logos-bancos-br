@@ -34,18 +34,18 @@
    ([`data/bancos.json`](data/bancos.json)) carries the **470 institutions with a COMPE code**
    from the Central Bank STR participants list. The **643 Pix-only institutions** (fintechs,
    payment institutions, cooperative affiliates — no COMPE) live in a separate dataset
-   ([`data/instituicoes-pix.json`](data/instituicoes-pix.json)) — the main list stays clean,
-   and the full Pix universe is one import away.
+   ([`data/instituicoes-pix.json`](data/instituicoes-pix.json)), keeping the main list lean.
+   Both carry official names, ISPB, CNPJ (Pix-only) and Pix participation attributes.
 2. **Official logos, deduplicated.** **473 institutions with a logo** backed by **160 distinct
    files** (~1.7 MB): affiliates of single-brand cooperative systems (Sicoob, Sicredi, Cresol,
    Unicred) **share one file per system**, marked `logo.source.type: "brand"`. Own logos come
    from the public **Open Finance Brasil** directory (`openfinance`) or the **institution's own
    official website** (`direct-uri`, visually curated). Every file carries provenance: source
    URI, SHA-256 and date.
-3. **Automatic updates, no manual curation.** Every Monday a GitHub Action
-   ([`update-logos.yml`](.github/workflows/update-logos.yml)) rebuilds **both the list AND the
-   logos** from the sources and opens a PR with the visual diff. A bank created, renamed or
-   closed by the Central Bank? An institution rebranded? It lands in that week's update.
+3. **Automatic updates.** Every Monday a GitHub Action
+   ([`update-logos.yml`](.github/workflows/update-logos.yml)) rebuilds the list and the logos
+   from the sources and opens a PR with the visual diff for review. Additions, renames and
+   removals made by the Central Bank — and logo changes — land in the next update.
 4. **Works in any stack.** JavaScript/TypeScript API, a ready-made React Native map, a CLI that
    copies the assets into Flutter/Kotlin/Swift/.NET/PHP projects, CDN URLs with no install — or
    just the JSON.
@@ -72,6 +72,19 @@ logos) or logos **collected from assorted websites** with no traceability. The a
   cooperative-system affiliates and ~45 institutions covered via official sites — the vast
   majority of accounts in Brazil). The rest are small SCDs/brokers/payment institutions — your
   app picks the fallback, and coverage grows every release.
+
+### The sources, for verification
+
+The same public endpoints the pipeline consumes — anyone can check them:
+
+| Source | Publisher | Provides | Link |
+|---|---|---|---|
+| STR participants list | Central Bank of Brazil | ISPB, COMPE code and official names (main list) | [page](https://www.bcb.gov.br/estabilidadefinanceira/participantesstr) · [CSV](https://www.bcb.gov.br/content/estabilidadefinanceira/str1/ParticipantesSTR.csv) |
+| Active Pix participants list | Central Bank of Brazil | Pix institutions (incl. COMPE-less), CNPJ and participation attributes | [page](https://www.bcb.gov.br/estabilidadefinanceira/participantespix) (the daily CSV is linked there) |
+| Participants directory | Open Finance Brasil | The logo each institution publishes, keyed by CNPJ | [public JSON](https://data.directory.openbankingbrasil.org.br/participants) |
+
+Each logo's `logo.source.uri` in [`data/bancos.json`](data/bancos.json) points at the exact
+file downloaded, with SHA-256 and date.
 
 ## Install & use
 

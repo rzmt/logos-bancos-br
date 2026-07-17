@@ -55,5 +55,6 @@ Key facts:
 
 ## Official sources
 
-- [BCB STR participants CSV](https://www.bcb.gov.br/content/estabilidadefinanceira/str1/ParticipantesSTR.csv)
+- [BCB STR participants CSV](https://www.bcb.gov.br/content/estabilidadefinanceira/str1/ParticipantesSTR.csv) ([page](https://www.bcb.gov.br/estabilidadefinanceira/participantesstr))
+- [BCB active Pix participants page](https://www.bcb.gov.br/estabilidadefinanceira/participantespix) (daily dated CSV linked there)
 - [Open Finance Brasil participants directory](https://data.directory.openbankingbrasil.org.br/participants)
