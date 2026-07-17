@@ -11,9 +11,24 @@ import {
 } from '../src/index';
 
 describe('dataset', () => {
-  it('ships the full STR backbone', () => {
-    expect(banks().length).toBeGreaterThan(400);
+  it('ships the combined STR + Pix backbone', () => {
+    expect(banks().length).toBeGreaterThan(1000);
     expect(banks().filter((bank) => bank.logo).length).toBeGreaterThan(90);
+  });
+
+  it('includes Pix-only institutions with compe null, addressable by ISPB', () => {
+    const pixOnly = banks().filter((bank) => bank.compe4 === null);
+    expect(pixOnly.length).toBeGreaterThan(400);
+    const sample = pixOnly[0];
+    expect(sample).toBeDefined();
+    expect(byIspb(sample?.ispb ?? '')).toBe(sample);
+    expect(sample?.pix).not.toBeNull();
+  });
+
+  it('carries pix participation info for big Pix participants', () => {
+    const itau = byCompe(341);
+    expect(itau?.pix?.pixParticipationType).toBe('Obrigatória');
+    expect(itau?.pix?.authorizedByBcb).toBe(true);
   });
 });
 

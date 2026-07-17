@@ -64,6 +64,11 @@ switch (command) {
       only,
     });
     console.log(`${result.copied.length} arquivo(s) copiado(s) para ${values.dest}`);
+    if (result.skippedNoCompe.length) {
+      console.log(
+        `${result.skippedNoCompe.length} instituição(ões) sem código COMPE ignorada(s) — use --by ispb para incluí-las.`,
+      );
+    }
     if (result.skippedNoSvg.length) {
       console.log(
         `${result.skippedNoSvg.length} instituição(ões) sem SVG seguro (só PNG): ${result.skippedNoSvg.join(', ')}`,
@@ -81,10 +86,15 @@ switch (command) {
     }
     for (const bank of all) {
       const marker = bank.logo ? '●' : '·';
-      console.log(`${marker} ${bank.compe4}  ${bank.ispb}  ${bank.shortName || bank.name}`);
+      console.log(
+        `${marker} ${bank.compe4 ?? '----'}  ${bank.ispb}  ${bank.shortName || bank.name}`,
+      );
     }
     const withLogo = all.filter((bank) => bank.logo).length;
-    console.log(`\n${all.length} instituições · ${withLogo} com logo (●)`);
+    const pixOnly = all.filter((bank) => bank.compe4 === null).length;
+    console.log(
+      `\n${all.length} instituições (${pixOnly} só-Pix, sem COMPE) · ${withLogo} com logo (●)`,
+    );
     break;
   }
 

@@ -16,8 +16,11 @@ export function buildDataset({
   pngIspbs: Set<string>;
   svgIspbs: Set<string>;
 }): Dataset {
+  // COMPE'd institutions first (sorted by code), then Pix-only ones by ISPB.
   const banks: Bank[] = [...entries]
-    .sort((a, b) => a.compe4.localeCompare(b.compe4) || a.ispb.localeCompare(b.ispb))
+    .sort(
+      (a, b) => (a.compe4 ?? '￿').localeCompare(b.compe4 ?? '￿') || a.ispb.localeCompare(b.ispb),
+    )
     .map((entry) => {
       const state = manifest[entry.ispb];
       let logo: Bank['logo'] = null;
@@ -46,6 +49,7 @@ export function buildDataset({
         compe4: entry.compe4,
         name: entry.fullName,
         shortName: entry.shortName,
+        pix: entry.pix ?? null,
         logo,
       };
     });

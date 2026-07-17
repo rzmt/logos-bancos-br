@@ -17,7 +17,7 @@ export function buildReactNativeMap(banks: Bank[]): string {
   for (const bank of banks) {
     if (!bank.logo) continue;
     const requirePath = `require('./${bank.logo.png}')`;
-    lines.push(`  '${bank.compe4}': ${requirePath},`);
+    if (bank.compe4) lines.push(`  '${bank.compe4}': ${requirePath},`);
     lines.push(`  '${bank.ispb}': ${requirePath},`);
   }
 

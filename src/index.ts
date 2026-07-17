@@ -39,17 +39,34 @@ export interface BankLogo {
   source: BankLogoSource;
 }
 
+/**
+ * Pix participation attributes, verbatim from the Central Bank's daily
+ * "participantes ativos do Pix" list (values kept in Portuguese as published).
+ */
+export interface PixInfo {
+  /** "Direta" | "Indireta" — participation in the SPI settlement system. */
+  spiParticipationType: string;
+  /** "Obrigatória" | "Facultativa". */
+  pixParticipationType: string;
+  /** e.g. "Provedor de Conta Transacional", "Iniciador". */
+  modality: string;
+  institutionType: string;
+  authorizedByBcb: boolean;
+}
+
 export interface Bank {
   /** 8-digit ISPB (Central Bank identifier). */
   ispb: string;
-  /** COMPE number as published by the Central Bank (e.g. "1", "341"). */
-  compe: string;
-  /** COMPE zero-padded to 4 digits (e.g. "0001", "0341"). */
-  compe4: string;
-  /** Official full name (Nome Extenso). */
+  /** COMPE number as published by the Central Bank; null for Pix-only institutions. */
+  compe: string | null;
+  /** COMPE zero-padded to 4 digits (e.g. "0001", "0341"); null for Pix-only institutions. */
+  compe4: string | null;
+  /** Official full name (Nome Extenso; equals shortName for Pix-only institutions). */
   name: string;
   /** Official short name (Nome Reduzido). */
   shortName: string;
+  /** Pix participation attributes; null when not an active Pix participant. */
+  pix: PixInfo | null;
   /** Logo info, or null when the institution has no logo in the official sources. */
   logo: BankLogo | null;
 }
@@ -77,12 +94,16 @@ function ensureIndexes(): void {
   compeIndex = new Map();
   ispbIndex = new Map();
   for (const bank of data.banks) {
-    compeIndex.set(bank.compe4, bank);
+    if (bank.compe4) compeIndex.set(bank.compe4, bank);
     ispbIndex.set(bank.ispb, bank);
   }
 }
 
-/** Every institution in the Central Bank STR list that has a COMPE number. */
+/**
+ * Every institution in the combined Central Bank backbone: the STR list
+ * (institutions with a COMPE number) plus the active Pix participants list
+ * (which adds Pix-only institutions, with `compe: null`).
+ */
 export function banks(): readonly Bank[] {
   return data.banks;
 }

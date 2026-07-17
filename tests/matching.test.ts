@@ -1,14 +1,15 @@
 import { describe, expect, it } from 'vitest';
 import { buildMatches, indexDirectory } from '../pipeline/matching';
-import type { PipelineConfig, RawOrganisation, StrParticipant } from '../pipeline/types';
+import type { BackboneParticipant, PipelineConfig, RawOrganisation } from '../pipeline/types';
 
-function participant(overrides: Partial<StrParticipant> = {}): StrParticipant {
+function participant(overrides: Partial<BackboneParticipant> = {}): BackboneParticipant {
   return {
     ispb: '60701190',
     compe: '341',
     compe4: '0341',
     shortName: 'ITAÚ UNIBANCO S.A.',
     fullName: 'Itaú Unibanco S.A.',
+    pix: null,
     ...overrides,
   };
 }

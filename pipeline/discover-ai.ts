@@ -144,7 +144,7 @@ function buildPrompt(bank: Bank): string {
     '',
     `- Nome oficial (Banco Central/STR): ${bank.name}`,
     `- Nome reduzido: ${bank.shortName}`,
-    `- ISPB: ${bank.ispb} · Código COMPE: ${bank.compe4}`,
+    `- ISPB: ${bank.ispb}${bank.compe4 ? ` · Código COMPE: ${bank.compe4}` : ' (sem código COMPE; participante do Pix)'}`,
     '',
     'Regras:',
     '- Use a busca na web para confirmar. O domínio precisa pertencer à própria instituição (site institucional), não a agregadores, notícias, marketplaces de domínio ou homônimos.',
@@ -262,7 +262,10 @@ async function main(): Promise<void> {
 
   // Residue: no logo, and not already covered by the manual sites.json flow.
   let residue = dataset.banks.filter((bank) => !bank.logo && !sites[bank.ispb]);
-  if (only) residue = residue.filter((bank) => only.has(bank.compe4) || only.has(bank.ispb));
+  if (only)
+    residue = residue.filter(
+      (bank) => (bank.compe4 !== null && only.has(bank.compe4)) || only.has(bank.ispb),
+    );
   const targets = residue.slice(0, limit);
 
   if (targets.length === 0) {
@@ -280,7 +283,7 @@ async function main(): Promise<void> {
   await withConcurrency(targets, 2, async (bank) => {
     const result: AiResult = {
       ispb: bank.ispb,
-      compe4: bank.compe4,
+      compe4: bank.compe4 ?? bank.ispb,
       name: bank.shortName || bank.name,
       site: '',
       best: null,

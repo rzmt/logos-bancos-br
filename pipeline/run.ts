@@ -1,8 +1,9 @@
 /**
  * Logo collection pipeline — orchestration.
  *
- * Official sources only: Central Bank STR participants (backbone: ISPB +
- * COMPE + names) and the Open Finance Brasil directory (logos by CNPJ).
+ * Official sources only: the combined Central Bank backbone (STR participants
+ * with a COMPE number ∪ active Pix participants, keyed by ISPB) and the Open
+ * Finance Brasil directory (logos by CNPJ).
  *
  * Usage:
  *   npm run pipeline
@@ -25,7 +26,12 @@ import { downloadLogo, isSafeSvg, looksLikeSvg, rasterize, sha256, writeIfChange
 import { buildMatches } from './matching';
 import { buildPreviewMarkdown } from './preview';
 import { buildReactNativeMap } from './rn-map';
-import { fetchOpenFinanceDirectory, fetchStrParticipants } from './sources';
+import {
+  fetchOpenFinanceDirectory,
+  fetchPixParticipants,
+  fetchStrParticipants,
+  mergeBackbone,
+} from './sources';
 import type { Manifest, ManifestEntry, MatchEntry, PipelineConfig } from './types';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -132,13 +138,15 @@ async function main(): Promise<void> {
   const overrides = loadOverrides();
   const today = new Date().toISOString().slice(0, 10);
 
-  console.log(`Atualizando logos de bancos${dryRun ? ' (dry-run)' : ''}...`);
-  console.log('Baixando fontes oficiais (BCB/STR + diretório Open Finance)...');
-  let participants: Awaited<ReturnType<typeof fetchStrParticipants>>;
+  console.log(`Atualizando logos de instituições${dryRun ? ' (dry-run)' : ''}...`);
+  console.log('Baixando fontes oficiais (BCB/STR + BCB/Pix + diretório Open Finance)...');
+  let strParticipants: Awaited<ReturnType<typeof fetchStrParticipants>>;
+  let pixResult: Awaited<ReturnType<typeof fetchPixParticipants>>;
   let directory: Awaited<ReturnType<typeof fetchOpenFinanceDirectory>>;
   try {
-    [participants, directory] = await Promise.all([
+    [strParticipants, pixResult, directory] = await Promise.all([
       fetchStrParticipants({ timeoutMs: 30_000 }),
+      fetchPixParticipants({ timeoutMs: 30_000 }),
       fetchOpenFinanceDirectory({ timeoutMs: 30_000 }),
     ]);
   } catch (error) {
@@ -147,7 +155,14 @@ async function main(): Promise<void> {
     console.error('  Nada foi alterado.');
     process.exit(1);
   }
-  console.log(`  BCB/STR: ${participants.length} instituições com código COMPE.`);
+  const participants = mergeBackbone(strParticipants, pixResult.participants);
+  const pixOnlyCount = participants.filter((p) => p.compe === null).length;
+  console.log(`  BCB/STR: ${strParticipants.length} instituições com código COMPE.`);
+  console.log(
+    `  BCB/Pix (${pixResult.stamp}): ${pixResult.participants.length} participantes ativos` +
+      ` (${pixOnlyCount} sem COMPE; ${pixResult.skippedNoIspb} sem ISPB, ignorados).`,
+  );
+  console.log(`  Espinha combinada: ${participants.length} instituições únicas por ISPB.`);
   console.log(`  Open Finance: ${directory.length} organizações no diretório.`);
   console.log(`  Overrides locais: ${overrides.size}.`);
 
@@ -165,7 +180,9 @@ async function main(): Promise<void> {
   }
 
   const targets = only
-    ? entries.filter((entry) => only.has(entry.compe4) || only.has(entry.ispb))
+    ? entries.filter(
+        (entry) => (entry.compe4 !== null && only.has(entry.compe4)) || only.has(entry.ispb),
+      )
     : entries;
 
   if (!dryRun) {
@@ -187,6 +204,7 @@ async function main(): Promise<void> {
   const newManifest: Manifest = {};
 
   await withConcurrency(targets, config.concurrency, async (entry: MatchEntry) => {
+    const label = entry.compe4 ?? entry.ispb;
     const pngPath = join(PNG_DIR, `${entry.ispb}.png`);
     const svgPath = join(SVG_DIR, `${entry.ispb}.svg`);
     const pngExists = existsSync(pngPath);
@@ -198,10 +216,10 @@ async function main(): Promise<void> {
 
     if (!entry.source) {
       if (pngExists) {
-        stats.keptWithoutSource.push(entry.compe4);
+        stats.keptWithoutSource.push(label);
         carryPrevious();
       } else {
-        stats.noLogo.push(entry.compe4);
+        stats.noLogo.push(label);
       }
       return;
     }
@@ -224,7 +242,7 @@ async function main(): Promise<void> {
       }
     } catch (error) {
       const reason = error instanceof Error ? error.message : String(error);
-      stats.failed.push({ compe4: entry.compe4, ispb: entry.ispb, reason });
+      stats.failed.push({ compe4: label, ispb: entry.ispb, reason });
       carryPrevious();
       return;
     }
@@ -232,11 +250,11 @@ async function main(): Promise<void> {
     const hash = sha256(bytes);
     const isSvg = looksLikeSvg(bytes);
     const svgSafe = isSvg && isSafeSvg(bytes.toString('utf8'));
-    if (isSvg && !svgSafe) stats.svgRejected.push(entry.compe4);
+    if (isSvg && !svgSafe) stats.svgRejected.push(label);
 
     const svgConsistent = !svgSafe || existsSync(svgPath);
     if (!force && previous && previous.sourceSha256 === hash && pngExists && svgConsistent) {
-      stats.unchanged.push(entry.compe4);
+      stats.unchanged.push(label);
       newManifest[entry.ispb] = { ...previous, compe4: entry.compe4 };
       return;
     }
@@ -247,7 +265,7 @@ async function main(): Promise<void> {
     } catch (error) {
       const reason = error instanceof Error ? error.message : String(error);
       stats.failed.push({
-        compe4: entry.compe4,
+        compe4: label,
         ispb: entry.ispb,
         reason: `rasterizar: ${reason}`,
       });
@@ -255,15 +273,14 @@ async function main(): Promise<void> {
       return;
     }
 
-    if (png.byteLength > 25 * 1024)
-      stats.large.push({ compe4: entry.compe4, bytes: png.byteLength });
+    if (png.byteLength > 25 * 1024) stats.large.push({ compe4: label, bytes: png.byteLength });
 
     if (dryRun) {
-      stats[pngExists ? 'updated' : 'created'].push(entry.compe4);
+      stats[pngExists ? 'updated' : 'created'].push(label);
     } else {
       const status = writeIfChanged(pngPath, png);
       if (svgSafe) writeIfChanged(svgPath, bytes);
-      stats[status].push(entry.compe4);
+      stats[status].push(label);
     }
 
     newManifest[entry.ispb] = {
@@ -312,11 +329,12 @@ async function main(): Promise<void> {
   const reportLines: string[] = [
     '## Atualização de logos — relatório',
     '',
-    `Fontes oficiais: lista de participantes do STR (Banco Central) + diretório de participantes do Open Finance Brasil. Rodada de ${today}${dryRun ? ' (dry-run)' : ''}.`,
+    `Fontes oficiais: listas de participantes do STR e do Pix (Banco Central) + diretório de participantes do Open Finance Brasil. Rodada de ${today}${dryRun ? ' (dry-run)' : ''}.`,
     '',
     '| Métrica | Valor |',
     '|---|---|',
-    `| Instituições na espinha (STR com COMPE) | ${entries.length} |`,
+    `| Instituições na espinha (STR ∪ Pix, por ISPB) | ${entries.length} |`,
+    `| Sem código COMPE (só-Pix) | ${entries.filter((e) => e.compe4 === null).length} |`,
     `| Com logo | ${withLogo} |`,
     `| Match automático por ISPB | ${bySource.ispb ?? 0} |`,
     `| Matches forçados (revisados) | ${(bySource['forced-match'] ?? 0) + (bySource['forced-uri'] ?? 0)} |`,
@@ -355,7 +373,7 @@ async function main(): Promise<void> {
     );
     for (const suggestion of suggestions) {
       reportLines.push(
-        `| ${suggestion.compe4} | ${suggestion.ispb} | ${suggestion.strName} | ${suggestion.orgName} | ${suggestion.cnpj} | ${suggestion.score} |`,
+        `| ${suggestion.compe4 ?? '—'} | ${suggestion.ispb} | ${suggestion.strName} | ${suggestion.orgName} | ${suggestion.cnpj} | ${suggestion.score} |`,
       );
     }
   }
@@ -376,7 +394,7 @@ async function main(): Promise<void> {
 
   // ---- console summary ----
   console.log('\n──────────── Resumo ────────────');
-  console.log(`Instituições (espinha STR):  ${entries.length}`);
+  console.log(`Instituições (espinha):      ${entries.length}`);
   console.log(`Com logo:                    ${withLogo}${dryRun ? ' (estimado)' : ''}`);
   console.log(
     `  ↳ ISPB ${bySource.ispb ?? 0} · forçados ${(bySource['forced-match'] ?? 0) + (bySource['forced-uri'] ?? 0)} · override ${bySource.override ?? 0}`,
@@ -405,7 +423,7 @@ async function main(): Promise<void> {
     console.log(`\n⚠ Sugestões por NOME (não gravadas — top 20 de ${suggestions.length}):`);
     for (const suggestion of suggestions.slice(0, 20)) {
       console.log(
-        `  ${suggestion.compe4} "${suggestion.strName}" → "${suggestion.orgName}" [cnpj ${suggestion.cnpj}] (score ${suggestion.score})`,
+        `  ${suggestion.compe4 ?? suggestion.ispb} "${suggestion.strName}" → "${suggestion.orgName}" [cnpj ${suggestion.cnpj}] (score ${suggestion.score})`,
       );
     }
   }

@@ -35,6 +35,15 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
+  "11275560": {
+    "compe4": null,
+    "org": "RECARGAPAY INSTITUICAO DE PAGAMENTO LTDA.",
+    "cnpj": "11275560000175",
+    "uri": "https://cnt.recarga.com/assets/open-finance/recargapay-color.svg",
+    "sourceSha256": "77cf53b59a63345e1004e69d34aa678551d42bc511f8990bc47b90267a0e3366",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
   "11285104": {
     "compe4": "0426",
     "org": "Neon Pagamentos",
@@ -566,6 +575,15 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
+  "38372267": {
+    "compe4": null,
+    "org": "SHOPEE",
+    "cnpj": "38372267000182",
+    "uri": "https://deo.shopeemobile.com/shopee/shopee-shopeepayfe-live-br/wallet/shopee_logo.svg",
+    "sourceSha256": "4e2607eff427a5ba6127c9394ac7b8867580a05eecca082336685ba83df1dd84",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
   "39664698": {
     "compe4": "0428",
     "org": "CRED SYSTEM SOCIEDADE DE CREDITO DIRETO SA",
@@ -761,6 +779,15 @@
     "cnpj": "60746948000112",
     "uri": "https://banco.bradesco/open-finance/logo/icones_vetorial-pf.svg",
     "sourceSha256": "eab31731175c5229512016c2cdf98f38affecb891c217bbe6ea6b83e4c5bdb38",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "60779196": {
+    "compe4": null,
+    "org": "CREFISA S.A. CFI",
+    "cnpj": "60779196000196",
+    "uri": "https://www.crefisa.com.br/wp-content/uploads/2019/05/Logo.svg",
+    "sourceSha256": "6d1f7f70293767ef1c60c4ad7bba6d730e91a72780a8ecc44d2894d00f04ac12",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -1115,6 +1142,15 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
+  "01722480": {
+    "compe4": null,
+    "org": "QUERO-QUERO VERDECARD INSTITUICAO DE PAGAMENTO S.A.",
+    "cnpj": "01722480000167",
+    "uri": "https://api.queroquero.com.br/webapps/assets/assets/logo/icone_QQPag.svg",
+    "sourceSha256": "4d1ffa022da3d15e662af72dbbd8cb555041fdcb6a39a93d2ec0449182e2f82d",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
   "01858774": {
     "compe4": "0413",
     "org": "BCO VOTORANTIM S.A.",
@@ -1193,6 +1229,15 @@
     "cnpj": "58160789000128",
     "uri": "https://www.safra.com.br/shared/assets/img/safra-of.svg",
     "sourceSha256": "9c25f4839fe8a258db6c0a59f192120f97f5ef49830f3db05ebd6cac82e02e50",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "03130170": {
+    "compe4": null,
+    "org": "BRASIL CARD INSTITUICAO DE PAGAMENTOS LTDA",
+    "cnpj": "03130170000189",
+    "uri": "https://storage.googleapis.com/brasilcard-public/icons/logo-ob.svg",
+    "sourceSha256": "814a42841082aa350f21ea67f5206c189be3e8a8f992f20c1345086ab6b7b48d",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -1300,7 +1345,7 @@
     "org": "BCO DO NORDESTE DO BRASIL S.A.",
     "cnpj": "07237373000120",
     "uri": "https://consentimento.openfinance.bnb.gov.br/logo_bnb.svg",
-    "sourceSha256": "62b3a221a45c950a008f798a2ebed4d9e5e1df1365f24ca4f8095118d1b4a16e",
+    "sourceSha256": "e07c03253a3b5f81dd890ec3d2f304f641d502e1d968f8ad8d76e4fb8732a997",
     "svg": true,
     "updatedAt": "2026-07-17"
   },

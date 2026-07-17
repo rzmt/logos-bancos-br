@@ -2,20 +2,31 @@
  * Official data sources.
  *
  * 1. Central Bank of Brazil — STR participants list (CSV, updated daily):
- *    the backbone. Defines which institutions exist, their ISPB, COMPE
- *    number ("Número-Código") and official names.
- * 2. Open Finance Brasil — participants directory (public JSON): each
+ *    first backbone. Defines institutions with a COMPE number, their ISPB
+ *    and official names.
+ * 2. Central Bank of Brazil — active Pix participants list (CSV, published
+ *    daily under a dated URL; only the current day stays available): second
+ *    backbone. Adds institutions without COMPE and per-institution Pix
+ *    participation attributes.
+ * 3. Open Finance Brasil — participants directory (public JSON): each
  *    institution publishes and maintains its own logo
  *    (AuthorisationServers[].CustomerFriendlyLogoUri), identified by CNPJ.
  */
 
 import { stripAccents } from './text';
-import type { RawOrganisation, StrParticipant } from './types';
+import type { BackboneParticipant, PixParticipant, RawOrganisation, StrParticipant } from './types';
 
 export const STR_CSV_URL =
   'https://www.bcb.gov.br/content/estabilidadefinanceira/str1/ParticipantesSTR.csv';
 export const OPEN_FINANCE_DIRECTORY_URL =
   'https://data.directory.openbankingbrasil.org.br/participants';
+/**
+ * Daily Pix participants file (despite the "em-adesao" filename, it carries
+ * the "participantes ativos" table plus a second onboarding section). Only
+ * the current day's date resolves — the previous day's URL 404s.
+ */
+export const PIX_CSV_URL_BASE =
+  'https://www.bcb.gov.br/content/estabilidadefinanceira/participantes_pix/lista-participantes-instituicoes-em-adesao-pix-';
 
 const USER_AGENT = 'logos-bancos-br/0.1 (+https://github.com/rzmt/logos-bancos-br)';
 
@@ -47,7 +58,10 @@ export async function fetchWithRetry(
 }
 
 /** Minimal CSV parser: quoted fields, escaped quotes ("") and \n / \r\n line breaks. */
-export function parseCsv(text: string): string[][] {
+export function parseCsv(
+  text: string,
+  { separator = ',' }: { separator?: string } = {},
+): string[][] {
   const rows: string[][] = [];
   let field = '';
   let row: string[] = [];
@@ -75,7 +89,7 @@ export function parseCsv(text: string): string[][] {
       }
     } else if (ch === '"') {
       inQuotes = true;
-    } else if (ch === ',') {
+    } else if (ch === separator) {
       row.push(field);
       field = '';
     } else if (ch === '\n' || ch === '\r') {
@@ -168,4 +182,155 @@ export async function fetchOpenFinanceDirectory({
     throw new Error(`JSON do diretório Open Finance inesperado (n=${size}).`);
   }
   return data as RawOrganisation[];
+}
+
+/** Formats a Date as YYYYMMDD in the São Paulo timezone (the file's clock). */
+export function pixCsvDateStamp(date: Date): string {
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'America/Sao_Paulo',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).format(date);
+  return parts.replace(/-/g, '');
+}
+
+/**
+ * Parses the Pix participants CSV (latin-1 already decoded): `;`-separated,
+ * a title line, the "participantes ativos" table, then a second
+ * "em processo de adesão" section which is out of scope. Rows without an
+ * ISPB (a handful of indirect participants) are skipped and counted.
+ */
+export function parsePixCsv(
+  text: string,
+  { minRows = 300 }: { minRows?: number } = {},
+): { participants: PixParticipant[]; skippedNoIspb: number } {
+  const rows = parseCsv(text, { separator: ';' });
+
+  const headerIndex = rows.findIndex(
+    (row) => row.length > 3 && normalizeHeader(row[1] ?? '') === 'nomereduzido',
+  );
+  if (headerIndex < 0) throw new Error('CSV do Pix sem cabeçalho reconhecível.');
+  const header = (rows[headerIndex] ?? []).map(normalizeHeader);
+  const columns = {
+    shortName: header.indexOf('nomereduzido'),
+    ispb: header.indexOf('ispb'),
+    cnpj: header.indexOf('cnpj'),
+    institutionType: header.indexOf('tipodeinstituicao'),
+    authorized: header.indexOf('autorizadapelobcb'),
+    spiType: header.indexOf('tipodeparticipacaonospi'),
+    pixType: header.indexOf('tipodeparticipacaonopix'),
+    modality: header.indexOf('modalidadedeparticipacaonopix'),
+  };
+  for (const [name, index] of Object.entries(columns)) {
+    if (index < 0) throw new Error(`Coluna esperada ausente no CSV do Pix: ${name}`);
+  }
+
+  const participants: PixParticipant[] = [];
+  const seen = new Set<string>();
+  let skippedNoIspb = 0;
+  for (let i = headerIndex + 1; i < rows.length; i++) {
+    const row = rows[i] ?? [];
+    const first = (row[0] ?? '').trim();
+    // The active table ends where the "em adesão" section (new title line) begins.
+    if (!/^\d+$/.test(first)) break;
+
+    const ispbDigits = (row[columns.ispb] ?? '').replace(/\D/g, '');
+    if (!ispbDigits) {
+      skippedNoIspb++;
+      continue;
+    }
+    const ispb = ispbDigits.padStart(8, '0');
+    if (seen.has(ispb)) continue;
+    seen.add(ispb);
+
+    participants.push({
+      ispb,
+      shortName: (row[columns.shortName] ?? '').trim(),
+      cnpj: (row[columns.cnpj] ?? '').replace(/\D/g, '').padStart(14, '0'),
+      pix: {
+        spiParticipationType: (row[columns.spiType] ?? '').trim(),
+        pixParticipationType: (row[columns.pixType] ?? '').trim(),
+        modality: (row[columns.modality] ?? '').trim(),
+        institutionType: (row[columns.institutionType] ?? '').trim(),
+        authorizedByBcb: (row[columns.authorized] ?? '').trim().toLowerCase() === 'sim',
+      },
+    });
+  }
+
+  if (participants.length < minRows) {
+    throw new Error(`Poucos participantes do Pix (${participants.length}); fonte suspeita.`);
+  }
+  return { participants, skippedNoIspb };
+}
+
+/**
+ * Downloads the daily Pix participants CSV, walking back up to `maxDaysBack`
+ * days from today (São Paulo time) — the BCB removes previous days' files,
+ * and the current day's file may not exist yet around midnight.
+ */
+export async function fetchPixParticipants({
+  timeoutMs = 30_000,
+  maxDaysBack = 7,
+}: {
+  timeoutMs?: number;
+  maxDaysBack?: number;
+} = {}): Promise<{ participants: PixParticipant[]; skippedNoIspb: number; stamp: string }> {
+  let lastError: unknown;
+  for (let daysBack = 0; daysBack <= maxDaysBack; daysBack++) {
+    const stamp = pixCsvDateStamp(new Date(Date.now() - daysBack * 24 * 60 * 60 * 1000));
+    try {
+      const response = await fetchWithRetry(`${PIX_CSV_URL_BASE}${stamp}.csv`, {
+        timeoutMs,
+        attempts: 1,
+      });
+      const text = new TextDecoder('latin1').decode(await response.arrayBuffer());
+      return { ...parsePixCsv(text), stamp };
+    } catch (error) {
+      lastError = error;
+    }
+  }
+  const message = lastError instanceof Error ? lastError.message : String(lastError);
+  throw new Error(
+    `Lista de participantes do Pix indisponível nos últimos ${maxDaysBack + 1} dias: ${message}`,
+  );
+}
+
+/**
+ * Merges the two backbones by ISPB. STR wins names and provides the COMPE;
+ * Pix contributes participation attributes and the COMPE-less institutions.
+ */
+export function mergeBackbone(
+  strParticipants: StrParticipant[],
+  pixParticipants: PixParticipant[],
+): BackboneParticipant[] {
+  const pixByIspb = new Map(pixParticipants.map((p) => [p.ispb, p]));
+  const merged: BackboneParticipant[] = [];
+  const seen = new Set<string>();
+
+  for (const p of strParticipants) {
+    if (seen.has(p.ispb)) continue;
+    seen.add(p.ispb);
+    merged.push({
+      ispb: p.ispb,
+      compe: p.compe,
+      compe4: p.compe4,
+      shortName: p.shortName,
+      fullName: p.fullName,
+      pix: pixByIspb.get(p.ispb)?.pix ?? null,
+    });
+  }
+  for (const p of pixParticipants) {
+    if (seen.has(p.ispb)) continue;
+    seen.add(p.ispb);
+    merged.push({
+      ispb: p.ispb,
+      compe: null,
+      compe4: null,
+      shortName: p.shortName,
+      fullName: p.shortName,
+      pix: p.pix,
+    });
+  }
+  return merged;
 }

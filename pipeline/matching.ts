@@ -9,6 +9,7 @@
 
 import { jaccard, tokenize } from './text';
 import type {
+  BackboneParticipant,
   DirectoryIndex,
   DirectoryOrganisation,
   DirectoryServer,
@@ -16,7 +17,6 @@ import type {
   NameSuggestion,
   PipelineConfig,
   RawOrganisation,
-  StrParticipant,
 } from './types';
 
 /** Indexes directory organisations that have at least one usable logo. */
@@ -77,7 +77,7 @@ export function indexDirectory(
  */
 export function pickOrganisation(
   candidates: DirectoryOrganisation[],
-  participant: StrParticipant,
+  participant: BackboneParticipant,
 ): DirectoryOrganisation {
   const target = tokenize(`${participant.fullName} ${participant.shortName}`);
   const sorted = [...candidates].sort((a, b) => {
@@ -105,7 +105,7 @@ export function pickOrganisation(
  */
 export function pickServer(
   org: DirectoryOrganisation,
-  participant: StrParticipant,
+  participant: BackboneParticipant,
 ): DirectoryServer {
   const target = tokenize(`${participant.shortName} ${participant.fullName}`);
   const uriFrequency = new Map<string, number>();
@@ -129,7 +129,7 @@ export function pickServer(
 
 function bestByName(
   index: DirectoryIndex,
-  participant: StrParticipant,
+  participant: BackboneParticipant,
   threshold: number,
 ): { org: DirectoryOrganisation; score: number } | null {
   const target = tokenize(`${participant.shortName} ${participant.fullName}`);
@@ -163,7 +163,7 @@ export function buildMatches({
   config,
   overrides,
 }: {
-  participants: StrParticipant[];
+  participants: BackboneParticipant[];
   directory: RawOrganisation[];
   config: PipelineConfig;
   overrides: Map<string, string>;
@@ -189,6 +189,7 @@ export function buildMatches({
       compe4: participant.compe4,
       shortName: participant.shortName,
       fullName: participant.fullName,
+      pix: participant.pix,
     };
 
     if (overrides.has(ispb)) {

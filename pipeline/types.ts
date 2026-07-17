@@ -17,6 +17,43 @@ export interface StrParticipant {
   fullName: string;
 }
 
+/**
+ * Pix participation attributes, verbatim from the Central Bank's daily
+ * "participantes ativos do Pix" CSV (values kept in Portuguese as published).
+ */
+export interface PixInfo {
+  /** "Direta" | "Indireta" — participation in the SPI settlement system. */
+  spiParticipationType: string;
+  /** "Obrigatória" | "Facultativa". */
+  pixParticipationType: string;
+  /** e.g. "Provedor de Conta Transacional", "Iniciador". */
+  modality: string;
+  institutionType: string;
+  authorizedByBcb: boolean;
+}
+
+/** One row of the active section of the Pix participants CSV. */
+export interface PixParticipant {
+  /** 8-digit ISPB, zero-padded. */
+  ispb: string;
+  shortName: string;
+  /** 14-digit CNPJ, zero-padded. */
+  cnpj: string;
+  pix: PixInfo;
+}
+
+/** Merged backbone entry: STR (COMPE) ∪ Pix participants, keyed by ISPB. */
+export interface BackboneParticipant {
+  ispb: string;
+  /** null for Pix-only institutions (no COMPE number). */
+  compe: string | null;
+  compe4: string | null;
+  shortName: string;
+  fullName: string;
+  /** null for institutions that are not active Pix participants. */
+  pix: PixInfo | null;
+}
+
 /** Raw organisation as returned by the Open Finance Brasil participants directory. */
 export interface RawOrganisation {
   Status?: string;
@@ -80,10 +117,11 @@ export type MatchSource = 'override' | 'forced-uri' | 'forced-match' | 'ispb';
 
 export interface MatchEntry {
   ispb: string;
-  compe: string;
-  compe4: string;
+  compe: string | null;
+  compe4: string | null;
   shortName: string;
   fullName: string;
+  pix?: PixInfo | null;
   source: MatchSource | null;
   /** Logo URL when source is directory/forced-uri based; null for overrides. */
   uri: string | null;
@@ -93,7 +131,7 @@ export interface MatchEntry {
 
 export interface NameSuggestion {
   ispb: string;
-  compe4: string;
+  compe4: string | null;
   strName: string;
   orgName: string;
   cnpj: string;
@@ -102,7 +140,7 @@ export interface NameSuggestion {
 }
 
 export interface ManifestEntry {
-  compe4: string;
+  compe4: string | null;
   org: string | null;
   cnpj: string | null;
   uri: string;
@@ -132,10 +170,13 @@ export interface BankLogo {
 
 export interface Bank {
   ispb: string;
-  compe: string;
-  compe4: string;
+  /** null for Pix-only institutions (no COMPE number). */
+  compe: string | null;
+  compe4: string | null;
   name: string;
   shortName: string;
+  /** Pix participation attributes; null when not an active Pix participant. */
+  pix: PixInfo | null;
   logo: BankLogo | null;
 }
 

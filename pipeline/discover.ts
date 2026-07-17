@@ -385,10 +385,10 @@ async function main(): Promise<void> {
       continue;
     }
     if (bank.logo) {
-      skippedWithLogo.push(bank.compe4);
+      skippedWithLogo.push(bank.compe4 ?? bank.ispb);
       continue;
     }
-    if (only && !only.has(bank.compe4) && !only.has(bank.ispb)) continue;
+    if (only && !(bank.compe4 !== null && only.has(bank.compe4)) && !only.has(bank.ispb)) continue;
     targets.push({ bank, site });
   }
 
@@ -399,7 +399,7 @@ async function main(): Promise<void> {
     const probe = await probeSite(site);
     const result: SiteResult = {
       ispb: bank.ispb,
-      compe4: bank.compe4,
+      compe4: bank.compe4 ?? bank.ispb,
       name: bank.shortName || bank.name,
       site,
       ...probe,

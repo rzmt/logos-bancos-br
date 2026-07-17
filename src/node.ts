@@ -39,6 +39,8 @@ export interface CopyLogosOptions {
 export interface CopyLogosResult {
   copied: string[];
   skippedNoSvg: string[];
+  /** ISPBs skipped in `by: "compe"` mode because the institution has no COMPE. */
+  skippedNoCompe: string[];
 }
 
 /** Copies shipped logos into a project directory, named by COMPE or ISPB. */
@@ -60,11 +62,18 @@ export function copyLogos({
   mkdirSync(dest, { recursive: true });
   const copied: string[] = [];
   const skippedNoSvg: string[] = [];
+  const skippedNoCompe: string[] = [];
 
   for (const bank of banks()) {
     if (!bank.logo) continue;
-    if (filter && !filter.has(bank.compe4) && !filter.has(bank.ispb)) continue;
-    const baseName = by === 'ispb' ? bank.ispb : bank.compe4;
+    if (filter && !(bank.compe4 !== null && filter.has(bank.compe4)) && !filter.has(bank.ispb)) {
+      continue;
+    }
+    if (by === 'compe' && !bank.compe4) {
+      skippedNoCompe.push(bank.ispb);
+      continue;
+    }
+    const baseName = by === 'ispb' ? bank.ispb : (bank.compe4 as string);
 
     if (format === 'png' || format === 'both') {
       const source = packagePath(bank.logo.png);
@@ -83,10 +92,10 @@ export function copyLogos({
           copied.push(target);
         }
       } else {
-        skippedNoSvg.push(bank.compe4);
+        skippedNoSvg.push(bank.compe4 ?? bank.ispb);
       }
     }
   }
 
-  return { copied, skippedNoSvg };
+  return { copied, skippedNoSvg, skippedNoCompe };
 }

@@ -307,6 +307,11 @@ export const logos = {
   '31680151': require('./logos/png/31680151.png'),
   '0793': require('./logos/png/61021673.png'),
   '61021673': require('./logos/png/61021673.png'),
+  '01722480': require('./logos/png/01722480.png'),
+  '03130170': require('./logos/png/03130170.png'),
+  '11275560': require('./logos/png/11275560.png'),
+  '38372267': require('./logos/png/38372267.png'),
+  '60779196': require('./logos/png/60779196.png'),
 };
 
 export default logos;

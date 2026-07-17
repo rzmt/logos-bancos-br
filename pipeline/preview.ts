@@ -35,7 +35,7 @@ export function buildPreviewMarkdown(dataset: Dataset): string {
           : 'Override manual';
     const name = escapeCell(bank.shortName || bank.name);
     lines.push(
-      `| <img src="${logo.png}" width="40" alt="${name}"> | ${bank.compe4} | ${bank.ispb} | ${name} | ${sourceLabel} |`,
+      `| <img src="${logo.png}" width="40" alt="${name}"> | ${bank.compe4 ?? '—'} | ${bank.ispb} | ${name} | ${sourceLabel} |`,
     );
   }
 
@@ -46,7 +46,7 @@ export function buildPreviewMarkdown(dataset: Dataset): string {
   );
   for (const bank of withoutLogo) {
     lines.push(
-      `- \`${bank.compe4}\` ${escapeCell(bank.shortName || bank.name)} (ISPB ${bank.ispb})`,
+      `- \`${bank.compe4 ?? '——'}\` ${escapeCell(bank.shortName || bank.name)} (ISPB ${bank.ispb})`,
     );
   }
   lines.push('', '</details>', '');
