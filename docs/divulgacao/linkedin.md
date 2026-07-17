@@ -1,21 +1,19 @@
-# [RASCUNHO — LinkedIn]
+<!-- Onde postar: LinkedIn (post pessoal). Copiar do primeiro parágrafo para baixo. -->
 
-Publiquei um projeto open source que resolve um problema chato de todo app financeiro brasileiro: **exibir a lista e os logos das instituições do Pix sem manter nada à mão**.
+Publiquei um projeto open source que resolve um problema recorrente em apps financeiros no Brasil: exibir o nome e o logo da instituição do outro lado de um Pix ou TED — sem manter lista nenhuma manualmente.
 
-📦 logos-bancos-br → github.com/rzmt/logos-bancos-br
+O logos-bancos-br deriva tudo de três fontes públicas e oficiais: as listas de participantes do STR e do Pix, ambas do Banco Central, e o diretório de participantes do Open Finance Brasil, onde cada instituição publica o próprio logo. São 1.113 instituições (470 com código de banco + 643 só-Pix, em datasets separados) e 473 delas com logo — em apenas 160 arquivos, porque cooperativas afiliadas compartilham o asset do sistema em vez de ganhar cópia própria.
 
-O diferencial não é o "o quê", é o "de onde":
+Duas decisões de que mais me orgulho:
 
-🏦 **1.113 instituições** — das listas oficiais de participantes do STR e do Pix (Banco Central), em dois conjuntos: lista principal (COMPE) e instituições só-Pix, separadas de propósito
-🎨 **473 logos em ~160 arquivos** — Open Finance Brasil + sites oficiais curados; afiliadas de sistemas cooperativos compartilham o asset da marca
-🔍 **Proveniência por logo** — URI de origem, SHA-256 e data no dataset; o diff do git é a auditoria
-🤖 **Atualização semanal automática** — GitHub Action reconstrói tudo das fontes e abre PR com diff visual; nada entra sem revisão humana
-🧩 **Qualquer stack** — API TypeScript, mapa React Native, CLI para copiar assets (Flutter, Kotlin, Swift...), CDN e JSON puro
+— Logo errado é pior que logo nenhum: match automático só por identificador oficial (ISPB); semelhança de nome vira sugestão para revisão humana, nunca decisão.
+— Proveniência por logo: o dataset registra a URI de origem, o SHA-256 e a data de cada arquivo. Um GitHub Action refaz tudo toda segunda e abre PR com o diff visual.
 
-Regra de ouro do projeto: em contexto bancário, logo errado é pior que logo nenhum. Match automático só por identificador oficial (ISPB); semelhança de nome vira sugestão para revisão humana, nunca decisão.
+Funciona em qualquer stack: API TypeScript, mapa pronto para React Native, CLI que copia os assets para projetos Flutter/Kotlin/Swift, CDN e o JSON puro.
 
 npm install logos-bancos-br
+https://github.com/rzmt/logos-bancos-br
 
-Feedback e contribuições são muito bem-vindos — especialmente de quem constrói apps de pagamento. 🙌
+Feedback é muito bem-vindo — em especial de quem constrói produtos de pagamento.
 
-#opensource #pix #openfinance #fintech #typescript
+#opensource #pix #openfinance #typescript
