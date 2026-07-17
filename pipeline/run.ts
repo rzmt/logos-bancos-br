@@ -19,6 +19,7 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSy
 import { basename, dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+import { withConcurrency } from './concurrency';
 import { buildDataset, toDatasetJson } from './dataset';
 import { downloadLogo, isSafeSvg, looksLikeSvg, rasterize, sha256, writeIfChanged } from './images';
 import { buildMatches } from './matching';
@@ -102,21 +103,6 @@ function dirSizeBytes(dir: string): number {
 
 function kb(bytes: number): string {
   return `${(bytes / 1024).toFixed(1)} KB`;
-}
-
-async function withConcurrency<T>(
-  items: T[],
-  limit: number,
-  fn: (item: T) => Promise<void>,
-): Promise<void> {
-  let index = 0;
-  const workers = Array.from({ length: Math.max(1, Math.min(limit, items.length)) }, async () => {
-    while (index < items.length) {
-      const i = index++;
-      await fn(items[i] as T);
-    }
-  });
-  await Promise.all(workers);
 }
 
 interface Failure {

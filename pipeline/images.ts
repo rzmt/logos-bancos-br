@@ -17,7 +17,7 @@ import sharp from 'sharp';
  * the institutions in a public directory precisely for third-party display,
  * so avoiding the false positive is legitimate.
  */
-const BROWSER_USER_AGENT =
+export const BROWSER_USER_AGENT =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36';
 
 export function sha256(buffer: Buffer): string {

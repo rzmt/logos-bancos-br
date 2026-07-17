@@ -74,6 +74,7 @@
     "lint": "biome check .",
     "lint:fix": "biome check --write .",
     "pipeline": "tsx pipeline/run.ts",
+    "discover": "tsx pipeline/discover.ts",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {

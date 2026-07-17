@@ -1,0 +1,9 @@
+{
+  "$comment": "Sites oficiais das instituições SEM logo no Open Finance, preenchidos à mão (em dúvida sobre o domínio, fique de fora). Usado por `npm run discover` para descobrir candidatos de ícone — nada é publicado sem revisão humana; aprovados viram forcedUris em config.json.",
+  "62232889": "https://www.daycoval.com.br",
+  "28195667": "https://www.abcbrasil.com.br",
+  "92894922": "https://www.original.com.br",
+  "71027866": "https://www.bancobs2.com.br",
+  "62144175": "https://www.pine.com",
+  "07679404": "https://www.bancotopazio.com.br"
+}

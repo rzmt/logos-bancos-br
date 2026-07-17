@@ -7,3 +7,7 @@ coverage/
 
 # Gerado a cada rodada do pipeline; vira corpo do PR automático, não precisa ser versionado.
 pipeline/report.md
+
+# Saídas da ferramenta de descoberta de ícones (npm run discover) — material de curadoria.
+pipeline/discovery-report.md
+pipeline/discovery-sheet.png
