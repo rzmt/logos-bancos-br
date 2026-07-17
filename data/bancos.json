@@ -1,0 +1,4941 @@
+{
+  "banks": [
+    {
+      "ispb": "00000000",
+      "compe": "001",
+      "compe4": "0001",
+      "name": "Banco do Brasil S.A.",
+      "shortName": "BCO DO BRASIL S.A.",
+      "logo": {
+        "png": "logos/png/00000000.png",
+        "svg": "logos/svg/00000000.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BANCO DO BRASIL S.A.",
+          "cnpj": "00000000000191",
+          "uri": "https://www.bb.com.br/docs/pub/inst/img/LogoBB.svg",
+          "sha256": "8bd7640e0e08e49cc00d3b4b901a44add88a1a3e9539b8cd71c8f04692d88caa",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "04902979",
+      "compe": "003",
+      "compe4": "0003",
+      "name": "BANCO DA AMAZONIA S.A.",
+      "shortName": "BCO DA AMAZONIA S.A.",
+      "logo": {
+        "png": "logos/png/04902979.png",
+        "svg": "logos/svg/04902979.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO DA AMAZONIA S.A.",
+          "cnpj": "04902979000144",
+          "uri": "https://d1rb2uej4kk1a4.cloudfront.net/bancoamazonia/Logo_SVG_2025_06db299653.svg",
+          "sha256": "5d9e4d900c763711fe04309b52bbb574927661315b9546751a80ba8f037cce03",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "07237373",
+      "compe": "004",
+      "compe4": "0004",
+      "name": "Banco do Nordeste do Brasil S.A.",
+      "shortName": "BCO DO NORDESTE DO BRASIL S.A.",
+      "logo": {
+        "png": "logos/png/07237373.png",
+        "svg": "logos/svg/07237373.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO DO NORDESTE DO BRASIL S.A.",
+          "cnpj": "07237373000120",
+          "uri": "https://consentimento.openfinance.bnb.gov.br/logo_bnb.svg",
+          "sha256": "62b3a221a45c950a008f798a2ebed4d9e5e1df1365f24ca4f8095118d1b4a16e",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "33657248",
+      "compe": "007",
+      "compe4": "0007",
+      "name": "BANCO NACIONAL DE DESENVOLVIMENTO ECONOMICO E SOCIAL",
+      "shortName": "BNDES",
+      "logo": null
+    },
+    {
+      "ispb": "81723108",
+      "compe": "010",
+      "compe4": "0010",
+      "name": "CREDICOAMO CREDITO RURAL COOPERATIVA",
+      "shortName": "CREDICOAMO",
+      "logo": null
+    },
+    {
+      "ispb": "61809182",
+      "compe": "011",
+      "compe4": "0011",
+      "name": "UBS (BRASIL) CORRETORA DE VALORES S.A.",
+      "shortName": "UBS (BRASIL) CORRETORA DE VALORES S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "04866275",
+      "compe": "012",
+      "compe4": "0012",
+      "name": "Banco Inbursa S.A.",
+      "shortName": "BANCO INBURSA",
+      "logo": null
+    },
+    {
+      "ispb": "09274232",
+      "compe": "014",
+      "compe4": "0014",
+      "name": "STATE STREET BRASIL S.A. - BANCO COMERCIAL",
+      "shortName": "STATE STREET BR S.A. BCO COMERCIAL",
+      "logo": null
+    },
+    {
+      "ispb": "02819125",
+      "compe": "015",
+      "compe4": "0015",
+      "name": "UBS BB CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "shortName": "UBS BB CCTVM S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "04715685",
+      "compe": "016",
+      "compe4": "0016",
+      "name": "COOPERATIVA DE CRÉDITO MÚTUO DOS DESPACHANTES DE TRÂNSITO DE SANTA CATARINA E RIO GRANDE DO SUL - SICOOB CREDITRAN",
+      "shortName": "CCM DESP TRÂNS SC E RS",
+      "logo": null
+    },
+    {
+      "ispb": "42272526",
+      "compe": "017",
+      "compe4": "0017",
+      "name": "BNY Mellon Banco S.A.",
+      "shortName": "BNY MELLON BCO S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "57839805",
+      "compe": "018",
+      "compe4": "0018",
+      "name": "Banco Tricury S.A.",
+      "shortName": "BCO TRICURY S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "28127603",
+      "compe": "021",
+      "compe4": "0021",
+      "name": "BANESTES S.A. BANCO DO ESTADO DO ESPIRITO SANTO",
+      "shortName": "BCO BANESTES S.A.",
+      "logo": {
+        "png": "logos/png/28127603.png",
+        "svg": "logos/svg/28127603.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO BANESTES S.A.",
+          "cnpj": "28127603000178",
+          "uri": "https://cdn.banestes.b.br/openbanking/img/logo_centralizada.svg",
+          "sha256": "011b293dd99bc4488d61ec98eae5d11ed7dfe0043d09e2f45b7b34044ca496ae",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "53720128",
+      "compe": "023",
+      "compe4": "0023",
+      "name": "CONTA SIMPLES SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "CONTA SIMPLES SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "10866788",
+      "compe": "024",
+      "compe4": "0024",
+      "name": "Banco Bandepe S.A.",
+      "shortName": "BCO BANDEPE S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "03323840",
+      "compe": "025",
+      "compe4": "0025",
+      "name": "Banco Alfa S.A.",
+      "shortName": "BCO ALFA S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "90400888",
+      "compe": "033",
+      "compe4": "0033",
+      "name": "BANCO SANTANDER (BRASIL) S.A.",
+      "shortName": "BCO SANTANDER (BRASIL) S.A.",
+      "logo": {
+        "png": "logos/png/90400888.png",
+        "svg": "logos/svg/90400888.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO SANTANDER (BRASIL) S.A.",
+          "cnpj": "90400888000142",
+          "uri": "https://cms.santander.com.br/sites/WPS/imagem/santander_chama/23-10-31_194829_P_santander_chama.svg",
+          "sha256": "3db65acca8651f09096f81c004513586b3b22075041afe7e29df16f658b7d766",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "06271464",
+      "compe": "036",
+      "compe4": "0036",
+      "name": "Banco Bradesco BBI S.A.",
+      "shortName": "BCO BBI S.A.",
+      "logo": {
+        "png": "logos/png/06271464.png",
+        "svg": "logos/svg/06271464.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BANCO BRADESCO SA",
+          "cnpj": "60746948000112",
+          "uri": "https://banco.bradesco/open-finance/logo/icones_vetorial-pf.svg",
+          "sha256": "eab31731175c5229512016c2cdf98f38affecb891c217bbe6ea6b83e4c5bdb38",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "04913711",
+      "compe": "037",
+      "compe4": "0037",
+      "name": "Banco do Estado do Pará S.A.",
+      "shortName": "BCO DO EST. DO PA S.A.",
+      "logo": {
+        "png": "logos/png/04913711.png",
+        "svg": "logos/svg/04913711.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO DO EST. DO PA S.A.",
+          "cnpj": "04913711000108",
+          "uri": "https://www.banpara.b.br/PortalImagens/52jlv5s3/logobanparaos5415-01.svg",
+          "sha256": "dd85c7e5970c715f30784e8d2525592b7e06b094acfb42e5e9096d1fa8ecd848",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "03609817",
+      "compe": "040",
+      "compe4": "0040",
+      "name": "Banco Cargill S.A.",
+      "shortName": "BCO CARGILL S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "92702067",
+      "compe": "041",
+      "compe4": "0041",
+      "name": "Banco do Estado do Rio Grande do Sul S.A.",
+      "shortName": "BCO DO ESTADO DO RS S.A.",
+      "logo": {
+        "png": "logos/png/92702067.png",
+        "svg": "logos/svg/92702067.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO DO ESTADO DO RS S.A.",
+          "cnpj": "92702067000196",
+          "uri": "https://banrisul.com.br/bob/data/Simbolo-Banrisul.svg",
+          "sha256": "e6568098371a05f49599e45741b57da407cc27271525fa436cfef776090da87d",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "13009717",
+      "compe": "047",
+      "compe4": "0047",
+      "name": "Banco do Estado de Sergipe S.A.",
+      "shortName": "BCO DO EST. DE SE S.A.",
+      "logo": {
+        "png": "logos/png/13009717.png",
+        "svg": "logos/svg/13009717.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO DO EST. DE SE S.A.",
+          "cnpj": "13009717000146",
+          "uri": "https://consentimento.openbanking.banese.com.br/assets/logo_banese.svg",
+          "sha256": "e844d975ad6f7e7b7c02eff9056257f6c0b1dd2d52a130a44fb9479f588a285b",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "04913129",
+      "compe": "060",
+      "compe4": "0060",
+      "name": "CONFIDENCE SOCIEDADE CORRETORA DE CAMBIO S.A.",
+      "shortName": "CONFIDENCE CC S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "04184779",
+      "compe": "063",
+      "compe4": "0063",
+      "name": "Banco Bradescard S.A.",
+      "shortName": "BANCO BRADESCARD",
+      "logo": {
+        "png": "logos/png/04184779.png",
+        "svg": "logos/svg/04184779.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BANCO BRADESCARD",
+          "cnpj": "04184779000101",
+          "uri": "https://banco.bradesco/open-finance/logo/icones_vetorial-pf.svg",
+          "sha256": "eab31731175c5229512016c2cdf98f38affecb891c217bbe6ea6b83e4c5bdb38",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "04332281",
+      "compe": "064",
+      "compe4": "0064",
+      "name": "GOLDMAN SACHS DO BRASIL BANCO MULTIPLO S.A.",
+      "shortName": "GOLDMAN SACHS DO BRASIL BM S.A",
+      "logo": null
+    },
+    {
+      "ispb": "48795256",
+      "compe": "065",
+      "compe4": "0065",
+      "name": "Banco AndBank (Brasil) S.A.",
+      "shortName": "BCO ANDBANK S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "02801938",
+      "compe": "066",
+      "compe4": "0066",
+      "name": "BANCO MORGAN STANLEY S.A.",
+      "shortName": "BCO MORGAN STANLEY S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "61033106",
+      "compe": "069",
+      "compe4": "0069",
+      "name": "Banco Crefisa S.A.",
+      "shortName": "BCO CREFISA S.A.",
+      "logo": {
+        "png": "logos/png/61033106.png",
+        "svg": "logos/svg/61033106.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO CREFISA S.A.",
+          "cnpj": "61033106000186",
+          "uri": "https://www.crefisa.com.br/wp-content/uploads/2019/05/Logo.svg",
+          "sha256": "6d1f7f70293767ef1c60c4ad7bba6d730e91a72780a8ecc44d2894d00f04ac12",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "00000208",
+      "compe": "070",
+      "compe4": "0070",
+      "name": "BRB - BANCO DE BRASILIA S.A.",
+      "shortName": "BRB - BCO DE BRASILIA S.A.",
+      "logo": {
+        "png": "logos/png/00000208.png",
+        "svg": "logos/svg/00000208.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BRB - BCO DE BRASILIA S.A.",
+          "cnpj": "00000208000100",
+          "uri": "https://novo.brb.com.br/wp-content/uploads/2025/07/brb-preto-1.svg",
+          "sha256": "72483b9add352f24a77641fd97cc836212e32b3d244cd1523b150da4847df918",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "03017677",
+      "compe": "074",
+      "compe4": "0074",
+      "name": "Banco J. Safra S.A.",
+      "shortName": "BCO. J.SAFRA S.A.",
+      "logo": {
+        "png": "logos/png/03017677.png",
+        "svg": "logos/svg/03017677.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO SAFRA S.A.",
+          "cnpj": "58160789000128",
+          "uri": "https://www.safra.com.br/shared/assets/img/safra-of.svg",
+          "sha256": "9c25f4839fe8a258db6c0a59f192120f97f5ef49830f3db05ebd6cac82e02e50",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "03532415",
+      "compe": "075",
+      "compe4": "0075",
+      "name": "BANCO ABN AMRO CLEARING S.A.",
+      "shortName": "BANCO ABN AMRO CLEARING S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "07656500",
+      "compe": "076",
+      "compe4": "0076",
+      "name": "Banco KDB do Brasil S.A.",
+      "shortName": "BCO KDB BRASIL S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "00416968",
+      "compe": "077",
+      "compe4": "0077",
+      "name": "Banco Inter S.A.",
+      "shortName": "BANCO INTER",
+      "logo": {
+        "png": "logos/png/00416968.png",
+        "svg": "logos/svg/00416968.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BANCO INTER",
+          "cnpj": "00416968000101",
+          "uri": "https://marketing.bancointer.com.br/arquivos/images/app-icon.svg",
+          "sha256": "09b8e88439fd0106deef4eb448fea00d127e1a7dd592b5baa76fea07b226c128",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "34111187",
+      "compe": "078",
+      "compe4": "0078",
+      "name": "Haitong Banco de Investimento do Brasil S.A.",
+      "shortName": "HAITONG BI DO BRASIL S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "09516419",
+      "compe": "079",
+      "compe4": "0079",
+      "name": "PICPAY BANK - BANCO MÚLTIPLO S.A",
+      "shortName": "PICPAY BANK - BANCO MÚLTIPLO S.A",
+      "logo": {
+        "png": "logos/png/09516419.png",
+        "svg": "logos/svg/09516419.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "PICPAY",
+          "cnpj": "22896431000110",
+          "uri": "https://picpay.s3.sa-east-1.amazonaws.com/openbanking/picpay-logo-icon-pf.svg",
+          "sha256": "5dda49002fc6d9b323a30d88afd7e9ba5b54982dc5ffcf630364aa94bfcf43b8",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "73622748",
+      "compe": "080",
+      "compe4": "0080",
+      "name": "BT CORRETORA DE CÂMBIO LTDA.",
+      "shortName": "BT CC LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "10264663",
+      "compe": "081",
+      "compe4": "0081",
+      "name": "BancoSeguro S.A.",
+      "shortName": "BANCOSEGURO S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "07679404",
+      "compe": "082",
+      "compe4": "0082",
+      "name": "BANCO TOPÁZIO S.A.",
+      "shortName": "BANCO TOPÁZIO S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "10690848",
+      "compe": "083",
+      "compe4": "0083",
+      "name": "Banco da China Brasil S.A.",
+      "shortName": "BCO DA CHINA BRASIL S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "02398976",
+      "compe": "084",
+      "compe4": "0084",
+      "name": "SISPRIME DO BRASIL - COOPERATIVA DE CRÉDITO",
+      "shortName": "SISPRIME DO BRASIL - COOP",
+      "logo": {
+        "png": "logos/png/02398976.png",
+        "svg": "logos/svg/02398976.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "SISPRIME DO BRASIL - COOPERATIVA DE CREDITO",
+          "cnpj": "02398976000190",
+          "uri": "https://www.sisprimedobrasil.com.br/arquivos/logo-sisprime.svg",
+          "sha256": "c18a4a8e1d2ac4ebf5e45b5c43c3aee5eac2919e46f5f7d3e69adfadb8a85e53",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "05463212",
+      "compe": "085",
+      "compe4": "0085",
+      "name": "Cooperativa Central de Crédito - Ailos",
+      "shortName": "COOPCENTRAL AILOS",
+      "logo": {
+        "png": "logos/png/05463212.png",
+        "svg": "logos/svg/05463212.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "CENTRAL AILOS",
+          "cnpj": "05463212000129",
+          "uri": "https://www.ailos.coop.br/wp-content/uploads/2023/06/Logos_512x512px_Ailos.svg",
+          "sha256": "ca043b92fd666a4f4ec01162b8eaec0b96eb69d599e477b73fa2ba9fe8f83664",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "11476673",
+      "compe": "088",
+      "compe4": "0088",
+      "name": "BANCO RANDON S.A.",
+      "shortName": "BANCO RANDON S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "62109566",
+      "compe": "089",
+      "compe4": "0089",
+      "name": "CREDISAN COOPERATIVA DE CRÉDITO",
+      "shortName": "CREDISAN CC",
+      "logo": null
+    },
+    {
+      "ispb": "07945233",
+      "compe": "093",
+      "compe4": "0093",
+      "name": "PÓLOCRED   SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E À EMPRESA DE PEQUENO PORTE LTDA.",
+      "shortName": "POLOCRED SCMEPP LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "11758741",
+      "compe": "094",
+      "compe4": "0094",
+      "name": "Banco Finaxis S.A.",
+      "shortName": "BANCO FINAXIS",
+      "logo": null
+    },
+    {
+      "ispb": "11703662",
+      "compe": "095",
+      "compe4": "0095",
+      "name": "BANCO TRAVELEX S.A.",
+      "shortName": "BANCO TRAVELEX S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "00997185",
+      "compe": "096",
+      "compe4": "0096",
+      "name": "Banco B3 S.A.",
+      "shortName": "BCO B3 S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "04632856",
+      "compe": "097",
+      "compe4": "0097",
+      "name": "CREDISIS - CENTRAL DE COOPERATIVAS DE CRÉDITO",
+      "shortName": "CREDISIS - CENTRAL DE COOPERATIVAS DE CRÉDITO",
+      "logo": null
+    },
+    {
+      "ispb": "03046391",
+      "compe": "099",
+      "compe4": "0099",
+      "name": "UNIPRIME CENTRAL NACIONAL - CENTRAL NACIONAL DE COOPERATIVA DE CREDITO",
+      "shortName": "UNIPRIME COOPCENTRAL LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "00806535",
+      "compe": "100",
+      "compe4": "0100",
+      "name": "Planner Corretora de Valores S.A.",
+      "shortName": "PLANNER CV S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "62287735",
+      "compe": "101",
+      "compe4": "0101",
+      "name": "WARREN RENA DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA",
+      "shortName": "WARREN RENA DTVM",
+      "logo": null
+    },
+    {
+      "ispb": "02332886",
+      "compe": "102",
+      "compe4": "0102",
+      "name": "XP INVESTIMENTOS CORRETORA DE CÂMBIO,TÍTULOS E VALORES MOBILIÁRIOS S/A",
+      "shortName": "XP INVESTIMENTOS CCTVM S/A",
+      "logo": {
+        "png": "logos/png/02332886.png",
+        "svg": "logos/svg/02332886.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BANCO XP S.A.",
+          "cnpj": "33264668000103",
+          "uri": "https://openbanking-redirect.xpi.com.br/assets/xpi.svg",
+          "sha256": "7f75762e82f828eb401dbc27d38b2d57eda0b14d5662a89315bb756ade7b5566",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "00360305",
+      "compe": "104",
+      "compe4": "0104",
+      "name": "CAIXA ECONOMICA FEDERAL",
+      "shortName": "CAIXA ECONOMICA FEDERAL",
+      "logo": {
+        "png": "logos/png/00360305.png",
+        "svg": "logos/svg/00360305.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "CAIXA ECONOMICA FEDERAL",
+          "cnpj": "00360305000104",
+          "uri": "https://consentimento.openbanking.caixa.gov.br/assets/images/logomarca_caixa.svg",
+          "sha256": "3073827b49f87a32f69c93d8008583a1af2f2498b873eabd9f9d64d130c70dfd",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "07652226",
+      "compe": "105",
+      "compe4": "0105",
+      "name": "Lecca Crédito, Financiamento e Investimento S/A",
+      "shortName": "LECCA CFI S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "15114366",
+      "compe": "107",
+      "compe4": "0107",
+      "name": "Banco Bocom BBM S.A.",
+      "shortName": "BCO BOCOM BBM S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "36113876",
+      "compe": "111",
+      "compe4": "0111",
+      "name": "OLIVEIRA TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIARIOS S.A.",
+      "shortName": "OLIVEIRA TRUST DTVM S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "61723847",
+      "compe": "113",
+      "compe4": "0113",
+      "name": "NEON CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "shortName": "NEON CTVM S.A.",
+      "logo": {
+        "png": "logos/png/61723847.png",
+        "svg": "logos/svg/61723847.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "Neon Pagamentos",
+          "cnpj": "20855875000182",
+          "uri": "https://opbk-brasil.s3.sa-east-1.amazonaws.com/neon/logo.svg",
+          "sha256": "6fcb82100b54c355d8d0ca7e67ac577091cf15c9e92733cfa4a5a34bd1668a7b",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "13720915",
+      "compe": "119",
+      "compe4": "0119",
+      "name": "Banco Western Union do Brasil S.A.",
+      "shortName": "BCO WESTERN UNION",
+      "logo": null
+    },
+    {
+      "ispb": "33603457",
+      "compe": "120",
+      "compe4": "0120",
+      "name": "BANCO RODOBENS S.A.",
+      "shortName": "BCO RODOBENS S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "10664513",
+      "compe": "121",
+      "compe4": "0121",
+      "name": "Banco Agibank S.A.",
+      "shortName": "BCO AGIBANK S.A.",
+      "logo": {
+        "png": "logos/png/10664513.png",
+        "svg": "logos/svg/10664513.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO AGIBANK S.A.",
+          "cnpj": "10664513000150",
+          "uri": "https://agibank.com.br/logo.svg",
+          "sha256": "e69032229fdc5d5b74321812ffa29a0cdcecd768ee736fdfff85e2609654eefa",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "33147315",
+      "compe": "122",
+      "compe4": "0122",
+      "name": "Banco Bradesco BERJ S.A.",
+      "shortName": "BCO BRADESCO BERJ S.A.",
+      "logo": {
+        "png": "logos/png/33147315.png",
+        "svg": "logos/svg/33147315.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BANCO BRADESCO SA",
+          "cnpj": "60746948000112",
+          "uri": "https://banco.bradesco/open-finance/logo/icones_vetorial-pf.svg",
+          "sha256": "eab31731175c5229512016c2cdf98f38affecb891c217bbe6ea6b83e4c5bdb38",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "15357060",
+      "compe": "124",
+      "compe4": "0124",
+      "name": "Banco Woori Bank do Brasil S.A.",
+      "shortName": "BCO WOORI BANK DO BRASIL S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "45246410",
+      "compe": "125",
+      "compe4": "0125",
+      "name": "BANCO GENIAL S.A.",
+      "shortName": "BANCO GENIAL",
+      "logo": {
+        "png": "logos/png/45246410.png",
+        "svg": "logos/svg/45246410.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BANCO GENIAL S.A.",
+          "cnpj": "45246410000155",
+          "uri": "https://media-genial-cms.genialinvestimentos.com.br/wp-content/uploads/2021/08/20161050/logo-genial.svg",
+          "sha256": "e67e2bb3fab72c3165471ad1c44884775a7588177febcbaa7d343062fb567533",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "13220493",
+      "compe": "126",
+      "compe4": "0126",
+      "name": "BR Partners Banco de Investimento S.A.",
+      "shortName": "BR PARTNERS BI",
+      "logo": null
+    },
+    {
+      "ispb": "09512542",
+      "compe": "127",
+      "compe4": "0127",
+      "name": "Codepe Corretora de Valores e Câmbio S.A.",
+      "shortName": "CODEPE CVC S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "19307785",
+      "compe": "128",
+      "compe4": "0128",
+      "name": "BRAZA BANK S.A. BANCO DE CÂMBIO",
+      "shortName": "BRAZA BANK S.A. BCO DE CÂMBIO",
+      "logo": null
+    },
+    {
+      "ispb": "18520834",
+      "compe": "129",
+      "compe4": "0129",
+      "name": "UBS BB BANCO DE INVESTIMENTO S.A.",
+      "shortName": "UBS BB BI S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "09313766",
+      "compe": "130",
+      "compe4": "0130",
+      "name": "CARUANA S.A. - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+      "shortName": "CARUANA SCFI",
+      "logo": null
+    },
+    {
+      "ispb": "61747085",
+      "compe": "131",
+      "compe4": "0131",
+      "name": "TULLETT PREBON BRASIL CORRETORA DE VALORES E CÂMBIO LTDA",
+      "shortName": "TULLETT PREBON BRASIL CVC LTDA",
+      "logo": null
+    },
+    {
+      "ispb": "17453575",
+      "compe": "132",
+      "compe4": "0132",
+      "name": "ICBC do Brasil Banco Múltiplo S.A.",
+      "shortName": "ICBC DO BRASIL BM S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "10398952",
+      "compe": "133",
+      "compe4": "0133",
+      "name": "CONFEDERAÇÃO NACIONAL DAS COOPERATIVAS CENTRAIS DE CRÉDITO E ECONOMIA FAMILIAR E SOLIDÁRIA - CRESOL CONFEDERAÇÃO",
+      "shortName": "CRESOL CONFEDERAÇÃO",
+      "logo": {
+        "png": "logos/png/10398952.png",
+        "svg": "logos/svg/10398952.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "CRESOL CONFEDERAÇÃO",
+          "cnpj": "10398952000169",
+          "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
+          "sha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "33862244",
+      "compe": "134",
+      "compe4": "0134",
+      "name": "BGC LIQUIDEZ DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA",
+      "shortName": "BGC LIQUIDEZ DTVM LTDA",
+      "logo": null
+    },
+    {
+      "ispb": "00315557",
+      "compe": "136",
+      "compe4": "0136",
+      "name": "COOPERATIVA CENTRAL DE CRÉDITO UNICRED DO BRASIL - UNICRED DO BRASIL",
+      "shortName": "UNICRED DO BRASIL",
+      "logo": {
+        "png": "logos/png/00315557.png",
+        "svg": "logos/svg/00315557.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL",
+          "cnpj": "00315557000111",
+          "uri": "https://unicred.com.br/site/logo_unicred_vertical-margem90px.svg",
+          "sha256": "6a4f9713f091dcba81fb5a08c84168925f9bdf48fd6e2d1e1a939e3281922ec4",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "10853017",
+      "compe": "138",
+      "compe4": "0138",
+      "name": "GET MONEY SOCIEDADE CORRETORA DE CÂMBIO S.A.",
+      "shortName": "GET MONEY CC LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "55230916",
+      "compe": "139",
+      "compe4": "0139",
+      "name": "Intesa Sanpaolo Brasil S.A. - Banco Múltiplo",
+      "shortName": "INTESA SANPAOLO BRASIL S.A. BM",
+      "logo": null
+    },
+    {
+      "ispb": "62169875",
+      "compe": "140",
+      "compe4": "0140",
+      "name": "NU INVESTIMENTOS S.A. - CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS",
+      "shortName": "NU INVESTIMENTOS S.A. - CTVM",
+      "logo": {
+        "png": "logos/png/62169875.png",
+        "svg": "logos/svg/62169875.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "NU PAGAMENTOS S.A. - INSTITUICAO DE PAGAMENTO",
+          "cnpj": "18236120000158",
+          "uri": "https://nuapp.nubank.com.br/open-banking/logo.svg",
+          "sha256": "a4a63bd7d76bd7f3377335ae2a4c9d1f80d602f6a69fd5dba375f46d269272a6",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "09526594",
+      "compe": "141",
+      "compe4": "0141",
+      "name": "BANCO MASTER DE INVESTIMENTO S.A. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "shortName": "MASTER BI S.A. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "logo": null
+    },
+    {
+      "ispb": "16944141",
+      "compe": "142",
+      "compe4": "0142",
+      "name": "Broker Brasil Corretora de Câmbio Ltda.",
+      "shortName": "BROKER BRASIL CC LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "02992317",
+      "compe": "143",
+      "compe4": "0143",
+      "name": "INTEX BANK BANCO DE CÂMBIO S.A.",
+      "shortName": "INTEX BANK BCO DE CÂMBIO S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "13059145",
+      "compe": "144",
+      "compe4": "0144",
+      "name": "EBURY BANCO DE CÂMBIO S.A.",
+      "shortName": "EBURY BCO DE CÂMBIO S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "50579044",
+      "compe": "145",
+      "compe4": "0145",
+      "name": "LEVYCAM - CORRETORA DE CAMBIO E VALORES LTDA.",
+      "shortName": "LEVYCAM CCV LTDA",
+      "logo": null
+    },
+    {
+      "ispb": "24074692",
+      "compe": "146",
+      "compe4": "0146",
+      "name": "GUITTA CORRETORA DE CAMBIO LTDA.",
+      "shortName": "GUITTA CC LTDA",
+      "logo": null
+    },
+    {
+      "ispb": "15581638",
+      "compe": "149",
+      "compe4": "0149",
+      "name": "Facta Financeira S.A. - Crédito Financiamento e Investimento",
+      "shortName": "FACTA S.A. CFI",
+      "logo": null
+    },
+    {
+      "ispb": "09105360",
+      "compe": "157",
+      "compe4": "0157",
+      "name": "ICAP do Brasil Corretora de Títulos e Valores Mobiliários Ltda.",
+      "shortName": "ICAP DO BRASIL CTVM LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "05442029",
+      "compe": "159",
+      "compe4": "0159",
+      "name": "Casa do Crédito S.A. Sociedade de Crédito ao Microempreendedor",
+      "shortName": "CASA CREDITO S.A. SCM",
+      "logo": null
+    },
+    {
+      "ispb": "13486793",
+      "compe": "173",
+      "compe4": "0173",
+      "name": "BRL Trust Distribuidora de Títulos e Valores Mobiliários S.A.",
+      "shortName": "BRL TRUST DTVM SA",
+      "logo": null
+    },
+    {
+      "ispb": "43180355",
+      "compe": "174",
+      "compe4": "0174",
+      "name": "PEFISA S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+      "shortName": "PEFISA S.A. - C.F.I.",
+      "logo": {
+        "png": "logos/png/43180355.png",
+        "svg": "logos/svg/43180355.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "PEFISA S.A. - CFI",
+          "cnpj": "43180355000112",
+          "uri": "https://storage.googleapis.com/pnb-openbank-pefisa-prd/LOGO_PEFISA_Prancheta.svg",
+          "sha256": "a1d76e885ada88354da5c3162d90aae84c2bab28baca8da6bbeb2f50202e9f37",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "02685483",
+      "compe": "180",
+      "compe4": "0180",
+      "name": "CM CAPITAL MARKETS CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS LTDA",
+      "shortName": "CM CAPITAL MARKETS CCTVM LTDA",
+      "logo": null
+    },
+    {
+      "ispb": "09210106",
+      "compe": "183",
+      "compe4": "0183",
+      "name": "SOCRED S.A. - SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E À EMPRESA DE PEQUENO PORTE",
+      "shortName": "SOCRED SA - SCMEPP",
+      "logo": null
+    },
+    {
+      "ispb": "33775974",
+      "compe": "188",
+      "compe4": "0188",
+      "name": "ATIVA INVESTIMENTOS S.A. CORRETORA DE TÍTULOS, CÂMBIO E VALORES",
+      "shortName": "ATIVA S.A. INVESTIMENTOS CCTVM",
+      "logo": null
+    },
+    {
+      "ispb": "07512441",
+      "compe": "189",
+      "compe4": "0189",
+      "name": "HS FINANCEIRA S/A CREDITO, FINANCIAMENTO E INVESTIMENTOS",
+      "shortName": "HS FINANCEIRA",
+      "logo": null
+    },
+    {
+      "ispb": "03973814",
+      "compe": "190",
+      "compe4": "0190",
+      "name": "SERVICOOP - COOPERATIVA DE CRÉDITO DOS SERVIDORES PÚBLICOS ESTADUAIS E MUNICIPAIS DO RIO GRANDE DO SUL",
+      "shortName": "SERVICOOP",
+      "logo": null
+    },
+    {
+      "ispb": "04257795",
+      "compe": "191",
+      "compe4": "0191",
+      "name": "Nova Futura Corretora de Títulos e Valores Mobiliários Ltda.",
+      "shortName": "NOVA FUTURA CTVM LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "20155248",
+      "compe": "194",
+      "compe4": "0194",
+      "name": "UNIDA DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+      "shortName": "UNIDA DTVM LTDA",
+      "logo": null
+    },
+    {
+      "ispb": "07799277",
+      "compe": "195",
+      "compe4": "0195",
+      "name": "VALOR S/A SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+      "shortName": "VALOR S/A SCFI",
+      "logo": null
+    },
+    {
+      "ispb": "32648370",
+      "compe": "196",
+      "compe4": "0196",
+      "name": "FAIR SOCIEDADE CORRETORA DE CÂMBIO S.A.",
+      "shortName": "FAIR SOCIEDADE CC",
+      "logo": null
+    },
+    {
+      "ispb": "16501555",
+      "compe": "197",
+      "compe4": "0197",
+      "name": "STONE INSTITUIÇÃO DE PAGAMENTO S.A.",
+      "shortName": "STONE IP S.A.",
+      "logo": {
+        "png": "logos/png/16501555.png",
+        "svg": "logos/svg/16501555.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "STONE PAGAMENTOS S.A.",
+          "cnpj": "16501555000157",
+          "uri": "https://public-assets.stone.com.br/openfinance/stone-logo.svg",
+          "sha256": "c9ea826d048365162288b9d7d4e45ee527275315355fb491c45cfabdbbc0c6a3",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "30306294",
+      "compe": "208",
+      "compe4": "0208",
+      "name": "Banco BTG Pactual S.A.",
+      "shortName": "BANCO BTG PACTUAL S.A.",
+      "logo": {
+        "png": "logos/png/30306294.png",
+        "svg": "logos/svg/30306294.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BANCO BTG PACTUAL S.A.",
+          "cnpj": "30306294000145",
+          "uri": "https://banking-public-prd.s3.sa-east-1.amazonaws.com/open-finance/logo/btginvestimentos/btginvestimentos.svg",
+          "sha256": "ac521163417436f99df1bd1cb2512fe75ff55041bb9345f0394deb2d5634da6d",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "92894922",
+      "compe": "212",
+      "compe4": "0212",
+      "name": "Banco Original S.A.",
+      "shortName": "BANCO ORIGINAL",
+      "logo": null
+    },
+    {
+      "ispb": "54403563",
+      "compe": "213",
+      "compe4": "0213",
+      "name": "Banco Arbi S.A.",
+      "shortName": "BCO ARBI S.A.",
+      "logo": {
+        "png": "logos/png/54403563.png",
+        "svg": "logos/svg/54403563.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO ARBI S.A.",
+          "cnpj": "54403563000150",
+          "uri": "https://images.bancoarbi.com.br/logo-2.svg",
+          "sha256": "c1f7a0385ae3fba57f85cd3d0ed572081cac5356345bad493ed83aa7953cc9f9",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "91884981",
+      "compe": "217",
+      "compe4": "0217",
+      "name": "Banco John Deere S.A.",
+      "shortName": "BANCO JOHN DEERE S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "71027866",
+      "compe": "218",
+      "compe4": "0218",
+      "name": "Banco BS2 S.A.",
+      "shortName": "BCO BS2 S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "75647891",
+      "compe": "222",
+      "compe4": "0222",
+      "name": "BANCO CRÉDIT AGRICOLE BRASIL S.A.",
+      "shortName": "BCO CRÉDIT AGRICOLE BR S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "58616418",
+      "compe": "224",
+      "compe4": "0224",
+      "name": "Banco Fibra S.A.",
+      "shortName": "BCO FIBRA S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "62421979",
+      "compe": "233",
+      "compe4": "0233",
+      "name": "BANCO BMG SOLUÇÕES FINANCEIRAS S.A.",
+      "shortName": "BANCO BMG SOLUÇÕES FINANCEIRAS S.A.",
+      "logo": {
+        "png": "logos/png/62421979.png",
+        "svg": "logos/svg/62421979.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO BMG S.A.",
+          "cnpj": "61186680000174",
+          "uri": "https://www.bancobmg.com.br/data/files/8C/A2/7F/0A/FBA318104A94D208970BE9C2/bmg_open_finance.svg",
+          "sha256": "47cce73d983327a047fc75bcbf2307a5b2014020c3e2131644bcd354b84898eb",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "60746948",
+      "compe": "237",
+      "compe4": "0237",
+      "name": "Banco Bradesco S.A.",
+      "shortName": "BCO BRADESCO S.A.",
+      "logo": {
+        "png": "logos/png/60746948.png",
+        "svg": "logos/svg/60746948.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BANCO BRADESCO SA",
+          "cnpj": "60746948000112",
+          "uri": "https://banco.bradesco/open-finance/logo/icones_vetorial-pf.svg",
+          "sha256": "eab31731175c5229512016c2cdf98f38affecb891c217bbe6ea6b83e4c5bdb38",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "31597552",
+      "compe": "241",
+      "compe4": "0241",
+      "name": "BANCO CLASSICO S.A.",
+      "shortName": "BCO CLASSICO S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "33923798",
+      "compe": "243",
+      "compe4": "0243",
+      "name": "BANCO MASTER S/A - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "shortName": "BANCO MASTER - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "logo": null
+    },
+    {
+      "ispb": "28195667",
+      "compe": "246",
+      "compe4": "0246",
+      "name": "Banco ABC Brasil S.A.",
+      "shortName": "BCO ABC BRASIL S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "61182408",
+      "compe": "249",
+      "compe4": "0249",
+      "name": "Banco Investcred Unibanco S.A.",
+      "shortName": "BANCO INVESTCRED UNIBANCO S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "50585090",
+      "compe": "250",
+      "compe4": "0250",
+      "name": "BANCO BMG CONSIGNADO S.A.",
+      "shortName": "BANCO BMG CONSIGNADO S.A.",
+      "logo": {
+        "png": "logos/png/50585090.png",
+        "svg": "logos/svg/50585090.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO BMG S.A.",
+          "cnpj": "61186680000174",
+          "uri": "https://www.bancobmg.com.br/data/files/8C/A2/7F/0A/FBA318104A94D208970BE9C2/bmg_open_finance.svg",
+          "sha256": "47cce73d983327a047fc75bcbf2307a5b2014020c3e2131644bcd354b84898eb",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "14388334",
+      "compe": "254",
+      "compe4": "0254",
+      "name": "PARANÁ BANCO S.A.",
+      "shortName": "PARANA BCO S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "08609934",
+      "compe": "259",
+      "compe4": "0259",
+      "name": "MONEYCORP BANCO DE CÂMBIO S.A.",
+      "shortName": "MONEYCORP BCO DE CÂMBIO S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "18236120",
+      "compe": "260",
+      "compe4": "0260",
+      "name": "NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO",
+      "shortName": "NU PAGAMENTOS - IP",
+      "logo": {
+        "png": "logos/png/18236120.png",
+        "svg": "logos/svg/18236120.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "NU PAGAMENTOS S.A. - INSTITUICAO DE PAGAMENTO",
+          "cnpj": "18236120000158",
+          "uri": "https://nuapp.nubank.com.br/open-banking/logo.svg",
+          "sha256": "a4a63bd7d76bd7f3377335ae2a4c9d1f80d602f6a69fd5dba375f46d269272a6",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "33644196",
+      "compe": "265",
+      "compe4": "0265",
+      "name": "Banco Fator S.A.",
+      "shortName": "BCO FATOR S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "33132044",
+      "compe": "266",
+      "compe4": "0266",
+      "name": "BANCO CEDULA S.A.",
+      "shortName": "BCO CEDULA S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "14511781",
+      "compe": "268",
+      "compe4": "0268",
+      "name": "BARI COMPANHIA HIPOTECÁRIA",
+      "shortName": "BARI CIA HIPOTECÁRIA",
+      "logo": null
+    },
+    {
+      "ispb": "53518684",
+      "compe": "269",
+      "compe4": "0269",
+      "name": "BANCO HSBC S.A.",
+      "shortName": "BCO HSBC S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "27842177",
+      "compe": "271",
+      "compe4": "0271",
+      "name": "BPY CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "shortName": "BPY CCTVM S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "00250699",
+      "compe": "272",
+      "compe4": "0272",
+      "name": "AGK CORRETORA DE CAMBIO S.A.",
+      "shortName": "AGK CC S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "08253539",
+      "compe": "273",
+      "compe4": "0273",
+      "name": "COOPERATIVA DE CREDITO SULCREDI AMPLEA",
+      "shortName": "COOP SULCREDI AMPLEA",
+      "logo": null
+    },
+    {
+      "ispb": "11581339",
+      "compe": "274",
+      "compe4": "0274",
+      "name": "BMP SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E A EMPRESA DE PEQUENO PORTE LTDA.",
+      "shortName": "BMP SCMEPP LTDA",
+      "logo": {
+        "png": "logos/png/11581339.png",
+        "svg": "logos/svg/11581339.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "MONEY PLUS SCMEPP LTDA",
+          "cnpj": "11581339000145",
+          "uri": "https://bmp.dbs.moneyp.com.br/bmpmoneyplus.svg",
+          "sha256": "5cfec5eb1028f7f5bd7c1d6c3a46c50d4d9d77090c22426c5306926ba7a53842",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "11970623",
+      "compe": "276",
+      "compe4": "0276",
+      "name": "BANCO SENFF S.A.",
+      "shortName": "BCO SENFF S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "27652684",
+      "compe": "278",
+      "compe4": "0278",
+      "name": "Genial Investimentos Corretora de Valores Mobiliários S.A.",
+      "shortName": "GENIAL INVESTIMENTOS CVM S.A.",
+      "logo": {
+        "png": "logos/png/27652684.png",
+        "svg": "logos/svg/27652684.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BANCO GENIAL S.A.",
+          "cnpj": "45246410000155",
+          "uri": "https://media-genial-cms.genialinvestimentos.com.br/wp-content/uploads/2021/08/20161050/logo-genial.svg",
+          "sha256": "e67e2bb3fab72c3165471ad1c44884775a7588177febcbaa7d343062fb567533",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "23862762",
+      "compe": "280",
+      "compe4": "0280",
+      "name": "WILL FINANCEIRA S.A. CRÉDITO, FINANCIAMENTO E INVESTIMENTO - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "shortName": "WILL FINANCEIRA S.A.CFI - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "logo": null
+    },
+    {
+      "ispb": "76461557",
+      "compe": "281",
+      "compe4": "0281",
+      "name": "Cooperativa de Crédito Rural Coopavel",
+      "shortName": "CCR COOPAVEL",
+      "logo": null
+    },
+    {
+      "ispb": "89960090",
+      "compe": "283",
+      "compe4": "0283",
+      "name": "RB INVESTIMENTOS DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LIMITADA",
+      "shortName": "RB INVESTIMENTOS DTVM LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "62237649",
+      "compe": "288",
+      "compe4": "0288",
+      "name": "CAROL DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
+      "shortName": "CAROL DTVM LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "94968518",
+      "compe": "289",
+      "compe4": "0289",
+      "name": "EFX CORRETORA DE CÂMBIO LTDA.",
+      "shortName": "EFX CC LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "08561701",
+      "compe": "290",
+      "compe4": "0290",
+      "name": "PAGSEGURO INTERNET INSTITUIÇÃO DE PAGAMENTO S.A.",
+      "shortName": "PAGSEGURO INTERNET IP S.A.",
+      "logo": {
+        "png": "logos/png/08561701.png",
+        "svg": "logos/svg/08561701.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "PAGSEGURO",
+          "cnpj": "08561701000101",
+          "uri": "https://openfinance.api.pagseguro.uol.com.br/img/logo_pagbank.svg",
+          "sha256": "ea47e0f0d6687547248eadbafbd867e7e3954b70b96b2cc3284724a22d47d7c4",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "28650236",
+      "compe": "292",
+      "compe4": "0292",
+      "name": "GALAPAGOS CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "shortName": "GALAPAGOS DTVM S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "71590442",
+      "compe": "293",
+      "compe4": "0293",
+      "name": "Lastro RDV Distribuidora de Títulos e Valores Mobiliários Ltda.",
+      "shortName": "LASTRO RDV DTVM LTDA",
+      "logo": null
+    },
+    {
+      "ispb": "04062902",
+      "compe": "296",
+      "compe4": "0296",
+      "name": "OZ CORRETORA DE CÂMBIO S.A.",
+      "shortName": "OZ CORRETORA DE CÂMBIO S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "17772370",
+      "compe": "298",
+      "compe4": "0298",
+      "name": "VIPS CORRETORA DE CÂMBIO S.A.",
+      "shortName": "VIPS CC S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "04814563",
+      "compe": "299",
+      "compe4": "0299",
+      "name": "BANCO AFINZ S.A. - BANCO MÚLTIPLO",
+      "shortName": "BCO AFINZ S.A. - BM",
+      "logo": null
+    },
+    {
+      "ispb": "33042151",
+      "compe": "300",
+      "compe4": "0300",
+      "name": "Banco de la Nacion Argentina",
+      "shortName": "BCO LA NACION ARGENTINA",
+      "logo": {
+        "png": "logos/png/33042151.png",
+        "svg": "logos/svg/33042151.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO LA NACION ARGENTINA",
+          "cnpj": "33042151000161",
+          "uri": "https://qr-h.cornerpix.com.br/public/images/logo_banco_nacional_argentina.svg",
+          "sha256": "83b857f155573533873871c680f200199cda3888c15bbd8b29121f3db7fb4d71",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "13370835",
+      "compe": "301",
+      "compe4": "0301",
+      "name": "DOCK INSTITUIÇÃO DE PAGAMENTO S.A.",
+      "shortName": "DOCK IP S.A.",
+      "logo": {
+        "png": "logos/png/13370835.png",
+        "svg": "logos/svg/13370835.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "DOCK INSTITUICAO DE PAGAMENTO S.A.",
+          "cnpj": "13370835000185",
+          "uri": "https://banking.hyperlocal.com.br/favicon.svg",
+          "sha256": "bb924b6e806b97c8f3a9d41680097da39853434705924278455ae2d602efb6de",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "40353377",
+      "compe": "305",
+      "compe4": "0305",
+      "name": "FOURTRADE CORRETORA DE CÂMBIO LTDA.",
+      "shortName": "FOURTRADE COR. DE CAMBIO LTDA",
+      "logo": null
+    },
+    {
+      "ispb": "03751794",
+      "compe": "307",
+      "compe4": "0307",
+      "name": "Terra Investimentos Distribuidora de Títulos e Valores Mobiliários Ltda.",
+      "shortName": "TERRA INVESTIMENTOS DTVM",
+      "logo": null
+    },
+    {
+      "ispb": "22610500",
+      "compe": "310",
+      "compe4": "0310",
+      "name": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
+      "shortName": "VORTX DTVM LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "07693858",
+      "compe": "312",
+      "compe4": "0312",
+      "name": "HSCM - SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E À EMPRESA DE PEQUENO PORTE LTDA.",
+      "shortName": "HSCM SCMEPP LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "61186680",
+      "compe": "318",
+      "compe4": "0318",
+      "name": "Banco BMG S.A.",
+      "shortName": "BCO BMG S.A.",
+      "logo": {
+        "png": "logos/png/61186680.png",
+        "svg": "logos/svg/61186680.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO BMG S.A.",
+          "cnpj": "61186680000174",
+          "uri": "https://www.bancobmg.com.br/data/files/8C/A2/7F/0A/FBA318104A94D208970BE9C2/bmg_open_finance.svg",
+          "sha256": "47cce73d983327a047fc75bcbf2307a5b2014020c3e2131644bcd354b84898eb",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "11495073",
+      "compe": "319",
+      "compe4": "0319",
+      "name": "OM DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA",
+      "shortName": "OM DTVM LTDA",
+      "logo": null
+    },
+    {
+      "ispb": "07450604",
+      "compe": "320",
+      "compe4": "0320",
+      "name": "BANK OF CHINA (BRASIL) BANCO MÚLTIPLO S/A",
+      "shortName": "BOC BRASIL",
+      "logo": null
+    },
+    {
+      "ispb": "18188384",
+      "compe": "321",
+      "compe4": "0321",
+      "name": "CREFAZ SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E A EMPRESA DE PEQUENO PORTE S.A.",
+      "shortName": "CREFAZ SCMEPP SA",
+      "logo": null
+    },
+    {
+      "ispb": "01073966",
+      "compe": "322",
+      "compe4": "0322",
+      "name": "Cooperativa de Crédito Rural de Abelardo Luz - Sulcredi/Crediluz",
+      "shortName": "CCR DE ABELARDO LUZ",
+      "logo": null
+    },
+    {
+      "ispb": "10573521",
+      "compe": "323",
+      "compe4": "0323",
+      "name": "MERCADO PAGO INSTITUIÇÃO DE PAGAMENTO LTDA.",
+      "shortName": "MERCADO PAGO IP LTDA.",
+      "logo": {
+        "png": "logos/png/10573521.png",
+        "svg": "logos/svg/10573521.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "MERCADO PAGO INSTITUICAO DE PAGAMENTO LTDA",
+          "cnpj": "10573521000191",
+          "uri": "https://http2.mlstatic.com/open-banking/assets/logo.svg",
+          "sha256": "a1dbab9a3efb581b2e2e12bd09a3e4fe16d71b4d7c29be902f78c2958ee103f2",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "21332862",
+      "compe": "324",
+      "compe4": "0324",
+      "name": "CARTOS SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "CARTOS SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "03311443",
+      "compe": "326",
+      "compe4": "0326",
+      "name": "PARATI - CREDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+      "shortName": "PARATI - CFI S.A.",
+      "logo": {
+        "png": "logos/png/03311443.png",
+        "svg": "logos/svg/03311443.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "PARATI - CFI S.A.",
+          "cnpj": "03311443000191",
+          "uri": "https://parati-cfi.com.br/images/logo.svg",
+          "sha256": "a4430c55f67f007e67a62b316c682c05cc2bab6cc5a23d92ba6a9ad685f9a0af",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "05841967",
+      "compe": "328",
+      "compe4": "0328",
+      "name": "COOPERATIVA DE ECONOMIA E CRÉDITO MÚTUO DOS FABRICANTES DE CALÇADOS DE SAPIRANGA LTDA.",
+      "shortName": "CECM FABRIC CALÇADOS SAPIRANGA",
+      "logo": null
+    },
+    {
+      "ispb": "32402502",
+      "compe": "329",
+      "compe4": "0329",
+      "name": "QI Sociedade de Crédito Direto S.A.",
+      "shortName": "QI SCD S.A.",
+      "logo": {
+        "png": "logos/png/32402502.png",
+        "svg": "logos/svg/32402502.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "QI SCD S.A.",
+          "cnpj": "32402502000135",
+          "uri": "https://storage.googleapis.com/qitech-website-documents/qi_logo_blue.svg",
+          "sha256": "5e069eed5c4bade949d52f5ad1572b712947fdf30523f4bfce0132f580e19d9e",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "00556603",
+      "compe": "330",
+      "compe4": "0330",
+      "name": "BANCO BARI DE INVESTIMENTOS E FINANCIAMENTOS S.A.",
+      "shortName": "BANCO BARI S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "13673855",
+      "compe": "331",
+      "compe4": "0331",
+      "name": "OSLO CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A",
+      "shortName": "OSLO CAPITAL DTVM SA",
+      "logo": null
+    },
+    {
+      "ispb": "13140088",
+      "compe": "332",
+      "compe4": "0332",
+      "name": "ACESSO SOLUÇÕES DE PAGAMENTO S.A. - INSTITUIÇÃO DE PAGAMENTO",
+      "shortName": "ACESSO SOLUÇÕES DE PAGAMENTO S.A. - INSTITUIÇÃO DE PAGAMENTO",
+      "logo": {
+        "png": "logos/png/13140088.png",
+        "svg": "logos/svg/13140088.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "ACESSO SOLUCOES PAGAMENTO SA",
+          "cnpj": "13140088000199",
+          "uri": "https://app.open.bankly.com.br/assets/Logos/GifttyPay-Logo.svg",
+          "sha256": "2cb885f276c576ea826ee943f3da8f0eeea10e89602fefabb57998c39fa760c8",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "15124464",
+      "compe": "334",
+      "compe4": "0334",
+      "name": "BANCO BESA S.A.",
+      "shortName": "BANCO BESA S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "27098060",
+      "compe": "335",
+      "compe4": "0335",
+      "name": "Banco Digio S.A.",
+      "shortName": "BANCO DIGIO",
+      "logo": {
+        "png": "logos/png/27098060.png",
+        "svg": "logos/svg/27098060.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BANCO DIGIO",
+          "cnpj": "27098060000145",
+          "uri": "https://static.digio.com.br/media/logo_81e95ae2ab.svg",
+          "sha256": "61ad96629a7f2b02bd009b74101f7b540d7bbd09a1d78442e4b198c0cfb1a15a",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "31872495",
+      "compe": "336",
+      "compe4": "0336",
+      "name": "Banco C6 S.A.",
+      "shortName": "BCO C6 S.A.",
+      "logo": {
+        "png": "logos/png/31872495.png",
+        "svg": "logos/svg/31872495.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO C6 S.A.",
+          "cnpj": "31872495000172",
+          "uri": "https://cdn.c6bank.com.br/open-banking/c6bank-logo.svg",
+          "sha256": "deb2fd2d220ad11000f97f2ee553308c1e98311c979a0a003530aca76f83b011",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "60701190",
+      "compe": "341",
+      "compe4": "0341",
+      "name": "ITAÚ UNIBANCO S.A.",
+      "shortName": "ITAÚ UNIBANCO S.A.",
+      "logo": {
+        "png": "logos/png/60701190.png",
+        "svg": "logos/svg/60701190.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "ITAU UNIBANCO S.A.",
+          "cnpj": "60701190000104",
+          "uri": "https://www.itau.com.br/media/dam/m/4ee2c952e1fa91a2/original/Novo_itau.svg",
+          "sha256": "9b2cadfb4ec44d8a3f9b24e9b3e7439e128164ab05ab1044ad37742255795af2",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "32997490",
+      "compe": "342",
+      "compe4": "0342",
+      "name": "Creditas Sociedade de Crédito Direto S.A.",
+      "shortName": "CREDITAS SCD",
+      "logo": null
+    },
+    {
+      "ispb": "33264668",
+      "compe": "348",
+      "compe4": "0348",
+      "name": "Banco XP S.A.",
+      "shortName": "BCO XP S.A.",
+      "logo": {
+        "png": "logos/png/33264668.png",
+        "svg": "logos/svg/33264668.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BANCO XP S.A.",
+          "cnpj": "33264668000103",
+          "uri": "https://openbanking-redirect.xpi.com.br/assets/xpi.svg",
+          "sha256": "7f75762e82f828eb401dbc27d38b2d57eda0b14d5662a89315bb756ade7b5566",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "27214112",
+      "compe": "349",
+      "compe4": "0349",
+      "name": "AL5 S.A. SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+      "shortName": "AL5 S.A. SCFI",
+      "logo": null
+    },
+    {
+      "ispb": "01330387",
+      "compe": "350",
+      "compe4": "0350",
+      "name": "COOPERATIVA DE CRÉDITO POPULAR DO BRASIL - CREHNOR",
+      "shortName": "COOPERATIVA DE CRÉDITO POPULAR DO BRASIL",
+      "logo": null
+    },
+    {
+      "ispb": "29162769",
+      "compe": "352",
+      "compe4": "0352",
+      "name": "SANTANDER CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "shortName": "SANTANDER CTVM S.A.",
+      "logo": {
+        "png": "logos/png/29162769.png",
+        "svg": "logos/svg/29162769.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "Santander CTVM S.A.",
+          "cnpj": "29162769000198",
+          "uri": "https://cms.santander.com.br/sites/WPS/imagem/santander_chama/23-10-31_194829_P_santander_chama.svg",
+          "sha256": "3db65acca8651f09096f81c004513586b3b22075041afe7e29df16f658b7d766",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "34335592",
+      "compe": "355",
+      "compe4": "0355",
+      "name": "ÓTIMO SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "ÓTIMO SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "09464032",
+      "compe": "358",
+      "compe4": "0358",
+      "name": "MIDWAY S.A. - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+      "shortName": "MIDWAY S.A. - SCFI",
+      "logo": {
+        "png": "logos/png/09464032.png",
+        "svg": "logos/svg/09464032.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "MIDWAY S.A. - SCFI",
+          "cnpj": "09464032000112",
+          "uri": "https://openfinance.midway.com.br/midway.svg",
+          "sha256": "50b86169b87b491532466436345b12f654808c292895af2c94a92bf48e83fee7",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "05351887",
+      "compe": "359",
+      "compe4": "0359",
+      "name": "ZEMA CRÉDITO, FINANCIAMENTO E INVESTIMENTO S/A",
+      "shortName": "ZEMA CFI S/A",
+      "logo": null
+    },
+    {
+      "ispb": "02276653",
+      "compe": "360",
+      "compe4": "0360",
+      "name": "TRINUS CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "shortName": "TRINUS CAPITAL DTVM",
+      "logo": null
+    },
+    {
+      "ispb": "01027058",
+      "compe": "362",
+      "compe4": "0362",
+      "name": "CIELO S.A. - INSTITUIÇÃO DE PAGAMENTO",
+      "shortName": "CIELO IP S.A.",
+      "logo": {
+        "png": "logos/png/01027058.png",
+        "svg": "logos/svg/01027058.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "CIELO S.A.",
+          "cnpj": "01027058000191",
+          "uri": "https://www.cielo.com.br/assets_cielo/logo_footer_cielo.svg",
+          "sha256": "541a6d62016ae0fb12c7eb16e23501e2f97ad377faaa2d52c9425b41703f8f7b",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "62285390",
+      "compe": "363",
+      "compe4": "0363",
+      "name": "QI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "shortName": "QI CTVM S.A.",
+      "logo": {
+        "png": "logos/png/62285390.png",
+        "svg": "logos/svg/62285390.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "QI SCD S.A.",
+          "cnpj": "32402502000135",
+          "uri": "https://storage.googleapis.com/qitech-website-documents/qi_logo_blue.svg",
+          "sha256": "5e069eed5c4bade949d52f5ad1572b712947fdf30523f4bfce0132f580e19d9e",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "09089356",
+      "compe": "364",
+      "compe4": "0364",
+      "name": "EFÍ S.A. - INSTITUIÇÃO DE PAGAMENTO",
+      "shortName": "EFÍ S.A. - IP",
+      "logo": {
+        "png": "logos/png/09089356.png",
+        "svg": "logos/svg/09089356.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "EFI S.A. - INSTITUICAO DE PAGAMENTO",
+          "cnpj": "09089356000118",
+          "uri": "https://gerencianet-pub-prod-1.s3.amazonaws.com/openbanking/efi-by-gn-512x512.svg",
+          "sha256": "185517da3805bc5c910f62920d22b2d69651f70dcd380ce1ec9ba8b242d2f8c0",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "68757681",
+      "compe": "365",
+      "compe4": "0365",
+      "name": "SIMPAUL CORRETORA DE CAMBIO E VALORES MOBILIARIOS  S.A.",
+      "shortName": "SIMPAUL",
+      "logo": null
+    },
+    {
+      "ispb": "61533584",
+      "compe": "366",
+      "compe4": "0366",
+      "name": "BANCO SOCIETE GENERALE BRASIL S.A.",
+      "shortName": "BCO SOCIETE GENERALE BRASIL",
+      "logo": null
+    },
+    {
+      "ispb": "08357240",
+      "compe": "368",
+      "compe4": "0368",
+      "name": "Banco CSF S.A.",
+      "shortName": "BCO CSF S.A.",
+      "logo": {
+        "png": "logos/png/08357240.png",
+        "svg": "logos/svg/08357240.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BANCO CSF S/A",
+          "cnpj": "08357240000150",
+          "uri": "https://storage.googleapis.com/cms-portalpublico-atc-prd/sites/e36dfc59-favicon-atacadao.svg",
+          "sha256": "c82722d14ba64f2939fbb190d7eb2c05bcb00db9d2c97b158bd9ff27026c13cb",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "61088183",
+      "compe": "370",
+      "compe4": "0370",
+      "name": "Banco Mizuho do Brasil S.A.",
+      "shortName": "BCO MIZUHO S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "35977097",
+      "compe": "373",
+      "compe4": "0373",
+      "name": "UP.P SOCIEDADE DE EMPRÉSTIMO ENTRE PESSOAS S.A.",
+      "shortName": "UP.P SEP S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "27351731",
+      "compe": "374",
+      "compe4": "0374",
+      "name": "REALIZE SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+      "shortName": "REALIZE SCFI S.A.",
+      "logo": {
+        "png": "logos/png/27351731.png",
+        "svg": "logos/svg/27351731.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "REALIZE SOCIEDADE DE CREDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+          "cnpj": "27351731000138",
+          "uri": "https://http-oof-realize.s3.sa-east-1.amazonaws.com/Logo_Realize_512x512.svg",
+          "sha256": "e8a783f346679ef1519d3dc33d55202248b3c18e1397c71218d6a3bfb85c4431",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "33172537",
+      "compe": "376",
+      "compe4": "0376",
+      "name": "BANCO J.P. MORGAN S.A.",
+      "shortName": "BCO J.P. MORGAN S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "17826860",
+      "compe": "377",
+      "compe4": "0377",
+      "name": "BMS SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "BMS SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "01852137",
+      "compe": "378",
+      "compe4": "0378",
+      "name": "BANCO BRASILEIRO DE CRÉDITO SOCIEDADE ANÔNIMA",
+      "shortName": "BCO BRASILEIRO DE CRÉDITO S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "01658426",
+      "compe": "379",
+      "compe4": "0379",
+      "name": "COOPERFORTE COOPERATIVA DE CRÉDITO E INVESTIMENTOS LTDA",
+      "shortName": "COOP COOPERFORTE LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "22896431",
+      "compe": "380",
+      "compe4": "0380",
+      "name": "PICPAY INSTITUIçãO DE PAGAMENTO S.A.",
+      "shortName": "PICPAY",
+      "logo": {
+        "png": "logos/png/22896431.png",
+        "svg": "logos/svg/22896431.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "PICPAY",
+          "cnpj": "22896431000110",
+          "uri": "https://picpay.s3.sa-east-1.amazonaws.com/openbanking/picpay-logo-icon-pf.svg",
+          "sha256": "5dda49002fc6d9b323a30d88afd7e9ba5b54982dc5ffcf630364aa94bfcf43b8",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "60814191",
+      "compe": "381",
+      "compe4": "0381",
+      "name": "BANCO MERCEDES-BENZ DO BRASIL S.A.",
+      "shortName": "BCO MERCEDES-BENZ S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "04307598",
+      "compe": "382",
+      "compe4": "0382",
+      "name": "FIDÚCIA SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E À EMPRESA DE PEQUENO PORTE LIMITADA.",
+      "shortName": "FIDUCIA SCMEPP LTDA",
+      "logo": null
+    },
+    {
+      "ispb": "21018182",
+      "compe": "383",
+      "compe4": "0383",
+      "name": "EBANX INSTITUICAO DE PAGAMENTOS LTDA.",
+      "shortName": "EBANX IP LTDA.",
+      "logo": {
+        "png": "logos/png/21018182.png",
+        "svg": "logos/svg/21018182.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "Ebanx Instituicao de Pagamento Ltda.",
+          "cnpj": "21018182000106",
+          "uri": "https://cdn-assets.ebanx.com/images/ebanx-ip-blue.svg",
+          "sha256": "42237c446a6a8b607bbc7d1de7bb6d5db3514548e8a335e6a9d7c03349802cd1",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "11165756",
+      "compe": "384",
+      "compe4": "0384",
+      "name": "GLOBAL FINANÇAS SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E À EMPRESA DE PEQUENO PORTE LTDA.",
+      "shortName": "GLOBAL SCM LTDA",
+      "logo": null
+    },
+    {
+      "ispb": "03844699",
+      "compe": "385",
+      "compe4": "0385",
+      "name": "COOPERATIVA DE ECONOMIA E CREDITO MUTUO DOS TRABALHADORES PORTUARIOS DA GRANDE VITORIA - CREDESTIVA.",
+      "shortName": "CECM DOS TRAB.PORT. DA G.VITOR",
+      "logo": null
+    },
+    {
+      "ispb": "30680829",
+      "compe": "386",
+      "compe4": "0386",
+      "name": "NU FINANCEIRA S.A. - Sociedade de Crédito, Financiamento e Investimento",
+      "shortName": "NU FINANCEIRA S.A. CFI",
+      "logo": {
+        "png": "logos/png/30680829.png",
+        "svg": "logos/svg/30680829.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "NU PAGAMENTOS S.A. - INSTITUICAO DE PAGAMENTO",
+          "cnpj": "18236120000158",
+          "uri": "https://nuapp.nubank.com.br/open-banking/logo.svg",
+          "sha256": "a4a63bd7d76bd7f3377335ae2a4c9d1f80d602f6a69fd5dba375f46d269272a6",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "03215790",
+      "compe": "387",
+      "compe4": "0387",
+      "name": "Banco Toyota do Brasil S.A.",
+      "shortName": "BCO TOYOTA DO BRASIL S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "17184037",
+      "compe": "389",
+      "compe4": "0389",
+      "name": "Banco Mercantil do Brasil S.A.",
+      "shortName": "BCO MERCANTIL DO BRASIL S.A.",
+      "logo": {
+        "png": "logos/png/17184037.png",
+        "svg": "logos/svg/17184037.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO MERCANTIL DO BRASIL S.A.",
+          "cnpj": "17184037000110",
+          "uri": "https://www.bancomercantil.com.br/imagens/openbanking/mercantil.svg",
+          "sha256": "ce244740d6ba638b7c82da17b7025cfa9f2756d9c59177181b18d2ca7fe3fabd",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "59274605",
+      "compe": "390",
+      "compe4": "0390",
+      "name": "BANCO GM S.A.",
+      "shortName": "BCO GM S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "08240446",
+      "compe": "391",
+      "compe4": "0391",
+      "name": "COOPERATIVA DE CREDITO RURAL DE IBIAM - SULCREDI/IBIAM",
+      "shortName": "CCR DE IBIAM",
+      "logo": null
+    },
+    {
+      "ispb": "59109165",
+      "compe": "393",
+      "compe4": "0393",
+      "name": "Banco Volkswagen S.A.",
+      "shortName": "BCO VOLKSWAGEN S.A",
+      "logo": null
+    },
+    {
+      "ispb": "07207996",
+      "compe": "394",
+      "compe4": "0394",
+      "name": "Banco Bradesco Financiamentos S.A.",
+      "shortName": "BCO BRADESCO FINANC. S.A.",
+      "logo": {
+        "png": "logos/png/07207996.png",
+        "svg": null,
+        "source": {
+          "type": "openfinance",
+          "org": "BCO BRADESCO FINANC. S.A.",
+          "cnpj": "07207996000150",
+          "uri": "https://openbanking.losango.com.br/Openbanking/logo/bradesco-bbf.svg",
+          "sha256": "da9585a86022de67eb193c27318261e065d505a7e2c0b8b3d4e3f43962bea72c",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "08673569",
+      "compe": "395",
+      "compe4": "0395",
+      "name": "F.D'GOLD - DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+      "shortName": "F D GOLD DTVM LTDA",
+      "logo": null
+    },
+    {
+      "ispb": "13884775",
+      "compe": "396",
+      "compe4": "0396",
+      "name": "MAGALUPAY INSTITUIÇÃO DE PAGAMENTO S.A.",
+      "shortName": "MAGALUPAY",
+      "logo": {
+        "png": "logos/png/13884775.png",
+        "svg": "logos/svg/13884775.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "Magalupay Instituicao de Pagamento S.A.",
+          "cnpj": "13884775000119",
+          "uri": "https://auth-open-finance.hubfintech.com.br/OB/magalupay_empresas_512.svg",
+          "sha256": "139cfd286762cae7a8b0bc58af8891b1a76346dc42de5adc34f6edeb04f3183a",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "34088029",
+      "compe": "397",
+      "compe4": "0397",
+      "name": "LISTO SOCIEDADE DE CREDITO DIRETO S.A.",
+      "shortName": "LISTO SCD S.A.",
+      "logo": {
+        "png": "logos/png/34088029.png",
+        "svg": "logos/svg/34088029.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "LISTO SOCIEDADE DE CREDITO DIRETO S.A.",
+          "cnpj": "34088029000199",
+          "uri": "https://imagens.soulisto.com.br/2.svg",
+          "sha256": "6503562f0a5f8119dad02cb69383b332247e98f0239f829222f282f9cb433bea",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "31749596",
+      "compe": "398",
+      "compe4": "0398",
+      "name": "IDEAL CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "shortName": "IDEAL CTVM S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "01701201",
+      "compe": "399",
+      "compe4": "0399",
+      "name": "Kirton Bank S.A. - Banco Múltiplo",
+      "shortName": "Kirton Bank",
+      "logo": null
+    },
+    {
+      "ispb": "05491616",
+      "compe": "400",
+      "compe4": "0400",
+      "name": "COOPERATIVA DE CRÉDITO, POUPANÇA E SERVIÇOS FINANCEIROS - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "shortName": "COOP CREDITAG - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "logo": null
+    },
+    {
+      "ispb": "15111975",
+      "compe": "401",
+      "compe4": "0401",
+      "name": "IUGU INSTITUIÇÃO DE PAGAMENTO S.A.",
+      "shortName": "IUGU IP S.A.",
+      "logo": {
+        "png": "logos/png/15111975.png",
+        "svg": "logos/svg/15111975.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "IUGU INSTITUICAO DE PAGAMENTO S.A.",
+          "cnpj": "15111975000164",
+          "uri": "https://openbanking.iugu.com/iugu_logo.svg",
+          "sha256": "4150192390b899bc2f52859e0da636d2d6368ef18d492369de968fc12dd97116",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "36947229",
+      "compe": "402",
+      "compe4": "0402",
+      "name": "COBUCCIO S/A - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTOS",
+      "shortName": "COBUCCIO S.A. SCFI",
+      "logo": null
+    },
+    {
+      "ispb": "37880206",
+      "compe": "403",
+      "compe4": "0403",
+      "name": "CORA SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+      "shortName": "CORA SCFI",
+      "logo": {
+        "png": "logos/png/37880206.png",
+        "svg": "logos/svg/37880206.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "CORA SCD S.A.",
+          "cnpj": "37880206000163",
+          "uri": "https://corastatic.com/openbank/img/logo-cora.svg",
+          "sha256": "251c9f35b91fa264f8fd3d4e8b51bf71c4aad35f3379c206bad3f31cb0e6d13a",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "37241230",
+      "compe": "404",
+      "compe4": "0404",
+      "name": "SUMUP SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "SUMUP SCD S.A.",
+      "logo": {
+        "png": "logos/png/37241230.png",
+        "svg": "logos/svg/37241230.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "SUMUP SCD S.A.",
+          "cnpj": "37241230000152",
+          "uri": "https://sumup-openbanking-staticfiles.s3.amazonaws.com/logo.svg",
+          "sha256": "7f22b00cfe40948e03b7405a1f02f63f9e29ea05984cf6497a31ca2b0d3c2cb8",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "37715993",
+      "compe": "406",
+      "compe4": "0406",
+      "name": "ACCREDITO - SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "ACCREDITO SCD S.A.",
+      "logo": {
+        "png": "logos/png/37715993.png",
+        "svg": "logos/svg/37715993.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "ACCREDITO - SOCIEDADE DE CREDITO DIRETO S.A.",
+          "cnpj": "37715993000198",
+          "uri": "https://www.accredito-scd.com.br/Content/img/logoaccreditoopen.svg",
+          "sha256": "3f7f4c364527dd9c126517a1aba76c9f11364131b6cc45179e8b2574185aefa6",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "00329598",
+      "compe": "407",
+      "compe4": "0407",
+      "name": "SEFER INVESTIMENTOS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "shortName": "SEFER INVESTIMENTOS DTVM LTDA - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "logo": {
+        "png": "logos/png/00329598.png",
+        "svg": "logos/svg/00329598.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "SEFER INVESTIMENTOS DTVM LTDA",
+          "cnpj": "00329598000167",
+          "uri": "https://www.seferinvestimentos.com.br/wp-content/uploads/Logo_OPF.svg",
+          "sha256": "710752ca6a44022c690640aac25bfe8ee2203f47a17101f38eddd0e0173095d2",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "36586946",
+      "compe": "408",
+      "compe4": "0408",
+      "name": "BONUSPAGO SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "BONUSPAGO SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "05684234",
+      "compe": "410",
+      "compe4": "0410",
+      "name": "PLANNER SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "PLANNER SOCIEDADE DE CRÉDITO DIRETO",
+      "logo": null
+    },
+    {
+      "ispb": "05192316",
+      "compe": "411",
+      "compe4": "0411",
+      "name": "Via Certa Financiadora S.A. - Crédito, Financiamento e Investimentos",
+      "shortName": "VIA CERTA FINANCIADORA S.A. - CFI",
+      "logo": null
+    },
+    {
+      "ispb": "15173776",
+      "compe": "412",
+      "compe4": "0412",
+      "name": "SOCIAL BANK BANCO MÚLTIPLO S/A",
+      "shortName": "SOCIAL BANK S/A",
+      "logo": null
+    },
+    {
+      "ispb": "01858774",
+      "compe": "413",
+      "compe4": "0413",
+      "name": "BANCO BV S.A.",
+      "shortName": "BCO BV S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "37526080",
+      "compe": "414",
+      "compe4": "0414",
+      "name": "LEND SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "LEND SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "17157777",
+      "compe": "415",
+      "compe4": "0415",
+      "name": "BANCO NACIONAL S.A.",
+      "shortName": "BCO NACIONAL",
+      "logo": null
+    },
+    {
+      "ispb": "19324634",
+      "compe": "416",
+      "compe4": "0416",
+      "name": "LAMARA SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "LAMARA SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "37414009",
+      "compe": "418",
+      "compe4": "0418",
+      "name": "ZIPDIN SOLUÇÕES DIGITAIS SOCIEDADE DE CRÉDITO DIRETO S/A",
+      "shortName": "ZIPDIN SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "38129006",
+      "compe": "419",
+      "compe4": "0419",
+      "name": "NUMBRS SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "NUMBRS SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "39343350",
+      "compe": "421",
+      "compe4": "0421",
+      "name": "LAR COOPERATIVA DE CRÉDITO - LAR CREDI",
+      "shortName": "CC LAR CREDI",
+      "logo": null
+    },
+    {
+      "ispb": "58160789",
+      "compe": "422",
+      "compe4": "0422",
+      "name": "Banco Safra S.A.",
+      "shortName": "BCO SAFRA S.A.",
+      "logo": {
+        "png": "logos/png/58160789.png",
+        "svg": "logos/svg/58160789.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO SAFRA S.A.",
+          "cnpj": "58160789000128",
+          "uri": "https://www.safra.com.br/shared/assets/img/safra-of.svg",
+          "sha256": "9c25f4839fe8a258db6c0a59f192120f97f5ef49830f3db05ebd6cac82e02e50",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "00460065",
+      "compe": "423",
+      "compe4": "0423",
+      "name": "COLUNA S/A DISTRIBUIDORA DE TITULOS E VALORES MOBILIÁRIOS",
+      "shortName": "COLUNA S.A. DTVM",
+      "logo": null
+    },
+    {
+      "ispb": "03881423",
+      "compe": "425",
+      "compe4": "0425",
+      "name": "SOCINAL S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+      "shortName": "SOCINAL S.A. CFI",
+      "logo": null
+    },
+    {
+      "ispb": "11285104",
+      "compe": "426",
+      "compe4": "0426",
+      "name": "NEON FINANCEIRA - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A",
+      "shortName": "NEON FINANCEIRA - SCFI S.A.",
+      "logo": {
+        "png": "logos/png/11285104.png",
+        "svg": "logos/svg/11285104.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "Neon Pagamentos",
+          "cnpj": "20855875000182",
+          "uri": "https://opbk-brasil.s3.sa-east-1.amazonaws.com/neon/logo.svg",
+          "sha256": "6fcb82100b54c355d8d0ca7e67ac577091cf15c9e92733cfa4a5a34bd1668a7b",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "27302181",
+      "compe": "427",
+      "compe4": "0427",
+      "name": "COOPERATIVA DE CRÉDITO DOS SERVIDORES DA UNIVERSIDADE FEDERAL DO ESPIRITO SANTO",
+      "shortName": "CRED.UFES",
+      "logo": null
+    },
+    {
+      "ispb": "39664698",
+      "compe": "428",
+      "compe4": "0428",
+      "name": "CREDSYSTEM SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "CREDSYSTEM SCD S.A.",
+      "logo": {
+        "png": "logos/png/39664698.png",
+        "svg": "logos/svg/39664698.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "CRED SYSTEM SOCIEDADE DE CREDITO DIRETO SA",
+          "cnpj": "39664698000185",
+          "uri": "https://openfinance.credsystem.com.br/assets/img/icon-mais.svg",
+          "sha256": "d0f656d382d872ead263aa56d9c164ffefd6d9245ca6c7c01e17ae12b6ebfbfb",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "00204963",
+      "compe": "430",
+      "compe4": "0430",
+      "name": "COOPERATIVA DE CREDITO RURAL SEARA - CREDISEARA",
+      "shortName": "CCR SEARA",
+      "logo": null
+    },
+    {
+      "ispb": "44077014",
+      "compe": "433",
+      "compe4": "0433",
+      "name": "BR-CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "shortName": "BR-CAPITAL DTVM S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "38224857",
+      "compe": "435",
+      "compe4": "0435",
+      "name": "DELFINANCE SOCIEDADE DE CREDITO DIRETO S.A.",
+      "shortName": "DELFINANCE SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "67030395",
+      "compe": "438",
+      "compe4": "0438",
+      "name": "TRUSTEE DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+      "shortName": "TRUSTEE DTVM LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "16695922",
+      "compe": "439",
+      "compe4": "0439",
+      "name": "ID CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "shortName": "ID CTVM",
+      "logo": null
+    },
+    {
+      "ispb": "82096447",
+      "compe": "440",
+      "compe4": "0440",
+      "name": "CREDI&GENTE - COOPERATIVA DE CRÉDITO E INVESTIMENTOS",
+      "shortName": "COOP CREDI&GENTE",
+      "logo": null
+    },
+    {
+      "ispb": "39416705",
+      "compe": "443",
+      "compe4": "0443",
+      "name": "OCTA SOCIEDADE DE CRÉDITO DIRETO S.A. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "shortName": "OCTA SCD S.A. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "logo": null
+    },
+    {
+      "ispb": "40654622",
+      "compe": "444",
+      "compe4": "0444",
+      "name": "TRINUS SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "TRINUS SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "35551187",
+      "compe": "445",
+      "compe4": "0445",
+      "name": "PLANTAE S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+      "shortName": "PLANTAE CFI",
+      "logo": null
+    },
+    {
+      "ispb": "12392983",
+      "compe": "447",
+      "compe4": "0447",
+      "name": "MIRAE ASSET (BRASIL) CORRETORA DE CÂMBIO, TÍTULOS  E VALORES MOBILIÁRIOS LTDA.",
+      "shortName": "MIRAE ASSET (BRASIL) CCTVM LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "39669186",
+      "compe": "448",
+      "compe4": "0448",
+      "name": "HEMERA DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+      "shortName": "HEMERA DTVM LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "37555231",
+      "compe": "449",
+      "compe4": "0449",
+      "name": "DM SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "DM",
+      "logo": null
+    },
+    {
+      "ispb": "13203354",
+      "compe": "450",
+      "compe4": "0450",
+      "name": "FITS INSTITUIÇÃO DE PAGAMENTO S.A.",
+      "shortName": "FITS IP",
+      "logo": {
+        "png": "logos/png/13203354.png",
+        "svg": "logos/svg/13203354.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "FITS INSTITUICAO DE PAGAMENTO S.A.",
+          "cnpj": "13203354000185",
+          "uri": "https://sharedimages.fitbank.com.br/sharedimages/logo-FITFABK-512.svg",
+          "sha256": "9462675aee79b545549ca1a32784481f33d311de51af37d27d2ab0ea2a2a1291",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "40475846",
+      "compe": "451",
+      "compe4": "0451",
+      "name": "J17 - SOCIEDADE DE CRÉDITO DIRETO S/A",
+      "shortName": "J17 - SCD S/A",
+      "logo": null
+    },
+    {
+      "ispb": "39676772",
+      "compe": "452",
+      "compe4": "0452",
+      "name": "CREDIFIT SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "CREDIFIT SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "41592532",
+      "compe": "454",
+      "compe4": "0454",
+      "name": "MÉRITO DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+      "shortName": "MÉRITO DTVM LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "38429045",
+      "compe": "455",
+      "compe4": "0455",
+      "name": "VIS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA",
+      "shortName": "VIS DTVM LTDA",
+      "logo": null
+    },
+    {
+      "ispb": "60498557",
+      "compe": "456",
+      "compe4": "0456",
+      "name": "Banco MUFG Brasil S.A.",
+      "shortName": "BCO MUFG BRASIL S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "39587424",
+      "compe": "457",
+      "compe4": "0457",
+      "name": "UY3 SOCIEDADE DE CRÉDITO DIRETO S/A",
+      "shortName": "UY3 SCD S/A",
+      "logo": null
+    },
+    {
+      "ispb": "07253654",
+      "compe": "458",
+      "compe4": "0458",
+      "name": "HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+      "shortName": "HEDGE INVESTMENTS DTVM LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "42047025",
+      "compe": "460",
+      "compe4": "0460",
+      "name": "UNAVANTI SOCIEDADE DE CRÉDITO DIRETO S/A",
+      "shortName": "UNAVANTI SCD S/A",
+      "logo": null
+    },
+    {
+      "ispb": "19540550",
+      "compe": "461",
+      "compe4": "0461",
+      "name": "ASAAS GESTÃO FINANCEIRA INSTITUIÇÃO DE PAGAMENTO S.A.",
+      "shortName": "ASAAS IP S.A.",
+      "logo": {
+        "png": "logos/png/19540550.png",
+        "svg": "logos/svg/19540550.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "ASAAS GESTAO FINANCEIRA INSTITUICAO DE PAGAMENTO S.A.",
+          "cnpj": "19540550000121",
+          "uri": "https://asaas-obb.s3.sa-east-1.amazonaws.com/public/Logo-Asaas-Azul.svg",
+          "sha256": "5ca9eddd469ff29afff5b4c10ba91f4fdb7b4e560ab9bfccb59f55a9f1633d3d",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "39908427",
+      "compe": "462",
+      "compe4": "0462",
+      "name": "STARK SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "STARK SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "40434681",
+      "compe": "463",
+      "compe4": "0463",
+      "name": "AZUMI DISTRIBUIDORA DE TíTULOS E VALORES MOBILIáRIOS LTDA.",
+      "shortName": "AZUMI DTVM",
+      "logo": null
+    },
+    {
+      "ispb": "60518222",
+      "compe": "464",
+      "compe4": "0464",
+      "name": "Banco Sumitomo Mitsui Brasileiro S.A.",
+      "shortName": "BCO SUMITOMO MITSUI BRASIL S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "40083667",
+      "compe": "465",
+      "compe4": "0465",
+      "name": "CAPITAL CONSIG SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "CAPITAL CONSIG SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "33886862",
+      "compe": "467",
+      "compe4": "0467",
+      "name": "MASTER S/A CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "shortName": "MASTER S/A CCTVM - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "logo": null
+    },
+    {
+      "ispb": "04862600",
+      "compe": "468",
+      "compe4": "0468",
+      "name": "PORTOSEG S.A. - CREDITO, FINANCIAMENTO E INVESTIMENTO",
+      "shortName": "PORTOSEG S.A. CFI",
+      "logo": null
+    },
+    {
+      "ispb": "07138049",
+      "compe": "469",
+      "compe4": "0469",
+      "name": "PICPAY INVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA",
+      "shortName": "PICPAY INVEST",
+      "logo": {
+        "png": "logos/png/07138049.png",
+        "svg": "logos/svg/07138049.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "PICPAY",
+          "cnpj": "22896431000110",
+          "uri": "https://picpay.s3.sa-east-1.amazonaws.com/openbanking/picpay-logo-icon-pf.svg",
+          "sha256": "5dda49002fc6d9b323a30d88afd7e9ba5b54982dc5ffcf630364aa94bfcf43b8",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "18394228",
+      "compe": "470",
+      "compe4": "0470",
+      "name": "CDC SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "CDC SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "33466988",
+      "compe": "473",
+      "compe4": "0473",
+      "name": "Banco Caixa Geral - Brasil S.A.",
+      "shortName": "BCO CAIXA GERAL BRASIL S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "10371492",
+      "compe": "475",
+      "compe4": "0475",
+      "name": "Banco Yamaha Motor do Brasil S.A.",
+      "shortName": "BCO YAMAHA MOTOR S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "45860531",
+      "compe": "476",
+      "compe4": "0476",
+      "name": "IDEA MAKER INSTITUICAO DE PAGAMENTO LTDA",
+      "shortName": "IDEA MAKER IP LTDA",
+      "logo": null
+    },
+    {
+      "ispb": "33042953",
+      "compe": "477",
+      "compe4": "0477",
+      "name": "Citibank N.A.",
+      "shortName": "CITIBANK N.A.",
+      "logo": {
+        "png": "logos/png/33042953.png",
+        "svg": "logos/svg/33042953.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO CITIBANK S.A.",
+          "cnpj": "33479023000180",
+          "uri": "https://corporateportal.brazil.citibank.com/resources-responsive/img/Citi_Blue-RedArc_RGB.svg",
+          "sha256": "84e7b604b27ab997e27b234db4c3bbdedddd45d3b9eebd29a816517ef8556a45",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "11760553",
+      "compe": "478",
+      "compe4": "0478",
+      "name": "GAZINCRED S.A. SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+      "shortName": "GAZINCRED S.A. SCFI",
+      "logo": null
+    },
+    {
+      "ispb": "60394079",
+      "compe": "479",
+      "compe4": "0479",
+      "name": "Banco ItauBank S.A.",
+      "shortName": "BCO ITAUBANK S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "43599047",
+      "compe": "481",
+      "compe4": "0481",
+      "name": "SUPERLÓGICA SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "SUPERLÓGICA SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "42259084",
+      "compe": "482",
+      "compe4": "0482",
+      "name": "ARTTA SOCIEDADE DE CRÉDITO DIRETO S.A",
+      "shortName": "ARTTA SCD",
+      "logo": null
+    },
+    {
+      "ispb": "36864992",
+      "compe": "484",
+      "compe4": "0484",
+      "name": "MAF DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "shortName": "MAF DTVM SA",
+      "logo": null
+    },
+    {
+      "ispb": "62331228",
+      "compe": "487",
+      "compe4": "0487",
+      "name": "DEUTSCHE BANK S.A. - BANCO ALEMAO",
+      "shortName": "DEUTSCHE BANK S.A.BCO ALEMAO",
+      "logo": null
+    },
+    {
+      "ispb": "46518205",
+      "compe": "488",
+      "compe4": "0488",
+      "name": "JPMorgan Chase Bank, National Association",
+      "shortName": "JPMORGAN CHASE BANK",
+      "logo": null
+    },
+    {
+      "ispb": "44189447",
+      "compe": "495",
+      "compe4": "0495",
+      "name": "Banco de La Provincia de Buenos Aires",
+      "shortName": "BCO LA PROVINCIA B AIRES BCE",
+      "logo": null
+    },
+    {
+      "ispb": "45283173",
+      "compe": "496",
+      "compe4": "0496",
+      "name": "BBVA BRASIL BANCO DE INVESTIMENTO S.A.",
+      "shortName": "BBVA BRASIL BI S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "32062580",
+      "compe": "505",
+      "compe4": "0505",
+      "name": "BANCO UBS (BRASIL) S.A.",
+      "shortName": "BCO UBS BRASIL",
+      "logo": null
+    },
+    {
+      "ispb": "42066258",
+      "compe": "506",
+      "compe4": "0506",
+      "name": "RJI CORRETORA DE TITULOS E VALORES MOBILIARIOS LTDA",
+      "shortName": "RJI",
+      "logo": null
+    },
+    {
+      "ispb": "37229413",
+      "compe": "507",
+      "compe4": "0507",
+      "name": "SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO EFÍ S.A.",
+      "shortName": "SCFI EFÍ S.A.",
+      "logo": {
+        "png": "logos/png/37229413.png",
+        "svg": "logos/svg/37229413.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "EFI S.A. - INSTITUICAO DE PAGAMENTO",
+          "cnpj": "09089356000118",
+          "uri": "https://gerencianet-pub-prod-1.s3.amazonaws.com/openbanking/efi-by-gn-512x512.svg",
+          "sha256": "185517da3805bc5c910f62920d22b2d69651f70dcd380ce1ec9ba8b242d2f8c0",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "61384004",
+      "compe": "508",
+      "compe4": "0508",
+      "name": "AVENUE SECURITIES BANCO DE INVESTIMENTO S.A.",
+      "shortName": "AVENUE SECURITIES BI S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "13935893",
+      "compe": "509",
+      "compe4": "0509",
+      "name": "CELCOIN INSTITUICAO DE PAGAMENTO S.A.",
+      "shortName": "CELCOIN IP S.A.",
+      "logo": {
+        "png": "logos/png/13935893.png",
+        "svg": "logos/svg/13935893.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "CELCOIN INSTITUICAO DE PAGAMENTO S.A.",
+          "cnpj": "13935893000109",
+          "uri": "https://www.celcoin.com.br/img/rede-celcoin-logo.svg",
+          "sha256": "5b9ffc6b15c8da9ddfcbed28d0e7b2095527b79b4f14ee7f7ab337273a3c072f",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "39738065",
+      "compe": "510",
+      "compe4": "0510",
+      "name": "FFCRED SOCIEDADE DE CRÉDITO DIRETO S.A..",
+      "shortName": "FFCRED SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "44683140",
+      "compe": "511",
+      "compe4": "0511",
+      "name": "MAGNUM SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "MAGNUM SCD",
+      "logo": null
+    },
+    {
+      "ispb": "36266751",
+      "compe": "512",
+      "compe4": "0512",
+      "name": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+      "shortName": "FINVEST DTVM",
+      "logo": null
+    },
+    {
+      "ispb": "44728700",
+      "compe": "513",
+      "compe4": "0513",
+      "name": "ATF SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "ATF SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "73302408",
+      "compe": "514",
+      "compe4": "0514",
+      "name": "EXIM CORRETORA DE CAMBIO LTDA",
+      "shortName": "EXIM CC LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "36583700",
+      "compe": "516",
+      "compe4": "0516",
+      "name": "QISTA S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+      "shortName": "QISTA S.A. CFI",
+      "logo": null
+    },
+    {
+      "ispb": "03816413",
+      "compe": "517",
+      "compe4": "0517",
+      "name": "PAGUEVELOZ INSTITUIÇÃO DE PAGAMENTO LTDA.",
+      "shortName": "PAGUEVELOZ IP LTDA.",
+      "logo": {
+        "png": "logos/png/03816413.png",
+        "svg": "logos/svg/03816413.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "PAGUEVELOZ INSTITUICAO DE PAGAMENTO LTDA",
+          "cnpj": "03816413000137",
+          "uri": "https://www.pagueveloz.com.br/Content/Img/logo.svg",
+          "sha256": "a836e282b7de7e1cceb7c2c081ff23c962620cda555ed11f01d4174f3f9025dd",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "37679449",
+      "compe": "518",
+      "compe4": "0518",
+      "name": "MERCADO CRÉDITO SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+      "shortName": "MERCADO CRÉDITO SCFI S.A.",
+      "logo": {
+        "png": "logos/png/37679449.png",
+        "svg": "logos/svg/37679449.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "MERCADO PAGO INSTITUICAO DE PAGAMENTO LTDA",
+          "cnpj": "10573521000191",
+          "uri": "https://http2.mlstatic.com/open-banking/assets/logo.svg",
+          "sha256": "a1dbab9a3efb581b2e2e12bd09a3e4fe16d71b4d7c29be902f78c2958ee103f2",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "40768766",
+      "compe": "519",
+      "compe4": "0519",
+      "name": "LIONS TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+      "shortName": "LIONS TRUST DTVM",
+      "logo": null
+    },
+    {
+      "ispb": "44705774",
+      "compe": "520",
+      "compe4": "0520",
+      "name": "SOMAPAY SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "SOMAPAY SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "44019481",
+      "compe": "521",
+      "compe4": "0521",
+      "name": "PEAK SOCIEDADE DE EMPRÉSTIMO ENTRE PESSOAS S.A.",
+      "shortName": "PEAK SEP S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "47593544",
+      "compe": "522",
+      "compe4": "0522",
+      "name": "RED SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "RED SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "44292580",
+      "compe": "523",
+      "compe4": "0523",
+      "name": "HR DIGITAL - SOCIEDADE DE CRÉDITO DIRETO S/A",
+      "shortName": "HR DIGITAL SCD",
+      "logo": null
+    },
+    {
+      "ispb": "45854066",
+      "compe": "524",
+      "compe4": "0524",
+      "name": "WNT CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "shortName": "WNT CAPITAL DTVM",
+      "logo": null
+    },
+    {
+      "ispb": "34265629",
+      "compe": "525",
+      "compe4": "0525",
+      "name": "INTERCAM CORRETORA DE CÂMBIO LTDA.",
+      "shortName": "INTERCAM CC LTDA",
+      "logo": null
+    },
+    {
+      "ispb": "46026562",
+      "compe": "526",
+      "compe4": "0526",
+      "name": "MONETARIE SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "MONETARIE SCD",
+      "logo": null
+    },
+    {
+      "ispb": "44478623",
+      "compe": "527",
+      "compe4": "0527",
+      "name": "ATICCA - SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "ATICCA SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "34829992",
+      "compe": "528",
+      "compe4": "0528",
+      "name": "CBSF DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.- EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "shortName": "CBSF DTVM -EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "logo": null
+    },
+    {
+      "ispb": "17079937",
+      "compe": "529",
+      "compe4": "0529",
+      "name": "PINBANK BRASIL INSTITUIÇÃO DE PAGAMENTO S.A.",
+      "shortName": "PINBANK IP",
+      "logo": null
+    },
+    {
+      "ispb": "47873449",
+      "compe": "530",
+      "compe4": "0530",
+      "name": "SER FINANCE SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "SER FINANCE SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "34337707",
+      "compe": "531",
+      "compe4": "0531",
+      "name": "BMP SOCIEDADE DE CRÉDITO DIRETO S.A",
+      "shortName": "BMP SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "45745537",
+      "compe": "532",
+      "compe4": "0532",
+      "name": "FUTURO SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "FUTURO SCD",
+      "logo": null
+    },
+    {
+      "ispb": "22575466",
+      "compe": "533",
+      "compe4": "0533",
+      "name": "SRM BANK INSTITUIÇÃO DE PAGAMENTO S/A",
+      "shortName": "SRM BANK",
+      "logo": null
+    },
+    {
+      "ispb": "00714671",
+      "compe": "534",
+      "compe4": "0534",
+      "name": "EWALLY INSTITUIÇÃO DE PAGAMENTO S.A.",
+      "shortName": "EWALLY IP S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "39519944",
+      "compe": "535",
+      "compe4": "0535",
+      "name": "OPEA SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "OPEA SCD",
+      "logo": null
+    },
+    {
+      "ispb": "20855875",
+      "compe": "536",
+      "compe4": "0536",
+      "name": "NEON PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO",
+      "shortName": "NEON PAGAMENTOS S.A. IP",
+      "logo": {
+        "png": "logos/png/20855875.png",
+        "svg": "logos/svg/20855875.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "Neon Pagamentos",
+          "cnpj": "20855875000182",
+          "uri": "https://opbk-brasil.s3.sa-east-1.amazonaws.com/neon/logo.svg",
+          "sha256": "6fcb82100b54c355d8d0ca7e67ac577091cf15c9e92733cfa4a5a34bd1668a7b",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "45756448",
+      "compe": "537",
+      "compe4": "0537",
+      "name": "MICROCASH SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E À EMPRESA DE PEQUENO PORTE LTDA.",
+      "shortName": "MICROCASH SCMEPP LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "20251847",
+      "compe": "538",
+      "compe4": "0538",
+      "name": "SUDACRED SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "SUDACRED SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "00122327",
+      "compe": "539",
+      "compe4": "0539",
+      "name": "SANTINVEST S.A. - CREDITO, FINANCIAMENTO E INVESTIMENTOS",
+      "shortName": "SANTINVEST S.A. - CFI",
+      "logo": null
+    },
+    {
+      "ispb": "04849745",
+      "compe": "540",
+      "compe4": "0540",
+      "name": "HBI SOCIEDADE DE CRÉDITO DIRETO S/A.",
+      "shortName": "HBI SCD",
+      "logo": null
+    },
+    {
+      "ispb": "00954288",
+      "compe": "541",
+      "compe4": "0541",
+      "name": "FUNDO GARANTIDOR DE CREDITOS - FGC",
+      "shortName": "FDO GARANTIDOR CRÉDITOS",
+      "logo": null
+    },
+    {
+      "ispb": "18189547",
+      "compe": "542",
+      "compe4": "0542",
+      "name": "CLOUDWALK INSTITUIÇÃO DE PAGAMENTO E SERVICOS LTDA",
+      "shortName": "CLOUDWALK IP LTDA",
+      "logo": {
+        "png": "logos/png/18189547.png",
+        "svg": "logos/svg/18189547.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "CLOUDWALK INSTITUICAO DE PAGAMENTO E SERVICOS LTDA",
+          "cnpj": "18189547000142",
+          "uri": "https://auth.infinitepay.io/images/logo.svg",
+          "sha256": "ab5a9d9a08122130f3a66984dc288351b5c237e1e52c5a9dc65b21d2f8585a40",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "92825397",
+      "compe": "543",
+      "compe4": "0543",
+      "name": "COOPERATIVA DE ECONOMIA E CRÉDITO MÚTUO DOS ELETRICITÁRIOS E DOS TRABALHADORES DAS EMPRESAS DO SETOR DE ENERGIA - COOPCRECE",
+      "shortName": "COOPCRECE",
+      "logo": null
+    },
+    {
+      "ispb": "38593706",
+      "compe": "544",
+      "compe4": "0544",
+      "name": "MULTICRED SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "MULTICRED SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "17352220",
+      "compe": "545",
+      "compe4": "0545",
+      "name": "SENSO CORRETORA DE CAMBIO E VALORES MOBILIARIOS S.A",
+      "shortName": "SENSO CCVM S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "30980539",
+      "compe": "546",
+      "compe4": "0546",
+      "name": "OKTO INSTITUIÇÃO DE PAGAMENTO S.A.",
+      "shortName": "OKTO IP",
+      "logo": null
+    },
+    {
+      "ispb": "45331622",
+      "compe": "547",
+      "compe4": "0547",
+      "name": "BNK DIGITAL SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "BNK DIGITAL SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "06249129",
+      "compe": "548",
+      "compe4": "0548",
+      "name": "RPW S/A SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+      "shortName": "RPW S.A. SCFI",
+      "logo": null
+    },
+    {
+      "ispb": "32074986",
+      "compe": "550",
+      "compe4": "0550",
+      "name": "BEETELLER INSTITUIÇÃO DE PAGAMENTO LTDA.",
+      "shortName": "BEETELLER IP LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "48967968",
+      "compe": "551",
+      "compe4": "0551",
+      "name": "VERT DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA",
+      "shortName": "VERT DTVM LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "32192325",
+      "compe": "552",
+      "compe4": "0552",
+      "name": "UZZIPAY INSTITUIÇÃO DE PAGAMENTO S.A.",
+      "shortName": "UZZIPAY IP S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "48707451",
+      "compe": "553",
+      "compe4": "0553",
+      "name": "PERCAPITAL SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "PERCAPITAL SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "28811341",
+      "compe": "554",
+      "compe4": "0554",
+      "name": "BANCO STONEX S.A.",
+      "shortName": "BCO STONEX S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "02682287",
+      "compe": "555",
+      "compe4": "0555",
+      "name": "PAN FINANCEIRA S.A. - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTOS",
+      "shortName": "PAN FINAN",
+      "logo": {
+        "png": "logos/png/02682287.png",
+        "svg": "logos/svg/02682287.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BANCO PAN",
+          "cnpj": "59285411000113",
+          "uri": "https://www.bancopan.com.br/content/dam/documentos/outros-produtos/open-banking/logo_pan_openbanking.svg",
+          "sha256": "4ca9e04c2f27ab627ff54dbd2d31a26640e29d431808e3ff78e724fce28d16ab",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "40333582",
+      "compe": "556",
+      "compe4": "0556",
+      "name": "SAYGO CORRETORA DE CÂMBIO S.A.",
+      "shortName": "SAYGO CÂMBIO",
+      "logo": null
+    },
+    {
+      "ispb": "30944783",
+      "compe": "557",
+      "compe4": "0557",
+      "name": "PAGPRIME INSTITUICAO DE PAGAMENTO LTDA",
+      "shortName": "PAGPRIME IP",
+      "logo": null
+    },
+    {
+      "ispb": "49288113",
+      "compe": "559",
+      "compe4": "0559",
+      "name": "KANASTRA FINANCEIRA S.A, CREDITO, FINANCIAMENTO E INVESTIMENTO",
+      "shortName": "KANASTRA CFI",
+      "logo": null
+    },
+    {
+      "ispb": "21995256",
+      "compe": "560",
+      "compe4": "0560",
+      "name": "MAG INSTITUICAO DE PAGAMENTO LTDA",
+      "shortName": "MAG IP LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "20757199",
+      "compe": "561",
+      "compe4": "0561",
+      "name": "PAY4FUN INSTITUICAO DE PAGAMENTO S.A.",
+      "shortName": "PAY4FUN IP S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "18684408",
+      "compe": "562",
+      "compe4": "0562",
+      "name": "AZIMUT BRASIL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA",
+      "shortName": "AZIMUT BRASIL DTVM LTDA",
+      "logo": null
+    },
+    {
+      "ispb": "40276692",
+      "compe": "563",
+      "compe4": "0563",
+      "name": "PROTEGE CASH INSTITUIÇÃO DE PAGAMENTO S.A.",
+      "shortName": "PROTEGE CASH",
+      "logo": null
+    },
+    {
+      "ispb": "63019146",
+      "compe": "564",
+      "compe4": "0564",
+      "name": "J17 - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S/A",
+      "shortName": "J17 CFI S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "74014747",
+      "compe": "565",
+      "compe4": "0565",
+      "name": "ÁGORA CORRETORA DE TITULOS E VALORES MOBILIARIOS S.A.",
+      "shortName": "ÁGORA CTVM S.A.",
+      "logo": {
+        "png": "logos/png/74014747.png",
+        "svg": null,
+        "source": {
+          "type": "openfinance",
+          "org": "AGORA CTVM S.A.",
+          "cnpj": "74014747000135",
+          "uri": "https://www.agorainvest.com.br/images/OpenFinance/agora.svg",
+          "sha256": "8af0df804c26587d57ea58319297bbb8e5c7171dc29a6def0f0aceb2a5ea6514",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "23114447",
+      "compe": "566",
+      "compe4": "0566",
+      "name": "FLAGSHIP INSTITUICAO DE PAGAMENTO LTDA",
+      "shortName": "FLAGSHIP IP LTDA",
+      "logo": null
+    },
+    {
+      "ispb": "33040601",
+      "compe": "567",
+      "compe4": "0567",
+      "name": "MERCANTIL FINANCEIRA S.A. - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO.",
+      "shortName": "MERCANTIL FINANCEIRA",
+      "logo": {
+        "png": "logos/png/33040601.png",
+        "svg": "logos/svg/33040601.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO MERCANTIL DO BRASIL S.A.",
+          "cnpj": "17184037000110",
+          "uri": "https://www.bancomercantil.com.br/imagens/openbanking/mercantil.svg",
+          "sha256": "ce244740d6ba638b7c82da17b7025cfa9f2756d9c59177181b18d2ca7fe3fabd",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "49933388",
+      "compe": "568",
+      "compe4": "0568",
+      "name": "BRCONDOS SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "BRCONDOS SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "12473687",
+      "compe": "569",
+      "compe4": "0569",
+      "name": "CONTA PRONTA INSTITUICAO DE PAGAMENTO LTDA",
+      "shortName": "CONTA PRONTA IP",
+      "logo": null
+    },
+    {
+      "ispb": "50489148",
+      "compe": "571",
+      "compe4": "0571",
+      "name": "MONTE BRAVO CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "shortName": "MONTE BRAVO CTVM S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "51414521",
+      "compe": "572",
+      "compe4": "0572",
+      "name": "ALL IN CRED SOCIEDADE DE CREDITO DIRETO S.A.",
+      "shortName": "ALL IN CRED SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "18282093",
+      "compe": "573",
+      "compe4": "0573",
+      "name": "OXY COMPANHIA HIPOTECÁRIA",
+      "shortName": "OXY CH",
+      "logo": null
+    },
+    {
+      "ispb": "48756121",
+      "compe": "574",
+      "compe4": "0574",
+      "name": "A55 SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "A55 SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "48584954",
+      "compe": "575",
+      "compe4": "0575",
+      "name": "DGBK CREDIT S.A. - SOCIEDADE DE CRÉDITO DIRETO.",
+      "shortName": "DGBK CREDIT S.A. - SOCIEDADE DE CRÉDITO DIRETO.",
+      "logo": null
+    },
+    {
+      "ispb": "11351086",
+      "compe": "576",
+      "compe4": "0576",
+      "name": "MERCADO BITCOIN INSTITUICAO DE PAGAMENTO LTDA",
+      "shortName": "MERCADO BITCOIN IP LTDA",
+      "logo": {
+        "png": "logos/png/11351086.png",
+        "svg": "logos/svg/11351086.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "MERCADO BITCOIN INSTITUICAO DE PAGAMENTO LTDA",
+          "cnpj": "11351086000113",
+          "uri": "https://www.mercadobitcoin.com.br/wp-content/uploads/2024/10/logo-512.svg",
+          "sha256": "a3ea1e8cfdad10fd679c5eaa183d563b93b591f354f3d395626f0bfcbfd5292c",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "10663610",
+      "compe": "577",
+      "compe4": "0577",
+      "name": "DESENVOLVE SP - AGÊNCIA DE FOMENTO DO ESTADO DE SÃO PAULO S.A.",
+      "shortName": "AF DESENVOLVE SP S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "49555647",
+      "compe": "579",
+      "compe4": "0579",
+      "name": "QUADRA SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "QUADRA SCD",
+      "logo": null
+    },
+    {
+      "ispb": "87437687",
+      "compe": "580",
+      "compe4": "0580",
+      "name": "COOPERATIVA CENTRAL DE CRÉDITO, POUPANÇA E INVESTIMENTO DO SUL E SUDESTE - CENTRAL SICREDI SUL/SUDESTE",
+      "shortName": "CCCPOUPINV SUL E SUDESTE - CENTRAL SUL/SUDESTE",
+      "logo": null
+    },
+    {
+      "ispb": "70119680",
+      "compe": "581",
+      "compe4": "0581",
+      "name": "COOPERATIVA CENTRAL DE CRÉDITO, POUPANÇA E INVESTIMENTO DO NORDESTE - CENTRAL SICREDI NORDESTE",
+      "shortName": "CENTRAL NORDESTE",
+      "logo": {
+        "png": "logos/png/70119680.png",
+        "svg": "logos/svg/70119680.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
+          "cnpj": "03795072000160",
+          "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
+          "sha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "33737818",
+      "compe": "582",
+      "compe4": "0582",
+      "name": "COOPERATIVA CENTRAL DE CRÉDITO, POUPANÇA E INVESTIMENTO DE MATO GROSSO DO SUL, GOIÁS, DISTRITO FEDERAL E TOCANTINS - CENTRAL SICREDI BRASIL CENTRAL",
+      "shortName": "CCC POUP INV DE MS, GO, DF E TO",
+      "logo": null
+    },
+    {
+      "ispb": "33667205",
+      "compe": "583",
+      "compe4": "0583",
+      "name": "COOPERATIVA CENTRAL DE CRÉDITO, POUPANÇA E INVESTIMENTO DO CENTRO NORTE DO BRASIL - CENTRAL SICREDI CENTRO NORTE",
+      "shortName": "CCC POUP INV DO CENTRO NORTE DO BRASIL",
+      "logo": null
+    },
+    {
+      "ispb": "80230774",
+      "compe": "584",
+      "compe4": "0584",
+      "name": "COOPERATIVA CENTRAL DE CRÉDITO, POUPANÇA E INVESTIMENTO DOS ESTADOS DO PARANÁ, SÃO PAULO E RIO DE JANEIRO - CENTRAL SICREDI PR/SP/RJ",
+      "shortName": "CCC POUP E INV DOS ESTADOS DO PR, SP E RJ",
+      "logo": null
+    },
+    {
+      "ispb": "50946592",
+      "compe": "585",
+      "compe4": "0585",
+      "name": "SETHI SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "SETHI SCD SA",
+      "logo": null
+    },
+    {
+      "ispb": "35810871",
+      "compe": "586",
+      "compe4": "0586",
+      "name": "Z1 INSTITUIÇÃO DE PAGAMENTO LTDA.",
+      "shortName": "Z1 IP LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "37678915",
+      "compe": "587",
+      "compe4": "0587",
+      "name": "FIDD DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+      "shortName": "FIDD DTVM LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "20308187",
+      "compe": "588",
+      "compe4": "0588",
+      "name": "AVANCARD PROVER INSTITUIÇÃO DE PAGAMENTO LTDA",
+      "shortName": "AVANCARD PROVER IP LTDA",
+      "logo": {
+        "png": "logos/png/20308187.png",
+        "svg": "logos/svg/20308187.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "PROVER PROMOCAO DE VENDAS INSTITUICAO DE PAGAMENTO LTDA",
+          "cnpj": "20308187000100",
+          "uri": "https://qr-h.cornerpix.com.br/spi-qrcode/public/images/logo-avancard.svg",
+          "sha256": "39e1ebc6fa51c56c0b2f389a11e7f17c5129a8ca4cb5ab27b3fad661f19007c9",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "51212088",
+      "compe": "589",
+      "compe4": "0589",
+      "name": "G5 SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "G5 SCD SA",
+      "logo": null
+    },
+    {
+      "ispb": "40473435",
+      "compe": "590",
+      "compe4": "0590",
+      "name": "REPASSES FINANCEIROS E SOLUCOES TECNOLOGICAS INSTITUICAO DE PAGAMENTO S.A.",
+      "shortName": "REPASSES FINANCEIROS E SOLUCOES TECNOLOGICAS IP S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "02671743",
+      "compe": "591",
+      "compe4": "0591",
+      "name": "BANVOX DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA",
+      "shortName": "BANVOX DTVM",
+      "logo": null
+    },
+    {
+      "ispb": "45548763",
+      "compe": "592",
+      "compe4": "0592",
+      "name": "INSTITUIÇÃO DE PAGAMENTOS MAPS LTDA.",
+      "shortName": "MAPS IP LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "27084098",
+      "compe": "593",
+      "compe4": "0593",
+      "name": "TRANSFEERA INSTITUIÇÃO DE PAGAMENTO S.A",
+      "shortName": "TRANSFEERA IP S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "48703388",
+      "compe": "594",
+      "compe4": "0594",
+      "name": "ASA SOCIEDADE DE CRÉDITO FINANCIAMENTO E INVESTIMENTO S.A.",
+      "shortName": "ASA SCFI S.A.",
+      "logo": {
+        "png": "logos/png/48703388.png",
+        "svg": "logos/svg/48703388.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "ASA SOCIEDADE DE CREDITO FINANCIAMENTO E INVESTIMENTO S.A.",
+          "cnpj": "48703388000113",
+          "uri": "https://www.asa.com.br/openfinance/logo-asa-openfinance.svg",
+          "sha256": "50ecae198905e155fc76660159e873eda9f8783c57ae563e4374467d304bd6d8",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "19468242",
+      "compe": "595",
+      "compe4": "0595",
+      "name": "IFOOD PAGO INSTITUIÇÃO DE PAGAMENTO S.A.",
+      "shortName": "IFOOD PAGO IP",
+      "logo": {
+        "png": "logos/png/19468242.png",
+        "svg": "logos/svg/19468242.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "IFood Pago Instituicao de Pagamento S.A.",
+          "cnpj": "19468242000132",
+          "uri": "https://benefit-b2c-bff-images.ifood.com.br/imgs/ifood-pago-marsala.svg",
+          "sha256": "e66c6022f8737fc5a9d1c35d0b38355e004bf1551c6a2e30c0511ba7df65ef8c",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "39696395",
+      "compe": "596",
+      "compe4": "0596",
+      "name": "CACTVS INSTITUICAO DE PAGAMENTO S.A",
+      "shortName": "CACTVS IP S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "34747388",
+      "compe": "597",
+      "compe4": "0597",
+      "name": "ISSUER INSTITUICAO DE PAGAMENTO LTDA.",
+      "shortName": "ISSUER IP LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "50626276",
+      "compe": "598",
+      "compe4": "0598",
+      "name": "KONECT SOCIEDADE DE CRÉDITO DIRETO S/A",
+      "shortName": "KONECT SCD S/A",
+      "logo": null
+    },
+    {
+      "ispb": "36321990",
+      "compe": "599",
+      "compe4": "0599",
+      "name": "AGORACRED S/A SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+      "shortName": "AGORACRED S/A SCFI",
+      "logo": null
+    },
+    {
+      "ispb": "59118133",
+      "compe": "600",
+      "compe4": "0600",
+      "name": "Banco Luso Brasileiro S.A.",
+      "shortName": "BCO LUSO BRASILEIRO S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "31895683",
+      "compe": "604",
+      "compe4": "0604",
+      "name": "Banco Industrial do Brasil S.A.",
+      "shortName": "BCO INDUSTRIAL DO BRASIL S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "78626983",
+      "compe": "610",
+      "compe4": "0610",
+      "name": "Banco VR S.A.",
+      "shortName": "BCO VR S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "61820817",
+      "compe": "611",
+      "compe4": "0611",
+      "name": "Banco Paulista S.A.",
+      "shortName": "BCO PAULISTA S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "31880826",
+      "compe": "612",
+      "compe4": "0612",
+      "name": "Banco Guanabara S.A.",
+      "shortName": "BCO GUANABARA S.A.",
+      "logo": {
+        "png": "logos/png/31880826.png",
+        "svg": "logos/svg/31880826.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO GUANABARA S.A.",
+          "cnpj": "31880826000116",
+          "uri": "https://www.bancoguanabara.com.br/logo/logo_new3.svg",
+          "sha256": "c0501dda1266e99fa47a7b023d50ac81e3aa343c8134740ab3e89a785cd438b9",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "60850229",
+      "compe": "613",
+      "compe4": "0613",
+      "name": "Omni Banco S.A.",
+      "shortName": "OMNI BANCO S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "52440987",
+      "compe": "614",
+      "compe4": "0614",
+      "name": "SANTS SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "SANTS SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "37470405",
+      "compe": "615",
+      "compe4": "0615",
+      "name": "SMART SOLUTIONS GROUP INSTITUICAO DE PAGAMENTO LTDA",
+      "shortName": "SMART SOLUTIONS GROUP IP LTDA",
+      "logo": null
+    },
+    {
+      "ispb": "49931906",
+      "compe": "619",
+      "compe4": "0619",
+      "name": "TRIO INSTITUICAO DE PAGAMENTO LTDA.",
+      "shortName": "TRIO IP LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "51342763",
+      "compe": "620",
+      "compe4": "0620",
+      "name": "REVOLUT SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "REVOLUT SCD S.A.",
+      "logo": {
+        "png": "logos/png/51342763.png",
+        "svg": "logos/svg/51342763.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "REVOLUT SOCIEDADE DE CREDITO DIRETO S.A.",
+          "cnpj": "51342763000151",
+          "uri": "https://assets.revolut.com/Brand/OpenFinance/Logos/Symbol/Revolut%20OpenFinance_BR%20Symbol.svg",
+          "sha256": "b3fba5074bd0f1b33e2daec6d8cf135c39c92d735e36937dd6e05810153e2098",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "59285411",
+      "compe": "623",
+      "compe4": "0623",
+      "name": "Banco Pan S.A.",
+      "shortName": "BANCO PAN",
+      "logo": {
+        "png": "logos/png/59285411.png",
+        "svg": "logos/svg/59285411.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BANCO PAN",
+          "cnpj": "59285411000113",
+          "uri": "https://www.bancopan.com.br/content/dam/documentos/outros-produtos/open-banking/logo_pan_openbanking.svg",
+          "sha256": "4ca9e04c2f27ab627ff54dbd2d31a26640e29d431808e3ff78e724fce28d16ab",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "61348538",
+      "compe": "626",
+      "compe4": "0626",
+      "name": "BANCO C6 CONSIGNADO S.A.",
+      "shortName": "BCO C6 CONSIG",
+      "logo": {
+        "png": "logos/png/61348538.png",
+        "svg": "logos/svg/61348538.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO C6 S.A.",
+          "cnpj": "31872495000172",
+          "uri": "https://cdn.c6bank.com.br/open-banking/c6bank-logo.svg",
+          "sha256": "deb2fd2d220ad11000f97f2ee553308c1e98311c979a0a003530aca76f83b011",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "58497702",
+      "compe": "630",
+      "compe4": "0630",
+      "name": "BANCO LETSBANK S.A. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "shortName": "BANCO LETSBANK S.A. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "logo": null
+    },
+    {
+      "ispb": "52586293",
+      "compe": "632",
+      "compe4": "0632",
+      "name": "Z-ON SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "Z-ON SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "68900810",
+      "compe": "633",
+      "compe4": "0633",
+      "name": "Banco Rendimento S.A.",
+      "shortName": "BCO RENDIMENTO S.A.",
+      "logo": {
+        "png": "logos/png/68900810.png",
+        "svg": "logos/svg/68900810.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO RENDIMENTO S.A.",
+          "cnpj": "68900810000138",
+          "uri": "https://cdn.rendimento.com.br/open-banking/logo.svg",
+          "sha256": "d646d749f534b7971c2a5565b0d53fc0e9a4d9a0d9baacdaf502456b01a54fe2",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "17351180",
+      "compe": "634",
+      "compe4": "0634",
+      "name": "BANCO TRIANGULO S.A.",
+      "shortName": "BCO TRIANGULO S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "40112555",
+      "compe": "636",
+      "compe4": "0636",
+      "name": "GIRO - SOCIEDADE DE CRÉDITO DIRETO S/A",
+      "shortName": "GIRO - SCD S/A",
+      "logo": null
+    },
+    {
+      "ispb": "60889128",
+      "compe": "637",
+      "compe4": "0637",
+      "name": "BANCO SOFISA S.A.",
+      "shortName": "BCO SOFISA S.A.",
+      "logo": {
+        "png": "logos/png/60889128.png",
+        "svg": "logos/svg/60889128.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO SOFISA S.A.",
+          "cnpj": "60889128000180",
+          "uri": "https://www.sofisa.com.br/openbanking/logo_sofisa.svg",
+          "sha256": "8e8037f1bd61964c959251bad1b16b5941ab8d950487ec1945f7402867a3deed",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "62144175",
+      "compe": "643",
+      "compe4": "0643",
+      "name": "Banco Pine S.A.",
+      "shortName": "BCO PINE S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "54647259",
+      "compe": "644",
+      "compe4": "0644",
+      "name": "321 SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "321 SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "91669747",
+      "compe": "646",
+      "compe4": "0646",
+      "name": "DM SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A",
+      "shortName": "DM SCFI",
+      "logo": null
+    },
+    {
+      "ispb": "25104230",
+      "compe": "651",
+      "compe4": "0651",
+      "name": "PAGARE INSTITUICAO DE PAGAMENTO S.A.",
+      "shortName": "PAGARE IP S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "61024352",
+      "compe": "653",
+      "compe4": "0653",
+      "name": "BANCO PLENO S.A. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "shortName": "BM PLENO S.A. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "logo": null
+    },
+    {
+      "ispb": "92874270",
+      "compe": "654",
+      "compe4": "0654",
+      "name": "BANCO DIGIMAIS S.A.",
+      "shortName": "BCO DIGIMAIS S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "59588111",
+      "compe": "655",
+      "compe4": "0655",
+      "name": "Banco Votorantim S.A.",
+      "shortName": "BCO VOTORANTIM S.A.",
+      "logo": {
+        "png": "logos/png/59588111.png",
+        "svg": "logos/svg/59588111.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO VOTORANTIM S.A.",
+          "cnpj": "59588111000103",
+          "uri": "https://www.bv.com.br/ng15-open-base-recepcao-jornada/assets/images/logo-bv.svg",
+          "sha256": "936bddaa9bcebeccd0ed3274560389efec07868a1c2e8d0f3b921f54664d69f3",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "35210410",
+      "compe": "659",
+      "compe4": "0659",
+      "name": "ONEKEY PAYMENTS INSTITUICAO DE PAGAMENTO SA",
+      "shortName": "ONEKEY PAYMENTS IP S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "34471744",
+      "compe": "660",
+      "compe4": "0660",
+      "name": "PAGME INSTITUIÇÃO DE PAGAMENTO LTDA.",
+      "shortName": "PAGME IP LTDA",
+      "logo": null
+    },
+    {
+      "ispb": "55428859",
+      "compe": "661",
+      "compe4": "0661",
+      "name": "FREEX SOCIEDADE CORRETORA DE CÂMBIO S.A.",
+      "shortName": "FREEX SCC S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "32708748",
+      "compe": "662",
+      "compe4": "0662",
+      "name": "WE PAY OUT INSTITUICAO DE PAGAMENTO LTDA.",
+      "shortName": "WE PAY OUT IP LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "44782130",
+      "compe": "663",
+      "compe4": "0663",
+      "name": "ACTUAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "shortName": "ACTUAL DTVM S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "20018183",
+      "compe": "665",
+      "compe4": "0665",
+      "name": "STARK BANK S.A. - INSTITUICAO DE PAGAMENTO",
+      "shortName": "STARK BANK S.A. - IP",
+      "logo": null
+    },
+    {
+      "ispb": "48552108",
+      "compe": "667",
+      "compe4": "0667",
+      "name": "LIQUIDO INSTITUICAO DE PAGAMENTO LTDA",
+      "shortName": "LIQUIDO IP LTDA",
+      "logo": null
+    },
+    {
+      "ispb": "48632754",
+      "compe": "668",
+      "compe4": "0668",
+      "name": "CELCOIN SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "CELCOIN SCD",
+      "logo": {
+        "png": "logos/png/48632754.png",
+        "svg": "logos/svg/48632754.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "CELCOIN INSTITUICAO DE PAGAMENTO S.A.",
+          "cnpj": "13935893000109",
+          "uri": "https://www.celcoin.com.br/img/rede-celcoin-logo.svg",
+          "sha256": "5b9ffc6b15c8da9ddfcbed28d0e7b2095527b79b4f14ee7f7ab337273a3c072f",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "47133056",
+      "compe": "669",
+      "compe4": "0669",
+      "name": "TRANSFERO INSTITUICAO DE PAGAMENTO LTDA.",
+      "shortName": "TRANSFERO IP LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "11491029",
+      "compe": "670",
+      "compe4": "0670",
+      "name": "BSN PAGAMENTOS INSTITUIÇÃO DE PAGAMENTO LTDA",
+      "shortName": "BSN",
+      "logo": null
+    },
+    {
+      "ispb": "26264220",
+      "compe": "671",
+      "compe4": "0671",
+      "name": "ZERO INSTITUIÇÃO DE PAGAMENTO S.A.",
+      "shortName": "ZERO IP",
+      "logo": null
+    },
+    {
+      "ispb": "53505601",
+      "compe": "672",
+      "compe4": "0672",
+      "name": "STONE SOCIEDADE DE CREDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+      "shortName": "STONE CFI S.A.",
+      "logo": {
+        "png": "logos/png/53505601.png",
+        "svg": "logos/svg/53505601.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "STONE PAGAMENTOS S.A.",
+          "cnpj": "16501555000157",
+          "uri": "https://public-assets.stone.com.br/openfinance/stone-logo.svg",
+          "sha256": "c9ea826d048365162288b9d7d4e45ee527275315355fb491c45cfabdbbc0c6a3",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "08482873",
+      "compe": "673",
+      "compe4": "0673",
+      "name": "COOPERATIVA DE CRÉDITO RURAL DO AGRESTE ALAGOANO - COOPERAGRE",
+      "shortName": "CCR DO AGRESTE ALAGOANO",
+      "logo": null
+    },
+    {
+      "ispb": "27970567",
+      "compe": "674",
+      "compe4": "0674",
+      "name": "HINOVA PAY INSTITUICAO DE PAGAMENTO S.A.",
+      "shortName": "HINOVA PAY IP S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "30723871",
+      "compe": "675",
+      "compe4": "0675",
+      "name": "CASAS BAHIA PAY INSTITUIÇÃO DE PAGAMENTO LTDA.",
+      "shortName": "CASAS BAHIA PAY IP LTDA.",
+      "logo": {
+        "png": "logos/png/30723871.png",
+        "svg": "logos/svg/30723871.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "CASAS BAHIA PAY INSTITUICAO DE PAGAMENTO LTDA",
+          "cnpj": "30723871000102",
+          "uri": "https://assets.banqi.com/openfinance/icone_principal.svg",
+          "sha256": "ded0eb67b660de26dda69246162ec672f91122213380271280579ac8441fb992",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "35479592",
+      "compe": "676",
+      "compe4": "0676",
+      "name": "DUFRIO FINANCEIRA, CRÉDITO, FINANCIAMENTO E INVESTIMENTOS S.A.",
+      "shortName": "DUFRIO CFI S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "45716916",
+      "compe": "678",
+      "compe4": "0678",
+      "name": "FIDEM SOCIEDADE DE CRÉDITO DIRETO S/A",
+      "shortName": "FIDEM SCD S/A",
+      "logo": null
+    },
+    {
+      "ispb": "36690516",
+      "compe": "679",
+      "compe4": "0679",
+      "name": "PAY INSTITUICAO DE PAGAMENTO S.A.",
+      "shortName": "PAY IP S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "55823094",
+      "compe": "680",
+      "compe4": "0680",
+      "name": "DELTA GLOBAL SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "DELTA GLOBAL SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "50871921",
+      "compe": "681",
+      "compe4": "0681",
+      "name": "MT INSTITUICAO DE PAGAMENTO SA",
+      "shortName": "MT IP S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "46505612",
+      "compe": "682",
+      "compe4": "0682",
+      "name": "MONERY INSTITUICAO DE PAGAMENTO S.A.",
+      "shortName": "MONERY IP S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "30507541",
+      "compe": "683",
+      "compe4": "0683",
+      "name": "BRASIL CASH INSTITUICAO DE PAGAMENTO S.A",
+      "shortName": "BRASIL CASH IP S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "56392166",
+      "compe": "684",
+      "compe4": "0684",
+      "name": "HARMOS S.A. - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+      "shortName": "HARMOS S.A. - SCFI",
+      "logo": null
+    },
+    {
+      "ispb": "26615279",
+      "compe": "685",
+      "compe4": "0685",
+      "name": "TYCOON TECHNOLOGY INSTITUICAO DE PAGAMENTO S.A",
+      "shortName": "TYCOON TECHNOLOGY IIP S.A",
+      "logo": null
+    },
+    {
+      "ispb": "12481100",
+      "compe": "686",
+      "compe4": "0686",
+      "name": "BIZ INSTITUIÇÃO DE PAGAMENTO S.A.",
+      "shortName": "BIZ IP LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "35340796",
+      "compe": "687",
+      "compe4": "0687",
+      "name": "INCO SOCIEDADE DE EMPRÉSTIMO ENTRE PESSOAS S.A.",
+      "shortName": "INCO SEP S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "43978697",
+      "compe": "688",
+      "compe4": "0688",
+      "name": "KIKAI SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "KIKAI SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "51118718",
+      "compe": "689",
+      "compe4": "0689",
+      "name": "NVIO BRASIL SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "NVIO BRASIL SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "16814330",
+      "compe": "690",
+      "compe4": "0690",
+      "name": "BK INSTITUIÇÃO DE PAGAMENTO S.A.",
+      "shortName": "BK IP S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "49686505",
+      "compe": "691",
+      "compe4": "0691",
+      "name": "WASU - WALLET SUPPORT INSTITUIÇÃO DE PAGAMENTO LTDA",
+      "shortName": "WASU IP LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "56198117",
+      "compe": "692",
+      "compe4": "0692",
+      "name": "SQUID SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "SQUID SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "32820711",
+      "compe": "693",
+      "compe4": "0693",
+      "name": "EFEX INSTITUIÇÃO DE PAGAMENTO S.A.",
+      "shortName": "EFEX IP",
+      "logo": null
+    },
+    {
+      "ispb": "54811417",
+      "compe": "694",
+      "compe4": "0694",
+      "name": "WOOVI INSTITUICAO DE PAGAMENTO LTDA",
+      "shortName": "WOOVI IP LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "35523352",
+      "compe": "695",
+      "compe4": "0695",
+      "name": "BEES INSTITUICAO DE PAGAMENTO LTDA.",
+      "shortName": "BEES IP LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "50032584",
+      "compe": "696",
+      "compe4": "0696",
+      "name": "LOAN BRASIL SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "LOAN BRASIL SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "45056494",
+      "compe": "697",
+      "compe4": "0697",
+      "name": "JM CORRETORA DE CÂMBIO LTDA.",
+      "shortName": "JM CORRETORA DE CÂMBIO",
+      "logo": null
+    },
+    {
+      "ispb": "58367961",
+      "compe": "698",
+      "compe4": "0698",
+      "name": "BIT SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "BIT SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "59396084",
+      "compe": "699",
+      "compe4": "0699",
+      "name": "BFC SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "BFC SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "53822116",
+      "compe": "700",
+      "compe4": "0700",
+      "name": "MW INSTITUICAO DE PAGAMENTO LTDA",
+      "shortName": "MW IP LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "51118615",
+      "compe": "701",
+      "compe4": "0701",
+      "name": "INTEGRAÇÃO DE CRÉDITO E COBRANÇA SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "INTEGRAÇÃO DE CRÉDITO E COBRANÇA SCD",
+      "logo": null
+    },
+    {
+      "ispb": "10440482",
+      "compe": "703",
+      "compe4": "0703",
+      "name": "GETNET ADQUIRÊNCIA E SERVIÇOS PARA MEIOS DE PAGAMENTO S.A. INSTITUIÇÃO DE PAGAMENTO",
+      "shortName": "GETNET IP",
+      "logo": {
+        "png": "logos/png/10440482.png",
+        "svg": "logos/svg/10440482.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "GETNET ADQUIRENCIA E SERVICOS PARA MEIOS DE PAGAMENTO S A",
+          "cnpj": "10440482000154",
+          "uri": "https://site.getnet.com.br/wp-content/uploads/2021/07/logo_reduzido_getnet.svg",
+          "sha256": "59f8d11c1ec4d7016e6e89623f0002ef007c19e64e49ce5a465bc80390cf48b3",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "44663846",
+      "compe": "704",
+      "compe4": "0704",
+      "name": "FESTOR INSTITUIÇÃO DE PAGAMENTO LTDA.",
+      "shortName": "FESTOR IP LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "62232889",
+      "compe": "707",
+      "compe4": "0707",
+      "name": "Banco Daycoval S.A.",
+      "shortName": "BCO DAYCOVAL S.A",
+      "logo": null
+    },
+    {
+      "ispb": "33588252",
+      "compe": "708",
+      "compe4": "0708",
+      "name": "BANCO INDUSCRED DE INVESTIMENTO S.A.",
+      "shortName": "BCO INDUSCRED DE INVESTIM. S/A",
+      "logo": null
+    },
+    {
+      "ispb": "78632767",
+      "compe": "712",
+      "compe4": "0712",
+      "name": "OURIBANK S.A. BANCO MÚLTIPLO",
+      "shortName": "OURIBANK S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "00411939",
+      "compe": "714",
+      "compe4": "0714",
+      "name": "FINAMAX S.A. - CREDITO, FINANCIAMENTO E INVESTIMENTO",
+      "shortName": "FINAMAX S.A. CFI",
+      "logo": null
+    },
+    {
+      "ispb": "33884941",
+      "compe": "719",
+      "compe4": "0719",
+      "name": "BANCO MASTER MÚLTIPLO S.A. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "shortName": "BANCO MASTER MÚLTIPLO - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "logo": null
+    },
+    {
+      "ispb": "80271455",
+      "compe": "720",
+      "compe4": "0720",
+      "name": "BANCO RNX S.A.",
+      "shortName": "BCO RNX S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "00517645",
+      "compe": "741",
+      "compe4": "0741",
+      "name": "BANCO RIBEIRAO PRETO S.A.",
+      "shortName": "BCO RIBEIRAO PRETO S.A.",
+      "logo": {
+        "png": "logos/png/00517645.png",
+        "svg": "logos/svg/00517645.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO RIBEIRAO PRETO S.A.",
+          "cnpj": "00517645000104",
+          "uri": "https://brp.com.br/img_ob/logo_brp_open_finance.svg",
+          "sha256": "b6858058c0b4d86b76cd22eda4470ebfb9d9a50e14e98a8a3fdbec6061855d0a",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "00795423",
+      "compe": "743",
+      "compe4": "0743",
+      "name": "Banco Semear S.A.",
+      "shortName": "BANCO SEMEAR",
+      "logo": {
+        "png": "logos/png/00795423.png",
+        "svg": "logos/svg/00795423.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BANCO SEMEAR",
+          "cnpj": "00795423000145",
+          "uri": "https://public-files.bancosemear.com.br/images/logo_banco_semear.svg",
+          "sha256": "3a48b5c39744de76c4505ded06de9890b0270645093a7a898ae17905cfa0bab8",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "33479023",
+      "compe": "745",
+      "compe4": "0745",
+      "name": "Banco Citibank S.A.",
+      "shortName": "BCO CITIBANK S.A.",
+      "logo": {
+        "png": "logos/png/33479023.png",
+        "svg": "logos/svg/33479023.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO CITIBANK S.A.",
+          "cnpj": "33479023000180",
+          "uri": "https://corporateportal.brazil.citibank.com/resources-responsive/img/Citi_Blue-RedArc_RGB.svg",
+          "sha256": "84e7b604b27ab997e27b234db4c3bbdedddd45d3b9eebd29a816517ef8556a45",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "01023570",
+      "compe": "747",
+      "compe4": "0747",
+      "name": "Banco Rabobank International Brasil S.A.",
+      "shortName": "BCO RABOBANK INTL BRASIL S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "01181521",
+      "compe": "748",
+      "compe4": "0748",
+      "name": "BANCO COOPERATIVO SICREDI S.A.",
+      "shortName": "BCO COOPERATIVO SICREDI S.A.",
+      "logo": {
+        "png": "logos/png/01181521.png",
+        "svg": "logos/svg/01181521.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
+          "cnpj": "03795072000160",
+          "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
+          "sha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "29030467",
+      "compe": "751",
+      "compe4": "0751",
+      "name": "Scotiabank Brasil S.A. Banco Múltiplo",
+      "shortName": "Scotiabank Brasil",
+      "logo": null
+    },
+    {
+      "ispb": "01522368",
+      "compe": "752",
+      "compe4": "0752",
+      "name": "Banco BNP Paribas Brasil S.A.",
+      "shortName": "BCO BNP PARIBAS BRASIL S A",
+      "logo": null
+    },
+    {
+      "ispb": "74828799",
+      "compe": "753",
+      "compe4": "0753",
+      "name": "Novo Banco Continental S.A. - Banco Múltiplo",
+      "shortName": "NOVO BCO CONTINENTAL S.A. - BM",
+      "logo": null
+    },
+    {
+      "ispb": "76543115",
+      "compe": "754",
+      "compe4": "0754",
+      "name": "Banco Sistema S.A.",
+      "shortName": "BANCO SISTEMA",
+      "logo": null
+    },
+    {
+      "ispb": "62073200",
+      "compe": "755",
+      "compe4": "0755",
+      "name": "Bank of America Merrill Lynch Banco Múltiplo S.A.",
+      "shortName": "BOFA MERRILL LYNCH BM S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "02038232",
+      "compe": "756",
+      "compe4": "0756",
+      "name": "BANCO COOPERATIVO SICOOB S.A. - BANCO SICOOB",
+      "shortName": "BANCO SICOOB S.A.",
+      "logo": {
+        "png": "logos/png/02038232.png",
+        "svg": "logos/svg/02038232.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "Confederacao Nacional das Cooperativas do Sicoob",
+          "cnpj": "04891850000188",
+          "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
+          "sha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "02318507",
+      "compe": "757",
+      "compe4": "0757",
+      "name": "BANCO KEB HANA DO BRASIL S.A.",
+      "shortName": "BCO KEB HANA DO BRASIL S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "42963742",
+      "compe": "759",
+      "compe4": "0759",
+      "name": "BANSUR JM SOCIEDADE DE CRÉDITO DIRETO S/A",
+      "shortName": "BANSUR JM SCD S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "34139916",
+      "compe": "760",
+      "compe4": "0760",
+      "name": "EMCASH SERVIÇOS FINANCEIROS SOCIEDADE DE EMPRÉSTIMO ENTRE PESSOAS S.A.",
+      "shortName": "EMCASH SERV FINANC SEP S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "53842122",
+      "compe": "761",
+      "compe4": "0761",
+      "name": "URBANO S.A. - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+      "shortName": "URBANO S.A. SCFI",
+      "logo": null
+    },
+    {
+      "ispb": "56106523",
+      "compe": "763",
+      "compe4": "0763",
+      "name": "VUE INSTITUIÇÃO DE PAGAMENTO S.A.",
+      "shortName": "VUE IP S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "04306351",
+      "compe": "764",
+      "compe4": "0764",
+      "name": "INDEPENDÊNCIA COOPERATIVA DE CRÉDITO E INVESTIMENTO - INDEPENDÊNCIA COOPERATIVA DE CRÉDITO",
+      "shortName": "INDEPENDÊNCIA CC",
+      "logo": null
+    },
+    {
+      "ispb": "37753531",
+      "compe": "765",
+      "compe4": "0765",
+      "name": "PAGSMILE INSTITUIÇÃO DE PAGAMENTO LTDA.",
+      "shortName": "PAGSMILE IP LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "52833288",
+      "compe": "766",
+      "compe4": "0766",
+      "name": "LB PAY INSTITUIÇÃO DE PAGAMENTO LTDA",
+      "shortName": "LB PAY IP LTDA",
+      "logo": null
+    },
+    {
+      "ispb": "62264924",
+      "compe": "767",
+      "compe4": "0767",
+      "name": "QORE DISTRIBUIDORA DE TITULOS E VALORES MOBILIÁRIOS LTDA",
+      "shortName": "QORE",
+      "logo": null
+    },
+    {
+      "ispb": "20443996",
+      "compe": "768",
+      "compe4": "0768",
+      "name": "BECKER FINANCEIRA S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+      "shortName": "BECKER FINANCEIRA SA - CFI",
+      "logo": null
+    },
+    {
+      "ispb": "24313102",
+      "compe": "769",
+      "compe4": "0769",
+      "name": "99PAY INSTITUICAO DE PAGAMENTO S.A.",
+      "shortName": "99PAY IP S.A.",
+      "logo": {
+        "png": "logos/png/24313102.png",
+        "svg": "logos/svg/24313102.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "99PAY INSTITUICAO DE PAGAMENTO S.A.",
+          "cnpj": "24313102000125",
+          "uri": "https://s3-us01.didiglobal.com/silver-bullet-img/2024-12-10/m3zOgV/openfinance.svg",
+          "sha256": "526a6de64f4d7bb6196efebdf53a485b25f4a688fb4f328843a7e3f0255ee5ff",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "38320462",
+      "compe": "770",
+      "compe4": "0770",
+      "name": "V3 INSTITUICAO DE PAGAMENTO S.A.",
+      "shortName": "V3 IP S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "57824223",
+      "compe": "771",
+      "compe4": "0771",
+      "name": "WX INSTITUICAO DE PAGAMENTO LTDA",
+      "shortName": "WX IP LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "20833992",
+      "compe": "772",
+      "compe4": "0772",
+      "name": "COOPERATIVA DE CRÉDITO MÚTUO DOS EMPREGADOS DO CENTRO UNIVERSITÁRIO NEWTON PAIVA LTDA. - CREDIPAIVA",
+      "shortName": "CC MECUNP",
+      "logo": null
+    },
+    {
+      "ispb": "53908413",
+      "compe": "773",
+      "compe4": "0773",
+      "name": "KIWIFY INSTITUICAO DE PAGAMENTO LTDA",
+      "shortName": "KIWIFY IP",
+      "logo": null
+    },
+    {
+      "ispb": "33959738",
+      "compe": "774",
+      "compe4": "0774",
+      "name": "MOVA SOCIEDADE DE EMPRÉSTIMO ENTRE PESSOAS S.A.",
+      "shortName": "MOVA SEP S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "47381104",
+      "compe": "775",
+      "compe4": "0775",
+      "name": "CONTAAZUL INSTITUICAO DE PAGAMENTO LTDA.",
+      "shortName": "CONTAAZUL IP LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "12102128",
+      "compe": "780",
+      "compe4": "0780",
+      "name": "SAFETYPAY BRASIL INSTITUICAO DE PAGAMENTO LTDA",
+      "shortName": "SAFETYPAY BRASIL IP LTDA",
+      "logo": null
+    },
+    {
+      "ispb": "58006471",
+      "compe": "781",
+      "compe4": "0781",
+      "name": "BARU DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
+      "shortName": "BARU DTVM LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "31680151",
+      "compe": "783",
+      "compe4": "0783",
+      "name": "SWAP INSTITUIÇÃO DE PAGAMENTO S.A.",
+      "shortName": "SWAP IP S.A.",
+      "logo": {
+        "png": "logos/png/31680151.png",
+        "svg": "logos/svg/31680151.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "Swap Meios de Pagamentos Instituicao de Pagamento S.A.",
+          "cnpj": "31680151000161",
+          "uri": "https://documents.swap.financial/cdn/openfinance/swap-logo.svg",
+          "sha256": "6b96fff6cb3385d423025cff1d1d2c0e1b0ab780d2ddf6f967dbe32f52dc91e3",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "53058329",
+      "compe": "785",
+      "compe4": "0785",
+      "name": "LA FINTECA INSTITUICAO DE PAGAMENTO LTDA",
+      "shortName": "LA FINTECA IP LTDA",
+      "logo": null
+    },
+    {
+      "ispb": "52076716",
+      "compe": "786",
+      "compe4": "0786",
+      "name": "AWX BRASIL  INSTITUICAO DE PAGAMENTO LTDA",
+      "shortName": "AWX BRASIL IP LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "10789035",
+      "compe": "787",
+      "compe4": "0787",
+      "name": "ATTRUS INSTITUIÇÃO DE PAGAMENTO S/A",
+      "shortName": "ATTRUS IP S/A",
+      "logo": null
+    },
+    {
+      "ispb": "35713491",
+      "compe": "788",
+      "compe4": "0788",
+      "name": "PROTOTYPE INSTITUICAO DE PAGAMENTO S.A.",
+      "shortName": "PROTOTYPE IP S.A.",
+      "logo": null
+    },
+    {
+      "ispb": "57654096",
+      "compe": "789",
+      "compe4": "0789",
+      "name": "APUSDIGITAL INSTITUICAO DE PAGAMENTO LTDA",
+      "shortName": "APUSDIGITAL IP LTDA.",
+      "logo": null
+    },
+    {
+      "ispb": "54024532",
+      "compe": "790",
+      "compe4": "0790",
+      "name": "MAX INSTITUIÇÃO DE PAGAMENTO LTDA",
+      "shortName": "MAX IP",
+      "logo": null
+    },
+    {
+      "ispb": "62448932",
+      "compe": "791",
+      "compe4": "0791",
+      "name": "MULTIPLIKE FINANCEIRA S.A. SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+      "shortName": "MULTIPLIKE FINANCEIRA S.A. SCFI",
+      "logo": null
+    },
+    {
+      "ispb": "44921281",
+      "compe": "792",
+      "compe4": "0792",
+      "name": "NIXFIN SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "NIXFIN SCD",
+      "logo": null
+    },
+    {
+      "ispb": "61021673",
+      "compe": "793",
+      "compe4": "0793",
+      "name": "MAGALUPAY - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+      "shortName": "MAGALUPAY SCFI S.A.",
+      "logo": {
+        "png": "logos/png/61021673.png",
+        "svg": "logos/svg/61021673.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "Magalupay Instituicao de Pagamento S.A.",
+          "cnpj": "13884775000119",
+          "uri": "https://auth-open-finance.hubfintech.com.br/OB/magalupay_empresas_512.svg",
+          "sha256": "139cfd286762cae7a8b0bc58af8891b1a76346dc42de5adc34f6edeb04f3183a",
+          "updatedAt": "2026-07-17"
+        }
+      }
+    },
+    {
+      "ispb": "44323831",
+      "compe": "794",
+      "compe4": "0794",
+      "name": "ATUAL SOCIEDADE CORRETORA DE CÂMBIO LTDA",
+      "shortName": "ATUAL CC LTDA",
+      "logo": null
+    },
+    {
+      "ispb": "52067630",
+      "compe": "795",
+      "compe4": "0795",
+      "name": "BANCO TRATON BRASIL S.A.",
+      "shortName": "BANCO TRATON BRASIL S.A.",
+      "logo": null
+    }
+  ]
+}

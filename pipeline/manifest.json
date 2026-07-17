@@ -1,1 +1,965 @@
-{}
+{
+  "10398952": {
+    "compe4": "0133",
+    "org": "CRESOL CONFEDERAÇÃO",
+    "cnpj": "10398952000169",
+    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
+    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "10440482": {
+    "compe4": "0703",
+    "org": "GETNET ADQUIRENCIA E SERVICOS PARA MEIOS DE PAGAMENTO S A",
+    "cnpj": "10440482000154",
+    "uri": "https://site.getnet.com.br/wp-content/uploads/2021/07/logo_reduzido_getnet.svg",
+    "sourceSha256": "59f8d11c1ec4d7016e6e89623f0002ef007c19e64e49ce5a465bc80390cf48b3",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "10573521": {
+    "compe4": "0323",
+    "org": "MERCADO PAGO INSTITUICAO DE PAGAMENTO LTDA",
+    "cnpj": "10573521000191",
+    "uri": "https://http2.mlstatic.com/open-banking/assets/logo.svg",
+    "sourceSha256": "a1dbab9a3efb581b2e2e12bd09a3e4fe16d71b4d7c29be902f78c2958ee103f2",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "10664513": {
+    "compe4": "0121",
+    "org": "BCO AGIBANK S.A.",
+    "cnpj": "10664513000150",
+    "uri": "https://agibank.com.br/logo.svg",
+    "sourceSha256": "e69032229fdc5d5b74321812ffa29a0cdcecd768ee736fdfff85e2609654eefa",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "11285104": {
+    "compe4": "0426",
+    "org": "Neon Pagamentos",
+    "cnpj": "20855875000182",
+    "uri": "https://opbk-brasil.s3.sa-east-1.amazonaws.com/neon/logo.svg",
+    "sourceSha256": "6fcb82100b54c355d8d0ca7e67ac577091cf15c9e92733cfa4a5a34bd1668a7b",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "11351086": {
+    "compe4": "0576",
+    "org": "MERCADO BITCOIN INSTITUICAO DE PAGAMENTO LTDA",
+    "cnpj": "11351086000113",
+    "uri": "https://www.mercadobitcoin.com.br/wp-content/uploads/2024/10/logo-512.svg",
+    "sourceSha256": "a3ea1e8cfdad10fd679c5eaa183d563b93b591f354f3d395626f0bfcbfd5292c",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "11581339": {
+    "compe4": "0274",
+    "org": "MONEY PLUS SCMEPP LTDA",
+    "cnpj": "11581339000145",
+    "uri": "https://bmp.dbs.moneyp.com.br/bmpmoneyplus.svg",
+    "sourceSha256": "5cfec5eb1028f7f5bd7c1d6c3a46c50d4d9d77090c22426c5306926ba7a53842",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "13009717": {
+    "compe4": "0047",
+    "org": "BCO DO EST. DE SE S.A.",
+    "cnpj": "13009717000146",
+    "uri": "https://consentimento.openbanking.banese.com.br/assets/logo_banese.svg",
+    "sourceSha256": "e844d975ad6f7e7b7c02eff9056257f6c0b1dd2d52a130a44fb9479f588a285b",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "13140088": {
+    "compe4": "0332",
+    "org": "ACESSO SOLUCOES PAGAMENTO SA",
+    "cnpj": "13140088000199",
+    "uri": "https://app.open.bankly.com.br/assets/Logos/GifttyPay-Logo.svg",
+    "sourceSha256": "2cb885f276c576ea826ee943f3da8f0eeea10e89602fefabb57998c39fa760c8",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "13203354": {
+    "compe4": "0450",
+    "org": "FITS INSTITUICAO DE PAGAMENTO S.A.",
+    "cnpj": "13203354000185",
+    "uri": "https://sharedimages.fitbank.com.br/sharedimages/logo-FITFABK-512.svg",
+    "sourceSha256": "9462675aee79b545549ca1a32784481f33d311de51af37d27d2ab0ea2a2a1291",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "13370835": {
+    "compe4": "0301",
+    "org": "DOCK INSTITUICAO DE PAGAMENTO S.A.",
+    "cnpj": "13370835000185",
+    "uri": "https://banking.hyperlocal.com.br/favicon.svg",
+    "sourceSha256": "bb924b6e806b97c8f3a9d41680097da39853434705924278455ae2d602efb6de",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "13884775": {
+    "compe4": "0396",
+    "org": "Magalupay Instituicao de Pagamento S.A.",
+    "cnpj": "13884775000119",
+    "uri": "https://auth-open-finance.hubfintech.com.br/OB/magalupay_empresas_512.svg",
+    "sourceSha256": "139cfd286762cae7a8b0bc58af8891b1a76346dc42de5adc34f6edeb04f3183a",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "13935893": {
+    "compe4": "0509",
+    "org": "CELCOIN INSTITUICAO DE PAGAMENTO S.A.",
+    "cnpj": "13935893000109",
+    "uri": "https://www.celcoin.com.br/img/rede-celcoin-logo.svg",
+    "sourceSha256": "5b9ffc6b15c8da9ddfcbed28d0e7b2095527b79b4f14ee7f7ab337273a3c072f",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "15111975": {
+    "compe4": "0401",
+    "org": "IUGU INSTITUICAO DE PAGAMENTO S.A.",
+    "cnpj": "15111975000164",
+    "uri": "https://openbanking.iugu.com/iugu_logo.svg",
+    "sourceSha256": "4150192390b899bc2f52859e0da636d2d6368ef18d492369de968fc12dd97116",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "16501555": {
+    "compe4": "0197",
+    "org": "STONE PAGAMENTOS S.A.",
+    "cnpj": "16501555000157",
+    "uri": "https://public-assets.stone.com.br/openfinance/stone-logo.svg",
+    "sourceSha256": "c9ea826d048365162288b9d7d4e45ee527275315355fb491c45cfabdbbc0c6a3",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "17184037": {
+    "compe4": "0389",
+    "org": "BCO MERCANTIL DO BRASIL S.A.",
+    "cnpj": "17184037000110",
+    "uri": "https://www.bancomercantil.com.br/imagens/openbanking/mercantil.svg",
+    "sourceSha256": "ce244740d6ba638b7c82da17b7025cfa9f2756d9c59177181b18d2ca7fe3fabd",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "18189547": {
+    "compe4": "0542",
+    "org": "CLOUDWALK INSTITUICAO DE PAGAMENTO E SERVICOS LTDA",
+    "cnpj": "18189547000142",
+    "uri": "https://auth.infinitepay.io/images/logo.svg",
+    "sourceSha256": "ab5a9d9a08122130f3a66984dc288351b5c237e1e52c5a9dc65b21d2f8585a40",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "18236120": {
+    "compe4": "0260",
+    "org": "NU PAGAMENTOS S.A. - INSTITUICAO DE PAGAMENTO",
+    "cnpj": "18236120000158",
+    "uri": "https://nuapp.nubank.com.br/open-banking/logo.svg",
+    "sourceSha256": "a4a63bd7d76bd7f3377335ae2a4c9d1f80d602f6a69fd5dba375f46d269272a6",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "19468242": {
+    "compe4": "0595",
+    "org": "IFood Pago Instituicao de Pagamento S.A.",
+    "cnpj": "19468242000132",
+    "uri": "https://benefit-b2c-bff-images.ifood.com.br/imgs/ifood-pago-marsala.svg",
+    "sourceSha256": "e66c6022f8737fc5a9d1c35d0b38355e004bf1551c6a2e30c0511ba7df65ef8c",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "19540550": {
+    "compe4": "0461",
+    "org": "ASAAS GESTAO FINANCEIRA INSTITUICAO DE PAGAMENTO S.A.",
+    "cnpj": "19540550000121",
+    "uri": "https://asaas-obb.s3.sa-east-1.amazonaws.com/public/Logo-Asaas-Azul.svg",
+    "sourceSha256": "5ca9eddd469ff29afff5b4c10ba91f4fdb7b4e560ab9bfccb59f55a9f1633d3d",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "20308187": {
+    "compe4": "0588",
+    "org": "PROVER PROMOCAO DE VENDAS INSTITUICAO DE PAGAMENTO LTDA",
+    "cnpj": "20308187000100",
+    "uri": "https://qr-h.cornerpix.com.br/spi-qrcode/public/images/logo-avancard.svg",
+    "sourceSha256": "39e1ebc6fa51c56c0b2f389a11e7f17c5129a8ca4cb5ab27b3fad661f19007c9",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "20855875": {
+    "compe4": "0536",
+    "org": "Neon Pagamentos",
+    "cnpj": "20855875000182",
+    "uri": "https://opbk-brasil.s3.sa-east-1.amazonaws.com/neon/logo.svg",
+    "sourceSha256": "6fcb82100b54c355d8d0ca7e67ac577091cf15c9e92733cfa4a5a34bd1668a7b",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "21018182": {
+    "compe4": "0383",
+    "org": "Ebanx Instituicao de Pagamento Ltda.",
+    "cnpj": "21018182000106",
+    "uri": "https://cdn-assets.ebanx.com/images/ebanx-ip-blue.svg",
+    "sourceSha256": "42237c446a6a8b607bbc7d1de7bb6d5db3514548e8a335e6a9d7c03349802cd1",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "22896431": {
+    "compe4": "0380",
+    "org": "PICPAY",
+    "cnpj": "22896431000110",
+    "uri": "https://picpay.s3.sa-east-1.amazonaws.com/openbanking/picpay-logo-icon-pf.svg",
+    "sourceSha256": "5dda49002fc6d9b323a30d88afd7e9ba5b54982dc5ffcf630364aa94bfcf43b8",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "24313102": {
+    "compe4": "0769",
+    "org": "99PAY INSTITUICAO DE PAGAMENTO S.A.",
+    "cnpj": "24313102000125",
+    "uri": "https://s3-us01.didiglobal.com/silver-bullet-img/2024-12-10/m3zOgV/openfinance.svg",
+    "sourceSha256": "526a6de64f4d7bb6196efebdf53a485b25f4a688fb4f328843a7e3f0255ee5ff",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "27098060": {
+    "compe4": "0335",
+    "org": "BANCO DIGIO",
+    "cnpj": "27098060000145",
+    "uri": "https://static.digio.com.br/media/logo_81e95ae2ab.svg",
+    "sourceSha256": "61ad96629a7f2b02bd009b74101f7b540d7bbd09a1d78442e4b198c0cfb1a15a",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "27351731": {
+    "compe4": "0374",
+    "org": "REALIZE SOCIEDADE DE CREDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+    "cnpj": "27351731000138",
+    "uri": "https://http-oof-realize.s3.sa-east-1.amazonaws.com/Logo_Realize_512x512.svg",
+    "sourceSha256": "e8a783f346679ef1519d3dc33d55202248b3c18e1397c71218d6a3bfb85c4431",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "27652684": {
+    "compe4": "0278",
+    "org": "BANCO GENIAL S.A.",
+    "cnpj": "45246410000155",
+    "uri": "https://media-genial-cms.genialinvestimentos.com.br/wp-content/uploads/2021/08/20161050/logo-genial.svg",
+    "sourceSha256": "e67e2bb3fab72c3165471ad1c44884775a7588177febcbaa7d343062fb567533",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "28127603": {
+    "compe4": "0021",
+    "org": "BCO BANESTES S.A.",
+    "cnpj": "28127603000178",
+    "uri": "https://cdn.banestes.b.br/openbanking/img/logo_centralizada.svg",
+    "sourceSha256": "011b293dd99bc4488d61ec98eae5d11ed7dfe0043d09e2f45b7b34044ca496ae",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "29162769": {
+    "compe4": "0352",
+    "org": "Santander CTVM S.A.",
+    "cnpj": "29162769000198",
+    "uri": "https://cms.santander.com.br/sites/WPS/imagem/santander_chama/23-10-31_194829_P_santander_chama.svg",
+    "sourceSha256": "3db65acca8651f09096f81c004513586b3b22075041afe7e29df16f658b7d766",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "30306294": {
+    "compe4": "0208",
+    "org": "BANCO BTG PACTUAL S.A.",
+    "cnpj": "30306294000145",
+    "uri": "https://banking-public-prd.s3.sa-east-1.amazonaws.com/open-finance/logo/btginvestimentos/btginvestimentos.svg",
+    "sourceSha256": "ac521163417436f99df1bd1cb2512fe75ff55041bb9345f0394deb2d5634da6d",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "30680829": {
+    "compe4": "0386",
+    "org": "NU PAGAMENTOS S.A. - INSTITUICAO DE PAGAMENTO",
+    "cnpj": "18236120000158",
+    "uri": "https://nuapp.nubank.com.br/open-banking/logo.svg",
+    "sourceSha256": "a4a63bd7d76bd7f3377335ae2a4c9d1f80d602f6a69fd5dba375f46d269272a6",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "30723871": {
+    "compe4": "0675",
+    "org": "CASAS BAHIA PAY INSTITUICAO DE PAGAMENTO LTDA",
+    "cnpj": "30723871000102",
+    "uri": "https://assets.banqi.com/openfinance/icone_principal.svg",
+    "sourceSha256": "ded0eb67b660de26dda69246162ec672f91122213380271280579ac8441fb992",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "31680151": {
+    "compe4": "0783",
+    "org": "Swap Meios de Pagamentos Instituicao de Pagamento S.A.",
+    "cnpj": "31680151000161",
+    "uri": "https://documents.swap.financial/cdn/openfinance/swap-logo.svg",
+    "sourceSha256": "6b96fff6cb3385d423025cff1d1d2c0e1b0ab780d2ddf6f967dbe32f52dc91e3",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "31872495": {
+    "compe4": "0336",
+    "org": "BCO C6 S.A.",
+    "cnpj": "31872495000172",
+    "uri": "https://cdn.c6bank.com.br/open-banking/c6bank-logo.svg",
+    "sourceSha256": "deb2fd2d220ad11000f97f2ee553308c1e98311c979a0a003530aca76f83b011",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "31880826": {
+    "compe4": "0612",
+    "org": "BCO GUANABARA S.A.",
+    "cnpj": "31880826000116",
+    "uri": "https://www.bancoguanabara.com.br/logo/logo_new3.svg",
+    "sourceSha256": "c0501dda1266e99fa47a7b023d50ac81e3aa343c8134740ab3e89a785cd438b9",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "32402502": {
+    "compe4": "0329",
+    "org": "QI SCD S.A.",
+    "cnpj": "32402502000135",
+    "uri": "https://storage.googleapis.com/qitech-website-documents/qi_logo_blue.svg",
+    "sourceSha256": "5e069eed5c4bade949d52f5ad1572b712947fdf30523f4bfce0132f580e19d9e",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "33040601": {
+    "compe4": "0567",
+    "org": "BCO MERCANTIL DO BRASIL S.A.",
+    "cnpj": "17184037000110",
+    "uri": "https://www.bancomercantil.com.br/imagens/openbanking/mercantil.svg",
+    "sourceSha256": "ce244740d6ba638b7c82da17b7025cfa9f2756d9c59177181b18d2ca7fe3fabd",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "33042151": {
+    "compe4": "0300",
+    "org": "BCO LA NACION ARGENTINA",
+    "cnpj": "33042151000161",
+    "uri": "https://qr-h.cornerpix.com.br/public/images/logo_banco_nacional_argentina.svg",
+    "sourceSha256": "83b857f155573533873871c680f200199cda3888c15bbd8b29121f3db7fb4d71",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "33042953": {
+    "compe4": "0477",
+    "org": "BCO CITIBANK S.A.",
+    "cnpj": "33479023000180",
+    "uri": "https://corporateportal.brazil.citibank.com/resources-responsive/img/Citi_Blue-RedArc_RGB.svg",
+    "sourceSha256": "84e7b604b27ab997e27b234db4c3bbdedddd45d3b9eebd29a816517ef8556a45",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "33147315": {
+    "compe4": "0122",
+    "org": "BANCO BRADESCO SA",
+    "cnpj": "60746948000112",
+    "uri": "https://banco.bradesco/open-finance/logo/icones_vetorial-pf.svg",
+    "sourceSha256": "eab31731175c5229512016c2cdf98f38affecb891c217bbe6ea6b83e4c5bdb38",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "33264668": {
+    "compe4": "0348",
+    "org": "BANCO XP S.A.",
+    "cnpj": "33264668000103",
+    "uri": "https://openbanking-redirect.xpi.com.br/assets/xpi.svg",
+    "sourceSha256": "7f75762e82f828eb401dbc27d38b2d57eda0b14d5662a89315bb756ade7b5566",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "33479023": {
+    "compe4": "0745",
+    "org": "BCO CITIBANK S.A.",
+    "cnpj": "33479023000180",
+    "uri": "https://corporateportal.brazil.citibank.com/resources-responsive/img/Citi_Blue-RedArc_RGB.svg",
+    "sourceSha256": "84e7b604b27ab997e27b234db4c3bbdedddd45d3b9eebd29a816517ef8556a45",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "34088029": {
+    "compe4": "0397",
+    "org": "LISTO SOCIEDADE DE CREDITO DIRETO S.A.",
+    "cnpj": "34088029000199",
+    "uri": "https://imagens.soulisto.com.br/2.svg",
+    "sourceSha256": "6503562f0a5f8119dad02cb69383b332247e98f0239f829222f282f9cb433bea",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "37229413": {
+    "compe4": "0507",
+    "org": "EFI S.A. - INSTITUICAO DE PAGAMENTO",
+    "cnpj": "09089356000118",
+    "uri": "https://gerencianet-pub-prod-1.s3.amazonaws.com/openbanking/efi-by-gn-512x512.svg",
+    "sourceSha256": "185517da3805bc5c910f62920d22b2d69651f70dcd380ce1ec9ba8b242d2f8c0",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "37241230": {
+    "compe4": "0404",
+    "org": "SUMUP SCD S.A.",
+    "cnpj": "37241230000152",
+    "uri": "https://sumup-openbanking-staticfiles.s3.amazonaws.com/logo.svg",
+    "sourceSha256": "7f22b00cfe40948e03b7405a1f02f63f9e29ea05984cf6497a31ca2b0d3c2cb8",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "37679449": {
+    "compe4": "0518",
+    "org": "MERCADO PAGO INSTITUICAO DE PAGAMENTO LTDA",
+    "cnpj": "10573521000191",
+    "uri": "https://http2.mlstatic.com/open-banking/assets/logo.svg",
+    "sourceSha256": "a1dbab9a3efb581b2e2e12bd09a3e4fe16d71b4d7c29be902f78c2958ee103f2",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "37715993": {
+    "compe4": "0406",
+    "org": "ACCREDITO - SOCIEDADE DE CREDITO DIRETO S.A.",
+    "cnpj": "37715993000198",
+    "uri": "https://www.accredito-scd.com.br/Content/img/logoaccreditoopen.svg",
+    "sourceSha256": "3f7f4c364527dd9c126517a1aba76c9f11364131b6cc45179e8b2574185aefa6",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "37880206": {
+    "compe4": "0403",
+    "org": "CORA SCD S.A.",
+    "cnpj": "37880206000163",
+    "uri": "https://corastatic.com/openbank/img/logo-cora.svg",
+    "sourceSha256": "251c9f35b91fa264f8fd3d4e8b51bf71c4aad35f3379c206bad3f31cb0e6d13a",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "39664698": {
+    "compe4": "0428",
+    "org": "CRED SYSTEM SOCIEDADE DE CREDITO DIRETO SA",
+    "cnpj": "39664698000185",
+    "uri": "https://openfinance.credsystem.com.br/assets/img/icon-mais.svg",
+    "sourceSha256": "d0f656d382d872ead263aa56d9c164ffefd6d9245ca6c7c01e17ae12b6ebfbfb",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "43180355": {
+    "compe4": "0174",
+    "org": "PEFISA S.A. - CFI",
+    "cnpj": "43180355000112",
+    "uri": "https://storage.googleapis.com/pnb-openbank-pefisa-prd/LOGO_PEFISA_Prancheta.svg",
+    "sourceSha256": "a1d76e885ada88354da5c3162d90aae84c2bab28baca8da6bbeb2f50202e9f37",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "45246410": {
+    "compe4": "0125",
+    "org": "BANCO GENIAL S.A.",
+    "cnpj": "45246410000155",
+    "uri": "https://media-genial-cms.genialinvestimentos.com.br/wp-content/uploads/2021/08/20161050/logo-genial.svg",
+    "sourceSha256": "e67e2bb3fab72c3165471ad1c44884775a7588177febcbaa7d343062fb567533",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "48632754": {
+    "compe4": "0668",
+    "org": "CELCOIN INSTITUICAO DE PAGAMENTO S.A.",
+    "cnpj": "13935893000109",
+    "uri": "https://www.celcoin.com.br/img/rede-celcoin-logo.svg",
+    "sourceSha256": "5b9ffc6b15c8da9ddfcbed28d0e7b2095527b79b4f14ee7f7ab337273a3c072f",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "48703388": {
+    "compe4": "0594",
+    "org": "ASA SOCIEDADE DE CREDITO FINANCIAMENTO E INVESTIMENTO S.A.",
+    "cnpj": "48703388000113",
+    "uri": "https://www.asa.com.br/openfinance/logo-asa-openfinance.svg",
+    "sourceSha256": "50ecae198905e155fc76660159e873eda9f8783c57ae563e4374467d304bd6d8",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "50585090": {
+    "compe4": "0250",
+    "org": "BCO BMG S.A.",
+    "cnpj": "61186680000174",
+    "uri": "https://www.bancobmg.com.br/data/files/8C/A2/7F/0A/FBA318104A94D208970BE9C2/bmg_open_finance.svg",
+    "sourceSha256": "47cce73d983327a047fc75bcbf2307a5b2014020c3e2131644bcd354b84898eb",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "51342763": {
+    "compe4": "0620",
+    "org": "REVOLUT SOCIEDADE DE CREDITO DIRETO S.A.",
+    "cnpj": "51342763000151",
+    "uri": "https://assets.revolut.com/Brand/OpenFinance/Logos/Symbol/Revolut%20OpenFinance_BR%20Symbol.svg",
+    "sourceSha256": "b3fba5074bd0f1b33e2daec6d8cf135c39c92d735e36937dd6e05810153e2098",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "53505601": {
+    "compe4": "0672",
+    "org": "STONE PAGAMENTOS S.A.",
+    "cnpj": "16501555000157",
+    "uri": "https://public-assets.stone.com.br/openfinance/stone-logo.svg",
+    "sourceSha256": "c9ea826d048365162288b9d7d4e45ee527275315355fb491c45cfabdbbc0c6a3",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "54403563": {
+    "compe4": "0213",
+    "org": "BCO ARBI S.A.",
+    "cnpj": "54403563000150",
+    "uri": "https://images.bancoarbi.com.br/logo-2.svg",
+    "sourceSha256": "c1f7a0385ae3fba57f85cd3d0ed572081cac5356345bad493ed83aa7953cc9f9",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "58160789": {
+    "compe4": "0422",
+    "org": "BCO SAFRA S.A.",
+    "cnpj": "58160789000128",
+    "uri": "https://www.safra.com.br/shared/assets/img/safra-of.svg",
+    "sourceSha256": "9c25f4839fe8a258db6c0a59f192120f97f5ef49830f3db05ebd6cac82e02e50",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "59285411": {
+    "compe4": "0623",
+    "org": "BANCO PAN",
+    "cnpj": "59285411000113",
+    "uri": "https://www.bancopan.com.br/content/dam/documentos/outros-produtos/open-banking/logo_pan_openbanking.svg",
+    "sourceSha256": "4ca9e04c2f27ab627ff54dbd2d31a26640e29d431808e3ff78e724fce28d16ab",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "59588111": {
+    "compe4": "0655",
+    "org": "BCO VOTORANTIM S.A.",
+    "cnpj": "59588111000103",
+    "uri": "https://www.bv.com.br/ng15-open-base-recepcao-jornada/assets/images/logo-bv.svg",
+    "sourceSha256": "936bddaa9bcebeccd0ed3274560389efec07868a1c2e8d0f3b921f54664d69f3",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "60701190": {
+    "compe4": "0341",
+    "org": "ITAU UNIBANCO S.A.",
+    "cnpj": "60701190000104",
+    "uri": "https://www.itau.com.br/media/dam/m/4ee2c952e1fa91a2/original/Novo_itau.svg",
+    "sourceSha256": "9b2cadfb4ec44d8a3f9b24e9b3e7439e128164ab05ab1044ad37742255795af2",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "60746948": {
+    "compe4": "0237",
+    "org": "BANCO BRADESCO SA",
+    "cnpj": "60746948000112",
+    "uri": "https://banco.bradesco/open-finance/logo/icones_vetorial-pf.svg",
+    "sourceSha256": "eab31731175c5229512016c2cdf98f38affecb891c217bbe6ea6b83e4c5bdb38",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "60889128": {
+    "compe4": "0637",
+    "org": "BCO SOFISA S.A.",
+    "cnpj": "60889128000180",
+    "uri": "https://www.sofisa.com.br/openbanking/logo_sofisa.svg",
+    "sourceSha256": "8e8037f1bd61964c959251bad1b16b5941ab8d950487ec1945f7402867a3deed",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "61021673": {
+    "compe4": "0793",
+    "org": "Magalupay Instituicao de Pagamento S.A.",
+    "cnpj": "13884775000119",
+    "uri": "https://auth-open-finance.hubfintech.com.br/OB/magalupay_empresas_512.svg",
+    "sourceSha256": "139cfd286762cae7a8b0bc58af8891b1a76346dc42de5adc34f6edeb04f3183a",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "61033106": {
+    "compe4": "0069",
+    "org": "BCO CREFISA S.A.",
+    "cnpj": "61033106000186",
+    "uri": "https://www.crefisa.com.br/wp-content/uploads/2019/05/Logo.svg",
+    "sourceSha256": "6d1f7f70293767ef1c60c4ad7bba6d730e91a72780a8ecc44d2894d00f04ac12",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "61186680": {
+    "compe4": "0318",
+    "org": "BCO BMG S.A.",
+    "cnpj": "61186680000174",
+    "uri": "https://www.bancobmg.com.br/data/files/8C/A2/7F/0A/FBA318104A94D208970BE9C2/bmg_open_finance.svg",
+    "sourceSha256": "47cce73d983327a047fc75bcbf2307a5b2014020c3e2131644bcd354b84898eb",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "61348538": {
+    "compe4": "0626",
+    "org": "BCO C6 S.A.",
+    "cnpj": "31872495000172",
+    "uri": "https://cdn.c6bank.com.br/open-banking/c6bank-logo.svg",
+    "sourceSha256": "deb2fd2d220ad11000f97f2ee553308c1e98311c979a0a003530aca76f83b011",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "61723847": {
+    "compe4": "0113",
+    "org": "Neon Pagamentos",
+    "cnpj": "20855875000182",
+    "uri": "https://opbk-brasil.s3.sa-east-1.amazonaws.com/neon/logo.svg",
+    "sourceSha256": "6fcb82100b54c355d8d0ca7e67ac577091cf15c9e92733cfa4a5a34bd1668a7b",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "62169875": {
+    "compe4": "0140",
+    "org": "NU PAGAMENTOS S.A. - INSTITUICAO DE PAGAMENTO",
+    "cnpj": "18236120000158",
+    "uri": "https://nuapp.nubank.com.br/open-banking/logo.svg",
+    "sourceSha256": "a4a63bd7d76bd7f3377335ae2a4c9d1f80d602f6a69fd5dba375f46d269272a6",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "62285390": {
+    "compe4": "0363",
+    "org": "QI SCD S.A.",
+    "cnpj": "32402502000135",
+    "uri": "https://storage.googleapis.com/qitech-website-documents/qi_logo_blue.svg",
+    "sourceSha256": "5e069eed5c4bade949d52f5ad1572b712947fdf30523f4bfce0132f580e19d9e",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "62421979": {
+    "compe4": "0233",
+    "org": "BCO BMG S.A.",
+    "cnpj": "61186680000174",
+    "uri": "https://www.bancobmg.com.br/data/files/8C/A2/7F/0A/FBA318104A94D208970BE9C2/bmg_open_finance.svg",
+    "sourceSha256": "47cce73d983327a047fc75bcbf2307a5b2014020c3e2131644bcd354b84898eb",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "68900810": {
+    "compe4": "0633",
+    "org": "BCO RENDIMENTO S.A.",
+    "cnpj": "68900810000138",
+    "uri": "https://cdn.rendimento.com.br/open-banking/logo.svg",
+    "sourceSha256": "d646d749f534b7971c2a5565b0d53fc0e9a4d9a0d9baacdaf502456b01a54fe2",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "70119680": {
+    "compe4": "0581",
+    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
+    "cnpj": "03795072000160",
+    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
+    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "74014747": {
+    "compe4": "0565",
+    "org": "AGORA CTVM S.A.",
+    "cnpj": "74014747000135",
+    "uri": "https://www.agorainvest.com.br/images/OpenFinance/agora.svg",
+    "sourceSha256": "8af0df804c26587d57ea58319297bbb8e5c7171dc29a6def0f0aceb2a5ea6514",
+    "svg": false,
+    "updatedAt": "2026-07-17"
+  },
+  "90400888": {
+    "compe4": "0033",
+    "org": "BCO SANTANDER (BRASIL) S.A.",
+    "cnpj": "90400888000142",
+    "uri": "https://cms.santander.com.br/sites/WPS/imagem/santander_chama/23-10-31_194829_P_santander_chama.svg",
+    "sourceSha256": "3db65acca8651f09096f81c004513586b3b22075041afe7e29df16f658b7d766",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "92702067": {
+    "compe4": "0041",
+    "org": "BCO DO ESTADO DO RS S.A.",
+    "cnpj": "92702067000196",
+    "uri": "https://banrisul.com.br/bob/data/Simbolo-Banrisul.svg",
+    "sourceSha256": "e6568098371a05f49599e45741b57da407cc27271525fa436cfef776090da87d",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "00000000": {
+    "compe4": "0001",
+    "org": "BANCO DO BRASIL S.A.",
+    "cnpj": "00000000000191",
+    "uri": "https://www.bb.com.br/docs/pub/inst/img/LogoBB.svg",
+    "sourceSha256": "8bd7640e0e08e49cc00d3b4b901a44add88a1a3e9539b8cd71c8f04692d88caa",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "00000208": {
+    "compe4": "0070",
+    "org": "BRB - BCO DE BRASILIA S.A.",
+    "cnpj": "00000208000100",
+    "uri": "https://novo.brb.com.br/wp-content/uploads/2025/07/brb-preto-1.svg",
+    "sourceSha256": "72483b9add352f24a77641fd97cc836212e32b3d244cd1523b150da4847df918",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "00315557": {
+    "compe4": "0136",
+    "org": "COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL",
+    "cnpj": "00315557000111",
+    "uri": "https://unicred.com.br/site/logo_unicred_vertical-margem90px.svg",
+    "sourceSha256": "6a4f9713f091dcba81fb5a08c84168925f9bdf48fd6e2d1e1a939e3281922ec4",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "00329598": {
+    "compe4": "0407",
+    "org": "SEFER INVESTIMENTOS DTVM LTDA",
+    "cnpj": "00329598000167",
+    "uri": "https://www.seferinvestimentos.com.br/wp-content/uploads/Logo_OPF.svg",
+    "sourceSha256": "710752ca6a44022c690640aac25bfe8ee2203f47a17101f38eddd0e0173095d2",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "00360305": {
+    "compe4": "0104",
+    "org": "CAIXA ECONOMICA FEDERAL",
+    "cnpj": "00360305000104",
+    "uri": "https://consentimento.openbanking.caixa.gov.br/assets/images/logomarca_caixa.svg",
+    "sourceSha256": "3073827b49f87a32f69c93d8008583a1af2f2498b873eabd9f9d64d130c70dfd",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "00416968": {
+    "compe4": "0077",
+    "org": "BANCO INTER",
+    "cnpj": "00416968000101",
+    "uri": "https://marketing.bancointer.com.br/arquivos/images/app-icon.svg",
+    "sourceSha256": "09b8e88439fd0106deef4eb448fea00d127e1a7dd592b5baa76fea07b226c128",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "00517645": {
+    "compe4": "0741",
+    "org": "BCO RIBEIRAO PRETO S.A.",
+    "cnpj": "00517645000104",
+    "uri": "https://brp.com.br/img_ob/logo_brp_open_finance.svg",
+    "sourceSha256": "b6858058c0b4d86b76cd22eda4470ebfb9d9a50e14e98a8a3fdbec6061855d0a",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "00795423": {
+    "compe4": "0743",
+    "org": "BANCO SEMEAR",
+    "cnpj": "00795423000145",
+    "uri": "https://public-files.bancosemear.com.br/images/logo_banco_semear.svg",
+    "sourceSha256": "3a48b5c39744de76c4505ded06de9890b0270645093a7a898ae17905cfa0bab8",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "01027058": {
+    "compe4": "0362",
+    "org": "CIELO S.A.",
+    "cnpj": "01027058000191",
+    "uri": "https://www.cielo.com.br/assets_cielo/logo_footer_cielo.svg",
+    "sourceSha256": "541a6d62016ae0fb12c7eb16e23501e2f97ad377faaa2d52c9425b41703f8f7b",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "01181521": {
+    "compe4": "0748",
+    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
+    "cnpj": "03795072000160",
+    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
+    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "02038232": {
+    "compe4": "0756",
+    "org": "Confederacao Nacional das Cooperativas do Sicoob",
+    "cnpj": "04891850000188",
+    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
+    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "02332886": {
+    "compe4": "0102",
+    "org": "BANCO XP S.A.",
+    "cnpj": "33264668000103",
+    "uri": "https://openbanking-redirect.xpi.com.br/assets/xpi.svg",
+    "sourceSha256": "7f75762e82f828eb401dbc27d38b2d57eda0b14d5662a89315bb756ade7b5566",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "02398976": {
+    "compe4": "0084",
+    "org": "SISPRIME DO BRASIL - COOPERATIVA DE CREDITO",
+    "cnpj": "02398976000190",
+    "uri": "https://www.sisprimedobrasil.com.br/arquivos/logo-sisprime.svg",
+    "sourceSha256": "c18a4a8e1d2ac4ebf5e45b5c43c3aee5eac2919e46f5f7d3e69adfadb8a85e53",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "02682287": {
+    "compe4": "0555",
+    "org": "BANCO PAN",
+    "cnpj": "59285411000113",
+    "uri": "https://www.bancopan.com.br/content/dam/documentos/outros-produtos/open-banking/logo_pan_openbanking.svg",
+    "sourceSha256": "4ca9e04c2f27ab627ff54dbd2d31a26640e29d431808e3ff78e724fce28d16ab",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "03017677": {
+    "compe4": "0074",
+    "org": "BCO SAFRA S.A.",
+    "cnpj": "58160789000128",
+    "uri": "https://www.safra.com.br/shared/assets/img/safra-of.svg",
+    "sourceSha256": "9c25f4839fe8a258db6c0a59f192120f97f5ef49830f3db05ebd6cac82e02e50",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "03311443": {
+    "compe4": "0326",
+    "org": "PARATI - CFI S.A.",
+    "cnpj": "03311443000191",
+    "uri": "https://parati-cfi.com.br/images/logo.svg",
+    "sourceSha256": "a4430c55f67f007e67a62b316c682c05cc2bab6cc5a23d92ba6a9ad685f9a0af",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "03816413": {
+    "compe4": "0517",
+    "org": "PAGUEVELOZ INSTITUICAO DE PAGAMENTO LTDA",
+    "cnpj": "03816413000137",
+    "uri": "https://www.pagueveloz.com.br/Content/Img/logo.svg",
+    "sourceSha256": "a836e282b7de7e1cceb7c2c081ff23c962620cda555ed11f01d4174f3f9025dd",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "04184779": {
+    "compe4": "0063",
+    "org": "BANCO BRADESCARD",
+    "cnpj": "04184779000101",
+    "uri": "https://banco.bradesco/open-finance/logo/icones_vetorial-pf.svg",
+    "sourceSha256": "eab31731175c5229512016c2cdf98f38affecb891c217bbe6ea6b83e4c5bdb38",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "04902979": {
+    "compe4": "0003",
+    "org": "BCO DA AMAZONIA S.A.",
+    "cnpj": "04902979000144",
+    "uri": "https://d1rb2uej4kk1a4.cloudfront.net/bancoamazonia/Logo_SVG_2025_06db299653.svg",
+    "sourceSha256": "5d9e4d900c763711fe04309b52bbb574927661315b9546751a80ba8f037cce03",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "04913711": {
+    "compe4": "0037",
+    "org": "BCO DO EST. DO PA S.A.",
+    "cnpj": "04913711000108",
+    "uri": "https://www.banpara.b.br/PortalImagens/52jlv5s3/logobanparaos5415-01.svg",
+    "sourceSha256": "dd85c7e5970c715f30784e8d2525592b7e06b094acfb42e5e9096d1fa8ecd848",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "05463212": {
+    "compe4": "0085",
+    "org": "CENTRAL AILOS",
+    "cnpj": "05463212000129",
+    "uri": "https://www.ailos.coop.br/wp-content/uploads/2023/06/Logos_512x512px_Ailos.svg",
+    "sourceSha256": "ca043b92fd666a4f4ec01162b8eaec0b96eb69d599e477b73fa2ba9fe8f83664",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "06271464": {
+    "compe4": "0036",
+    "org": "BANCO BRADESCO SA",
+    "cnpj": "60746948000112",
+    "uri": "https://banco.bradesco/open-finance/logo/icones_vetorial-pf.svg",
+    "sourceSha256": "eab31731175c5229512016c2cdf98f38affecb891c217bbe6ea6b83e4c5bdb38",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "07138049": {
+    "compe4": "0469",
+    "org": "PICPAY",
+    "cnpj": "22896431000110",
+    "uri": "https://picpay.s3.sa-east-1.amazonaws.com/openbanking/picpay-logo-icon-pf.svg",
+    "sourceSha256": "5dda49002fc6d9b323a30d88afd7e9ba5b54982dc5ffcf630364aa94bfcf43b8",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "07207996": {
+    "compe4": "0394",
+    "org": "BCO BRADESCO FINANC. S.A.",
+    "cnpj": "07207996000150",
+    "uri": "https://openbanking.losango.com.br/Openbanking/logo/bradesco-bbf.svg",
+    "sourceSha256": "da9585a86022de67eb193c27318261e065d505a7e2c0b8b3d4e3f43962bea72c",
+    "svg": false,
+    "updatedAt": "2026-07-17"
+  },
+  "07237373": {
+    "compe4": "0004",
+    "org": "BCO DO NORDESTE DO BRASIL S.A.",
+    "cnpj": "07237373000120",
+    "uri": "https://consentimento.openfinance.bnb.gov.br/logo_bnb.svg",
+    "sourceSha256": "62b3a221a45c950a008f798a2ebed4d9e5e1df1365f24ca4f8095118d1b4a16e",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "08357240": {
+    "compe4": "0368",
+    "org": "BANCO CSF S/A",
+    "cnpj": "08357240000150",
+    "uri": "https://storage.googleapis.com/cms-portalpublico-atc-prd/sites/e36dfc59-favicon-atacadao.svg",
+    "sourceSha256": "c82722d14ba64f2939fbb190d7eb2c05bcb00db9d2c97b158bd9ff27026c13cb",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "08561701": {
+    "compe4": "0290",
+    "org": "PAGSEGURO",
+    "cnpj": "08561701000101",
+    "uri": "https://openfinance.api.pagseguro.uol.com.br/img/logo_pagbank.svg",
+    "sourceSha256": "ea47e0f0d6687547248eadbafbd867e7e3954b70b96b2cc3284724a22d47d7c4",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "09089356": {
+    "compe4": "0364",
+    "org": "EFI S.A. - INSTITUICAO DE PAGAMENTO",
+    "cnpj": "09089356000118",
+    "uri": "https://gerencianet-pub-prod-1.s3.amazonaws.com/openbanking/efi-by-gn-512x512.svg",
+    "sourceSha256": "185517da3805bc5c910f62920d22b2d69651f70dcd380ce1ec9ba8b242d2f8c0",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "09464032": {
+    "compe4": "0358",
+    "org": "MIDWAY S.A. - SCFI",
+    "cnpj": "09464032000112",
+    "uri": "https://openfinance.midway.com.br/midway.svg",
+    "sourceSha256": "50b86169b87b491532466436345b12f654808c292895af2c94a92bf48e83fee7",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "09516419": {
+    "compe4": "0079",
+    "org": "PICPAY",
+    "cnpj": "22896431000110",
+    "uri": "https://picpay.s3.sa-east-1.amazonaws.com/openbanking/picpay-logo-icon-pf.svg",
+    "sourceSha256": "5dda49002fc6d9b323a30d88afd7e9ba5b54982dc5ffcf630364aa94bfcf43b8",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  }
+}

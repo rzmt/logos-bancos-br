@@ -257,4 +257,47 @@ describe('buildMatches', () => {
     });
     expect(entries[0]?.uri).toBe('https://logos.example/unibanco.svg');
   });
+
+  it('breaks 0-score server ties by the majority URI, not by id (partner-brand trap)', () => {
+    // Real-world case: Banco Votorantim lists "banco BV", "banco BV - Corporate"
+    // and partner "Méliuz". None matches "BCO VOTORANTIM" by name; the BV logo
+    // appears twice and must win over the partner logo with the lowest id.
+    const bv = organisation({
+      OrganisationId: 'org-bv',
+      OrganisationName: 'BCO VOTORANTIM S.A.',
+      RegistrationNumber: '59588111000103',
+      AuthorisationServers: [
+        {
+          AuthorisationServerId: 'as-0-meliuz',
+          CustomerFriendlyName: 'Méliuz',
+          CustomerFriendlyLogoUri: 'https://logos.example/meliuz.svg',
+        },
+        {
+          AuthorisationServerId: 'as-1-bv',
+          CustomerFriendlyName: 'banco BV',
+          CustomerFriendlyLogoUri: 'https://logos.example/bv.svg',
+        },
+        {
+          AuthorisationServerId: 'as-2-bv-corp',
+          CustomerFriendlyName: 'banco BV - Corporate',
+          CustomerFriendlyLogoUri: 'https://logos.example/bv.svg',
+        },
+      ],
+    });
+    const { entries } = buildMatches({
+      participants: [
+        participant({
+          ispb: '59588111',
+          compe: '655',
+          compe4: '0655',
+          shortName: 'BCO VOTORANTIM S.A.',
+          fullName: 'Banco Votorantim S.A.',
+        }),
+      ],
+      directory: [bv],
+      config: config(),
+      overrides: new Map(),
+    });
+    expect(entries[0]?.uri).toBe('https://logos.example/bv.svg');
+  });
 });

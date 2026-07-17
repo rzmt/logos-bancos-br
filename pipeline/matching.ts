@@ -92,16 +92,28 @@ export function pickOrganisation(
   return sorted[0] as DirectoryOrganisation;
 }
 
-/** Among the organisation's servers: highest name similarity; then id ascending. */
+/**
+ * Among the organisation's servers: highest name similarity; then the URI
+ * most repeated across the organisation's servers (an org that lists
+ * "banco BV", "banco BV - Corporate" and "Méliuz" points twice to the BV
+ * logo — majority wins over a partner brand); then id ascending.
+ */
 export function pickServer(
   org: DirectoryOrganisation,
   participant: StrParticipant,
 ): DirectoryServer {
   const target = tokenize(`${participant.shortName} ${participant.fullName}`);
+  const uriFrequency = new Map<string, number>();
+  for (const server of org.servers) {
+    uriFrequency.set(server.uri, (uriFrequency.get(server.uri) ?? 0) + 1);
+  }
   const sorted = [...org.servers].sort((a, b) => {
     const scoreA = jaccard(tokenize(a.name), target);
     const scoreB = jaccard(tokenize(b.name), target);
     if (scoreA !== scoreB) return scoreB - scoreA;
+    const freqA = uriFrequency.get(a.uri) ?? 0;
+    const freqB = uriFrequency.get(b.uri) ?? 0;
+    if (freqA !== freqB) return freqB - freqA;
     return a.id.localeCompare(b.id);
   });
   return sorted[0] as DirectoryServer;

@@ -10,19 +10,31 @@ import { createHash } from 'node:crypto';
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import sharp from 'sharp';
 
-const USER_AGENT = 'logos-bancos-br/0.1 (+https://github.com/rafael-matos-dev/logos-bancos-br)';
+/**
+ * Browser-like UA for LOGO downloads only (data sources identify themselves
+ * via sources.ts). The logo hosts sit behind WAFs (Akamai etc.) that block
+ * "bot-looking" agents with 403/hangs — these are public logos published by
+ * the institutions in a public directory precisely for third-party display,
+ * so avoiding the false positive is legitimate.
+ */
+const BROWSER_USER_AGENT =
+  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36';
 
 export function sha256(buffer: Buffer): string {
   return createHash('sha256').update(buffer).digest('hex');
 }
 
-/** Downloads logo bytes with guardrails: https only, timeout and size cap. */
+/**
+ * Downloads logo bytes with guardrails: https only, timeout, size cap and a
+ * single retry for transient failures (timeouts, 5xx).
+ */
 export async function downloadLogo(
   uri: string,
   {
     maxBytes = 2 * 1024 * 1024,
     timeoutMs = 15_000,
-  }: { maxBytes?: number; timeoutMs?: number } = {},
+    attempts = 2,
+  }: { maxBytes?: number; timeoutMs?: number; attempts?: number } = {},
 ): Promise<Buffer> {
   let url: URL;
   try {
@@ -32,23 +44,44 @@ export async function downloadLogo(
   }
   if (url.protocol !== 'https:') throw new Error(`protocolo não permitido (${url.protocol})`);
 
-  const response = await fetch(uri, {
-    headers: { 'user-agent': USER_AGENT, accept: 'image/*,*/*' },
-    signal: AbortSignal.timeout(timeoutMs),
-    redirect: 'follow',
-  });
-  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  let lastError: unknown;
+  for (let attempt = 1; attempt <= attempts; attempt++) {
+    try {
+      const response = await fetch(uri, {
+        headers: { 'user-agent': BROWSER_USER_AGENT, accept: 'image/*,*/*' },
+        signal: AbortSignal.timeout(timeoutMs),
+        redirect: 'follow',
+      });
+      if (!response.ok) {
+        // Client errors are definitive; only retry server errors.
+        if (response.status < 500 || attempt === attempts) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+        lastError = new Error(`HTTP ${response.status}`);
+        continue;
+      }
 
-  const contentLength = Number(response.headers.get('content-length') ?? 0);
-  if (contentLength && contentLength > maxBytes) {
-    throw new Error(`excede ${maxBytes} bytes (content-length ${contentLength})`);
+      const contentLength = Number(response.headers.get('content-length') ?? 0);
+      if (contentLength && contentLength > maxBytes) {
+        throw new Error(`excede ${maxBytes} bytes (content-length ${contentLength})`);
+      }
+
+      const buffer = Buffer.from(await response.arrayBuffer());
+      if (buffer.byteLength === 0) throw new Error('resposta vazia');
+      if (buffer.byteLength > maxBytes)
+        throw new Error(`excede ${maxBytes} bytes (${buffer.byteLength})`);
+      return buffer;
+    } catch (error) {
+      lastError = error;
+      const message = error instanceof Error ? error.message : String(error);
+      // Retry only on network-ish failures.
+      if (attempt === attempts || !/timeout|network|fetch failed|HTTP 5\d\d/i.test(message)) {
+        throw error;
+      }
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+    }
   }
-
-  const buffer = Buffer.from(await response.arrayBuffer());
-  if (buffer.byteLength === 0) throw new Error('resposta vazia');
-  if (buffer.byteLength > maxBytes)
-    throw new Error(`excede ${maxBytes} bytes (${buffer.byteLength})`);
-  return buffer;
+  throw lastError;
 }
 
 /** Content sniff: does the buffer look like an SVG document? */
