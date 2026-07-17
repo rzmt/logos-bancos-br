@@ -93,10 +93,15 @@ export function pickOrganisation(
 }
 
 /**
- * Among the organisation's servers: highest name similarity; then the URI
- * most repeated across the organisation's servers (an org that lists
- * "banco BV", "banco BV - Corporate" and "Méliuz" points twice to the BV
- * logo — majority wins over a partner brand); then id ascending.
+ * Among the organisation's servers, pick deterministically by:
+ * 1. name similarity with the STR participant;
+ * 2. the URI most repeated across the organisation's servers (an org that
+ *    lists "banco BV", "banco BV - Corporate" and "Méliuz" points twice to
+ *    the BV logo — majority wins over a partner brand);
+ * 3. name similarity with the ORGANISATION's own name (an org like
+ *    "ITAU UNIBANCO" lists servers "Itaú", "Credicard", "Porto Bank",
+ *    "Hipercard"… — the one named like the org is its main brand);
+ * 4. id ascending.
  */
 export function pickServer(
   org: DirectoryOrganisation,
@@ -114,6 +119,9 @@ export function pickServer(
     const freqA = uriFrequency.get(a.uri) ?? 0;
     const freqB = uriFrequency.get(b.uri) ?? 0;
     if (freqA !== freqB) return freqB - freqA;
+    const orgScoreA = jaccard(tokenize(a.name), org.nameTokens);
+    const orgScoreB = jaccard(tokenize(b.name), org.nameTokens);
+    if (orgScoreA !== orgScoreB) return orgScoreB - orgScoreA;
     return a.id.localeCompare(b.id);
   });
   return sorted[0] as DirectoryServer;

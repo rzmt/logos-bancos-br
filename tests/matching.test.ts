@@ -300,4 +300,48 @@ describe('buildMatches', () => {
     });
     expect(entries[0]?.uri).toBe('https://logos.example/bv.svg');
   });
+
+  it('breaks remaining ties by similarity with the organisation name (main-brand server)', () => {
+    // Real-world case: forcing "Banco ItauBank" onto the Itaú organisation.
+    // "itaubank" matches no server name, every URI is unique, and the lowest
+    // id belongs to a sub-brand ("Porto Bank"). The server named like the
+    // organisation ("Itaú") must win.
+    const itau = organisation({
+      OrganisationId: 'org-itau',
+      OrganisationName: 'ITAU UNIBANCO S.A.',
+      RegistrationNumber: '60701190000104',
+      AuthorisationServers: [
+        {
+          AuthorisationServerId: 'as-0-porto',
+          CustomerFriendlyName: 'Porto Bank',
+          CustomerFriendlyLogoUri: 'https://logos.example/porto.svg',
+        },
+        {
+          AuthorisationServerId: 'as-1-itau',
+          CustomerFriendlyName: 'Itaú Unibanco',
+          CustomerFriendlyLogoUri: 'https://logos.example/itau.svg',
+        },
+        {
+          AuthorisationServerId: 'as-2-hiper',
+          CustomerFriendlyName: 'Hipercard',
+          CustomerFriendlyLogoUri: 'https://logos.example/hipercard.svg',
+        },
+      ],
+    });
+    const { entries } = buildMatches({
+      participants: [
+        participant({
+          ispb: '60394079',
+          compe: '479',
+          compe4: '0479',
+          shortName: 'BCO ITAUBANK S.A.',
+          fullName: 'Banco ItauBank S.A.',
+        }),
+      ],
+      directory: [itau],
+      config: config({ forcedMatches: { '60394079': '60701190000104' } }),
+      overrides: new Map(),
+    });
+    expect(entries[0]?.uri).toBe('https://logos.example/itau.svg');
+  });
 });

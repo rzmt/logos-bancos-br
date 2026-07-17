@@ -386,6 +386,24 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
+  "33667205": {
+    "compe4": "0583",
+    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
+    "cnpj": "03795072000160",
+    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
+    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "33737818": {
+    "compe4": "0582",
+    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
+    "cnpj": "03795072000160",
+    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
+    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
   "34088029": {
     "compe4": "0397",
     "org": "LISTO SOCIEDADE DE CREDITO DIRETO S.A.",
@@ -548,6 +566,15 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
+  "60394079": {
+    "compe4": "0479",
+    "org": "ITAU UNIBANCO S.A.",
+    "cnpj": "60701190000104",
+    "uri": "https://www.itau.com.br/media/dam/m/4ee2c952e1fa91a2/original/Novo_itau.svg",
+    "sourceSha256": "9b2cadfb4ec44d8a3f9b24e9b3e7439e128164ab05ab1044ad37742255795af2",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
   "60701190": {
     "compe4": "0341",
     "org": "ITAU UNIBANCO S.A.",
@@ -674,6 +701,24 @@
     "svg": false,
     "updatedAt": "2026-07-17"
   },
+  "80230774": {
+    "compe4": "0584",
+    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
+    "cnpj": "03795072000160",
+    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
+    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "87437687": {
+    "compe4": "0580",
+    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
+    "cnpj": "03795072000160",
+    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
+    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
   "90400888": {
     "compe4": "0033",
     "org": "BCO SANTANDER (BRASIL) S.A.",
@@ -779,6 +824,15 @@
     "cnpj": "03795072000160",
     "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
     "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "01858774": {
+    "compe4": "0413",
+    "org": "BCO VOTORANTIM S.A.",
+    "cnpj": "59588111000103",
+    "uri": "https://www.bv.com.br/ng15-open-base-recepcao-jornada/assets/images/logo-bv.svg",
+    "sourceSha256": "936bddaa9bcebeccd0ed3274560389efec07868a1c2e8d0f3b921f54664d69f3",
     "svg": true,
     "updatedAt": "2026-07-17"
   },

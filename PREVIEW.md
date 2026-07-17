@@ -2,7 +2,7 @@
 
 > Arquivo gerado automaticamente pelo pipeline (`npm run pipeline`) — não editar à mão.
 
-**107** instituições com logo · **363** sem logo nas fontes oficiais.
+**113** instituições com logo · **357** sem logo nas fontes oficiais.
 
 | Logo | COMPE | ISPB | Instituição | Fonte do logo |
 |---|---|---|---|---|
@@ -73,6 +73,7 @@
 | <img src="logos/png/37241230.png" width="40" alt="SUMUP SCD S.A."> | 0404 | 37241230 | SUMUP SCD S.A. | Open Finance — SUMUP SCD S.A. |
 | <img src="logos/png/37715993.png" width="40" alt="ACCREDITO SCD S.A."> | 0406 | 37715993 | ACCREDITO SCD S.A. | Open Finance — ACCREDITO - SOCIEDADE DE CREDITO DIRETO S.A. |
 | <img src="logos/png/00329598.png" width="40" alt="SEFER INVESTIMENTOS DTVM LTDA - EM LIQUIDAÇÃO EXTRAJUDICIAL"> | 0407 | 00329598 | SEFER INVESTIMENTOS DTVM LTDA - EM LIQUIDAÇÃO EXTRAJUDICIAL | Open Finance — SEFER INVESTIMENTOS DTVM LTDA |
+| <img src="logos/png/01858774.png" width="40" alt="BCO BV S.A."> | 0413 | 01858774 | BCO BV S.A. | Open Finance — BCO VOTORANTIM S.A. |
 | <img src="logos/png/58160789.png" width="40" alt="BCO SAFRA S.A."> | 0422 | 58160789 | BCO SAFRA S.A. | Open Finance — BCO SAFRA S.A. |
 | <img src="logos/png/11285104.png" width="40" alt="NEON FINANCEIRA - SCFI S.A."> | 0426 | 11285104 | NEON FINANCEIRA - SCFI S.A. | Open Finance — Neon Pagamentos |
 | <img src="logos/png/39664698.png" width="40" alt="CREDSYSTEM SCD S.A."> | 0428 | 39664698 | CREDSYSTEM SCD S.A. | Open Finance — CRED SYSTEM SOCIEDADE DE CREDITO DIRETO SA |
@@ -80,6 +81,7 @@
 | <img src="logos/png/19540550.png" width="40" alt="ASAAS IP S.A."> | 0461 | 19540550 | ASAAS IP S.A. | Open Finance — ASAAS GESTAO FINANCEIRA INSTITUICAO DE PAGAMENTO S.A. |
 | <img src="logos/png/07138049.png" width="40" alt="PICPAY INVEST"> | 0469 | 07138049 | PICPAY INVEST | Open Finance — PICPAY |
 | <img src="logos/png/33042953.png" width="40" alt="CITIBANK N.A."> | 0477 | 33042953 | CITIBANK N.A. | Open Finance — BCO CITIBANK S.A. |
+| <img src="logos/png/60394079.png" width="40" alt="BCO ITAUBANK S.A."> | 0479 | 60394079 | BCO ITAUBANK S.A. | Open Finance — ITAU UNIBANCO S.A. |
 | <img src="logos/png/37229413.png" width="40" alt="SCFI EFÍ S.A."> | 0507 | 37229413 | SCFI EFÍ S.A. | Open Finance — EFI S.A. - INSTITUICAO DE PAGAMENTO |
 | <img src="logos/png/13935893.png" width="40" alt="CELCOIN IP S.A."> | 0509 | 13935893 | CELCOIN IP S.A. | Open Finance — CELCOIN INSTITUICAO DE PAGAMENTO S.A. |
 | <img src="logos/png/03816413.png" width="40" alt="PAGUEVELOZ IP LTDA."> | 0517 | 03816413 | PAGUEVELOZ IP LTDA. | Open Finance — PAGUEVELOZ INSTITUICAO DE PAGAMENTO LTDA |
@@ -90,7 +92,11 @@
 | <img src="logos/png/74014747.png" width="40" alt="ÁGORA CTVM S.A."> | 0565 | 74014747 | ÁGORA CTVM S.A. | Open Finance — AGORA CTVM S.A. |
 | <img src="logos/png/33040601.png" width="40" alt="MERCANTIL FINANCEIRA"> | 0567 | 33040601 | MERCANTIL FINANCEIRA | Open Finance — BCO MERCANTIL DO BRASIL S.A. |
 | <img src="logos/png/11351086.png" width="40" alt="MERCADO BITCOIN IP LTDA"> | 0576 | 11351086 | MERCADO BITCOIN IP LTDA | Open Finance — MERCADO BITCOIN INSTITUICAO DE PAGAMENTO LTDA |
+| <img src="logos/png/87437687.png" width="40" alt="CCCPOUPINV SUL E SUDESTE - CENTRAL SUL/SUDESTE"> | 0580 | 87437687 | CCCPOUPINV SUL E SUDESTE - CENTRAL SUL/SUDESTE | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
 | <img src="logos/png/70119680.png" width="40" alt="CENTRAL NORDESTE"> | 0581 | 70119680 | CENTRAL NORDESTE | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/33737818.png" width="40" alt="CCC POUP INV DE MS, GO, DF E TO"> | 0582 | 33737818 | CCC POUP INV DE MS, GO, DF E TO | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/33667205.png" width="40" alt="CCC POUP INV DO CENTRO NORTE DO BRASIL"> | 0583 | 33667205 | CCC POUP INV DO CENTRO NORTE DO BRASIL | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/80230774.png" width="40" alt="CCC POUP E INV DOS ESTADOS DO PR, SP E RJ"> | 0584 | 80230774 | CCC POUP E INV DOS ESTADOS DO PR, SP E RJ | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
 | <img src="logos/png/20308187.png" width="40" alt="AVANCARD PROVER IP LTDA"> | 0588 | 20308187 | AVANCARD PROVER IP LTDA | Open Finance — PROVER PROMOCAO DE VENDAS INSTITUICAO DE PAGAMENTO LTDA |
 | <img src="logos/png/48703388.png" width="40" alt="ASA SCFI S.A."> | 0594 | 48703388 | ASA SCFI S.A. | Open Finance — ASA SOCIEDADE DE CREDITO FINANCIAMENTO E INVESTIMENTO S.A. |
 | <img src="logos/png/19468242.png" width="40" alt="IFOOD PAGO IP"> | 0595 | 19468242 | IFOOD PAGO IP | Open Finance — IFood Pago Instituicao de Pagamento S.A. |
@@ -114,7 +120,7 @@
 | <img src="logos/png/31680151.png" width="40" alt="SWAP IP S.A."> | 0783 | 31680151 | SWAP IP S.A. | Open Finance — Swap Meios de Pagamentos Instituicao de Pagamento S.A. |
 | <img src="logos/png/61021673.png" width="40" alt="MAGALUPAY SCFI S.A."> | 0793 | 61021673 | MAGALUPAY SCFI S.A. | Open Finance — Magalupay Instituicao de Pagamento S.A. |
 
-<details><summary>Instituições sem logo (363) — consumidores devem usar um ícone genérico</summary>
+<details><summary>Instituições sem logo (357) — consumidores devem usar um ícone genérico</summary>
 
 - `0007` BNDES (ISPB 33657248)
 - `0010` CREDICOAMO (ISPB 81723108)
@@ -258,7 +264,6 @@
 - `0410` PLANNER SOCIEDADE DE CRÉDITO DIRETO (ISPB 05684234)
 - `0411` VIA CERTA FINANCIADORA S.A. - CFI (ISPB 05192316)
 - `0412` SOCIAL BANK S/A (ISPB 15173776)
-- `0413` BCO BV S.A. (ISPB 01858774)
 - `0414` LEND SCD S.A. (ISPB 37526080)
 - `0415` BCO NACIONAL (ISPB 17157777)
 - `0416` LAMARA SCD S.A. (ISPB 19324634)
@@ -299,7 +304,6 @@
 - `0475` BCO YAMAHA MOTOR S.A. (ISPB 10371492)
 - `0476` IDEA MAKER IP LTDA (ISPB 45860531)
 - `0478` GAZINCRED S.A. SCFI (ISPB 11760553)
-- `0479` BCO ITAUBANK S.A. (ISPB 60394079)
 - `0481` SUPERLÓGICA SCD S.A. (ISPB 43599047)
 - `0482` ARTTA SCD (ISPB 42259084)
 - `0484` MAF DTVM SA (ISPB 36864992)
@@ -367,10 +371,6 @@
 - `0575` DGBK CREDIT S.A. - SOCIEDADE DE CRÉDITO DIRETO. (ISPB 48584954)
 - `0577` AF DESENVOLVE SP S.A. (ISPB 10663610)
 - `0579` QUADRA SCD (ISPB 49555647)
-- `0580` CCCPOUPINV SUL E SUDESTE - CENTRAL SUL/SUDESTE (ISPB 87437687)
-- `0582` CCC POUP INV DE MS, GO, DF E TO (ISPB 33737818)
-- `0583` CCC POUP INV DO CENTRO NORTE DO BRASIL (ISPB 33667205)
-- `0584` CCC POUP E INV DOS ESTADOS DO PR, SP E RJ (ISPB 80230774)
 - `0585` SETHI SCD SA (ISPB 50946592)
 - `0586` Z1 IP LTDA. (ISPB 35810871)
 - `0587` FIDD DTVM LTDA. (ISPB 37678915)

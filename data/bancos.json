@@ -2415,7 +2415,18 @@
       "compe4": "0413",
       "name": "BANCO BV S.A.",
       "shortName": "BCO BV S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/01858774.png",
+        "svg": "logos/svg/01858774.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "BCO VOTORANTIM S.A.",
+          "cnpj": "59588111000103",
+          "uri": "https://www.bv.com.br/ng15-open-base-recepcao-jornada/assets/images/logo-bv.svg",
+          "sha256": "936bddaa9bcebeccd0ed3274560389efec07868a1c2e8d0f3b921f54664d69f3",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "37526080",
@@ -2876,7 +2887,18 @@
       "compe4": "0479",
       "name": "Banco ItauBank S.A.",
       "shortName": "BCO ITAUBANK S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/60394079.png",
+        "svg": "logos/svg/60394079.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "ITAU UNIBANCO S.A.",
+          "cnpj": "60701190000104",
+          "uri": "https://www.itau.com.br/media/dam/m/4ee2c952e1fa91a2/original/Novo_itau.svg",
+          "sha256": "9b2cadfb4ec44d8a3f9b24e9b3e7439e128164ab05ab1044ad37742255795af2",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "43599047",
@@ -3610,7 +3632,18 @@
       "compe4": "0580",
       "name": "COOPERATIVA CENTRAL DE CRÉDITO, POUPANÇA E INVESTIMENTO DO SUL E SUDESTE - CENTRAL SICREDI SUL/SUDESTE",
       "shortName": "CCCPOUPINV SUL E SUDESTE - CENTRAL SUL/SUDESTE",
-      "logo": null
+      "logo": {
+        "png": "logos/png/87437687.png",
+        "svg": "logos/svg/87437687.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
+          "cnpj": "03795072000160",
+          "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
+          "sha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "70119680",
@@ -3637,7 +3670,18 @@
       "compe4": "0582",
       "name": "COOPERATIVA CENTRAL DE CRÉDITO, POUPANÇA E INVESTIMENTO DE MATO GROSSO DO SUL, GOIÁS, DISTRITO FEDERAL E TOCANTINS - CENTRAL SICREDI BRASIL CENTRAL",
       "shortName": "CCC POUP INV DE MS, GO, DF E TO",
-      "logo": null
+      "logo": {
+        "png": "logos/png/33737818.png",
+        "svg": "logos/svg/33737818.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
+          "cnpj": "03795072000160",
+          "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
+          "sha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "33667205",
@@ -3645,7 +3689,18 @@
       "compe4": "0583",
       "name": "COOPERATIVA CENTRAL DE CRÉDITO, POUPANÇA E INVESTIMENTO DO CENTRO NORTE DO BRASIL - CENTRAL SICREDI CENTRO NORTE",
       "shortName": "CCC POUP INV DO CENTRO NORTE DO BRASIL",
-      "logo": null
+      "logo": {
+        "png": "logos/png/33667205.png",
+        "svg": "logos/svg/33667205.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
+          "cnpj": "03795072000160",
+          "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
+          "sha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "80230774",
@@ -3653,7 +3708,18 @@
       "compe4": "0584",
       "name": "COOPERATIVA CENTRAL DE CRÉDITO, POUPANÇA E INVESTIMENTO DOS ESTADOS DO PARANÁ, SÃO PAULO E RIO DE JANEIRO - CENTRAL SICREDI PR/SP/RJ",
       "shortName": "CCC POUP E INV DOS ESTADOS DO PR, SP E RJ",
-      "logo": null
+      "logo": {
+        "png": "logos/png/80230774.png",
+        "svg": "logos/svg/80230774.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
+          "cnpj": "03795072000160",
+          "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
+          "sha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "50946592",
