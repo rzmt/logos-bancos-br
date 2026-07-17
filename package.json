@@ -1,6 +1,6 @@
 {
   "name": "logos-bancos-br",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Lista de bancos brasileiros + logos oficiais, atualizados automaticamente toda semana a partir de fontes 100% oficiais (Banco Central/STR + Open Finance Brasil), com proveniência por logo. Brazilian bank list and official logos, auto-updated weekly from official sources only.",
   "keywords": [
     "bancos",
