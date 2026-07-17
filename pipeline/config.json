@@ -1,0 +1,12 @@
+{
+  "$comment": "Config do pipeline. forcedMatches: ISPB(8) -> CNPJ(14) da organização do diretório Open Finance (revisado à mão; promova sugestões do relatório para cá). forcedUris: ISPB -> URL https direta. denylistUris: URLs de logo a ignorar. ignoreIspb: ISPBs a pular.",
+  "pngSizePx": 256,
+  "maxDownloadBytes": 2097152,
+  "timeoutMs": 15000,
+  "concurrency": 5,
+  "nameSuggestionThreshold": 0.5,
+  "denylistUris": [],
+  "forcedUris": {},
+  "forcedMatches": {},
+  "ignoreIspb": []
+}

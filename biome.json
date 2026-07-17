@@ -7,7 +7,7 @@
   },
   "files": {
     "ignoreUnknown": true,
-    "includes": ["**", "!data/**", "!logos/**", "!react-native.js", "!package-lock.json"]
+    "includes": ["**", "!data", "!logos", "!react-native.js", "!package-lock.json"]
   },
   "formatter": {
     "enabled": true,
