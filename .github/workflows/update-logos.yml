@@ -1,0 +1,48 @@
+name: Atualizar logos
+
+# Roda o pipeline contra as fontes oficiais (BCB/STR + Open Finance) e, se
+# houver mudança, abre um PR com o relatório no corpo e o diff visual dos
+# PNGs. Nunca faz push direto — a revisão humana é parte do desenho.
+on:
+  schedule:
+    - cron: '0 9 * * 1' # segundas 09:00 UTC (06:00 em Brasília)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Rodar pipeline
+        run: npm run pipeline
+
+      - name: Garantir relatório
+        run: test -f pipeline/report.md || echo '## Atualização de logos' > pipeline/report.md
+
+      - name: Abrir PR se houver mudanças
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: 'feat: atualiza logos e dataset (fontes oficiais)'
+          title: 'Atualização automática de logos e dataset'
+          body-path: pipeline/report.md
+          branch: auto/atualizar-logos
+          delete-branch: true
+          labels: atualizacao-automatica
+          add-paths: |
+            data/**
+            logos/**
+            PREVIEW.md
+            react-native.js
+            pipeline/manifest.json
