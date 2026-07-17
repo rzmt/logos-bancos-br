@@ -104,6 +104,14 @@ export interface PipelineConfig {
   forcedUris: Record<string, string>;
   /** ISPB -> 14-digit CNPJ of the directory organisation to use (reviewed by hand). */
   forcedMatches: Record<string, string>;
+  /**
+   * Single-brand cooperative systems: BRAND TOKEN -> CNPJ of the system's
+   * organisation in the directory. Applies when the token appears as a whole
+   * word in the institution's official name (e.g. "CC SICOOB CREDIVALE" ->
+   * Sicoob). Curated by hand — this is an explicit brand rule, not fuzzy
+   * name similarity.
+   */
+  brandMatches: Record<string, string>;
   /** ISPBs to skip entirely. */
   ignoreIspb: string[];
 }
@@ -113,7 +121,7 @@ export interface PipelineConfig {
  * a wrong logo is worse than no logo, so name matches only become
  * suggestions for a human to review and promote to `forcedMatches`.
  */
-export type MatchSource = 'override' | 'forced-uri' | 'forced-match' | 'ispb';
+export type MatchSource = 'override' | 'forced-uri' | 'forced-match' | 'ispb' | 'brand-match';
 
 export interface MatchEntry {
   ispb: string;

@@ -1,5 +1,5 @@
 {
-  "$comment": "Config do pipeline. forcedMatches: ISPB(8) -> CNPJ(14) da organização do diretório Open Finance (revisado à mão; promova sugestões do relatório para cá). forcedUris: ISPB -> URL https direta. denylistUris: URLs de logo a ignorar. ignoreIspb: ISPBs a pular.",
+  "$comment": "Config do pipeline. forcedMatches: ISPB(8) -> CNPJ(14) da organização do diretório Open Finance (revisado à mão; promova sugestões do relatório para cá). brandMatches: MARCA (palavra inteira no nome oficial) -> CNPJ(14) da organização do sistema cooperativo de marca única. forcedUris: ISPB -> URL https direta. denylistUris: URLs de logo a ignorar. ignoreIspb: ISPBs a pular.",
   "pngSizePx": 256,
   "maxDownloadBytes": 2097152,
   "timeoutMs": 15000,
@@ -60,6 +60,7 @@
     "11285104": "20855875000182",
     "27652684": "45246410000155",
     "30680829": "18236120000158",
+    "32345784": "31872495000172",
     "33040601": "17184037000110",
     "33042953": "33479023000180",
     "33147315": "60746948000112",
@@ -80,6 +81,12 @@
     "70119680": "03795072000160",
     "80230774": "03795072000160",
     "87437687": "03795072000160"
+  },
+  "brandMatches": {
+    "SICOOB": "04891850000188",
+    "SICREDI": "03795072000160",
+    "CRESOL": "10398952000169",
+    "UNICRED": "00315557000111"
   },
   "ignoreIspb": []
 }

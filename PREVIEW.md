@@ -2,7 +2,7 @@
 
 > Arquivo gerado automaticamente pelo pipeline (`npm run pipeline`) — não editar à mão.
 
-**157** instituições com logo · **956** sem logo nas fontes oficiais.
+**473** instituições com logo · **640** sem logo nas fontes oficiais.
 
 | Logo | COMPE | ISPB | Instituição | Fonte do logo |
 |---|---|---|---|---|
@@ -12,6 +12,7 @@
 | <img src="logos/png/61809182.png" width="40" alt="UBS (BRASIL) CORRETORA DE VALORES S.A."> | 0011 | 61809182 | UBS (BRASIL) CORRETORA DE VALORES S.A. | URL direta (revisada) |
 | <img src="logos/png/09274232.png" width="40" alt="STATE STREET BR S.A. BCO COMERCIAL"> | 0014 | 09274232 | STATE STREET BR S.A. BCO COMERCIAL | URL direta (revisada) |
 | <img src="logos/png/02819125.png" width="40" alt="UBS BB CCTVM S.A."> | 0015 | 02819125 | UBS BB CCTVM S.A. | URL direta (revisada) |
+| <img src="logos/png/04715685.png" width="40" alt="CCM DESP TRÂNS SC E RS"> | 0016 | 04715685 | CCM DESP TRÂNS SC E RS | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
 | <img src="logos/png/42272526.png" width="40" alt="BNY MELLON BCO S.A."> | 0017 | 42272526 | BNY MELLON BCO S.A. | URL direta (revisada) |
 | <img src="logos/png/28127603.png" width="40" alt="BCO BANESTES S.A."> | 0021 | 28127603 | BCO BANESTES S.A. | Open Finance — BCO BANESTES S.A. |
 | <img src="logos/png/90400888.png" width="40" alt="BCO SANTANDER (BRASIL) S.A."> | 0033 | 90400888 | BCO SANTANDER (BRASIL) S.A. | Open Finance — BCO SANTANDER (BRASIL) S.A. |
@@ -158,18 +159,332 @@
 | <img src="logos/png/47381104.png" width="40" alt="CONTAAZUL IP LTDA."> | 0775 | 47381104 | CONTAAZUL IP LTDA. | URL direta (revisada) |
 | <img src="logos/png/31680151.png" width="40" alt="SWAP IP S.A."> | 0783 | 31680151 | SWAP IP S.A. | Open Finance — Swap Meios de Pagamentos Instituicao de Pagamento S.A. |
 | <img src="logos/png/61021673.png" width="40" alt="MAGALUPAY SCFI S.A."> | 0793 | 61021673 | MAGALUPAY SCFI S.A. | Open Finance — Magalupay Instituicao de Pagamento S.A. |
+| <img src="logos/png/00075847.png" width="40" alt="CC UNICRED CENTRO-SUL LTDA - UNICRED CENTRO-SUL"> | — | 00075847 | CC UNICRED CENTRO-SUL LTDA - UNICRED CENTRO-SUL | Open Finance — COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL |
+| <img src="logos/png/00259231.png" width="40" alt="CCLA SICOOB UNIMAIS METROPOLITANA"> | — | 00259231 | CCLA SICOOB UNIMAIS METROPOLITANA | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/00694389.png" width="40" alt="CCLA SICOOB CREDICARU SC/RS"> | — | 00694389 | CCLA SICOOB CREDICARU SC/RS | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/00694877.png" width="40" alt="COOP SICOOB EXECUTIVO LTDA."> | — | 00694877 | COOP SICOOB EXECUTIVO LTDA. | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/00804046.png" width="40" alt="COOP CREDICAPI LTDA - SICOOB CREDICAPI"> | — | 00804046 | COOP CREDICAPI LTDA - SICOOB CREDICAPI | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/00815319.png" width="40" alt="SICOOB SUL-SERRANO"> | — | 00815319 | SICOOB SUL-SERRANO | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/00952415.png" width="40" alt="SICOOB CREDFAZ"> | — | 00952415 | SICOOB CREDFAZ | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/00968602.png" width="40" alt="COOP SICOOB COOPERCRED LTDA."> | — | 00968602 | COOP SICOOB COOPERCRED LTDA. | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/00971300.png" width="40" alt="COOP CRESOL PIONEIRA"> | — | 00971300 | COOP CRESOL PIONEIRA | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/01039011.png" width="40" alt="CC UNICRED DESBRAVADORA LTDA - UNICRED DESBRAVADORA"> | — | 01039011 | CC UNICRED DESBRAVADORA LTDA - UNICRED DESBRAVADORA | Open Finance — COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL |
+| <img src="logos/png/01155801.png" width="40" alt="COOP CRESOL CENTRO SERRA"> | — | 01155801 | COOP CRESOL CENTRO SERRA | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/01205736.png" width="40" alt="COOP DE CRÉDITO SICOOB COSTA DO DESCOBRIMENTO LTDA."> | — | 01205736 | COOP DE CRÉDITO SICOOB COSTA DO DESCOBRIMENTO LTDA. | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/01259518.png" width="40" alt="COOP SICOOB UNIMAIS CLP"> | — | 01259518 | COOP SICOOB UNIMAIS CLP | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/01526924.png" width="40" alt="UNICRED HORIZONTES"> | — | 01526924 | UNICRED HORIZONTES | Open Finance — COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL |
+| <img src="logos/png/01604998.png" width="40" alt="CCLA SUL MINAS-SICOOB CREDIVAS"> | — | 01604998 | CCLA SUL MINAS-SICOOB CREDIVAS | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/01635462.png" width="40" alt="UNICRED PREMIUM CAPITAL"> | — | 01635462 | UNICRED PREMIUM CAPITAL | Open Finance — COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL |
+| <img src="logos/png/01644264.png" width="40" alt="CCLA SICOOB CREDIMEPI"> | — | 01644264 | CCLA SICOOB CREDIMEPI | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/01667352.png" width="40" alt="CCLA SICOOB CREDMISSÃO LTDA."> | — | 01667352 | CCLA SICOOB CREDMISSÃO LTDA. | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/01667766.png" width="40" alt="CCLA CREDINOVA LTDA. - SICOOB CREDINOVA"> | — | 01667766 | CCLA CREDINOVA LTDA. - SICOOB CREDINOVA | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/01705236.png" width="40" alt="UNICRED PROSPERAR"> | — | 01705236 | UNICRED PROSPERAR | Open Finance — COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL |
 | <img src="logos/png/01722480.png" width="40" alt="QUERO-QUERO VERDECARD IP S.A."> | — | 01722480 | QUERO-QUERO VERDECARD IP S.A. | Open Finance — QUERO-QUERO VERDECARD INSTITUICAO DE PAGAMENTO S.A. |
+| <img src="logos/png/01727929.png" width="40" alt="CC UNICRED EVOLUÇÃO LTDA."> | — | 01727929 | CC UNICRED EVOLUÇÃO LTDA. | Open Finance — COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL |
+| <img src="logos/png/02015588.png" width="40" alt="COOP SICOOB CREDIP"> | — | 02015588 | COOP SICOOB CREDIP | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/02057584.png" width="40" alt="CC SICOOB SERTÃO"> | — | 02057584 | CC SICOOB SERTÃO | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/02072790.png" width="40" alt="CECM SICOOB CREDSAÚDE"> | — | 02072790 | CECM SICOOB CREDSAÚDE | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/02090126.png" width="40" alt="CCLA SICOOB VALCREDI SUL"> | — | 02090126 | CCLA SICOOB VALCREDI SUL | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/02179673.png" width="40" alt="COOPERATIVA DE CRÉDITO LIVRE ADMISSÃO SICOOB OURICRED"> | — | 02179673 | COOPERATIVA DE CRÉDITO LIVRE ADMISSÃO SICOOB OURICRED | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/02254376.png" width="40" alt="CCLA SICOOB COOPCREDI"> | — | 02254376 | CCLA SICOOB COOPCREDI | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/02275781.png" width="40" alt="CCM SERV FEDERAIS NA PARAÍBA - SICOOB COOPERCRET"> | — | 02275781 | CCM SERV FEDERAIS NA PARAÍBA - SICOOB COOPERCRET | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/02282165.png" width="40" alt="CC SICOOB CREDICONQUISTA"> | — | 02282165 | CC SICOOB CREDICONQUISTA | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/02382755.png" width="40" alt="SICOOB POTIGUAR"> | — | 02382755 | SICOOB POTIGUAR | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/02446089.png" width="40" alt="COOP CRESOL UNIAO"> | — | 02446089 | COOP CRESOL UNIAO | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/02447120.png" width="40" alt="CC SICOOB EXTREMO SUL LTDA."> | — | 02447120 | CC SICOOB EXTREMO SUL LTDA. | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/02448310.png" width="40" alt="COOP CRESOL PROGRESSO"> | — | 02448310 | COOP CRESOL PROGRESSO | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/02448839.png" width="40" alt="SICOOB CREDIUNIÃO"> | — | 02448839 | SICOOB CREDIUNIÃO | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/02466552.png" width="40" alt="CC SICOOB VALE SUL"> | — | 02466552 | CC SICOOB VALE SUL | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/02493000.png" width="40" alt="SICOOB LESTE"> | — | 02493000 | SICOOB LESTE | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/02528151.png" width="40" alt="CC SICOOB CREDCOOP"> | — | 02528151 | CC SICOOB CREDCOOP | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/02663426.png" width="40" alt="COOP CRESOL NOROESTE"> | — | 02663426 | COOP CRESOL NOROESTE | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/02766672.png" width="40" alt="COOP CRESOL EXCELÊNCIA"> | — | 02766672 | COOP CRESOL EXCELÊNCIA | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/02794761.png" width="40" alt="SICOOB UFVCREDI"> | — | 02794761 | SICOOB UFVCREDI | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/02833202.png" width="40" alt="UNICRED SUDOESTE DA BAHIA"> | — | 02833202 | UNICRED SUDOESTE DA BAHIA | Open Finance — COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL |
+| <img src="logos/png/02843443.png" width="40" alt="COOP SICREDI NORTE SC"> | — | 02843443 | COOP SICREDI NORTE SC | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/02844024.png" width="40" alt="COOP CRESOL EVOLUÇAO"> | — | 02844024 | COOP CRESOL EVOLUÇAO | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/02876918.png" width="40" alt="CC SICOOB NORTE SUL"> | — | 02876918 | CC SICOOB NORTE SUL | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/02904125.png" width="40" alt="COOP CRESOL JACUTINGA"> | — | 02904125 | COOP CRESOL JACUTINGA | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/02904138.png" width="40" alt="COOP CRESOL ÁUREA"> | — | 02904138 | COOP CRESOL ÁUREA | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/02910987.png" width="40" alt="COOP CRESOL CENTRO SUL"> | — | 02910987 | COOP CRESOL CENTRO SUL | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/02923389.png" width="40" alt="COOP SICREDI SERIGY SE/BA"> | — | 02923389 | COOP SICREDI SERIGY SE/BA | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/02924977.png" width="40" alt="COOP SICREDI MEDICRED"> | — | 02924977 | COOP SICREDI MEDICRED | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/02931668.png" width="40" alt="SICOOB FLUMINENSE"> | — | 02931668 | SICOOB FLUMINENSE | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/02934201.png" width="40" alt="COOP CRESOL LIDERANCA"> | — | 02934201 | COOP CRESOL LIDERANCA | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/02935307.png" width="40" alt="CC SICOOB CREDSEGURO LTDA."> | — | 02935307 | CC SICOOB CREDSEGURO LTDA. | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/03000142.png" width="40" alt="COOP POL FED - SICREDI POL"> | — | 03000142 | COOP POL FED - SICREDI POL | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/03015152.png" width="40" alt="COOP CRESOL SÃO VALENTIM"> | — | 03015152 | COOP CRESOL SÃO VALENTIM | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/03042597.png" width="40" alt="COOP SICREDI CAMPO GRANDE MS/GO"> | — | 03042597 | COOP SICREDI CAMPO GRANDE MS/GO | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/03065046.png" width="40" alt="COOP SICREDI NOROESTE SP"> | — | 03065046 | COOP SICREDI NOROESTE SP | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/03102185.png" width="40" alt="CCLA CENTRO NORDESTE - SICOOB CENTRO NORDESTE"> | — | 03102185 | CCLA CENTRO NORDESTE - SICOOB CENTRO NORDESTE | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
 | <img src="logos/png/03130170.png" width="40" alt="BRASIL CARD IP LTDA"> | — | 03130170 | BRASIL CARD IP LTDA | Open Finance — BRASIL CARD INSTITUICAO DE PAGAMENTOS LTDA |
+| <img src="logos/png/03212823.png" width="40" alt="COOP SICREDI TRADIÇÃO RS"> | — | 03212823 | COOP SICREDI TRADIÇÃO RS | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/03320525.png" width="40" alt="COOP ARACOOP LTDA. - SICOOB ARACOOP"> | — | 03320525 | COOP ARACOOP LTDA. - SICOOB ARACOOP | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/03358914.png" width="40" alt="SICOOB CREDIROCHAS"> | — | 03358914 | SICOOB CREDIROCHAS | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/03428338.png" width="40" alt="COOP SICOOB CREDUNI"> | — | 03428338 | COOP SICOOB CREDUNI | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/03459850.png" width="40" alt="CC SICOOB METROPOLITANO"> | — | 03459850 | CC SICOOB METROPOLITANO | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/03485130.png" width="40" alt="COOP CRESOL ENCOSTAS DA SERRA GERAL"> | — | 03485130 | COOP CRESOL ENCOSTAS DA SERRA GERAL | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/03535065.png" width="40" alt="CC SICOOB CREDMETAL"> | — | 03535065 | CC SICOOB CREDMETAL | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/03566655.png" width="40" alt="COOP SICREDI CELEIRO OESTE"> | — | 03566655 | COOP SICREDI CELEIRO OESTE | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/03603683.png" width="40" alt="COOP SICOOB COOPERPLAN CREDSEF"> | — | 03603683 | COOP SICOOB COOPERPLAN CREDSEF | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/03620772.png" width="40" alt="CCM DO CEARÁ - SICOOB CEARÁ"> | — | 03620772 | CCM DO CEARÁ - SICOOB CEARÁ | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/03632872.png" width="40" alt="SICOOB CREDISUL"> | — | 03632872 | SICOOB CREDISUL | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/03662047.png" width="40" alt="COOP SICREDI MP"> | — | 03662047 | COOP SICREDI MP | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/03732359.png" width="40" alt="CCLA DE PERNAMBUCO - SICOOB PERNAMBUCO"> | — | 03732359 | CCLA DE PERNAMBUCO - SICOOB PERNAMBUCO | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/03750034.png" width="40" alt="COOP SICREDI AJURIS"> | — | 03750034 | COOP SICREDI AJURIS | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/03793242.png" width="40" alt="COOP SICREDI SUL SC"> | — | 03793242 | COOP SICREDI SUL SC | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/03862898.png" width="40" alt="CCLA EMPREG DOS CORREIOS - SICOOB COOPERCORREIOS"> | — | 03862898 | CCLA EMPREG DOS CORREIOS - SICOOB COOPERCORREIOS | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/03965737.png" width="40" alt="COOP CRESOL VANGUARDA"> | — | 03965737 | COOP CRESOL VANGUARDA | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/04013172.png" width="40" alt="CC SICOOB 3 COLINAS"> | — | 04013172 | CC SICOOB 3 COLINAS | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/04079285.png" width="40" alt="CCLA DE ITAJUBÁ - SICOOB SUDESTE MAIS"> | — | 04079285 | CCLA DE ITAJUBÁ - SICOOB SUDESTE MAIS | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/04120633.png" width="40" alt="SICOOB EMPRESAS RJ"> | — | 04120633 | SICOOB EMPRESAS RJ | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/04174720.png" width="40" alt="CC SICOOB COOPEMAR"> | — | 04174720 | CC SICOOB COOPEMAR | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/04237413.png" width="40" alt="COOP SICREDI NATIVA PE/BA"> | — | 04237413 | COOP SICREDI NATIVA PE/BA | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/04243780.png" width="40" alt="CENTRAL SICOOB UNI DE CC"> | — | 04243780 | CENTRAL SICOOB UNI DE CC | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/04261151.png" width="40" alt="COOP CRESOL TRANSFORMAÇÃO"> | — | 04261151 | COOP CRESOL TRANSFORMAÇÃO | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/04321309.png" width="40" alt="CC SICOOB INOVA"> | — | 04321309 | CC SICOOB INOVA | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/04350225.png" width="40" alt="COOP CRESOL TRADICAO"> | — | 04350225 | COOP CRESOL TRADICAO | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/04355489.png" width="40" alt="CC UNICRED COOMARCA"> | — | 04355489 | CC UNICRED COOMARCA | Open Finance — COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL |
+| <img src="logos/png/04388688.png" width="40" alt="CC SICOOB ENGECRED"> | — | 04388688 | CC SICOOB ENGECRED | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/04445917.png" width="40" alt="UNICRED COALIZÃO"> | — | 04445917 | UNICRED COALIZÃO | Open Finance — COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL |
+| <img src="logos/png/04463602.png" width="40" alt="COOP SICREDI CEN OEST PAULISTA"> | — | 04463602 | COOP SICREDI CEN OEST PAULISTA | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/04484490.png" width="40" alt="COOP SICREDI ALTA NOROESTE SP"> | — | 04484490 | COOP SICREDI ALTA NOROESTE SP | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/04490531.png" width="40" alt="COOP CRESOL GOIAS"> | — | 04490531 | COOP CRESOL GOIAS | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/04525997.png" width="40" alt="COOP SICREDI EDUCAÇÃO RS"> | — | 04525997 | COOP SICREDI EDUCAÇÃO RS | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/04529074.png" width="40" alt="COOP SICOOB CREDICAPITAL"> | — | 04529074 | COOP SICOOB CREDICAPITAL | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/04565791.png" width="40" alt="COOP CRESOL ARATIBA"> | — | 04565791 | COOP CRESOL ARATIBA | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/04649337.png" width="40" alt="COOP SICOOB BRMIL LTDA."> | — | 04649337 | COOP SICOOB BRMIL LTDA. | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/04751713.png" width="40" alt="CC INV DE RONDÔNIA - SICOOB CREDJURD"> | — | 04751713 | CC INV DE RONDÔNIA - SICOOB CREDJURD | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/04833655.png" width="40" alt="CECM SICOOB METALCRED"> | — | 04833655 | CECM SICOOB METALCRED | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/04853988.png" width="40" alt="COOP SICREDI BANDEIRANTES"> | — | 04853988 | COOP SICREDI BANDEIRANTES | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/04886317.png" width="40" alt="COOP SICREDI CREDJURIS"> | — | 04886317 | COOP SICREDI CREDJURIS | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/05036532.png" width="40" alt="CCC UNICOOB-SICOOB CENTR UNIC"> | — | 05036532 | CCC UNICOOB-SICOOB CENTR UNIC | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/05070112.png" width="40" alt="COOP CRESOL INOVAÇAO"> | — | 05070112 | COOP CRESOL INOVAÇAO | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/05203605.png" width="40" alt="SICOOB AMAZÔNIA"> | — | 05203605 | SICOOB AMAZÔNIA | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/05220243.png" width="40" alt="COOP CRESOL ORIGENS"> | — | 05220243 | COOP CRESOL ORIGENS | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/05222094.png" width="40" alt="COOP SICOOB CERRADO"> | — | 05222094 | COOP SICOOB CERRADO | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/05231945.png" width="40" alt="COOP CRESOL UNIAO DOS VALES"> | — | 05231945 | COOP CRESOL UNIAO DOS VALES | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/05241145.png" width="40" alt="COOP CRESOL CAMINHOS"> | — | 05241145 | COOP CRESOL CAMINHOS | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/05241619.png" width="40" alt="COOP SICOOB PRIMAVERA"> | — | 05241619 | COOP SICOOB PRIMAVERA | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/05247312.png" width="40" alt="COOP SICOOB BURITIS"> | — | 05247312 | COOP SICOOB BURITIS | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/05269976.png" width="40" alt="COOP CRESOL MAIS"> | — | 05269976 | COOP CRESOL MAIS | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/05276770.png" width="40" alt="COOP CRESOL FRONTEIRAS PR/SC/SP/ES"> | — | 05276770 | COOP CRESOL FRONTEIRAS PR/SC/SP/ES | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/05277312.png" width="40" alt="COOP CRESOL HORIZONTE"> | — | 05277312 | COOP CRESOL HORIZONTE | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/05410056.png" width="40" alt="COOP CRESOL LITORAL"> | — | 05410056 | COOP CRESOL LITORAL | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/05425526.png" width="40" alt="COOP CRESOL DESENVOLVIMENTO"> | — | 05425526 | COOP CRESOL DESENVOLVIMENTO | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/05477038.png" width="40" alt="CC NO PIAUÍ - SICOOB PIAUÍ"> | — | 05477038 | CC NO PIAUÍ - SICOOB PIAUÍ | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/05494591.png" width="40" alt="COOP CRESOL NASCENTE"> | — | 05494591 | COOP CRESOL NASCENTE | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/05545390.png" width="40" alt="COOP SICREDI LENÇÓIS"> | — | 05545390 | COOP SICREDI LENÇÓIS | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/05582619.png" width="40" alt="CC SICOOB OURO VERDE"> | — | 05582619 | CC SICOOB OURO VERDE | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/05856736.png" width="40" alt="SICOOB EMPRESARIAL"> | — | 05856736 | SICOOB EMPRESARIAL | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/05863726.png" width="40" alt="COOP CRESOL PLANALTO SERRA SUL"> | — | 05863726 | COOP CRESOL PLANALTO SERRA SUL | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/05983995.png" width="40" alt="COOP CRESOL COOPERAR"> | — | 05983995 | COOP CRESOL COOPERAR | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/06031727.png" width="40" alt="COOP CRESOL ESSENCIA"> | — | 06031727 | COOP CRESOL ESSENCIA | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/06078926.png" width="40" alt="COOP SICREDI CREDENOREG"> | — | 06078926 | COOP SICREDI CREDENOREG | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/06126780.png" width="40" alt="COOP CRESOL GRANDES LAGOS PR/SP"> | — | 06126780 | COOP CRESOL GRANDES LAGOS PR/SP | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/06139650.png" width="40" alt="COOP CRESOL RIO GRANDE DO SUL"> | — | 06139650 | COOP CRESOL RIO GRANDE DO SUL | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/06174009.png" width="40" alt="CC SICOOB ALIANÇA"> | — | 06174009 | CC SICOOB ALIANÇA | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/06332931.png" width="40" alt="COOP SICREDI CERRADO GO"> | — | 06332931 | COOP SICREDI CERRADO GO | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/07026923.png" width="40" alt="CCLA SICOOB ARENITO PARANÁ / SÃO PAULO"> | — | 07026923 | CCLA SICOOB ARENITO PARANÁ / SÃO PAULO | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/07070495.png" width="40" alt="COOP SICREDI EMPREENDEDORES"> | — | 07070495 | COOP SICREDI EMPREENDEDORES | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/07097064.png" width="40" alt="COOP SICOOB CONFIANÇA"> | — | 07097064 | COOP SICOOB CONFIANÇA | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/07122321.png" width="40" alt="CC INTEGRADO - SICOOB INTEGRADO"> | — | 07122321 | CC INTEGRADO - SICOOB INTEGRADO | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/07194313.png" width="40" alt="CC SICOOB HORIZONTE"> | — | 07194313 | CC SICOOB HORIZONTE | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/07206072.png" width="40" alt="COOP SICREDI NOVOS HORIZONTES PR/SP/RJ"> | — | 07206072 | COOP SICREDI NOVOS HORIZONTES PR/SP/RJ | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/07215632.png" width="40" alt="COOP CRESOL ALTERNATIVA"> | — | 07215632 | COOP CRESOL ALTERNATIVA | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/07252614.png" width="40" alt="COOP CRESOL CONFIANÇA"> | — | 07252614 | COOP CRESOL CONFIANÇA | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/07268499.png" width="40" alt="COOP CRESOL INTEGRACAO"> | — | 07268499 | COOP CRESOL INTEGRACAO | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/07318874.png" width="40" alt="COOP  SICOOB MÉDIO OESTE"> | — | 07318874 | COOP  SICOOB MÉDIO OESTE | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/07320890.png" width="40" alt="COOP CRESOL VALE"> | — | 07320890 | COOP CRESOL VALE | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/07412987.png" width="40" alt="COOP CRESOL ALIANÇA"> | — | 07412987 | COOP CRESOL ALIANÇA | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/07465539.png" width="40" alt="COOP CRESOL ALTO VALE"> | — | 07465539 | COOP CRESOL ALTO VALE | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/07509426.png" width="40" alt="COOP CRESOL XANXERE"> | — | 07509426 | COOP CRESOL XANXERE | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/07512780.png" width="40" alt="COOP CRESOL VALE EUROPEU"> | — | 07512780 | COOP CRESOL VALE EUROPEU | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/07669921.png" width="40" alt="CCM SICOOB CREDIACISC"> | — | 07669921 | CCM SICOOB CREDIACISC | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/07925729.png" width="40" alt="COOP CRESOL NORTE PARANAENSE"> | — | 07925729 | COOP CRESOL NORTE PARANAENSE | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/07946216.png" width="40" alt="CCLA SICOOB UNIÃO SUDESTE"> | — | 07946216 | CCLA SICOOB UNIÃO SUDESTE | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/07946451.png" width="40" alt="COOP CRESOL ATIVA"> | — | 07946451 | COOP CRESOL ATIVA | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/07958405.png" width="40" alt="COOP CRESOL SERRA MAR"> | — | 07958405 | COOP CRESOL SERRA MAR | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/08041950.png" width="40" alt="COOP SICREDI COOPERJURIS"> | — | 08041950 | COOP SICREDI COOPERJURIS | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/08044854.png" width="40" alt="COOP SICOOB CENTRO"> | — | 08044854 | COOP SICOOB CENTRO | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/08055016.png" width="40" alt="COOP CRESOL INTERAÇÃO"> | — | 08055016 | COOP CRESOL INTERAÇÃO | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/08071414.png" width="40" alt="CECM SICOOB COOPERAC"> | — | 08071414 | CECM SICOOB COOPERAC | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/08488377.png" width="40" alt="COOP CRESOL MISSÕES FRONTEIRA RS"> | — | 08488377 | COOP CRESOL MISSÕES FRONTEIRA RS | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/08560508.png" width="40" alt="COOP CRESOL TRIUNFO"> | — | 08560508 | COOP CRESOL TRIUNFO | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/08624548.png" width="40" alt="COOP CRESOL MINAS GERAIS"> | — | 08624548 | COOP CRESOL MINAS GERAIS | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/08742188.png" width="40" alt="CCLA UNIÃO E NEGÓCIOS  - SICOOB INTEGRAÇÃO"> | — | 08742188 | CCLA UNIÃO E NEGÓCIOS  - SICOOB INTEGRAÇÃO | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/08795285.png" width="40" alt="CCLA SICOOB CREDIACIL"> | — | 08795285 | CCLA SICOOB CREDIACIL | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/08844074.png" width="40" alt="CC DE ITAPETININGA - SICOOB CRED-ACI"> | — | 08844074 | CC DE ITAPETININGA - SICOOB CRED-ACI | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/09004796.png" width="40" alt="CECM SICOOB CRED-ACILPA"> | — | 09004796 | CECM SICOOB CRED-ACILPA | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/09330158.png" width="40" alt="COOP CRESOL TREZE DE MAIO"> | — | 09330158 | COOP CRESOL TREZE DE MAIO | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/09343038.png" width="40" alt="COOP SICREDI ALTSERTÃO PARAIBANO"> | — | 09343038 | COOP SICREDI ALTSERTÃO PARAIBANO | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/09403026.png" width="40" alt="CC CENTRO LESTE NORTE MARANHENSE - SICOOB CENTROLESTE"> | — | 09403026 | CC CENTRO LESTE NORTE MARANHENSE - SICOOB CENTROLESTE | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/09424988.png" width="40" alt="CCLA DO OESTE MARANHENSE - SICOOB OESTE MARANHENSE"> | — | 09424988 | CCLA DO OESTE MARANHENSE - SICOOB OESTE MARANHENSE | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/09463721.png" width="40" alt="COOP CRESOL JACINTO MACHADO"> | — | 09463721 | COOP CRESOL JACINTO MACHADO | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/09488496.png" width="40" alt="COOP CRESOL COOPERACRED"> | — | 09488496 | COOP CRESOL COOPERACRED | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/10262276.png" width="40" alt="CCLA DO ESTADO DE SÃO PAULO - SICOOB PAULISTA"> | — | 10262276 | CCLA DO ESTADO DE SÃO PAULO - SICOOB PAULISTA | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/10348181.png" width="40" alt="COOP SICREDI VALE LITORAL SC"> | — | 10348181 | COOP SICREDI VALE LITORAL SC | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/10520232.png" width="40" alt="COOP CRESOL AMAZONIA"> | — | 10520232 | COOP CRESOL AMAZONIA | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/10736214.png" width="40" alt="COOP SICREDI PLAN CENTRAL"> | — | 10736214 | COOP SICREDI PLAN CENTRAL | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
 | <img src="logos/png/11275560.png" width="40" alt="RECARGAPAY IP LTDA."> | — | 11275560 | RECARGAPAY IP LTDA. | Open Finance — RECARGAPAY INSTITUICAO DE PAGAMENTO LTDA. |
+| <img src="logos/png/11907520.png" width="40" alt="CCLA DA PARAÍBA - SICOOB PARAÍBA"> | — | 11907520 | CCLA DA PARAÍBA - SICOOB PARAÍBA | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/11969853.png" width="40" alt="COOP CRESOL CONEXÃO"> | — | 11969853 | COOP CRESOL CONEXÃO | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/14568725.png" width="40" alt="COOPCENTRAL DE ECON. E CRÉDITO SICOOB UNIMAIS RIO LTDA."> | — | 14568725 | COOPCENTRAL DE ECON. E CRÉDITO SICOOB UNIMAIS RIO LTDA. | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/14913919.png" width="40" alt="CC MERCADO IMOBILIÁRIO - SICOOB IMOB.VC"> | — | 14913919 | CC MERCADO IMOBILIÁRIO - SICOOB IMOB.VC | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/16564240.png" width="40" alt="CECM APOS PENS E IDOSOS - SICOOB COOPERNAPI"> | — | 16564240 | CECM APOS PENS E IDOSOS - SICOOB COOPERNAPI | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/17343510.png" width="40" alt="COOP CRESOL RAIZ"> | — | 17343510 | COOP CRESOL RAIZ | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/19875244.png" width="40" alt="CCLA SICOOB COPESITA"> | — | 19875244 | CCLA SICOOB COPESITA | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/19962468.png" width="40" alt="COOP SICREDI COOABCRED RS"> | — | 19962468 | COOP SICREDI COOABCRED RS | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/21797311.png" width="40" alt="CCLA SERV POD LEG MG - SICOOB COFAL"> | — | 21797311 | CCLA SERV POD LEG MG - SICOOB COFAL | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/23623636.png" width="40" alt="CCLA NORTE DE MATO GROSSO - SICOOB NORTE MT"> | — | 23623636 | CCLA NORTE DE MATO GROSSO - SICOOB NORTE MT | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/24431221.png" width="40" alt="COOP CRESOL TRANSAMAZÔNICA"> | — | 24431221 | COOP CRESOL TRANSAMAZÔNICA | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/24610065.png" width="40" alt="CC SICOOB IPÊ"> | — | 24610065 | CC SICOOB IPÊ | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/24654881.png" width="40" alt="COOP SICREDI UNIÃO MS/TO E OESTE DA BA"> | — | 24654881 | COOP SICREDI UNIÃO MS/TO E OESTE DA BA | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/25363615.png" width="40" alt="CCLA SICOOB COOPJUS"> | — | 25363615 | CCLA SICOOB COOPJUS | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/25387655.png" width="40" alt="CC CREDIVALE LTDA. - SICOOB CREDIVALE"> | — | 25387655 | CC CREDIVALE LTDA. - SICOOB CREDIVALE | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/25420696.png" width="40" alt="CC CREDINACIONAL LTDA - SICOOB CREDINACIONAL"> | — | 25420696 | CC CREDINACIONAL LTDA - SICOOB CREDINACIONAL | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/26191078.png" width="40" alt="COOP SICREDI SUL DO MARANHÃO"> | — | 26191078 | COOP SICREDI SUL DO MARANHÃO | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/26408161.png" width="40" alt="COOP SICREDI CENTRO-SUL MS/BA"> | — | 26408161 | COOP SICREDI CENTRO-SUL MS/BA | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/26526166.png" width="40" alt="CCLA SUL MARANHENSE - SICOOB SUL MARANHENSE"> | — | 26526166 | CCLA SUL MARANHENSE - SICOOB SUL MARANHENSE | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/26529420.png" width="40" alt="COOP SICREDI OURO VERDE MT/PA"> | — | 26529420 | COOP SICREDI OURO VERDE MT/PA | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/26549311.png" width="40" alt="COOP SICREDI INTEGRAÇÃO MT/AP/PA"> | — | 26549311 | COOP SICREDI INTEGRAÇÃO MT/AP/PA | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/26555235.png" width="40" alt="COOP SICREDI CELEIRO DO MT"> | — | 26555235 | COOP SICREDI CELEIRO DO MT | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/31804966.png" width="40" alt="SICOOB COOPERMAIS"> | — | 31804966 | SICOOB COOPERMAIS | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/32345784.png" width="40" alt="C6 CTVM LTDA."> | — | 32345784 | C6 CTVM LTDA. | Open Finance — BCO C6 S.A. |
+| <img src="logos/png/32428294.png" width="40" alt="CCC DO ESP.SANTO - SICOOB ES"> | — | 32428294 | CCC DO ESP.SANTO - SICOOB ES | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/32430233.png" width="40" alt="SICOOB CONEXÃO"> | — | 32430233 | SICOOB CONEXÃO | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/32467086.png" width="40" alt="SICOOB SUL"> | — | 32467086 | SICOOB SUL | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/32474884.png" width="40" alt="SICOOB SUL-LITORÂNEO"> | — | 32474884 | SICOOB SUL-LITORÂNEO | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/32615247.png" width="40" alt="CC SICOOB COOPEC LTDA."> | — | 32615247 | CC SICOOB COOPEC LTDA. | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/32983165.png" width="40" alt="COOP SICREDI VL DO CERRADO"> | — | 32983165 | COOP SICREDI VL DO CERRADO | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/32995755.png" width="40" alt="COOP SICREDI SUDOESTE MT/PA"> | — | 32995755 | COOP SICREDI SUDOESTE MT/PA | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/33021064.png" width="40" alt="COOP SICREDI ARAXINGU"> | — | 33021064 | COOP SICREDI ARAXINGU | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/33022690.png" width="40" alt="COOP SICREDI BIOMAS"> | — | 33022690 | COOP SICREDI BIOMAS | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/33416108.png" width="40" alt="COOPCENTRAL SICOOB NOVA CENTRAL LTDA."> | — | 33416108 | COOPCENTRAL SICOOB NOVA CENTRAL LTDA. | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/33924028.png" width="40" alt="SICOOB COOPVALE"> | — | 33924028 | SICOOB COOPVALE | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/34148882.png" width="40" alt="CC SICOOB CENTRAL BA"> | — | 34148882 | CC SICOOB CENTRAL BA | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/35571249.png" width="40" alt="COOP SICREDI EVOLUÇÃO"> | — | 35571249 | COOP SICREDI EVOLUÇÃO | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/36900256.png" width="40" alt="UNICRED RAÍZES"> | — | 36900256 | UNICRED RAÍZES | Open Finance — COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL |
+| <img src="logos/png/37076205.png" width="40" alt="SICOOB JUDICIÁRIO"> | — | 37076205 | SICOOB JUDICIÁRIO | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/37079720.png" width="40" alt="COOP SICOOB CREDIJUSTRA"> | — | 37079720 | COOP SICOOB CREDIJUSTRA | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/37255049.png" width="40" alt="SICOOB CREDIGOIÁS CC"> | — | 37255049 | SICOOB CREDIGOIÁS CC | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/37442605.png" width="40" alt="COOP SICREDI GRANDES RIOS"> | — | 37442605 | COOP SICREDI GRANDES RIOS | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
 | <img src="logos/png/38372267.png" width="40" alt="MAREE IP LTDA."> | — | 38372267 | MAREE IP LTDA. | Open Finance — SHOPEE |
+| <img src="logos/png/41180092.png" width="40" alt="COOP SICREDI EXPANSÃO"> | — | 41180092 | COOP SICREDI EXPANSÃO | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/41255225.png" width="40" alt="COOP SICREDI CENTRO PERNAMBUCANA PE"> | — | 41255225 | COOP SICREDI CENTRO PERNAMBUCANA PE | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/41697103.png" width="40" alt="CC CREDILIVRE LTDA. - SICOOB CREDILIVRE"> | — | 41697103 | CC CREDILIVRE LTDA. - SICOOB CREDILIVRE | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/41931221.png" width="40" alt="SICOOB CREDICOOP"> | — | 41931221 | SICOOB CREDICOOP | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/42880617.png" width="40" alt="CC SICOOB CREDITIROS"> | — | 42880617 | CC SICOOB CREDITIROS | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/42887133.png" width="40" alt="CC CREDISUCESSO LTDA. - SICOOB CREDISUCESSO"> | — | 42887133 | CC CREDISUCESSO LTDA. - SICOOB CREDISUCESSO | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/44469161.png" width="40" alt="COOP SICOOB PRO"> | — | 44469161 | COOP SICOOB PRO | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/46642294.png" width="40" alt="COOP SICOOB COOPEREMB"> | — | 46642294 | COOP SICOOB COOPEREMB | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/47074323.png" width="40" alt="SICOOB CREDICONSUMO CC"> | — | 47074323 | SICOOB CREDICONSUMO CC | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/50735161.png" width="40" alt="COOP CRESOL MATO GROSSO"> | — | 50735161 | COOP CRESOL MATO GROSSO | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/53575491.png" width="40" alt="COOP CRESOL PRIMATO CREDI"> | — | 53575491 | COOP CRESOL PRIMATO CREDI | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/53935029.png" width="40" alt="CCLA SICOOB COOCRELIVRE"> | — | 53935029 | CCLA SICOOB COOCRELIVRE | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/54190525.png" width="40" alt="SICOOB CRESSEM - CECM SERV MUN REG METR VALE PARAIBA E LITOR"> | — | 54190525 | SICOOB CRESSEM - CECM SERV MUN REG METR VALE PARAIBA E LITOR | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/59869560.png" width="40" alt="CC NOSSO - SICOOB NOSSO"> | — | 59869560 | CC NOSSO - SICOOB NOSSO | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
 | <img src="logos/png/60779196.png" width="40" alt="CREFISA S.A. CFI"> | — | 60779196 | CREFISA S.A. CFI | Open Finance — CREFISA S.A. CFI |
+| <img src="logos/png/62673470.png" width="40" alt="CC SICOOB COOPMIL"> | — | 62673470 | CC SICOOB COOPMIL | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/64276058.png" width="40" alt="CC CREDINORTE - SICOOB CREDINORTE"> | — | 64276058 | CC CREDINORTE - SICOOB CREDINORTE | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/64480833.png" width="40" alt="CC CREDIMAC LTDA - SICOOB CREDIMAC"> | — | 64480833 | CC CREDIMAC LTDA - SICOOB CREDIMAC | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/64739121.png" width="40" alt="SICOOB CRED COPERCANA"> | — | 64739121 | SICOOB CRED COPERCANA | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/69346856.png" width="40" alt="COOP SICOOB CREDIMOGIANA"> | — | 69346856 | COOP SICOOB CREDIMOGIANA | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/70038237.png" width="40" alt="COOP SICREDI RIO GRANDE DO NORTE"> | — | 70038237 | COOP SICREDI RIO GRANDE DO NORTE | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/70116611.png" width="40" alt="SICOOB CENTRAL NE"> | — | 70116611 | SICOOB CENTRAL NE | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/70241658.png" width="40" alt="SICREDI RECIFE"> | — | 70241658 | SICREDI RECIFE | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/70431630.png" width="40" alt="COOP SICREDI UNIVALES MT/RO"> | — | 70431630 | COOP SICREDI UNIVALES MT/RO | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/70937271.png" width="40" alt="CCLA PROF SAÚDE UNICRED ALIANÇA"> | — | 70937271 | CCLA PROF SAÚDE UNICRED ALIANÇA | Open Finance — COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL |
+| <img src="logos/png/71154876.png" width="40" alt="COOP CREDIPINHO LTDA - SICOOB CREDIPINHO"> | — | 71154876 | COOP CREDIPINHO LTDA - SICOOB CREDIPINHO | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/71163315.png" width="40" alt="UNICRED AMPLA"> | — | 71163315 | UNICRED AMPLA | Open Finance — COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL |
+| <img src="logos/png/71207740.png" width="40" alt="CCR IRAI - SICOOB CREDIMIL"> | — | 71207740 | CCR IRAI - SICOOB CREDIMIL | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/71237184.png" width="40" alt="CC CREDIBELO LTDA. - SICOOB CREDIBELO"> | — | 71237184 | CC CREDIBELO LTDA. - SICOOB CREDIBELO | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/71297899.png" width="40" alt="CCLA OESTE MINEIRO LTDA-SICOOB"> | — | 71297899 | CCLA OESTE MINEIRO LTDA-SICOOB | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/71328769.png" width="40" alt="SICOOB COCRED CC"> | — | 71328769 | SICOOB COCRED CC | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/71336432.png" width="40" alt="SICOOB CREDIMED - CCLA DE UBERABA LTDA"> | — | 71336432 | SICOOB CREDIMED - CCLA DE UBERABA LTDA | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/71418784.png" width="40" alt="UNICRED SUL DE MINAS"> | — | 71418784 | UNICRED SUL DE MINAS | Open Finance — COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL |
+| <img src="logos/png/71506513.png" width="40" alt="CC SICOOB ITAPAGIPE"> | — | 71506513 | CC SICOOB ITAPAGIPE | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/71698674.png" width="40" alt="COOP SICOOB MANTIQUEIRA"> | — | 71698674 | COOP SICOOB MANTIQUEIRA | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/71884498.png" width="40" alt="UNICRED DO ESTADO DE SÃO PAULO"> | — | 71884498 | UNICRED DO ESTADO DE SÃO PAULO | Open Finance — COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL |
+| <img src="logos/png/72128440.png" width="40" alt="COOP SICREDI RIO RJ"> | — | 72128440 | COOP SICREDI RIO RJ | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/72257793.png" width="40" alt="COOP SICREDI VEREDAS"> | — | 72257793 | COOP SICREDI VEREDAS | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/73113243.png" width="40" alt="COOP SICREDI MORADA DO SOL SP"> | — | 73113243 | COOP SICREDI MORADA DO SOL SP | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/73326449.png" width="40" alt="COOP LIVRE ADMISSÃO DE ASSOCIADOS SICOOB CRUZ ALTA LTDA"> | — | 73326449 | COOP LIVRE ADMISSÃO DE ASSOCIADOS SICOOB CRUZ ALTA LTDA | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/73398646.png" width="40" alt="SOC CC SICOOB COOPERE"> | — | 73398646 | SOC CC SICOOB COOPERE | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/73443863.png" width="40" alt="COOP UNICRED VALE LTDA."> | — | 73443863 | COOP UNICRED VALE LTDA. | Open Finance — COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL |
+| <img src="logos/png/73750424.png" width="40" alt="CECM UNICRED INTEGRAÇÃO"> | — | 73750424 | CECM UNICRED INTEGRAÇÃO | Open Finance — COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL |
+| <img src="logos/png/74064502.png" width="40" alt="CC UNICRED VALOR CAPITAL LTDA - UNICRED VALOR CAPITAL"> | — | 74064502 | CC UNICRED VALOR CAPITAL LTDA - UNICRED VALOR CAPITAL | Open Finance — COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL |
+| <img src="logos/png/74114042.png" width="40" alt="CC UNICRED UNIÃO LTDA - UNICRED UNIÃO"> | — | 74114042 | CC UNICRED UNIÃO LTDA - UNICRED UNIÃO | Open Finance — COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL |
+| <img src="logos/png/76059997.png" width="40" alt="COOP SICREDI PROGRESSO PR/SP"> | — | 76059997 | COOP SICREDI PROGRESSO PR/SP | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/77984870.png" width="40" alt="COOP SICREDI PLANALT DAS ÁGUAS"> | — | 77984870 | COOP SICREDI PLANALT DAS ÁGUAS | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/78414067.png" width="40" alt="COOP SICREDI VANGUARDA PR/SP/RJ"> | — | 78414067 | COOP SICREDI VANGUARDA PR/SP/RJ | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/78825270.png" width="40" alt="CCLAA SICOOB MAXICRÉDITO"> | — | 78825270 | CCLAA SICOOB MAXICRÉDITO | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/78840071.png" width="40" alt="COOP SICOOB CREDIAUC"> | — | 78840071 | COOP SICOOB CREDIAUC | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/78858107.png" width="40" alt="CCLAA AURIVERDE-SICOOB CREDIAL"> | — | 78858107 | CCLAA AURIVERDE-SICOOB CREDIAL | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/78907607.png" width="40" alt="COOP SICREDI CENT SUL PR/SC/RJ"> | — | 78907607 | COOP SICREDI CENT SUL PR/SC/RJ | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/79052122.png" width="40" alt="COOP SICREDI ALIANÇA"> | — | 79052122 | COOP SICREDI ALIANÇA | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/79063574.png" width="40" alt="COOP SICREDI NORTE SUL"> | — | 79063574 | COOP SICREDI NORTE SUL | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/79086997.png" width="40" alt="COOP SICREDI PARANAPANEMA SERRANA PR/SP/RJ"> | — | 79086997 | COOP SICREDI PARANAPANEMA SERRANA PR/SP/RJ | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/79342069.png" width="40" alt="COOP SICREDI DEXIS"> | — | 79342069 | COOP SICREDI DEXIS | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/79457883.png" width="40" alt="COOP SICREDI AGROEMPRESARIAL"> | — | 79457883 | COOP SICREDI AGROEMPRESARIAL | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/80160260.png" width="40" alt="CCC SICOOB CENTRAL SC/RS"> | — | 80160260 | CCC SICOOB CENTRAL SC/RS | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/81014060.png" width="40" alt="CCLAA ITAIPU SICOOB CREDITAIPU"> | — | 81014060 | CCLAA ITAIPU SICOOB CREDITAIPU | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/81054686.png" width="40" alt="COOP SICREDI INTEGRAÇÃO PR/SC"> | — | 81054686 | COOP SICREDI INTEGRAÇÃO PR/SC | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/81099491.png" width="40" alt="COOP SICREDI VALE DO PIQUIRI"> | — | 81099491 | COOP SICREDI VALE DO PIQUIRI | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/81115149.png" width="40" alt="COOP SICREDI GRANDES LAGOS"> | — | 81115149 | COOP SICREDI GRANDES LAGOS | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/81192106.png" width="40" alt="COOP SICREDI NOSSA TERRA PR/SP"> | — | 81192106 | COOP SICREDI NOSSA TERRA PR/SP | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/81206039.png" width="40" alt="COOP SICREDI RIO PARANÁ"> | — | 81206039 | COOP SICREDI RIO PARANÁ | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/81292278.png" width="40" alt="CC ORIGINAL - SICOOB ORIGINAL"> | — | 81292278 | CC ORIGINAL - SICOOB ORIGINAL | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/81466286.png" width="40" alt="COOP SICREDI CAMPOS GERAIS E GRANDE CURITIBA PR/SP"> | — | 81466286 | COOP SICREDI CAMPOS GERAIS E GRANDE CURITIBA PR/SP | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/81706616.png" width="40" alt="COOP SICREDI VLR SUSTENT PR/SP"> | — | 81706616 | COOP SICREDI VLR SUSTENT PR/SP | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/82065285.png" width="40" alt="COOP SICREDI SOMA"> | — | 82065285 | COOP SICREDI SOMA | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/82133182.png" width="40" alt="CC DO VALE EUROPEU - SICOOB EURO VALE"> | — | 82133182 | CC DO VALE EUROPEU - SICOOB EURO VALE | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/82527557.png" width="40" alt="COOP SICREDI FRONTEIR PR/SC/SP"> | — | 82527557 | COOP SICREDI FRONTEIR PR/SC/SP | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/83836114.png" width="40" alt="CCLA DO ESTADO DO PARÁ - SICOOB COOESA"> | — | 83836114 | CCLA DO ESTADO DO PARÁ - SICOOB COOESA | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/84974278.png" width="40" alt="COOP SICREDI IGUAÇU PR/SC E REGIÃO METROP. DE CAMPINAS/SP"> | — | 84974278 | COOP SICREDI IGUAÇU PR/SC E REGIÃO METROP. DE CAMPINAS/SP | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/86389236.png" width="40" alt="COOP SICOOB UNI SUDESTE"> | — | 86389236 | COOP SICOOB UNI SUDESTE | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/86585049.png" width="40" alt="SICOOB CREDILEITE"> | — | 86585049 | SICOOB CREDILEITE | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/86791837.png" width="40" alt="SICOOB VALE DOS PINHAIS"> | — | 86791837 | SICOOB VALE DOS PINHAIS | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/87067757.png" width="40" alt="COOP SICREDI CENTRO SERRA"> | — | 87067757 | COOP SICREDI CENTRO SERRA | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/87510475.png" width="40" alt="COOP SICREDI ROTA DAS TERRAS"> | — | 87510475 | COOP SICREDI ROTA DAS TERRAS | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/87733077.png" width="40" alt="COOP SICREDI ESSÊNCIA"> | — | 87733077 | COOP SICREDI ESSÊNCIA | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/87779625.png" width="40" alt="COOPERATIVA DE CRÉDITO COOPERAÇÃO - SICREDI COOPERAÇÃO"> | — | 87779625 | COOPERATIVA DE CRÉDITO COOPERAÇÃO - SICREDI COOPERAÇÃO | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/87780268.png" width="40" alt="COOP SICREDI UNIESTADOS"> | — | 87780268 | COOP SICREDI UNIESTADOS | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/87780284.png" width="40" alt="COOP SICREDI VL JAGUA ZN MATA"> | — | 87780284 | COOP SICREDI VL JAGUA ZN MATA | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/87781530.png" width="40" alt="SICREDI INTEGRAÇÃO DE ESTADOS RS/SC/MG"> | — | 87781530 | SICREDI INTEGRAÇÃO DE ESTADOS RS/SC/MG | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/87784088.png" width="40" alt="COOP SICREDI SUL MINAS RS/MG"> | — | 87784088 | COOP SICREDI SUL MINAS RS/MG | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/87795639.png" width="40" alt="COOP SICREDI ALIANÇA"> | — | 87795639 | COOP SICREDI ALIANÇA | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/87853206.png" width="40" alt="COOP SICREDI OURO BRANCO RS/MG"> | — | 87853206 | COOP SICREDI OURO BRANCO RS/MG | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/87900411.png" width="40" alt="COOP SICREDI SEMENTES DO SUL"> | — | 87900411 | COOP SICREDI SEMENTES DO SUL | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/87900601.png" width="40" alt="COOP SICREDI BOTUCARAÍ RS/MG"> | — | 87900601 | COOP SICREDI BOTUCARAÍ RS/MG | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/88038260.png" width="40" alt="COOP SICREDI PLANALTO RS/MG"> | — | 88038260 | COOP SICREDI PLANALTO RS/MG | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/88099247.png" width="40" alt="COOP SICREDI RAIZES RS/SC/MG"> | — | 88099247 | COOP SICREDI RAIZES RS/SC/MG | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/88471024.png" width="40" alt="COOP SICREDI GERAÇÕES RS/MG"> | — | 88471024 | COOP SICREDI GERAÇÕES RS/MG | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/88530142.png" width="40" alt="COOP DE CRED E INVEST LIBERDADE - SICREDI LIBERDADE"> | — | 88530142 | COOP DE CRED E INVEST LIBERDADE - SICREDI LIBERDADE | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/88894548.png" width="40" alt="COOP SICREDI UNIÃO RS"> | — | 88894548 | COOP SICREDI UNIÃO RS | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/89049738.png" width="40" alt="COOP SICREDI CONFIANÇA"> | — | 89049738 | COOP SICREDI CONFIANÇA | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/89126130.png" width="40" alt="COOP SICREDI REGIÃO DOS VALES"> | — | 89126130 | COOP SICREDI REGIÃO DOS VALES | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/89468565.png" width="40" alt="COOP SICREDI REG PROD RS/SC/MG"> | — | 89468565 | COOP SICREDI REG PROD RS/SC/MG | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/89990501.png" width="40" alt="COOP SICREDI IBIRAIARAS RS/MG"> | — | 89990501 | COOP SICREDI IBIRAIARAS RS/MG | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/90497256.png" width="40" alt="COOP SICREDI INTERESTADOS"> | — | 90497256 | COOP SICREDI INTERESTADOS | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/90608712.png" width="40" alt="COOP SICREDI SERRANA RS"> | — | 90608712 | COOP SICREDI SERRANA RS | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/90729369.png" width="40" alt="COOP SICREDI CULTURAS RS/MG"> | — | 90729369 | COOP SICREDI CULTURAS RS/MG | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/91159764.png" width="40" alt="COOP SICREDI INTEGRAÇÃO RS/MG"> | — | 91159764 | COOP SICREDI INTEGRAÇÃO RS/MG | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/91586982.png" width="40" alt="COOP SICREDI PIONEIRA RS"> | — | 91586982 | COOP SICREDI PIONEIRA RS | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/92555150.png" width="40" alt="COOP SICREDI ALT SERRA RS/SC"> | — | 92555150 | COOP SICREDI ALT SERRA RS/SC | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/92796564.png" width="40" alt="COOP SICREDI ORIGENS RS"> | — | 92796564 | COOP SICREDI ORIGENS RS | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/94243839.png" width="40" alt="UNICRED PIONEIRA"> | — | 94243839 | UNICRED PIONEIRA | Open Finance — COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL |
+| <img src="logos/png/95163002.png" width="40" alt="UNICRED ELEVA"> | — | 95163002 | UNICRED ELEVA | Open Finance — COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL |
+| <img src="logos/png/95213211.png" width="40" alt="COOP SICREDI CAMINHO DAS ÁGUAS RS"> | — | 95213211 | COOP SICREDI CAMINHO DAS ÁGUAS RS | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/95424891.png" width="40" alt="COOP SICREDI VALE DO RIO PARDO"> | — | 95424891 | COOP SICREDI VALE DO RIO PARDO | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/95594941.png" width="40" alt="COOP SICREDI REG CENTRO RS/MG"> | — | 95594941 | COOP SICREDI REG CENTRO RS/MG | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/97489280.png" width="40" alt="COOP SICREDI INTEGRAÇÃO BAHIA - BA"> | — | 97489280 | COOP SICREDI INTEGRAÇÃO BAHIA - BA | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
 
-<details><summary>Instituições sem logo (956) — consumidores devem usar um ícone genérico</summary>
+<details><summary>Instituições sem logo (640) — consumidores devem usar um ícone genérico</summary>
 
 - `0007` BNDES (ISPB 33657248)
 - `0010` CREDICOAMO (ISPB 81723108)
 - `0012` BANCO INBURSA (ISPB 04866275)
-- `0016` CCM DESP TRÂNS SC E RS (ISPB 04715685)
 - `0018` BCO TRICURY S.A. (ISPB 57839805)
 - `0023` CONTA SIMPLES SCD S.A. (ISPB 53720128)
 - `0024` BCO BANDEPE S.A. (ISPB 10866788)
@@ -485,56 +800,35 @@
 - `0794` ATUAL CC LTDA (ISPB 44323831)
 - `0795` BANCO TRATON BRASIL S.A. (ISPB 52067630)
 - `——` CC ARACREDI LTDA. (ISPB 00068987)
-- `——` CC UNICRED CENTRO-SUL LTDA - UNICRED CENTRO-SUL (ISPB 00075847)
 - `——` CCC DOS EST DE MT, MS E MUN DE CACOAL/RO (ISPB 00106180)
-- `——` CCLA SICOOB UNIMAIS METROPOLITANA (ISPB 00259231)
 - `——` CCC ESTADO MG - CECREMGE (ISPB 00309024)
 - `——` STN (ISPB 00394460)
 - `——` CC CREDIAGRO (ISPB 00429890)
 - `——` CC SERV. MUN SANTO ANDRÉ SP - CECRESA (ISPB 00512839)
 - `——` APE POUPEX (ISPB 00655522)
-- `——` CCLA SICOOB CREDICARU SC/RS (ISPB 00694389)
-- `——` COOP SICOOB EXECUTIVO LTDA. (ISPB 00694877)
 - `——` CC VALE DO CANOAS (ISPB 00707903)
 - `——` CC CREDIVAZ LTDA (ISPB 00803287)
-- `——` COOP CREDICAPI LTDA - SICOOB CREDICAPI (ISPB 00804046)
-- `——` SICOOB SUL-SERRANO (ISPB 00815319)
 - `——` CCLA BOA ESPERANÇA (ISPB 00869687)
-- `——` SICOOB CREDFAZ (ISPB 00952415)
 - `——` CC CREDICERIPA (ISPB 00966246)
-- `——` COOP SICOOB COOPERCRED LTDA. (ISPB 00968602)
-- `——` COOP CRESOL PIONEIRA (ISPB 00971300)
 - `——` CCLA PARA DE MINAS (ISPB 01009908)
-- `——` CC UNICRED DESBRAVADORA LTDA - UNICRED DESBRAVADORA (ISPB 01039011)
 - `——` CCLA UNIÃO DOS VALES DO PIRANGA E MATIPÓ LTDA. (ISPB 01060307)
 - `——` CECM DOS FUNCIONARIOS DA COMIGO (ISPB 01062439)
 - `——` CC CREDIMATA (ISPB 01152097)
-- `——` COOP CRESOL CENTRO SERRA (ISPB 01155801)
 - `——` CC DISTRITO FEDERAL E ENTORNO (ISPB 01187961)
-- `——` COOP DE CRÉDITO SICOOB COSTA DO DESCOBRIMENTO LTDA. (ISPB 01205736)
-- `——` COOP SICOOB UNIMAIS CLP (ISPB 01259518)
 - `——` UNIPRIME PIONEIRA CC (ISPB 01286361)
 - `——` CC SÃO FRANCISCO DE SALES LTDA. (ISPB 01374196)
 - `——` CCLA DO PLANALTO CATARINENSE (ISPB 01389651)
-- `——` UNICRED HORIZONTES (ISPB 01526924)
 - `——` CCLA LESTE E NORDESTE MINEIRO (ISPB 01559914)
 - `——` COOP UNIPRIME SUL (ISPB 01572667)
-- `——` CCLA SUL MINAS-SICOOB CREDIVAS (ISPB 01604998)
 - `——` COOP DO ESTADO DO ACRE LTDA. (ISPB 01608685)
 - `——` CC CREDICAMPINA (ISPB 01609345)
-- `——` UNICRED PREMIUM CAPITAL (ISPB 01635462)
 - `——` CCLA VALE DO PARANAPANEMA (ISPB 01637949)
-- `——` CCLA SICOOB CREDIMEPI (ISPB 01644264)
 - `——` NSTECH IP S.A. (ISPB 01648418)
 - `——` CCLA SEBASTIAO PARAISO (ISPB 01657678)
-- `——` CCLA SICOOB CREDMISSÃO LTDA. (ISPB 01667352)
-- `——` CCLA CREDINOVA LTDA. - SICOOB CREDINOVA (ISPB 01667766)
 - `——` CCLA DO PLANALTO SERRANO (ISPB 01692448)
 - `——` CCLA REGIÃO GUAXUPÉ (ISPB 01699652)
 - `——` CCLA UNIÃO CENTRO OESTE MINAS (ISPB 01703620)
-- `——` UNICRED PROSPERAR (ISPB 01705236)
 - `——` CCM PROF SAUDE E LIVRE ADMISSÃO TEOFILO OTONI LTDA (ISPB 01709266)
-- `——` CC UNICRED EVOLUÇÃO LTDA. (ISPB 01727929)
 - `——` CCLA REG. CTR. E OESTE MINEIRO (ISPB 01736516)
 - `——` CCLA LAGOA DA PRATA (ISPB 01739375)
 - `——` CCLA DE BH E CIDADES POLO DE MG (ISPB 01760242)
@@ -542,225 +836,85 @@
 - `——` CECM SERV E EMPREG PUBL MUN BH BETIM BRUMAD CONTAG IBI NL RN (ISPB 01864151)
 - `——` CSU DIGITAL IP S.A. (ISPB 01896779)
 - `——` CECM SERV POD JUD TCE ORG PUBL MUN EST FED RJ (ISPB 02000895)
-- `——` COOP SICOOB CREDIP (ISPB 02015588)
 - `——` CCLA MONTES CLAROS (ISPB 02031139)
-- `——` CC SICOOB SERTÃO (ISPB 02057584)
-- `——` CECM SICOOB CREDSAÚDE (ISPB 02072790)
-- `——` CCLA SICOOB VALCREDI SUL (ISPB 02090126)
 - `——` CCLA DA REGIÃO CENTRAL DE RONDÔNIA (ISPB 02144899)
 - `——` CCLA CENTRO NORDESTE MINEIRO (ISPB 02173447)
-- `——` COOPERATIVA DE CRÉDITO LIVRE ADMISSÃO SICOOB OURICRED (ISPB 02179673)
 - `——` CCLA CREDSAOPAULO (ISPB 02197569)
 - `——` CC CONTADORES, ADMINISTRADORES, ECONOMISTAS E CORRET SEGUROS (ISPB 02217068)
 - `——` CCLA CIRCUITO CAMPOS VERTENTES (ISPB 02232383)
-- `——` CCLA SICOOB COOPCREDI (ISPB 02254376)
-- `——` CCM SERV FEDERAIS NA PARAÍBA - SICOOB COOPERCRET (ISPB 02275781)
-- `——` CC SICOOB CREDICONQUISTA (ISPB 02282165)
 - `——` COOP CENTRO NORTE BRASILEIRO (ISPB 02282709)
 - `——` CCLA CREDISIS JICRED (ISPB 02309070)
 - `——` CCLA ZONA DA MATA LTDA (ISPB 02335109)
 - `——` CCLA CREDIEMBRAPA (ISPB 02338666)
 - `——` GREENCRED CC (ISPB 02347114)
-- `——` SICOOB POTIGUAR (ISPB 02382755)
 - `——` COOP ÚNILOS (ISPB 02405189)
-- `——` COOP CRESOL UNIAO (ISPB 02446089)
-- `——` CC SICOOB EXTREMO SUL LTDA. (ISPB 02447120)
-- `——` COOP CRESOL PROGRESSO (ISPB 02448310)
-- `——` SICOOB CREDIUNIÃO (ISPB 02448839)
-- `——` CC SICOOB VALE SUL (ISPB 02466552)
 - `——` COOPSERVIDOR ES (ISPB 02475222)
 - `——` CCLA E DOS ADV (ISPB 02480577)
-- `——` SICOOB LESTE (ISPB 02493000)
-- `——` CC SICOOB CREDCOOP (ISPB 02528151)
 - `——` CCLA URUBICI (ISPB 02587492)
 - `——` CCLAA NOVA TRENTO (ISPB 02641969)
-- `——` COOP CRESOL NOROESTE (ISPB 02663426)
-- `——` COOP CRESOL EXCELÊNCIA (ISPB 02766672)
-- `——` SICOOB UFVCREDI (ISPB 02794761)
-- `——` UNICRED SUDOESTE DA BAHIA (ISPB 02833202)
-- `——` COOP SICREDI NORTE SC (ISPB 02843443)
-- `——` COOP CRESOL EVOLUÇAO (ISPB 02844024)
-- `——` CC SICOOB NORTE SUL (ISPB 02876918)
 - `——` CC VALE ITAJAÍ E ITAPOCÚ (ISPB 02883398)
-- `——` COOP CRESOL JACUTINGA (ISPB 02904125)
-- `——` COOP CRESOL ÁUREA (ISPB 02904138)
-- `——` COOP CRESOL CENTRO SUL (ISPB 02910987)
-- `——` COOP SICREDI SERIGY SE/BA (ISPB 02923389)
-- `——` COOP SICREDI MEDICRED (ISPB 02924977)
-- `——` SICOOB FLUMINENSE (ISPB 02931668)
-- `——` COOP CRESOL LIDERANCA (ISPB 02934201)
-- `——` CC SICOOB CREDSEGURO LTDA. (ISPB 02935307)
-- `——` COOP POL FED - SICREDI POL (ISPB 03000142)
-- `——` COOP CRESOL SÃO VALENTIM (ISPB 03015152)
 - `——` CC DO PLANALTO SUL (ISPB 03033469)
-- `——` COOP SICREDI CAMPO GRANDE MS/GO (ISPB 03042597)
 - `——` CC CAP UNICIDADES (ISPB 03047549)
-- `——` COOP SICREDI NOROESTE SP (ISPB 03065046)
-- `——` CCLA CENTRO NORDESTE - SICOOB CENTRO NORDESTE (ISPB 03102185)
-- `——` COOP SICREDI TRADIÇÃO RS (ISPB 03212823)
 - `——` CREDISIS CREDIARI COOP LTDA. (ISPB 03222753)
 - `——` CC SERV MIL POL CIVIL SEC ED (ISPB 03269540)
-- `——` COOP ARACOOP LTDA. - SICOOB ARACOOP (ISPB 03320525)
 - `——` CCLA CENTRO NORTE MT/MS (ISPB 03326437)
-- `——` SICOOB CREDIROCHAS (ISPB 03358914)
 - `——` CC CREDIRAMA (ISPB 03412878)
 - `——` CC NOSSA SENHORA DO DESTERRO (ISPB 03419786)
 - `——` CCLA DO SUL CATARINENSE (ISPB 03427097)
-- `——` COOP SICOOB CREDUNI (ISPB 03428338)
-- `——` CC SICOOB METROPOLITANO (ISPB 03459850)
 - `——` CC DO NORTE CATARINENSE (ISPB 03461243)
-- `——` COOP CRESOL ENCOSTAS DA SERRA GERAL (ISPB 03485130)
 - `——` CCC DO NORTE DO BRASIL (ISPB 03502131)
 - `——` CC PODER JUD E MP MG (ISPB 03519240)
-- `——` CC SICOOB CREDMETAL (ISPB 03535065)
-- `——` COOP SICREDI CELEIRO OESTE (ISPB 03566655)
-- `——` COOP SICOOB COOPERPLAN CREDSEF (ISPB 03603683)
 - `——` CCM SERV PUBLICOS - CREDI SP (ISPB 03612679)
 - `——` COOP FRONTEIRAS (ISPB 03612764)
-- `——` CCM DO CEARÁ - SICOOB CEARÁ (ISPB 03620772)
-- `——` SICOOB CREDISUL (ISPB 03632872)
 - `——` CC CREDISG (ISPB 03645752)
-- `——` COOP SICREDI MP (ISPB 03662047)
 - `——` CECM EMP INST SF SÃO PAULO CAM (ISPB 03674133)
-- `——` CCLA DE PERNAMBUCO - SICOOB PERNAMBUCO (ISPB 03732359)
-- `——` COOP SICREDI AJURIS (ISPB 03750034)
-- `——` COOP SICREDI SUL SC (ISPB 03793242)
 - `——` VOLUS IP LTDA. (ISPB 03817702)
-- `——` CCLA EMPREG DOS CORREIOS - SICOOB COOPERCORREIOS (ISPB 03862898)
 - `——` CCLA CIRCUITO DAS ÁGUAS (ISPB 03941182)
-- `——` COOP CRESOL VANGUARDA (ISPB 03965737)
 - `——` CREDISIS SUDOESTE/RO (ISPB 03985375)
-- `——` CC SICOOB 3 COLINAS (ISPB 04013172)
-- `——` CCLA DE ITAJUBÁ - SICOOB SUDESTE MAIS (ISPB 04079285)
-- `——` SICOOB EMPRESAS RJ (ISPB 04120633)
 - `——` CECM SERV POL MIL SP REGIÃO CE (ISPB 04152107)
-- `——` CC SICOOB COOPEMAR (ISPB 04174720)
 - `——` CCLA DE PITANGUI E REGIAO LTDA (ISPB 04181542)
-- `——` COOP SICREDI NATIVA PE/BA (ISPB 04237413)
-- `——` CENTRAL SICOOB UNI DE CC (ISPB 04243780)
 - `——` CC DE EMPRESÁRIOS (ISPB 04247370)
-- `——` COOP CRESOL TRANSFORMAÇÃO (ISPB 04261151)
-- `——` CC SICOOB INOVA (ISPB 04321309)
-- `——` COOP CRESOL TRADICAO (ISPB 04350225)
-- `——` CC UNICRED COOMARCA (ISPB 04355489)
-- `——` CC SICOOB ENGECRED (ISPB 04388688)
 - `——` COOP DO ESTADO DE GOIÁS (ISPB 04406371)
 - `——` CCM DO ABC - COOPER 7 (ISPB 04414354)
-- `——` UNICRED COALIZÃO (ISPB 04445917)
-- `——` COOP SICREDI CEN OEST PAULISTA (ISPB 04463602)
-- `——` COOP SICREDI ALTA NOROESTE SP (ISPB 04484490)
-- `——` COOP CRESOL GOIAS (ISPB 04490531)
-- `——` COOP SICREDI EDUCAÇÃO RS (ISPB 04525997)
-- `——` COOP SICOOB CREDICAPITAL (ISPB 04529074)
-- `——` COOP CRESOL ARATIBA (ISPB 04565791)
 - `——` CECM MILITARES ESTADUAIS DE SC (ISPB 04572960)
 - `——` CREDJUST - CCM INTEGRANTES DA (ISPB 04608925)
-- `——` COOP SICOOB BRMIL LTDA. (ISPB 04649337)
 - `——` COOP INVEST INT SOL VALE DAS ÁGUAS PR/MG (ISPB 04663561)
 - `——` CECM INTEG. MF DP ESTADO RJ (ISPB 04694278)
-- `——` CC INV DE RONDÔNIA - SICOOB CREDJURD (ISPB 04751713)
 - `——` COOP CRESERV CREDISIS (ISPB 04831810)
-- `——` CECM SICOOB METALCRED (ISPB 04833655)
 - `——` AVIV INSTITUICAO DE PAGAMENTO (ISPB 04838403)
-- `——` COOP SICREDI BANDEIRANTES (ISPB 04853988)
 - `——` CCLA TRÊS FRONTEIRAS (ISPB 04876393)
-- `——` COOP SICREDI CREDJURIS (ISPB 04886317)
 - `——` FISERV DO BRASIL IP (ISPB 04962772)
 - `——` CREDISIS OESTE - CCI DO OESTE (ISPB 04985665)
-- `——` CCC UNICOOB-SICOOB CENTR UNIC (ISPB 05036532)
-- `——` COOP CRESOL INOVAÇAO (ISPB 05070112)
 - `——` CC SERV FIN CTBA E REG (ISPB 05097757)
 - `——` CCLA REG LESTE BACIA RIO DOCE (ISPB 05158093)
-- `——` SICOOB AMAZÔNIA (ISPB 05203605)
-- `——` COOP CRESOL ORIGENS (ISPB 05220243)
-- `——` COOP SICOOB CERRADO (ISPB 05222094)
-- `——` COOP CRESOL UNIAO DOS VALES (ISPB 05231945)
-- `——` COOP CRESOL CAMINHOS (ISPB 05241145)
-- `——` COOP SICOOB PRIMAVERA (ISPB 05241619)
-- `——` COOP SICOOB BURITIS (ISPB 05247312)
-- `——` COOP CRESOL MAIS (ISPB 05269976)
-- `——` COOP CRESOL FRONTEIRAS PR/SC/SP/ES (ISPB 05276770)
-- `——` COOP CRESOL HORIZONTE (ISPB 05277312)
 - `——` CC REGIÃO MERIDIONAL BRASIL (ISPB 05392810)
-- `——` COOP CRESOL LITORAL (ISPB 05410056)
-- `——` COOP CRESOL DESENVOLVIMENTO (ISPB 05425526)
 - `——` CREDISIS CAPITALCREDI - CCLA DO ACRE LTDA. (ISPB 05439425)
 - `——` CC CREDLIDER (ISPB 05463934)
-- `——` CC NO PIAUÍ - SICOOB PIAUÍ (ISPB 05477038)
-- `——` COOP CRESOL NASCENTE (ISPB 05494591)
-- `——` COOP SICREDI LENÇÓIS (ISPB 05545390)
-- `——` CC SICOOB OURO VERDE (ISPB 05582619)
 - `——` CC INVESTIMENTO LIVRE ADMISSÃO DO OESTE DE RONDÔNIA (ISPB 05597773)
 - `——` CECM COOPERSERV (ISPB 05667301)
-- `——` SICOOB EMPRESARIAL (ISPB 05856736)
 - `——` CCM DOS ADVOGADOS DE SC (ISPB 05861932)
-- `——` COOP CRESOL PLANALTO SERRA SUL (ISPB 05863726)
 - `——` COOP SUL (ISPB 05888589)
 - `——` COOPER CARD IP (ISPB 05938780)
 - `——` CCMS MUNICIPAIS DE BEBEDOURO (ISPB 05969937)
 - `——` CREDCREA (ISPB 05979692)
-- `——` COOP CRESOL COOPERAR (ISPB 05983995)
-- `——` COOP CRESOL ESSENCIA (ISPB 06031727)
-- `——` COOP SICREDI CREDENOREG (ISPB 06078926)
-- `——` COOP CRESOL GRANDES LAGOS PR/SP (ISPB 06126780)
-- `——` COOP CRESOL RIO GRANDE DO SUL (ISPB 06139650)
-- `——` CC SICOOB ALIANÇA (ISPB 06174009)
 - `——` NDD (ISPB 06255692)
 - `——` CC CREDINOSSO (ISPB 06324872)
-- `——` COOP SICREDI CERRADO GO (ISPB 06332931)
 - `——` CCLA SANTA CRUZ PALMEIRAS (ISPB 06910457)
 - `——` CREDISIS COOPESA (ISPB 06975532)
-- `——` CCLA SICOOB ARENITO PARANÁ / SÃO PAULO (ISPB 07026923)
-- `——` COOP SICREDI EMPREENDEDORES (ISPB 07070495)
-- `——` COOP SICOOB CONFIANÇA (ISPB 07097064)
 - `——` BOKU NETWORK BRASIL IP (ISPB 07115294)
-- `——` CC INTEGRADO - SICOOB INTEGRADO (ISPB 07122321)
 - `——` HYPER WALLET IP LTDA (ISPB 07136847)
-- `——` CC SICOOB HORIZONTE (ISPB 07194313)
-- `——` COOP SICREDI NOVOS HORIZONTES PR/SP/RJ (ISPB 07206072)
-- `——` COOP CRESOL ALTERNATIVA (ISPB 07215632)
-- `——` COOP CRESOL CONFIANÇA (ISPB 07252614)
-- `——` COOP CRESOL INTEGRACAO (ISPB 07268499)
-- `——` COOP  SICOOB MÉDIO OESTE (ISPB 07318874)
-- `——` COOP CRESOL VALE (ISPB 07320890)
 - `——` AUTHPAY INSTITUICAO DE PAGAMENTO LTDA (ISPB 07398335)
-- `——` COOP CRESOL ALIANÇA (ISPB 07412987)
-- `——` COOP CRESOL ALTO VALE (ISPB 07465539)
 - `——` CC CREDIFIEMG (ISPB 07469260)
 - `——` CREDISIS/CREDISUL COOPERATIVA DE CRÉDITO (ISPB 07494300)
 - `——` COOP EMPRECRED LTDA. (ISPB 07502031)
-- `——` COOP CRESOL XANXERE (ISPB 07509426)
-- `——` COOP CRESOL VALE EUROPEU (ISPB 07512780)
 - `——` CCLA DA REGIÃO METROPOLITANA DE GOIÂNIA LTDA. (ISPB 07599206)
-- `——` CCM SICOOB CREDIACISC (ISPB 07669921)
 - `——` CECM PROF ÁREA NOTARIAL REGISTRAL (ISPB 07714057)
 - `——` CCLA TRANSPORT RODOV VEICULOS (ISPB 07789195)
-- `——` COOP CRESOL NORTE PARANAENSE (ISPB 07925729)
-- `——` CCLA SICOOB UNIÃO SUDESTE (ISPB 07946216)
-- `——` COOP CRESOL ATIVA (ISPB 07946451)
-- `——` COOP CRESOL SERRA MAR (ISPB 07958405)
 - `——` CCM CORRET SEG EST SAO PAULO (ISPB 08030602)
-- `——` COOP SICREDI COOPERJURIS (ISPB 08041950)
-- `——` COOP SICOOB CENTRO (ISPB 08044854)
-- `——` COOP CRESOL INTERAÇÃO (ISPB 08055016)
-- `——` CECM SICOOB COOPERAC (ISPB 08071414)
 - `——` COOP TRANSPOCRED (ISPB 08075352)
-- `——` COOP CRESOL MISSÕES FRONTEIRA RS (ISPB 08488377)
-- `——` COOP CRESOL TRIUNFO (ISPB 08560508)
-- `——` COOP CRESOL MINAS GERAIS (ISPB 08624548)
-- `——` CCLA UNIÃO E NEGÓCIOS  - SICOOB INTEGRAÇÃO (ISPB 08742188)
-- `——` CCLA SICOOB CREDIACIL (ISPB 08795285)
-- `——` CC DE ITAPETININGA - SICOOB CRED-ACI (ISPB 08844074)
 - `——` CECM EMPR CENT ELÉTRICAS/SC (ISPB 08850613)
-- `——` CECM SICOOB CRED-ACILPA (ISPB 09004796)
 - `——` CCLA DE RIO VERDE E REGIÃO (ISPB 09033698)
-- `——` COOP CRESOL TREZE DE MAIO (ISPB 09330158)
-- `——` COOP SICREDI ALTSERTÃO PARAIBANO (ISPB 09343038)
-- `——` CC CENTRO LESTE NORTE MARANHENSE - SICOOB CENTROLESTE (ISPB 09403026)
-- `——` CCLA DO OESTE MARANHENSE - SICOOB OESTE MARANHENSE (ISPB 09424988)
 - `——` BRINKS PAY IP LTDA. (ISPB 09437293)
-- `——` COOP CRESOL JACINTO MACHADO (ISPB 09463721)
-- `——` COOP CRESOL COOPERACRED (ISPB 09488496)
 - `——` CC DA FOZ DO RIO ITAJAÍ AÇU (ISPB 09512539)
 - `——` COOP JUST GOIAS E CELG (ISPB 09552111)
 - `——` CCLA CERES E RIALMA LTDA (ISPB 09576849)
@@ -771,34 +925,24 @@
 - `——` CCMLA REGIãO ADMINISTRATIVA DE SOROCABA (ISPB 10175348)
 - `——` CCLA DA GRANDE GOIÂNIA LTDA. (ISPB 10209619)
 - `——` CIVIA COOP CRED (ISPB 10218474)
-- `——` CCLA DO ESTADO DE SÃO PAULO - SICOOB PAULISTA (ISPB 10262276)
 - `——` COOP EVOLUA (ISPB 10311218)
 - `——` STRADA PAY IP LTDA. (ISPB 10314753)
 - `——` CCLA DO CENTRO SUL DE MS (ISPB 10319386)
-- `——` COOP SICREDI VALE LITORAL SC (ISPB 10348181)
 - `——` BLU IP LTDA. (ISPB 10506341)
-- `——` COOP CRESOL AMAZONIA (ISPB 10520232)
-- `——` COOP SICREDI PLAN CENTRAL (ISPB 10736214)
 - `——` CC EMPRESÁRIOS DE MANAUS (ISPB 10808037)
 - `——` ACG IP S.A. (ISPB 10868663)
-- `——` CCLA DA PARAÍBA - SICOOB PARAÍBA (ISPB 11907520)
-- `——` COOP CRESOL CONEXÃO (ISPB 11969853)
 - `——` ROADCARD IP S.A. (ISPB 12815827)
 - `——` RENDIMENTOPAY IP S.A (ISPB 13776742)
 - `——` CAPPTA IP S.A. (ISPB 13966572)
 - `——` CCLA MARGEM ESQUERDA DO URUCUI (ISPB 14046512)
-- `——` COOPCENTRAL DE ECON. E CRÉDITO SICOOB UNIMAIS RIO LTDA. (ISPB 14568725)
 - `——` TERPAN IP LTDA (ISPB 14615234)
 - `——` ADYEN DO BRASIL IP LTDA. (ISPB 14796606)
 - `——` TARGET BANK (ISPB 14821124)
-- `——` CC MERCADO IMOBILIÁRIO - SICOOB IMOB.VC (ISPB 14913919)
-- `——` CECM APOS PENS E IDOSOS - SICOOB COOPERNAPI (ISPB 16564240)
 - `——` CECM SERV MUN ITABIRA (ISPB 16651002)
 - `——` CECMF SECRETARIA DA FAZENDA MG E LIVRE ADMISSÃO (ISPB 16721078)
 - `——` COOP V. ALTO VALE (ISPB 16779741)
 - `——` APTARE IP (ISPB 16876258)
 - `——` MAGEN IP (ISPB 17028875)
-- `——` COOP CRESOL RAIZ (ISPB 17343510)
 - `——` CC REG. COLAR METROPOLITANO VALE DO AÇO LTDA (ISPB 17361536)
 - `——` CECM EMPR CEMIG IND METAL E SERV PUB MUN (ISPB 17502881)
 - `——` PINPAG IP S.A. (ISPB 17768068)
@@ -809,14 +953,11 @@
 - `——` CC CREDCOOPER LTDA (ISPB 19449602)
 - `——` CC EMP DA CIA INDUSTRIAL CATAGUASES E BAUMINAS (ISPB 19495266)
 - `——` CCLA VALE DO AÇO (ISPB 19869338)
-- `——` CCLA SICOOB COPESITA (ISPB 19875244)
-- `——` COOP SICREDI COOABCRED RS (ISPB 19962468)
 - `——` CECM COL GRUPO EMPR A COSTA (ISPB 20062766)
 - `——` PAGHIPER IP LTDA. (ISPB 20110153)
 - `——` BS2 PAYMENTS IP S.A. (ISPB 20520298)
 - `——` CC CREDICAMPO LTDA (ISPB 21661202)
 - `——` CC CREDIBOM (ISPB 21670187)
-- `——` CCLA SERV POD LEG MG - SICOOB COFAL (ISPB 21797311)
 - `——` CC CREDINOR (ISPB 21866694)
 - `——` EASY PAGO (ISPB 22181404)
 - `——` CC CREDISUDESTE LTDA (ISPB 22656789)
@@ -824,12 +965,8 @@
 - `——` CC REGIÃO CENTRAL MG (ISPB 22749014)
 - `——` CC CREDISETE LTDA (ISPB 22753982)
 - `——` CC NOSSOCREDITO (ISPB 22760839)
-- `——` CCLA NORTE DE MATO GROSSO - SICOOB NORTE MT (ISPB 23623636)
 - `——` CC CREDICARPA (ISPB 23949522)
 - `——` CC CREDINTER (ISPB 24048910)
-- `——` COOP CRESOL TRANSAMAZÔNICA (ISPB 24431221)
-- `——` CC SICOOB IPÊ (ISPB 24610065)
-- `——` COOP SICREDI UNIÃO MS/TO E OESTE DA BA (ISPB 24654881)
 - `——` BRX (ISPB 24722685)
 - `——` CCLA SUDOESTE GOIANO (ISPB 24795049)
 - `——` CCLA VALE DO PARANAÍBA (ISPB 24799033)
@@ -837,12 +974,9 @@
 - `——` DLOCAL BRASIL IP S.A. (ISPB 25021356)
 - `——` BELLUNO IP LTDA. (ISPB 25238191)
 - `——` CC CREDIALP (ISPB 25353939)
-- `——` CCLA SICOOB COOPJUS (ISPB 25363615)
-- `——` CC CREDIVALE LTDA. - SICOOB CREDIVALE (ISPB 25387655)
 - `——` CCLA DA REGIÃO DE  PARÁ DE MINAS (ISPB 25387713)
 - `——` CC CREDICAF LTDA (ISPB 25395435)
 - `——` CC CREDIVAG (ISPB 25404542)
-- `——` CC CREDINACIONAL LTDA - SICOOB CREDINACIONAL (ISPB 25420696)
 - `——` C.C CREDIVERDE (ISPB 25528753)
 - `——` CC CREDPLUS (ISPB 25536764)
 - `——` CPC VALE DO RIO DOCE (ISPB 25606237)
@@ -853,12 +987,6 @@
 - `——` CC GUARANICREDI (ISPB 26014175)
 - `——` CC UNIÃO CENTRO OESTE LTDA (ISPB 26178111)
 - `——` CCLA PONTAL DO TRIANGULO (ISPB 26178533)
-- `——` COOP SICREDI SUL DO MARANHÃO (ISPB 26191078)
-- `——` COOP SICREDI CENTRO-SUL MS/BA (ISPB 26408161)
-- `——` CCLA SUL MARANHENSE - SICOOB SUL MARANHENSE (ISPB 26526166)
-- `——` COOP SICREDI OURO VERDE MT/PA (ISPB 26529420)
-- `——` COOP SICREDI INTEGRAÇÃO MT/AP/PA (ISPB 26549311)
-- `——` COOP SICREDI CELEIRO DO MT (ISPB 26555235)
 - `——` CREDISIS PRIMACREDI CC (ISPB 26563270)
 - `——` CCLA DO TOCANTINS (ISPB 26960328)
 - `——` ATLAS BRASIL IP LTDA. (ISPB 27126513)
@@ -871,26 +999,14 @@
 - `——` CECME CHOCOLATES GAROTO LTDA (ISPB 30949267)
 - `——` MOUNT PAY (ISPB 31166683)
 - `——` CONPAY IP S.A. (ISPB 31531997)
-- `——` SICOOB COOPERMAIS (ISPB 31804966)
 - `——` ADOPAY INSTITUICAO DE PAGAMENT (ISPB 31841474)
 - `——` DOTZPAY IP (ISPB 32024691)
 - `——` AIBR IP LTDA. (ISPB 32246162)
 - `——` MÊNTORE IP S.A. (ISPB 32343119)
-- `——` C6 CTVM LTDA. (ISPB 32345784)
 - `——` CCR DE GUACUI (ISPB 32422628)
-- `——` CCC DO ESP.SANTO - SICOOB ES (ISPB 32428294)
-- `——` SICOOB CONEXÃO (ISPB 32430233)
-- `——` SICOOB SUL (ISPB 32467086)
-- `——` SICOOB SUL-LITORÂNEO (ISPB 32474884)
-- `——` CC SICOOB COOPEC LTDA. (ISPB 32615247)
 - `——` EXPAG SOLUÇÕES EM PAGAMENTOS (ISPB 32906701)
-- `——` COOP SICREDI VL DO CERRADO (ISPB 32983165)
-- `——` COOP SICREDI SUDOESTE MT/PA (ISPB 32995755)
-- `——` COOP SICREDI ARAXINGU (ISPB 33021064)
-- `——` COOP SICREDI BIOMAS (ISPB 33022690)
 - `——` CARTWAVE IP (ISPB 33207641)
 - `——` FURNAS (ISPB 33370115)
-- `——` COOPCENTRAL SICOOB NOVA CENTRAL LTDA. (ISPB 33416108)
 - `——` VILLELA IP S.A. (ISPB 33423888)
 - `——` EMPRESA DE BENEFÍCIOS IP LTDA. (ISPB 33449007)
 - `——` CCLA CENTRO-SUL GOIANO (ISPB 33579731)
@@ -898,28 +1014,20 @@
 - `——` GOWD IP LTDA. (ISPB 33630661)
 - `——` EQUIS IP LTDA. (ISPB 33641877)
 - `——` B91 (ISPB 33735811)
-- `——` SICOOB COOPVALE (ISPB 33924028)
 - `——` SIMPAY PAGAMENTOS LTDA (ISPB 33982918)
 - `——` ASTROPAY (ISPB 34006497)
-- `——` CC SICOOB CENTRAL BA (ISPB 34148882)
 - `——` KREDIT IP S/A (ISPB 34678263)
 - `——` BITSO IP LTDA (ISPB 35136120)
 - `——` A27 IP S/A (ISPB 35534511)
 - `——` SAQ IP LTDA. (ISPB 35535240)
 - `——` UNLIMIT IP LTDA. (ISPB 35542555)
-- `——` COOP SICREDI EVOLUÇÃO (ISPB 35571249)
 - `——` ENOQ PAY (ISPB 35990763)
 - `——` REAG IP (ISPB 36272465)
 - `——` CORPAG IP (ISPB 36741675)
-- `——` UNICRED RAÍZES (ISPB 36900256)
-- `——` SICOOB JUDICIÁRIO (ISPB 37076205)
-- `——` COOP SICOOB CREDIJUSTRA (ISPB 37079720)
 - `——` APROMS NET IP LTDA. (ISPB 37168145)
-- `——` SICOOB CREDIGOIÁS CC (ISPB 37255049)
 - `——` BASS PAGO (ISPB 37293930)
 - `——` STATER PAY INSTITUICAO DE PAGA (ISPB 37319859)
 - `——` CCLA CENTRO BRASILEIRA LTDA. (ISPB 37395399)
-- `——` COOP SICREDI GRANDES RIOS (ISPB 37442605)
 - `——` INOVANTI IP S.A. (ISPB 37511258)
 - `——` COOP SICOOB UNI SUL MS (ISPB 37554441)
 - `——` CCLA DE PALMEIRAS E REGIÃO (ISPB 37631058)
@@ -935,54 +1043,36 @@
 - `——` JRM2 (ISPB 40735713)
 - `——` PAY BROKERS IP (ISPB 40820176)
 - `——` BIPA IP (ISPB 40910463)
-- `——` COOP SICREDI EXPANSÃO (ISPB 41180092)
-- `——` COOP SICREDI CENTRO PERNAMBUCANA PE (ISPB 41255225)
 - `——` CLARA IP (ISPB 41538335)
 - `——` CCLA PROD RURAIS TRIÂNGULO (ISPB 41669227)
-- `——` CC CREDILIVRE LTDA. - SICOOB CREDILIVRE (ISPB 41697103)
 - `——` CCLA SANTO ANTONIO DO MONTE (ISPB 41707258)
 - `——` CC CARLOS CHAGAS (ISPB 41753500)
 - `——` CECM SERV MUN POÇOS DE CALDAS (ISPB 41791005)
 - `——` CCLA ALTO SÃO FRANCISCO (ISPB 41805003)
-- `——` SICOOB CREDICOOP (ISPB 41931221)
 - `——` CC CREDIFOR LTDA (ISPB 41931445)
 - `——` CC AGROCREDI LTDA (ISPB 42873828)
-- `——` CC SICOOB CREDITIROS (ISPB 42880617)
-- `——` CC CREDISUCESSO LTDA. - SICOOB CREDISUCESSO (ISPB 42887133)
 - `——` CECM MEDICOS E PROFISSIONAIS AREA SAUDE DO BRASIL (ISPB 42898825)
 - `——` CC CREDIPIMENTA (ISPB 42934794)
 - `——` GOOGLE PAY BRASIL IP LTDA. (ISPB 43394419)
 - `——` COOP UNIPRIME CREDICANA (ISPB 44373041)
-- `——` COOP SICOOB PRO (ISPB 44469161)
 - `——` ZIMPLER BRASIL IP LTDA. (ISPB 44704839)
 - `——` PAY2ALL IP LTDA. (ISPB 44815065)
-- `——` COOP SICOOB COOPEREMB (ISPB 46642294)
-- `——` SICOOB CREDICONSUMO CC (ISPB 47074323)
 - `——` PAGOL SCD (ISPB 48176336)
 - `——` CC COOPLIVRE (ISPB 49389307)
-- `——` COOP CRESOL MATO GROSSO (ISPB 50735161)
 - `——` CECM MAGISTRADOS DE SÃO PAULO (ISPB 51489318)
-- `——` COOP CRESOL PRIMATO CREDI (ISPB 53575491)
 - `——` CC COOPCRED (ISPB 53623781)
 - `——` COOP CREDICENTRO (ISPB 53776852)
 - `——` CCI UNINDÚSTRIA (ISPB 53841911)
-- `——` CCLA SICOOB COOCRELIVRE (ISPB 53935029)
 - `——` CC CREDICITRUS (ISPB 54037916)
-- `——` SICOOB CRESSEM - CECM SERV MUN REG METR VALE PARAIBA E LITOR (ISPB 54190525)
 - `——` VBS SCD S.A. (ISPB 54264235)
 - `——` CC COCRE (ISPB 54401286)
 - `——` NDD IP LTDA. (ISPB 57030391)
 - `——` VIVO PAY SCD S.A. (ISPB 57487987)
 - `——` CECME EMPR EMP GR ECON RHODIA (ISPB 57563728)
 - `——` CECM EMPR EMP ZILLO LORENZETTI (ISPB 58022195)
-- `——` CC NOSSO - SICOOB NOSSO (ISPB 59869560)
-- `——` CC SICOOB COOPMIL (ISPB 62673470)
 - `——` CCC ESTADO SP - CECRESP (ISPB 62931522)
 - `——` CCC DO ESTADO DE SÃO PAULO (ISPB 63917579)
 - `——` CC CREDIUNA LTDA (ISPB 64237530)
-- `——` CC CREDINORTE - SICOOB CREDINORTE (ISPB 64276058)
-- `——` CC CREDIMAC LTDA - SICOOB CREDIMAC (ISPB 64480833)
-- `——` SICOOB CRED COPERCANA (ISPB 64739121)
 - `——` CC COOPACREDI (ISPB 65229254)
 - `——` CC UNIÃO DO CENTRO OESTE DE MINAS (ISPB 65239402)
 - `——` REPOM (ISPB 65697260)
@@ -997,130 +1087,40 @@
 - `——` CC CREDIGUAÇU (ISPB 67960229)
 - `——` CC CREDIESMERALDAS LTDA. (ISPB 68512748)
 - `——` CECM EMP USAGRO (ISPB 68969625)
-- `——` COOP SICOOB CREDIMOGIANA (ISPB 69346856)
-- `——` COOP SICREDI RIO GRANDE DO NORTE (ISPB 70038237)
-- `——` SICOOB CENTRAL NE (ISPB 70116611)
-- `——` SICREDI RECIFE (ISPB 70241658)
-- `——` COOP SICREDI UNIVALES MT/RO (ISPB 70431630)
-- `——` CCLA PROF SAÚDE UNICRED ALIANÇA (ISPB 70937271)
 - `——` CCLA CAMPOS GERAIS E CAMPO DO (ISPB 71146450)
 - `——` CC SACRAMENTO (ISPB 71154256)
-- `——` COOP CREDIPINHO LTDA - SICOOB CREDIPINHO (ISPB 71154876)
-- `——` UNICRED AMPLA (ISPB 71163315)
-- `——` CCR IRAI - SICOOB CREDIMIL (ISPB 71207740)
 - `——` CCLA ARCOS (ISPB 71230338)
-- `——` CC CREDIBELO LTDA. - SICOOB CREDIBELO (ISPB 71237184)
 - `——` CC CENTRO SUL MINEIRO (ISPB 71238232)
 - `——` COOPERATIVA DE CRÉDITO CREDIJEQUITINHONHA LTDA. (ISPB 71243034)
-- `——` CCLA OESTE MINEIRO LTDA-SICOOB (ISPB 71297899)
-- `——` SICOOB COCRED CC (ISPB 71328769)
-- `——` SICOOB CREDIMED - CCLA DE UBERABA LTDA (ISPB 71336432)
 - `——` CC MONTECREDI LTDA. (ISPB 71392047)
-- `——` UNICRED SUL DE MINAS (ISPB 71418784)
 - `——` CCLA DA REGIÃO DE FRUTAL (ISPB 71419600)
 - `——` CCPS E LA DO TRIANG MINEIRO E SUL DE MG LTDA (ISPB 71432926)
 - `——` CCLA PEDRO LEOPOLDO (ISPB 71441406)
-- `——` CC SICOOB ITAPAGIPE (ISPB 71506513)
-- `——` COOP SICOOB MANTIQUEIRA (ISPB 71698674)
-- `——` UNICRED DO ESTADO DE SÃO PAULO (ISPB 71884498)
-- `——` COOP SICREDI RIO RJ (ISPB 72128440)
-- `——` COOP SICREDI VEREDAS (ISPB 72257793)
 - `——` CCM SERV MIN EDUC SÃO PAULO (ISPB 73092827)
-- `——` COOP SICREDI MORADA DO SOL SP (ISPB 73113243)
-- `——` COOP LIVRE ADMISSÃO DE ASSOCIADOS SICOOB CRUZ ALTA LTDA (ISPB 73326449)
-- `——` SOC CC SICOOB COOPERE (ISPB 73398646)
 - `——` CCLA RUBIATABA REGIAO (ISPB 73422792)
-- `——` COOP UNICRED VALE LTDA. (ISPB 73443863)
 - `——` COOP UNIQUE BR LTDA. (ISPB 73647935)
-- `——` CECM UNICRED INTEGRAÇÃO (ISPB 73750424)
-- `——` CC UNICRED VALOR CAPITAL LTDA - UNICRED VALOR CAPITAL (ISPB 74064502)
-- `——` CC UNICRED UNIÃO LTDA - UNICRED UNIÃO (ISPB 74114042)
 - `——` CCM SERV MUN S JOAO BOA VISTA (ISPB 74248949)
-- `——` COOP SICREDI PROGRESSO PR/SP (ISPB 76059997)
-- `——` COOP SICREDI PLANALT DAS ÁGUAS (ISPB 77984870)
-- `——` COOP SICREDI VANGUARDA PR/SP/RJ (ISPB 78414067)
 - `——` CCLA ITAPIRANGA (ISPB 78483310)
 - `——` CCLAA OESTE CATARINENSE (ISPB 78825023)
-- `——` CCLAA SICOOB MAXICRÉDITO (ISPB 78825270)
 - `——` CCLA DO VALE DO CANOINHAS (ISPB 78834975)
-- `——` COOP SICOOB CREDIAUC (ISPB 78840071)
-- `——` CCLAA AURIVERDE-SICOOB CREDIAL (ISPB 78858107)
 - `——` COOP NOVOS CAMPOS (ISPB 78862083)
 - `——` CCLA VALE DO RIO DO PEIXE (ISPB 78865995)
-- `——` COOP SICREDI CENT SUL PR/SC/RJ (ISPB 78907607)
-- `——` COOP SICREDI ALIANÇA (ISPB 79052122)
-- `——` COOP SICREDI NORTE SUL (ISPB 79063574)
-- `——` COOP SICREDI PARANAPANEMA SERRANA PR/SP/RJ (ISPB 79086997)
-- `——` COOP SICREDI DEXIS (ISPB 79342069)
-- `——` COOP SICREDI AGROEMPRESARIAL (ISPB 79457883)
-- `——` CCC SICOOB CENTRAL SC/RS (ISPB 80160260)
 - `——` CC ALTO VALE DO ITAJAÍ (ISPB 80959612)
 - `——` CCLA MEIO OESTE CATARINENSE (ISPB 80959638)
 - `——` CC DO NORTE CATARINENSE E SUL PARANAENSE (ISPB 81011686)
-- `——` CCLAA ITAIPU SICOOB CREDITAIPU (ISPB 81014060)
 - `——` CCLA VALE DO VINHO (ISPB 81016131)
-- `——` COOP SICREDI INTEGRAÇÃO PR/SC (ISPB 81054686)
-- `——` COOP SICREDI VALE DO PIQUIRI (ISPB 81099491)
-- `——` COOP SICREDI GRANDES LAGOS (ISPB 81115149)
-- `——` COOP SICREDI NOSSA TERRA PR/SP (ISPB 81192106)
-- `——` COOP SICREDI RIO PARANÁ (ISPB 81206039)
-- `——` CC ORIGINAL - SICOOB ORIGINAL (ISPB 81292278)
 - `——` CCLA SUL CATARINENSE (ISPB 81367880)
-- `——` COOP SICREDI CAMPOS GERAIS E GRANDE CURITIBA PR/SP (ISPB 81466286)
 - `——` CCLAA SAO MIGUEL DO OESTE (ISPB 81607046)
-- `——` COOP SICREDI VLR SUSTENT PR/SP (ISPB 81706616)
-- `——` COOP SICREDI SOMA (ISPB 82065285)
-- `——` CC DO VALE EUROPEU - SICOOB EURO VALE (ISPB 82133182)
-- `——` COOP SICREDI FRONTEIR PR/SC/SP (ISPB 82527557)
 - `——` COOP VIACREDI (ISPB 82639451)
 - `——` INFOPAGO (ISPB 82842386)
-- `——` CCLA DO ESTADO DO PARÁ - SICOOB COOESA (ISPB 83836114)
 - `——` CC INTEGRANTES MIN PUBL E PODER JUDIC AP E CE E CCLA PA (ISPB 84156470)
-- `——` COOP SICREDI IGUAÇU PR/SC E REGIÃO METROP. DE CAMPINAS/SP (ISPB 84974278)
 - `——` CC LITORÂNEA (ISPB 85291086)
-- `——` COOP SICOOB UNI SUDESTE (ISPB 86389236)
 - `——` CC NOROESTE DE MINAS (ISPB 86564051)
-- `——` SICOOB CREDILEITE (ISPB 86585049)
-- `——` SICOOB VALE DOS PINHAIS (ISPB 86791837)
 - `——` CCLA DO VALE (ISPB 86829827)
-- `——` COOP SICREDI CENTRO SERRA (ISPB 87067757)
-- `——` COOP SICREDI ROTA DAS TERRAS (ISPB 87510475)
-- `——` COOP SICREDI ESSÊNCIA (ISPB 87733077)
 - `——` COOP. CRED. POUP. INVEST. CONEXÃO (ISPB 87733770)
-- `——` COOPERATIVA DE CRÉDITO COOPERAÇÃO - SICREDI COOPERAÇÃO (ISPB 87779625)
-- `——` COOP SICREDI UNIESTADOS (ISPB 87780268)
-- `——` COOP SICREDI VL JAGUA ZN MATA (ISPB 87780284)
-- `——` SICREDI INTEGRAÇÃO DE ESTADOS RS/SC/MG (ISPB 87781530)
-- `——` COOP SICREDI SUL MINAS RS/MG (ISPB 87784088)
-- `——` COOP SICREDI ALIANÇA (ISPB 87795639)
-- `——` COOP SICREDI OURO BRANCO RS/MG (ISPB 87853206)
-- `——` COOP SICREDI SEMENTES DO SUL (ISPB 87900411)
-- `——` COOP SICREDI BOTUCARAÍ RS/MG (ISPB 87900601)
-- `——` COOP SICREDI PLANALTO RS/MG (ISPB 88038260)
-- `——` COOP SICREDI RAIZES RS/SC/MG (ISPB 88099247)
-- `——` COOP SICREDI GERAÇÕES RS/MG (ISPB 88471024)
-- `——` COOP DE CRED E INVEST LIBERDADE - SICREDI LIBERDADE (ISPB 88530142)
-- `——` COOP SICREDI UNIÃO RS (ISPB 88894548)
-- `——` COOP SICREDI CONFIANÇA (ISPB 89049738)
-- `——` COOP SICREDI REGIÃO DOS VALES (ISPB 89126130)
 - `——` CECM DOS EMPR DAS EMP RANDON (ISPB 89280960)
-- `——` COOP SICREDI REG PROD RS/SC/MG (ISPB 89468565)
-- `——` COOP SICREDI IBIRAIARAS RS/MG (ISPB 89990501)
-- `——` COOP SICREDI INTERESTADOS (ISPB 90497256)
-- `——` COOP SICREDI SERRANA RS (ISPB 90608712)
-- `——` COOP SICREDI CULTURAS RS/MG (ISPB 90729369)
-- `——` COOP SICREDI INTEGRAÇÃO RS/MG (ISPB 91159764)
-- `——` COOP SICREDI PIONEIRA RS (ISPB 91586982)
-- `——` COOP SICREDI ALT SERRA RS/SC (ISPB 92555150)
-- `——` COOP SICREDI ORIGENS RS (ISPB 92796564)
 - `——` BANRISUL PAGAMENTOS IP (ISPB 92934215)
-- `——` UNICRED PIONEIRA (ISPB 94243839)
 - `——` CECM MÉD DE PORTO ALEGRE (ISPB 94433109)
-- `——` UNICRED ELEVA (ISPB 95163002)
-- `——` COOP SICREDI CAMINHO DAS ÁGUAS RS (ISPB 95213211)
-- `——` COOP SICREDI VALE DO RIO PARDO (ISPB 95424891)
-- `——` COOP SICREDI REG CENTRO RS/MG (ISPB 95594941)
 - `——` CREDISIS CREDIPLAN - COOP DE CRÉD DE LIVRE ADMISSÃO DO PLANA (ISPB 97259253)
-- `——` COOP SICREDI INTEGRAÇÃO BAHIA - BA (ISPB 97489280)
 
 </details>

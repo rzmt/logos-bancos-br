@@ -41,6 +41,7 @@ function config(overrides: Partial<PipelineConfig> = {}): PipelineConfig {
     denylistUris: [],
     forcedUris: {},
     forcedMatches: {},
+    brandMatches: {},
     ignoreIspb: [],
     ...overrides,
   };
@@ -344,5 +345,92 @@ describe('buildMatches', () => {
       overrides: new Map(),
     });
     expect(entries[0]?.uri).toBe('https://logos.example/itau.svg');
+  });
+});
+
+describe('brandMatches (regra curada de sistemas cooperativos)', () => {
+  const sicoobConfed = organisation({
+    OrganisationId: 'org-sicoob',
+    OrganisationName: 'Confederacao Nacional das Cooperativas do Sicoob',
+    RegistrationNumber: '04891850000188',
+    AuthorisationServers: [
+      {
+        AuthorisationServerId: 'as-sicoob',
+        CustomerFriendlyName: 'Sicoob',
+        CustomerFriendlyLogoUri: 'https://logos.example/sicoob.svg',
+      },
+    ],
+  });
+  const brandConfig = config({ brandMatches: { SICOOB: '04891850000188' } });
+
+  it('assigns the system logo to affiliates carrying the brand as a whole word', () => {
+    const { entries, suggestions } = buildMatches({
+      participants: [
+        participant({
+          ispb: '25387655',
+          compe: null,
+          compe4: null,
+          shortName: 'CC CREDIVALE LTDA. - SICOOB CREDIVALE',
+          fullName: 'CC CREDIVALE LTDA. - SICOOB CREDIVALE',
+        }),
+      ],
+      directory: [sicoobConfed],
+      config: brandConfig,
+      overrides: new Map(),
+    });
+    expect(entries[0]?.source).toBe('brand-match');
+    expect(entries[0]?.orgCnpj).toBe('04891850000188');
+    expect(suggestions).toHaveLength(0);
+  });
+
+  it('does not fire on partial words and loses to ISPB/forced matches', () => {
+    const notBrand = buildMatches({
+      participants: [
+        participant({ ispb: '11111111', shortName: 'SICOOBANK X', fullName: 'SICOOBANK X' }),
+      ],
+      directory: [sicoobConfed],
+      config: brandConfig,
+      overrides: new Map(),
+    });
+    expect(notBrand.entries[0]?.source).toBeNull();
+
+    // Banco Sicoob (o banco do sistema) tem ISPB próprio no diretório: ISPB vence a marca.
+    const bancoSicoob = organisation({
+      OrganisationId: 'org-bco-sicoob',
+      OrganisationName: 'BANCO SICOOB S.A.',
+      RegistrationNumber: '02038232000164',
+      AuthorisationServers: [
+        {
+          AuthorisationServerId: 'as-bco',
+          CustomerFriendlyName: 'Banco Sicoob',
+          CustomerFriendlyLogoUri: 'https://logos.example/banco-sicoob.svg',
+        },
+      ],
+    });
+    const ispbWins = buildMatches({
+      participants: [
+        participant({
+          ispb: '02038232',
+          shortName: 'BANCO SICOOB S.A.',
+          fullName: 'Banco Sicoob S.A.',
+        }),
+      ],
+      directory: [sicoobConfed, bancoSicoob],
+      config: brandConfig,
+      overrides: new Map(),
+    });
+    expect(ispbWins.entries[0]?.source).toBe('ispb');
+  });
+
+  it('ignores brands whose organisation is not in the directory', () => {
+    const { entries } = buildMatches({
+      participants: [
+        participant({ ispb: '22222222', shortName: 'SICOOB TESTE', fullName: 'SICOOB TESTE' }),
+      ],
+      directory: [organisation()],
+      config: config({ brandMatches: { SICOOB: '04891850000188' } }),
+      overrides: new Map(),
+    });
+    expect(entries[0]?.source).toBeNull();
   });
 });

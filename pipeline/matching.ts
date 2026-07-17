@@ -7,7 +7,7 @@
  * overrides, and name similarity demoted to report-only suggestions.
  */
 
-import { jaccard, tokenize } from './text';
+import { jaccard, stripAccents, tokenize } from './text';
 import type {
   BackboneParticipant,
   DirectoryIndex,
@@ -174,6 +174,26 @@ export function buildMatches({
   const forcedMatches = config.forcedMatches ?? {};
   const threshold = config.nameSuggestionThreshold ?? 0.5;
 
+  // Pre-resolve brand rules to their directory organisations; a brand whose
+  // organisation left the directory simply stops matching (no stale logos).
+  const brandRules: Array<{ pattern: RegExp; org: DirectoryOrganisation }> = [];
+  for (const [token, cnpjRaw] of Object.entries(config.brandMatches ?? {})) {
+    const cnpj = String(cnpjRaw).replace(/\D/g, '').padStart(14, '0');
+    const org = index.byCnpj.get(cnpj);
+    if (!org) continue;
+    const escaped = stripAccents(token)
+      .toUpperCase()
+      .replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    brandRules.push({ pattern: new RegExp(`(?:^|[^A-Z0-9])${escaped}(?:[^A-Z0-9]|$)`), org });
+  }
+  const brandFor = (participant: BackboneParticipant): DirectoryOrganisation | null => {
+    const name = stripAccents(`${participant.shortName} ${participant.fullName}`).toUpperCase();
+    for (const rule of brandRules) {
+      if (rule.pattern.test(name)) return rule.org;
+    }
+    return null;
+  };
+
   const entries: MatchEntry[] = [];
   const suggestions: NameSuggestion[] = [];
   const seen = new Set<string>();
@@ -231,6 +251,21 @@ export function buildMatches({
         uri: server.uri,
         orgName: org.name,
         orgCnpj: org.cnpj,
+      });
+      continue;
+    }
+
+    // Curated brand rule: affiliates of single-brand cooperative systems
+    // (e.g. "SICOOB <nome>") carry the system's logo.
+    const brandOrg = brandFor(participant);
+    if (brandOrg) {
+      const server = pickServer(brandOrg, participant);
+      entries.push({
+        ...base,
+        source: 'brand-match',
+        uri: server.uri,
+        orgName: brandOrg.name,
+        orgCnpj: brandOrg.cnpj,
       });
       continue;
     }

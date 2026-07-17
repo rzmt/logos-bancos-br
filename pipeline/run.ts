@@ -55,6 +55,7 @@ const DEFAULT_CONFIG: PipelineConfig = {
   denylistUris: [],
   forcedUris: {},
   forcedMatches: {},
+  brandMatches: {},
   ignoreIspb: [],
 };
 
@@ -337,6 +338,7 @@ async function main(): Promise<void> {
     `| Sem código COMPE (só-Pix) | ${entries.filter((e) => e.compe4 === null).length} |`,
     `| Com logo | ${withLogo} |`,
     `| Match automático por ISPB | ${bySource.ispb ?? 0} |`,
+    `| Marca de sistema cooperativo (regra curada) | ${bySource['brand-match'] ?? 0} |`,
     `| Matches forçados (revisados) | ${(bySource['forced-match'] ?? 0) + (bySource['forced-uri'] ?? 0)} |`,
     `| Overrides manuais | ${bySource.override ?? 0} |`,
     `| Novos · atualizados · inalterados | ${stats.created.length} · ${stats.updated.length} · ${stats.unchanged.length} |`,
@@ -397,7 +399,7 @@ async function main(): Promise<void> {
   console.log(`Instituições (espinha):      ${entries.length}`);
   console.log(`Com logo:                    ${withLogo}${dryRun ? ' (estimado)' : ''}`);
   console.log(
-    `  ↳ ISPB ${bySource.ispb ?? 0} · forçados ${(bySource['forced-match'] ?? 0) + (bySource['forced-uri'] ?? 0)} · override ${bySource.override ?? 0}`,
+    `  ↳ ISPB ${bySource.ispb ?? 0} · marca ${bySource['brand-match'] ?? 0} · forçados ${(bySource['forced-match'] ?? 0) + (bySource['forced-uri'] ?? 0)} · override ${bySource.override ?? 0}`,
   );
   console.log(
     `  ↳ novos ${stats.created.length} · atualizados ${stats.updated.length} · inalterados ${stats.unchanged.length}`,
