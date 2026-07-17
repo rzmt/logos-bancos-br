@@ -1,7 +1,7 @@
 {
   "name": "logos-bancos-br",
   "version": "0.2.0",
-  "description": "Lista de bancos brasileiros + logos oficiais, atualizados automaticamente toda semana a partir de fontes 100% oficiais (Banco Central/STR + Open Finance Brasil), com proveniência por logo. Brazilian bank list and official logos, auto-updated weekly from official sources only.",
+  "description": "Dataset + logos de instituições financeiras e de pagamento do Brasil (bancos, fintechs, IPs, cooperativas), gerados de fontes 100% oficiais: listas de participantes do STR e do Pix do Banco Central do Brasil (BCB) e o diretório de participantes do Open Finance Brasil. Atualização automática semanal e proveniência por logo. Brazilian financial institutions dataset & official logos from BCB (STR/Pix participants) + Open Finance Brasil, auto-updated weekly.",
   "keywords": [
     "bancos",
     "lista-de-bancos",
@@ -17,7 +17,12 @@
     "open-finance",
     "banco-central",
     "fintech",
-    "dataset"
+    "dataset",
+    "instituicoes-de-pagamento",
+    "cooperativas",
+    "participantes-pix",
+    "str",
+    "bcb"
   ],
   "license": "MIT",
   "author": "Rafael Matos (https://github.com/rzmt)",

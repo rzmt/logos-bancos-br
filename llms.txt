@@ -1,21 +1,26 @@
 # logos-bancos-br
 
-> Brazilian bank institution list + official bank logos, rebuilt automatically every week from
-> official sources only: the Central Bank of Brazil (BCB) STR participants list and the Open
-> Finance Brasil participants directory. npm package: `logos-bancos-br`. Code and dataset are
-> MIT; the logos are trademarks of their respective institutions, redistributed for nominative
-> use (see DISCLAIMER.md).
+> Dataset + official logos of Brazil's financial and payment institutions (banks, fintechs,
+> payment institutions, credit unions), rebuilt automatically every week from official sources
+> only: the Central Bank of Brazil (BCB) STR participants list, the BCB active Pix participants
+> list, and the Open Finance Brasil participants directory. npm package: `logos-bancos-br`.
+> Code and dataset are MIT; the logos are trademarks of their respective institutions,
+> redistributed for nominative use (see DISCLAIMER.md).
 
 Key facts:
 
-- The **institution list is auto-updated**: every institution with a COMPE code in the BCB STR
-  participants list (currently ~470) ships in `data/bancos.json` with `ispb` (8 digits),
-  `compe`, `compe4` (zero-padded), official `name`, `shortName`, and `logo` (or `logo: null`).
-- The **logos are auto-updated** too: currently ~152 institutions, as normalized transparent
+- The **institution list is auto-updated**: the union (keyed by ISPB) of the BCB STR
+  participants list and the BCB active Pix participants list — currently ~1,113 institutions —
+  ships in `data/bancos.json` with `ispb` (8 digits), `compe`/`compe4` (or null for Pix-only
+  institutions), official `name`, `shortName`, `pix` (participation attributes verbatim from
+  the BCB list, or null) and `logo` (or `logo: null`).
+- The **logos are auto-updated** too: currently ~473 institutions, as normalized transparent
   256×256 PNGs (`logos/png/<ISPB>.png`) plus sanitized original SVGs (`logos/svg/<ISPB>.svg`)
   when available. Assets are keyed by **ISPB**, not COMPE. Each logo's `source.type` states the
   origin: `openfinance` (Open Finance directory), `direct-uri` (the institution's own official
   website, hand-reviewed) or `override`. Filter by origin via `bank.logo.source.type`.
+  Affiliates of single-brand cooperative systems (Sicoob, Sicredi, Cresol, Unicred) carry the
+  system's logo via a curated whole-word brand rule.
 - **Update cadence**: a GitHub Action (`.github/workflows/update-logos.yml`) runs every Monday
   (and on demand), rebuilds the list and the logos from the official sources, and opens a pull
   request with a report and the visual diff. Nothing is hand-curated.

@@ -1,8 +1,11 @@
 # logos-bancos-br
 
-> **Lista de bancos brasileiros + logos oficiais, sempre atualizados.** Tudo derivado de fontes
-> 100% oficiais (Banco Central e Open Finance Brasil) e **reconstruído automaticamente toda
-> semana por CI** — com proveniência verificável por logo. **[English version](README.en.md)**
+> **Dataset + logos das instituições financeiras e de pagamento do Brasil** — bancos, fintechs,
+> IPs e cooperativas — **sempre atualizados**. Tudo derivado de três fontes 100% oficiais e
+> nomeadas: a **lista de participantes do STR** e a **lista de participantes ativos do Pix**,
+> ambas do **Banco Central do Brasil**, e o **diretório de participantes do Open Finance
+> Brasil**. Reconstruído automaticamente toda semana por CI, com proveniência verificável por
+> logo. **[English version](README.en.md)**
 
 [![CI](https://github.com/rzmt/logos-bancos-br/actions/workflows/ci.yml/badge.svg)](https://github.com/rzmt/logos-bancos-br/actions/workflows/ci.yml)
 [![atualização](https://github.com/rzmt/logos-bancos-br/actions/workflows/update-logos.yml/badge.svg)](https://github.com/rzmt/logos-bancos-br/actions/workflows/update-logos.yml)
@@ -27,15 +30,18 @@
 
 ## O que este pacote entrega
 
-1. **A lista de instituições — atualizada automaticamente.** Todas as instituições com código
-   COMPE da lista de participantes do STR do **Banco Central** (hoje 470), com nome oficial,
-   nome reduzido, código COMPE e ISPB, em [`data/bancos.json`](data/bancos.json). Você nunca
-   mais mantém uma lista de bancos à mão.
-2. **Logos oficiais.** Hoje 152, em PNG 256×256 (+ SVG quando disponível), de duas origens —
+1. **A lista de instituições — atualizada automaticamente.** A união, por ISPB, de duas listas
+   do **Banco Central**: participantes do STR (todas as instituições com código COMPE, hoje 470)
+   e **participantes ativos do Pix** (hoje ~880, das quais ~640 não têm COMPE — fintechs, IPs e
+   cooperativas). São **1.113 instituições** em [`data/bancos.json`](data/bancos.json), com nome
+   oficial, nome reduzido, COMPE (quando existe), ISPB e os atributos de participação no Pix.
+   Você nunca mais mantém uma lista de bancos à mão.
+2. **Logos oficiais.** Hoje **473**, em PNG 256×256 (+ SVG quando disponível), de duas origens —
    ambas oficiais e identificadas no dataset (`logo.source.type`): o diretório público do
    **Open Finance Brasil** (`openfinance`), onde cada instituição publica a própria marca, e o
    **site oficial da própria instituição** (`direct-uri`), com curadoria visual antes de entrar.
-   Cada arquivo carrega proveniência: URI de origem, SHA-256 e data.
+   Afiliadas de sistemas cooperativos de marca única (Sicoob, Sicredi, Cresol, Unicred) recebem
+   o logo do sistema por regra curada. Cada arquivo carrega proveniência: URI, SHA-256 e data.
 3. **Atualização automática, sem curadoria manual.** Toda segunda-feira um GitHub Action
    ([`update-logos.yml`](.github/workflows/update-logos.yml)) reconstrói **a lista E os logos**
    a partir das fontes e abre um PR com o diff visual. Banco criado, renomeado ou extinto pelo
@@ -50,11 +56,11 @@ Porque ela envelhece: o BCB inclui, renomeia e exclui instituições ao longo do
 redesenham suas marcas. As bibliotecas existentes ou trazem **só dados** (sem logos), ou logos
 **coletados manualmente** de sites variados, sem rastreabilidade. A abordagem aqui:
 
-- **Fontes oficiais, e apenas elas** — o CSV de participantes do STR (que o próprio BCB atualiza
-  diariamente), o diretório de participantes do Open Finance Brasil e, para quem não participa do
-  Open Finance, o ícone que a própria instituição publica **no site oficial dela** (revisado à
-  mão). Nenhuma imagem "achada no Google" ou de agregador. Quem quiser só a fonte Open Finance
-  filtra: `banks().filter(b => b.logo?.source.type === 'openfinance')`.
+- **Fontes oficiais, e apenas elas** — os CSVs de participantes do STR e do Pix (que o próprio
+  BCB atualiza diariamente), o diretório de participantes do Open Finance Brasil e, para quem não
+  participa do Open Finance, o ícone que a própria instituição publica **no site oficial dela**
+  (revisado à mão). Nenhuma imagem "achada no Google" ou de agregador. Quem quiser só a fonte
+  Open Finance filtra: `banks().filter(b => b.logo?.source.type === 'openfinance')`.
 - **Proveniência por logo** — `data/bancos.json` registra a URI de origem, o SHA-256 do arquivo
   original e a data de cada logo. O diff do git é a auditoria.
 - **Correspondência segura** — match automático **somente por ISPB** (= raiz do CNPJ).
@@ -63,10 +69,10 @@ redesenham suas marcas. As bibliotecas existentes ou trazem **só dados** (sem l
 - **Assets seguros** — download só via https com teto de tamanho e de pixels; SVGs
   redistribuídos apenas após sanitização (sem `script`, event handlers, `foreignObject` ou
   referências externas).
-- **Trade-off honesto** — 152 das 470 instituições têm logo (todas as participantes do Open
-  Finance + ~45 bancos e IPs cobertos pelos sites oficiais, o que inclui a esmagadora maioria
-  das contas do país). As demais são SCDs/cooperativas/corretoras pequenas; para elas seu app
-  usa o fallback que preferir — e a cobertura cresce a cada release.
+- **Trade-off honesto** — 473 das 1.113 instituições têm logo (participantes do Open Finance,
+  afiliadas dos sistemas cooperativos e ~45 instituições cobertas pelos sites oficiais — a
+  esmagadora maioria das contas do país). As demais são SCDs/corretoras/IPs pequenas; para elas
+  seu app usa o fallback que preferir — e a cobertura cresce a cada release.
 
 ## Instalação e uso
 
@@ -78,8 +84,8 @@ Requer **Node ≥ 20** para uso via Node/CLI (em web e React Native vale o ambie
 bundler). Zero dependências de runtime. Publicado com **npm provenance** — verifique a
 integridade com `npm audit signatures`.
 
-Os arquivos são nomeados pelo **ISPB** (8 dígitos, estável e universal — inclusive para
-instituições Pix sem COMPE, no roadmap). As consultas aceitam **COMPE ou ISPB**.
+Os arquivos são nomeados pelo **ISPB** (8 dígitos, estável e universal — é o que permite cobrir
+as ~640 instituições do Pix que não têm código COMPE). As consultas aceitam **COMPE ou ISPB**.
 
 ### JavaScript / TypeScript (Node ou web)
 
@@ -89,8 +95,12 @@ import { banks, byCompe, byIspb, logoCdnUrl } from 'logos-bancos-br';
 byCompe(341);        // { ispb: '60701190', compe4: '0341', name: 'Itaú Unibanco S.A.', logo: {...} }
 byCompe('0260');     // Nubank — '260', 260 e '0260' são equivalentes
 byIspb('00000000');  // Banco do Brasil
+byIspb('11275560');  // RecargaPay — instituição só-Pix (compe: null), endereçável por ISPB
 
 logoCdnUrl(341);     // https://cdn.jsdelivr.net/npm/logos-bancos-br@x.y.z/logos/png/60701190.png
+
+// Atributos de participação no Pix (verbatim da lista do BCB):
+byCompe(341)?.pix;   // { spiParticipationType: 'Direta', pixParticipationType: 'Obrigatória', ... }
 ```
 
 ### React (web)
@@ -109,9 +119,10 @@ import logos from 'logos-bancos-br/react-native'; // mapa require() estático
 <Image source={logos[codigoBanco.padStart(4, '0')]} style={{ width: 40, height: 40 }} />
 ```
 
-> As chaves do mapa aceitam o COMPE com 4 dígitos (`'0341'`) **e** o ISPB (`'60701190'`).
-> Importar esse entry adiciona **todos** os logos (~1,3 MB) ao bundle. Se preferir empacotar só
-> alguns, use o CLI abaixo e faça `require()` dos arquivos copiados.
+> As chaves do mapa aceitam o COMPE com 4 dígitos (`'0341'`) **e** o ISPB (`'60701190'`;
+> instituições só-Pix aparecem apenas pelo ISPB). Importar esse entry adiciona **todos** os
+> logos (~4 MB) ao bundle. Se preferir empacotar só alguns, use o CLI abaixo e faça `require()`
+> dos arquivos copiados.
 
 ### Node (caminho dos arquivos no disco)
 
@@ -126,8 +137,8 @@ logoPngPath('341'); // /…/node_modules/logos-bancos-br/logos/png/60701190.png
 Vendorize os assets no seu projeto — sem dependência de runtime:
 
 ```bash
-npx logos-bancos-br copy --dest ./assets/banks            # 0341.png, 0001.png, ... (por COMPE)
-npx logos-bancos-br copy --dest ./assets/banks --by ispb  # 60701190.png, ...
+npx logos-bancos-br copy --dest ./assets/banks            # 0341.png, ... (por COMPE; só-Pix ficam de fora)
+npx logos-bancos-br copy --dest ./assets/banks --by ispb  # 60701190.png, ... (todas, incl. só-Pix)
 npx logos-bancos-br copy --dest ./assets/banks --format both --only 341,001,260
 npx logos-bancos-br list                                  # tabela COMPE · ISPB · nome · tem logo
 ```
@@ -137,18 +148,19 @@ Rode de novo a cada atualização do pacote para receber lista e logos novos.
 ### CDN — sem instalar nada
 
 ```
-https://cdn.jsdelivr.net/npm/logos-bancos-br@0.1.0/logos/png/60701190.png
-https://cdn.jsdelivr.net/npm/logos-bancos-br@0.1.0/logos/svg/18236120.svg
+https://cdn.jsdelivr.net/npm/logos-bancos-br@0.3.0/logos/png/60701190.png
+https://cdn.jsdelivr.net/npm/logos-bancos-br@0.3.0/logos/svg/18236120.svg
 ```
 
-Fixe sempre uma versão (`@0.1.0`) — a correspondência COMPE→ISPB está em
+Fixe sempre uma versão (`@0.3.0`) — a correspondência COMPE→ISPB está em
 [`data/bancos.json`](data/bancos.json).
 
 ### Só os dados (lista de bancos)
 
 ```ts
 import dados from 'logos-bancos-br/data/bancos.json';
-// todas as instituições: ispb, compe, compe4, nome oficial, nome reduzido, logo (ou null)
+// todas as instituições: ispb, compe/compe4 (ou null p/ só-Pix), nomes oficiais,
+// pix (atributos de participação, ou null) e logo (ou null)
 ```
 
 ### Referência rápida da API
@@ -166,7 +178,7 @@ import dados from 'logos-bancos-br/data/bancos.json';
 | | `copyLogos({ dest, format?, by?, only? })` | copia os assets para um diretório (o que o CLI usa) |
 | `logos-bancos-br/react-native` | `logos` (default export) | mapa `require()` com chaves COMPE4 **e** ISPB |
 
-Tipos TypeScript exportados: `Bank`, `BankLogo`, `BankLogoSource`.
+Tipos TypeScript exportados: `Bank`, `BankLogo`, `BankLogoSource`, `PixInfo`.
 
 ## O dataset
 
@@ -179,6 +191,13 @@ Um registro de `data/bancos.json`:
   "compe4": "0341",
   "name": "Itaú Unibanco S.A.",
   "shortName": "ITAÚ UNIBANCO S.A.",
+  "pix": {
+    "spiParticipationType": "Direta",
+    "pixParticipationType": "Obrigatória",
+    "modality": "Provedor de Conta Transacional",
+    "institutionType": "Banco Múltiplo",
+    "authorizedByBcb": true
+  },
   "logo": {
     "png": "logos/png/60701190.png",
     "svg": "logos/svg/60701190.svg",
@@ -200,22 +219,30 @@ Um registro de `data/bancos.json`:
   `openfinance` (diretório Open Finance, match automático por ISPB ou revisado), `direct-uri`
   (URL no site oficial da instituição, revisada à mão) ou `override` (arte mantida no repo).
 - `logo: null` — instituição sem logo nas fontes oficiais (use seu fallback).
+- `compe`/`compe4: null` — instituição só-Pix (sem código COMPE); endereçe por ISPB.
+- `pix` — atributos verbatim da lista de participantes ativos do Pix do BCB (tipo de
+  participação no SPI e no Pix, modalidade, tipo de instituição, autorizada pelo BCB);
+  `null` quando a instituição não é participante ativa do Pix.
 
 ## Como funciona a atualização automática
 
-1. **Espinha dorsal**: o CSV público de participantes do STR do Banco Central define *quais
-   instituições existem* (ISPB + COMPE + nomes oficiais). O BCB atualiza esse arquivo
-   diariamente.
+1. **Espinha dorsal**: a união, por ISPB, de dois CSVs públicos do Banco Central — a lista de
+   participantes do STR (`ParticipantesSTR.csv`: ISPB + COMPE + nomes oficiais) e a **lista de
+   participantes ativos do Pix** (arquivo diário datado, que acrescenta as instituições sem
+   COMPE e os atributos de participação). Ambos atualizados diariamente pelo BCB.
 2. **Logos**: o diretório público de participantes do Open Finance Brasil traz, por CNPJ, o logo
    que cada instituição publica para ser exibido por terceiros.
 3. **Ponte**: `ISPB == 8 primeiros dígitos do CNPJ` (é assim que o BCB os atribui na esmagadora
    maioria dos casos). Quando não bate — segundas marcas como XP CCTVM, Nu Invest, Bradesco BBI —
    entra o `forcedMatches`, revisado à mão a partir das sugestões do relatório.
-4. **Fora do Open Finance**: ferramentas de descoberta (`npm run discover` e `discover:ai`)
+4. **Sistemas cooperativos**: afiliadas que carregam a marca do sistema no nome oficial
+   (Sicoob, Sicredi, Cresol, Unicred) recebem o logo do sistema por regra curada — explícita e
+   auditável, não semelhança fuzzy.
+5. **Fora do Open Finance**: ferramentas de descoberta (`npm run discover` e `discover:ai`)
    acham o ícone publicado no site oficial da instituição; **nada entra sem curadoria visual**
    (o revisor confere marca e domínio) — aprovados viram `forcedUris`.
-5. **Normalização**: cada arte vira PNG 256×256; o SVG original é mantido quando seguro.
-6. **Cadência**: o workflow roda **toda segunda-feira** (e sob demanda), regenera
+6. **Normalização**: cada arte vira PNG 256×256; o SVG original é mantido quando seguro.
+7. **Cadência**: o workflow roda **toda segunda-feira** (e sob demanda), regenera
    `data/bancos.json`, `logos/`, `PREVIEW.md` e `react-native.js`, e **abre um PR** com o
    relatório e o diff visual dos PNGs. Depois da revisão e merge, o mantenedor publica uma
    nova versão no npm (Release no GitHub). Nada é editado à mão.
@@ -225,14 +252,15 @@ Detalhes de manutenção (rodar o pipeline localmente, promover sugestões, over
 
 ## Limitações conhecidas
 
-- Cobertura de logos: 152 hoje (Open Finance + sites oficiais curados); cresce conforme o
-  ecossistema e a curadoria. **Sua instituição está sem logo?** Abra uma issue com o template
-  "Sugestão de match"/"Adicionar logo" apontando a URL no domínio oficial — promovemos rápido.
+- Cobertura de logos: 473 de 1.113 hoje (Open Finance + regra de marca cooperativa + sites
+  oficiais curados); cresce conforme o ecossistema e a curadoria. **Sua instituição está sem
+  logo?** Abra uma issue com o template "Sugestão de match"/"Adicionar logo" apontando a URL no
+  domínio oficial — promovemos rápido.
 - Algumas instituições publicam no diretório o logo da sua **marca de produto** (ex.: Banco CSF →
   cartão Atacadão). É a escolha oficial da própria instituição; se preferir outra arte no seu app,
   use um override local seu.
-- Instituições **sem** código COMPE (participantes só do Pix) ainda não entram — o naming por ISPB
-  já foi desenhado para recebê-las sem breaking change (roadmap).
+- Instituições em processo de **adesão** ao Pix (segunda seção da lista do BCB) e participantes
+  sem ISPB publicado (18 hoje) não entram — só participantes ativos com ISPB.
 
 ## Marcas e remoção
 

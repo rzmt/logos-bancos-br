@@ -1,8 +1,10 @@
 # logos-bancos-br
 
-> **Brazilian bank list + official logos, always up to date.** Everything is derived from
-> official sources only (Central Bank of Brazil and Open Finance Brasil) and **rebuilt
-> automatically every week by CI** — with verifiable per-logo provenance.
+> **Dataset + logos of Brazil's financial and payment institutions** — banks, fintechs, payment
+> institutions and credit unions — **always up to date**. Everything is derived from three named
+> official sources: the **STR participants list** and the **active Pix participants list**, both
+> from the **Central Bank of Brazil (BCB)**, plus the **Open Finance Brasil participants
+> directory**. Rebuilt automatically every week by CI, with verifiable per-logo provenance.
 > **[Versão em português](README.md)**
 
 [![CI](https://github.com/rzmt/logos-bancos-br/actions/workflows/ci.yml/badge.svg)](https://github.com/rzmt/logos-bancos-br/actions/workflows/ci.yml)
@@ -28,14 +30,16 @@
 
 ## What this package gives you
 
-1. **The list of institutions — auto-updated.** Every institution with a COMPE code in the
-   Central Bank of Brazil STR participants list (currently 470), with official name, short name,
-   COMPE code and ISPB, in [`data/bancos.json`](data/bancos.json). You never hand-maintain a
-   bank list again.
-2. **Official logos.** Currently 152, as 256×256 PNGs (+ SVG when available), from two origins —
-   both official and identified in the dataset (`logo.source.type`): the public **Open Finance
-   Brasil** directory (`openfinance`), where each institution publishes its own brand, and the
-   **institution's own official website** (`direct-uri`), visually curated before shipping.
+1. **The list of institutions — auto-updated.** The union, keyed by ISPB, of two Central Bank
+   lists: STR participants (every institution with a COMPE code, currently 470) and **active Pix
+   participants** (currently ~880, ~640 of which have no COMPE — fintechs, payment institutions,
+   credit unions). **1,113 institutions** in [`data/bancos.json`](data/bancos.json), with
+   official names, COMPE (when it exists), ISPB and Pix participation attributes.
+2. **Official logos.** Currently **473**, as 256×256 PNGs (+ SVG when available), from two
+   origins — both official and identified in the dataset (`logo.source.type`): the public **Open
+   Finance Brasil** directory (`openfinance`) and the **institution's own official website**
+   (`direct-uri`), visually curated before shipping. Affiliates of single-brand cooperative
+   systems (Sicoob, Sicredi, Cresol, Unicred) get the system's logo via a curated brand rule.
    Every file carries provenance: source URI, SHA-256 and date.
 3. **Automatic updates, no manual curation.** Every Monday a GitHub Action
    ([`update-logos.yml`](.github/workflows/update-logos.yml)) rebuilds **both the list AND the
@@ -51,9 +55,9 @@ Because it rots: the Central Bank adds, renames and removes institutions through
 and banks redesign their brands. Existing libraries ship either **data only** (no logos) or
 logos **hand-collected** from assorted websites with no traceability. The approach here:
 
-- **Official sources, and only them** — the STR participants CSV (updated daily by the Central
-  Bank itself), the Open Finance Brasil participants directory and, for non-participants, the
-  icon the institution publishes **on its own official website** (hand-reviewed). No images
+- **Official sources, and only them** — the STR and Pix participants CSVs (updated daily by the
+  Central Bank itself), the Open Finance Brasil participants directory and, for non-participants,
+  the icon the institution publishes **on its own official website** (hand-reviewed). No images
   "found on Google" or from aggregators. Open Finance purists can filter:
   `banks().filter(b => b.logo?.source.type === 'openfinance')`.
 - **Per-logo provenance** — `data/bancos.json` records each logo's source URI, SHA-256 of the
@@ -63,10 +67,10 @@ logos **hand-collected** from assorted websites with no traceability. The approa
   In a banking context, a wrong logo is worse than no logo.
 - **Safe assets** — https-only downloads with size/pixel caps; SVGs redistributed only after
   sanitization (no scripts, event handlers, `foreignObject` or external references).
-- **Honest trade-off** — 152 of the 470 institutions have a logo (all Open Finance participants
-  plus ~45 banks/payment institutions covered via official sites — the vast majority of accounts
-  in Brazil). The rest are small credit unions/SCDs/brokers — your app picks the fallback, and
-  coverage grows every release.
+- **Honest trade-off** — 473 of the 1,113 institutions have a logo (Open Finance participants,
+  cooperative-system affiliates and ~45 institutions covered via official sites — the vast
+  majority of accounts in Brazil). The rest are small SCDs/brokers/payment institutions — your
+  app picks the fallback, and coverage grows every release.
 
 ## Install & use
 
@@ -78,7 +82,10 @@ Requires **Node ≥ 20** for Node/CLI usage (web and React Native follow your bu
 environment). Zero runtime dependencies. Published with **npm provenance** — verify integrity
 with `npm audit signatures`.
 
-Files are named by **ISPB** (8 digits). Lookups accept **COMPE or ISPB**.
+Files are named by **ISPB** (8 digits — which is what lets the ~640 COMPE-less Pix institutions
+in). Lookups accept **COMPE or ISPB**; Pix-only institutions have `compe: null` and are
+addressable by ISPB. Each bank carries a `pix` block (participation attributes, verbatim from
+the BCB list) or `null`.
 
 ```ts
 import { banks, byCompe, byIspb, logoCdnUrl } from 'logos-bancos-br';
@@ -88,8 +95,8 @@ byIspb('00000000');  // Banco do Brasil
 logoCdnUrl(341);     // https://cdn.jsdelivr.net/npm/logos-bancos-br@x.y.z/logos/png/60701190.png
 ```
 
-**React Native (Expo/Metro)** — static require() map (bundles all logos, ~1.3 MB; keys accept
-both the 4-digit COMPE and the 8-digit ISPB):
+**React Native (Expo/Metro)** — static require() map (bundles all logos, ~4 MB; keys accept both the
+4-digit COMPE and the 8-digit ISPB — Pix-only institutions by ISPB only):
 
 ```tsx
 import logos from 'logos-bancos-br/react-native';
@@ -113,7 +120,7 @@ npx logos-bancos-br list
 **CDN, no install** (always pin a version):
 
 ```
-https://cdn.jsdelivr.net/npm/logos-bancos-br@0.1.0/logos/png/60701190.png
+https://cdn.jsdelivr.net/npm/logos-bancos-br@0.3.0/logos/png/60701190.png
 ```
 
 **Data only** (the bank list):
@@ -137,7 +144,7 @@ import data from 'logos-bancos-br/data/bancos.json';
 | | `copyLogos({ dest, format?, by?, only? })` | copies assets into a directory (what the CLI uses) |
 | `logos-bancos-br/react-native` | `logos` (default export) | require() map keyed by COMPE4 **and** ISPB |
 
-Exported TypeScript types: `Bank`, `BankLogo`, `BankLogoSource`.
+Exported TypeScript types: `Bank`, `BankLogo`, `BankLogoSource`, `PixInfo`.
 
 ## Dataset shape
 
@@ -148,6 +155,7 @@ Exported TypeScript types: `Bank`, `BankLogo`, `BankLogoSource`.
   "compe4": "0341",
   "name": "Itaú Unibanco S.A.",
   "shortName": "ITAÚ UNIBANCO S.A.",
+  "pix": { "spiParticipationType": "Direta", "pixParticipationType": "Obrigatória", "modality": "Provedor de Conta Transacional", "institutionType": "Banco Múltiplo", "authorizedByBcb": true },
   "logo": {
     "png": "logos/png/60701190.png",
     "svg": "logos/svg/60701190.svg",
@@ -157,13 +165,16 @@ Exported TypeScript types: `Bank`, `BankLogo`, `BankLogoSource`.
 ```
 
 `logo.png` is a normalized transparent 256×256 PNG; `logo.svg` is the original vector when safely
-redistributable; `logo: null` means the institution has no logo in the official sources.
+redistributable; `logo: null` means the institution has no logo in the official sources; `compe: null` marks a
+Pix-only institution (address it by ISPB); `pix: null` marks a non-Pix participant.
 
 ## How the auto-update works
 
-The pipeline joins the STR list (which institutions exist) with the Open Finance directory
-(their logos), bridged by `ISPB == first 8 digits of the CNPJ`; hand-reviewed `forcedMatches`
-cover second brands (XP CCTVM, Nu Invest, Bradesco BBI…). For institutions outside Open Finance,
+The pipeline unions the Central Bank's STR and active-Pix participants lists (which institutions
+exist, keyed by ISPB) and joins them with the Open Finance directory (their logos), bridged by
+`ISPB == first 8 digits of the CNPJ`; hand-reviewed `forcedMatches` cover second brands (XP
+CCTVM, Nu Invest, Bradesco BBI…), and a curated brand rule gives cooperative-system affiliates
+(Sicoob/Sicredi/Cresol/Unicred) their system's logo. For institutions outside Open Finance,
 discovery tools (`npm run discover` / `discover:ai`) find the icon published on the institution's
 official website — nothing ships without visual curation (brand + domain reviewed); approvals
 become `forcedUris` (`source.type: "direct-uri"`). The weekly workflow regenerates
