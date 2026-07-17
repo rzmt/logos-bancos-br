@@ -17,3 +17,8 @@ updates:
     groups:
       dev-dependencies:
         patterns: ['*']
+    ignore:
+      # TS 7 (compilador nativo) quebra a geração de .d.ts do tsup
+      # (rollup-plugin-dts). Reavaliar quando o tsup suportar o TS 7.
+      - dependency-name: typescript
+        update-types: [version-update:semver-major]
