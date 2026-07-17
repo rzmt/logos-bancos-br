@@ -35,7 +35,7 @@
    e **participantes ativos do Pix** (hoje ~880, das quais ~640 não têm COMPE — fintechs, IPs e
    cooperativas). São **1.113 instituições** em [`data/bancos.json`](data/bancos.json), com nome
    oficial, nome reduzido, COMPE (quando existe), ISPB e os atributos de participação no Pix.
-   Você nunca mais mantém uma lista de bancos à mão.
+   Você nunca mais mantém uma lista de instituições no seu projeto.
 2. **Logos oficiais.** Hoje **473**, em PNG 256×256 (+ SVG quando disponível), de duas origens —
    ambas oficiais e identificadas no dataset (`logo.source.type`): o diretório público do
    **Open Finance Brasil** (`openfinance`), onde cada instituição publica a própria marca, e o
@@ -50,11 +50,11 @@
    copia os assets para projetos Flutter/Kotlin/Swift/.NET/PHP, URLs de CDN sem instalar nada —
    ou só o JSON.
 
-## Por que não manter uma lista à mão?
+## Por que fontes oficiais?
 
-Porque ela envelhece: o BCB inclui, renomeia e exclui instituições ao longo do ano, e os bancos
-redesenham suas marcas. As bibliotecas existentes ou trazem **só dados** (sem logos), ou logos
-**coletados manualmente** de sites variados, sem rastreabilidade. A abordagem aqui:
+Listas mantidas manualmente envelhecem: o BCB inclui, renomeia e exclui instituições ao longo do
+ano, e os bancos redesenham suas marcas. As bibliotecas existentes ou trazem **só dados** (sem
+logos), ou logos **coletados de sites variados**, sem rastreabilidade. A abordagem aqui:
 
 - **Fontes oficiais, e apenas elas** — os CSVs de participantes do STR e do Pix (que o próprio
   BCB atualiza diariamente), o diretório de participantes do Open Finance Brasil e, para quem não

@@ -49,11 +49,11 @@
    copies the assets into Flutter/Kotlin/Swift/.NET/PHP projects, CDN URLs with no install — or
    just the JSON.
 
-## Why not a hand-maintained list?
+## Why official sources?
 
-Because it rots: the Central Bank adds, renames and removes institutions throughout the year,
-and banks redesign their brands. Existing libraries ship either **data only** (no logos) or
-logos **hand-collected** from assorted websites with no traceability. The approach here:
+Hand-maintained lists rot: the Central Bank adds, renames and removes institutions throughout
+the year, and banks redesign their brands. Existing libraries ship either **data only** (no
+logos) or logos **collected from assorted websites** with no traceability. The approach here:
 
 - **Official sources, and only them** — the STR and Pix participants CSVs (updated daily by the
   Central Bank itself), the Open Finance Brasil participants directory and, for non-participants,
