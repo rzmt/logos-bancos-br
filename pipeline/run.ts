@@ -21,7 +21,7 @@ import { basename, dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { withConcurrency } from './concurrency';
-import { buildDataset, toDatasetJson } from './dataset';
+import { buildDatasets, toJson } from './dataset';
 import { downloadLogo, isSafeSvg, looksLikeSvg, rasterize, sha256, writeIfChanged } from './images';
 import { buildMatches } from './matching';
 import { buildPreviewMarkdown } from './preview';
@@ -43,6 +43,7 @@ const CONFIG_PATH = join(__dirname, 'config.json');
 const MANIFEST_PATH = join(__dirname, 'manifest.json');
 const REPORT_PATH = join(__dirname, 'report.md');
 const DATASET_PATH = join(ROOT, 'data', 'bancos.json');
+const PIX_DATASET_PATH = join(ROOT, 'data', 'instituicoes-pix.json');
 const PREVIEW_PATH = join(ROOT, 'PREVIEW.md');
 const RN_MAP_PATH = join(ROOT, 'react-native.js');
 
@@ -204,15 +205,26 @@ async function main(): Promise<void> {
   };
   const newManifest: Manifest = {};
 
-  await withConcurrency(targets, config.concurrency, async (entry: MatchEntry) => {
-    const label = entry.compe4 ?? entry.ispb;
-    const pngPath = join(PNG_DIR, `${entry.ispb}.png`);
-    const svgPath = join(SVG_DIR, `${entry.ispb}.svg`);
+  // Brand affiliates share one asset per system: process each distinct asset
+  // (keyed by assetIspb, the system organisation's CNPJ root) exactly once.
+  const seenAssets = new Set<string>();
+  const uniqueTargets = targets.filter((entry) => {
+    const assetIspb = entry.assetIspb ?? entry.ispb;
+    if (seenAssets.has(assetIspb)) return false;
+    seenAssets.add(assetIspb);
+    return true;
+  });
+
+  await withConcurrency(uniqueTargets, config.concurrency, async (entry: MatchEntry) => {
+    const assetIspb = entry.assetIspb ?? entry.ispb;
+    const label = entry.brandToken ?? entry.compe4 ?? entry.ispb;
+    const pngPath = join(PNG_DIR, `${assetIspb}.png`);
+    const svgPath = join(SVG_DIR, `${assetIspb}.svg`);
     const pngExists = existsSync(pngPath);
-    const previous = oldManifest[entry.ispb];
+    const previous = oldManifest[assetIspb];
 
     const carryPrevious = () => {
-      if (pngExists && previous) newManifest[entry.ispb] = previous;
+      if (pngExists && previous) newManifest[assetIspb] = previous;
     };
 
     if (!entry.source) {
@@ -256,7 +268,7 @@ async function main(): Promise<void> {
     const svgConsistent = !svgSafe || existsSync(svgPath);
     if (!force && previous && previous.sourceSha256 === hash && pngExists && svgConsistent) {
       stats.unchanged.push(label);
-      newManifest[entry.ispb] = { ...previous, compe4: entry.compe4 };
+      newManifest[assetIspb] = { ...previous, compe4: entry.compe4 };
       return;
     }
 
@@ -284,7 +296,7 @@ async function main(): Promise<void> {
       stats[status].push(label);
     }
 
-    newManifest[entry.ispb] = {
+    newManifest[assetIspb] = {
       compe4: entry.compe4,
       org: entry.orgName,
       cnpj: entry.orgCnpj,
@@ -295,8 +307,9 @@ async function main(): Promise<void> {
     };
   });
 
-  // Orphans: files on disk whose ISPB is no longer in the backbone (manual removal).
-  const currentIspbs = new Set(entries.map((entry) => entry.ispb));
+  // Orphans: files on disk that no institution (or shared brand asset)
+  // references anymore (manual removal).
+  const currentIspbs = new Set(entries.map((entry) => entry.assetIspb ?? entry.ispb));
   const orphanPngs = listIspbFiles(PNG_DIR, 'png')
     .map((file) => file.slice(0, 8))
     .filter((ispb) => !currentIspbs.has(ispb));
@@ -312,19 +325,30 @@ async function main(): Promise<void> {
 
   const pngIspbs = new Set(listIspbFiles(PNG_DIR, 'png').map((file) => file.slice(0, 8)));
   const svgIspbs = new Set(listIspbFiles(SVG_DIR, 'svg').map((file) => file.slice(0, 8)));
-  const dataset = buildDataset({ entries, manifest: sortedManifest, pngIspbs, svgIspbs });
+  const { dataset, pixDataset } = buildDatasets({
+    entries,
+    manifest: sortedManifest,
+    pngIspbs,
+    svgIspbs,
+  });
 
   let generatedFiles = 'não gerados (dry-run)';
   if (!dryRun) {
-    const datasetStatus = writeIfChanged(DATASET_PATH, toDatasetJson(dataset));
-    const previewStatus = writeIfChanged(PREVIEW_PATH, buildPreviewMarkdown(dataset));
-    const rnStatus = writeIfChanged(RN_MAP_PATH, buildReactNativeMap(dataset.banks));
+    const datasetStatus = writeIfChanged(DATASET_PATH, toJson(dataset));
+    const pixStatus = writeIfChanged(PIX_DATASET_PATH, toJson(pixDataset));
+    const previewStatus = writeIfChanged(PREVIEW_PATH, buildPreviewMarkdown(dataset, pixDataset));
+    const rnStatus = writeIfChanged(
+      RN_MAP_PATH,
+      buildReactNativeMap([...dataset.banks, ...pixDataset.institutions]),
+    );
     writeFileSync(MANIFEST_PATH, `${JSON.stringify(sortedManifest, null, 2)}\n`);
-    generatedFiles = `bancos.json ${datasetStatus} · PREVIEW.md ${previewStatus} · react-native.js ${rnStatus}`;
+    generatedFiles = `bancos.json ${datasetStatus} · instituicoes-pix.json ${pixStatus} · PREVIEW.md ${previewStatus} · react-native.js ${rnStatus}`;
   }
 
   // ---- report ----
-  const withLogo = dataset.banks.filter((bank) => bank.logo !== null).length;
+  const withLogo =
+    dataset.banks.filter((bank) => bank.logo !== null).length +
+    pixDataset.institutions.filter((i) => i.logo !== null).length;
   const totalSize = dirSizeBytes(PNG_DIR) + dirSizeBytes(SVG_DIR);
 
   const reportLines: string[] = [
@@ -335,10 +359,11 @@ async function main(): Promise<void> {
     '| Métrica | Valor |',
     '|---|---|',
     `| Instituições na espinha (STR ∪ Pix, por ISPB) | ${entries.length} |`,
-    `| Sem código COMPE (só-Pix) | ${entries.filter((e) => e.compe4 === null).length} |`,
+    `| Lista principal (bancos.json, com COMPE) | ${dataset.banks.length} |`,
+    `| Conjunto separado (instituicoes-pix.json, só-Pix) | ${pixDataset.institutions.length} |`,
     `| Com logo | ${withLogo} |`,
     `| Match automático por ISPB | ${bySource.ispb ?? 0} |`,
-    `| Marca de sistema cooperativo (regra curada) | ${bySource['brand-match'] ?? 0} |`,
+    `| Marca de sistema cooperativo (regra curada) | ${bySource['brand-match'] ?? 0} (compartilhando ${seenAssets.size ? [...seenAssets].filter((a) => entries.some((e) => e.assetIspb === a)).length : 0} arquivo(s)) |`,
     `| Matches forçados (revisados) | ${(bySource['forced-match'] ?? 0) + (bySource['forced-uri'] ?? 0)} |`,
     `| Overrides manuais | ${bySource.override ?? 0} |`,
     `| Novos · atualizados · inalterados | ${stats.created.length} · ${stats.updated.length} · ${stats.unchanged.length} |`,

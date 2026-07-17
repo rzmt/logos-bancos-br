@@ -317,6 +317,7 @@ export function mergeBackbone(
       compe4: p.compe4,
       shortName: p.shortName,
       fullName: p.fullName,
+      cnpj: null,
       pix: pixByIspb.get(p.ispb)?.pix ?? null,
     });
   }
@@ -329,6 +330,7 @@ export function mergeBackbone(
       compe4: null,
       shortName: p.shortName,
       fullName: p.shortName,
+      cnpj: p.cnpj,
       pix: p.pix,
     });
   }

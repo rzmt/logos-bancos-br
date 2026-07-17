@@ -57,6 +57,7 @@
       "default": "./react-native.js"
     },
     "./data/bancos.json": "./data/bancos.json",
+    "./data/instituicoes-pix.json": "./data/instituicoes-pix.json",
     "./logos/*": "./logos/*",
     "./package.json": "./package.json"
   },

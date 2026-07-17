@@ -11,8 +11,8 @@ I took a different approach and open-sourced it: **[logos-bancos-br](https://git
 
 ## Official sources only, with provenance
 
-- **The institution list** is the union (keyed by ISPB, the Central Bank identifier) of two official lists published by the **Central Bank of Brazil**: STR participants (~470 institutions with a bank code) and **active Pix participants** (a daily official CSV — adding ~640 fintechs, payment institutions and credit unions that have no bank code). Total: **1,113 institutions**, each with its Pix participation attributes.
-- **The logos** come from the **Open Finance Brasil participants directory** — where each institution publishes and maintains its own brand — plus hand-curated official websites for non-participants. **473 logos** today, every one carrying provenance: source URI, SHA-256 of the original artwork, and date.
+- **The institution list** comes from two official Central Bank lists, deliberately shipped as two datasets: a **main list** with the ~470 institutions holding a bank code (STR participants) and a separate set with the ~640 **Pix-only institutions** (fintechs, payment institutions, cooperative affiliates — from the daily official active-Pix-participants CSV). Total: **1,113 institutions** with Pix participation attributes, without polluting the main list.
+- **The logos** come from the **Open Finance Brasil participants directory** — where each institution publishes and maintains its own brand — plus hand-curated official websites for non-participants. Cooperative-system affiliates share one asset per brand: **473 institutions with logos backed by ~160 distinct files (~1.7 MB)**, every one carrying provenance: source URI, SHA-256, date.
 - **Weekly automation**: a GitHub Action rebuilds the list and the logos from the sources every Monday and opens a PR with the visual diff. Automatic matching happens only via official identifiers (ISPB = CNPJ root); name similarity never assigns a logo by itself — in a banking context, a wrong logo is worse than no logo.
 
 ## Works in any stack

@@ -176,7 +176,13 @@ export function buildMatches({
 
   // Pre-resolve brand rules to their directory organisations; a brand whose
   // organisation left the directory simply stops matching (no stale logos).
-  const brandRules: Array<{ pattern: RegExp; org: DirectoryOrganisation }> = [];
+  interface BrandRule {
+    token: string;
+    pattern: RegExp;
+    org: DirectoryOrganisation;
+    uri: string;
+  }
+  const brandRules: BrandRule[] = [];
   for (const [token, cnpjRaw] of Object.entries(config.brandMatches ?? {})) {
     const cnpj = String(cnpjRaw).replace(/\D/g, '').padStart(14, '0');
     const org = index.byCnpj.get(cnpj);
@@ -184,12 +190,28 @@ export function buildMatches({
     const escaped = stripAccents(token)
       .toUpperCase()
       .replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    brandRules.push({ pattern: new RegExp(`(?:^|[^A-Z0-9])${escaped}(?:[^A-Z0-9]|$)`), org });
+    // Server picked ONCE per brand, against the organisation's own name —
+    // every affiliate then shares the exact same asset (one file per brand).
+    const server = pickServer(org, {
+      ispb: org.cnpjRoot,
+      compe: null,
+      compe4: null,
+      shortName: org.name,
+      fullName: org.name,
+      cnpj: org.cnpj,
+      pix: null,
+    });
+    brandRules.push({
+      token,
+      pattern: new RegExp(`(?:^|[^A-Z0-9])${escaped}(?:[^A-Z0-9]|$)`),
+      org,
+      uri: server.uri,
+    });
   }
-  const brandFor = (participant: BackboneParticipant): DirectoryOrganisation | null => {
+  const brandFor = (participant: BackboneParticipant): BrandRule | null => {
     const name = stripAccents(`${participant.shortName} ${participant.fullName}`).toUpperCase();
     for (const rule of brandRules) {
-      if (rule.pattern.test(name)) return rule.org;
+      if (rule.pattern.test(name)) return rule;
     }
     return null;
   };
@@ -209,6 +231,7 @@ export function buildMatches({
       compe4: participant.compe4,
       shortName: participant.shortName,
       fullName: participant.fullName,
+      cnpj: participant.cnpj,
       pix: participant.pix,
     };
 
@@ -256,16 +279,18 @@ export function buildMatches({
     }
 
     // Curated brand rule: affiliates of single-brand cooperative systems
-    // (e.g. "SICOOB <nome>") carry the system's logo.
-    const brandOrg = brandFor(participant);
-    if (brandOrg) {
-      const server = pickServer(brandOrg, participant);
+    // (e.g. "SICOOB <nome>") carry the system's logo — sharing ONE asset file
+    // keyed by the system organisation's CNPJ root.
+    const brandRule = brandFor(participant);
+    if (brandRule) {
       entries.push({
         ...base,
         source: 'brand-match',
-        uri: server.uri,
-        orgName: brandOrg.name,
-        orgCnpj: brandOrg.cnpj,
+        uri: brandRule.uri,
+        orgName: brandRule.org.name,
+        orgCnpj: brandRule.org.cnpj,
+        assetIspb: brandRule.org.cnpjRoot,
+        brandToken: brandRule.token,
       });
       continue;
     }

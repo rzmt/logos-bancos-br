@@ -6,8 +6,8 @@ Publiquei um projeto open source que resolve um problema chato de todo app finan
 
 O diferencial não é o "o quê", é o "de onde":
 
-🏦 **1.113 instituições** — união das listas oficiais de participantes do STR e do Pix, ambas do Banco Central
-🎨 **473 logos** — do diretório de participantes do Open Finance Brasil (onde cada instituição publica a própria marca) e de sites oficiais curados
+🏦 **1.113 instituições** — das listas oficiais de participantes do STR e do Pix (Banco Central), em dois conjuntos: lista principal (COMPE) e instituições só-Pix, separadas de propósito
+🎨 **473 logos em ~160 arquivos** — Open Finance Brasil + sites oficiais curados; afiliadas de sistemas cooperativos compartilham o asset da marca
 🔍 **Proveniência por logo** — URI de origem, SHA-256 e data no dataset; o diff do git é a auditoria
 🤖 **Atualização semanal automática** — GitHub Action reconstrói tudo das fontes e abre PR com diff visual; nada entra sem revisão humana
 🧩 **Qualquer stack** — API TypeScript, mapa React Native, CLI para copiar assets (Flutter, Kotlin, Swift...), CDN e JSON puro

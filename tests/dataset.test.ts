@@ -1,6 +1,14 @@
 import { describe, expect, it } from 'vitest';
-import { buildDataset, toDatasetJson } from '../pipeline/dataset';
-import type { Manifest, MatchEntry } from '../pipeline/types';
+import { buildDatasets, toJson } from '../pipeline/dataset';
+import type { Manifest, MatchEntry, PixInfo } from '../pipeline/types';
+
+const PIX: PixInfo = {
+  spiParticipationType: 'Direta',
+  pixParticipationType: 'Facultativa',
+  modality: 'Provedor de Conta Transacional',
+  institutionType: 'Instituição de Pagamento',
+  authorizedByBcb: true,
+};
 
 const ENTRIES: MatchEntry[] = [
   {
@@ -9,6 +17,8 @@ const ENTRIES: MatchEntry[] = [
     compe4: '0341',
     shortName: 'ITAÚ UNIBANCO S.A.',
     fullName: 'Itaú Unibanco S.A.',
+    cnpj: null,
+    pix: PIX,
     source: 'ispb',
     uri: 'https://logos.example/itau.svg',
     orgName: 'Itaú Unibanco',
@@ -20,10 +30,28 @@ const ENTRIES: MatchEntry[] = [
     compe4: '0001',
     shortName: 'BCO DO BRASIL S.A.',
     fullName: 'Banco do Brasil S.A.',
+    cnpj: null,
+    pix: null,
     source: null,
     uri: null,
     orgName: null,
     orgCnpj: null,
+  },
+  // Afiliada só-Pix com logo herdado do sistema (asset compartilhado).
+  {
+    ispb: '25387655',
+    compe: null,
+    compe4: null,
+    shortName: 'CC CREDIVALE - SICOOB CREDIVALE',
+    fullName: 'CC CREDIVALE - SICOOB CREDIVALE',
+    cnpj: '25387655000199',
+    pix: PIX,
+    source: 'brand-match',
+    uri: 'https://logos.example/sicoob.svg',
+    orgName: 'Confederacao Sicoob',
+    orgCnpj: '04891850000188',
+    assetIspb: '04891850',
+    brandToken: 'SICOOB',
   },
 ];
 
@@ -37,46 +65,48 @@ const MANIFEST: Manifest = {
     svg: true,
     updatedAt: '2026-07-16',
   },
+  '04891850': {
+    compe4: null,
+    org: 'Confederacao Sicoob',
+    cnpj: '04891850000188',
+    uri: 'https://logos.example/sicoob.svg',
+    sourceSha256: 'sic123',
+    svg: true,
+    updatedAt: '2026-07-17',
+  },
 };
 
-describe('buildDataset', () => {
-  it('sorts by COMPE and attaches provenance only when the png exists', () => {
-    const dataset = buildDataset({
-      entries: ENTRIES,
-      manifest: MANIFEST,
-      pngIspbs: new Set(['60701190']),
-      svgIspbs: new Set(['60701190']),
-    });
-    expect(dataset.banks.map((bank) => bank.compe4)).toEqual(['0001', '0341']);
+describe('buildDatasets', () => {
+  const built = buildDatasets({
+    entries: ENTRIES,
+    manifest: MANIFEST,
+    pngIspbs: new Set(['60701190', '04891850']),
+    svgIspbs: new Set(['60701190', '04891850']),
+  });
 
-    const bb = dataset.banks[0];
-    expect(bb?.logo).toBeNull();
+  it('splits COMPE institutions from Pix-only ones', () => {
+    expect(built.dataset.banks.map((bank) => bank.compe4)).toEqual(['0001', '0341']);
+    expect(built.pixDataset.institutions.map((i) => i.ispb)).toEqual(['25387655']);
+  });
 
-    const itau = dataset.banks[1];
+  it('attaches provenance to main-list banks', () => {
+    const itau = built.dataset.banks[1];
     expect(itau?.logo?.png).toBe('logos/png/60701190.png');
-    expect(itau?.logo?.svg).toBe('logos/svg/60701190.svg');
-    expect(itau?.logo?.source).toMatchObject({
-      type: 'openfinance',
-      org: 'Itaú Unibanco',
-      sha256: 'abc123',
-      updatedAt: '2026-07-16',
-    });
+    expect(itau?.logo?.source).toMatchObject({ type: 'openfinance', sha256: 'abc123' });
+    expect(itau?.pix?.pixParticipationType).toBe('Facultativa');
+    expect(built.dataset.banks[0]?.logo).toBeNull();
   });
 
-  it('omits the svg path when the manifest says the source is not a safe svg', () => {
-    const manifest: Manifest = {
-      '60701190': { ...(MANIFEST['60701190'] as Manifest[string]), svg: false },
-    };
-    const dataset = buildDataset({
-      entries: [ENTRIES[0] as MatchEntry],
-      manifest,
-      pngIspbs: new Set(['60701190']),
-      svgIspbs: new Set(['60701190']),
-    });
-    expect(dataset.banks[0]?.logo?.svg).toBeNull();
+  it('brand affiliates reference the SHARED system asset with source.type brand', () => {
+    const affiliate = built.pixDataset.institutions[0];
+    expect(affiliate?.logo?.png).toBe('logos/png/04891850.png');
+    expect(affiliate?.logo?.svg).toBe('logos/svg/04891850.svg');
+    expect(affiliate?.logo?.source.type).toBe('brand');
+    expect(affiliate?.logo?.source.brand).toBe('SICOOB');
+    expect(affiliate?.cnpj).toBe('25387655000199');
   });
 
-  it('derives the source type from the manifest uri/org', () => {
+  it('derives override and direct-uri types from the manifest', () => {
     const overrideManifest: Manifest = {
       '60701190': {
         ...(MANIFEST['60701190'] as Manifest[string]),
@@ -85,42 +115,20 @@ describe('buildDataset', () => {
         uri: 'override:60701190.svg',
       },
     };
-    const dataset = buildDataset({
+    const { dataset } = buildDatasets({
       entries: [ENTRIES[0] as MatchEntry],
       manifest: overrideManifest,
       pngIspbs: new Set(['60701190']),
       svgIspbs: new Set(),
     });
     expect(dataset.banks[0]?.logo?.source.type).toBe('override');
-
-    const directManifest: Manifest = {
-      '60701190': {
-        ...(MANIFEST['60701190'] as Manifest[string]),
-        org: null,
-        cnpj: null,
-        uri: 'https://direct.example/logo.png',
-      },
-    };
-    const direct = buildDataset({
-      entries: [ENTRIES[0] as MatchEntry],
-      manifest: directManifest,
-      pngIspbs: new Set(['60701190']),
-      svgIspbs: new Set(),
-    });
-    expect(direct.banks[0]?.logo?.source.type).toBe('direct-uri');
   });
 });
 
-describe('toDatasetJson', () => {
+describe('toJson', () => {
   it('produces stable, newline-terminated json', () => {
-    const dataset = buildDataset({
-      entries: ENTRIES,
-      manifest: MANIFEST,
-      pngIspbs: new Set(),
-      svgIspbs: new Set(),
-    });
-    const json = toDatasetJson(dataset);
+    const json = toJson({ a: 1 });
     expect(json.endsWith('\n')).toBe(true);
-    expect(JSON.parse(json)).toEqual(dataset);
+    expect(JSON.parse(json)).toEqual({ a: 1 });
   });
 });

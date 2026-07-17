@@ -1,22 +1,4 @@
 {
-  "10262276": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "10348181": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "10398952": {
     "compe4": "0133",
     "org": "CRESOL CONFEDERAÇÃO",
@@ -35,15 +17,6 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "10520232": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "10573521": {
     "compe4": "0323",
     "org": "MERCADO PAGO INSTITUICAO DE PAGAMENTO LTDA",
@@ -59,15 +32,6 @@
     "cnpj": "10664513000150",
     "uri": "https://agibank.com.br/logo.svg",
     "sourceSha256": "e69032229fdc5d5b74321812ffa29a0cdcecd768ee736fdfff85e2609654eefa",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "10736214": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -104,24 +68,6 @@
     "cnpj": "11581339000145",
     "uri": "https://bmp.dbs.moneyp.com.br/bmpmoneyplus.svg",
     "sourceSha256": "5cfec5eb1028f7f5bd7c1d6c3a46c50d4d9d77090c22426c5306926ba7a53842",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "11907520": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "11969853": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -197,24 +143,6 @@
     "svg": false,
     "updatedAt": "2026-07-17"
   },
-  "14568725": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "14913919": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "15111975": {
     "compe4": "0401",
     "org": "IUGU INSTITUICAO DE PAGAMENTO S.A.",
@@ -242,30 +170,12 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "16564240": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "17184037": {
     "compe4": "0389",
     "org": "BCO MERCANTIL DO BRASIL S.A.",
     "cnpj": "17184037000110",
     "uri": "https://www.bancomercantil.com.br/imagens/openbanking/mercantil.svg",
     "sourceSha256": "ce244740d6ba638b7c82da17b7025cfa9f2756d9c59177181b18d2ca7fe3fabd",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "17343510": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -314,24 +224,6 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "19875244": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "19962468": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "20308187": {
     "compe4": "0588",
     "org": "PROVER PROMOCAO DE VENDAS INSTITUICAO DE PAGAMENTO LTDA",
@@ -359,15 +251,6 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "21797311": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "22610500": {
     "compe4": "0310",
     "org": null,
@@ -386,129 +269,12 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "23623636": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "24313102": {
     "compe4": "0769",
     "org": "99PAY INSTITUICAO DE PAGAMENTO S.A.",
     "cnpj": "24313102000125",
     "uri": "https://s3-us01.didiglobal.com/silver-bullet-img/2024-12-10/m3zOgV/openfinance.svg",
     "sourceSha256": "526a6de64f4d7bb6196efebdf53a485b25f4a688fb4f328843a7e3f0255ee5ff",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "24431221": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "24610065": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "24654881": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "25363615": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "25387655": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "25420696": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "26191078": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "26408161": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "26526166": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "26529420": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "26549311": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "26555235": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -611,15 +377,6 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "31804966": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "31872495": {
     "compe4": "0336",
     "org": "BCO C6 S.A.",
@@ -662,87 +419,6 @@
     "cnpj": "32402502000135",
     "uri": "https://storage.googleapis.com/qitech-website-documents/qi_logo_blue.svg",
     "sourceSha256": "5e069eed5c4bade949d52f5ad1572b712947fdf30523f4bfce0132f580e19d9e",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "32428294": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "32430233": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "32467086": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "32474884": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "32615247": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "32983165": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "32995755": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "33021064": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "33022690": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -800,15 +476,6 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "33416108": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "33479023": {
     "compe4": "0745",
     "org": "BCO CITIBANK S.A.",
@@ -854,39 +521,12 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "33924028": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "34088029": {
     "compe4": "0397",
     "org": "LISTO SOCIEDADE DE CREDITO DIRETO S.A.",
     "cnpj": "34088029000199",
     "uri": "https://imagens.soulisto.com.br/2.svg",
     "sourceSha256": "6503562f0a5f8119dad02cb69383b332247e98f0239f829222f282f9cb433bea",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "34148882": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "35571249": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -897,33 +537,6 @@
     "uri": "https://www.oliveiratrust.com.br/favicon-96x96.png",
     "sourceSha256": "9c003f823041e6ca43881786dad5bf56d7a6c58db75e6c8621eb193e92c94664",
     "svg": false,
-    "updatedAt": "2026-07-17"
-  },
-  "36900256": {
-    "compe4": null,
-    "org": "COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL",
-    "cnpj": "00315557000111",
-    "uri": "https://unicred.com.br/site/logo_unicred_vertical-margem90px.svg",
-    "sourceSha256": "6a4f9713f091dcba81fb5a08c84168925f9bdf48fd6e2d1e1a939e3281922ec4",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "37076205": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "37079720": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
     "updatedAt": "2026-07-17"
   },
   "37229413": {
@@ -941,24 +554,6 @@
     "cnpj": "37241230000152",
     "uri": "https://sumup-openbanking-staticfiles.s3.amazonaws.com/logo.svg",
     "sourceSha256": "7f22b00cfe40948e03b7405a1f02f63f9e29ea05984cf6497a31ca2b0d3c2cb8",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "37255049": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "37442605": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -1007,42 +602,6 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "41180092": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "41255225": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "41697103": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "41931221": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "42272526": {
     "compe4": "0017",
     "org": null,
@@ -1052,39 +611,12 @@
     "svg": false,
     "updatedAt": "2026-07-17"
   },
-  "42880617": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "42887133": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "43180355": {
     "compe4": "0174",
     "org": "PEFISA S.A. - CFI",
     "cnpj": "43180355000112",
     "uri": "https://storage.googleapis.com/pnb-openbank-pefisa-prd/LOGO_PEFISA_Prancheta.svg",
     "sourceSha256": "a1d76e885ada88354da5c3162d90aae84c2bab28baca8da6bbeb2f50202e9f37",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "44469161": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -1104,24 +636,6 @@
     "uri": "https://www.jpmorgan.com/etc.clientlibs/cws/clientlibs/clientlib-base/resources/jpm/images/jpm-favicon-152.png",
     "sourceSha256": "f04118a6e3e7226207c54b9d1b89d1bf72c7cf02d573e3002f0b6698455edb8c",
     "svg": false,
-    "updatedAt": "2026-07-17"
-  },
-  "46642294": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "47074323": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
     "updatedAt": "2026-07-17"
   },
   "47381104": {
@@ -1160,15 +674,6 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "50735161": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "51342763": {
     "compe4": "0620",
     "org": "REVOLUT SOCIEDADE DE CREDITO DIRETO S.A.",
@@ -1187,39 +692,12 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "53575491": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "53908413": {
     "compe4": "0773",
     "org": null,
     "cnpj": null,
     "uri": "https://kiwify.com.br/_astro/logo.Bi70aw49.svg",
     "sourceSha256": "fbf97f13aaf8862ddd322e9ac4c5bbb523ca00fa0f35ad77c549ff2b6a8f05b3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "53935029": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "54190525": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -1283,15 +761,6 @@
     "cnpj": "59588111000103",
     "uri": "https://www.bv.com.br/ng15-open-base-recepcao-jornada/assets/images/logo-bv.svg",
     "sourceSha256": "936bddaa9bcebeccd0ed3274560389efec07868a1c2e8d0f3b921f54664d69f3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "59869560": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -1475,75 +944,12 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "62673470": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "64276058": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "64480833": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "64739121": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "68900810": {
     "compe4": "0633",
     "org": "BCO RENDIMENTO S.A.",
     "cnpj": "68900810000138",
     "uri": "https://cdn.rendimento.com.br/open-banking/logo.svg",
     "sourceSha256": "d646d749f534b7971c2a5565b0d53fc0e9a4d9a0d9baacdaf502456b01a54fe2",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "69346856": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "70038237": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "70116611": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -1556,33 +962,6 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "70241658": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "70431630": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "70937271": {
-    "compe4": null,
-    "org": "COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL",
-    "cnpj": "00315557000111",
-    "uri": "https://unicred.com.br/site/logo_unicred_vertical-margem90px.svg",
-    "sourceSha256": "6a4f9713f091dcba81fb5a08c84168925f9bdf48fd6e2d1e1a939e3281922ec4",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "71027866": {
     "compe4": "0218",
     "org": null,
@@ -1590,168 +969,6 @@
     "uri": "https://www.bancobs2.com.br/wp-content/uploads/2025/09/favicon.png",
     "sourceSha256": "c77733af2df1d33cc09aecb9db5cbc4ad0213d22277e538764ead963206fd192",
     "svg": false,
-    "updatedAt": "2026-07-17"
-  },
-  "71154876": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "71163315": {
-    "compe4": null,
-    "org": "COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL",
-    "cnpj": "00315557000111",
-    "uri": "https://unicred.com.br/site/logo_unicred_vertical-margem90px.svg",
-    "sourceSha256": "6a4f9713f091dcba81fb5a08c84168925f9bdf48fd6e2d1e1a939e3281922ec4",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "71207740": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "71237184": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "71297899": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "71328769": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "71336432": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "71418784": {
-    "compe4": null,
-    "org": "COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL",
-    "cnpj": "00315557000111",
-    "uri": "https://unicred.com.br/site/logo_unicred_vertical-margem90px.svg",
-    "sourceSha256": "6a4f9713f091dcba81fb5a08c84168925f9bdf48fd6e2d1e1a939e3281922ec4",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "71506513": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "71698674": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "71884498": {
-    "compe4": null,
-    "org": "COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL",
-    "cnpj": "00315557000111",
-    "uri": "https://unicred.com.br/site/logo_unicred_vertical-margem90px.svg",
-    "sourceSha256": "6a4f9713f091dcba81fb5a08c84168925f9bdf48fd6e2d1e1a939e3281922ec4",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "72128440": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "72257793": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "73113243": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "73326449": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "73398646": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "73443863": {
-    "compe4": null,
-    "org": "COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL",
-    "cnpj": "00315557000111",
-    "uri": "https://unicred.com.br/site/logo_unicred_vertical-margem90px.svg",
-    "sourceSha256": "6a4f9713f091dcba81fb5a08c84168925f9bdf48fd6e2d1e1a939e3281922ec4",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "73750424": {
-    "compe4": null,
-    "org": "COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL",
-    "cnpj": "00315557000111",
-    "uri": "https://unicred.com.br/site/logo_unicred_vertical-margem90px.svg",
-    "sourceSha256": "6a4f9713f091dcba81fb5a08c84168925f9bdf48fd6e2d1e1a939e3281922ec4",
-    "svg": true,
     "updatedAt": "2026-07-17"
   },
   "74014747": {
@@ -1763,51 +980,6 @@
     "svg": false,
     "updatedAt": "2026-07-17"
   },
-  "74064502": {
-    "compe4": null,
-    "org": "COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL",
-    "cnpj": "00315557000111",
-    "uri": "https://unicred.com.br/site/logo_unicred_vertical-margem90px.svg",
-    "sourceSha256": "6a4f9713f091dcba81fb5a08c84168925f9bdf48fd6e2d1e1a939e3281922ec4",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "74114042": {
-    "compe4": null,
-    "org": "COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL",
-    "cnpj": "00315557000111",
-    "uri": "https://unicred.com.br/site/logo_unicred_vertical-margem90px.svg",
-    "sourceSha256": "6a4f9713f091dcba81fb5a08c84168925f9bdf48fd6e2d1e1a939e3281922ec4",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "76059997": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "77984870": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "78414067": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "78632767": {
     "compe4": "0712",
     "org": null,
@@ -1817,260 +989,8 @@
     "svg": false,
     "updatedAt": "2026-07-17"
   },
-  "78825270": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "78840071": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "78858107": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "78907607": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "79052122": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "79063574": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "79086997": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "79342069": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "79457883": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "80160260": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "80230774": {
     "compe4": "0584",
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "81014060": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "81054686": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "81099491": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "81115149": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "81192106": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "81206039": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "81292278": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "81466286": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "81706616": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "82065285": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "82133182": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "82527557": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "83836114": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "84974278": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "86389236": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "86585049": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "86791837": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "87067757": {
-    "compe4": null,
     "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
     "cnpj": "03795072000160",
     "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
@@ -2087,186 +1007,6 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "87510475": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "87733077": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "87779625": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "87780268": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "87780284": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "87781530": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "87784088": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "87795639": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "87853206": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "87900411": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "87900601": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "88038260": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "88099247": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "88471024": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "88530142": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "88894548": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "89049738": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "89126130": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "89468565": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "89990501": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "90400888": {
     "compe4": "0033",
     "org": "BCO SANTANDER (BRASIL) S.A.",
@@ -2276,129 +1016,12 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "90497256": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "90608712": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "90729369": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "91159764": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "91586982": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "92555150": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "92702067": {
     "compe4": "0041",
     "org": "BCO DO ESTADO DO RS S.A.",
     "cnpj": "92702067000196",
     "uri": "https://banrisul.com.br/bob/data/Simbolo-Banrisul.svg",
     "sourceSha256": "e6568098371a05f49599e45741b57da407cc27271525fa436cfef776090da87d",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "92796564": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "94243839": {
-    "compe4": null,
-    "org": "COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL",
-    "cnpj": "00315557000111",
-    "uri": "https://unicred.com.br/site/logo_unicred_vertical-margem90px.svg",
-    "sourceSha256": "6a4f9713f091dcba81fb5a08c84168925f9bdf48fd6e2d1e1a939e3281922ec4",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "95163002": {
-    "compe4": null,
-    "org": "COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL",
-    "cnpj": "00315557000111",
-    "uri": "https://unicred.com.br/site/logo_unicred_vertical-margem90px.svg",
-    "sourceSha256": "6a4f9713f091dcba81fb5a08c84168925f9bdf48fd6e2d1e1a939e3281922ec4",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "95213211": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "95424891": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "95594941": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "97489280": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -2417,24 +1040,6 @@
     "cnpj": "00000208000100",
     "uri": "https://novo.brb.com.br/wp-content/uploads/2025/07/brb-preto-1.svg",
     "sourceSha256": "72483b9add352f24a77641fd97cc836212e32b3d244cd1523b150da4847df918",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "00075847": {
-    "compe4": null,
-    "org": "COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL",
-    "cnpj": "00315557000111",
-    "uri": "https://unicred.com.br/site/logo_unicred_vertical-margem90px.svg",
-    "sourceSha256": "6a4f9713f091dcba81fb5a08c84168925f9bdf48fd6e2d1e1a939e3281922ec4",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "00259231": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -2492,24 +1097,6 @@
     "svg": false,
     "updatedAt": "2026-07-17"
   },
-  "00694389": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "00694877": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "00714671": {
     "compe4": "0534",
     "org": null,
@@ -2528,15 +1115,6 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "00804046": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "00806535": {
     "compe4": "0100",
     "org": null,
@@ -2546,48 +1124,12 @@
     "svg": false,
     "updatedAt": "2026-07-17"
   },
-  "00815319": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "00952415": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "00954288": {
     "compe4": "0541",
     "org": null,
     "cnpj": null,
     "uri": "https://www.fgc.org.br/documents/32230/48686/logofgc/ca56aadf-be4d-6356-0f38-b4b59d7bca4c",
     "sourceSha256": "63d1467450b1859599ce4589097486abce64dca9ab9a9fb3110236d91af1bc8d",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "00968602": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "00971300": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -2600,111 +1142,12 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "01039011": {
-    "compe4": null,
-    "org": "COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL",
-    "cnpj": "00315557000111",
-    "uri": "https://unicred.com.br/site/logo_unicred_vertical-margem90px.svg",
-    "sourceSha256": "6a4f9713f091dcba81fb5a08c84168925f9bdf48fd6e2d1e1a939e3281922ec4",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "01155801": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "01181521": {
     "compe4": "0748",
     "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
     "cnpj": "03795072000160",
     "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
     "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "01205736": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "01259518": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "01526924": {
-    "compe4": null,
-    "org": "COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL",
-    "cnpj": "00315557000111",
-    "uri": "https://unicred.com.br/site/logo_unicred_vertical-margem90px.svg",
-    "sourceSha256": "6a4f9713f091dcba81fb5a08c84168925f9bdf48fd6e2d1e1a939e3281922ec4",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "01604998": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "01635462": {
-    "compe4": null,
-    "org": "COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL",
-    "cnpj": "00315557000111",
-    "uri": "https://unicred.com.br/site/logo_unicred_vertical-margem90px.svg",
-    "sourceSha256": "6a4f9713f091dcba81fb5a08c84168925f9bdf48fd6e2d1e1a939e3281922ec4",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "01644264": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "01667352": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "01667766": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "01705236": {
-    "compe4": null,
-    "org": "COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL",
-    "cnpj": "00315557000111",
-    "uri": "https://unicred.com.br/site/logo_unicred_vertical-margem90px.svg",
-    "sourceSha256": "6a4f9713f091dcba81fb5a08c84168925f9bdf48fd6e2d1e1a939e3281922ec4",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -2717,15 +1160,6 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "01727929": {
-    "compe4": null,
-    "org": "COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL",
-    "cnpj": "00315557000111",
-    "uri": "https://unicred.com.br/site/logo_unicred_vertical-margem90px.svg",
-    "sourceSha256": "6a4f9713f091dcba81fb5a08c84168925f9bdf48fd6e2d1e1a939e3281922ec4",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "01858774": {
     "compe4": "0413",
     "org": "BCO VOTORANTIM S.A.",
@@ -2735,80 +1169,8 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "02015588": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "02038232": {
     "compe4": "0756",
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02057584": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02072790": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02090126": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02179673": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02254376": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02275781": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02282165": {
-    "compe4": null,
     "org": "Confederacao Nacional das Cooperativas do Sicoob",
     "cnpj": "04891850000188",
     "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
@@ -2825,15 +1187,6 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "02382755": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "02398976": {
     "compe4": "0084",
     "org": "SISPRIME DO BRASIL - COOPERATIVA DE CREDITO",
@@ -2843,102 +1196,12 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "02446089": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02447120": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02448310": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02448839": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02466552": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02493000": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02528151": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02663426": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "02682287": {
     "compe4": "0555",
     "org": "BANCO PAN",
     "cnpj": "59285411000113",
     "uri": "https://www.bancopan.com.br/content/dam/documentos/outros-produtos/open-banking/logo_pan_openbanking.svg",
     "sourceSha256": "4ca9e04c2f27ab627ff54dbd2d31a26640e29d431808e3ff78e724fce28d16ab",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02766672": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02794761": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -2960,114 +1223,6 @@
     "svg": false,
     "updatedAt": "2026-07-17"
   },
-  "02833202": {
-    "compe4": null,
-    "org": "COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL",
-    "cnpj": "00315557000111",
-    "uri": "https://unicred.com.br/site/logo_unicred_vertical-margem90px.svg",
-    "sourceSha256": "6a4f9713f091dcba81fb5a08c84168925f9bdf48fd6e2d1e1a939e3281922ec4",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02843443": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02844024": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02876918": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02904125": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02904138": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02910987": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02923389": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02924977": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02931668": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02934201": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "02935307": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "02992317": {
     "compe4": "0143",
     "org": null,
@@ -3077,57 +1232,12 @@
     "svg": false,
     "updatedAt": "2026-07-17"
   },
-  "03000142": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "03015152": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "03017677": {
     "compe4": "0074",
     "org": "BCO SAFRA S.A.",
     "cnpj": "58160789000128",
     "uri": "https://www.safra.com.br/shared/assets/img/safra-of.svg",
     "sourceSha256": "9c25f4839fe8a258db6c0a59f192120f97f5ef49830f3db05ebd6cac82e02e50",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "03042597": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "03065046": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "03102185": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -3140,93 +1250,12 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "03212823": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "03311443": {
     "compe4": "0326",
     "org": "PARATI - CFI S.A.",
     "cnpj": "03311443000191",
     "uri": "https://parati-cfi.com.br/images/logo.svg",
     "sourceSha256": "a4430c55f67f007e67a62b316c682c05cc2bab6cc5a23d92ba6a9ad685f9a0af",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "03320525": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "03358914": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "03428338": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "03459850": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "03485130": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "03535065": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "03566655": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "03603683": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -3239,52 +1268,7 @@
     "svg": false,
     "updatedAt": "2026-07-17"
   },
-  "03620772": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "03632872": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "03662047": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "03732359": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "03750034": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "03793242": {
+  "03795072": {
     "compe4": null,
     "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
     "cnpj": "03795072000160",
@@ -3302,102 +1286,12 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "03862898": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "03965737": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "04013172": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "04079285": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "04120633": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "04174720": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "04184779": {
     "compe4": "0063",
     "org": "BANCO BRADESCARD",
     "cnpj": "04184779000101",
     "uri": "https://banco.bradesco/open-finance/logo/icones_vetorial-pf.svg",
     "sourceSha256": "eab31731175c5229512016c2cdf98f38affecb891c217bbe6ea6b83e4c5bdb38",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "04237413": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "04243780": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "04261151": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "04321309": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -3410,147 +1304,12 @@
     "svg": false,
     "updatedAt": "2026-07-17"
   },
-  "04350225": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "04355489": {
-    "compe4": null,
-    "org": "COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL",
-    "cnpj": "00315557000111",
-    "uri": "https://unicred.com.br/site/logo_unicred_vertical-margem90px.svg",
-    "sourceSha256": "6a4f9713f091dcba81fb5a08c84168925f9bdf48fd6e2d1e1a939e3281922ec4",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "04388688": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "04445917": {
-    "compe4": null,
-    "org": "COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL",
-    "cnpj": "00315557000111",
-    "uri": "https://unicred.com.br/site/logo_unicred_vertical-margem90px.svg",
-    "sourceSha256": "6a4f9713f091dcba81fb5a08c84168925f9bdf48fd6e2d1e1a939e3281922ec4",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "04463602": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "04484490": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "04490531": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "04525997": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "04529074": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "04565791": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "04649337": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "04715685": {
+  "04891850": {
     "compe4": "0016",
     "org": "Confederacao Nacional das Cooperativas do Sicoob",
     "cnpj": "04891850000188",
     "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
     "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "04751713": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "04833655": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "04853988": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "04886317": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -3572,246 +1331,12 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "05036532": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "05070112": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "05203605": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "05220243": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "05222094": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "05231945": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "05241145": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "05241619": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "05247312": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "05269976": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "05276770": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "05277312": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "05410056": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "05425526": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "05463212": {
     "compe4": "0085",
     "org": "CENTRAL AILOS",
     "cnpj": "05463212000129",
     "uri": "https://www.ailos.coop.br/wp-content/uploads/2023/06/Logos_512x512px_Ailos.svg",
     "sourceSha256": "ca043b92fd666a4f4ec01162b8eaec0b96eb69d599e477b73fa2ba9fe8f83664",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "05477038": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "05494591": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "05545390": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "05582619": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "05856736": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "05863726": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "05983995": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "06031727": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "06078926": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "06126780": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "06139650": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "06174009": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -3824,75 +1349,12 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "06332931": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "07026923": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "07070495": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "07097064": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "07122321": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "07138049": {
     "compe4": "0469",
     "org": "PICPAY",
     "cnpj": "22896431000110",
     "uri": "https://picpay.s3.sa-east-1.amazonaws.com/openbanking/picpay-logo-icon-pf.svg",
     "sourceSha256": "5dda49002fc6d9b323a30d88afd7e9ba5b54982dc5ffcf630364aa94bfcf43b8",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "07194313": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "07206072": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -3905,93 +1367,12 @@
     "svg": false,
     "updatedAt": "2026-07-17"
   },
-  "07215632": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "07237373": {
     "compe4": "0004",
     "org": "BCO DO NORDESTE DO BRASIL S.A.",
     "cnpj": "07237373000120",
     "uri": "https://consentimento.openfinance.bnb.gov.br/logo_bnb.svg",
     "sourceSha256": "e07c03253a3b5f81dd890ec3d2f304f641d502e1d968f8ad8d76e4fb8732a997",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "07252614": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "07268499": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "07318874": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "07320890": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "07412987": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "07465539": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "07509426": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "07512780": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -4004,87 +1385,6 @@
     "svg": false,
     "updatedAt": "2026-07-17"
   },
-  "07669921": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "07925729": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "07946216": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "07946451": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "07958405": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "08041950": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "08044854": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "08055016": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "08071414": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "08357240": {
     "compe4": "0368",
     "org": "BANCO CSF S/A",
@@ -4094,75 +1394,12 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "08488377": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "08560508": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "08561701": {
     "compe4": "0290",
     "org": "PAGSEGURO",
     "cnpj": "08561701000101",
     "uri": "https://openfinance.api.pagseguro.uol.com.br/img/logo_pagbank.svg",
     "sourceSha256": "ea47e0f0d6687547248eadbafbd867e7e3954b70b96b2cc3284724a22d47d7c4",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "08624548": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "08742188": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "08795285": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "08844074": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "09004796": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -4184,66 +1421,12 @@
     "svg": false,
     "updatedAt": "2026-07-17"
   },
-  "09330158": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "09343038": {
-    "compe4": null,
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "09403026": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "09424988": {
-    "compe4": null,
-    "org": "Confederacao Nacional das Cooperativas do Sicoob",
-    "cnpj": "04891850000188",
-    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "09463721": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "09464032": {
     "compe4": "0358",
     "org": "MIDWAY S.A. - SCFI",
     "cnpj": "09464032000112",
     "uri": "https://openfinance.midway.com.br/midway.svg",
     "sourceSha256": "50b86169b87b491532466436345b12f654808c292895af2c94a92bf48e83fee7",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "09488496": {
-    "compe4": null,
-    "org": "CRESOL CONFEDERAÇÃO",
-    "cnpj": "10398952000169",
-    "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-    "sourceSha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
     "svg": true,
     "updatedAt": "2026-07-17"
   },

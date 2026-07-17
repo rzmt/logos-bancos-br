@@ -50,6 +50,8 @@ export interface BackboneParticipant {
   compe4: string | null;
   shortName: string;
   fullName: string;
+  /** 14-digit CNPJ — known only for Pix-only institutions (from the Pix CSV). */
+  cnpj: string | null;
   /** null for institutions that are not active Pix participants. */
   pix: PixInfo | null;
 }
@@ -129,12 +131,21 @@ export interface MatchEntry {
   compe4: string | null;
   shortName: string;
   fullName: string;
+  cnpj: string | null;
   pix?: PixInfo | null;
   source: MatchSource | null;
   /** Logo URL when source is directory/forced-uri based; null for overrides. */
   uri: string | null;
   orgName: string | null;
   orgCnpj: string | null;
+  /**
+   * Brand-matched entries share one asset file instead of getting their own
+   * copy: the file is keyed by the brand organisation's CNPJ root. Absent for
+   * every other source (the file is keyed by the institution's own ISPB).
+   */
+  assetIspb?: string;
+  /** Brand token that matched (e.g. "SICOOB") for `brand-match` entries. */
+  brandToken?: string;
 }
 
 export interface NameSuggestion {
@@ -162,9 +173,16 @@ export interface ManifestEntry {
 export type Manifest = Record<string, ManifestEntry>;
 
 export interface BankLogoSource {
-  type: 'openfinance' | 'direct-uri' | 'override';
+  /**
+   * `brand` = the logo is inherited from the institution's cooperative
+   * system (Sicoob, Sicredi, …) via a curated rule — not the institution's
+   * own artwork.
+   */
+  type: 'openfinance' | 'direct-uri' | 'override' | 'brand';
   org: string | null;
   cnpj: string | null;
+  /** System brand token when type is `brand` (e.g. "SICOOB"). */
+  brand?: string;
   uri: string;
   sha256: string;
   updatedAt: string;
@@ -176,11 +194,13 @@ export interface BankLogo {
   source: BankLogoSource;
 }
 
+/** Main-list institution (has a COMPE code; STR participant). */
 export interface Bank {
   ispb: string;
-  /** null for Pix-only institutions (no COMPE number). */
-  compe: string | null;
-  compe4: string | null;
+  /** COMPE number as published (digits only, e.g. "1", "341"). */
+  compe: string;
+  /** COMPE zero-padded to 4 digits (e.g. "0001", "0341"). */
+  compe4: string;
   name: string;
   shortName: string;
   /** Pix participation attributes; null when not an active Pix participant. */
@@ -188,6 +208,24 @@ export interface Bank {
   logo: BankLogo | null;
 }
 
+/** Pix-only institution (no COMPE code) — shipped in a separate dataset. */
+export interface PixInstitution {
+  ispb: string;
+  /** Discriminants vs Bank. */
+  compe: null;
+  compe4: null;
+  /** 14-digit CNPJ from the Pix participants list. */
+  cnpj: string;
+  name: string;
+  shortName: string;
+  pix: PixInfo;
+  logo: BankLogo | null;
+}
+
 export interface Dataset {
   banks: Bank[];
+}
+
+export interface PixDataset {
+  institutions: PixInstitution[];
 }

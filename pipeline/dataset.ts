@@ -1,11 +1,59 @@
 /**
- * Builds `data/bancos.json` — every STR institution with a COMPE number,
- * with per-logo provenance (source URI, sha256, date) when a logo exists.
+ * Builds the two shipped datasets:
+ *  - `data/bancos.json` — the main list (institutions with a COMPE code);
+ *  - `data/instituicoes-pix.json` — Pix-only institutions (no COMPE),
+ *    kept separate so the main list stays clean.
+ *
+ * Both carry per-logo provenance. Brand-matched institutions reference the
+ * shared asset of their cooperative system (one file per brand) and are
+ * marked with `source.type: "brand"` + the brand token.
  */
 
-import type { Bank, BankLogoSource, Dataset, Manifest, MatchEntry } from './types';
+import type {
+  Bank,
+  BankLogo,
+  BankLogoSource,
+  Dataset,
+  Manifest,
+  MatchEntry,
+  PixDataset,
+  PixInstitution,
+} from './types';
 
-export function buildDataset({
+function buildLogo(
+  entry: MatchEntry,
+  manifest: Manifest,
+  pngIspbs: Set<string>,
+  svgIspbs: Set<string>,
+): BankLogo | null {
+  const assetIspb = entry.assetIspb ?? entry.ispb;
+  const state = manifest[assetIspb];
+  if (!state || !pngIspbs.has(assetIspb)) return null;
+
+  let type: BankLogoSource['type'];
+  if (entry.source === 'brand-match') type = 'brand';
+  else if (state.uri.startsWith('override:')) type = 'override';
+  else if (state.org) type = 'openfinance';
+  else type = 'direct-uri';
+
+  const source: BankLogoSource = {
+    type,
+    org: state.org,
+    cnpj: state.cnpj,
+    uri: state.uri,
+    sha256: state.sourceSha256,
+    updatedAt: state.updatedAt,
+  };
+  if (type === 'brand' && entry.brandToken) source.brand = entry.brandToken;
+
+  return {
+    png: `logos/png/${assetIspb}.png`,
+    svg: state.svg && svgIspbs.has(assetIspb) ? `logos/svg/${assetIspb}.svg` : null,
+    source,
+  };
+}
+
+export function buildDatasets({
   entries,
   manifest,
   pngIspbs,
@@ -15,35 +63,18 @@ export function buildDataset({
   manifest: Manifest;
   pngIspbs: Set<string>;
   svgIspbs: Set<string>;
-}): Dataset {
-  // COMPE'd institutions first (sorted by code), then Pix-only ones by ISPB.
-  const banks: Bank[] = [...entries]
-    .sort(
-      (a, b) => (a.compe4 ?? '￿').localeCompare(b.compe4 ?? '￿') || a.ispb.localeCompare(b.ispb),
-    )
-    .map((entry) => {
-      const state = manifest[entry.ispb];
-      let logo: Bank['logo'] = null;
-      if (state && pngIspbs.has(entry.ispb)) {
-        const type: BankLogoSource['type'] = state.uri.startsWith('override:')
-          ? 'override'
-          : state.org
-            ? 'openfinance'
-            : 'direct-uri';
-        logo = {
-          png: `logos/png/${entry.ispb}.png`,
-          svg: state.svg && svgIspbs.has(entry.ispb) ? `logos/svg/${entry.ispb}.svg` : null,
-          source: {
-            type,
-            org: state.org,
-            cnpj: state.cnpj,
-            uri: state.uri,
-            sha256: state.sourceSha256,
-            updatedAt: state.updatedAt,
-          },
-        };
-      }
-      return {
+}): { dataset: Dataset; pixDataset: PixDataset } {
+  const sorted = [...entries].sort(
+    (a, b) => (a.compe4 ?? '￿').localeCompare(b.compe4 ?? '￿') || a.ispb.localeCompare(b.ispb),
+  );
+
+  const banks: Bank[] = [];
+  const pixInstitutions: PixInstitution[] = [];
+
+  for (const entry of sorted) {
+    const logo = buildLogo(entry, manifest, pngIspbs, svgIspbs);
+    if (entry.compe !== null && entry.compe4 !== null) {
+      banks.push({
         ispb: entry.ispb,
         compe: entry.compe,
         compe4: entry.compe4,
@@ -51,12 +82,24 @@ export function buildDataset({
         shortName: entry.shortName,
         pix: entry.pix ?? null,
         logo,
-      };
-    });
+      });
+    } else if (entry.pix && entry.cnpj) {
+      pixInstitutions.push({
+        ispb: entry.ispb,
+        compe: null,
+        compe4: null,
+        cnpj: entry.cnpj,
+        name: entry.fullName,
+        shortName: entry.shortName,
+        pix: entry.pix,
+        logo,
+      });
+    }
+  }
 
-  return { banks };
+  return { dataset: { banks }, pixDataset: { institutions: pixInstitutions } };
 }
 
-export function toDatasetJson(dataset: Dataset): string {
-  return `${JSON.stringify(dataset, null, 2)}\n`;
+export function toJson(value: unknown): string {
+  return `${JSON.stringify(value, null, 2)}\n`;
 }

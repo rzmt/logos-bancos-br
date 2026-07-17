@@ -9,18 +9,21 @@
 
 Key facts:
 
-- The **institution list is auto-updated**: the union (keyed by ISPB) of the BCB STR
-  participants list and the BCB active Pix participants list — currently ~1,113 institutions —
-  ships in `data/bancos.json` with `ispb` (8 digits), `compe`/`compe4` (or null for Pix-only
-  institutions), official `name`, `shortName`, `pix` (participation attributes verbatim from
-  the BCB list, or null) and `logo` (or `logo: null`).
-- The **logos are auto-updated** too: currently ~473 institutions, as normalized transparent
-  256×256 PNGs (`logos/png/<ISPB>.png`) plus sanitized original SVGs (`logos/svg/<ISPB>.svg`)
-  when available. Assets are keyed by **ISPB**, not COMPE. Each logo's `source.type` states the
-  origin: `openfinance` (Open Finance directory), `direct-uri` (the institution's own official
-  website, hand-reviewed) or `override`. Filter by origin via `bank.logo.source.type`.
-  Affiliates of single-brand cooperative systems (Sicoob, Sicredi, Cresol, Unicred) carry the
-  system's logo via a curated whole-word brand rule.
+- The **institution list is auto-updated and split in two datasets**: `data/bancos.json` is
+  the MAIN list (the ~470 institutions with a COMPE code, from the BCB STR participants list);
+  `data/instituicoes-pix.json` is the separate Pix-only set (~643 institutions without COMPE —
+  fintechs, payment institutions, cooperative affiliates — from the BCB active Pix participants
+  list, each with a 14-digit `cnpj`). Both carry `ispb`, official names, `pix` participation
+  attributes (verbatim from the BCB list, or null) and `logo` (or null). API: `banks()` = main
+  list, `pixInstitutions()` = Pix-only, `allInstitutions()` = both, `byIspb()` resolves across
+  the two, `byCompe()` only over the main list.
+- The **logos are auto-updated and deduplicated**: ~473 institutions with a logo backed by
+  ~160 distinct files, as normalized transparent 256×256 PNGs (`logos/png/<ISPB>.png`) plus
+  sanitized original SVGs when available. Assets are keyed by **ISPB**. `source.type` states
+  the origin: `openfinance`, `direct-uri` (institution's own official website, hand-reviewed),
+  `override`, or `brand` — a logo inherited from the institution's cooperative system (Sicoob,
+  Sicredi, Cresol, Unicred) via a curated whole-word rule; brand affiliates all reference ONE
+  shared file per system and carry `source.brand` with the system token.
 - **Update cadence**: a GitHub Action (`.github/workflows/update-logos.yml`) runs every Monday
   (and on demand), rebuilds the list and the logos from the official sources, and opens a pull
   request with a report and the visual diff. Nothing is hand-curated.

@@ -101,11 +101,12 @@ describe('mergeBackbone', () => {
     expect(itau?.pix?.pixParticipationType).toBe('Obrigatória');
   });
 
-  it('adds Pix-only institutions with compe null', () => {
+  it('adds Pix-only institutions with compe null and their CNPJ', () => {
     const merged = mergeBackbone(str, pix);
     const pay99 = merged.find((p) => p.ispb === '24313102');
     expect(pay99?.compe).toBeNull();
     expect(pay99?.compe4).toBeNull();
+    expect(pay99?.cnpj).toBe('24313102000125');
     expect(pay99?.fullName).toBe('99PAY IP S.A.');
     expect(merged).toHaveLength(2);
   });

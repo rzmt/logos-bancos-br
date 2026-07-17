@@ -8,7 +8,7 @@
  */
 
 import { parseArgs } from 'node:util';
-import { banks, version } from './index';
+import { banks, pixInstitutions, version } from './index';
 import { copyLogos } from './node';
 
 const HELP = `logos-bancos-br v${version} — logos e dados de bancos brasileiros (fontes oficiais)
@@ -20,8 +20,9 @@ Uso:
       --by      nome dos arquivos: compe (0341.png, padrão) ou ispb (60701190.png)
       --only    restringe a códigos COMPE/ISPB separados por vírgula
 
-  logos-bancos-br list [--json]
-      Lista as instituições (COMPE, ISPB, nome, se há logo). --json emite o dataset.
+  logos-bancos-br list [--all] [--json]
+      Lista a lista principal (instituições com COMPE). --all inclui também as
+      instituições só-Pix (sem COMPE). --json emite o(s) dataset(s).
 
   logos-bancos-br help
 `;
@@ -78,23 +79,57 @@ switch (command) {
   }
 
   case 'list': {
-    const { values } = parseArgs({ args: rest, options: { json: { type: 'boolean' } } });
-    const all = banks();
+    const { values } = parseArgs({
+      args: rest,
+      options: { json: { type: 'boolean' }, all: { type: 'boolean' } },
+    });
     if (values.json) {
-      console.log(JSON.stringify({ banks: all }, null, 2));
+      const payload = values.all
+        ? { banks: banks(), pixInstitutions: pixInstitutions() }
+        : { banks: banks() };
+      console.log(JSON.stringify(payload, null, 2));
       break;
     }
-    for (const bank of all) {
+
+    for (const bank of banks()) {
       const marker = bank.logo ? '●' : '·';
+      console.log(`${marker} ${bank.compe4}  ${bank.ispb}  ${bank.shortName || bank.name}`);
+    }
+    const mainWithLogo = banks().filter((bank) => bank.logo).length;
+    console.log(
+      `\n${banks().length} instituições na lista principal · ${mainWithLogo} com logo (●)`,
+    );
+
+    const pix = pixInstitutions();
+    if (values.all) {
+      console.log('\n── Instituições só-Pix (sem COMPE) ──');
+      for (const institution of pix) {
+        const marker = institution.logo ? '●' : '·';
+        console.log(
+          `${marker} ----  ${institution.ispb}  ${institution.shortName || institution.name}`,
+        );
+      }
       console.log(
-        `${marker} ${bank.compe4 ?? '----'}  ${bank.ispb}  ${bank.shortName || bank.name}`,
+        `\n${pix.length} instituições só-Pix · ${pix.filter((i) => i.logo).length} com logo (●)`,
+      );
+    } else {
+      const byBrand = new Map<string, number>();
+      let other = 0;
+      for (const institution of pix) {
+        const brand =
+          institution.logo?.source.type === 'brand' ? institution.logo.source.brand : null;
+        if (brand) byBrand.set(brand, (byBrand.get(brand) ?? 0) + 1);
+        else other++;
+      }
+      const parts = [...byBrand.entries()]
+        .sort((a, b) => b[1] - a[1])
+        .map(([brand, count]) => `${brand} ${count}`);
+      console.log(
+        `+ ${pix.length} instituições só-Pix em instituicoes-pix.json` +
+          (parts.length ? ` (afiliadas: ${parts.join(', ')}; outras: ${other})` : '') +
+          ' — use --all para listar',
       );
     }
-    const withLogo = all.filter((bank) => bank.logo).length;
-    const pixOnly = all.filter((bank) => bank.compe4 === null).length;
-    console.log(
-      `\n${all.length} instituições (${pixOnly} só-Pix, sem COMPE) · ${withLogo} com logo (●)`,
-    );
     break;
   }
 

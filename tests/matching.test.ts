@@ -9,6 +9,7 @@ function participant(overrides: Partial<BackboneParticipant> = {}): BackbonePart
     compe4: '0341',
     shortName: 'ITAÚ UNIBANCO S.A.',
     fullName: 'Itaú Unibanco S.A.',
+    cnpj: null,
     pix: null,
     ...overrides,
   };
@@ -380,7 +381,36 @@ describe('brandMatches (regra curada de sistemas cooperativos)', () => {
     });
     expect(entries[0]?.source).toBe('brand-match');
     expect(entries[0]?.orgCnpj).toBe('04891850000188');
+    expect(entries[0]?.assetIspb).toBe('04891850');
+    expect(entries[0]?.brandToken).toBe('SICOOB');
     expect(suggestions).toHaveLength(0);
+  });
+
+  it('all affiliates of a brand share the same asset and uri', () => {
+    const { entries } = buildMatches({
+      participants: [
+        participant({
+          ispb: '25387655',
+          compe: null,
+          compe4: null,
+          shortName: 'CC CREDIVALE - SICOOB CREDIVALE',
+          fullName: 'CC CREDIVALE - SICOOB CREDIVALE',
+        }),
+        participant({
+          ispb: '07122321,'.slice(0, 8),
+          compe: null,
+          compe4: null,
+          shortName: 'CC INTEGRADO - SICOOB INTEGRADO',
+          fullName: 'CC INTEGRADO - SICOOB INTEGRADO',
+        }),
+      ],
+      directory: [sicoobConfed],
+      config: brandConfig,
+      overrides: new Map(),
+    });
+    expect(entries[0]?.assetIspb).toBe('04891850');
+    expect(entries[1]?.assetIspb).toBe('04891850');
+    expect(entries[0]?.uri).toBe(entries[1]?.uri);
   });
 
   it('does not fire on partial words and loses to ISPB/forced matches', () => {

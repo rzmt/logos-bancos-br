@@ -9,6 +9,7 @@
  */
 
 import rawData from '../data/bancos.json';
+import rawPixData from '../data/instituicoes-pix.json';
 
 export interface BankLogoSource {
   /**
@@ -16,13 +17,17 @@ export interface BankLogoSource {
    * - `openfinance`: published by the institution in the Open Finance Brasil
    *   participants directory (matched by ISPB/CNPJ);
    * - `direct-uri`: a hand-reviewed direct URL;
-   * - `override`: a manually maintained file in the repository.
+   * - `override`: a manually maintained file in the repository;
+   * - `brand`: inherited from the institution's cooperative system
+   *   (Sicoob, Sicredi, …) via a curated rule — shared asset, one file per brand.
    */
-  type: 'openfinance' | 'direct-uri' | 'override';
+  type: 'openfinance' | 'direct-uri' | 'override' | 'brand';
   /** Open Finance organisation name, when type is `openfinance`. */
   org: string | null;
   /** Organisation CNPJ (14 digits), when type is `openfinance`. */
   cnpj: string | null;
+  /** System brand token when type is `brand` (e.g. "SICOOB"). */
+  brand?: string;
   /** Source URI of the original artwork. */
   uri: string;
   /** SHA-256 of the original artwork (provenance / change detection). */
@@ -54,14 +59,15 @@ export interface PixInfo {
   authorizedByBcb: boolean;
 }
 
+/** Main-list institution: has a COMPE code (Central Bank STR participant). */
 export interface Bank {
   /** 8-digit ISPB (Central Bank identifier). */
   ispb: string;
-  /** COMPE number as published by the Central Bank; null for Pix-only institutions. */
-  compe: string | null;
-  /** COMPE zero-padded to 4 digits (e.g. "0001", "0341"); null for Pix-only institutions. */
-  compe4: string | null;
-  /** Official full name (Nome Extenso; equals shortName for Pix-only institutions). */
+  /** COMPE number as published by the Central Bank (e.g. "1", "341"). */
+  compe: string;
+  /** COMPE zero-padded to 4 digits (e.g. "0001", "0341"). */
+  compe4: string;
+  /** Official full name (Nome Extenso). */
   name: string;
   /** Official short name (Nome Reduzido). */
   shortName: string;
@@ -71,7 +77,29 @@ export interface Bank {
   logo: BankLogo | null;
 }
 
+/**
+ * Pix-only institution (no COMPE code) — shipped in the separate
+ * `data/instituicoes-pix.json` dataset so the main list stays clean.
+ */
+export interface PixInstitution {
+  /** 8-digit ISPB (Central Bank identifier). */
+  ispb: string;
+  /** Discriminant vs Bank: Pix-only institutions have no COMPE code. */
+  compe: null;
+  compe4: null;
+  /** 14-digit CNPJ from the Pix participants list. */
+  cnpj: string;
+  name: string;
+  shortName: string;
+  pix: PixInfo;
+  logo: BankLogo | null;
+}
+
+/** Any institution from either dataset. */
+export type Institution = Bank | PixInstitution;
+
 const data = rawData as { banks: Bank[] };
+const pixData = rawPixData as { institutions: PixInstitution[] };
 
 /** Package version (used to pin CDN URLs). */
 export const version: string = __PKG_VERSION__;
@@ -87,25 +115,41 @@ export function normalizeIspb(ispb: string | number): string {
 }
 
 let compeIndex: Map<string, Bank> | null = null;
-let ispbIndex: Map<string, Bank> | null = null;
+let ispbIndex: Map<string, Institution> | null = null;
 
 function ensureIndexes(): void {
   if (compeIndex && ispbIndex) return;
   compeIndex = new Map();
   ispbIndex = new Map();
   for (const bank of data.banks) {
-    if (bank.compe4) compeIndex.set(bank.compe4, bank);
+    compeIndex.set(bank.compe4, bank);
     ispbIndex.set(bank.ispb, bank);
+  }
+  for (const institution of pixData.institutions) {
+    ispbIndex.set(institution.ispb, institution);
   }
 }
 
 /**
- * Every institution in the combined Central Bank backbone: the STR list
- * (institutions with a COMPE number) plus the active Pix participants list
- * (which adds Pix-only institutions, with `compe: null`).
+ * The main list: every institution with a COMPE code in the Central Bank STR
+ * participants list. Pix-only institutions live in `pixInstitutions()`.
  */
 export function banks(): readonly Bank[] {
   return data.banks;
+}
+
+/**
+ * Pix-only institutions (active Pix participants without a COMPE code) —
+ * fintechs, payment institutions and cooperative-system affiliates. Kept in a
+ * separate dataset so the main list stays clean.
+ */
+export function pixInstitutions(): readonly PixInstitution[] {
+  return pixData.institutions;
+}
+
+/** Every institution from both datasets (main list + Pix-only). */
+export function allInstitutions(): readonly Institution[] {
+  return [...data.banks, ...pixData.institutions];
 }
 
 /** Looks a bank up by COMPE code ("341", 341 and "0341" are equivalent). */
@@ -114,8 +158,8 @@ export function byCompe(code: string | number): Bank | undefined {
   return compeIndex?.get(normalizeCompe(code));
 }
 
-/** Looks a bank up by 8-digit ISPB. */
-export function byIspb(ispb: string | number): Bank | undefined {
+/** Looks any institution (main list or Pix-only) up by 8-digit ISPB. */
+export function byIspb(ispb: string | number): Institution | undefined {
   ensureIndexes();
   return ispbIndex?.get(normalizeIspb(ispb));
 }
@@ -124,7 +168,7 @@ export function byIspb(ispb: string | number): Bank | undefined {
  * Convenience lookup: digits with more than 4 characters are treated as an
  * ISPB, anything else as a COMPE code.
  */
-export function findBank(code: string | number | Bank): Bank | undefined {
+export function findBank(code: string | number | Institution): Institution | undefined {
   if (typeof code === 'object') return code;
   const digits = String(code).replace(/\D/g, '');
   return digits.length > 4 ? byIspb(digits) : byCompe(digits);
@@ -144,7 +188,7 @@ export interface LogoCdnUrlOptions {
  * Example: https://cdn.jsdelivr.net/npm/logos-bancos-br@0.1.0/logos/png/60701190.png
  */
 export function logoCdnUrl(
-  code: string | number | Bank,
+  code: string | number | Institution,
   { format = 'png', version: pinnedVersion = version }: LogoCdnUrlOptions = {},
 ): string | null {
   const bank = findBank(code);

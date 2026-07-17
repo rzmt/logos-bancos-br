@@ -30,17 +30,18 @@
 
 ## What this package gives you
 
-1. **The list of institutions — auto-updated.** The union, keyed by ISPB, of two Central Bank
-   lists: STR participants (every institution with a COMPE code, currently 470) and **active Pix
-   participants** (currently ~880, ~640 of which have no COMPE — fintechs, payment institutions,
-   credit unions). **1,113 institutions** in [`data/bancos.json`](data/bancos.json), with
-   official names, COMPE (when it exists), ISPB and Pix participation attributes.
-2. **Official logos.** Currently **473**, as 256×256 PNGs (+ SVG when available), from two
-   origins — both official and identified in the dataset (`logo.source.type`): the public **Open
-   Finance Brasil** directory (`openfinance`) and the **institution's own official website**
-   (`direct-uri`), visually curated before shipping. Affiliates of single-brand cooperative
-   systems (Sicoob, Sicredi, Cresol, Unicred) get the system's logo via a curated brand rule.
-   Every file carries provenance: source URI, SHA-256 and date.
+1. **The list of institutions — auto-updated, in two sets.** The **main list**
+   ([`data/bancos.json`](data/bancos.json)) carries the **470 institutions with a COMPE code**
+   from the Central Bank STR participants list. The **643 Pix-only institutions** (fintechs,
+   payment institutions, cooperative affiliates — no COMPE) live in a separate dataset
+   ([`data/instituicoes-pix.json`](data/instituicoes-pix.json)) — the main list stays clean,
+   and the full Pix universe is one import away.
+2. **Official logos, deduplicated.** **473 institutions with a logo** backed by **160 distinct
+   files** (~1.7 MB): affiliates of single-brand cooperative systems (Sicoob, Sicredi, Cresol,
+   Unicred) **share one file per system**, marked `logo.source.type: "brand"`. Own logos come
+   from the public **Open Finance Brasil** directory (`openfinance`) or the **institution's own
+   official website** (`direct-uri`, visually curated). Every file carries provenance: source
+   URI, SHA-256 and date.
 3. **Automatic updates, no manual curation.** Every Monday a GitHub Action
    ([`update-logos.yml`](.github/workflows/update-logos.yml)) rebuilds **both the list AND the
    logos** from the sources and opens a PR with the visual diff. A bank created, renamed or
@@ -82,10 +83,10 @@ Requires **Node ≥ 20** for Node/CLI usage (web and React Native follow your bu
 environment). Zero runtime dependencies. Published with **npm provenance** — verify integrity
 with `npm audit signatures`.
 
-Files are named by **ISPB** (8 digits — which is what lets the ~640 COMPE-less Pix institutions
-in). Lookups accept **COMPE or ISPB**; Pix-only institutions have `compe: null` and are
-addressable by ISPB. Each bank carries a `pix` block (participation attributes, verbatim from
-the BCB list) or `null`.
+Files are named by **ISPB** (8 digits). `banks()` is the main list (COMPE holders);
+`pixInstitutions()` is the separate Pix-only set; `allInstitutions()` is both; `byIspb()`
+resolves across the two. Each institution carries a `pix` block (participation attributes,
+verbatim from the BCB list) or `null`.
 
 ```ts
 import { banks, byCompe, byIspb, logoCdnUrl } from 'logos-bancos-br';
@@ -95,8 +96,9 @@ byIspb('00000000');  // Banco do Brasil
 logoCdnUrl(341);     // https://cdn.jsdelivr.net/npm/logos-bancos-br@x.y.z/logos/png/60701190.png
 ```
 
-**React Native (Expo/Metro)** — static require() map (bundles all logos, ~4 MB; keys accept both the
-4-digit COMPE and the 8-digit ISPB — Pix-only institutions by ISPB only):
+**React Native (Expo/Metro)** — static require() map (bundles the 160 distinct logos, ~1.7 MB; keys accept both
+the 4-digit COMPE and the 8-digit ISPB — Pix-only institutions by ISPB only; affiliates point at
+the shared system asset):
 
 ```tsx
 import logos from 'logos-bancos-br/react-native';
@@ -123,20 +125,23 @@ npx logos-bancos-br list
 https://cdn.jsdelivr.net/npm/logos-bancos-br@0.3.0/logos/png/60701190.png
 ```
 
-**Data only** (the bank list):
+**Data only**:
 
 ```ts
-import data from 'logos-bancos-br/data/bancos.json';
+import banks from 'logos-bancos-br/data/bancos.json';          // main list (COMPE)
+import pixOnly from 'logos-bancos-br/data/instituicoes-pix.json'; // Pix-only
 ```
 
 ### API quick reference
 
 | Import | Function | Returns |
 |---|---|---|
-| `logos-bancos-br` | `banks()` | every institution (`Bank[]`) |
+| `logos-bancos-br` | `banks()` | main list — COMPE institutions (`Bank[]`) |
+| | `pixInstitutions()` | Pix-only set (`PixInstitution[]`) |
+| | `allInstitutions()` | both sets (`Institution[]`) |
 | | `byCompe(code)` | `Bank \| undefined` — `341`, `'341'` and `'0341'` are equivalent |
-| | `byIspb(ispb)` | `Bank \| undefined` |
-| | `findBank(code)` | `Bank \| undefined` — more than 4 digits is treated as ISPB |
+| | `byIspb(ispb)` | `Institution \| undefined` — resolves across both sets |
+| | `findBank(code)` | `Institution \| undefined` — more than 4 digits is treated as ISPB |
 | | `logoCdnUrl(code, { format?, version? })` | jsDelivr URL, or `null` when there is no logo |
 | | `normalizeCompe(x)` · `normalizeIspb(x)` | `'0341'` · `'60701190'` |
 | | `version` | package version (string) |
@@ -144,7 +149,7 @@ import data from 'logos-bancos-br/data/bancos.json';
 | | `copyLogos({ dest, format?, by?, only? })` | copies assets into a directory (what the CLI uses) |
 | `logos-bancos-br/react-native` | `logos` (default export) | require() map keyed by COMPE4 **and** ISPB |
 
-Exported TypeScript types: `Bank`, `BankLogo`, `BankLogoSource`, `PixInfo`.
+Exported TypeScript types: `Bank`, `PixInstitution`, `Institution`, `BankLogo`, `BankLogoSource`, `PixInfo`.
 
 ## Dataset shape
 
@@ -165,8 +170,10 @@ Exported TypeScript types: `Bank`, `BankLogo`, `BankLogoSource`, `PixInfo`.
 ```
 
 `logo.png` is a normalized transparent 256×256 PNG; `logo.svg` is the original vector when safely
-redistributable; `logo: null` means the institution has no logo in the official sources; `compe: null` marks a
-Pix-only institution (address it by ISPB); `pix: null` marks a non-Pix participant.
+redistributable; `logo: null` means no logo in the official sources; `logo.source.type: "brand"`
+marks a logo inherited from the institution's cooperative system (shared asset, `brand` says
+which); `pix: null` marks a non-Pix participant. Pix-only records (separate dataset) always have
+`compe: null`, a 14-digit `cnpj` and a `pix` block.
 
 ## How the auto-update works
 

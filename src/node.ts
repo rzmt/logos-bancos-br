@@ -6,7 +6,13 @@
 import { copyFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { type Bank, banks, findBank, normalizeCompe, normalizeIspb } from './index';
+import {
+  allInstitutions,
+  findBank,
+  type Institution,
+  normalizeCompe,
+  normalizeIspb,
+} from './index';
 
 function packagePath(relative: string): string {
   // dist/node.{js,cjs} lives one level below the package root.
@@ -14,13 +20,13 @@ function packagePath(relative: string): string {
 }
 
 /** Absolute path of the bank's normalized PNG, or null when it has no logo. */
-export function logoPngPath(code: string | number | Bank): string | null {
+export function logoPngPath(code: string | number | Institution): string | null {
   const bank = findBank(code);
   return bank?.logo ? packagePath(bank.logo.png) : null;
 }
 
 /** Absolute path of the bank's original SVG, or null when unavailable. */
-export function logoSvgPath(code: string | number | Bank): string | null {
+export function logoSvgPath(code: string | number | Institution): string | null {
   const bank = findBank(code);
   return bank?.logo?.svg ? packagePath(bank.logo.svg) : null;
 }
@@ -64,7 +70,7 @@ export function copyLogos({
   const skippedNoSvg: string[] = [];
   const skippedNoCompe: string[] = [];
 
-  for (const bank of banks()) {
+  for (const bank of allInstitutions()) {
     if (!bank.logo) continue;
     if (filter && !(bank.compe4 !== null && filter.has(bank.compe4)) && !filter.has(bank.ispb)) {
       continue;
