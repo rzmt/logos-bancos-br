@@ -5,9 +5,7 @@
   "timeoutMs": 15000,
   "concurrency": 5,
   "nameSuggestionThreshold": 0.5,
-  "denylistUris": [
-    "https://auth-obk.brb.com.br/openbanking/v1/logo/brb.svg"
-  ],
+  "denylistUris": ["https://auth-obk.brb.com.br/openbanking/v1/logo/brb.svg"],
   "forcedUris": {},
   "forcedMatches": {
     "01181521": "03795072000160",

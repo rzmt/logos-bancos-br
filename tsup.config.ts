@@ -10,5 +10,9 @@ export default defineConfig({
   format: ['esm', 'cjs'],
   dts: true,
   clean: true,
+  // Shares the inlined dataset chunk between entries instead of tripling it.
+  splitting: true,
+  // import.meta.url shim for the CJS build (used by src/node.ts asset paths).
+  shims: true,
   define: { __PKG_VERSION__: JSON.stringify(pkg.version) },
 });
