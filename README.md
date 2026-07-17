@@ -4,8 +4,8 @@
 > 100% oficiais (Banco Central e Open Finance Brasil) e **reconstruído automaticamente toda
 > semana por CI** — com proveniência verificável por logo. **[English version](README.en.md)**
 
-[![CI](https://github.com/rafael-matos-dev/logos-bancos-br/actions/workflows/ci.yml/badge.svg)](https://github.com/rafael-matos-dev/logos-bancos-br/actions/workflows/ci.yml)
-[![atualização](https://github.com/rafael-matos-dev/logos-bancos-br/actions/workflows/update-logos.yml/badge.svg)](https://github.com/rafael-matos-dev/logos-bancos-br/actions/workflows/update-logos.yml)
+[![CI](https://github.com/rzmt/logos-bancos-br/actions/workflows/ci.yml/badge.svg)](https://github.com/rzmt/logos-bancos-br/actions/workflows/ci.yml)
+[![atualização](https://github.com/rzmt/logos-bancos-br/actions/workflows/update-logos.yml/badge.svg)](https://github.com/rzmt/logos-bancos-br/actions/workflows/update-logos.yml)
 [![npm](https://img.shields.io/npm/v/logos-bancos-br)](https://www.npmjs.com/package/logos-bancos-br)
 [![licença](https://img.shields.io/badge/licen%C3%A7a-MIT-blue)](LICENSE)
 

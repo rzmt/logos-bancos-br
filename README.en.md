@@ -5,8 +5,8 @@
 > automatically every week by CI** — with verifiable per-logo provenance.
 > **[Versão em português](README.md)**
 
-[![CI](https://github.com/rafael-matos-dev/logos-bancos-br/actions/workflows/ci.yml/badge.svg)](https://github.com/rafael-matos-dev/logos-bancos-br/actions/workflows/ci.yml)
-[![update](https://github.com/rafael-matos-dev/logos-bancos-br/actions/workflows/update-logos.yml/badge.svg)](https://github.com/rafael-matos-dev/logos-bancos-br/actions/workflows/update-logos.yml)
+[![CI](https://github.com/rzmt/logos-bancos-br/actions/workflows/ci.yml/badge.svg)](https://github.com/rzmt/logos-bancos-br/actions/workflows/ci.yml)
+[![update](https://github.com/rzmt/logos-bancos-br/actions/workflows/update-logos.yml/badge.svg)](https://github.com/rzmt/logos-bancos-br/actions/workflows/update-logos.yml)
 [![npm](https://img.shields.io/npm/v/logos-bancos-br)](https://www.npmjs.com/package/logos-bancos-br)
 [![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 

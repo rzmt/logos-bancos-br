@@ -17,7 +17,7 @@ export const STR_CSV_URL =
 export const OPEN_FINANCE_DIRECTORY_URL =
   'https://data.directory.openbankingbrasil.org.br/participants';
 
-const USER_AGENT = 'logos-bancos-br/0.1 (+https://github.com/rafael-matos-dev/logos-bancos-br)';
+const USER_AGENT = 'logos-bancos-br/0.1 (+https://github.com/rzmt/logos-bancos-br)';
 
 function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));

@@ -20,14 +20,14 @@
     "dataset"
   ],
   "license": "MIT",
-  "author": "Rafael Matos (https://github.com/rafael-matos-dev)",
+  "author": "Rafael Matos (https://github.com/rzmt)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rafael-matos-dev/logos-bancos-br.git"
+    "url": "git+https://github.com/rzmt/logos-bancos-br.git"
   },
-  "homepage": "https://github.com/rafael-matos-dev/logos-bancos-br#readme",
+  "homepage": "https://github.com/rzmt/logos-bancos-br#readme",
   "bugs": {
-    "url": "https://github.com/rafael-matos-dev/logos-bancos-br/issues"
+    "url": "https://github.com/rzmt/logos-bancos-br/issues"
   },
   "type": "module",
   "engines": {
