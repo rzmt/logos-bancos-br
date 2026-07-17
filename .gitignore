@@ -5,6 +5,10 @@ coverage/
 *.log
 .DS_Store
 
+# Credenciais locais (ex.: ANTHROPIC_API_KEY para npm run discover:ai) — nunca commitar.
+.env
+.env.*
+
 # Gerado a cada rodada do pipeline; vira corpo do PR automático, não precisa ser versionado.
 pipeline/report.md
 

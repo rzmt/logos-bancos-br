@@ -1,0 +1,19 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    labels: [dependencias]
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    labels: [dependencias]
+    # Só devDependencies existem; agrupa tudo num PR por semana.
+    groups:
+      dev-dependencies:
+        patterns: ['*']

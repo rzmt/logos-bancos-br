@@ -18,13 +18,14 @@
  * The human reviewer must verify the DOMAIN before promoting anything — a
  * lookalike domain is the specific risk of this flow.
  *
- * Usage (requires ANTHROPIC_API_KEY or an `ant auth login` profile):
+ * Usage (requires ANTHROPIC_API_KEY — exported, or in a git-ignored
+ * `.env.local` at the repo root with `ANTHROPIC_API_KEY=sk-ant-...`):
  *   npm run discover:ai                     # up to 15 institutions per run
  *   npm run discover:ai -- --limit 40
  *   npm run discover:ai -- --only 707,0246  # subset (COMPE or ISPB)
  */
 
-import { readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Anthropic from '@anthropic-ai/sdk';
@@ -42,6 +43,23 @@ const SHEET_PATH = join(__dirname, 'discovery-ai-sheet.png');
 
 const MODEL = 'claude-opus-4-8';
 const DEFAULT_LIMIT = 15;
+
+/**
+ * Loads KEY=VALUE pairs from a git-ignored `.env.local` at the repo root into
+ * process.env (without overriding what's already exported). Keeps the API key
+ * out of shell history/profile without adding a dotenv dependency.
+ */
+function loadEnvLocal(): void {
+  const envPath = join(ROOT, '.env.local');
+  if (!existsSync(envPath)) return;
+  for (const line of readFileSync(envPath, 'utf8').split('\n')) {
+    const match = line.match(/^\s*(?:export\s+)?([A-Z0-9_]+)\s*=\s*(.*?)\s*$/);
+    if (!match) continue;
+    const [, key, rawValue] = match;
+    if (!key || process.env[key] !== undefined) continue;
+    process.env[key] = (rawValue ?? '').replace(/^["']|["']$/g, '');
+  }
+}
 
 export interface AiAnswer {
   /** Official institutional site (https), or null when the AI could not confirm one. */
@@ -252,6 +270,7 @@ async function main(): Promise<void> {
     return;
   }
 
+  loadEnvLocal();
   const client = new Anthropic();
   console.log(
     `Consultando a IA (${MODEL} + web search) para ${targets.length} de ${residue.length} instituição(ões) no resíduo...`,
@@ -303,7 +322,7 @@ async function main(): Promise<void> {
         /could not resolve authentication method/i.test(message)
       ) {
         throw new Error(
-          'Sem credencial da API da Anthropic. Exporte ANTHROPIC_API_KEY e rode de novo.',
+          'Sem credencial da API da Anthropic. Crie um .env.local na raiz do repo com ANTHROPIC_API_KEY=sk-ant-... (ou exporte a variável) e rode de novo.',
         );
       }
       result.failure = message;
