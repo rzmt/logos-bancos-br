@@ -79,7 +79,18 @@
       "compe4": "0011",
       "name": "UBS (BRASIL) CORRETORA DE VALORES S.A.",
       "shortName": "UBS (BRASIL) CORRETORA DE VALORES S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/61809182.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.ubs.com/etc.clientlibs/ubs/fit/design/resources/img/favicons/apple-touch-icon-180x180.20260313.png",
+          "sha256": "a8dd2d1509ccdb81f0ee98273f38328379531d337990f5045f2cefb7a48f8fa3",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "04866275",
@@ -95,7 +106,18 @@
       "compe4": "0014",
       "name": "STATE STREET BRASIL S.A. - BANCO COMERCIAL",
       "shortName": "STATE STREET BR S.A. BCO COMERCIAL",
-      "logo": null
+      "logo": {
+        "png": "logos/png/09274232.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.statestreet.com/content/dam/stt/stt-2.png",
+          "sha256": "d73a439b987176f777c3cf290cfaaf5dd55890b195b7833f0ed4add64c93d416",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "02819125",
@@ -103,7 +125,18 @@
       "compe4": "0015",
       "name": "UBS BB CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS S.A.",
       "shortName": "UBS BB CCTVM S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/02819125.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.ubs.com/etc.clientlibs/ubs/fit/design/resources/img/favicons/apple-touch-icon-180x180.20260313.png",
+          "sha256": "a8dd2d1509ccdb81f0ee98273f38328379531d337990f5045f2cefb7a48f8fa3",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "04715685",
@@ -119,7 +152,18 @@
       "compe4": "0017",
       "name": "BNY Mellon Banco S.A.",
       "shortName": "BNY MELLON BCO S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/42272526.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.bny.com/content/dam/bnymellon/web/img/bnym-logo-350x350.jpg",
+          "sha256": "103a5b5967ced6d09dda3aa3ee33218c0f731fe42f99fcb04a3d7ca12c40ce6d",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "57839805",
@@ -235,7 +279,18 @@
       "compe4": "0040",
       "name": "Banco Cargill S.A.",
       "shortName": "BCO CARGILL S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/03609817.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://bancocargill.com.br/wp-content/themes/banco-cargil/assets/images/logo.png",
+          "sha256": "828a3af82e4439ca38796e21ae5d9d9d48444eaee2d7fa45e6f0cc91f0771d0d",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "92702067",
@@ -308,7 +363,18 @@
       "compe4": "0064",
       "name": "GOLDMAN SACHS DO BRASIL BANCO MULTIPLO S.A.",
       "shortName": "GOLDMAN SACHS DO BRASIL BM S.A",
-      "logo": null
+      "logo": {
+        "png": "logos/png/04332281.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://cdn.gs.com/images/goldman-sachs/v2/gs-favicon-180.png",
+          "sha256": "0d2226d5aff2c36101d8ddfc9015d9928789a10fd1fb4a43d92149e00e6fc568",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "48795256",
@@ -324,7 +390,18 @@
       "compe4": "0066",
       "name": "BANCO MORGAN STANLEY S.A.",
       "shortName": "BCO MORGAN STANLEY S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/02801938.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.morganstanley.com.br/etc.clientlibs/msdotcomr4/clientlibs/components/site/resources/img/favicon-196x196.png",
+          "sha256": "ec5eaadbe2e1c1ff8018f42262bb6967635a8704b2158fe08a8200ca69c6f07d",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "61033106",
@@ -585,7 +662,18 @@
       "compe4": "0100",
       "name": "Planner Corretora de Valores S.A.",
       "shortName": "PLANNER CV S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/00806535.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.planner.com.br/wp-content/uploads/2021/05/Planner_Azul_Icon.png",
+          "sha256": "63a80a4f06f414c1c6c42d7bf16cbc32bbb010d02739327466440cab19b1677c",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "62287735",
@@ -593,7 +681,18 @@
       "compe4": "0101",
       "name": "WARREN RENA DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA",
       "shortName": "WARREN RENA DTVM",
-      "logo": null
+      "logo": {
+        "png": "logos/png/62287735.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://framerusercontent.com/images/jnwtJeeop0GT06Q6EoAEogrmYM.png",
+          "sha256": "c5af5bf2da6963507c17f9e71f183d12add8e93a6abded96f5571610d1673793",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "02332886",
@@ -639,7 +738,18 @@
       "compe4": "0105",
       "name": "Lecca Crédito, Financiamento e Investimento S/A",
       "shortName": "LECCA CFI S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/07652226.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://lecca.com.br/wp-content/uploads/2025/03/cropped-cropped-icon_lecca-180x180.png",
+          "sha256": "1c2d5302f0235491de467a60e16e679cf8a31618cde6b05b46d6088cb6d063f9",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "15114366",
@@ -655,7 +765,18 @@
       "compe4": "0111",
       "name": "OLIVEIRA TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIARIOS S.A.",
       "shortName": "OLIVEIRA TRUST DTVM S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/36113876.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.oliveiratrust.com.br/favicon-96x96.png",
+          "sha256": "9c003f823041e6ca43881786dad5bf56d7a6c58db75e6c8621eb193e92c94664",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "61723847",
@@ -690,7 +811,18 @@
       "compe4": "0120",
       "name": "BANCO RODOBENS S.A.",
       "shortName": "BCO RODOBENS S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/33603457.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.rodobens.com.br/assets/icons/icon-128x128.png",
+          "sha256": "befa880998d3716f302e9309fceb9d512b206c8846ed06cecb030848617153d7",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "10664513",
@@ -787,7 +919,18 @@
       "compe4": "0129",
       "name": "UBS BB BANCO DE INVESTIMENTO S.A.",
       "shortName": "UBS BB BI S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/18520834.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.ubs.com/etc.clientlibs/ubs/fit/design/resources/img/favicons/apple-touch-icon-180x180.20260313.png",
+          "sha256": "a8dd2d1509ccdb81f0ee98273f38328379531d337990f5045f2cefb7a48f8fa3",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "09313766",
@@ -916,7 +1059,18 @@
       "compe4": "0143",
       "name": "INTEX BANK BANCO DE CÂMBIO S.A.",
       "shortName": "INTEX BANK BCO DE CÂMBIO S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/02992317.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://intexbank.com.br/wp-content/uploads/2025/07/cropped-favico-intex-180x180.png",
+          "sha256": "51d318ea5abf6300e90311c9335d28cdbd04be8db4595f981b49753c6ef254fc",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "13059145",
@@ -1144,7 +1298,18 @@
       "compe4": "0218",
       "name": "Banco BS2 S.A.",
       "shortName": "BCO BS2 S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/71027866.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.bancobs2.com.br/wp-content/uploads/2025/09/favicon.png",
+          "sha256": "c77733af2df1d33cc09aecb9db5cbc4ad0213d22277e538764ead963206fd192",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "75647891",
@@ -1160,7 +1325,18 @@
       "compe4": "0224",
       "name": "Banco Fibra S.A.",
       "shortName": "BCO FIBRA S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/58616418.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://bancofibra.com.br/wp-content/uploads/2020/05/cropped-fiveicon-180x180.png",
+          "sha256": "e98d59e445ed528cf54e462b7f009e191ee42bbed2c25cd8432a0440f2b5125e",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "62421979",
@@ -1222,7 +1398,18 @@
       "compe4": "0246",
       "name": "Banco ABC Brasil S.A.",
       "shortName": "BCO ABC BRASIL S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/28195667.png",
+        "svg": "logos/svg/28195667.svg",
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.abcbrasil.com.br/index_files/logo-abc-ocre.svg",
+          "sha256": "2754926bc335618e57929b48af37669ac12320e92d4f41a74413bb0f6d669097",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "61182408",
@@ -1257,7 +1444,18 @@
       "compe4": "0254",
       "name": "PARANÁ BANCO S.A.",
       "shortName": "PARANA BCO S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/14388334.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://blobportais.paranabanco.com.br/portalinstitucional/2022/09/logoparana.png",
+          "sha256": "90b86ce497acdc4ec7ad3ef47441ee56ef9b91cb3daa99105db494ee9c3217ba",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "08609934",
@@ -1292,7 +1490,18 @@
       "compe4": "0265",
       "name": "Banco Fator S.A.",
       "shortName": "BCO FATOR S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/33644196.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_banco_fator/img/favicon/180x180_favicon.png",
+          "sha256": "06fe3d00891cbe30d07c35bb27d0a9b744afbca6d511c8512ad3a38a06297cc1",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "33132044",
@@ -1308,7 +1517,18 @@
       "compe4": "0268",
       "name": "BARI COMPANHIA HIPOTECÁRIA",
       "shortName": "BARI CIA HIPOTECÁRIA",
-      "logo": null
+      "logo": {
+        "png": "logos/png/14511781.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://strapicms.bancobari.com.br/uploads/cd1_39c3882c79.png",
+          "sha256": "8046bc1223254dd1f2d9ae92537930ca904cd0949d83ccdb7ff5597d93613ac7",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "53518684",
@@ -1453,7 +1673,18 @@
       "compe4": "0292",
       "name": "GALAPAGOS CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
       "shortName": "GALAPAGOS DTVM S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/28650236.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://galapagoscapital.com/wp-content/uploads/2025/03/svgviewer-png-output-e1741972272866.png",
+          "sha256": "7f560c31465e674475d8f81f48eab6685996343d76262832861b7b34af895211",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "71590442",
@@ -1547,7 +1778,18 @@
       "compe4": "0310",
       "name": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
       "shortName": "VORTX DTVM LTDA.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/22610500.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.vortx.com.br/favicon/apple-touch-icon.png",
+          "sha256": "1eb681b2f710372d11c937f36fa53908a8323d433adfb7fc654d294e432f32ed",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "07693858",
@@ -1687,7 +1929,18 @@
       "compe4": "0330",
       "name": "BANCO BARI DE INVESTIMENTOS E FINANCIAMENTOS S.A.",
       "shortName": "BANCO BARI S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/00556603.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://strapicms.bancobari.com.br/uploads/cd1_39c3882c79.png",
+          "sha256": "8046bc1223254dd1f2d9ae92537930ca904cd0949d83ccdb7ff5597d93613ac7",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "13673855",
@@ -1984,7 +2237,18 @@
       "compe4": "0370",
       "name": "Banco Mizuho do Brasil S.A.",
       "shortName": "BCO MIZUHO S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/61088183.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://cdn.prod.website-files.com/67cb23eaf0c6c4d4080e059a/67d44ce8bb4fc244b2b78014_mizuho-webclip.jpg",
+          "sha256": "591481beaf01f19b93bc8b03e3bc121f2f56ae698895939b6b67ff2a37468a01",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "35977097",
@@ -2019,7 +2283,18 @@
       "compe4": "0376",
       "name": "BANCO J.P. MORGAN S.A.",
       "shortName": "BCO J.P. MORGAN S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/33172537.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.jpmorgan.com/etc.clientlibs/cws/clientlibs/clientlib-base/resources/jpm/images/jpm-favicon-152.png",
+          "sha256": "f04118a6e3e7226207c54b9d1b89d1bf72c7cf02d573e3002f0b6698455edb8c",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "17826860",
@@ -2070,7 +2345,18 @@
       "compe4": "0381",
       "name": "BANCO MERCEDES-BENZ DO BRASIL S.A.",
       "shortName": "BCO MERCEDES-BENZ S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/60814191.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.bancomercedes-benz.com.br/img/logos/favicon/apple-touch-icon.png",
+          "sha256": "135e21294385b7bfdbdbb5e4617e8e528738da26e9bf87f21228408cbcda328f",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "04307598",
@@ -2183,7 +2469,18 @@
       "compe4": "0393",
       "name": "Banco Volkswagen S.A.",
       "shortName": "BCO VOLKSWAGEN S.A",
-      "logo": null
+      "logo": {
+        "png": "logos/png/59109165.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.vwfs.com.br/etc.clientlibs/bluelabel/clientlibs/clientlib-site-bluelabel/resources/favicon/apple-touch-icon.png?v=042",
+          "sha256": "87c64671e105cd1a7a4f06fe0fc37b2033385e7f37b7b3ea2819952d3a617790",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "07207996",
@@ -2407,7 +2704,18 @@
       "compe4": "0412",
       "name": "SOCIAL BANK BANCO MÚLTIPLO S/A",
       "shortName": "SOCIAL BANK S/A",
-      "logo": null
+      "logo": {
+        "png": "logos/png/15173776.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.socialbank.com.br/logo192.png",
+          "sha256": "797bb5ff9c93eaa0d4b858a220ab7035a72105d3119f8e98c13545f634c30e44",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "01858774",
@@ -2930,7 +3238,18 @@
       "compe4": "0487",
       "name": "DEUTSCHE BANK S.A. - BANCO ALEMAO",
       "shortName": "DEUTSCHE BANK S.A.BCO ALEMAO",
-      "logo": null
+      "logo": {
+        "png": "logos/png/62331228.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://prod2.master.db.com/application/themes/default/favicon/apple-touch-icon.png",
+          "sha256": "59445855fdbeae0be745a31f132429c06e4e102fdf987d54fbeb394af98aff04",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "46518205",
@@ -2938,7 +3257,18 @@
       "compe4": "0488",
       "name": "JPMorgan Chase Bank, National Association",
       "shortName": "JPMORGAN CHASE BANK",
-      "logo": null
+      "logo": {
+        "png": "logos/png/46518205.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.jpmorgan.com/etc.clientlibs/cws/clientlibs/clientlib-base/resources/jpm/images/jpm-favicon-152.png",
+          "sha256": "f04118a6e3e7226207c54b9d1b89d1bf72c7cf02d573e3002f0b6698455edb8c",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "44189447",
@@ -2962,7 +3292,18 @@
       "compe4": "0505",
       "name": "BANCO UBS (BRASIL) S.A.",
       "shortName": "BCO UBS BRASIL",
-      "logo": null
+      "logo": {
+        "png": "logos/png/32062580.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.ubs.com/etc.clientlibs/ubs/fit/design/resources/img/favicons/apple-touch-icon-180x180.20260313.png",
+          "sha256": "a8dd2d1509ccdb81f0ee98273f38328379531d337990f5045f2cefb7a48f8fa3",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "42066258",
@@ -3230,7 +3571,18 @@
       "compe4": "0534",
       "name": "EWALLY INSTITUIÇÃO DE PAGAMENTO S.A.",
       "shortName": "EWALLY IP S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/00714671.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.ewally.com.br/wp-content/uploads/2023/05/cropped-icon-ewally-180x180.png",
+          "sha256": "889690ac9f0a8fd22a3a0d1c2be67ac131d1ac2a4e0bd35550678c03ae0de81d",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "39519944",
@@ -3297,7 +3649,18 @@
       "compe4": "0541",
       "name": "FUNDO GARANTIDOR DE CREDITOS - FGC",
       "shortName": "FDO GARANTIDOR CRÉDITOS",
-      "logo": null
+      "logo": {
+        "png": "logos/png/00954288.png",
+        "svg": "logos/svg/00954288.svg",
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.fgc.org.br/documents/32230/48686/logofgc/ca56aadf-be4d-6356-0f38-b4b59d7bca4c",
+          "sha256": "63d1467450b1859599ce4589097486abce64dca9ab9a9fb3110236d91af1bc8d",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "18189547",
@@ -3931,7 +4294,18 @@
       "compe4": "0613",
       "name": "Omni Banco S.A.",
       "shortName": "OMNI BANCO S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/60850229.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.omni.com.br/apple-touch-icon.png",
+          "sha256": "476b8f54370d1dd0b38cb841c582810fa111bacfca497cdfa95e1d47f6c3e9aa",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "52440987",
@@ -4090,7 +4464,18 @@
       "compe4": "0643",
       "name": "Banco Pine S.A.",
       "shortName": "BCO PINE S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/62144175.png",
+        "svg": "logos/svg/62144175.svg",
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://duiqud9a6tzqw.cloudfront.net/logo_730bc41c95.svg",
+          "sha256": "664ad610a9badc12b2e52735c89651e1c8c0d3a7dd6d08297d169420a7d26173",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "54647259",
@@ -4446,7 +4831,18 @@
       "compe4": "0694",
       "name": "WOOVI INSTITUICAO DE PAGAMENTO LTDA",
       "shortName": "WOOVI IP LTDA.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/54811417.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://woovi.com/opengraph-image.jpeg?opengraph-image.be506431.jpeg",
+          "sha256": "44635386f28b86ce8151ec98a4ccff31f48b29a5e1ddb8f9eb840961ad352e67",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "35523352",
@@ -4553,7 +4949,18 @@
       "compe4": "0712",
       "name": "OURIBANK S.A. BANCO MÚLTIPLO",
       "shortName": "OURIBANK S.A.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/78632767.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://cdn.prod.website-files.com/65172cb208ef8ecb7765b47f/65493c21d236210da7ddda13_ouribank-webclip2.png",
+          "sha256": "3ea8666a5fe3589e5be030555da42b8f64d3f31374738a70bf1e7c53cbc8c76b",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "00411939",
@@ -4851,7 +5258,18 @@
       "compe4": "0773",
       "name": "KIWIFY INSTITUICAO DE PAGAMENTO LTDA",
       "shortName": "KIWIFY IP",
-      "logo": null
+      "logo": {
+        "png": "logos/png/53908413.png",
+        "svg": "logos/svg/53908413.svg",
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://kiwify.com.br/_astro/logo.Bi70aw49.svg",
+          "sha256": "fbf97f13aaf8862ddd322e9ac4c5bbb523ca00fa0f35ad77c549ff2b6a8f05b3",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "33959738",
@@ -4867,7 +5285,18 @@
       "compe4": "0775",
       "name": "CONTAAZUL INSTITUICAO DE PAGAMENTO LTDA.",
       "shortName": "CONTAAZUL IP LTDA.",
-      "logo": null
+      "logo": {
+        "png": "logos/png/47381104.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://contaazul.com/images/apple-icon.webp",
+          "sha256": "6ca9b0ab4355ba090f89ef7512b34f91a881fec6ba37152ee0ca52f8f50e45a2",
+          "updatedAt": "2026-07-17"
+        }
+      }
     },
     {
       "ispb": "12102128",

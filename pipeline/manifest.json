@@ -116,6 +116,24 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
+  "14388334": {
+    "compe4": "0254",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://blobportais.paranabanco.com.br/portalinstitucional/2022/09/logoparana.png",
+    "sourceSha256": "90b86ce497acdc4ec7ad3ef47441ee56ef9b91cb3daa99105db494ee9c3217ba",
+    "svg": false,
+    "updatedAt": "2026-07-17"
+  },
+  "14511781": {
+    "compe4": "0268",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://strapicms.bancobari.com.br/uploads/cd1_39c3882c79.png",
+    "sourceSha256": "8046bc1223254dd1f2d9ae92537930ca904cd0949d83ccdb7ff5597d93613ac7",
+    "svg": false,
+    "updatedAt": "2026-07-17"
+  },
   "15111975": {
     "compe4": "0401",
     "org": "IUGU INSTITUICAO DE PAGAMENTO S.A.",
@@ -123,6 +141,15 @@
     "uri": "https://openbanking.iugu.com/iugu_logo.svg",
     "sourceSha256": "4150192390b899bc2f52859e0da636d2d6368ef18d492369de968fc12dd97116",
     "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "15173776": {
+    "compe4": "0412",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.socialbank.com.br/logo192.png",
+    "sourceSha256": "797bb5ff9c93eaa0d4b858a220ab7035a72105d3119f8e98c13545f634c30e44",
+    "svg": false,
     "updatedAt": "2026-07-17"
   },
   "16501555": {
@@ -159,6 +186,15 @@
     "uri": "https://nuapp.nubank.com.br/open-banking/logo.svg",
     "sourceSha256": "a4a63bd7d76bd7f3377335ae2a4c9d1f80d602f6a69fd5dba375f46d269272a6",
     "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "18520834": {
+    "compe4": "0129",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.ubs.com/etc.clientlibs/ubs/fit/design/resources/img/favicons/apple-touch-icon-180x180.20260313.png",
+    "sourceSha256": "a8dd2d1509ccdb81f0ee98273f38328379531d337990f5045f2cefb7a48f8fa3",
+    "svg": false,
     "updatedAt": "2026-07-17"
   },
   "19468242": {
@@ -204,6 +240,15 @@
     "uri": "https://cdn-assets.ebanx.com/images/ebanx-ip-blue.svg",
     "sourceSha256": "42237c446a6a8b607bbc7d1de7bb6d5db3514548e8a335e6a9d7c03349802cd1",
     "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "22610500": {
+    "compe4": "0310",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.vortx.com.br/favicon/apple-touch-icon.png",
+    "sourceSha256": "1eb681b2f710372d11c937f36fa53908a8323d433adfb7fc654d294e432f32ed",
+    "svg": false,
     "updatedAt": "2026-07-17"
   },
   "22896431": {
@@ -258,6 +303,24 @@
     "uri": "https://cdn.banestes.b.br/openbanking/img/logo_centralizada.svg",
     "sourceSha256": "011b293dd99bc4488d61ec98eae5d11ed7dfe0043d09e2f45b7b34044ca496ae",
     "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "28195667": {
+    "compe4": "0246",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.abcbrasil.com.br/index_files/logo-abc-ocre.svg",
+    "sourceSha256": "2754926bc335618e57929b48af37669ac12320e92d4f41a74413bb0f6d669097",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "28650236": {
+    "compe4": "0292",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://galapagoscapital.com/wp-content/uploads/2025/03/svgviewer-png-output-e1741972272866.png",
+    "sourceSha256": "7f560c31465e674475d8f81f48eab6685996343d76262832861b7b34af895211",
+    "svg": false,
     "updatedAt": "2026-07-17"
   },
   "29162769": {
@@ -323,6 +386,15 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
+  "32062580": {
+    "compe4": "0505",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.ubs.com/etc.clientlibs/ubs/fit/design/resources/img/favicons/apple-touch-icon-180x180.20260313.png",
+    "sourceSha256": "a8dd2d1509ccdb81f0ee98273f38328379531d337990f5045f2cefb7a48f8fa3",
+    "svg": false,
+    "updatedAt": "2026-07-17"
+  },
   "32402502": {
     "compe4": "0329",
     "org": "QI SCD S.A.",
@@ -368,6 +440,15 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
+  "33172537": {
+    "compe4": "0376",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.jpmorgan.com/etc.clientlibs/cws/clientlibs/clientlib-base/resources/jpm/images/jpm-favicon-152.png",
+    "sourceSha256": "f04118a6e3e7226207c54b9d1b89d1bf72c7cf02d573e3002f0b6698455edb8c",
+    "svg": false,
+    "updatedAt": "2026-07-17"
+  },
   "33264668": {
     "compe4": "0348",
     "org": "BANCO XP S.A.",
@@ -384,6 +465,24 @@
     "uri": "https://corporateportal.brazil.citibank.com/resources-responsive/img/Citi_Blue-RedArc_RGB.svg",
     "sourceSha256": "84e7b604b27ab997e27b234db4c3bbdedddd45d3b9eebd29a816517ef8556a45",
     "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "33603457": {
+    "compe4": "0120",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.rodobens.com.br/assets/icons/icon-128x128.png",
+    "sourceSha256": "befa880998d3716f302e9309fceb9d512b206c8846ed06cecb030848617153d7",
+    "svg": false,
+    "updatedAt": "2026-07-17"
+  },
+  "33644196": {
+    "compe4": "0265",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_banco_fator/img/favicon/180x180_favicon.png",
+    "sourceSha256": "06fe3d00891cbe30d07c35bb27d0a9b744afbca6d511c8512ad3a38a06297cc1",
+    "svg": false,
     "updatedAt": "2026-07-17"
   },
   "33667205": {
@@ -411,6 +510,15 @@
     "uri": "https://imagens.soulisto.com.br/2.svg",
     "sourceSha256": "6503562f0a5f8119dad02cb69383b332247e98f0239f829222f282f9cb433bea",
     "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "36113876": {
+    "compe4": "0111",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.oliveiratrust.com.br/favicon-96x96.png",
+    "sourceSha256": "9c003f823041e6ca43881786dad5bf56d7a6c58db75e6c8621eb193e92c94664",
+    "svg": false,
     "updatedAt": "2026-07-17"
   },
   "37229413": {
@@ -467,6 +575,15 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
+  "42272526": {
+    "compe4": "0017",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.bny.com/content/dam/bnymellon/web/img/bnym-logo-350x350.jpg",
+    "sourceSha256": "103a5b5967ced6d09dda3aa3ee33218c0f731fe42f99fcb04a3d7ca12c40ce6d",
+    "svg": false,
+    "updatedAt": "2026-07-17"
+  },
   "43180355": {
     "compe4": "0174",
     "org": "PEFISA S.A. - CFI",
@@ -483,6 +600,24 @@
     "uri": "https://media-genial-cms.genialinvestimentos.com.br/wp-content/uploads/2021/08/20161050/logo-genial.svg",
     "sourceSha256": "e67e2bb3fab72c3165471ad1c44884775a7588177febcbaa7d343062fb567533",
     "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "46518205": {
+    "compe4": "0488",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.jpmorgan.com/etc.clientlibs/cws/clientlibs/clientlib-base/resources/jpm/images/jpm-favicon-152.png",
+    "sourceSha256": "f04118a6e3e7226207c54b9d1b89d1bf72c7cf02d573e3002f0b6698455edb8c",
+    "svg": false,
+    "updatedAt": "2026-07-17"
+  },
+  "47381104": {
+    "compe4": "0775",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://contaazul.com/images/apple-icon.webp",
+    "sourceSha256": "6ca9b0ab4355ba090f89ef7512b34f91a881fec6ba37152ee0ca52f8f50e45a2",
+    "svg": false,
     "updatedAt": "2026-07-17"
   },
   "48632754": {
@@ -530,6 +665,15 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
+  "53908413": {
+    "compe4": "0773",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://kiwify.com.br/_astro/logo.Bi70aw49.svg",
+    "sourceSha256": "fbf97f13aaf8862ddd322e9ac4c5bbb523ca00fa0f35ad77c549ff2b6a8f05b3",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
   "54403563": {
     "compe4": "0213",
     "org": "BCO ARBI S.A.",
@@ -539,6 +683,15 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
+  "54811417": {
+    "compe4": "0694",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://woovi.com/opengraph-image.jpeg?opengraph-image.be506431.jpeg",
+    "sourceSha256": "44635386f28b86ce8151ec98a4ccff31f48b29a5e1ddb8f9eb840961ad352e67",
+    "svg": false,
+    "updatedAt": "2026-07-17"
+  },
   "58160789": {
     "compe4": "0422",
     "org": "BCO SAFRA S.A.",
@@ -546,6 +699,24 @@
     "uri": "https://www.safra.com.br/shared/assets/img/safra-of.svg",
     "sourceSha256": "9c25f4839fe8a258db6c0a59f192120f97f5ef49830f3db05ebd6cac82e02e50",
     "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "58616418": {
+    "compe4": "0224",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://bancofibra.com.br/wp-content/uploads/2020/05/cropped-fiveicon-180x180.png",
+    "sourceSha256": "e98d59e445ed528cf54e462b7f009e191ee42bbed2c25cd8432a0440f2b5125e",
+    "svg": false,
+    "updatedAt": "2026-07-17"
+  },
+  "59109165": {
+    "compe4": "0393",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.vwfs.com.br/etc.clientlibs/bluelabel/clientlibs/clientlib-site-bluelabel/resources/favicon/apple-touch-icon.png?v=042",
+    "sourceSha256": "87c64671e105cd1a7a4f06fe0fc37b2033385e7f37b7b3ea2819952d3a617790",
+    "svg": false,
     "updatedAt": "2026-07-17"
   },
   "59285411": {
@@ -593,6 +764,24 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
+  "60814191": {
+    "compe4": "0381",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.bancomercedes-benz.com.br/img/logos/favicon/apple-touch-icon.png",
+    "sourceSha256": "135e21294385b7bfdbdbb5e4617e8e528738da26e9bf87f21228408cbcda328f",
+    "svg": false,
+    "updatedAt": "2026-07-17"
+  },
+  "60850229": {
+    "compe4": "0613",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.omni.com.br/apple-touch-icon.png",
+    "sourceSha256": "476b8f54370d1dd0b38cb841c582810fa111bacfca497cdfa95e1d47f6c3e9aa",
+    "svg": false,
+    "updatedAt": "2026-07-17"
+  },
   "60889128": {
     "compe4": "0637",
     "org": "BCO SOFISA S.A.",
@@ -618,6 +807,15 @@
     "uri": "https://www.crefisa.com.br/wp-content/uploads/2019/05/Logo.svg",
     "sourceSha256": "6d1f7f70293767ef1c60c4ad7bba6d730e91a72780a8ecc44d2894d00f04ac12",
     "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "61088183": {
+    "compe4": "0370",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://cdn.prod.website-files.com/67cb23eaf0c6c4d4080e059a/67d44ce8bb4fc244b2b78014_mizuho-webclip.jpg",
+    "sourceSha256": "591481beaf01f19b93bc8b03e3bc121f2f56ae698895939b6b67ff2a37468a01",
+    "svg": false,
     "updatedAt": "2026-07-17"
   },
   "61186680": {
@@ -647,6 +845,24 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
+  "61809182": {
+    "compe4": "0011",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.ubs.com/etc.clientlibs/ubs/fit/design/resources/img/favicons/apple-touch-icon-180x180.20260313.png",
+    "sourceSha256": "a8dd2d1509ccdb81f0ee98273f38328379531d337990f5045f2cefb7a48f8fa3",
+    "svg": false,
+    "updatedAt": "2026-07-17"
+  },
+  "62144175": {
+    "compe4": "0643",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://duiqud9a6tzqw.cloudfront.net/logo_730bc41c95.svg",
+    "sourceSha256": "664ad610a9badc12b2e52735c89651e1c8c0d3a7dd6d08297d169420a7d26173",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
   "62169875": {
     "compe4": "0140",
     "org": "NU PAGAMENTOS S.A. - INSTITUICAO DE PAGAMENTO",
@@ -663,6 +879,24 @@
     "uri": "https://storage.googleapis.com/qitech-website-documents/qi_logo_blue.svg",
     "sourceSha256": "5e069eed5c4bade949d52f5ad1572b712947fdf30523f4bfce0132f580e19d9e",
     "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "62287735": {
+    "compe4": "0101",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://framerusercontent.com/images/jnwtJeeop0GT06Q6EoAEogrmYM.png",
+    "sourceSha256": "c5af5bf2da6963507c17f9e71f183d12add8e93a6abded96f5571610d1673793",
+    "svg": false,
+    "updatedAt": "2026-07-17"
+  },
+  "62331228": {
+    "compe4": "0487",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://prod2.master.db.com/application/themes/default/favicon/apple-touch-icon.png",
+    "sourceSha256": "59445855fdbeae0be745a31f132429c06e4e102fdf987d54fbeb394af98aff04",
+    "svg": false,
     "updatedAt": "2026-07-17"
   },
   "62421979": {
@@ -692,12 +926,30 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
+  "71027866": {
+    "compe4": "0218",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.bancobs2.com.br/wp-content/uploads/2025/09/favicon.png",
+    "sourceSha256": "c77733af2df1d33cc09aecb9db5cbc4ad0213d22277e538764ead963206fd192",
+    "svg": false,
+    "updatedAt": "2026-07-17"
+  },
   "74014747": {
     "compe4": "0565",
     "org": "AGORA CTVM S.A.",
     "cnpj": "74014747000135",
     "uri": "https://www.agorainvest.com.br/images/OpenFinance/agora.svg",
     "sourceSha256": "8af0df804c26587d57ea58319297bbb8e5c7171dc29a6def0f0aceb2a5ea6514",
+    "svg": false,
+    "updatedAt": "2026-07-17"
+  },
+  "78632767": {
+    "compe4": "0712",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://cdn.prod.website-files.com/65172cb208ef8ecb7765b47f/65493c21d236210da7ddda13_ouribank-webclip2.png",
+    "sourceSha256": "3ea8666a5fe3589e5be030555da42b8f64d3f31374738a70bf1e7c53cbc8c76b",
     "svg": false,
     "updatedAt": "2026-07-17"
   },
@@ -800,12 +1052,48 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
+  "00556603": {
+    "compe4": "0330",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://strapicms.bancobari.com.br/uploads/cd1_39c3882c79.png",
+    "sourceSha256": "8046bc1223254dd1f2d9ae92537930ca904cd0949d83ccdb7ff5597d93613ac7",
+    "svg": false,
+    "updatedAt": "2026-07-17"
+  },
+  "00714671": {
+    "compe4": "0534",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.ewally.com.br/wp-content/uploads/2023/05/cropped-icon-ewally-180x180.png",
+    "sourceSha256": "889690ac9f0a8fd22a3a0d1c2be67ac131d1ac2a4e0bd35550678c03ae0de81d",
+    "svg": false,
+    "updatedAt": "2026-07-17"
+  },
   "00795423": {
     "compe4": "0743",
     "org": "BANCO SEMEAR",
     "cnpj": "00795423000145",
     "uri": "https://public-files.bancosemear.com.br/images/logo_banco_semear.svg",
     "sourceSha256": "3a48b5c39744de76c4505ded06de9890b0270645093a7a898ae17905cfa0bab8",
+    "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "00806535": {
+    "compe4": "0100",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.planner.com.br/wp-content/uploads/2021/05/Planner_Azul_Icon.png",
+    "sourceSha256": "63a80a4f06f414c1c6c42d7bf16cbc32bbb010d02739327466440cab19b1677c",
+    "svg": false,
+    "updatedAt": "2026-07-17"
+  },
+  "00954288": {
+    "compe4": "0541",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.fgc.org.br/documents/32230/48686/logofgc/ca56aadf-be4d-6356-0f38-b4b59d7bca4c",
+    "sourceSha256": "63d1467450b1859599ce4589097486abce64dca9ab9a9fb3110236d91af1bc8d",
     "svg": true,
     "updatedAt": "2026-07-17"
   },
@@ -872,6 +1160,33 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
+  "02801938": {
+    "compe4": "0066",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.morganstanley.com.br/etc.clientlibs/msdotcomr4/clientlibs/components/site/resources/img/favicon-196x196.png",
+    "sourceSha256": "ec5eaadbe2e1c1ff8018f42262bb6967635a8704b2158fe08a8200ca69c6f07d",
+    "svg": false,
+    "updatedAt": "2026-07-17"
+  },
+  "02819125": {
+    "compe4": "0015",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.ubs.com/etc.clientlibs/ubs/fit/design/resources/img/favicons/apple-touch-icon-180x180.20260313.png",
+    "sourceSha256": "a8dd2d1509ccdb81f0ee98273f38328379531d337990f5045f2cefb7a48f8fa3",
+    "svg": false,
+    "updatedAt": "2026-07-17"
+  },
+  "02992317": {
+    "compe4": "0143",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://intexbank.com.br/wp-content/uploads/2025/07/cropped-favico-intex-180x180.png",
+    "sourceSha256": "51d318ea5abf6300e90311c9335d28cdbd04be8db4595f981b49753c6ef254fc",
+    "svg": false,
+    "updatedAt": "2026-07-17"
+  },
   "03017677": {
     "compe4": "0074",
     "org": "BCO SAFRA S.A.",
@@ -890,6 +1205,15 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
+  "03609817": {
+    "compe4": "0040",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://bancocargill.com.br/wp-content/themes/banco-cargil/assets/images/logo.png",
+    "sourceSha256": "828a3af82e4439ca38796e21ae5d9d9d48444eaee2d7fa45e6f0cc91f0771d0d",
+    "svg": false,
+    "updatedAt": "2026-07-17"
+  },
   "03816413": {
     "compe4": "0517",
     "org": "PAGUEVELOZ INSTITUICAO DE PAGAMENTO LTDA",
@@ -906,6 +1230,15 @@
     "uri": "https://banco.bradesco/open-finance/logo/icones_vetorial-pf.svg",
     "sourceSha256": "eab31731175c5229512016c2cdf98f38affecb891c217bbe6ea6b83e4c5bdb38",
     "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "04332281": {
+    "compe4": "0064",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://cdn.gs.com/images/goldman-sachs/v2/gs-favicon-180.png",
+    "sourceSha256": "0d2226d5aff2c36101d8ddfc9015d9928789a10fd1fb4a43d92149e00e6fc568",
+    "svg": false,
     "updatedAt": "2026-07-17"
   },
   "04902979": {
@@ -971,6 +1304,15 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
+  "07652226": {
+    "compe4": "0105",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://lecca.com.br/wp-content/uploads/2025/03/cropped-cropped-icon_lecca-180x180.png",
+    "sourceSha256": "1c2d5302f0235491de467a60e16e679cf8a31618cde6b05b46d6088cb6d063f9",
+    "svg": false,
+    "updatedAt": "2026-07-17"
+  },
   "08357240": {
     "compe4": "0368",
     "org": "BANCO CSF S/A",
@@ -996,6 +1338,15 @@
     "uri": "https://gerencianet-pub-prod-1.s3.amazonaws.com/openbanking/efi-by-gn-512x512.svg",
     "sourceSha256": "185517da3805bc5c910f62920d22b2d69651f70dcd380ce1ec9ba8b242d2f8c0",
     "svg": true,
+    "updatedAt": "2026-07-17"
+  },
+  "09274232": {
+    "compe4": "0014",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.statestreet.com/content/dam/stt/stt-2.png",
+    "sourceSha256": "d73a439b987176f777c3cf290cfaaf5dd55890b195b7833f0ed4add64c93d416",
+    "svg": false,
     "updatedAt": "2026-07-17"
   },
   "09464032": {
