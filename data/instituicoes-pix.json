@@ -9321,22 +9321,6 @@
       "logo": null
     },
     {
-      "ispb": "36741675",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "36741675000139",
-      "name": "CORPAG IP",
-      "shortName": "CORPAG IP",
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Instituição de Pagamento",
-        "authorizedByBcb": false
-      },
-      "logo": null
-    },
-    {
       "ispb": "36900256",
       "compe": null,
       "compe4": null,
