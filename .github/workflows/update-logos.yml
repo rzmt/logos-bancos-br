@@ -19,6 +19,7 @@ permissions:
   pull-requests: write
   issues: write
   actions: write
+  statuses: write
 
 concurrency:
   group: atualizar-logos
@@ -136,16 +137,18 @@ jobs:
             package.json
             package-lock.json
 
-      - name: Auto-merge (diff seguro) e release
-        if: steps.diff.outputs.estado == 'seguro' && steps.pr.outputs.pull-request-number
+      - name: Rodar CI no PR e espelhar status
+        if: steps.pr.outputs.pull-request-number
         timeout-minutes: 20
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           sha='${{ steps.pr.outputs.pull-request-head-sha }}'
-          pr='${{ steps.pr.outputs.pull-request-number }}'
-          # A proteção da main exige o check "ci", mas PRs criados com o
-          # GITHUB_TOKEN não disparam workflows — dispara na mão e espera.
+          # PRs criados com o GITHUB_TOKEN não disparam workflows, e runs de
+          # workflow_dispatch não são associados ao merge box do PR. Então: o
+          # CI real é disparado na mão, esperado, e o resultado é espelhado
+          # como commit status "ci" no head SHA — a proteção da main aceita o
+          # contexto de qualquer origem, e commit status sempre conta no PR.
           # A folga de 30s no timestamp cobre skew de relógio sem casar com
           # runs antigos do mesmo SHA (ex.: re-run com branch idêntica).
           desde=$(date -u -d '-30 seconds' +%Y-%m-%dT%H:%M:%SZ)
@@ -159,14 +162,26 @@ jobs:
             [ -n "$run_id" ] && break
           done
           if [ -z "$run_id" ]; then
-            echo 'run do CI não apareceu; deixando o PR para revisão humana'
+            echo 'run do CI não apareceu'
             exit 1
           fi
           gh run watch "$run_id" --exit-status
-          # O veredito de mergeabilidade pode demorar a propagar após o check
-          # concluir — tenta com folga antes de desistir.
+          gh api -X POST "repos/$GITHUB_REPOSITORY/statuses/$sha" \
+            -f state=success -f context=ci \
+            -f description="Espelho do run $run_id do CI (disparado via workflow_dispatch)" \
+            -f target_url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$run_id"
+
+      - name: Auto-merge (diff seguro) e release
+        if: steps.diff.outputs.estado == 'seguro' && steps.pr.outputs.pull-request-number
+        timeout-minutes: 10
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          pr='${{ steps.pr.outputs.pull-request-number }}'
+          # O veredito de mergeabilidade pode demorar a propagar após o status
+          # chegar — tenta com folga antes de desistir.
           mergeado=''
-          for _ in 1 2 3; do
+          for _ in 1 2 3 4; do
             if gh pr merge "$pr" --squash --delete-branch \
               --subject 'feat: atualiza logos e dataset (fontes oficiais)'; then
               mergeado=sim
@@ -184,9 +199,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Sem isto o check obrigatório "ci" nunca roda no PR e o merge fica
-          # bloqueado até para o revisor humano.
-          gh workflow run ci.yml --ref auto/atualizar-logos
           gh pr comment '${{ steps.pr.outputs.pull-request-number }}' --body \
             'Auto-merge pulado: o diff altera arquivos de logo (ou muda muitas instituições) e precisa de revisão visual — checklist no CONTRIBUTING.md. Depois do merge, o release é automático.'
 
