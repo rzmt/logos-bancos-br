@@ -4,6 +4,10 @@ on:
   push:
     branches: [main]
   pull_request:
+  # O update-logos.yml dispara o CI manualmente no PR automático: PRs criados
+  # com o GITHUB_TOKEN não disparam workflows, mas a proteção da main exige
+  # este check para o merge.
+  workflow_dispatch:
 
 jobs:
   ci:

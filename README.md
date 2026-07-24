@@ -43,10 +43,11 @@
    `logo.source.type: "brand"`. Logos próprios vêm do diretório público do **Open Finance
    Brasil** (`openfinance`) ou do **site oficial da instituição** (`direct-uri`, com curadoria
    visual). Cada arquivo carrega proveniência: URI, SHA-256 e data.
-3. **Atualização automática.** Toda segunda-feira um GitHub Action
+3. **Atualização automática, do BCB ao npm.** Toda segunda-feira um GitHub Action
    ([`update-logos.yml`](.github/workflows/update-logos.yml)) reconstrói a lista e os logos a
-   partir das fontes e abre um PR com o diff visual para revisão. Inclusões, renomeações e
-   exclusões feitas pelo BCB — e trocas de logo — entram na atualização seguinte.
+   partir das fontes. Mudanças **só de dados** (inclusões, renomeações e exclusões feitas pelo
+   BCB) são validadas por testes, mergeadas e **publicadas no npm automaticamente**; qualquer
+   **troca de logo** abre um PR com o diff visual para revisão humana antes de publicar.
 4. **Uso em qualquer stack.** API JavaScript/TypeScript, mapa pronto para React Native, CLI que
    copia os assets para projetos Flutter/Kotlin/Swift/.NET/PHP, URLs de CDN sem instalar nada —
    ou só o JSON.
@@ -265,9 +266,10 @@ Um registro de `data/bancos.json`:
    (o revisor confere marca e domínio) — aprovados viram `forcedUris`.
 6. **Normalização**: cada arte vira PNG 256×256; o SVG original é mantido quando seguro.
 7. **Cadência**: o workflow roda **toda segunda-feira** (e sob demanda), regenera
-   `data/bancos.json`, `logos/`, `PREVIEW.md` e `react-native.js`, e **abre um PR** com o
-   relatório e o diff visual dos PNGs. Depois da revisão e merge, o mantenedor publica uma
-   nova versão no npm (Release no GitHub). Nada é editado à mão.
+   `data/bancos.json`, `logos/`, `PREVIEW.md` e `react-native.js`, e abre um PR com o
+   relatório e o diff visual dos PNGs. Diffs só de dados passam por testes e são **mergeados e
+   publicados no npm automaticamente**; diffs que alteram logos aguardam revisão visual humana
+   — e o release após o merge é automático. Nada é editado à mão.
 
 Detalhes de manutenção (rodar o pipeline localmente, promover sugestões, overrides, denylist):
 **[CONTRIBUTING.md](CONTRIBUTING.md)**.

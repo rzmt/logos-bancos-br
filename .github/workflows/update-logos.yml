@@ -1,8 +1,14 @@
 name: Atualizar logos
 
 # Roda o pipeline contra as fontes oficiais (BCB/STR + Open Finance) e, se
-# houver mudança, abre um PR com o relatório no corpo e o diff visual dos
-# PNGs. Nunca faz push direto — a revisão humana é parte do desenho.
+# houver mudança, abre um PR com o relatório no corpo e o diff visual dos PNGs.
+#
+# Diffs "seguros" — nenhum arquivo em logos/ alterado e churn pequeno de
+# instituições — são validados (lint + typecheck + testes + build), mergeados
+# e publicados sem intervenção humana. Qualquer mudança em logos/ continua
+# exigindo revisão visual no PR: em contexto bancário, logo errado é pior que
+# logo nenhum. Se o pipeline falhar, uma issue é aberta/atualizada (dead-man's
+# switch) — o mantenedor só age quando o robô chama.
 on:
   schedule:
     - cron: '0 9 * * 1' # segundas 09:00 UTC (06:00 em Brasília)
@@ -11,6 +17,12 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  issues: write
+  actions: write
+
+concurrency:
+  group: atualizar-logos
+  cancel-in-progress: false
 
 jobs:
   atualizar:
@@ -25,13 +37,88 @@ jobs:
 
       - run: npm ci
 
+      - name: Registrar ISPBs (antes)
+        run: |
+          node -e "
+            const banks = require('./data/bancos.json').banks.map((b) => b.ispb);
+            const pix = require('./data/instituicoes-pix.json').institutions.map((i) => i.ispb);
+            require('fs').writeFileSync(process.env.RUNNER_TEMP + '/ispbs-antes.txt', [...banks, ...pix].join('\n'));
+          "
+
       - name: Rodar pipeline
         run: npm run pipeline
 
       - name: Garantir relatório
         run: test -f pipeline/report.md || echo '## Atualização de logos' > pipeline/report.md
 
-      - name: Abrir PR se houver mudanças
+      - name: Classificar o diff
+        id: diff
+        run: |
+          mudancas=$(git status --porcelain -- data logos PREVIEW.md react-native.js pipeline/manifest.json | wc -l | tr -d ' ')
+          logos_mudados=$(git status --porcelain -- logos | wc -l | tr -d ' ')
+          # churn = entradas + saídas de ISPBs (variação líquida esconderia troca de entidades)
+          churn=$(node -e "
+            const fs = require('fs');
+            const antes = new Set(fs.readFileSync(process.env.RUNNER_TEMP + '/ispbs-antes.txt', 'utf8').split('\n').filter(Boolean));
+            const depois = new Set([
+              ...require('./data/bancos.json').banks.map((b) => b.ispb),
+              ...require('./data/instituicoes-pix.json').institutions.map((i) => i.ispb),
+            ]);
+            let n = 0;
+            for (const x of depois) if (!antes.has(x)) n++;
+            for (const x of antes) if (!depois.has(x)) n++;
+            console.log(n);
+          ")
+          if [ "$mudancas" = "0" ]; then estado=sem-mudanca
+          elif [ "$logos_mudados" = "0" ] && [ "$churn" -le 3 ]; then estado=seguro
+          else estado=revisao; fi
+          echo "estado=$estado" >> "$GITHUB_OUTPUT"
+          echo "Diff: $mudancas arquivo(s) mudado(s), $logos_mudados em logos/, churn de instituições $churn → $estado"
+
+      - name: Fechar PR órfão (fontes não divergem mais da main)
+        if: steps.diff.outputs.estado == 'sem-mudanca'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          pr=$(gh pr list --head auto/atualizar-logos --state open --json number --jq 'first(.[]).number')
+          if [ -n "$pr" ]; then
+            gh pr close "$pr" --delete-branch \
+              --comment 'Fechado automaticamente: o pipeline não produz mais diferença em relação à main.'
+          fi
+
+      - name: Validar dataset novo (mesmos passos do check "ci")
+        if: steps.diff.outputs.estado != 'sem-mudanca'
+        run: |
+          npm run lint
+          npm run typecheck
+          npm test
+          npm run build
+
+      - name: Bump de versão (a partir da última publicada no npm)
+        if: steps.diff.outputs.estado != 'sem-mudanca'
+        run: |
+          # Deriva do npm, não só do package.json local: um bump pendente no PR
+          # pode colidir com versão publicada por outro caminho nesse meio-tempo.
+          proxima=$(node -e "
+            const { execSync } = require('child_process');
+            const view = (spec) => {
+              try {
+                return execSync('npm view ' + spec + ' version', { stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim();
+              } catch { return ''; }
+            };
+            const parse = (s) => s.split('.').map(Number);
+            const cmp = (a, b) => a[0] - b[0] || a[1] - b[1] || a[2] - b[2];
+            const local = parse(require('./package.json').version);
+            const publicada = view('logos-bancos-br');
+            let v = publicada && cmp(parse(publicada), local) > 0 ? parse(publicada) : local;
+            while (view('logos-bancos-br@' + v.join('.'))) v = [v[0], v[1], v[2] + 1];
+            console.log(v.join('.'));
+          ")
+          npm version "$proxima" --no-git-tag-version --allow-same-version
+
+      - name: Abrir/atualizar PR
+        id: pr
+        if: steps.diff.outputs.estado != 'sem-mudanca'
         uses: peter-evans/create-pull-request@v8
         with:
           commit-message: 'feat: atualiza logos e dataset (fontes oficiais)'
@@ -46,3 +133,83 @@ jobs:
             PREVIEW.md
             react-native.js
             pipeline/manifest.json
+            package.json
+            package-lock.json
+
+      - name: Auto-merge (diff seguro) e release
+        if: steps.diff.outputs.estado == 'seguro' && steps.pr.outputs.pull-request-number
+        timeout-minutes: 20
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          sha='${{ steps.pr.outputs.pull-request-head-sha }}'
+          pr='${{ steps.pr.outputs.pull-request-number }}'
+          # A proteção da main exige o check "ci", mas PRs criados com o
+          # GITHUB_TOKEN não disparam workflows — dispara na mão e espera.
+          # A folga de 30s no timestamp cobre skew de relógio sem casar com
+          # runs antigos do mesmo SHA (ex.: re-run com branch idêntica).
+          desde=$(date -u -d '-30 seconds' +%Y-%m-%dT%H:%M:%SZ)
+          gh workflow run ci.yml --ref auto/atualizar-logos
+          run_id=''
+          for _ in $(seq 1 30); do
+            sleep 10
+            run_id=$(gh run list --workflow=ci.yml --branch auto/atualizar-logos --event workflow_dispatch \
+              --json databaseId,headSha,createdAt \
+              --jq "first(.[] | select(.headSha == \"$sha\" and .createdAt >= \"$desde\")).databaseId")
+            [ -n "$run_id" ] && break
+          done
+          if [ -z "$run_id" ]; then
+            echo 'run do CI não apareceu; deixando o PR para revisão humana'
+            exit 1
+          fi
+          gh run watch "$run_id" --exit-status
+          # O veredito de mergeabilidade pode demorar a propagar após o check
+          # concluir — tenta com folga antes de desistir.
+          mergeado=''
+          for _ in 1 2 3; do
+            if gh pr merge "$pr" --squash --delete-branch \
+              --subject 'feat: atualiza logos e dataset (fontes oficiais)'; then
+              mergeado=sim
+              break
+            fi
+            sleep 15
+          done
+          [ -n "$mergeado" ] || exit 1
+          # Merge feito com o GITHUB_TOKEN não dispara o gatilho de push do
+          # release.yml — chama explicitamente.
+          gh workflow run release.yml --ref main
+
+      - name: Pedir revisão humana (diff com logos)
+        if: steps.diff.outputs.estado == 'revisao' && steps.pr.outputs.pull-request-number
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Sem isto o check obrigatório "ci" nunca roda no PR e o merge fica
+          # bloqueado até para o revisor humano.
+          gh workflow run ci.yml --ref auto/atualizar-logos
+          gh pr comment '${{ steps.pr.outputs.pull-request-number }}' --body \
+            'Auto-merge pulado: o diff altera arquivos de logo (ou muda muitas instituições) e precisa de revisão visual — checklist no CONTRIBUTING.md. Depois do merge, o release é automático.'
+
+      - name: Fechar alerta de falha anterior
+        if: success()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          for issue in $(gh issue list --label pipeline-falhou --state open --json number --jq '.[].number'); do
+            gh issue close "$issue" --comment "Pipeline voltou a rodar com sucesso: $url"
+          done
+
+      - name: Alertar falha (dead-man's switch)
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          aberta=$(gh issue list --label pipeline-falhou --state open --json number --jq 'first(.[]).number')
+          if [ -n "$aberta" ]; then
+            gh issue comment "$aberta" --body "Falhou de novo: $url"
+          else
+            gh issue create --title 'Pipeline semanal falhou' --label pipeline-falhou \
+              --body "A atualização automática falhou — sem ação, o dataset fica para trás das fontes. Run: $url"
+          fi

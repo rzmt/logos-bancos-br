@@ -42,10 +42,11 @@
    from the public **Open Finance Brasil** directory (`openfinance`) or the **institution's own
    official website** (`direct-uri`, visually curated). Every file carries provenance: source
    URI, SHA-256 and date.
-3. **Automatic updates.** Every Monday a GitHub Action
+3. **Automatic updates, from the Central Bank to npm.** Every Monday a GitHub Action
    ([`update-logos.yml`](.github/workflows/update-logos.yml)) rebuilds the list and the logos
-   from the sources and opens a PR with the visual diff for review. Additions, renames and
-   removals made by the Central Bank — and logo changes — land in the next update.
+   from the sources. **Data-only changes** (additions, renames and removals made by the Central
+   Bank) are validated by tests, merged and **published to npm automatically**; any **logo
+   change** opens a PR with the visual diff for human review before publishing.
 4. **Works in any stack.** JavaScript/TypeScript API, a ready-made React Native map, a CLI that
    copies the assets into Flutter/Kotlin/Swift/.NET/PHP projects, CDN URLs with no install — or
    just the JSON.
@@ -199,8 +200,9 @@ discovery tools (`npm run discover` / `discover:ai`) find the icon published on 
 official website — nothing ships without visual curation (brand + domain reviewed); approvals
 become `forcedUris` (`source.type: "direct-uri"`). The weekly workflow regenerates
 `data/bancos.json`, `logos/`, `PREVIEW.md` and `react-native.js` and opens a PR with the report
-and the visual PNG diff. After review and merge, the maintainer publishes a new version to npm
-(GitHub Release). Nothing is edited by hand. Maintenance details:
+and the visual PNG diff. Data-only diffs are tested, merged and **released to npm
+automatically**; diffs touching logos wait for human visual review — and the post-merge release
+is automatic either way. Nothing is edited by hand. Maintenance details:
 [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Trademarks

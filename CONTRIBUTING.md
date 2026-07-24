@@ -84,8 +84,18 @@ Logo errado em produção? Abra issue com o template **"Logo incorreto"**.
 
 ## Revisando o PR automático da semana
 
-Toda segunda-feira o workflow `update-logos.yml` abre um PR quando há mudança (sem mudança, não
-abre nada). Checklist de revisão:
+Toda segunda-feira o workflow `update-logos.yml` roda o pipeline e, havendo mudança, abre um PR
+(sem mudança, não abre nada). O que acontece depois depende do diff:
+
+- **Diff só de dados** (nenhum arquivo em `logos/` alterado, delta de até 3 instituições): o
+  workflow valida (typecheck + testes), dispara o CI no PR, faz o **merge sozinho** e chama o
+  `release.yml` — versão nova no npm sem intervenção humana.
+- **Diff com logos** (novos, atualizados) ou delta grande: o PR **fica aberto para revisão
+  visual humana** — em contexto bancário, logo errado é pior que logo nenhum.
+- **Pipeline falhou**: uma issue com a label `pipeline-falhou` é aberta/atualizada. Só é preciso
+  agir quando essa issue (ou um PR aguardando revisão) aparecer.
+
+Checklist de revisão para os PRs que ficam abertos:
 
 1. **Leia o resumo** no corpo do PR: novos · atualizados · falhas · sugestões · órfãos.
 2. **Confira o diff visual dos PNGs** (o GitHub renderiza antes/depois). Todo logo `atualizado`
@@ -98,9 +108,8 @@ abre nada). Checklist de revisão:
    mas aceitam requisições locais. Falha nunca remove um logo já publicado; se precisar forçar a
    atualização de um logo que o CI não alcança, rode `npm run pipeline` localmente e suba num PR.
 5. **Sugestões novas** → avalie promover a `forcedMatches` (seção acima).
-6. **Merge** → publique: `npm version patch` → `git push && git push --tags` → Release no
-   GitHub (o workflow publica no npm sozinho). Sem release, o npm/CDN continuam na versão
-   anterior — o repositório fica na frente do pacote.
+6. **Merge** → pronto. O PR já traz o bump de versão; o merge dispara o `release.yml`, que
+   cria a tag + Release no GitHub e publica no npm sozinho.
 
 ## Testes
 
@@ -110,10 +119,14 @@ nova de matching precisa de teste — o custo de um logo errado é alto.
 
 ## Release / publicação no npm
 
-1. `npm version <patch|minor|major>` (atualiza `package.json` + tag).
-2. `git push && git push --tags`.
-3. Crie uma **Release** no GitHub a partir da tag — o workflow `publish.yml` publica no npm com
-   `--provenance` (build rastreável ao commit/Action).
+O release é automático: o workflow `release.yml` roda a cada push na `main` que altere o
+`package.json` (e via `workflow_dispatch`) e publica **qualquer versão ainda não lançada** — cria
+a tag + Release no GitHub e publica no npm com `--provenance` (build rastreável ao commit/Action).
+É idempotente: tag já criada e versão já publicada são puladas.
+
+- **Patch semanal**: o PR automático já vem com o bump; merge = release. Nada a fazer.
+- **Minor/major manual**: `npm version <minor|major> --no-git-tag-version`, commit
+  (`build: vX.Y.Z`) e push na `main` — o `release.yml` faz o resto. Não crie a tag à mão.
 
 Pré-requisito (uma vez): secret `NPM_TOKEN` no repositório (Settings → Secrets → Actions) com um
 *granular access token* do npm com permissão de publicação neste pacote.

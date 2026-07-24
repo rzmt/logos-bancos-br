@@ -1,0 +1,112 @@
+name: Release
+
+# Publica qualquer versão presente na main que ainda não foi lançada: cria a
+# tag + Release no GitHub e publica no npm com --provenance (build rastreável
+# a este repositório, commit e execução). Idempotente — tag já criada e versão
+# já publicada são puladas, então re-executar é sempre seguro. Se a versão do
+# HEAD já foi publicada a partir de OUTRO commit com dataset diferente, o run
+# falha de propósito (é preciso um bump novo — nunca terminar verde com o npm
+# para trás da main). Falhas abrem/atualizam a issue "pipeline-falhou".
+#
+# Gatilhos: push na main tocando package.json (merge humano do PR semanal ou
+# bump manual) e workflow_dispatch (o update-logos.yml chama após o
+# auto-merge, porque eventos feitos com o GITHUB_TOKEN não disparam gatilhos
+# de push). Requer o secret NPM_TOKEN (ver CONTRIBUTING.md).
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [package.json]
+
+permissions:
+  contents: write
+  issues: write
+  id-token: write # exigido pelo npm provenance
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0 # tags completas para o guard de idempotência
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+          registry-url: https://registry.npmjs.org
+
+      - name: Verificar o que falta para esta versão
+        id: guard
+        run: |
+          v=$(node -p "require('./package.json').version")
+          echo "versao=$v" >> "$GITHUB_OUTPUT"
+          if [ -z "$(git tag -l "v$v")" ]; then
+            echo "criar_tag=true" >> "$GITHUB_OUTPUT"
+          fi
+          # Distingue "versão não existe" (publicar) de erro de rede/registry
+          # (falhar): tratar erro como "não publicado" causaria publish em falso.
+          set +e
+          saida=$(npm view "logos-bancos-br@$v" version 2>&1)
+          rc=$?
+          set -e
+          if [ $rc -eq 0 ] && [ -n "$saida" ]; then
+            echo "npm já tem a versão $v"
+          elif { [ $rc -ne 0 ] && echo "$saida" | grep -q 'E404'; } || { [ $rc -eq 0 ] && [ -z "$saida" ]; }; then
+            echo "publicar=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "npm view falhou de forma inesperada:"
+            echo "$saida"
+            exit 1
+          fi
+
+      - name: Detectar versão órfã (nada a fazer, mas main difere do publicado)
+        if: ${{ !steps.guard.outputs.publicar && !steps.guard.outputs.criar_tag }}
+        run: |
+          v='${{ steps.guard.outputs.versao }}'
+          if ! git diff --quiet "v$v" "$GITHUB_SHA" -- data logos; then
+            echo "::error::v$v já foi publicada a partir de outro commit e o dataset da main é diferente — faça um bump de versão para publicar o conteúdo atual."
+            exit 1
+          fi
+          echo "Nada a fazer: v$v já publicada e o dataset não mudou."
+
+      - name: Instalar dependências
+        if: steps.guard.outputs.publicar || steps.guard.outputs.criar_tag
+        run: npm ci
+
+      - name: Testes
+        if: steps.guard.outputs.publicar
+        run: npm test
+
+      - name: Publicar no npm
+        if: steps.guard.outputs.publicar
+        run: npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Criar tag + Release no GitHub
+        if: steps.guard.outputs.criar_tag
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          v='${{ steps.guard.outputs.versao }}'
+          gh release create "v$v" --target "$GITHUB_SHA" --title "v$v" --generate-notes
+
+      - name: Alertar falha (dead-man's switch)
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          aberta=$(gh issue list --label pipeline-falhou --state open --json number --jq 'first(.[]).number')
+          if [ -n "$aberta" ]; then
+            gh issue comment "$aberta" --body "Release falhou: $url"
+          else
+            gh issue create --title 'Release automático falhou' --label pipeline-falhou \
+              --body "O release não completou — o npm/CDN podem estar para trás da main. Re-executar o run é seguro (idempotente). Run: $url"
+          fi
