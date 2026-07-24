@@ -2,7 +2,7 @@
 
 > Arquivo gerado automaticamente pelo pipeline (`npm run pipeline`) — não editar à mão.
 
-**158** instituições com logo próprio · **315** afiliadas usando o logo do seu sistema cooperativo · **639** sem logo nas fontes oficiais.
+**160** instituições com logo próprio · **315** afiliadas usando o logo do seu sistema cooperativo · **637** sem logo nas fontes oficiais.
 
 ## Logos próprios
 
@@ -135,6 +135,7 @@
 | <img src="logos/png/20308187.png" width="40" alt="AVANCARD PROVER IP LTDA"> | 0588 | 20308187 | AVANCARD PROVER IP LTDA | Open Finance — PROVER PROMOCAO DE VENDAS INSTITUICAO DE PAGAMENTO LTDA |
 | <img src="logos/png/48703388.png" width="40" alt="ASA SCFI S.A."> | 0594 | 48703388 | ASA SCFI S.A. | Open Finance — ASA SOCIEDADE DE CREDITO FINANCIAMENTO E INVESTIMENTO S.A. |
 | <img src="logos/png/19468242.png" width="40" alt="IFOOD PAGO IP"> | 0595 | 19468242 | IFOOD PAGO IP | Open Finance — IFood Pago Instituicao de Pagamento S.A. |
+| <img src="logos/png/61820817.png" width="40" alt="BCO PAULISTA S.A."> | 0611 | 61820817 | BCO PAULISTA S.A. | Site oficial (revisado) |
 | <img src="logos/png/31880826.png" width="40" alt="BCO GUANABARA S.A."> | 0612 | 31880826 | BCO GUANABARA S.A. | Open Finance — BCO GUANABARA S.A. |
 | <img src="logos/png/60850229.png" width="40" alt="OMNI BANCO S.A."> | 0613 | 60850229 | OMNI BANCO S.A. | Site oficial (revisado) |
 | <img src="logos/png/51342763.png" width="40" alt="REVOLUT SCD S.A."> | 0620 | 51342763 | REVOLUT SCD S.A. | Open Finance — REVOLUT SOCIEDADE DE CREDITO DIRETO S.A. |
@@ -144,6 +145,7 @@
 | <img src="logos/png/60889128.png" width="40" alt="BCO SOFISA S.A."> | 0637 | 60889128 | BCO SOFISA S.A. | Open Finance — BCO SOFISA S.A. |
 | <img src="logos/png/62144175.png" width="40" alt="BCO PINE S.A."> | 0643 | 62144175 | BCO PINE S.A. | Site oficial (revisado) |
 | <img src="logos/png/59588111.png" width="40" alt="BCO VOTORANTIM S.A."> | 0655 | 59588111 | BCO VOTORANTIM S.A. | Open Finance — BCO VOTORANTIM S.A. |
+| <img src="logos/png/20018183.png" width="40" alt="STARK BANK S.A. - IP"> | 0665 | 20018183 | STARK BANK S.A. - IP | Site oficial (revisado) |
 | <img src="logos/png/48632754.png" width="40" alt="CELCOIN SCD"> | 0668 | 48632754 | CELCOIN SCD | Open Finance — CELCOIN INSTITUICAO DE PAGAMENTO S.A. |
 | <img src="logos/png/53505601.png" width="40" alt="STONE CFI S.A."> | 0672 | 53505601 | STONE CFI S.A. | Open Finance — STONE PAGAMENTOS S.A. |
 | <img src="logos/png/30723871.png" width="40" alt="CASAS BAHIA PAY IP LTDA."> | 0675 | 30723871 | CASAS BAHIA PAY IP LTDA. | Open Finance — CASAS BAHIA PAY INSTITUICAO DE PAGAMENTO LTDA |
@@ -523,7 +525,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 </details>
 
 
-<details><summary>Instituições sem logo (639) — consumidores devem usar um ícone genérico</summary>
+<details><summary>Instituições sem logo (637) — consumidores devem usar um ícone genérico</summary>
 
 - `0007` BNDES (ISPB 33657248)
 - `0010` CREDICOAMO (ISPB 81723108)
@@ -755,7 +757,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0600` BCO LUSO BRASILEIRO S.A. (ISPB 59118133)
 - `0604` BCO INDUSTRIAL DO BRASIL S.A. (ISPB 31895683)
 - `0610` BCO VR S.A. (ISPB 78626983)
-- `0611` BCO PAULISTA S.A. (ISPB 61820817)
 - `0614` SANTS SCD S.A. (ISPB 52440987)
 - `0615` SMART SOLUTIONS GROUP IP LTDA (ISPB 37470405)
 - `0619` TRIO IP LTDA. (ISPB 49931906)
@@ -773,7 +774,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0661` FREEX SCC S.A. (ISPB 55428859)
 - `0662` WE PAY OUT IP LTDA. (ISPB 32708748)
 - `0663` ACTUAL DTVM S.A. (ISPB 44782130)
-- `0665` STARK BANK S.A. - IP (ISPB 20018183)
 - `0667` LIQUIDO IP LTDA (ISPB 48552108)
 - `0669` TRANSFERO IP LTDA. (ISPB 47133056)
 - `0670` BSN (ISPB 11491029)

@@ -41,9 +41,12 @@ Key facts:
 - **CLI for any stack** (Flutter, Kotlin, Swift, .NET, PHP…):
   `npx logos-bancos-br copy --dest <dir> [--by compe|ispb] [--format png|svg|both] [--only 341,001]`
   and `npx logos-bancos-br list [--json]`.
-- **CDN, no install** (pin a version):
-  `https://cdn.jsdelivr.net/npm/logos-bancos-br@<version>/logos/png/<ISPB>.png`. The COMPE→ISPB
-  mapping lives in `data/bancos.json`.
+- **CDN, no install**:
+  `https://cdn.jsdelivr.net/npm/logos-bancos-br@0/logos/{png|svg}/<ISPB>.{png|svg}` (`@0` tracks
+  the latest 0.x release; pin an exact version for immutability). The compact index
+  `data/cdn-index.min.json` (~60 KB) maps `{ispb: [compe, name, flags]}` with flags
+  0 = no logo, 1 = PNG only, 3 = PNG+SVG — resolve COMPE→ISPB and logo availability
+  without installing anything.
 
 ## Docs
 

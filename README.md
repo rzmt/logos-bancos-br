@@ -166,13 +166,27 @@ Rode de novo a cada atualização do pacote para receber lista e logos novos.
 
 ### CDN — sem instalar nada
 
+O caminho é sempre `logos/{png|svg}/{ispb}.{png|svg}`:
+
 ```
-https://cdn.jsdelivr.net/npm/logos-bancos-br@0.3.0/logos/png/60701190.png
-https://cdn.jsdelivr.net/npm/logos-bancos-br@0.3.0/logos/svg/18236120.svg
+https://cdn.jsdelivr.net/npm/logos-bancos-br@0/logos/png/60701190.png
+https://cdn.jsdelivr.net/npm/logos-bancos-br@0/logos/svg/18236120.svg
 ```
 
-Fixe sempre uma versão (`@0.3.0`) — a correspondência COMPE→ISPB está em
-[`data/bancos.json`](data/bancos.json).
+`@0` acompanha automaticamente a versão mais recente da série 0.x — os logos e os
+dados ficam frescos sem você publicar nada (a atualização semanal vira release
+sozinha). Prefere imutabilidade? Fixe a versão exata (ex.: `@0.5.0`).
+
+Para resolver COMPE→ISPB, nome oficial e existência de logo em qualquer stack, sem
+instalar nada, há um índice compacto (~60 KB, ~15 KB gzip):
+
+```
+https://cdn.jsdelivr.net/npm/logos-bancos-br@0/data/cdn-index.min.json
+```
+
+Formato: `{"institutions": {"60701190": ["341", "Itaú Unibanco S.A.", 3]}}` — cada
+entrada é `[compe, nome, flags]`, com flags `0` = sem logo, `1` = só PNG,
+`3` = PNG+SVG.
 
 ### Só os dados
 

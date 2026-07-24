@@ -103,3 +103,24 @@ export function buildDatasets({
 export function toJson(value: unknown): string {
   return `${JSON.stringify(value, null, 2)}\n`;
 }
+
+/**
+ * Índice compacto para consumo via CDN sem instalar o pacote:
+ * `{ispb: [compe, nome, flags]}` com flags 0 = sem logo, 1 = png, 3 = png+svg.
+ * Determinístico (sem timestamps) para o writeIfChanged não gerar diff vazio.
+ */
+export function buildCdnIndex(dataset: Dataset, pixDataset: PixDataset): string {
+  const institutions: Record<string, [string | null, string, number]> = {};
+  for (const inst of [...dataset.banks, ...pixDataset.institutions]) {
+    let flags = 0;
+    if (inst.logo) flags = inst.logo.svg ? 3 : 1;
+    institutions[inst.ispb] = [inst.compe, inst.name, flags];
+  }
+  const index = {
+    version: 1,
+    logoPathTemplate: 'logos/{format}/{ispb}.{format}',
+    count: Object.keys(institutions).length,
+    institutions,
+  };
+  return `${JSON.stringify(index)}\n`;
+}

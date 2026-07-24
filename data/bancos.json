@@ -5694,7 +5694,18 @@
         "institutionType": "Banco Múltiplo",
         "authorizedByBcb": true
       },
-      "logo": null
+      "logo": {
+        "png": "logos/png/61820817.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.bancopaulista.com.br/Imagens/logo_banco_paulista.png",
+          "sha256": "fa70d838c2c75b1110f8bb72d19645962e085aa3084a9160ae7818b684f5916a",
+          "updatedAt": "2026-07-24"
+        }
+      }
     },
     {
       "ispb": "31880826",
@@ -6144,7 +6155,18 @@
         "institutionType": "Instituição de Pagamento",
         "authorizedByBcb": true
       },
-      "logo": null
+      "logo": {
+        "png": "logos/png/20018183.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://starkbank.com/static/logo-rectangle-af45g2.png",
+          "sha256": "9d2befa82ea83a3a6b53bdfb83c7789f26572b3ba09d4a14d4a48e540942f6bc",
+          "updatedAt": "2026-07-24"
+        }
+      }
     },
     {
       "ispb": "48552108",

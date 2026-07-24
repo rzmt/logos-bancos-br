@@ -133,11 +133,18 @@ npx logos-bancos-br copy --dest ./assets/banks [--by compe|ispb] [--format png|s
 npx logos-bancos-br list
 ```
 
-**CDN, no install** (always pin a version):
+**CDN, no install** — the path is always `logos/{png|svg}/{ispb}.{ext}`; `@0` tracks
+the latest 0.x release (fresh data weekly, auto-released), or pin an exact version
+(e.g. `@0.5.0`) for immutability:
 
 ```
-https://cdn.jsdelivr.net/npm/logos-bancos-br@0.3.0/logos/png/60701190.png
+https://cdn.jsdelivr.net/npm/logos-bancos-br@0/logos/png/60701190.png
+https://cdn.jsdelivr.net/npm/logos-bancos-br@0/data/cdn-index.min.json
 ```
+
+The compact index (~60 KB, ~15 KB gzipped) maps `{ispb: [compe, name, flags]}`
+(flags: `0` = no logo, `1` = PNG only, `3` = PNG+SVG), so any stack can resolve
+COMPE→ISPB and check logo availability without installing anything.
 
 **Data only**:
 

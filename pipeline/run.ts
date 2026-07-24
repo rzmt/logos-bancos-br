@@ -21,7 +21,7 @@ import { basename, dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { withConcurrency } from './concurrency';
-import { buildDatasets, toJson } from './dataset';
+import { buildCdnIndex, buildDatasets, toJson } from './dataset';
 import { downloadLogo, isSafeSvg, looksLikeSvg, rasterize, sha256, writeIfChanged } from './images';
 import { buildMatches } from './matching';
 import { buildPreviewMarkdown } from './preview';
@@ -44,6 +44,7 @@ const MANIFEST_PATH = join(__dirname, 'manifest.json');
 const REPORT_PATH = join(__dirname, 'report.md');
 const DATASET_PATH = join(ROOT, 'data', 'bancos.json');
 const PIX_DATASET_PATH = join(ROOT, 'data', 'instituicoes-pix.json');
+const CDN_INDEX_PATH = join(ROOT, 'data', 'cdn-index.min.json');
 const PREVIEW_PATH = join(ROOT, 'PREVIEW.md');
 const RN_MAP_PATH = join(ROOT, 'react-native.js');
 
@@ -336,13 +337,14 @@ async function main(): Promise<void> {
   if (!dryRun) {
     const datasetStatus = writeIfChanged(DATASET_PATH, toJson(dataset));
     const pixStatus = writeIfChanged(PIX_DATASET_PATH, toJson(pixDataset));
+    const cdnStatus = writeIfChanged(CDN_INDEX_PATH, buildCdnIndex(dataset, pixDataset));
     const previewStatus = writeIfChanged(PREVIEW_PATH, buildPreviewMarkdown(dataset, pixDataset));
     const rnStatus = writeIfChanged(
       RN_MAP_PATH,
       buildReactNativeMap([...dataset.banks, ...pixDataset.institutions]),
     );
     writeFileSync(MANIFEST_PATH, `${JSON.stringify(sortedManifest, null, 2)}\n`);
-    generatedFiles = `bancos.json ${datasetStatus} · instituicoes-pix.json ${pixStatus} · PREVIEW.md ${previewStatus} · react-native.js ${rnStatus}`;
+    generatedFiles = `bancos.json ${datasetStatus} · instituicoes-pix.json ${pixStatus} · cdn-index.min.json ${cdnStatus} · PREVIEW.md ${previewStatus} · react-native.js ${rnStatus}`;
   }
 
   // ---- report ----
