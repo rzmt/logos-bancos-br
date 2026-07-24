@@ -2,7 +2,7 @@
 
 > Arquivo gerado automaticamente pelo pipeline (`npm run pipeline`) — não editar à mão.
 
-**158** instituições com logo próprio · **315** afiliadas usando o logo do seu sistema cooperativo · **640** sem logo nas fontes oficiais.
+**158** instituições com logo próprio · **315** afiliadas usando o logo do seu sistema cooperativo · **639** sem logo nas fontes oficiais.
 
 ## Logos próprios
 
@@ -523,7 +523,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 </details>
 
 
-<details><summary>Instituições sem logo (640) — consumidores devem usar um ícone genérico</summary>
+<details><summary>Instituições sem logo (639) — consumidores devem usar um ícone genérico</summary>
 
 - `0007` BNDES (ISPB 33657248)
 - `0010` CREDICOAMO (ISPB 81723108)
@@ -1066,7 +1066,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` UNLIMIT IP LTDA. (ISPB 35542555)
 - `——` ENOQ PAY (ISPB 35990763)
 - `——` REAG IP (ISPB 36272465)
-- `——` CORPAG IP (ISPB 36741675)
 - `——` APROMS NET IP LTDA. (ISPB 37168145)
 - `——` BASS PAGO (ISPB 37293930)
 - `——` STATER PAY INSTITUICAO DE PAGA (ISPB 37319859)
