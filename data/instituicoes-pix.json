@@ -4679,8 +4679,8 @@
       "compe": null,
       "compe4": null,
       "cnpj": "05545390000107",
-      "name": "COOP SICREDI LENÇÓIS",
-      "shortName": "COOP SICREDI LENÇÓIS",
+      "name": "COOP SICREDI LENÇÓIS MA",
+      "shortName": "COOP SICREDI LENÇÓIS MA",
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -9040,22 +9040,6 @@
         "pixParticipationType": "Facultativa",
         "modality": "Provedor de Conta Transacional",
         "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": true
-      },
-      "logo": null
-    },
-    {
-      "ispb": "33630661",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "33630661000150",
-      "name": "GOWD IP LTDA.",
-      "shortName": "GOWD IP LTDA.",
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Instituição de Pagamento",
         "authorizedByBcb": true
       },
       "logo": null

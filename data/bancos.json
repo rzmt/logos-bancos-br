@@ -6306,6 +6306,21 @@
       "logo": null
     },
     {
+      "ispb": "33630661",
+      "compe": "677",
+      "compe4": "0677",
+      "name": "GOWD INSTITUIÇÃO DE PAGAMENTO LTDA.",
+      "shortName": "GOWD IP LTDA.",
+      "pix": {
+        "spiParticipationType": "Direta",
+        "pixParticipationType": "Facultativa",
+        "modality": "Provedor de Conta Transacional",
+        "institutionType": "Instituição de Pagamento",
+        "authorizedByBcb": true
+      },
+      "logo": null
+    },
+    {
       "ispb": "45716916",
       "compe": "678",
       "compe4": "0678",
@@ -6978,7 +6993,13 @@
       "compe4": "0763",
       "name": "VUE INSTITUIÇÃO DE PAGAMENTO S.A.",
       "shortName": "VUE IP S.A.",
-      "pix": null,
+      "pix": {
+        "spiParticipationType": "Direta",
+        "pixParticipationType": "Facultativa",
+        "modality": "Provedor de Conta Transacional",
+        "institutionType": "Instituição de Pagamento",
+        "authorizedByBcb": true
+      },
       "logo": null
     },
     {
