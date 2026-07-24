@@ -146,6 +146,15 @@ The compact index (~60 KB, ~15 KB gzipped) maps `{ispb: [compe, name, flags]}`
 (flags: `0` = no logo, `1` = PNG only, `3` = PNG+SVG), so any stack can resolve
 COMPE→ISPB and check logo availability without installing anything.
 
+If you just want a ready logo URL per ISPB (no path building, no format choice),
+there's a pre-resolved map (`{ISPB: url}`, SVG when available else PNG, logos only):
+
+```
+https://cdn.jsdelivr.net/npm/logos-bancos-br@0/data/logo-urls.min.json
+```
+
+Consumption is a plain lookup: `logoUrl = map[ispb]` (or `null`).
+
 **Data only**:
 
 ```ts

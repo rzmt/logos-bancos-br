@@ -188,6 +188,16 @@ Formato: `{"institutions": {"60701190": ["341", "Itaú Unibanco S.A.", 3]}}` —
 entrada é `[compe, nome, flags]`, com flags `0` = sem logo, `1` = só PNG,
 `3` = PNG+SVG.
 
+E se você só quer a URL do logo pronta por ISPB, sem montar caminho nem escolher
+formato, há um mapa já resolvido (`{ISPB: url}`, SVG quando existe senão PNG, só
+quem tem logo):
+
+```
+https://cdn.jsdelivr.net/npm/logos-bancos-br@0/data/logo-urls.min.json
+```
+
+Aí o consumo é direto: `logoUrl = mapa[ispb]` (ou `null` se não tiver).
+
 ### Só os dados
 
 ```ts

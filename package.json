@@ -59,6 +59,7 @@
     "./data/bancos.json": "./data/bancos.json",
     "./data/instituicoes-pix.json": "./data/instituicoes-pix.json",
     "./data/cdn-index.min.json": "./data/cdn-index.min.json",
+    "./data/logo-urls.min.json": "./data/logo-urls.min.json",
     "./logos/*": "./logos/*",
     "./package.json": "./package.json"
   },

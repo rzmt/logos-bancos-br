@@ -124,3 +124,25 @@ export function buildCdnIndex(dataset: Dataset, pixDataset: PixDataset): string 
   };
   return `${JSON.stringify(index)}\n`;
 }
+
+/** Base do CDN; `@0` acompanha a série 0.x (path por ISPB é estável entre versões). */
+const CDN_BASE = 'https://cdn.jsdelivr.net/npm/logos-bancos-br@0';
+
+/**
+ * URLs de logo já resolvidas por ISPB, para consumo trivial via CDN sem
+ * instalar o pacote nem conhecer o padrão de path: `{ispb: url}`, SVG quando
+ * existe, senão PNG. Só instituições com logo. A URL vem do caminho REAL do
+ * asset (`logo.svg`/`logo.png`), não do ISPB — afiliadas de sistemas
+ * cooperativos compartilham um arquivo sob outro ISPB, e usar o ISPB próprio
+ * daria 404. Chaves ordenadas por ISPB (determinístico p/ o writeIfChanged).
+ */
+export function buildLogoUrls(dataset: Dataset, pixDataset: PixDataset): string {
+  const urls: Record<string, string> = {};
+  for (const inst of [...dataset.banks, ...pixDataset.institutions]) {
+    if (!inst.logo) continue;
+    urls[inst.ispb] = `${CDN_BASE}/${inst.logo.svg ?? inst.logo.png}`;
+  }
+  const sorted: Record<string, string> = {};
+  for (const ispb of Object.keys(urls).sort()) sorted[ispb] = urls[ispb] as string;
+  return `${JSON.stringify(sorted)}\n`;
+}
