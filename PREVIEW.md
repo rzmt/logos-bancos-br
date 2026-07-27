@@ -2,7 +2,7 @@
 
 > Arquivo gerado automaticamente pelo pipeline (`npm run pipeline`) — não editar à mão.
 
-**160** instituições com logo próprio · **315** afiliadas usando o logo do seu sistema cooperativo · **637** sem logo nas fontes oficiais.
+**160** instituições com logo próprio · **316** afiliadas usando o logo do seu sistema cooperativo · **636** sem logo nas fontes oficiais.
 
 ## Logos próprios
 
@@ -241,9 +241,9 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 
 ### SICOOB
 
-<img src="logos/png/04891850.png" width="56" alt="SICOOB"> — usado por **140** afiliada(s).
+<img src="logos/png/04891850.png" width="56" alt="SICOOB"> — usado por **141** afiliada(s).
 
-<details><summary>Ver afiliadas (140)</summary>
+<details><summary>Ver afiliadas (141)</summary>
 
 - `0016` CCM DESP TRÂNS SC E RS (ISPB 04715685)
 - `——` CCLA SICOOB UNIMAIS METROPOLITANA (ISPB 00259231)
@@ -304,6 +304,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` COOP SICOOB CERRADO (ISPB 05222094)
 - `——` COOP SICOOB PRIMAVERA (ISPB 05241619)
 - `——` COOP SICOOB BURITIS (ISPB 05247312)
+- `——` COOP DA REGIÃO MERIDIONAL DO BRASIL - SICOOB MERIDIONAL (ISPB 05392810)
 - `——` CC NO PIAUÍ - SICOOB PIAUÍ (ISPB 05477038)
 - `——` CC SICOOB OURO VERDE (ISPB 05582619)
 - `——` SICOOB EMPRESARIAL (ISPB 05856736)
@@ -525,7 +526,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 </details>
 
 
-<details><summary>Instituições sem logo (637) — consumidores devem usar um ícone genérico</summary>
+<details><summary>Instituições sem logo (636) — consumidores devem usar um ícone genérico</summary>
 
 - `0007` BNDES (ISPB 33657248)
 - `0010` CREDICOAMO (ISPB 81723108)
@@ -931,7 +932,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` CREDISIS OESTE - CCI DO OESTE (ISPB 04985665)
 - `——` CC SERV FIN CTBA E REG (ISPB 05097757)
 - `——` CCLA REG LESTE BACIA RIO DOCE (ISPB 05158093)
-- `——` CC REGIÃO MERIDIONAL BRASIL (ISPB 05392810)
 - `——` CREDISIS CAPITALCREDI - CCLA DO ACRE LTDA. (ISPB 05439425)
 - `——` CC CREDLIDER (ISPB 05463934)
 - `——` CC INVESTIMENTO LIVRE ADMISSÃO DO OESTE DE RONDÔNIA (ISPB 05597773)
