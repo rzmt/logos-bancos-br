@@ -425,6 +425,7 @@ export const logos = {
   '05269976': require('./logos/png/10398952.png'),
   '05276770': require('./logos/png/10398952.png'),
   '05277312': require('./logos/png/10398952.png'),
+  '05392810': require('./logos/png/04891850.png'),
   '05410056': require('./logos/png/10398952.png'),
   '05425526': require('./logos/png/10398952.png'),
   '05477038': require('./logos/png/04891850.png'),

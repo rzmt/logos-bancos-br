@@ -4519,8 +4519,8 @@
       "compe": null,
       "compe4": null,
       "cnpj": "05392810000154",
-      "name": "CC REGIÃO MERIDIONAL BRASIL",
-      "shortName": "CC REGIÃO MERIDIONAL BRASIL",
+      "name": "COOP DA REGIÃO MERIDIONAL DO BRASIL - SICOOB MERIDIONAL",
+      "shortName": "COOP DA REGIÃO MERIDIONAL DO BRASIL - SICOOB MERIDIONAL",
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -4528,7 +4528,19 @@
         "institutionType": "Cooperativa de Crédito",
         "authorizedByBcb": true
       },
-      "logo": null
+      "logo": {
+        "png": "logos/png/04891850.png",
+        "svg": "logos/svg/04891850.svg",
+        "source": {
+          "type": "brand",
+          "org": "Confederacao Nacional das Cooperativas do Sicoob",
+          "cnpj": "04891850000188",
+          "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
+          "sha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
+          "updatedAt": "2026-07-17",
+          "brand": "SICOOB"
+        }
+      }
     },
     {
       "ispb": "05410056",
