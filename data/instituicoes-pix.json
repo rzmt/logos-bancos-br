@@ -1792,22 +1792,6 @@
       }
     },
     {
-      "ispb": "02475222",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "02475222000196",
-      "name": "COOPSERVIDOR ES",
-      "shortName": "COOPSERVIDOR ES",
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": true
-      },
-      "logo": null
-    },
-    {
       "ispb": "02480577",
       "compe": null,
       "compe4": null,
@@ -4807,8 +4791,8 @@
       "compe": null,
       "compe4": null,
       "cnpj": "05861932000142",
-      "name": "CCM DOS ADVOGADOS DE SC",
-      "shortName": "CCM DOS ADVOGADOS DE SC",
+      "name": "CCM DA ADVOCACIA",
+      "shortName": "CCM DA ADVOCACIA",
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -7304,22 +7288,6 @@
       "cnpj": "19449602000159",
       "name": "CC CREDCOOPER LTDA",
       "shortName": "CC CREDCOOPER LTDA",
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": true
-      },
-      "logo": null
-    },
-    {
-      "ispb": "19495266",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "19495266000180",
-      "name": "CC EMP DA CIA INDUSTRIAL CATAGUASES E BAUMINAS",
-      "shortName": "CC EMP DA CIA INDUSTRIAL CATAGUASES E BAUMINAS",
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",

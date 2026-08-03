@@ -2,7 +2,7 @@
 
 > Arquivo gerado automaticamente pelo pipeline (`npm run pipeline`) — não editar à mão.
 
-**160** instituições com logo próprio · **316** afiliadas usando o logo do seu sistema cooperativo · **636** sem logo nas fontes oficiais.
+**160** instituições com logo próprio · **316** afiliadas usando o logo do seu sistema cooperativo · **633** sem logo nas fontes oficiais.
 
 ## Logos próprios
 
@@ -526,7 +526,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 </details>
 
 
-<details><summary>Instituições sem logo (636) — consumidores devem usar um ícone genérico</summary>
+<details><summary>Instituições sem logo (633) — consumidores devem usar um ícone genérico</summary>
 
 - `0007` BNDES (ISPB 33657248)
 - `0010` CREDICOAMO (ISPB 81723108)
@@ -683,7 +683,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0478` GAZINCRED S.A. SCFI (ISPB 11760553)
 - `0481` SUPERLÓGICA SCD S.A. (ISPB 43599047)
 - `0482` ARTTA SCD (ISPB 42259084)
-- `0484` MAF DTVM SA (ISPB 36864992)
+- `0484` APEX DTVM (ISPB 36864992)
 - `0495` BCO LA PROVINCIA B AIRES BCE (ISPB 44189447)
 - `0496` BBVA BRASIL BI S.A. (ISPB 45283173)
 - `0506` RJI (ISPB 42066258)
@@ -775,7 +775,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0661` FREEX SCC S.A. (ISPB 55428859)
 - `0662` WE PAY OUT IP LTDA. (ISPB 32708748)
 - `0663` ACTUAL DTVM S.A. (ISPB 44782130)
-- `0667` LIQUIDO IP LTDA (ISPB 48552108)
 - `0669` TRANSFERO IP LTDA. (ISPB 47133056)
 - `0670` BSN (ISPB 11491029)
 - `0671` ZERO IP (ISPB 26264220)
@@ -893,7 +892,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` CCLA CREDIEMBRAPA (ISPB 02338666)
 - `——` GREENCRED CC (ISPB 02347114)
 - `——` COOP ÚNILOS (ISPB 02405189)
-- `——` COOPSERVIDOR ES (ISPB 02475222)
 - `——` CCLA E DOS ADV (ISPB 02480577)
 - `——` CCLA URUBICI (ISPB 02587492)
 - `——` CCLAA NOVA TRENTO (ISPB 02641969)
@@ -936,7 +934,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` CC CREDLIDER (ISPB 05463934)
 - `——` CC INVESTIMENTO LIVRE ADMISSÃO DO OESTE DE RONDÔNIA (ISPB 05597773)
 - `——` CECM COOPERSERV (ISPB 05667301)
-- `——` CCM DOS ADVOGADOS DE SC (ISPB 05861932)
+- `——` CCM DA ADVOCACIA (ISPB 05861932)
 - `——` COOP SUL (ISPB 05888589)
 - `——` COOPER CARD IP (ISPB 05938780)
 - `——` CCMS MUNICIPAIS DE BEBEDOURO (ISPB 05969937)
@@ -995,7 +993,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` CC COPERSUL LTDA (ISPB 18966739)
 - `——` CECM EMPR EST HOSP BH RM ZM (ISPB 19402130)
 - `——` CC CREDCOOPER LTDA (ISPB 19449602)
-- `——` CC EMP DA CIA INDUSTRIAL CATAGUASES E BAUMINAS (ISPB 19495266)
 - `——` CCLA VALE DO AÇO (ISPB 19869338)
 - `——` CECM COL GRUPO EMPR A COSTA (ISPB 20062766)
 - `——` PAGHIPER IP LTDA. (ISPB 20110153)
