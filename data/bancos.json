@@ -4250,8 +4250,8 @@
       "ispb": "36864992",
       "compe": "484",
       "compe4": "0484",
-      "name": "MAF DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
-      "shortName": "MAF DTVM SA",
+      "name": "APEX DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "shortName": "APEX DTVM",
       "pix": null,
       "logo": null
     },
@@ -6167,15 +6167,6 @@
           "updatedAt": "2026-07-24"
         }
       }
-    },
-    {
-      "ispb": "48552108",
-      "compe": "667",
-      "compe4": "0667",
-      "name": "LIQUIDO INSTITUICAO DE PAGAMENTO LTDA",
-      "shortName": "LIQUIDO IP LTDA",
-      "pix": null,
-      "logo": null
     },
     {
       "ispb": "48632754",
