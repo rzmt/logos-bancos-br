@@ -8,7 +8,7 @@ const ROOT = join(__dirname, '..');
 
 function extractRows(
   html: string,
-): [string, string | null, string, string | null, number, string?][] {
+): [string, string | null, string, string | null, number, string, string][] {
   const match = html.match(/<script id="data" type="application\/json">(.*?)<\/script>/s);
   expect(match, 'bloco de dados ausente').toBeTruthy();
   return JSON.parse((match as RegExpMatchArray)[1] as string);
@@ -82,13 +82,15 @@ describe('buildGalleryHtml', () => {
     const banco = rows.find((r) => r[0] === '00000000');
     expect(banco?.[2]).toBe('Banco <script> & Cia'); // conteúdo preservado após parse
     expect(banco?.[4]).toBe(1); // tem svg
+    expect(banco?.[5]).toBe(''); // logo próprio: não agrupa
   });
 
-  it('aponta a afiliada para o asset compartilhado, não para o próprio ispb', () => {
+  it('marca a afiliada com o sistema e o asset compartilhado, não o próprio ispb', () => {
     const rows = extractRows(buildGalleryHtml(dataset, pixDataset));
     const afiliada = rows.find((r) => r[0] === '10348181');
     expect(afiliada?.[3]).toBe('03795072'); // ispb do arquivo, não da instituição
     expect(afiliada?.[4]).toBe(0); // só png
+    expect(afiliada?.[5]).toBe('SICREDI'); // agrupada no card do sistema
   });
 });
 
@@ -101,9 +103,13 @@ describe('docs/index.html (arquivo distribuído)', () => {
       readFileSync(join(ROOT, 'data', 'instituicoes-pix.json'), 'utf8'),
     ).institutions;
     expect(rows).toHaveLength(banks.length + pix.length);
-    const comLogo = [...banks, ...pix].filter((i) => i.logo).length;
+    const all = [...banks, ...pix];
+    const comLogo = all.filter((i) => i.logo).length;
     expect(rows.filter((r) => r[3]).length).toBe(comLogo);
+    // afiliadas de marca (agrupadas na página) batem com o dataset
+    const afiliadas = all.filter((i) => i.logo?.source.type === 'brand').length;
+    expect(rows.filter((r) => r[5]).length).toBe(afiliadas);
     // apelidos populares entram na busca (nome oficial não contém o termo)
-    expect(rows.find((r) => r[0] === '18236120')?.[5]).toBe('nubank');
+    expect(rows.find((r) => r[0] === '18236120')?.[6]).toBe('nubank');
   });
 });

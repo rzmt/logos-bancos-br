@@ -9,10 +9,14 @@
 import { CDN_BASE } from './dataset';
 import type { Dataset, PixDataset } from './types';
 
-/** [ispb, compe|null, nome, ispbDoAsset|null, temSvg 0|1, apelidos?] */
-type Row =
-  | [string, string | null, string, string | null, number]
-  | [string, string | null, string, string | null, number, string];
+/**
+ * [ispb, compe|null, nome, ispbDoAsset|null, temSvg 0|1, marca, apelidos]
+ * `marca` é o token do sistema cooperativo quando o logo é compartilhado
+ * (SICOOB/SICREDI/…) — a página agrupa essas afiliadas num card por sistema
+ * para o grid não repetir o mesmo arquivo centenas de vezes; a busca continua
+ * encontrando cada afiliada individualmente. Campos vazios viajam como ''.
+ */
+type Row = [string, string | null, string, string | null, number, string, string];
 
 /**
  * Apelidos populares cujo nome oficial não contém o termo que as pessoas
@@ -31,17 +35,15 @@ function assetIspb(png: string): string | null {
 }
 
 export function buildGalleryHtml(dataset: Dataset, pixDataset: PixDataset): string {
-  const rows: Row[] = [...dataset.banks, ...pixDataset.institutions].map((inst) => {
-    const base: Row = [
-      inst.ispb,
-      inst.compe,
-      inst.name,
-      inst.logo ? assetIspb(inst.logo.png) : null,
-      inst.logo?.svg ? 1 : 0,
-    ];
-    const apelido = APELIDOS[inst.ispb];
-    return apelido ? ([...base, apelido] as Row) : base;
-  });
+  const rows: Row[] = [...dataset.banks, ...pixDataset.institutions].map((inst) => [
+    inst.ispb,
+    inst.compe,
+    inst.name,
+    inst.logo ? assetIspb(inst.logo.png) : null,
+    inst.logo?.svg ? 1 : 0,
+    inst.logo?.source.type === 'brand' ? (inst.logo.source.brand ?? '') : '',
+    APELIDOS[inst.ispb] ?? '',
+  ]);
   rows.sort((a, b) => a[2].localeCompare(b[2], 'pt-BR') || a[0].localeCompare(b[0]));
   const total = rows.length;
   const comLogo = rows.filter((r) => r[3]).length;
@@ -158,20 +160,63 @@ function card(r){
   el.appendChild(acts);
   return el;
 }
+var BRAND_NAMES={SICOOB:'Sicoob',SICREDI:'Sicredi',CRESOL:'Cresol',UNICRED:'Unicred'};
+function brandLabel(t){return BRAND_NAMES[t]||t.charAt(0)+t.slice(1).toLowerCase()}
+function brandCard(token,info){
+  var el=document.createElement('div');el.className='card';
+  var chip=document.createElement('div');chip.className='chip';
+  var img=document.createElement('img');img.loading='lazy';img.alt='';
+  img.src=CDN+'/logos/png/'+info.asset+'.png';chip.appendChild(img);
+  el.appendChild(chip);
+  var n=document.createElement('div');n.className='nome';
+  n.textContent=brandLabel(token)+' — sistema cooperativo';n.title=n.textContent;el.appendChild(n);
+  var m=document.createElement('div');m.className='meta';
+  m.textContent=info.count+' cooperativas afiliadas · logo compartilhado';el.appendChild(m);
+  var acts=document.createElement('div');acts.className='acts';
+  var bp=document.createElement('button');bp.textContent='PNG';
+  bp.onclick=function(){copiar(bp,CDN+'/logos/png/'+info.asset+'.png')};acts.appendChild(bp);
+  if(info.svg){
+    var bs=document.createElement('button');bs.textContent='SVG';
+    bs.onclick=function(){copiar(bs,CDN+'/logos/svg/'+info.asset+'.svg')};acts.appendChild(bs);
+  }
+  var a=document.createElement('a');a.href='#';a.textContent='listar';
+  a.onclick=function(e){e.preventDefault();q.value=brandLabel(token);render();q.focus()};
+  acts.appendChild(a);
+  el.appendChild(acts);
+  return el;
+}
+function combina(r,termo){
+  return norm(r[2]).indexOf(termo)>=0||r[0].indexOf(termo)>=0||(!!r[1]&&r[1].indexOf(termo)>=0)||(!!r[6]&&r[6].indexOf(termo)>=0)
+}
 function render(){
   var termo=norm(q.value.trim());
   var todos=semlogo.checked;
   grid.textContent='';
   var vis=0;
+  var marcas={},ordem=[],afiliadas=0;
   var frag=document.createDocumentFragment();
   for(var i=0;i<DATA.length;i++){
     var r=DATA[i];
+    if(!termo&&r[5]){
+      var b=marcas[r[5]];
+      if(!b){b=marcas[r[5]]={asset:r[3],svg:r[4],count:0};ordem.push(r[5])}
+      b.count++;afiliadas++;continue;
+    }
     if(!todos&&!r[3])continue;
-    if(termo&&norm(r[2]).indexOf(termo)<0&&r[0].indexOf(termo)<0&&(!r[1]||r[1].indexOf(termo)<0)&&(!r[5]||r[5].indexOf(termo)<0))continue;
+    if(termo&&!combina(r,termo))continue;
     frag.appendChild(card(r));vis++;
   }
+  if(!termo){
+    ordem.sort();
+    for(var j=0;j<ordem.length;j++)grid.appendChild(brandCard(ordem[j],marcas[ordem[j]]));
+  }
   grid.appendChild(frag);
-  count.textContent=vis+(vis===1?' instituição':' instituições')+(todos?'':' com logo');
+  if(termo){
+    count.textContent=vis+(vis===1?' resultado':' resultados');
+  }else{
+    count.textContent=vis+' instituições'+(todos?'':' com logo próprio')+
+      (ordem.length?' + '+ordem.length+' sistemas cooperativos ('+afiliadas+' afiliadas agrupadas — cada uma aparece na busca)':'');
+  }
 }
 q.addEventListener('input',render);
 semlogo.addEventListener('change',render);
