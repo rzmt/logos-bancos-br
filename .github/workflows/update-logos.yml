@@ -131,6 +131,7 @@ jobs:
           add-paths: |
             data/**
             logos/**
+            docs/index.html
             PREVIEW.md
             react-native.js
             pipeline/manifest.json

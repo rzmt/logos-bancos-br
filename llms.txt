@@ -46,9 +46,11 @@ Key facts:
   the latest 0.x release; pin an exact version for immutability). The compact index
   `data/cdn-index.min.json` (~60 KB) maps `{ispb: [compe, name, flags]}` with flags
   0 = no logo, 1 = PNG only, 3 = PNG+SVG — resolve COMPE→ISPB and logo availability
-  without installing anything. For a ready logo URL per ISPB, `data/logo-urls.min.json`
-  is a pre-resolved `{ISPB: url}` map (SVG when available else PNG, logos only):
-  `logoUrl = map[ispb]`.
+  without installing anything. Cooperative affiliates share their system's file: those
+  entries carry a 4th element with the asset ISPB to use in the URL. For a ready logo
+  URL per ISPB (all cases pre-resolved), `data/logo-urls.min.json` is a `{ISPB: url}`
+  map (SVG when available else PNG, logos only): `logoUrl = map[ispb]`.
+- **Interactive gallery** (search + copy CDN URL): https://rzmt.github.io/logos-bancos-br/
 
 ## Docs
 

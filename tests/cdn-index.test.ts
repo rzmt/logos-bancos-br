@@ -71,6 +71,36 @@ describe('buildCdnIndex', () => {
     // sem timestamps: duas execuções produzem bytes idênticos
     expect(buildCdnIndex(dataset, pixDataset)).toBe(raw);
   });
+
+  it('emite o ispb do arquivo (4º elemento) quando a afiliada usa asset compartilhado', () => {
+    const dataset: Dataset = {
+      banks: [
+        {
+          ispb: '04715685',
+          compe: '16',
+          compe4: '0016',
+          name: 'Cooperativa Afiliada',
+          shortName: 'COOP',
+          pix: null,
+          logo: {
+            png: 'logos/png/04891850.png',
+            svg: 'logos/svg/04891850.svg',
+            source: {
+              type: 'brand',
+              org: null,
+              cnpj: null,
+              uri: 'https://x/logo.svg',
+              sha256: 'abc',
+              updatedAt: '2026-01-01',
+              brand: 'SICOOB',
+            },
+          },
+        },
+      ],
+    };
+    const index = JSON.parse(buildCdnIndex(dataset, { institutions: [] }));
+    expect(index.institutions['04715685']).toEqual(['16', 'Cooperativa Afiliada', 3, '04891850']);
+  });
 });
 
 describe('data/cdn-index.min.json (arquivo distribuído)', () => {
@@ -89,6 +119,12 @@ describe('data/cdn-index.min.json (arquivo distribuído)', () => {
       expect(entry[1]).toBe(inst.name);
       const flags = inst.logo ? (inst.logo.svg ? 3 : 1) : 0;
       expect(entry[2], `flags de ${inst.ispb}`).toBe(flags);
+      const assetIspb = inst.logo?.png.match(/(\d{8})\.png$/)?.[1];
+      if (assetIspb && assetIspb !== inst.ispb) {
+        expect(entry[3], `asset de ${inst.ispb}`).toBe(assetIspb);
+      } else {
+        expect(entry.length, `entrada de ${inst.ispb} não deveria ter 4º elemento`).toBe(3);
+      }
     }
   });
 });

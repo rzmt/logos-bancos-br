@@ -107,14 +107,24 @@ export function toJson(value: unknown): string {
 /**
  * Índice compacto para consumo via CDN sem instalar o pacote:
  * `{ispb: [compe, nome, flags]}` com flags 0 = sem logo, 1 = png, 3 = png+svg.
+ * Afiliadas de sistemas cooperativos compartilham o arquivo do sistema, que
+ * fica sob OUTRO ispb — nesses casos um 4º elemento traz o ispb do arquivo
+ * (sem ele, montar a URL pelo template daria 404 nessas instituições).
  * Determinístico (sem timestamps) para o writeIfChanged não gerar diff vazio.
  */
 export function buildCdnIndex(dataset: Dataset, pixDataset: PixDataset): string {
-  const institutions: Record<string, [string | null, string, number]> = {};
+  const institutions: Record<
+    string,
+    [string | null, string, number] | [string | null, string, number, string]
+  > = {};
   for (const inst of [...dataset.banks, ...pixDataset.institutions]) {
     let flags = 0;
     if (inst.logo) flags = inst.logo.svg ? 3 : 1;
-    institutions[inst.ispb] = [inst.compe, inst.name, flags];
+    const assetIspb = inst.logo?.png.match(/(\d{8})\.png$/)?.[1];
+    institutions[inst.ispb] =
+      assetIspb && assetIspb !== inst.ispb
+        ? [inst.compe, inst.name, flags, assetIspb]
+        : [inst.compe, inst.name, flags];
   }
   const index = {
     version: 1,
@@ -126,7 +136,7 @@ export function buildCdnIndex(dataset: Dataset, pixDataset: PixDataset): string 
 }
 
 /** Base do CDN; `@0` acompanha a série 0.x (path por ISPB é estável entre versões). */
-const CDN_BASE = 'https://cdn.jsdelivr.net/npm/logos-bancos-br@0';
+export const CDN_BASE = 'https://cdn.jsdelivr.net/npm/logos-bancos-br@0';
 
 /**
  * URLs de logo já resolvidas por ISPB, para consumo trivial via CDN sem

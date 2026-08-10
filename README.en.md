@@ -26,7 +26,7 @@
   <img src="logos/png/10573521.png" width="56" alt="Mercado Pago">
   <img src="logos/png/33264668.png" width="56" alt="XP">
 </p>
-<p align="center"><a href="PREVIEW.md"><strong>→ full gallery (PREVIEW.md)</strong></a></p>
+<p align="center"><a href="https://rzmt.github.io/logos-bancos-br/"><strong>→ interactive gallery</strong></a> (search by name/COMPE/ISPB + copy CDN URL) · <a href="PREVIEW.md">PREVIEW.md</a></p>
 
 ## What this package gives you
 
@@ -50,6 +50,12 @@
 4. **Works in any stack.** JavaScript/TypeScript API, a ready-made React Native map, a CLI that
    copies the assets into Flutter/Kotlin/Swift/.NET/PHP projects, CDN URLs with no install — or
    just the JSON.
+
+## Who's using it
+
+- **[BrasilAPI](https://brasilapi.com.br)** — the [`/banks/v1`](https://brasilapi.com.br/api/banks/v1)
+  endpoint serves a `logo_url` field pointing to this package's logos.
+- Listed on [awesome-brazil-data](https://github.com/juliohm/awesome-brazil-data).
 
 ## Why official sources?
 
@@ -144,7 +150,10 @@ https://cdn.jsdelivr.net/npm/logos-bancos-br@0/data/cdn-index.min.json
 
 The compact index (~60 KB, ~15 KB gzipped) maps `{ispb: [compe, name, flags]}`
 (flags: `0` = no logo, `1` = PNG only, `3` = PNG+SVG), so any stack can resolve
-COMPE→ISPB and check logo availability without installing anything.
+COMPE→ISPB and check logo availability without installing anything. Cooperative
+affiliates share their system's file: those entries carry a 4th element with the
+**asset ISPB**, which is the one to use in the URL (e.g.
+`["16", "…SICOOB CREDITRAN", 3, "04891850"]` → `logos/svg/04891850.svg`).
 
 If you just want a ready logo URL per ISPB (no path building, no format choice),
 there's a pre-resolved map (`{ISPB: url}`, SVG when available else PNG, logos only):

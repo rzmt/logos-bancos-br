@@ -22,6 +22,7 @@ import { fileURLToPath } from 'node:url';
 
 import { withConcurrency } from './concurrency';
 import { buildCdnIndex, buildDatasets, buildLogoUrls, toJson } from './dataset';
+import { buildGalleryHtml } from './gallery';
 import { downloadLogo, isSafeSvg, looksLikeSvg, rasterize, sha256, writeIfChanged } from './images';
 import { buildMatches } from './matching';
 import { buildPreviewMarkdown } from './preview';
@@ -46,6 +47,7 @@ const DATASET_PATH = join(ROOT, 'data', 'bancos.json');
 const PIX_DATASET_PATH = join(ROOT, 'data', 'instituicoes-pix.json');
 const CDN_INDEX_PATH = join(ROOT, 'data', 'cdn-index.min.json');
 const LOGO_URLS_PATH = join(ROOT, 'data', 'logo-urls.min.json');
+const GALLERY_PATH = join(ROOT, 'docs', 'index.html');
 const PREVIEW_PATH = join(ROOT, 'PREVIEW.md');
 const RN_MAP_PATH = join(ROOT, 'react-native.js');
 
@@ -340,13 +342,14 @@ async function main(): Promise<void> {
     const pixStatus = writeIfChanged(PIX_DATASET_PATH, toJson(pixDataset));
     const cdnStatus = writeIfChanged(CDN_INDEX_PATH, buildCdnIndex(dataset, pixDataset));
     const logoUrlsStatus = writeIfChanged(LOGO_URLS_PATH, buildLogoUrls(dataset, pixDataset));
+    const galleryStatus = writeIfChanged(GALLERY_PATH, buildGalleryHtml(dataset, pixDataset));
     const previewStatus = writeIfChanged(PREVIEW_PATH, buildPreviewMarkdown(dataset, pixDataset));
     const rnStatus = writeIfChanged(
       RN_MAP_PATH,
       buildReactNativeMap([...dataset.banks, ...pixDataset.institutions]),
     );
     writeFileSync(MANIFEST_PATH, `${JSON.stringify(sortedManifest, null, 2)}\n`);
-    generatedFiles = `bancos.json ${datasetStatus} · instituicoes-pix.json ${pixStatus} · cdn-index.min.json ${cdnStatus} · logo-urls.min.json ${logoUrlsStatus} · PREVIEW.md ${previewStatus} · react-native.js ${rnStatus}`;
+    generatedFiles = `bancos.json ${datasetStatus} · instituicoes-pix.json ${pixStatus} · cdn-index.min.json ${cdnStatus} · logo-urls.min.json ${logoUrlsStatus} · docs/index.html ${galleryStatus} · PREVIEW.md ${previewStatus} · react-native.js ${rnStatus}`;
   }
 
   // ---- report ----

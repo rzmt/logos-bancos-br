@@ -26,7 +26,7 @@
   <img src="logos/png/10573521.png" width="56" alt="Mercado Pago">
   <img src="logos/png/33264668.png" width="56" alt="XP">
 </p>
-<p align="center"><a href="PREVIEW.md"><strong>→ galeria completa (PREVIEW.md)</strong></a></p>
+<p align="center"><a href="https://rzmt.github.io/logos-bancos-br/"><strong>→ galeria interativa</strong></a> (busca por nome/COMPE/ISPB + copiar URL de CDN) · <a href="PREVIEW.md">PREVIEW.md</a></p>
 
 ## O que este pacote entrega
 
@@ -51,6 +51,12 @@
 4. **Uso em qualquer stack.** API JavaScript/TypeScript, mapa pronto para React Native, CLI que
    copia os assets para projetos Flutter/Kotlin/Swift/.NET/PHP, URLs de CDN sem instalar nada —
    ou só o JSON.
+
+## Quem já usa
+
+- **[BrasilAPI](https://brasilapi.com.br)** — o endpoint [`/banks/v1`](https://brasilapi.com.br/api/banks/v1)
+  serve o campo `logo_url` apontando para os logos deste pacote.
+- Listado no [awesome-brazil-data](https://github.com/juliohm/awesome-brazil-data).
 
 ## Por que fontes oficiais?
 
@@ -186,7 +192,10 @@ https://cdn.jsdelivr.net/npm/logos-bancos-br@0/data/cdn-index.min.json
 
 Formato: `{"institutions": {"60701190": ["341", "Itaú Unibanco S.A.", 3]}}` — cada
 entrada é `[compe, nome, flags]`, com flags `0` = sem logo, `1` = só PNG,
-`3` = PNG+SVG.
+`3` = PNG+SVG. Afiliadas de sistemas cooperativos compartilham o arquivo do
+sistema: nesses casos há um 4º elemento com o **ISPB do arquivo**, que é o que
+deve entrar na URL (ex.: `["16", "…SICOOB CREDITRAN", 3, "04891850"]` →
+`logos/svg/04891850.svg`).
 
 E se você só quer a URL do logo pronta por ISPB, sem montar caminho nem escolher
 formato, há um mapa já resolvido (`{ISPB: url}`, SVG quando existe senão PNG, só
