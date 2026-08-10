@@ -6435,8 +6435,8 @@
       "compe": null,
       "compe4": null,
       "cnpj": "09552111000185",
-      "name": "COOP JUST GOIAS E CELG",
-      "shortName": "COOP JUST GOIAS E CELG",
+      "name": "COOP PROF DA JUST, SERV PÚBL E ENERGIA LTDA",
+      "shortName": "COOP PROF DA JUST, SERV PÚBL E ENERGIA LTDA",
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -6474,7 +6474,7 @@
         "pixParticipationType": "Facultativa",
         "modality": "Provedor de Conta Transacional",
         "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": true
+        "authorizedByBcb": false
       },
       "logo": null
     },
@@ -9068,7 +9068,7 @@
         "pixParticipationType": "Facultativa",
         "modality": "Provedor de Conta Transacional",
         "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": true
+        "authorizedByBcb": false
       },
       "logo": {
         "png": "logos/png/04891850.png",
@@ -9265,22 +9265,6 @@
         "modality": "Provedor de Conta Transacional",
         "institutionType": "Instituição de Pagamento não sujeita à autorização pelo BCB",
         "authorizedByBcb": false
-      },
-      "logo": null
-    },
-    {
-      "ispb": "36272465",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "36272465000149",
-      "name": "REAG IP",
-      "shortName": "REAG IP",
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Instituição de Pagamento",
-        "authorizedByBcb": true
       },
       "logo": null
     },
@@ -9605,9 +9589,9 @@
           "type": "openfinance",
           "org": "SHOPEE",
           "cnpj": "38372267000182",
-          "uri": "https://deo.shopeemobile.com/shopee/shopee-shopeepayfe-live-br/wallet/shopee_logo.svg",
-          "sha256": "4e2607eff427a5ba6127c9394ac7b8867580a05eecca082336685ba83df1dd84",
-          "updatedAt": "2026-07-17"
+          "uri": "https://deo.shopeemobile.com/shopee/shopee-shopeepayfe-live-id/homepage/common/ic_maree_logo_svg.svg",
+          "sha256": "1474967cb269ce03c36980deea6d851b1245297ce52bedf85fe2c31609235f52",
+          "updatedAt": "2026-08-10"
         }
       }
     },
@@ -10531,7 +10515,7 @@
         "pixParticipationType": "Facultativa",
         "modality": "Provedor de Conta Transacional",
         "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": true
+        "authorizedByBcb": false
       },
       "logo": null
     },
@@ -10906,7 +10890,7 @@
         "pixParticipationType": "Facultativa",
         "modality": "Provedor de Conta Transacional",
         "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": true
+        "authorizedByBcb": false
       },
       "logo": null
     },

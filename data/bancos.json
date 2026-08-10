@@ -1407,8 +1407,8 @@
       "ispb": "13486793",
       "compe": "173",
       "compe4": "0173",
-      "name": "BRL Trust Distribuidora de Títulos e Valores Mobiliários S.A.",
-      "shortName": "BRL TRUST DTVM SA",
+      "name": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
+      "shortName": "APEX GROUP DTVM",
       "pix": null,
       "logo": null
     },
@@ -4391,9 +4391,9 @@
           "type": "openfinance",
           "org": "CELCOIN INSTITUICAO DE PAGAMENTO S.A.",
           "cnpj": "13935893000109",
-          "uri": "https://www.celcoin.com.br/img/rede-celcoin-logo.svg",
-          "sha256": "5b9ffc6b15c8da9ddfcbed28d0e7b2095527b79b4f14ee7f7ab337273a3c072f",
-          "updatedAt": "2026-07-17"
+          "uri": "https://www.celcoin.com.br/wp-content/uploads/2026/02/avatars-1.svg",
+          "sha256": "d7341fed12585684c78821becb67f79059c4a6d70ac945b2098efd18a4a218e2",
+          "updatedAt": "2026-08-10"
         }
       }
     },
@@ -4461,8 +4461,8 @@
       "ispb": "73302408",
       "compe": "514",
       "compe4": "0514",
-      "name": "EXIM CORRETORA DE CAMBIO LTDA",
-      "shortName": "EXIM CC LTDA.",
+      "name": "EXIM SOCIEDADE CORRETORA DE CÂMBIO LTDA",
+      "shortName": "EXIM SCC",
       "pix": null,
       "logo": null
     },
@@ -4775,8 +4775,8 @@
       "ispb": "45756448",
       "compe": "537",
       "compe4": "0537",
-      "name": "MICROCASH SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E À EMPRESA DE PEQUENO PORTE LTDA.",
-      "shortName": "MICROCASH SCMEPP LTDA.",
+      "name": "SELECT CREDIT SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E À EMPRESA DE PEQUENO PORTE LTDA.",
+      "shortName": "SELECT CREDIT SCMEPP LTDA.",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6182,9 +6182,9 @@
           "type": "openfinance",
           "org": "CELCOIN INSTITUICAO DE PAGAMENTO S.A.",
           "cnpj": "13935893000109",
-          "uri": "https://www.celcoin.com.br/img/rede-celcoin-logo.svg",
-          "sha256": "5b9ffc6b15c8da9ddfcbed28d0e7b2095527b79b4f14ee7f7ab337273a3c072f",
-          "updatedAt": "2026-07-17"
+          "uri": "https://www.celcoin.com.br/wp-content/uploads/2026/02/avatars-1.svg",
+          "sha256": "d7341fed12585684c78821becb67f79059c4a6d70ac945b2098efd18a4a218e2",
+          "updatedAt": "2026-08-10"
         }
       }
     },

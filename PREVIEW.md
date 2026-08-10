@@ -2,7 +2,7 @@
 
 > Arquivo gerado automaticamente pelo pipeline (`npm run pipeline`) — não editar à mão.
 
-**160** instituições com logo próprio · **316** afiliadas usando o logo do seu sistema cooperativo · **633** sem logo nas fontes oficiais.
+**160** instituições com logo próprio · **316** afiliadas usando o logo do seu sistema cooperativo · **632** sem logo nas fontes oficiais.
 
 ## Logos próprios
 
@@ -526,7 +526,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 </details>
 
 
-<details><summary>Instituições sem logo (633) — consumidores devem usar um ícone genérico</summary>
+<details><summary>Instituições sem logo (632) — consumidores devem usar um ícone genérico</summary>
 
 - `0007` BNDES (ISPB 33657248)
 - `0010` CREDICOAMO (ISPB 81723108)
@@ -572,7 +572,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0149` FACTA S.A. CFI (ISPB 15581638)
 - `0157` ICAP DO BRASIL CTVM LTDA. (ISPB 09105360)
 - `0159` CASA CREDITO S.A. SCM (ISPB 05442029)
-- `0173` BRL TRUST DTVM SA (ISPB 13486793)
+- `0173` APEX GROUP DTVM (ISPB 13486793)
 - `0180` CM CAPITAL MARKETS CCTVM LTDA (ISPB 02685483)
 - `0183` SOCRED SA - SCMEPP (ISPB 09210106)
 - `0188` ATIVA S.A. INVESTIMENTOS CCTVM (ISPB 33775974)
@@ -692,7 +692,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0511` MAGNUM SCD (ISPB 44683140)
 - `0512` FINVEST DTVM (ISPB 36266751)
 - `0513` ATF SCD S.A. (ISPB 44728700)
-- `0514` EXIM CC LTDA. (ISPB 73302408)
+- `0514` EXIM SCC (ISPB 73302408)
 - `0516` QISTA S.A. CFI (ISPB 36583700)
 - `0519` LIONS TRUST DTVM (ISPB 40768766)
 - `0520` SOMAPAY SCD S.A. (ISPB 44705774)
@@ -710,7 +710,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0532` FUTURO SCD (ISPB 45745537)
 - `0533` SRM BANK (ISPB 22575466)
 - `0535` OPEA SCD (ISPB 39519944)
-- `0537` MICROCASH SCMEPP LTDA. (ISPB 45756448)
+- `0537` SELECT CREDIT SCMEPP LTDA. (ISPB 45756448)
 - `0538` SUDACRED SCD S.A. (ISPB 20251847)
 - `0539` SANTINVEST S.A. - CFI (ISPB 00122327)
 - `0540` HBI SCD (ISPB 04849745)
@@ -958,7 +958,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` CCLA DE RIO VERDE E REGIÃO (ISPB 09033698)
 - `——` BRINKS PAY IP LTDA. (ISPB 09437293)
 - `——` CC DA FOZ DO RIO ITAJAÍ AÇU (ISPB 09512539)
-- `——` COOP JUST GOIAS E CELG (ISPB 09552111)
+- `——` COOP PROF DA JUST, SERV PÚBL E ENERGIA LTDA (ISPB 09552111)
 - `——` CCLA CERES E RIALMA LTDA (ISPB 09576849)
 - `——` CECM EMP AMERICANA, LIMEIRA E (ISPB 09579249)
 - `——` COOP CREDICOMIN (ISPB 09590601)
@@ -1062,7 +1062,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` SAQ IP LTDA. (ISPB 35535240)
 - `——` UNLIMIT IP LTDA. (ISPB 35542555)
 - `——` ENOQ PAY (ISPB 35990763)
-- `——` REAG IP (ISPB 36272465)
 - `——` APROMS NET IP LTDA. (ISPB 37168145)
 - `——` BASS PAGO (ISPB 37293930)
 - `——` STATER PAY INSTITUICAO DE PAGA (ISPB 37319859)
