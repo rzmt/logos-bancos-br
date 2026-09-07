@@ -56,6 +56,9 @@
 
 - **[BrasilAPI](https://brasilapi.com.br)** — o endpoint [`/banks/v1`](https://brasilapi.com.br/api/banks/v1)
   serve o campo `logo_url` apontando para os logos deste pacote.
+- **[BancosBrasileiros](https://github.com/guibranco/BancosBrasileiros)** — o dataset (C#, PHP,
+  Python, Rust, Dart, JS) traz o campo `LogoUrl` com os logos deste pacote, exibidos no
+  [diretório de bancos](https://apibr.com/ui/banks-directory/) do APIBR.
 - Listado no [awesome-brazil-data](https://github.com/juliohm/awesome-brazil-data).
 
 ## Por que fontes oficiais?
