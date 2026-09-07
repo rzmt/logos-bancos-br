@@ -2,7 +2,7 @@
 
 > Arquivo gerado automaticamente pelo pipeline (`npm run pipeline`) — não editar à mão.
 
-**160** instituições com logo próprio · **316** afiliadas usando o logo do seu sistema cooperativo · **632** sem logo nas fontes oficiais.
+**155** instituições com logo próprio · **311** afiliadas usando o logo do seu sistema cooperativo · **624** sem logo nas fontes oficiais.
 
 ## Logos próprios
 
@@ -71,7 +71,7 @@
 | <img src="logos/png/22610500.png" width="40" alt="VORTX DTVM LTDA."> | 0310 | 22610500 | VORTX DTVM LTDA. | Site oficial (revisado) |
 | <img src="logos/png/61186680.png" width="40" alt="BCO BMG S.A."> | 0318 | 61186680 | BCO BMG S.A. | Open Finance — BCO BMG S.A. |
 | <img src="logos/png/10573521.png" width="40" alt="MERCADO PAGO IP LTDA."> | 0323 | 10573521 | MERCADO PAGO IP LTDA. | Open Finance — MERCADO PAGO INSTITUICAO DE PAGAMENTO LTDA |
-| <img src="logos/png/03311443.png" width="40" alt="PARATI - CFI S.A."> | 0326 | 03311443 | PARATI - CFI S.A. | Open Finance — PARATI - CFI S.A. |
+| <img src="logos/png/03311443.png" width="40" alt="MEUTUDO SCFI"> | 0326 | 03311443 | MEUTUDO SCFI | Open Finance — PARATI - CFI S.A. |
 | <img src="logos/png/32402502.png" width="40" alt="QI SCD S.A."> | 0329 | 32402502 | QI SCD S.A. | Open Finance — QI SCD S.A. |
 | <img src="logos/png/00556603.png" width="40" alt="BANCO BARI S.A."> | 0330 | 00556603 | BANCO BARI S.A. | Site oficial (revisado) |
 | <img src="logos/png/13140088.png" width="40" alt="ACESSO SOLUÇÕES DE PAGAMENTO S.A. - INSTITUIÇÃO DE PAGAMENTO"> | 0332 | 13140088 | ACESSO SOLUÇÕES DE PAGAMENTO S.A. - INSTITUIÇÃO DE PAGAMENTO | Open Finance — ACESSO SOLUCOES PAGAMENTO SA |
@@ -99,7 +99,7 @@
 | <img src="logos/png/34088029.png" width="40" alt="LISTO SCD S.A."> | 0397 | 34088029 | LISTO SCD S.A. | Open Finance — LISTO SOCIEDADE DE CREDITO DIRETO S.A. |
 | <img src="logos/png/15111975.png" width="40" alt="IUGU IP S.A."> | 0401 | 15111975 | IUGU IP S.A. | Open Finance — IUGU INSTITUICAO DE PAGAMENTO S.A. |
 | <img src="logos/png/37880206.png" width="40" alt="CORA SCFI"> | 0403 | 37880206 | CORA SCFI | Open Finance — CORA SCD S.A. |
-| <img src="logos/png/37241230.png" width="40" alt="SUMUP SCD S.A."> | 0404 | 37241230 | SUMUP SCD S.A. | Open Finance — SUMUP SCD S.A. |
+| <img src="logos/png/37241230.png" width="40" alt="SUMUP SCFI S.A"> | 0404 | 37241230 | SUMUP SCFI S.A | Open Finance — SUMUP SCD S.A. |
 | <img src="logos/png/37715993.png" width="40" alt="ACCREDITO SCD S.A."> | 0406 | 37715993 | ACCREDITO SCD S.A. | Open Finance — ACCREDITO - SOCIEDADE DE CREDITO DIRETO S.A. |
 | <img src="logos/png/00329598.png" width="40" alt="SEFER INVESTIMENTOS DTVM LTDA - EM LIQUIDAÇÃO EXTRAJUDICIAL"> | 0407 | 00329598 | SEFER INVESTIMENTOS DTVM LTDA - EM LIQUIDAÇÃO EXTRAJUDICIAL | Open Finance — SEFER INVESTIMENTOS DTVM LTDA |
 | <img src="logos/png/15173776.png" width="40" alt="SOCIAL BANK S/A"> | 0412 | 15173776 | SOCIAL BANK S/A | Site oficial (revisado) |
@@ -127,11 +127,6 @@
 | <img src="logos/png/74014747.png" width="40" alt="ÁGORA CTVM S.A."> | 0565 | 74014747 | ÁGORA CTVM S.A. | Open Finance — AGORA CTVM S.A. |
 | <img src="logos/png/33040601.png" width="40" alt="MERCANTIL FINANCEIRA"> | 0567 | 33040601 | MERCANTIL FINANCEIRA | Open Finance — BCO MERCANTIL DO BRASIL S.A. |
 | <img src="logos/png/11351086.png" width="40" alt="MERCADO BITCOIN IP LTDA"> | 0576 | 11351086 | MERCADO BITCOIN IP LTDA | Open Finance — MERCADO BITCOIN INSTITUICAO DE PAGAMENTO LTDA |
-| <img src="logos/png/87437687.png" width="40" alt="CCCPOUPINV SUL E SUDESTE - CENTRAL SUL/SUDESTE"> | 0580 | 87437687 | CCCPOUPINV SUL E SUDESTE - CENTRAL SUL/SUDESTE | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
-| <img src="logos/png/70119680.png" width="40" alt="CENTRAL NORDESTE"> | 0581 | 70119680 | CENTRAL NORDESTE | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
-| <img src="logos/png/33737818.png" width="40" alt="CCC POUP INV DE MS, GO, DF E TO"> | 0582 | 33737818 | CCC POUP INV DE MS, GO, DF E TO | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
-| <img src="logos/png/33667205.png" width="40" alt="CCC POUP INV DO CENTRO NORTE DO BRASIL"> | 0583 | 33667205 | CCC POUP INV DO CENTRO NORTE DO BRASIL | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
-| <img src="logos/png/80230774.png" width="40" alt="CCC POUP E INV DOS ESTADOS DO PR, SP E RJ"> | 0584 | 80230774 | CCC POUP E INV DOS ESTADOS DO PR, SP E RJ | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
 | <img src="logos/png/20308187.png" width="40" alt="AVANCARD PROVER IP LTDA"> | 0588 | 20308187 | AVANCARD PROVER IP LTDA | Open Finance — PROVER PROMOCAO DE VENDAS INSTITUICAO DE PAGAMENTO LTDA |
 | <img src="logos/png/48703388.png" width="40" alt="ASA SCFI S.A."> | 0594 | 48703388 | ASA SCFI S.A. | Open Finance — ASA SOCIEDADE DE CREDITO FINANCIAMENTO E INVESTIMENTO S.A. |
 | <img src="logos/png/19468242.png" width="40" alt="IFOOD PAGO IP"> | 0595 | 19468242 | IFOOD PAGO IP | Open Finance — IFood Pago Instituicao de Pagamento S.A. |
@@ -155,7 +150,7 @@
 | <img src="logos/png/00517645.png" width="40" alt="BCO RIBEIRAO PRETO S.A."> | 0741 | 00517645 | BCO RIBEIRAO PRETO S.A. | Open Finance — BCO RIBEIRAO PRETO S.A. |
 | <img src="logos/png/00795423.png" width="40" alt="BANCO SEMEAR"> | 0743 | 00795423 | BANCO SEMEAR | Open Finance — BANCO SEMEAR |
 | <img src="logos/png/33479023.png" width="40" alt="BCO CITIBANK S.A."> | 0745 | 33479023 | BCO CITIBANK S.A. | Open Finance — BCO CITIBANK S.A. |
-| <img src="logos/png/01181521.png" width="40" alt="BCO COOPERATIVO SICREDI S.A."> | 0748 | 01181521 | BCO COOPERATIVO SICREDI S.A. | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/01181521.png" width="40" alt="BANCO COOPERATIVO SICREDI"> | 0748 | 01181521 | BANCO COOPERATIVO SICREDI | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
 | <img src="logos/png/02038232.png" width="40" alt="BANCO SICOOB S.A."> | 0756 | 02038232 | BANCO SICOOB S.A. | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
 | <img src="logos/png/24313102.png" width="40" alt="99PAY IP S.A."> | 0769 | 24313102 | 99PAY IP S.A. | Open Finance — 99PAY INSTITUICAO DE PAGAMENTO S.A. |
 | <img src="logos/png/53908413.png" width="40" alt="KIWIFY IP"> | 0773 | 53908413 | KIWIFY IP | Site oficial (revisado) |
@@ -175,9 +170,9 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 
 ### CRESOL
 
-<img src="logos/png/10398952.png" width="56" alt="CRESOL"> — usado por **57** afiliada(s).
+<img src="logos/png/10398952.png" width="56" alt="CRESOL"> — usado por **54** afiliada(s).
 
-<details><summary>Ver afiliadas (57)</summary>
+<details><summary>Ver afiliadas (54)</summary>
 
 - `——` COOP CRESOL PIONEIRA (ISPB 00971300)
 - `——` COOP CRESOL CENTRO SERRA (ISPB 01155801)
@@ -187,7 +182,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` COOP CRESOL EXCELÊNCIA (ISPB 02766672)
 - `——` COOP CRESOL EVOLUÇAO (ISPB 02844024)
 - `——` COOP CRESOL JACUTINGA (ISPB 02904125)
-- `——` COOP CRESOL ÁUREA (ISPB 02904138)
 - `——` COOP CRESOL CENTRO SUL (ISPB 02910987)
 - `——` COOP CRESOL LIDERANCA (ISPB 02934201)
 - `——` COOP CRESOL SÃO VALENTIM (ISPB 03015152)
@@ -212,13 +206,11 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` COOP CRESOL ESSENCIA (ISPB 06031727)
 - `——` COOP CRESOL GRANDES LAGOS PR/SP (ISPB 06126780)
 - `——` COOP CRESOL RIO GRANDE DO SUL (ISPB 06139650)
-- `——` COOP CRESOL ALTERNATIVA (ISPB 07215632)
 - `——` COOP CRESOL CONFIANÇA (ISPB 07252614)
 - `——` COOP CRESOL INTEGRACAO (ISPB 07268499)
 - `——` COOP CRESOL VALE (ISPB 07320890)
 - `——` COOP CRESOL ALIANÇA (ISPB 07412987)
 - `——` COOP CRESOL ALTO VALE (ISPB 07465539)
-- `——` COOP CRESOL XANXERE (ISPB 07509426)
 - `——` COOP CRESOL VALE EUROPEU (ISPB 07512780)
 - `——` COOP CRESOL NORTE PARANAENSE (ISPB 07925729)
 - `——` COOP CRESOL ATIVA (ISPB 07946451)
@@ -241,9 +233,9 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 
 ### SICOOB
 
-<img src="logos/png/04891850.png" width="56" alt="SICOOB"> — usado por **141** afiliada(s).
+<img src="logos/png/04891850.png" width="56" alt="SICOOB"> — usado por **139** afiliada(s).
 
-<details><summary>Ver afiliadas (141)</summary>
+<details><summary>Ver afiliadas (139)</summary>
 
 - `0016` CCM DESP TRÂNS SC E RS (ISPB 04715685)
 - `——` CCLA SICOOB UNIMAIS METROPOLITANA (ISPB 00259231)
@@ -261,7 +253,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` CCLA CREDINOVA LTDA. - SICOOB CREDINOVA (ISPB 01667766)
 - `——` COOP SICOOB CREDIP (ISPB 02015588)
 - `——` CC SICOOB SERTÃO (ISPB 02057584)
-- `——` CECM SICOOB CREDSAÚDE (ISPB 02072790)
 - `——` CCLA SICOOB VALCREDI SUL (ISPB 02090126)
 - `——` COOPERATIVA DE CRÉDITO LIVRE ADMISSÃO SICOOB OURICRED (ISPB 02179673)
 - `——` CCLA SICOOB COOPCREDI (ISPB 02254376)
@@ -344,7 +335,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` SICOOB SUL-LITORÂNEO (ISPB 32474884)
 - `——` CC SICOOB COOPEC LTDA. (ISPB 32615247)
 - `——` COOPCENTRAL SICOOB NOVA CENTRAL LTDA. (ISPB 33416108)
-- `——` SICOOB COOPVALE (ISPB 33924028)
 - `——` CC SICOOB CENTRAL BA (ISPB 34148882)
 - `——` SICOOB JUDICIÁRIO (ISPB 37076205)
 - `——` COOP SICOOB CREDIJUSTRA (ISPB 37079720)
@@ -357,7 +347,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` COOP SICOOB COOPEREMB (ISPB 46642294)
 - `——` SICOOB CREDICONSUMO CC (ISPB 47074323)
 - `——` CCLA SICOOB COOCRELIVRE (ISPB 53935029)
-- `——` SICOOB CRESSEM - CECM SERV MUN REG METR VALE PARAIBA E LITOR (ISPB 54190525)
+- `——` SICOOB CRESSEM (ISPB 54190525)
 - `——` CC NOSSO - SICOOB NOSSO (ISPB 59869560)
 - `——` CC SICOOB COOPMIL (ISPB 62673470)
 - `——` CC CREDINORTE - SICOOB CREDINORTE (ISPB 64276058)
@@ -427,7 +417,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` COOP SICREDI CENTRO-SUL MS/BA (ISPB 26408161)
 - `——` COOP SICREDI OURO VERDE MT/PA (ISPB 26529420)
 - `——` COOP SICREDI INTEGRAÇÃO MT/AP/PA (ISPB 26549311)
-- `——` COOP SICREDI CELEIRO DO MT (ISPB 26555235)
+- `——` COOP SICREDI CELEIRO CENTRO NORTE (ISPB 26555235)
 - `——` COOP SICREDI VL DO CERRADO (ISPB 32983165)
 - `——` COOP SICREDI SUDOESTE MT/PA (ISPB 32995755)
 - `——` COOP SICREDI ARAXINGU (ISPB 33021064)
@@ -526,7 +516,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 </details>
 
 
-<details><summary>Instituições sem logo (632) — consumidores devem usar um ícone genérico</summary>
+<details><summary>Instituições sem logo (624) — consumidores devem usar um ícone genérico</summary>
 
 - `0007` BNDES (ISPB 33657248)
 - `0010` CREDICOAMO (ISPB 81723108)
@@ -612,7 +602,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0321` CREFAZ SCMEPP SA (ISPB 18188384)
 - `0322` CCR DE ABELARDO LUZ (ISPB 01073966)
 - `0324` CARTOS SCD S.A. (ISPB 21332862)
-- `0328` CECM FABRIC CALÇADOS SAPIRANGA (ISPB 05841967)
 - `0331` OSLO CAPITAL DTVM SA (ISPB 13673855)
 - `0334` BANCO BESA S.A. (ISPB 15124464)
 - `0342` CREDITAS SCD (ISPB 32997490)
@@ -653,7 +642,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0430` CCR SEARA (ISPB 00204963)
 - `0433` BR-CAPITAL DTVM S.A. (ISPB 44077014)
 - `0435` DELFINANCE SCD S.A. (ISPB 38224857)
-- `0438` TRUSTEE DTVM LTDA. (ISPB 67030395)
+- `0438` TRUSTEE DTVM LTDA. - EM LIQUIDAÇÃO EXTRAJUDICIAL (ISPB 67030395)
 - `0439` ID CTVM (ISPB 16695922)
 - `0440` COOP CREDI&GENTE (ISPB 82096447)
 - `0443` OCTA SCD S.A. - EM LIQUIDAÇÃO EXTRAJUDICIAL (ISPB 39416705)
@@ -716,7 +705,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0540` HBI SCD (ISPB 04849745)
 - `0543` COOPCRECE (ISPB 92825397)
 - `0544` MULTICRED SCD S.A. (ISPB 38593706)
-- `0545` SENSO CCVM S.A. (ISPB 17352220)
 - `0546` OKTO IP (ISPB 30980539)
 - `0547` BNK DIGITAL SCD S.A. (ISPB 45331622)
 - `0548` RPW S.A. SCFI (ISPB 06249129)
@@ -732,7 +720,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0561` PAY4FUN IP S.A. (ISPB 20757199)
 - `0562` AZIMUT BRASIL DTVM LTDA (ISPB 18684408)
 - `0563` PROTEGE CASH (ISPB 40276692)
-- `0564` J17 CFI S.A. (ISPB 63019146)
+- `0564` ANKOR CFI S.A. (ISPB 63019146)
 - `0566` FLAGSHIP IP LTDA (ISPB 23114447)
 - `0568` BRCONDOS SCD S.A. (ISPB 49933388)
 - `0569` CONTA PRONTA IP (ISPB 12473687)
@@ -748,7 +736,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0587` FIDD DTVM LTDA. (ISPB 37678915)
 - `0589` G5 SCD SA (ISPB 51212088)
 - `0590` REPASSES FINANCEIROS E SOLUCOES TECNOLOGICAS IP S.A. (ISPB 40473435)
-- `0591` BANVOX DTVM (ISPB 02671743)
+- `0591` BANVOX DTVM - EM LIQUIDAÇÃO EXTRAJUDICIAL (ISPB 02671743)
 - `0592` MAPS IP LTDA. (ISPB 45548763)
 - `0593` TRANSFEERA IP S.A. (ISPB 27084098)
 - `0596` CACTVS IP S.A. (ISPB 39696395)
@@ -831,6 +819,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0771` WX IP LTDA. (ISPB 57824223)
 - `0772` CC MECUNP (ISPB 20833992)
 - `0774` MOVA SEP S.A. (ISPB 33959738)
+- `0778` PB SCD (ISPB 58674454)
 - `0780` SAFETYPAY BRASIL IP LTDA (ISPB 12102128)
 - `0781` BARU DTVM LTDA. (ISPB 58006471)
 - `0785` LA FINTECA IP LTDA (ISPB 53058329)
@@ -843,6 +832,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0792` NIXFIN SCD (ISPB 44921281)
 - `0794` ATUAL CC LTDA (ISPB 44323831)
 - `0795` BANCO TRATON BRASIL S.A. (ISPB 52067630)
+- `0804` MÊNTORE IP S.A. (ISPB 32343119)
 - `——` CC ARACREDI LTDA. (ISPB 00068987)
 - `——` CCC DOS EST DE MT, MS E MUN DE CACOAL/RO (ISPB 00106180)
 - `——` CCC ESTADO MG - CECREMGE (ISPB 00309024)
@@ -900,7 +890,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` CC CAP UNICIDADES (ISPB 03047549)
 - `——` CREDISIS CREDIARI COOP LTDA. (ISPB 03222753)
 - `——` CC SERV MIL POL CIVIL SEC ED (ISPB 03269540)
-- `——` CCLA CENTRO NORTE MT/MS (ISPB 03326437)
 - `——` CC CREDIRAMA (ISPB 03412878)
 - `——` CC NOSSA SENHORA DO DESTERRO (ISPB 03419786)
 - `——` CCLA DO SUL CATARINENSE (ISPB 03427097)
@@ -914,7 +903,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` VOLUS IP LTDA. (ISPB 03817702)
 - `——` CCLA CIRCUITO DAS ÁGUAS (ISPB 03941182)
 - `——` CREDISIS SUDOESTE/RO (ISPB 03985375)
-- `——` CECM SERV POL MIL SP REGIÃO CE (ISPB 04152107)
 - `——` CCLA DE PITANGUI E REGIAO LTDA (ISPB 04181542)
 - `——` CC DE EMPRESÁRIOS (ISPB 04247370)
 - `——` COOP DO ESTADO DE GOIÁS (ISPB 04406371)
@@ -960,7 +948,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` CC DA FOZ DO RIO ITAJAÍ AÇU (ISPB 09512539)
 - `——` COOP PROF DA JUST, SERV PÚBL E ENERGIA LTDA (ISPB 09552111)
 - `——` CCLA CERES E RIALMA LTDA (ISPB 09576849)
-- `——` CECM EMP AMERICANA, LIMEIRA E (ISPB 09579249)
 - `——` COOP CREDICOMIN (ISPB 09590601)
 - `——` CCLA JATAÍ E REGIÃO (ISPB 10143499)
 - `——` CREVISC (ISPB 10143743)
@@ -994,7 +981,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` CECM EMPR EST HOSP BH RM ZM (ISPB 19402130)
 - `——` CC CREDCOOPER LTDA (ISPB 19449602)
 - `——` CCLA VALE DO AÇO (ISPB 19869338)
-- `——` CECM COL GRUPO EMPR A COSTA (ISPB 20062766)
+- `——` COOP UNIPRIME PIF PAF (ISPB 20062766)
 - `——` PAGHIPER IP LTDA. (ISPB 20110153)
 - `——` BS2 PAYMENTS IP S.A. (ISPB 20520298)
 - `——` CC CREDICAMPO LTDA (ISPB 21661202)
@@ -1008,7 +995,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` CC NOSSOCREDITO (ISPB 22760839)
 - `——` CC CREDICARPA (ISPB 23949522)
 - `——` CC CREDINTER (ISPB 24048910)
-- `——` BRX (ISPB 24722685)
 - `——` CCLA SUDOESTE GOIANO (ISPB 24795049)
 - `——` CCLA VALE DO PARANAÍBA (ISPB 24799033)
 - `——` CCLA VALE DO ARAGUAIA (ISPB 24830879)
@@ -1030,7 +1016,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` CCLA PONTAL DO TRIANGULO (ISPB 26178533)
 - `——` CREDISIS PRIMACREDI CC (ISPB 26563270)
 - `——` CCLA DO TOCANTINS (ISPB 26960328)
-- `——` ATLAS BRASIL IP LTDA. (ISPB 27126513)
+- `——` ARQ IP LTDA (ISPB 27126513)
 - `——` IPAG PAGAMENTOS DIGITAIS (ISPB 27810157)
 - `——` VALEPAY BRASIL IP (ISPB 28220872)
 - `——` PAYMEE BRASIL IP S.A. (ISPB 28683892)
@@ -1043,7 +1029,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` ADOPAY INSTITUICAO DE PAGAMENT (ISPB 31841474)
 - `——` DOTZPAY IP (ISPB 32024691)
 - `——` AIBR IP LTDA. (ISPB 32246162)
-- `——` MÊNTORE IP S.A. (ISPB 32343119)
 - `——` CCR DE GUACUI (ISPB 32422628)
 - `——` EXPAG SOLUÇÕES EM PAGAMENTOS (ISPB 32906701)
 - `——` CARTWAVE IP (ISPB 33207641)
@@ -1054,7 +1039,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` CCLA ANÁPOLIS E REGIÃO (ISPB 33615055)
 - `——` EQUIS IP LTDA. (ISPB 33641877)
 - `——` B91 (ISPB 33735811)
-- `——` SIMPAY PAGAMENTOS LTDA (ISPB 33982918)
+- `——` SIMPAY IP (ISPB 33982918)
 - `——` ASTROPAY (ISPB 34006497)
 - `——` KREDIT IP S/A (ISPB 34678263)
 - `——` BITSO IP LTDA (ISPB 35136120)
@@ -1064,7 +1049,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` ENOQ PAY (ISPB 35990763)
 - `——` APROMS NET IP LTDA. (ISPB 37168145)
 - `——` BASS PAGO (ISPB 37293930)
-- `——` STATER PAY INSTITUICAO DE PAGA (ISPB 37319859)
 - `——` CCLA CENTRO BRASILEIRA LTDA. (ISPB 37395399)
 - `——` INOVANTI IP S.A. (ISPB 37511258)
 - `——` COOP SICOOB UNI SUL MS (ISPB 37554441)
@@ -1104,10 +1088,9 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` CC CREDICITRUS (ISPB 54037916)
 - `——` VBS SCD S.A. (ISPB 54264235)
 - `——` CC COCRE (ISPB 54401286)
-- `——` NDD IP LTDA. (ISPB 57030391)
+- `——` NDD PAY (ISPB 57030391)
 - `——` VIVO PAY SCD S.A. (ISPB 57487987)
-- `——` CECME EMPR EMP GR ECON RHODIA (ISPB 57563728)
-- `——` CECM EMPR EMP ZILLO LORENZETTI (ISPB 58022195)
+- `——` COOP CREDI COOPERALFA (ISPB 60849822)
 - `——` CCC ESTADO SP - CECRESP (ISPB 62931522)
 - `——` CCC DO ESTADO DE SÃO PAULO (ISPB 63917579)
 - `——` CC CREDIUNA LTDA (ISPB 64237530)
@@ -1119,7 +1102,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` CC CREDIARA LTDA. (ISPB 66398496)
 - `——` COOPERATIVA DE CRÉDITO SAROM (ISPB 66402207)
 - `——` CCLA DE ITAÚNA E REGIÃO LTDA (ISPB 66463407)
-- `——` CC CREDIMOTA (ISPB 66788142)
 - `——` CC CREDICOCAPEC (ISPB 67096909)
 - `——` CECM TRAB CIA PROC DADOS SP (ISPB 67915868)
 - `——` CC CREDIGUAÇU (ISPB 67960229)
