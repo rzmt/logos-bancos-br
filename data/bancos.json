@@ -2395,8 +2395,8 @@
       "ispb": "03311443",
       "compe": "326",
       "compe4": "0326",
-      "name": "PARATI - CREDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
-      "shortName": "PARATI - CFI S.A.",
+      "name": "MEUTUDO S.A - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+      "shortName": "MEUTUDO SCFI",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -2416,15 +2416,6 @@
           "updatedAt": "2026-07-17"
         }
       }
-    },
-    {
-      "ispb": "05841967",
-      "compe": "328",
-      "compe4": "0328",
-      "name": "COOPERATIVA DE ECONOMIA E CRÉDITO MÚTUO DOS FABRICANTES DE CALÇADOS DE SAPIRANGA LTDA.",
-      "shortName": "CECM FABRIC CALÇADOS SAPIRANGA",
-      "pix": null,
-      "logo": null
     },
     {
       "ispb": "32402502",
@@ -3399,13 +3390,13 @@
       "ispb": "37241230",
       "compe": "404",
       "compe4": "0404",
-      "name": "SUMUP SOCIEDADE DE CRÉDITO DIRETO S.A.",
-      "shortName": "SUMUP SCD S.A.",
+      "name": "SUMUP SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+      "shortName": "SUMUP SCFI S.A",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
         "modality": "Provedor de Conta Transacional",
-        "institutionType": "Sociedade de Crédito Direto",
+        "institutionType": "Sociedade de Crédito, Financiamento e Investimento",
         "authorizedByBcb": true
       },
       "logo": {
@@ -3778,8 +3769,8 @@
       "ispb": "67030395",
       "compe": "438",
       "compe4": "0438",
-      "name": "TRUSTEE DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
-      "shortName": "TRUSTEE DTVM LTDA.",
+      "name": "TRUSTEE DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "shortName": "TRUSTEE DTVM LTDA. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
       "pix": null,
       "logo": null
     },
@@ -3899,9 +3890,9 @@
           "type": "openfinance",
           "org": "FITS INSTITUICAO DE PAGAMENTO S.A.",
           "cnpj": "13203354000185",
-          "uri": "https://sharedimages.fitbank.com.br/sharedimages/logo-FITFABK-512.svg",
-          "sha256": "9462675aee79b545549ca1a32784481f33d311de51af37d27d2ab0ea2a2a1291",
-          "updatedAt": "2026-07-17"
+          "uri": "https://admin.fitbank.com.br/Contents/Images/Branding/logo-fits.svg",
+          "sha256": "6bc6c391f237181955a4613129cd60abaceaf642eafe4fe043125d108166d41e",
+          "updatedAt": "2026-09-07"
         }
       }
     },
@@ -4884,15 +4875,6 @@
       "logo": null
     },
     {
-      "ispb": "17352220",
-      "compe": "545",
-      "compe4": "0545",
-      "name": "SENSO CORRETORA DE CAMBIO E VALORES MOBILIARIOS S.A",
-      "shortName": "SENSO CCVM S.A.",
-      "pix": null,
-      "logo": null
-    },
-    {
       "ispb": "30980539",
       "compe": "546",
       "compe4": "0546",
@@ -5117,8 +5099,8 @@
       "ispb": "63019146",
       "compe": "564",
       "compe4": "0564",
-      "name": "J17 - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S/A",
-      "shortName": "J17 CFI S.A.",
+      "name": "ANKOR CAPITAL - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S/A",
+      "shortName": "ANKOR CFI S.A.",
       "pix": null,
       "logo": null
     },
@@ -5315,106 +5297,6 @@
       "logo": null
     },
     {
-      "ispb": "87437687",
-      "compe": "580",
-      "compe4": "0580",
-      "name": "COOPERATIVA CENTRAL DE CRÉDITO, POUPANÇA E INVESTIMENTO DO SUL E SUDESTE - CENTRAL SICREDI SUL/SUDESTE",
-      "shortName": "CCCPOUPINV SUL E SUDESTE - CENTRAL SUL/SUDESTE",
-      "pix": null,
-      "logo": {
-        "png": "logos/png/87437687.png",
-        "svg": "logos/svg/87437687.svg",
-        "source": {
-          "type": "openfinance",
-          "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-          "cnpj": "03795072000160",
-          "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-          "sha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-          "updatedAt": "2026-07-17"
-        }
-      }
-    },
-    {
-      "ispb": "70119680",
-      "compe": "581",
-      "compe4": "0581",
-      "name": "COOPERATIVA CENTRAL DE CRÉDITO, POUPANÇA E INVESTIMENTO DO NORDESTE - CENTRAL SICREDI NORDESTE",
-      "shortName": "CENTRAL NORDESTE",
-      "pix": null,
-      "logo": {
-        "png": "logos/png/70119680.png",
-        "svg": "logos/svg/70119680.svg",
-        "source": {
-          "type": "openfinance",
-          "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-          "cnpj": "03795072000160",
-          "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-          "sha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-          "updatedAt": "2026-07-17"
-        }
-      }
-    },
-    {
-      "ispb": "33737818",
-      "compe": "582",
-      "compe4": "0582",
-      "name": "COOPERATIVA CENTRAL DE CRÉDITO, POUPANÇA E INVESTIMENTO DE MATO GROSSO DO SUL, GOIÁS, DISTRITO FEDERAL E TOCANTINS - CENTRAL SICREDI BRASIL CENTRAL",
-      "shortName": "CCC POUP INV DE MS, GO, DF E TO",
-      "pix": null,
-      "logo": {
-        "png": "logos/png/33737818.png",
-        "svg": "logos/svg/33737818.svg",
-        "source": {
-          "type": "openfinance",
-          "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-          "cnpj": "03795072000160",
-          "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-          "sha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-          "updatedAt": "2026-07-17"
-        }
-      }
-    },
-    {
-      "ispb": "33667205",
-      "compe": "583",
-      "compe4": "0583",
-      "name": "COOPERATIVA CENTRAL DE CRÉDITO, POUPANÇA E INVESTIMENTO DO CENTRO NORTE DO BRASIL - CENTRAL SICREDI CENTRO NORTE",
-      "shortName": "CCC POUP INV DO CENTRO NORTE DO BRASIL",
-      "pix": null,
-      "logo": {
-        "png": "logos/png/33667205.png",
-        "svg": "logos/svg/33667205.svg",
-        "source": {
-          "type": "openfinance",
-          "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-          "cnpj": "03795072000160",
-          "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-          "sha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-          "updatedAt": "2026-07-17"
-        }
-      }
-    },
-    {
-      "ispb": "80230774",
-      "compe": "584",
-      "compe4": "0584",
-      "name": "COOPERATIVA CENTRAL DE CRÉDITO, POUPANÇA E INVESTIMENTO DOS ESTADOS DO PARANÁ, SÃO PAULO E RIO DE JANEIRO - CENTRAL SICREDI PR/SP/RJ",
-      "shortName": "CCC POUP E INV DOS ESTADOS DO PR, SP E RJ",
-      "pix": null,
-      "logo": {
-        "png": "logos/png/80230774.png",
-        "svg": "logos/svg/80230774.svg",
-        "source": {
-          "type": "openfinance",
-          "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-          "cnpj": "03795072000160",
-          "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-          "sha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-          "updatedAt": "2026-07-17"
-        }
-      }
-    },
-    {
       "ispb": "50946592",
       "compe": "585",
       "compe4": "0585",
@@ -5507,8 +5389,8 @@
       "ispb": "02671743",
       "compe": "591",
       "compe4": "0591",
-      "name": "BANVOX DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA",
-      "shortName": "BANVOX DTVM",
+      "name": "BANVOX DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "shortName": "BANVOX DTVM - EM LIQUIDAÇÃO EXTRAJUDICIAL",
       "pix": null,
       "logo": null
     },
@@ -6260,7 +6142,7 @@
       "name": "COOPERATIVA DE CRÉDITO RURAL DO AGRESTE ALAGOANO - COOPERAGRE",
       "shortName": "CCR DO AGRESTE ALAGOANO",
       "pix": {
-        "spiParticipationType": "Indireta",
+        "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
         "modality": "Provedor de Conta Transacional",
         "institutionType": "Cooperativa de Crédito",
@@ -6842,7 +6724,7 @@
       "compe": "748",
       "compe4": "0748",
       "name": "BANCO COOPERATIVO SICREDI S.A.",
-      "shortName": "BCO COOPERATIVO SICREDI S.A.",
+      "shortName": "BANCO COOPERATIVO SICREDI",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -7205,6 +7087,15 @@
       }
     },
     {
+      "ispb": "58674454",
+      "compe": "778",
+      "compe4": "0778",
+      "name": "PB SOCIEDADE DE CREDITO DIRETO S.A.",
+      "shortName": "PB SCD",
+      "pix": null,
+      "logo": null
+    },
+    {
       "ispb": "12102128",
       "compe": "780",
       "compe4": "0780",
@@ -7386,6 +7277,21 @@
       "name": "BANCO TRATON BRASIL S.A.",
       "shortName": "BANCO TRATON BRASIL S.A.",
       "pix": null,
+      "logo": null
+    },
+    {
+      "ispb": "32343119",
+      "compe": "804",
+      "compe4": "0804",
+      "name": "MÊNTORE INSTITUIÇÃO DE PAGAMENTO S.A.",
+      "shortName": "MÊNTORE IP S.A.",
+      "pix": {
+        "spiParticipationType": "Indireta",
+        "pixParticipationType": "Facultativa",
+        "modality": "Provedor de Conta Transacional",
+        "institutionType": "Instituição de Pagamento",
+        "authorizedByBcb": true
+      },
       "logo": null
     }
   ]

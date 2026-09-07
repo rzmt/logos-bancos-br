@@ -1280,34 +1280,6 @@
       }
     },
     {
-      "ispb": "02072790",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "02072790000146",
-      "name": "CECM SICOOB CREDSAÚDE",
-      "shortName": "CECM SICOOB CREDSAÚDE",
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": false
-      },
-      "logo": {
-        "png": "logos/png/04891850.png",
-        "svg": "logos/svg/04891850.svg",
-        "source": {
-          "type": "brand",
-          "org": "Confederacao Nacional das Cooperativas do Sicoob",
-          "cnpj": "04891850000188",
-          "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-          "sha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-          "updatedAt": "2026-07-17",
-          "brand": "SICOOB"
-        }
-      }
-    },
-    {
       "ispb": "02090126",
       "compe": null,
       "compe4": null,
@@ -2136,34 +2108,6 @@
       }
     },
     {
-      "ispb": "02904138",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "02904138000140",
-      "name": "COOP CRESOL ÁUREA",
-      "shortName": "COOP CRESOL ÁUREA",
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": false
-      },
-      "logo": {
-        "png": "logos/png/10398952.png",
-        "svg": "logos/svg/10398952.svg",
-        "source": {
-          "type": "brand",
-          "org": "CRESOL CONFEDERAÇÃO",
-          "cnpj": "10398952000169",
-          "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-          "sha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-          "updatedAt": "2026-07-17",
-          "brand": "CRESOL"
-        }
-      }
-    },
-    {
       "ispb": "02910987",
       "compe": null,
       "compe4": null,
@@ -2617,22 +2561,6 @@
           "brand": "SICOOB"
         }
       }
-    },
-    {
-      "ispb": "03326437",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "03326437000108",
-      "name": "CCLA CENTRO NORTE MT/MS",
-      "shortName": "CCLA CENTRO NORTE MT/MS",
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": false
-      },
-      "logo": null
     },
     {
       "ispb": "03358914",
@@ -3345,22 +3273,6 @@
           "brand": "SICOOB"
         }
       }
-    },
-    {
-      "ispb": "04152107",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "04152107000106",
-      "name": "CECM SERV POL MIL SP REGIÃO CE",
-      "shortName": "CECM SERV POL MIL SP REGIÃO CE",
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": true
-      },
-      "logo": null
     },
     {
       "ispb": "04174720",
@@ -5355,34 +5267,6 @@
       }
     },
     {
-      "ispb": "07215632",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "07215632000111",
-      "name": "COOP CRESOL ALTERNATIVA",
-      "shortName": "COOP CRESOL ALTERNATIVA",
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": false
-      },
-      "logo": {
-        "png": "logos/png/10398952.png",
-        "svg": "logos/svg/10398952.svg",
-        "source": {
-          "type": "brand",
-          "org": "CRESOL CONFEDERAÇÃO",
-          "cnpj": "10398952000169",
-          "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-          "sha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-          "updatedAt": "2026-07-17",
-          "brand": "CRESOL"
-        }
-      }
-    },
-    {
       "ispb": "07252614",
       "compe": null,
       "compe4": null,
@@ -5613,34 +5497,6 @@
         "authorizedByBcb": true
       },
       "logo": null
-    },
-    {
-      "ispb": "07509426",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "07509426000114",
-      "name": "COOP CRESOL XANXERE",
-      "shortName": "COOP CRESOL XANXERE",
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": false
-      },
-      "logo": {
-        "png": "logos/png/10398952.png",
-        "svg": "logos/svg/10398952.svg",
-        "source": {
-          "type": "brand",
-          "org": "CRESOL CONFEDERAÇÃO",
-          "cnpj": "10398952000169",
-          "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-          "sha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-          "updatedAt": "2026-07-17",
-          "brand": "CRESOL"
-        }
-      }
     },
     {
       "ispb": "07512780",
@@ -6459,22 +6315,6 @@
         "modality": "Provedor de Conta Transacional",
         "institutionType": "Cooperativa de Crédito",
         "authorizedByBcb": true
-      },
-      "logo": null
-    },
-    {
-      "ispb": "09579249",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "09579249000178",
-      "name": "CECM EMP AMERICANA, LIMEIRA E",
-      "shortName": "CECM EMP AMERICANA, LIMEIRA E",
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": false
       },
       "logo": null
     },
@@ -7374,8 +7214,8 @@
       "compe": null,
       "compe4": null,
       "cnpj": "20062766000108",
-      "name": "CECM COL GRUPO EMPR A COSTA",
-      "shortName": "CECM COL GRUPO EMPR A COSTA",
+      "name": "COOP UNIPRIME PIF PAF",
+      "shortName": "COOP UNIPRIME PIF PAF",
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -7732,22 +7572,6 @@
           "brand": "SICREDI"
         }
       }
-    },
-    {
-      "ispb": "24722685",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "24722685000148",
-      "name": "BRX",
-      "shortName": "BRX",
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Instituição de Pagamento",
-        "authorizedByBcb": false
-      },
-      "logo": null
     },
     {
       "ispb": "24795049",
@@ -8282,8 +8106,8 @@
       "compe": null,
       "compe4": null,
       "cnpj": "26555235000133",
-      "name": "COOP SICREDI CELEIRO DO MT",
-      "shortName": "COOP SICREDI CELEIRO DO MT",
+      "name": "COOP SICREDI CELEIRO CENTRO NORTE",
+      "shortName": "COOP SICREDI CELEIRO CENTRO NORTE",
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -8342,8 +8166,8 @@
       "compe": null,
       "compe4": null,
       "cnpj": "27126513000108",
-      "name": "ATLAS BRASIL IP LTDA.",
-      "shortName": "ATLAS BRASIL IP LTDA.",
+      "name": "ARQ IP LTDA",
+      "shortName": "ARQ IP LTDA",
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -8570,22 +8394,6 @@
         "modality": "Provedor de Conta Transacional",
         "institutionType": "Instituição de Pagamento",
         "authorizedByBcb": false
-      },
-      "logo": null
-    },
-    {
-      "ispb": "32343119",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "32343119000153",
-      "name": "MÊNTORE IP S.A.",
-      "shortName": "MÊNTORE IP S.A.",
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Instituição de Pagamento",
-        "authorizedByBcb": true
       },
       "logo": null
     },
@@ -9057,40 +8865,12 @@
       "logo": null
     },
     {
-      "ispb": "33924028",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "33924028000174",
-      "name": "SICOOB COOPVALE",
-      "shortName": "SICOOB COOPVALE",
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": false
-      },
-      "logo": {
-        "png": "logos/png/04891850.png",
-        "svg": "logos/svg/04891850.svg",
-        "source": {
-          "type": "brand",
-          "org": "Confederacao Nacional das Cooperativas do Sicoob",
-          "cnpj": "04891850000188",
-          "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-          "sha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-          "updatedAt": "2026-07-17",
-          "brand": "SICOOB"
-        }
-      }
-    },
-    {
       "ispb": "33982918",
       "compe": null,
       "compe4": null,
       "cnpj": "33982918000132",
-      "name": "SIMPAY PAGAMENTOS LTDA",
-      "shortName": "SIMPAY PAGAMENTOS LTDA",
+      "name": "SIMPAY IP",
+      "shortName": "SIMPAY IP",
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -9403,22 +9183,6 @@
       "cnpj": "37293930000190",
       "name": "BASS PAGO",
       "shortName": "BASS PAGO",
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Instituição de Pagamento não sujeita à autorização pelo BCB",
-        "authorizedByBcb": false
-      },
-      "logo": null
-    },
-    {
-      "ispb": "37319859",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "37319859000178",
-      "name": "STATER PAY INSTITUICAO DE PAGA",
-      "shortName": "STATER PAY INSTITUICAO DE PAGA",
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -10416,8 +10180,8 @@
       "compe": null,
       "compe4": null,
       "cnpj": "54190525000166",
-      "name": "SICOOB CRESSEM - CECM SERV MUN REG METR VALE PARAIBA E LITOR",
-      "shortName": "SICOOB CRESSEM - CECM SERV MUN REG METR VALE PARAIBA E LITOR",
+      "name": "SICOOB CRESSEM",
+      "shortName": "SICOOB CRESSEM",
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -10476,8 +10240,8 @@
       "compe": null,
       "compe4": null,
       "cnpj": "57030391000104",
-      "name": "NDD IP LTDA.",
-      "shortName": "NDD IP LTDA.",
+      "name": "NDD PAY",
+      "shortName": "NDD PAY",
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -10500,38 +10264,6 @@
         "modality": "Provedor de Conta Transacional",
         "institutionType": "Sociedade de Crédito Direto",
         "authorizedByBcb": true
-      },
-      "logo": null
-    },
-    {
-      "ispb": "57563728",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "57563728000149",
-      "name": "CECME EMPR EMP GR ECON RHODIA",
-      "shortName": "CECME EMPR EMP GR ECON RHODIA",
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": false
-      },
-      "logo": null
-    },
-    {
-      "ispb": "58022195",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "58022195000150",
-      "name": "CECM EMPR EMP ZILLO LORENZETTI",
-      "shortName": "CECM EMPR EMP ZILLO LORENZETTI",
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": false
       },
       "logo": null
     },
@@ -10589,6 +10321,22 @@
           "updatedAt": "2026-07-17"
         }
       }
+    },
+    {
+      "ispb": "60849822",
+      "compe": null,
+      "compe4": null,
+      "cnpj": "60849822000173",
+      "name": "COOP CREDI COOPERALFA",
+      "shortName": "COOP CREDI COOPERALFA",
+      "pix": {
+        "spiParticipationType": "Indireta",
+        "pixParticipationType": "Facultativa",
+        "modality": "Provedor de Conta Transacional",
+        "institutionType": "Cooperativa de Crédito",
+        "authorizedByBcb": true
+      },
+      "logo": null
     },
     {
       "ispb": "62673470",
@@ -10875,22 +10623,6 @@
         "modality": "Provedor de Conta Transacional",
         "institutionType": "Cooperativa de Crédito",
         "authorizedByBcb": true
-      },
-      "logo": null
-    },
-    {
-      "ispb": "66788142",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "66788142000173",
-      "name": "CC CREDIMOTA",
-      "shortName": "CC CREDIMOTA",
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": false
       },
       "logo": null
     },

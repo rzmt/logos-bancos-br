@@ -93,10 +93,10 @@
     "compe4": "0450",
     "org": "FITS INSTITUICAO DE PAGAMENTO S.A.",
     "cnpj": "13203354000185",
-    "uri": "https://sharedimages.fitbank.com.br/sharedimages/logo-FITFABK-512.svg",
-    "sourceSha256": "9462675aee79b545549ca1a32784481f33d311de51af37d27d2ab0ea2a2a1291",
+    "uri": "https://admin.fitbank.com.br/Contents/Images/Branding/logo-fits.svg",
+    "sourceSha256": "6bc6c391f237181955a4613129cd60abaceaf642eafe4fe043125d108166d41e",
     "svg": true,
-    "updatedAt": "2026-07-17"
+    "updatedAt": "2026-09-07"
   },
   "13370835": {
     "compe4": "0301",
@@ -510,24 +510,6 @@
     "uri": "https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_banco_fator/img/favicon/180x180_favicon.png",
     "sourceSha256": "06fe3d00891cbe30d07c35bb27d0a9b744afbca6d511c8512ad3a38a06297cc1",
     "svg": false,
-    "updatedAt": "2026-07-17"
-  },
-  "33667205": {
-    "compe4": "0583",
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "33737818": {
-    "compe4": "0582",
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
     "updatedAt": "2026-07-17"
   },
   "34088029": {
@@ -971,15 +953,6 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
-  "70119680": {
-    "compe4": "0581",
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
   "71027866": {
     "compe4": "0218",
     "org": null,
@@ -1005,24 +978,6 @@
     "uri": "https://cdn.prod.website-files.com/65172cb208ef8ecb7765b47f/65493c21d236210da7ddda13_ouribank-webclip2.png",
     "sourceSha256": "3ea8666a5fe3589e5be030555da42b8f64d3f31374738a70bf1e7c53cbc8c76b",
     "svg": false,
-    "updatedAt": "2026-07-17"
-  },
-  "80230774": {
-    "compe4": "0584",
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
-    "updatedAt": "2026-07-17"
-  },
-  "87437687": {
-    "compe4": "0580",
-    "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-    "cnpj": "03795072000160",
-    "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-    "sourceSha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-    "svg": true,
     "updatedAt": "2026-07-17"
   },
   "90400888": {
