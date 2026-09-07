@@ -36,6 +36,14 @@ publicado; arquivos órfãos só são removidos manualmente.
 Saídas geradas (commitadas): `data/bancos.json`, `logos/png/<ispb>.png`,
 `logos/svg/<ispb>.svg`, `PREVIEW.md`, `react-native.js`, `pipeline/manifest.json`.
 
+## Primeira contribuição (e Hacktoberfest)
+
+Quer começar? As issues com label
+[`good first issue`](https://github.com/rzmt/logos-bancos-br/labels/good%20first%20issue) pedem
+uma coisa só: achar a URL do logo oficial de uma instituição no site dela — o pipeline faz todo o
+resto (download, sanitização, PNG 256px, proveniência). Em outubro, elas valem para o
+Hacktoberfest.
+
 ## Adicionando/corrigindo logos (o fluxo mais comum)
 
 O relatório lista **sugestões por nome** — instituições cujo ISPB não bate com nenhum CNPJ do
