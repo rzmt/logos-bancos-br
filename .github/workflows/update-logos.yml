@@ -52,6 +52,53 @@ jobs:
       - name: Garantir relatório
         run: test -f pipeline/report.md || echo '## Atualização de logos' > pipeline/report.md
 
+      - name: Guard de permanência (asset publicado nunca some)
+        id: permanencia
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Consumidores externos (ex.: BrasilAPI, BancosBrasileiros) fixam as
+          # URLs dos logos. Compara o mapa publicado no npm com a árvore atual:
+          # arquivo referenciado que sumiu força revisão humana + abre issue.
+          if ! curl -sfL --max-time 30 "https://cdn.jsdelivr.net/npm/logos-bancos-br@latest/data/logo-urls.min.json" -o "$RUNNER_TEMP/logo-urls-publicado.json"; then
+            echo 'aviso: não consegui baixar o mapa publicado; guard pulado nesta rodada'
+            echo "removidos=0" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          faltando=$(node -e '
+            const m = require(process.env.RUNNER_TEMP + "/logo-urls-publicado.json");
+            const { existsSync } = require("node:fs");
+            const out = [];
+            for (const url of Object.values(m)) {
+              const p = url.replace(/^.*\/logos\//, "logos/");
+              if (!existsSync(p)) out.push(p);
+            }
+            process.stdout.write(out.join("\n"));
+          ')
+          n=$(printf '%s' "$faltando" | grep -c . || true)
+          echo "removidos=$n" >> "$GITHUB_OUTPUT"
+          if [ "$n" -gt 0 ]; then
+            echo "ASSETS PUBLICADOS AUSENTES ($n):"; echo "$faltando"
+            {
+              echo ''
+              echo '### ⚠️ Guard de permanência: assets publicados ausentes da árvore'
+              echo ''
+              echo "$faltando" | sed 's/^/- /'
+              echo ''
+              echo 'URLs já publicadas podem quebrar em consumidores externos. Restaurar os arquivos (ou remover conscientemente, atualizando a política no README).'
+            } >> pipeline/report.md
+            aberta=$(gh issue list --label pipeline-falhou --state open --json number,title --jq '[.[] | select(.title | contains("permanência"))][0].number')
+            if [ -z "$aberta" ]; then
+              {
+                echo 'Arquivos referenciados pelo `logo-urls.min.json` publicado no npm não existem mais na árvore — URLs de consumidores externos podem quebrar:'
+                echo ''
+                echo "$faltando" | sed 's/^/- /'
+              } > "$RUNNER_TEMP/permanencia-issue.md"
+              gh issue create --title 'Guard de permanência: asset publicado sumiu da árvore' \
+                --label pipeline-falhou --body-file "$RUNNER_TEMP/permanencia-issue.md"
+            fi
+          fi
+
       - name: Classificar o diff
         id: diff
         run: |
@@ -71,6 +118,7 @@ jobs:
             console.log(n);
           ")
           if [ "$mudancas" = "0" ]; then estado=sem-mudanca
+          elif [ "${{ steps.permanencia.outputs.removidos }}" != "0" ]; then estado=revisao
           elif [ "$logos_mudados" = "0" ] && [ "$churn" -le 3 ]; then estado=seguro
           else estado=revisao; fi
           echo "estado=$estado" >> "$GITHUB_OUTPUT"

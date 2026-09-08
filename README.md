@@ -210,6 +210,11 @@ https://cdn.jsdelivr.net/npm/logos-bancos-br@0/data/logo-urls.min.json
 
 Aí o consumo é direto: `logoUrl = mapa[ispb]` (ou `null` se não tiver).
 
+**Política de permanência:** arquivo de logo publicado **não é removido** — mesmo que a
+instituição saia das listas do BCB, o asset continua existindo nas versões seguintes.
+Pode cachear e fixar as URLs com tranquilidade; um guard no CI trata qualquer remoção
+como exceção que exige revisão humana.
+
 ### Só os dados
 
 ```ts

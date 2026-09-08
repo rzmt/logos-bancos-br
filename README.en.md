@@ -167,6 +167,11 @@ https://cdn.jsdelivr.net/npm/logos-bancos-br@0/data/logo-urls.min.json
 
 Consumption is a plain lookup: `logoUrl = map[ispb]` (or `null`).
 
+**Permanence policy:** a published logo file is **never removed** — even if the
+institution leaves the Central Bank lists, the asset keeps existing in later versions.
+Feel free to cache and pin the URLs; a CI guard treats any removal as an exception
+requiring human review.
+
 **Data only**:
 
 ```ts
