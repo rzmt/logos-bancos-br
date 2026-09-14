@@ -8393,7 +8393,7 @@
         "pixParticipationType": "Facultativa",
         "modality": "Provedor de Conta Transacional",
         "institutionType": "Instituição de Pagamento",
-        "authorizedByBcb": false
+        "authorizedByBcb": true
       },
       "logo": null
     },
@@ -8595,34 +8595,6 @@
         "authorizedByBcb": false
       },
       "logo": null
-    },
-    {
-      "ispb": "32983165",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "32983165000117",
-      "name": "COOP SICREDI VL DO CERRADO",
-      "shortName": "COOP SICREDI VL DO CERRADO",
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": true
-      },
-      "logo": {
-        "png": "logos/png/03795072.png",
-        "svg": "logos/svg/03795072.svg",
-        "source": {
-          "type": "brand",
-          "org": "CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI",
-          "cnpj": "03795072000160",
-          "uri": "https://www.sicredi.com.br/openbanking/app/assets/images/shared/logo/logo_sicredi_512.svg",
-          "sha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
-          "updatedAt": "2026-07-17",
-          "brand": "SICREDI"
-        }
-      }
     },
     {
       "ispb": "32995755",
