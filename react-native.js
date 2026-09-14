@@ -498,7 +498,6 @@ export const logos = {
   '32467086': require('./logos/png/04891850.png'),
   '32474884': require('./logos/png/04891850.png'),
   '32615247': require('./logos/png/04891850.png'),
-  '32983165': require('./logos/png/03795072.png'),
   '32995755': require('./logos/png/03795072.png'),
   '33021064': require('./logos/png/03795072.png'),
   '33022690': require('./logos/png/03795072.png'),

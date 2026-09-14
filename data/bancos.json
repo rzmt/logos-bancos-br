@@ -6285,7 +6285,7 @@
       "name": "BRASIL CASH INSTITUICAO DE PAGAMENTO S.A",
       "shortName": "BRASIL CASH IP S.A.",
       "pix": {
-        "spiParticipationType": "Indireta",
+        "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
         "modality": "Provedor de Conta Transacional",
         "institutionType": "Instituição de Pagamento",
@@ -6354,15 +6354,6 @@
         "institutionType": "Sociedade de Crédito Direto",
         "authorizedByBcb": true
       },
-      "logo": null
-    },
-    {
-      "ispb": "51118718",
-      "compe": "689",
-      "compe4": "0689",
-      "name": "NVIO BRASIL SOCIEDADE DE CRÉDITO DIRETO S.A.",
-      "shortName": "NVIO BRASIL SCD S.A.",
-      "pix": null,
       "logo": null
     },
     {
@@ -6620,15 +6611,6 @@
       "compe4": "0719",
       "name": "BANCO MASTER MÚLTIPLO S.A. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
       "shortName": "BANCO MASTER MÚLTIPLO - EM LIQUIDAÇÃO EXTRAJUDICIAL",
-      "pix": null,
-      "logo": null
-    },
-    {
-      "ispb": "80271455",
-      "compe": "720",
-      "compe4": "0720",
-      "name": "BANCO RNX S.A.",
-      "shortName": "BCO RNX S.A.",
       "pix": null,
       "logo": null
     },

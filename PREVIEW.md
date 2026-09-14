@@ -2,7 +2,7 @@
 
 > Arquivo gerado automaticamente pelo pipeline (`npm run pipeline`) — não editar à mão.
 
-**155** instituições com logo próprio · **311** afiliadas usando o logo do seu sistema cooperativo · **624** sem logo nas fontes oficiais.
+**155** instituições com logo próprio · **310** afiliadas usando o logo do seu sistema cooperativo · **622** sem logo nas fontes oficiais.
 
 ## Logos próprios
 
@@ -381,9 +381,9 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 
 ### SICREDI
 
-<img src="logos/png/03795072.png" width="56" alt="SICREDI"> — usado por **98** afiliada(s).
+<img src="logos/png/03795072.png" width="56" alt="SICREDI"> — usado por **97** afiliada(s).
 
-<details><summary>Ver afiliadas (98)</summary>
+<details><summary>Ver afiliadas (97)</summary>
 
 - `——` COOP SICREDI NORTE SC (ISPB 02843443)
 - `——` COOP SICREDI SERIGY SE/BA (ISPB 02923389)
@@ -418,7 +418,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` COOP SICREDI OURO VERDE MT/PA (ISPB 26529420)
 - `——` COOP SICREDI INTEGRAÇÃO MT/AP/PA (ISPB 26549311)
 - `——` COOP SICREDI CELEIRO CENTRO NORTE (ISPB 26555235)
-- `——` COOP SICREDI VL DO CERRADO (ISPB 32983165)
 - `——` COOP SICREDI SUDOESTE MT/PA (ISPB 32995755)
 - `——` COOP SICREDI ARAXINGU (ISPB 33021064)
 - `——` COOP SICREDI BIOMAS (ISPB 33022690)
@@ -516,7 +515,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 </details>
 
 
-<details><summary>Instituições sem logo (624) — consumidores devem usar um ícone genérico</summary>
+<details><summary>Instituições sem logo (622) — consumidores devem usar um ícone genérico</summary>
 
 - `0007` BNDES (ISPB 33657248)
 - `0010` CREDICOAMO (ISPB 81723108)
@@ -781,7 +780,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0686` BIZ IP LTDA. (ISPB 12481100)
 - `0687` INCO SEP S.A. (ISPB 35340796)
 - `0688` KIKAI SCD S.A. (ISPB 43978697)
-- `0689` NVIO BRASIL SCD S.A. (ISPB 51118718)
 - `0690` BK IP S.A. (ISPB 16814330)
 - `0691` WASU IP LTDA. (ISPB 49686505)
 - `0692` SQUID SCD S.A. (ISPB 56198117)
@@ -798,7 +796,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0708` BCO INDUSCRED DE INVESTIM. S/A (ISPB 33588252)
 - `0714` FINAMAX S.A. CFI (ISPB 00411939)
 - `0719` BANCO MASTER MÚLTIPLO - EM LIQUIDAÇÃO EXTRAJUDICIAL (ISPB 33884941)
-- `0720` BCO RNX S.A. (ISPB 80271455)
 - `0747` BCO RABOBANK INTL BRASIL S.A. (ISPB 01023570)
 - `0751` Scotiabank Brasil (ISPB 29030467)
 - `0752` BCO BNP PARIBAS BRASIL S A (ISPB 01522368)
