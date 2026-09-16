@@ -87,13 +87,13 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@anthropic-ai/sdk": "^0.122.0",
-    "@biomejs/biome": "^2.5.11",
-    "@types/node": "^26.4.0",
+    "@anthropic-ai/sdk": "^0.125.0",
+    "@biomejs/biome": "^2.5.13",
+    "@types/node": "^26.5.1",
     "sharp": "^0.35.4",
     "tsup": "^8.5.1",
-    "tsx": "^4.23.12",
+    "tsx": "^4.23.13",
     "typescript": "^5.9.3",
-    "vitest": "^4.1.11"
+    "vitest": "^5.0.0"
   }
 }
