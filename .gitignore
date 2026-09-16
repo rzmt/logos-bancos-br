@@ -20,3 +20,7 @@ pipeline/discovery-ai-sheet.png
 
 # Material de divulgação do autor (rascunhos de posts) — trabalho pessoal, não é doc do projeto.
 docs/divulgacao/
+
+# Artefatos de build do pacote Dart (packages/dart/*)
+.dart_tool/
+pubspec.lock

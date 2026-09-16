@@ -13,7 +13,9 @@
  *
  * Golden rules: if a source is unreachable, abort without touching anything;
  * a failed download never deletes a previously shipped logo; files that lose
- * their source become "orphans" in the report (removal is manual).
+ * their source become "orphans" in the report and são MANTIDOS: a URL já pode
+ * ter sido publicada e fixada por consumidores externos (política de
+ * permanência documentada no README).
  */
 
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
@@ -414,7 +416,7 @@ async function main(): Promise<void> {
   if (orphanPngs.length || orphanSvgs.length) {
     reportLines.push(
       '',
-      `**Órfãos (remoção manual):** png [${orphanPngs.join(', ')}] · svg [${orphanSvgs.join(', ')}]`,
+      `**Órfãos (mantidos — a instituição saiu das listas, mas a URL já foi publicada):** png [${orphanPngs.join(', ')}] · svg [${orphanSvgs.join(', ')}]`,
     );
   }
   if (unusedOverrides.length) {

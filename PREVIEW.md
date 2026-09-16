@@ -2,7 +2,7 @@
 
 > Arquivo gerado automaticamente pelo pipeline (`npm run pipeline`) — não editar à mão.
 
-**155** instituições com logo próprio · **310** afiliadas usando o logo do seu sistema cooperativo · **622** sem logo nas fontes oficiais.
+**156** instituições com logo próprio · **310** afiliadas usando o logo do seu sistema cooperativo · **621** sem logo nas fontes oficiais.
 
 ## Logos próprios
 
@@ -37,6 +37,7 @@
 | <img src="logos/png/02332886.png" width="40" alt="XP INVESTIMENTOS CCTVM S/A"> | 0102 | 02332886 | XP INVESTIMENTOS CCTVM S/A | Open Finance — BANCO XP S.A. |
 | <img src="logos/png/00360305.png" width="40" alt="CAIXA ECONOMICA FEDERAL"> | 0104 | 00360305 | CAIXA ECONOMICA FEDERAL | Open Finance — CAIXA ECONOMICA FEDERAL |
 | <img src="logos/png/07652226.png" width="40" alt="LECCA CFI S.A."> | 0105 | 07652226 | LECCA CFI S.A. | Site oficial (revisado) |
+| <img src="logos/png/15114366.png" width="40" alt="BCO BOCOM BBM S.A."> | 0107 | 15114366 | BCO BOCOM BBM S.A. | Site oficial (revisado) |
 | <img src="logos/png/36113876.png" width="40" alt="OLIVEIRA TRUST DTVM S.A."> | 0111 | 36113876 | OLIVEIRA TRUST DTVM S.A. | Site oficial (revisado) |
 | <img src="logos/png/61723847.png" width="40" alt="NEON CTVM S.A."> | 0113 | 61723847 | NEON CTVM S.A. | Open Finance — Neon Pagamentos |
 | <img src="logos/png/33603457.png" width="40" alt="BCO RODOBENS S.A."> | 0120 | 33603457 | BCO RODOBENS S.A. | Site oficial (revisado) |
@@ -515,7 +516,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 </details>
 
 
-<details><summary>Instituições sem logo (622) — consumidores devem usar um ícone genérico</summary>
+<details><summary>Instituições sem logo (621) — consumidores devem usar um ícone genérico</summary>
 
 - `0007` BNDES (ISPB 33657248)
 - `0010` CREDICOAMO (ISPB 81723108)
@@ -541,7 +542,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0096` BCO B3 S.A. (ISPB 00997185)
 - `0097` CREDISIS - CENTRAL DE COOPERATIVAS DE CRÉDITO (ISPB 04632856)
 - `0099` UNIPRIME COOPCENTRAL LTDA. (ISPB 03046391)
-- `0107` BCO BOCOM BBM S.A. (ISPB 15114366)
 - `0119` BCO WESTERN UNION (ISPB 13720915)
 - `0124` BCO WOORI BANK DO BRASIL S.A. (ISPB 15357060)
 - `0126` BR PARTNERS BI (ISPB 13220493)

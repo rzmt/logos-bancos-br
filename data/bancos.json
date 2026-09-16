@@ -968,7 +968,18 @@
       "name": "Banco Bocom BBM S.A.",
       "shortName": "BCO BOCOM BBM S.A.",
       "pix": null,
-      "logo": null
+      "logo": {
+        "png": "logos/png/15114366.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.bocombbm.com.br/bbm-content./uploads/2021/01/cropped-logo-reduzida-512x512-1.png",
+          "sha256": "42e2e3304a9da62e54257d494794458ed4bdb9343085bf20a8fe58e63ab940ff",
+          "updatedAt": "2026-09-16"
+        }
+      }
     },
     {
       "ispb": "36113876",
