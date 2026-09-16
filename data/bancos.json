@@ -1367,7 +1367,18 @@
         "institutionType": "Banco de Câmbio",
         "authorizedByBcb": true
       },
-      "logo": null
+      "logo": {
+        "png": "logos/png/13059145.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://cdn.prod.website-files.com/6911cdf6e0645000756617a4/698c9aa22bbb6bedc1afc1ba_App%20iconss.png",
+          "sha256": "f5b703994069368d2ea81e1a1148e48827f902a29c947e022b66626e08279f22",
+          "updatedAt": "2026-09-16"
+        }
+      }
     },
     {
       "ispb": "50579044",

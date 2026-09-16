@@ -2,7 +2,7 @@
 
 > Arquivo gerado automaticamente pelo pipeline (`npm run pipeline`) — não editar à mão.
 
-**156** instituições com logo próprio · **310** afiliadas usando o logo do seu sistema cooperativo · **621** sem logo nas fontes oficiais.
+**157** instituições com logo próprio · **310** afiliadas usando o logo do seu sistema cooperativo · **620** sem logo nas fontes oficiais.
 
 ## Logos próprios
 
@@ -49,6 +49,7 @@
 | <img src="logos/png/00315557.png" width="40" alt="UNICRED DO BRASIL"> | 0136 | 00315557 | UNICRED DO BRASIL | Open Finance — COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL |
 | <img src="logos/png/62169875.png" width="40" alt="NU INVESTIMENTOS S.A. - CTVM"> | 0140 | 62169875 | NU INVESTIMENTOS S.A. - CTVM | Open Finance — NU PAGAMENTOS S.A. - INSTITUICAO DE PAGAMENTO |
 | <img src="logos/png/02992317.png" width="40" alt="INTEX BANK BCO DE CÂMBIO S.A."> | 0143 | 02992317 | INTEX BANK BCO DE CÂMBIO S.A. | Site oficial (revisado) |
+| <img src="logos/png/13059145.png" width="40" alt="EBURY BCO DE CÂMBIO S.A."> | 0144 | 13059145 | EBURY BCO DE CÂMBIO S.A. | Site oficial (revisado) |
 | <img src="logos/png/43180355.png" width="40" alt="PEFISA S.A. - C.F.I."> | 0174 | 43180355 | PEFISA S.A. - C.F.I. | Open Finance — PEFISA S.A. - CFI |
 | <img src="logos/png/16501555.png" width="40" alt="STONE IP S.A."> | 0197 | 16501555 | STONE IP S.A. | Open Finance — STONE PAGAMENTOS S.A. |
 | <img src="logos/png/30306294.png" width="40" alt="BANCO BTG PACTUAL S.A."> | 0208 | 30306294 | BANCO BTG PACTUAL S.A. | Open Finance — BANCO BTG PACTUAL S.A. |
@@ -516,7 +517,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 </details>
 
 
-<details><summary>Instituições sem logo (621) — consumidores devem usar um ícone genérico</summary>
+<details><summary>Instituições sem logo (620) — consumidores devem usar um ícone genérico</summary>
 
 - `0007` BNDES (ISPB 33657248)
 - `0010` CREDICOAMO (ISPB 81723108)
@@ -555,7 +556,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0139` INTESA SANPAOLO BRASIL S.A. BM (ISPB 55230916)
 - `0141` MASTER BI S.A. - EM LIQUIDAÇÃO EXTRAJUDICIAL (ISPB 09526594)
 - `0142` BROKER BRASIL CC LTDA. (ISPB 16944141)
-- `0144` EBURY BCO DE CÂMBIO S.A. (ISPB 13059145)
 - `0145` LEVYCAM CCV LTDA (ISPB 50579044)
 - `0146` GUITTA CC LTDA (ISPB 24074692)
 - `0149` FACTA S.A. CFI (ISPB 15581638)
