@@ -5504,7 +5504,13 @@
       "compe4": "0596",
       "name": "CACTVS INSTITUICAO DE PAGAMENTO S.A",
       "shortName": "CACTVS IP S.A.",
-      "pix": null,
+      "pix": {
+        "spiParticipationType": "Direta",
+        "pixParticipationType": "Facultativa",
+        "modality": "Provedor de Conta Transacional",
+        "institutionType": "Instituição de Pagamento",
+        "authorizedByBcb": true
+      },
       "logo": null
     },
     {
