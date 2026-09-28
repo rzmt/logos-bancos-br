@@ -5,6 +5,9 @@ coverage/
 *.log
 .DS_Store
 
+# Config local do Claude Code (por contribuidor, não é do projeto).
+.claude/settings.local.json
+
 # Credenciais locais (ex.: ANTHROPIC_API_KEY para npm run discover:ai) — nunca commitar.
 .env
 .env.*
