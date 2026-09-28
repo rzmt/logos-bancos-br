@@ -20,6 +20,7 @@ describe('buildCdnIndex', () => {
           compe4: '0001',
           name: 'Banco do Brasil S.A.',
           shortName: 'BCO DO BRASIL S.A.',
+          displayName: null,
           pix: null,
           logo: {
             png: 'logos/png/00000000.png',
@@ -45,6 +46,7 @@ describe('buildCdnIndex', () => {
           cnpj: '11111111000111',
           name: 'Fintech Sem Logo',
           shortName: 'FINTECH',
+          displayName: null,
           pix: {
             spiParticipationType: 'Direta',
             pixParticipationType: 'Facultativa',
@@ -81,6 +83,7 @@ describe('buildCdnIndex', () => {
           compe4: '0016',
           name: 'Cooperativa Afiliada',
           shortName: 'COOP',
+          displayName: null,
           pix: null,
           logo: {
             png: 'logos/png/04891850.png',

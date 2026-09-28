@@ -23,6 +23,7 @@ describe('buildGalleryHtml', () => {
         compe4: '0001',
         name: 'Banco <script> & Cia',
         shortName: 'BCO',
+        displayName: null,
         pix: null,
         logo: {
           png: 'logos/png/00000000.png',
@@ -48,6 +49,7 @@ describe('buildGalleryHtml', () => {
         cnpj: '10348181000100',
         name: 'Afiliada Sicredi',
         shortName: 'AFILIADA',
+        displayName: null,
         pix: {
           spiParticipationType: 'Direta',
           pixParticipationType: 'Facultativa',
@@ -109,7 +111,10 @@ describe('docs/index.html (arquivo distribuído)', () => {
     // afiliadas de marca (agrupadas na página) batem com o dataset
     const afiliadas = all.filter((i) => i.logo?.source.type === 'brand').length;
     expect(rows.filter((r) => r[5]).length).toBe(afiliadas);
-    // apelidos populares entram na busca (nome oficial não contém o termo)
-    expect(rows.find((r) => r[0] === '18236120')?.[6]).toBe('nubank');
+    // o nome popular curado vai junto (a busca e o rótulo usam ele)
+    expect(rows.find((r) => r[0] === '18236120')?.[6]).toBe('Nubank');
+    // e bate com o dataset, em vez de ser uma lista à parte na página
+    const comDisplay = all.filter((i) => i.displayName).length;
+    expect(rows.filter((r) => r[6]).length).toBe(comDisplay);
   });
 });

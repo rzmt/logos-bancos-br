@@ -231,7 +231,12 @@ jobs:
           # chegar — tenta com folga antes de desistir.
           mergeado=''
           for _ in 1 2 3 4; do
-            if gh pr merge "$pr" --squash --delete-branch \
+            # Sem --delete-branch de propósito: apagar a branch aqui fazia o
+            # run de CI do evento `pull_request` (que nasce no mesmo segundo)
+            # perder o ref e morrer sem job, deixando um ✗ vermelho toda
+            # semana. O create-pull-request reescreve a branch na próxima
+            # rodada, então ela não acumula lixo.
+            if gh pr merge "$pr" --squash \
               --subject 'feat: atualiza logos e dataset (fontes oficiais)'; then
               mergeado=sim
               break

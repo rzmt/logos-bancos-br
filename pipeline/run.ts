@@ -61,6 +61,7 @@ const DEFAULT_CONFIG: PipelineConfig = {
   nameSuggestionThreshold: 0.5,
   denylistUris: [],
   forcedUris: {},
+  displayNames: {},
   forcedMatches: {},
   brandMatches: {},
   ignoreIspb: [],
@@ -336,6 +337,7 @@ async function main(): Promise<void> {
     manifest: sortedManifest,
     pngIspbs,
     svgIspbs,
+    displayNames: config.displayNames,
   });
 
   let generatedFiles = 'não gerados (dry-run)';

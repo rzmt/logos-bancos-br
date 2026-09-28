@@ -10,24 +10,14 @@ import { CDN_BASE } from './dataset';
 import type { Dataset, PixDataset } from './types';
 
 /**
- * [ispb, compe|null, nome, ispbDoAsset|null, temSvg 0|1, marca, apelidos]
+ * [ispb, compe|null, nome, ispbDoAsset|null, temSvg 0|1, marca, displayName]
  * `marca` é o token do sistema cooperativo quando o logo é compartilhado
  * (SICOOB/SICREDI/…) — a página agrupa essas afiliadas num card por sistema
  * para o grid não repetir o mesmo arquivo centenas de vezes; a busca continua
- * encontrando cada afiliada individualmente. Campos vazios viajam como ''.
+ * encontrando cada afiliada individualmente. `displayName` é o nome popular
+ * curado ("Nubank"), usado na tela e na busca. Campos vazios viajam como ''.
  */
 type Row = [string, string | null, string, string | null, number, string, string];
-
-/**
- * Apelidos populares cujo nome oficial não contém o termo que as pessoas
- * digitam (ex.: "nubank" → NU PAGAMENTOS). Entram só na busca, não na tela.
- */
-const APELIDOS: Record<string, string> = {
-  '18236120': 'nubank',
-  '08561701': 'pagbank',
-  '18189547': 'infinitepay',
-  '10573521': 'mercadopago',
-};
 
 function assetIspb(png: string): string | null {
   const match = png.match(/(\d{8})\.png$/);
@@ -42,9 +32,11 @@ export function buildGalleryHtml(dataset: Dataset, pixDataset: PixDataset): stri
     inst.logo ? assetIspb(inst.logo.png) : null,
     inst.logo?.svg ? 1 : 0,
     inst.logo?.source.type === 'brand' ? (inst.logo.source.brand ?? '') : '',
-    APELIDOS[inst.ispb] ?? '',
+    inst.displayName ?? '',
   ]);
-  rows.sort((a, b) => a[2].localeCompare(b[2], 'pt-BR') || a[0].localeCompare(b[0]));
+  // Ordena pelo rótulo que aparece na tela (popular quando existe).
+  const rotulo = (r: Row) => r[6] || r[2];
+  rows.sort((a, b) => rotulo(a).localeCompare(rotulo(b), 'pt-BR') || a[0].localeCompare(b[0]));
   const total = rows.length;
   const comLogo = rows.filter((r) => r[3]).length;
   const json = JSON.stringify(rows).replace(/</g, '\\u003c');
@@ -142,7 +134,9 @@ function card(r){
     chip.className='chip nada';chip.textContent='sem logo';
   }
   el.appendChild(chip);
-  var n=document.createElement('div');n.className='nome';n.textContent=nome;n.title=nome;el.appendChild(n);
+  var n=document.createElement('div');n.className='nome';
+  // rótulo = nome popular quando curado; o oficial fica no tooltip
+  n.textContent=r[6]||nome;n.title=nome;el.appendChild(n);
   var m=document.createElement('div');m.className='meta';
   m.textContent=(compe?'COMPE '+compe+' · ':'')+'ISPB '+ispb;el.appendChild(m);
   var acts=document.createElement('div');acts.className='acts';
@@ -186,7 +180,7 @@ function brandCard(token,info){
   return el;
 }
 function combina(r,termo){
-  return norm(r[2]).indexOf(termo)>=0||r[0].indexOf(termo)>=0||(!!r[1]&&r[1].indexOf(termo)>=0)||(!!r[6]&&r[6].indexOf(termo)>=0)
+  return norm(r[2]).indexOf(termo)>=0||r[0].indexOf(termo)>=0||(!!r[1]&&r[1].indexOf(termo)>=0)||(!!r[6]&&norm(r[6]).indexOf(termo)>=0)
 }
 function render(){
   var termo=norm(q.value.trim());

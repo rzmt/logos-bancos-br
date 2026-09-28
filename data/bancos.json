@@ -6,6 +6,7 @@
       "compe4": "0001",
       "name": "Banco do Brasil S.A.",
       "shortName": "BCO DO BRASIL S.A.",
+      "displayName": "Banco do Brasil",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -32,6 +33,7 @@
       "compe4": "0003",
       "name": "BANCO DA AMAZONIA S.A.",
       "shortName": "BCO DA AMAZONIA S.A.",
+      "displayName": "Banco da Amazônia",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -58,6 +60,7 @@
       "compe4": "0004",
       "name": "Banco do Nordeste do Brasil S.A.",
       "shortName": "BCO DO NORDESTE DO BRASIL S.A.",
+      "displayName": "Banco do Nordeste",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -84,6 +87,7 @@
       "compe4": "0007",
       "name": "BANCO NACIONAL DE DESENVOLVIMENTO ECONOMICO E SOCIAL",
       "shortName": "BNDES",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -93,6 +97,7 @@
       "compe4": "0010",
       "name": "CREDICOAMO CREDITO RURAL COOPERATIVA",
       "shortName": "CREDICOAMO",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -108,6 +113,7 @@
       "compe4": "0011",
       "name": "UBS (BRASIL) CORRETORA DE VALORES S.A.",
       "shortName": "UBS (BRASIL) CORRETORA DE VALORES S.A.",
+      "displayName": "UBS Corretora",
       "pix": null,
       "logo": {
         "png": "logos/png/61809182.png",
@@ -128,6 +134,7 @@
       "compe4": "0012",
       "name": "Banco Inbursa S.A.",
       "shortName": "BANCO INBURSA",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -137,6 +144,7 @@
       "compe4": "0014",
       "name": "STATE STREET BRASIL S.A. - BANCO COMERCIAL",
       "shortName": "STATE STREET BR S.A. BCO COMERCIAL",
+      "displayName": "State Street",
       "pix": null,
       "logo": {
         "png": "logos/png/09274232.png",
@@ -157,6 +165,7 @@
       "compe4": "0015",
       "name": "UBS BB CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS S.A.",
       "shortName": "UBS BB CCTVM S.A.",
+      "displayName": "UBS BB Corretora",
       "pix": null,
       "logo": {
         "png": "logos/png/02819125.png",
@@ -177,6 +186,7 @@
       "compe4": "0016",
       "name": "COOPERATIVA DE CRÉDITO MÚTUO DOS DESPACHANTES DE TRÂNSITO DE SANTA CATARINA E RIO GRANDE DO SUL - SICOOB CREDITRAN",
       "shortName": "CCM DESP TRÂNS SC E RS",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -204,6 +214,7 @@
       "compe4": "0017",
       "name": "BNY Mellon Banco S.A.",
       "shortName": "BNY MELLON BCO S.A.",
+      "displayName": "BNY Mellon",
       "pix": null,
       "logo": {
         "png": "logos/png/42272526.png",
@@ -224,6 +235,7 @@
       "compe4": "0018",
       "name": "Banco Tricury S.A.",
       "shortName": "BCO TRICURY S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -233,6 +245,7 @@
       "compe4": "0021",
       "name": "BANESTES S.A. BANCO DO ESTADO DO ESPIRITO SANTO",
       "shortName": "BCO BANESTES S.A.",
+      "displayName": "Banestes",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -259,6 +272,7 @@
       "compe4": "0023",
       "name": "CONTA SIMPLES SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "CONTA SIMPLES SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -274,6 +288,7 @@
       "compe4": "0024",
       "name": "Banco Bandepe S.A.",
       "shortName": "BCO BANDEPE S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -283,6 +298,7 @@
       "compe4": "0025",
       "name": "Banco Alfa S.A.",
       "shortName": "BCO ALFA S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -292,6 +308,7 @@
       "compe4": "0033",
       "name": "BANCO SANTANDER (BRASIL) S.A.",
       "shortName": "BCO SANTANDER (BRASIL) S.A.",
+      "displayName": "Santander",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -318,6 +335,7 @@
       "compe4": "0036",
       "name": "Banco Bradesco BBI S.A.",
       "shortName": "BCO BBI S.A.",
+      "displayName": "Bradesco BBI",
       "pix": null,
       "logo": {
         "png": "logos/png/06271464.png",
@@ -338,6 +356,7 @@
       "compe4": "0037",
       "name": "Banco do Estado do Pará S.A.",
       "shortName": "BCO DO EST. DO PA S.A.",
+      "displayName": "Banpará",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -364,6 +383,7 @@
       "compe4": "0040",
       "name": "Banco Cargill S.A.",
       "shortName": "BCO CARGILL S.A.",
+      "displayName": "Banco Cargill",
       "pix": null,
       "logo": {
         "png": "logos/png/03609817.png",
@@ -384,6 +404,7 @@
       "compe4": "0041",
       "name": "Banco do Estado do Rio Grande do Sul S.A.",
       "shortName": "BCO DO ESTADO DO RS S.A.",
+      "displayName": "Banrisul",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -410,6 +431,7 @@
       "compe4": "0047",
       "name": "Banco do Estado de Sergipe S.A.",
       "shortName": "BCO DO EST. DE SE S.A.",
+      "displayName": "Banese",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -436,6 +458,7 @@
       "compe4": "0060",
       "name": "CONFIDENCE SOCIEDADE CORRETORA DE CAMBIO S.A.",
       "shortName": "CONFIDENCE CC S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -445,6 +468,7 @@
       "compe4": "0063",
       "name": "Banco Bradescard S.A.",
       "shortName": "BANCO BRADESCARD",
+      "displayName": "Bradescard",
       "pix": null,
       "logo": {
         "png": "logos/png/04184779.png",
@@ -465,6 +489,7 @@
       "compe4": "0064",
       "name": "GOLDMAN SACHS DO BRASIL BANCO MULTIPLO S.A.",
       "shortName": "GOLDMAN SACHS DO BRASIL BM S.A",
+      "displayName": "Goldman Sachs",
       "pix": null,
       "logo": {
         "png": "logos/png/04332281.png",
@@ -485,6 +510,7 @@
       "compe4": "0065",
       "name": "Banco AndBank (Brasil) S.A.",
       "shortName": "BCO ANDBANK S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -494,6 +520,7 @@
       "compe4": "0066",
       "name": "BANCO MORGAN STANLEY S.A.",
       "shortName": "BCO MORGAN STANLEY S.A.",
+      "displayName": "Morgan Stanley",
       "pix": null,
       "logo": {
         "png": "logos/png/02801938.png",
@@ -514,6 +541,7 @@
       "compe4": "0069",
       "name": "Banco Crefisa S.A.",
       "shortName": "BCO CREFISA S.A.",
+      "displayName": "Crefisa",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -540,6 +568,7 @@
       "compe4": "0070",
       "name": "BRB - BANCO DE BRASILIA S.A.",
       "shortName": "BRB - BCO DE BRASILIA S.A.",
+      "displayName": "BRB",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -566,6 +595,7 @@
       "compe4": "0074",
       "name": "Banco J. Safra S.A.",
       "shortName": "BCO. J.SAFRA S.A.",
+      "displayName": "J. Safra",
       "pix": null,
       "logo": {
         "png": "logos/png/03017677.png",
@@ -586,6 +616,7 @@
       "compe4": "0075",
       "name": "BANCO ABN AMRO CLEARING S.A.",
       "shortName": "BANCO ABN AMRO CLEARING S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -595,6 +626,7 @@
       "compe4": "0076",
       "name": "Banco KDB do Brasil S.A.",
       "shortName": "BCO KDB BRASIL S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -604,6 +636,7 @@
       "compe4": "0077",
       "name": "Banco Inter S.A.",
       "shortName": "BANCO INTER",
+      "displayName": "Inter",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -630,6 +663,7 @@
       "compe4": "0078",
       "name": "Haitong Banco de Investimento do Brasil S.A.",
       "shortName": "HAITONG BI DO BRASIL S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -639,6 +673,7 @@
       "compe4": "0079",
       "name": "PICPAY BANK - BANCO MÚLTIPLO S.A",
       "shortName": "PICPAY BANK - BANCO MÚLTIPLO S.A",
+      "displayName": "PicPay Bank",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -665,6 +700,7 @@
       "compe4": "0080",
       "name": "BT CORRETORA DE CÂMBIO LTDA.",
       "shortName": "BT CC LTDA.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -674,6 +710,7 @@
       "compe4": "0081",
       "name": "BancoSeguro S.A.",
       "shortName": "BANCOSEGURO S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -683,6 +720,7 @@
       "compe4": "0082",
       "name": "BANCO TOPÁZIO S.A.",
       "shortName": "BANCO TOPÁZIO S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -698,6 +736,7 @@
       "compe4": "0083",
       "name": "Banco da China Brasil S.A.",
       "shortName": "BCO DA CHINA BRASIL S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -707,6 +746,7 @@
       "compe4": "0084",
       "name": "SISPRIME DO BRASIL - COOPERATIVA DE CRÉDITO",
       "shortName": "SISPRIME DO BRASIL - COOP",
+      "displayName": "Sisprime",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -733,6 +773,7 @@
       "compe4": "0085",
       "name": "Cooperativa Central de Crédito - Ailos",
       "shortName": "COOPCENTRAL AILOS",
+      "displayName": "Ailos",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -759,6 +800,7 @@
       "compe4": "0088",
       "name": "BANCO RANDON S.A.",
       "shortName": "BANCO RANDON S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -768,6 +810,7 @@
       "compe4": "0089",
       "name": "CREDISAN COOPERATIVA DE CRÉDITO",
       "shortName": "CREDISAN CC",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -783,6 +826,7 @@
       "compe4": "0093",
       "name": "PÓLOCRED   SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E À EMPRESA DE PEQUENO PORTE LTDA.",
       "shortName": "POLOCRED SCMEPP LTDA.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -792,6 +836,7 @@
       "compe4": "0094",
       "name": "Banco Finaxis S.A.",
       "shortName": "BANCO FINAXIS",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -801,6 +846,7 @@
       "compe4": "0095",
       "name": "BANCO TRAVELEX S.A.",
       "shortName": "BANCO TRAVELEX S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -816,6 +862,7 @@
       "compe4": "0096",
       "name": "Banco B3 S.A.",
       "shortName": "BCO B3 S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -831,6 +878,7 @@
       "compe4": "0097",
       "name": "CREDISIS - CENTRAL DE COOPERATIVAS DE CRÉDITO",
       "shortName": "CREDISIS - CENTRAL DE COOPERATIVAS DE CRÉDITO",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -846,6 +894,7 @@
       "compe4": "0099",
       "name": "UNIPRIME CENTRAL NACIONAL - CENTRAL NACIONAL DE COOPERATIVA DE CREDITO",
       "shortName": "UNIPRIME COOPCENTRAL LTDA.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -861,6 +910,7 @@
       "compe4": "0100",
       "name": "Planner Corretora de Valores S.A.",
       "shortName": "PLANNER CV S.A.",
+      "displayName": "Planner",
       "pix": null,
       "logo": {
         "png": "logos/png/00806535.png",
@@ -881,6 +931,7 @@
       "compe4": "0101",
       "name": "WARREN RENA DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA",
       "shortName": "WARREN RENA DTVM",
+      "displayName": "Warren",
       "pix": null,
       "logo": {
         "png": "logos/png/62287735.png",
@@ -901,6 +952,7 @@
       "compe4": "0102",
       "name": "XP INVESTIMENTOS CORRETORA DE CÂMBIO,TÍTULOS E VALORES MOBILIÁRIOS S/A",
       "shortName": "XP INVESTIMENTOS CCTVM S/A",
+      "displayName": "XP Investimentos",
       "pix": null,
       "logo": {
         "png": "logos/png/02332886.png",
@@ -921,6 +973,7 @@
       "compe4": "0104",
       "name": "CAIXA ECONOMICA FEDERAL",
       "shortName": "CAIXA ECONOMICA FEDERAL",
+      "displayName": "Caixa",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -947,6 +1000,7 @@
       "compe4": "0105",
       "name": "Lecca Crédito, Financiamento e Investimento S/A",
       "shortName": "LECCA CFI S.A.",
+      "displayName": "Lecca",
       "pix": null,
       "logo": {
         "png": "logos/png/07652226.png",
@@ -967,6 +1021,7 @@
       "compe4": "0107",
       "name": "Banco Bocom BBM S.A.",
       "shortName": "BCO BOCOM BBM S.A.",
+      "displayName": "Bocom BBM",
       "pix": null,
       "logo": {
         "png": "logos/png/15114366.png",
@@ -987,6 +1042,7 @@
       "compe4": "0111",
       "name": "OLIVEIRA TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIARIOS S.A.",
       "shortName": "OLIVEIRA TRUST DTVM S.A.",
+      "displayName": "Oliveira Trust",
       "pix": null,
       "logo": {
         "png": "logos/png/36113876.png",
@@ -1007,6 +1063,7 @@
       "compe4": "0113",
       "name": "NEON CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
       "shortName": "NEON CTVM S.A.",
+      "displayName": "Neon Corretora",
       "pix": null,
       "logo": {
         "png": "logos/png/61723847.png",
@@ -1027,6 +1084,7 @@
       "compe4": "0119",
       "name": "Banco Western Union do Brasil S.A.",
       "shortName": "BCO WESTERN UNION",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -1042,6 +1100,7 @@
       "compe4": "0120",
       "name": "BANCO RODOBENS S.A.",
       "shortName": "BCO RODOBENS S.A.",
+      "displayName": "Rodobens",
       "pix": null,
       "logo": {
         "png": "logos/png/33603457.png",
@@ -1062,6 +1121,7 @@
       "compe4": "0121",
       "name": "Banco Agibank S.A.",
       "shortName": "BCO AGIBANK S.A.",
+      "displayName": "Agibank",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -1088,6 +1148,7 @@
       "compe4": "0122",
       "name": "Banco Bradesco BERJ S.A.",
       "shortName": "BCO BRADESCO BERJ S.A.",
+      "displayName": "Bradesco BERJ",
       "pix": null,
       "logo": {
         "png": "logos/png/33147315.png",
@@ -1108,6 +1169,7 @@
       "compe4": "0124",
       "name": "Banco Woori Bank do Brasil S.A.",
       "shortName": "BCO WOORI BANK DO BRASIL S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1117,6 +1179,7 @@
       "compe4": "0125",
       "name": "BANCO GENIAL S.A.",
       "shortName": "BANCO GENIAL",
+      "displayName": "Genial",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -1143,6 +1206,7 @@
       "compe4": "0126",
       "name": "BR Partners Banco de Investimento S.A.",
       "shortName": "BR PARTNERS BI",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1152,6 +1216,7 @@
       "compe4": "0127",
       "name": "Codepe Corretora de Valores e Câmbio S.A.",
       "shortName": "CODEPE CVC S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1161,6 +1226,7 @@
       "compe4": "0128",
       "name": "BRAZA BANK S.A. BANCO DE CÂMBIO",
       "shortName": "BRAZA BANK S.A. BCO DE CÂMBIO",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1170,6 +1236,7 @@
       "compe4": "0129",
       "name": "UBS BB BANCO DE INVESTIMENTO S.A.",
       "shortName": "UBS BB BI S.A.",
+      "displayName": "UBS BB",
       "pix": null,
       "logo": {
         "png": "logos/png/18520834.png",
@@ -1190,6 +1257,7 @@
       "compe4": "0130",
       "name": "CARUANA S.A. - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
       "shortName": "CARUANA SCFI",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -1205,6 +1273,7 @@
       "compe4": "0131",
       "name": "TULLETT PREBON BRASIL CORRETORA DE VALORES E CÂMBIO LTDA",
       "shortName": "TULLETT PREBON BRASIL CVC LTDA",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1214,6 +1283,7 @@
       "compe4": "0132",
       "name": "ICBC do Brasil Banco Múltiplo S.A.",
       "shortName": "ICBC DO BRASIL BM S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1223,6 +1293,7 @@
       "compe4": "0133",
       "name": "CONFEDERAÇÃO NACIONAL DAS COOPERATIVAS CENTRAIS DE CRÉDITO E ECONOMIA FAMILIAR E SOLIDÁRIA - CRESOL CONFEDERAÇÃO",
       "shortName": "CRESOL CONFEDERAÇÃO",
+      "displayName": "Cresol",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -1249,6 +1320,7 @@
       "compe4": "0134",
       "name": "BGC LIQUIDEZ DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA",
       "shortName": "BGC LIQUIDEZ DTVM LTDA",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1258,6 +1330,7 @@
       "compe4": "0136",
       "name": "COOPERATIVA CENTRAL DE CRÉDITO UNICRED DO BRASIL - UNICRED DO BRASIL",
       "shortName": "UNICRED DO BRASIL",
+      "displayName": "Unicred",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -1284,6 +1357,7 @@
       "compe4": "0138",
       "name": "GET MONEY SOCIEDADE CORRETORA DE CÂMBIO S.A.",
       "shortName": "GET MONEY CC LTDA.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1293,6 +1367,7 @@
       "compe4": "0139",
       "name": "Intesa Sanpaolo Brasil S.A. - Banco Múltiplo",
       "shortName": "INTESA SANPAOLO BRASIL S.A. BM",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1302,6 +1377,7 @@
       "compe4": "0140",
       "name": "NU INVESTIMENTOS S.A. - CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS",
       "shortName": "NU INVESTIMENTOS S.A. - CTVM",
+      "displayName": "Nu Investimentos",
       "pix": null,
       "logo": {
         "png": "logos/png/62169875.png",
@@ -1322,6 +1398,7 @@
       "compe4": "0141",
       "name": "BANCO MASTER DE INVESTIMENTO S.A. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
       "shortName": "MASTER BI S.A. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1331,6 +1408,7 @@
       "compe4": "0142",
       "name": "Broker Brasil Corretora de Câmbio Ltda.",
       "shortName": "BROKER BRASIL CC LTDA.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1340,6 +1418,7 @@
       "compe4": "0143",
       "name": "INTEX BANK BANCO DE CÂMBIO S.A.",
       "shortName": "INTEX BANK BCO DE CÂMBIO S.A.",
+      "displayName": "Intex Bank",
       "pix": null,
       "logo": {
         "png": "logos/png/02992317.png",
@@ -1360,6 +1439,7 @@
       "compe4": "0144",
       "name": "EBURY BANCO DE CÂMBIO S.A.",
       "shortName": "EBURY BCO DE CÂMBIO S.A.",
+      "displayName": "Ebury",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -1386,6 +1466,7 @@
       "compe4": "0145",
       "name": "LEVYCAM - CORRETORA DE CAMBIO E VALORES LTDA.",
       "shortName": "LEVYCAM CCV LTDA",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1395,6 +1476,7 @@
       "compe4": "0146",
       "name": "GUITTA CORRETORA DE CAMBIO LTDA.",
       "shortName": "GUITTA CC LTDA",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1404,6 +1486,7 @@
       "compe4": "0149",
       "name": "Facta Financeira S.A. - Crédito Financiamento e Investimento",
       "shortName": "FACTA S.A. CFI",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1413,6 +1496,7 @@
       "compe4": "0157",
       "name": "ICAP do Brasil Corretora de Títulos e Valores Mobiliários Ltda.",
       "shortName": "ICAP DO BRASIL CTVM LTDA.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1422,6 +1506,7 @@
       "compe4": "0159",
       "name": "Casa do Crédito S.A. Sociedade de Crédito ao Microempreendedor",
       "shortName": "CASA CREDITO S.A. SCM",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1431,6 +1516,7 @@
       "compe4": "0173",
       "name": "APEX GROUP DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
       "shortName": "APEX GROUP DTVM",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1440,6 +1526,7 @@
       "compe4": "0174",
       "name": "PEFISA S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
       "shortName": "PEFISA S.A. - C.F.I.",
+      "displayName": "Pefisa",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -1466,6 +1553,7 @@
       "compe4": "0180",
       "name": "CM CAPITAL MARKETS CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS LTDA",
       "shortName": "CM CAPITAL MARKETS CCTVM LTDA",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1475,6 +1563,7 @@
       "compe4": "0183",
       "name": "SOCRED S.A. - SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E À EMPRESA DE PEQUENO PORTE",
       "shortName": "SOCRED SA - SCMEPP",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -1490,6 +1579,7 @@
       "compe4": "0188",
       "name": "ATIVA INVESTIMENTOS S.A. CORRETORA DE TÍTULOS, CÂMBIO E VALORES",
       "shortName": "ATIVA S.A. INVESTIMENTOS CCTVM",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1499,6 +1589,7 @@
       "compe4": "0189",
       "name": "HS FINANCEIRA S/A CREDITO, FINANCIAMENTO E INVESTIMENTOS",
       "shortName": "HS FINANCEIRA",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1508,6 +1599,7 @@
       "compe4": "0190",
       "name": "SERVICOOP - COOPERATIVA DE CRÉDITO DOS SERVIDORES PÚBLICOS ESTADUAIS E MUNICIPAIS DO RIO GRANDE DO SUL",
       "shortName": "SERVICOOP",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -1523,6 +1615,7 @@
       "compe4": "0191",
       "name": "Nova Futura Corretora de Títulos e Valores Mobiliários Ltda.",
       "shortName": "NOVA FUTURA CTVM LTDA.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1532,6 +1625,7 @@
       "compe4": "0194",
       "name": "UNIDA DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
       "shortName": "UNIDA DTVM LTDA",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1541,6 +1635,7 @@
       "compe4": "0195",
       "name": "VALOR S/A SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
       "shortName": "VALOR S/A SCFI",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1550,6 +1645,7 @@
       "compe4": "0196",
       "name": "FAIR SOCIEDADE CORRETORA DE CÂMBIO S.A.",
       "shortName": "FAIR SOCIEDADE CC",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1559,6 +1655,7 @@
       "compe4": "0197",
       "name": "STONE INSTITUIÇÃO DE PAGAMENTO S.A.",
       "shortName": "STONE IP S.A.",
+      "displayName": "Stone",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -1585,6 +1682,7 @@
       "compe4": "0208",
       "name": "Banco BTG Pactual S.A.",
       "shortName": "BANCO BTG PACTUAL S.A.",
+      "displayName": "BTG Pactual",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -1611,6 +1709,7 @@
       "compe4": "0212",
       "name": "Banco Original S.A.",
       "shortName": "BANCO ORIGINAL",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -1626,6 +1725,7 @@
       "compe4": "0213",
       "name": "Banco Arbi S.A.",
       "shortName": "BCO ARBI S.A.",
+      "displayName": "Arbi",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -1652,6 +1752,7 @@
       "compe4": "0217",
       "name": "Banco John Deere S.A.",
       "shortName": "BANCO JOHN DEERE S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1661,6 +1762,7 @@
       "compe4": "0218",
       "name": "Banco BS2 S.A.",
       "shortName": "BCO BS2 S.A.",
+      "displayName": "BS2",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -1687,6 +1789,7 @@
       "compe4": "0222",
       "name": "BANCO CRÉDIT AGRICOLE BRASIL S.A.",
       "shortName": "BCO CRÉDIT AGRICOLE BR S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1696,6 +1799,7 @@
       "compe4": "0224",
       "name": "Banco Fibra S.A.",
       "shortName": "BCO FIBRA S.A.",
+      "displayName": "Fibra",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -1722,6 +1826,7 @@
       "compe4": "0233",
       "name": "BANCO BMG SOLUÇÕES FINANCEIRAS S.A.",
       "shortName": "BANCO BMG SOLUÇÕES FINANCEIRAS S.A.",
+      "displayName": "BMG Soluções Financeiras",
       "pix": null,
       "logo": {
         "png": "logos/png/62421979.png",
@@ -1742,6 +1847,7 @@
       "compe4": "0237",
       "name": "Banco Bradesco S.A.",
       "shortName": "BCO BRADESCO S.A.",
+      "displayName": "Bradesco",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -1768,6 +1874,7 @@
       "compe4": "0241",
       "name": "BANCO CLASSICO S.A.",
       "shortName": "BCO CLASSICO S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1777,6 +1884,7 @@
       "compe4": "0243",
       "name": "BANCO MASTER S/A - EM LIQUIDAÇÃO EXTRAJUDICIAL",
       "shortName": "BANCO MASTER - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1786,6 +1894,7 @@
       "compe4": "0246",
       "name": "Banco ABC Brasil S.A.",
       "shortName": "BCO ABC BRASIL S.A.",
+      "displayName": "ABC Brasil",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -1812,6 +1921,7 @@
       "compe4": "0249",
       "name": "Banco Investcred Unibanco S.A.",
       "shortName": "BANCO INVESTCRED UNIBANCO S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1821,6 +1931,7 @@
       "compe4": "0250",
       "name": "BANCO BMG CONSIGNADO S.A.",
       "shortName": "BANCO BMG CONSIGNADO S.A.",
+      "displayName": "BMG Consignado",
       "pix": null,
       "logo": {
         "png": "logos/png/50585090.png",
@@ -1841,6 +1952,7 @@
       "compe4": "0254",
       "name": "PARANÁ BANCO S.A.",
       "shortName": "PARANA BCO S.A.",
+      "displayName": "Paraná Banco",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -1867,6 +1979,7 @@
       "compe4": "0259",
       "name": "MONEYCORP BANCO DE CÂMBIO S.A.",
       "shortName": "MONEYCORP BCO DE CÂMBIO S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1876,6 +1989,7 @@
       "compe4": "0260",
       "name": "NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO",
       "shortName": "NU PAGAMENTOS - IP",
+      "displayName": "Nubank",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -1902,6 +2016,7 @@
       "compe4": "0265",
       "name": "Banco Fator S.A.",
       "shortName": "BCO FATOR S.A.",
+      "displayName": "Fator",
       "pix": null,
       "logo": {
         "png": "logos/png/33644196.png",
@@ -1922,6 +2037,7 @@
       "compe4": "0266",
       "name": "BANCO CEDULA S.A.",
       "shortName": "BCO CEDULA S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1931,6 +2047,7 @@
       "compe4": "0268",
       "name": "BARI COMPANHIA HIPOTECÁRIA",
       "shortName": "BARI CIA HIPOTECÁRIA",
+      "displayName": "Bari",
       "pix": null,
       "logo": {
         "png": "logos/png/14511781.png",
@@ -1951,6 +2068,7 @@
       "compe4": "0269",
       "name": "BANCO HSBC S.A.",
       "shortName": "BCO HSBC S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -1966,6 +2084,7 @@
       "compe4": "0271",
       "name": "BPY CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS S.A.",
       "shortName": "BPY CCTVM S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -1981,6 +2100,7 @@
       "compe4": "0272",
       "name": "AGK CORRETORA DE CAMBIO S.A.",
       "shortName": "AGK CC S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -1990,6 +2110,7 @@
       "compe4": "0273",
       "name": "COOPERATIVA DE CREDITO SULCREDI AMPLEA",
       "shortName": "COOP SULCREDI AMPLEA",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -2005,6 +2126,7 @@
       "compe4": "0274",
       "name": "BMP SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E A EMPRESA DE PEQUENO PORTE LTDA.",
       "shortName": "BMP SCMEPP LTDA",
+      "displayName": "BMP",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -2031,6 +2153,7 @@
       "compe4": "0276",
       "name": "BANCO SENFF S.A.",
       "shortName": "BCO SENFF S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -2046,6 +2169,7 @@
       "compe4": "0278",
       "name": "Genial Investimentos Corretora de Valores Mobiliários S.A.",
       "shortName": "GENIAL INVESTIMENTOS CVM S.A.",
+      "displayName": "Genial Investimentos",
       "pix": null,
       "logo": {
         "png": "logos/png/27652684.png",
@@ -2066,6 +2190,7 @@
       "compe4": "0280",
       "name": "WILL FINANCEIRA S.A. CRÉDITO, FINANCIAMENTO E INVESTIMENTO - EM LIQUIDAÇÃO EXTRAJUDICIAL",
       "shortName": "WILL FINANCEIRA S.A.CFI - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -2081,6 +2206,7 @@
       "compe4": "0281",
       "name": "Cooperativa de Crédito Rural Coopavel",
       "shortName": "CCR COOPAVEL",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -2096,6 +2222,7 @@
       "compe4": "0283",
       "name": "RB INVESTIMENTOS DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LIMITADA",
       "shortName": "RB INVESTIMENTOS DTVM LTDA.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -2105,6 +2232,7 @@
       "compe4": "0288",
       "name": "CAROL DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
       "shortName": "CAROL DTVM LTDA.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -2114,6 +2242,7 @@
       "compe4": "0289",
       "name": "EFX CORRETORA DE CÂMBIO LTDA.",
       "shortName": "EFX CC LTDA.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -2123,6 +2252,7 @@
       "compe4": "0290",
       "name": "PAGSEGURO INTERNET INSTITUIÇÃO DE PAGAMENTO S.A.",
       "shortName": "PAGSEGURO INTERNET IP S.A.",
+      "displayName": "PagBank",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -2149,6 +2279,7 @@
       "compe4": "0292",
       "name": "GALAPAGOS CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
       "shortName": "GALAPAGOS DTVM S.A.",
+      "displayName": "Galapagos Capital",
       "pix": null,
       "logo": {
         "png": "logos/png/28650236.png",
@@ -2169,6 +2300,7 @@
       "compe4": "0293",
       "name": "Lastro RDV Distribuidora de Títulos e Valores Mobiliários Ltda.",
       "shortName": "LASTRO RDV DTVM LTDA",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -2178,6 +2310,7 @@
       "compe4": "0296",
       "name": "OZ CORRETORA DE CÂMBIO S.A.",
       "shortName": "OZ CORRETORA DE CÂMBIO S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -2187,6 +2320,7 @@
       "compe4": "0298",
       "name": "VIPS CORRETORA DE CÂMBIO S.A.",
       "shortName": "VIPS CC S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -2196,6 +2330,7 @@
       "compe4": "0299",
       "name": "BANCO AFINZ S.A. - BANCO MÚLTIPLO",
       "shortName": "BCO AFINZ S.A. - BM",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -2211,6 +2346,7 @@
       "compe4": "0300",
       "name": "Banco de la Nacion Argentina",
       "shortName": "BCO LA NACION ARGENTINA",
+      "displayName": "Banco de la Nación Argentina",
       "pix": null,
       "logo": {
         "png": "logos/png/33042151.png",
@@ -2231,6 +2367,7 @@
       "compe4": "0301",
       "name": "DOCK INSTITUIÇÃO DE PAGAMENTO S.A.",
       "shortName": "DOCK IP S.A.",
+      "displayName": "Dock",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -2257,6 +2394,7 @@
       "compe4": "0305",
       "name": "FOURTRADE CORRETORA DE CÂMBIO LTDA.",
       "shortName": "FOURTRADE COR. DE CAMBIO LTDA",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -2266,6 +2404,7 @@
       "compe4": "0307",
       "name": "Terra Investimentos Distribuidora de Títulos e Valores Mobiliários Ltda.",
       "shortName": "TERRA INVESTIMENTOS DTVM",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -2275,6 +2414,7 @@
       "compe4": "0310",
       "name": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
       "shortName": "VORTX DTVM LTDA.",
+      "displayName": "Vórtx",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -2301,6 +2441,7 @@
       "compe4": "0312",
       "name": "HSCM - SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E À EMPRESA DE PEQUENO PORTE LTDA.",
       "shortName": "HSCM SCMEPP LTDA.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -2310,6 +2451,7 @@
       "compe4": "0318",
       "name": "Banco BMG S.A.",
       "shortName": "BCO BMG S.A.",
+      "displayName": "BMG",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -2336,6 +2478,7 @@
       "compe4": "0319",
       "name": "OM DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA",
       "shortName": "OM DTVM LTDA",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -2345,6 +2488,7 @@
       "compe4": "0320",
       "name": "BANK OF CHINA (BRASIL) BANCO MÚLTIPLO S/A",
       "shortName": "BOC BRASIL",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -2354,6 +2498,7 @@
       "compe4": "0321",
       "name": "CREFAZ SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E A EMPRESA DE PEQUENO PORTE S.A.",
       "shortName": "CREFAZ SCMEPP SA",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -2363,6 +2508,7 @@
       "compe4": "0322",
       "name": "Cooperativa de Crédito Rural de Abelardo Luz - Sulcredi/Crediluz",
       "shortName": "CCR DE ABELARDO LUZ",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -2378,6 +2524,7 @@
       "compe4": "0323",
       "name": "MERCADO PAGO INSTITUIÇÃO DE PAGAMENTO LTDA.",
       "shortName": "MERCADO PAGO IP LTDA.",
+      "displayName": "Mercado Pago",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -2404,6 +2551,7 @@
       "compe4": "0324",
       "name": "CARTOS SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "CARTOS SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -2419,6 +2567,7 @@
       "compe4": "0326",
       "name": "MEUTUDO S.A - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
       "shortName": "MEUTUDO SCFI",
+      "displayName": "meutudo",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -2445,6 +2594,7 @@
       "compe4": "0329",
       "name": "QI Sociedade de Crédito Direto S.A.",
       "shortName": "QI SCD S.A.",
+      "displayName": "QI Tech",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -2471,6 +2621,7 @@
       "compe4": "0330",
       "name": "BANCO BARI DE INVESTIMENTOS E FINANCIAMENTOS S.A.",
       "shortName": "BANCO BARI S.A.",
+      "displayName": "Banco Bari",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -2497,6 +2648,7 @@
       "compe4": "0331",
       "name": "OSLO CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A",
       "shortName": "OSLO CAPITAL DTVM SA",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -2506,6 +2658,7 @@
       "compe4": "0332",
       "name": "ACESSO SOLUÇÕES DE PAGAMENTO S.A. - INSTITUIÇÃO DE PAGAMENTO",
       "shortName": "ACESSO SOLUÇÕES DE PAGAMENTO S.A. - INSTITUIÇÃO DE PAGAMENTO",
+      "displayName": "Acesso",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -2532,6 +2685,7 @@
       "compe4": "0334",
       "name": "BANCO BESA S.A.",
       "shortName": "BANCO BESA S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -2541,6 +2695,7 @@
       "compe4": "0335",
       "name": "Banco Digio S.A.",
       "shortName": "BANCO DIGIO",
+      "displayName": "Digio",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -2567,6 +2722,7 @@
       "compe4": "0336",
       "name": "Banco C6 S.A.",
       "shortName": "BCO C6 S.A.",
+      "displayName": "C6 Bank",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -2593,6 +2749,7 @@
       "compe4": "0341",
       "name": "ITAÚ UNIBANCO S.A.",
       "shortName": "ITAÚ UNIBANCO S.A.",
+      "displayName": "Itaú",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -2619,6 +2776,7 @@
       "compe4": "0342",
       "name": "Creditas Sociedade de Crédito Direto S.A.",
       "shortName": "CREDITAS SCD",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -2628,6 +2786,7 @@
       "compe4": "0348",
       "name": "Banco XP S.A.",
       "shortName": "BCO XP S.A.",
+      "displayName": "Banco XP",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -2654,6 +2813,7 @@
       "compe4": "0349",
       "name": "AL5 S.A. SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
       "shortName": "AL5 S.A. SCFI",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -2669,6 +2829,7 @@
       "compe4": "0350",
       "name": "COOPERATIVA DE CRÉDITO POPULAR DO BRASIL - CREHNOR",
       "shortName": "COOPERATIVA DE CRÉDITO POPULAR DO BRASIL",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -2684,6 +2845,7 @@
       "compe4": "0352",
       "name": "SANTANDER CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
       "shortName": "SANTANDER CTVM S.A.",
+      "displayName": "Santander Corretora",
       "pix": null,
       "logo": {
         "png": "logos/png/29162769.png",
@@ -2704,6 +2866,7 @@
       "compe4": "0355",
       "name": "ÓTIMO SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "ÓTIMO SCD S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -2713,6 +2876,7 @@
       "compe4": "0358",
       "name": "MIDWAY S.A. - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
       "shortName": "MIDWAY S.A. - SCFI",
+      "displayName": "Midway",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -2739,6 +2903,7 @@
       "compe4": "0359",
       "name": "ZEMA CRÉDITO, FINANCIAMENTO E INVESTIMENTO S/A",
       "shortName": "ZEMA CFI S/A",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -2754,6 +2919,7 @@
       "compe4": "0360",
       "name": "TRINUS CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
       "shortName": "TRINUS CAPITAL DTVM",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -2763,6 +2929,7 @@
       "compe4": "0362",
       "name": "CIELO S.A. - INSTITUIÇÃO DE PAGAMENTO",
       "shortName": "CIELO IP S.A.",
+      "displayName": "Cielo",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -2789,6 +2956,7 @@
       "compe4": "0363",
       "name": "QI CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
       "shortName": "QI CTVM S.A.",
+      "displayName": "QI Corretora",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -2815,6 +2983,7 @@
       "compe4": "0364",
       "name": "EFÍ S.A. - INSTITUIÇÃO DE PAGAMENTO",
       "shortName": "EFÍ S.A. - IP",
+      "displayName": "Efí",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -2841,6 +3010,7 @@
       "compe4": "0365",
       "name": "SIMPAUL CORRETORA DE CAMBIO E VALORES MOBILIARIOS  S.A.",
       "shortName": "SIMPAUL",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -2856,6 +3026,7 @@
       "compe4": "0366",
       "name": "BANCO SOCIETE GENERALE BRASIL S.A.",
       "shortName": "BCO SOCIETE GENERALE BRASIL",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -2865,6 +3036,7 @@
       "compe4": "0368",
       "name": "Banco CSF S.A.",
       "shortName": "BCO CSF S.A.",
+      "displayName": "Banco Carrefour",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -2891,6 +3063,7 @@
       "compe4": "0370",
       "name": "Banco Mizuho do Brasil S.A.",
       "shortName": "BCO MIZUHO S.A.",
+      "displayName": "Mizuho",
       "pix": null,
       "logo": {
         "png": "logos/png/61088183.png",
@@ -2911,6 +3084,7 @@
       "compe4": "0373",
       "name": "UP.P SOCIEDADE DE EMPRÉSTIMO ENTRE PESSOAS S.A.",
       "shortName": "UP.P SEP S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -2926,6 +3100,7 @@
       "compe4": "0374",
       "name": "REALIZE SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
       "shortName": "REALIZE SCFI S.A.",
+      "displayName": "Realize",
       "pix": null,
       "logo": {
         "png": "logos/png/27351731.png",
@@ -2946,6 +3121,7 @@
       "compe4": "0376",
       "name": "BANCO J.P. MORGAN S.A.",
       "shortName": "BCO J.P. MORGAN S.A.",
+      "displayName": "J.P. Morgan",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -2972,6 +3148,7 @@
       "compe4": "0377",
       "name": "BMS SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "BMS SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -2987,6 +3164,7 @@
       "compe4": "0378",
       "name": "BANCO BRASILEIRO DE CRÉDITO SOCIEDADE ANÔNIMA",
       "shortName": "BCO BRASILEIRO DE CRÉDITO S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3002,6 +3180,7 @@
       "compe4": "0379",
       "name": "COOPERFORTE COOPERATIVA DE CRÉDITO E INVESTIMENTOS LTDA",
       "shortName": "COOP COOPERFORTE LTDA.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3017,6 +3196,7 @@
       "compe4": "0380",
       "name": "PICPAY INSTITUIçãO DE PAGAMENTO S.A.",
       "shortName": "PICPAY",
+      "displayName": "PicPay",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3043,6 +3223,7 @@
       "compe4": "0381",
       "name": "BANCO MERCEDES-BENZ DO BRASIL S.A.",
       "shortName": "BCO MERCEDES-BENZ S.A.",
+      "displayName": "Mercedes-Benz",
       "pix": null,
       "logo": {
         "png": "logos/png/60814191.png",
@@ -3063,6 +3244,7 @@
       "compe4": "0382",
       "name": "FIDÚCIA SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E À EMPRESA DE PEQUENO PORTE LIMITADA.",
       "shortName": "FIDUCIA SCMEPP LTDA",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3078,6 +3260,7 @@
       "compe4": "0383",
       "name": "EBANX INSTITUICAO DE PAGAMENTOS LTDA.",
       "shortName": "EBANX IP LTDA.",
+      "displayName": "EBANX",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3104,6 +3287,7 @@
       "compe4": "0384",
       "name": "GLOBAL FINANÇAS SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E À EMPRESA DE PEQUENO PORTE LTDA.",
       "shortName": "GLOBAL SCM LTDA",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3119,6 +3303,7 @@
       "compe4": "0385",
       "name": "COOPERATIVA DE ECONOMIA E CREDITO MUTUO DOS TRABALHADORES PORTUARIOS DA GRANDE VITORIA - CREDESTIVA.",
       "shortName": "CECM DOS TRAB.PORT. DA G.VITOR",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -3134,6 +3319,7 @@
       "compe4": "0386",
       "name": "NU FINANCEIRA S.A. - Sociedade de Crédito, Financiamento e Investimento",
       "shortName": "NU FINANCEIRA S.A. CFI",
+      "displayName": "Nu Financeira",
       "pix": null,
       "logo": {
         "png": "logos/png/30680829.png",
@@ -3154,6 +3340,7 @@
       "compe4": "0387",
       "name": "Banco Toyota do Brasil S.A.",
       "shortName": "BCO TOYOTA DO BRASIL S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -3163,6 +3350,7 @@
       "compe4": "0389",
       "name": "Banco Mercantil do Brasil S.A.",
       "shortName": "BCO MERCANTIL DO BRASIL S.A.",
+      "displayName": "Mercantil",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -3189,6 +3377,7 @@
       "compe4": "0390",
       "name": "BANCO GM S.A.",
       "shortName": "BCO GM S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -3198,6 +3387,7 @@
       "compe4": "0391",
       "name": "COOPERATIVA DE CREDITO RURAL DE IBIAM - SULCREDI/IBIAM",
       "shortName": "CCR DE IBIAM",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3213,6 +3403,7 @@
       "compe4": "0393",
       "name": "Banco Volkswagen S.A.",
       "shortName": "BCO VOLKSWAGEN S.A",
+      "displayName": "Volkswagen",
       "pix": null,
       "logo": {
         "png": "logos/png/59109165.png",
@@ -3233,6 +3424,7 @@
       "compe4": "0394",
       "name": "Banco Bradesco Financiamentos S.A.",
       "shortName": "BCO BRADESCO FINANC. S.A.",
+      "displayName": "Bradesco Financiamentos",
       "pix": null,
       "logo": {
         "png": "logos/png/07207996.png",
@@ -3253,6 +3445,7 @@
       "compe4": "0395",
       "name": "F.D'GOLD - DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
       "shortName": "F D GOLD DTVM LTDA",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3268,6 +3461,7 @@
       "compe4": "0396",
       "name": "MAGALUPAY INSTITUIÇÃO DE PAGAMENTO S.A.",
       "shortName": "MAGALUPAY",
+      "displayName": "MagaluPay",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3294,6 +3488,7 @@
       "compe4": "0397",
       "name": "LISTO SOCIEDADE DE CREDITO DIRETO S.A.",
       "shortName": "LISTO SCD S.A.",
+      "displayName": "Listo",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3320,6 +3515,7 @@
       "compe4": "0398",
       "name": "IDEAL CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
       "shortName": "IDEAL CTVM S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -3329,6 +3525,7 @@
       "compe4": "0399",
       "name": "Kirton Bank S.A. - Banco Múltiplo",
       "shortName": "Kirton Bank",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -3338,6 +3535,7 @@
       "compe4": "0400",
       "name": "COOPERATIVA DE CRÉDITO, POUPANÇA E SERVIÇOS FINANCEIROS - EM LIQUIDAÇÃO EXTRAJUDICIAL",
       "shortName": "COOP CREDITAG - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -3347,6 +3545,7 @@
       "compe4": "0401",
       "name": "IUGU INSTITUIÇÃO DE PAGAMENTO S.A.",
       "shortName": "IUGU IP S.A.",
+      "displayName": "iugu",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3373,6 +3572,7 @@
       "compe4": "0402",
       "name": "COBUCCIO S/A - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTOS",
       "shortName": "COBUCCIO S.A. SCFI",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3388,6 +3588,7 @@
       "compe4": "0403",
       "name": "CORA SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
       "shortName": "CORA SCFI",
+      "displayName": "Cora",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3414,6 +3615,7 @@
       "compe4": "0404",
       "name": "SUMUP SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
       "shortName": "SUMUP SCFI S.A",
+      "displayName": "SumUp",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3440,6 +3642,7 @@
       "compe4": "0406",
       "name": "ACCREDITO - SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "ACCREDITO SCD S.A.",
+      "displayName": "Accredito",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3466,6 +3669,7 @@
       "compe4": "0407",
       "name": "SEFER INVESTIMENTOS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA - EM LIQUIDAÇÃO EXTRAJUDICIAL",
       "shortName": "SEFER INVESTIMENTOS DTVM LTDA - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "displayName": null,
       "pix": null,
       "logo": {
         "png": "logos/png/00329598.png",
@@ -3486,6 +3690,7 @@
       "compe4": "0408",
       "name": "BONUSPAGO SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "BONUSPAGO SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3501,6 +3706,7 @@
       "compe4": "0410",
       "name": "PLANNER SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "PLANNER SOCIEDADE DE CRÉDITO DIRETO",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3516,6 +3722,7 @@
       "compe4": "0411",
       "name": "Via Certa Financiadora S.A. - Crédito, Financiamento e Investimentos",
       "shortName": "VIA CERTA FINANCIADORA S.A. - CFI",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -3525,6 +3732,7 @@
       "compe4": "0412",
       "name": "SOCIAL BANK BANCO MÚLTIPLO S/A",
       "shortName": "SOCIAL BANK S/A",
+      "displayName": "Social Bank",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3551,6 +3759,7 @@
       "compe4": "0413",
       "name": "BANCO BV S.A.",
       "shortName": "BCO BV S.A.",
+      "displayName": "BV",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3577,6 +3786,7 @@
       "compe4": "0414",
       "name": "LEND SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "LEND SCD S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -3586,6 +3796,7 @@
       "compe4": "0415",
       "name": "BANCO NACIONAL S.A.",
       "shortName": "BCO NACIONAL",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -3595,6 +3806,7 @@
       "compe4": "0416",
       "name": "LAMARA SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "LAMARA SCD S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -3604,6 +3816,7 @@
       "compe4": "0418",
       "name": "ZIPDIN SOLUÇÕES DIGITAIS SOCIEDADE DE CRÉDITO DIRETO S/A",
       "shortName": "ZIPDIN SCD S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -3613,6 +3826,7 @@
       "compe4": "0419",
       "name": "NUMBRS SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "NUMBRS SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3628,6 +3842,7 @@
       "compe4": "0421",
       "name": "LAR COOPERATIVA DE CRÉDITO - LAR CREDI",
       "shortName": "CC LAR CREDI",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3643,6 +3858,7 @@
       "compe4": "0422",
       "name": "Banco Safra S.A.",
       "shortName": "BCO SAFRA S.A.",
+      "displayName": "Safra",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -3669,6 +3885,7 @@
       "compe4": "0423",
       "name": "COLUNA S/A DISTRIBUIDORA DE TITULOS E VALORES MOBILIÁRIOS",
       "shortName": "COLUNA S.A. DTVM",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -3678,6 +3895,7 @@
       "compe4": "0425",
       "name": "SOCINAL S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
       "shortName": "SOCINAL S.A. CFI",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3693,6 +3911,7 @@
       "compe4": "0426",
       "name": "NEON FINANCEIRA - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A",
       "shortName": "NEON FINANCEIRA - SCFI S.A.",
+      "displayName": "Neon Financeira",
       "pix": null,
       "logo": {
         "png": "logos/png/11285104.png",
@@ -3713,6 +3932,7 @@
       "compe4": "0427",
       "name": "COOPERATIVA DE CRÉDITO DOS SERVIDORES DA UNIVERSIDADE FEDERAL DO ESPIRITO SANTO",
       "shortName": "CRED.UFES",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3728,6 +3948,7 @@
       "compe4": "0428",
       "name": "CREDSYSTEM SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "CREDSYSTEM SCD S.A.",
+      "displayName": "CredSystem",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3754,6 +3975,7 @@
       "compe4": "0430",
       "name": "COOPERATIVA DE CREDITO RURAL SEARA - CREDISEARA",
       "shortName": "CCR SEARA",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3769,6 +3991,7 @@
       "compe4": "0433",
       "name": "BR-CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
       "shortName": "BR-CAPITAL DTVM S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -3778,6 +4001,7 @@
       "compe4": "0435",
       "name": "DELFINANCE SOCIEDADE DE CREDITO DIRETO S.A.",
       "shortName": "DELFINANCE SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3793,6 +4017,7 @@
       "compe4": "0438",
       "name": "TRUSTEE DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
       "shortName": "TRUSTEE DTVM LTDA. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -3802,6 +4027,7 @@
       "compe4": "0439",
       "name": "ID CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
       "shortName": "ID CTVM",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3817,6 +4043,7 @@
       "compe4": "0440",
       "name": "CREDI&GENTE - COOPERATIVA DE CRÉDITO E INVESTIMENTOS",
       "shortName": "COOP CREDI&GENTE",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3832,6 +4059,7 @@
       "compe4": "0443",
       "name": "OCTA SOCIEDADE DE CRÉDITO DIRETO S.A. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
       "shortName": "OCTA SCD S.A. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -3841,6 +4069,7 @@
       "compe4": "0444",
       "name": "TRINUS SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "TRINUS SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3856,6 +4085,7 @@
       "compe4": "0445",
       "name": "PLANTAE S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
       "shortName": "PLANTAE CFI",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -3865,6 +4095,7 @@
       "compe4": "0447",
       "name": "MIRAE ASSET (BRASIL) CORRETORA DE CÂMBIO, TÍTULOS  E VALORES MOBILIÁRIOS LTDA.",
       "shortName": "MIRAE ASSET (BRASIL) CCTVM LTDA.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -3874,6 +4105,7 @@
       "compe4": "0448",
       "name": "HEMERA DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
       "shortName": "HEMERA DTVM LTDA.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3889,6 +4121,7 @@
       "compe4": "0449",
       "name": "DM SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "DM",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -3898,6 +4131,7 @@
       "compe4": "0450",
       "name": "FITS INSTITUIÇÃO DE PAGAMENTO S.A.",
       "shortName": "FITS IP",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3924,6 +4158,7 @@
       "compe4": "0451",
       "name": "J17 - SOCIEDADE DE CRÉDITO DIRETO S/A",
       "shortName": "J17 - SCD S/A",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3939,6 +4174,7 @@
       "compe4": "0452",
       "name": "CREDIFIT SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "CREDIFIT SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -3954,6 +4190,7 @@
       "compe4": "0454",
       "name": "MÉRITO DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
       "shortName": "MÉRITO DTVM LTDA.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -3963,6 +4200,7 @@
       "compe4": "0455",
       "name": "VIS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA",
       "shortName": "VIS DTVM LTDA",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -3972,6 +4210,7 @@
       "compe4": "0456",
       "name": "Banco MUFG Brasil S.A.",
       "shortName": "BCO MUFG BRASIL S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -3981,6 +4220,7 @@
       "compe4": "0457",
       "name": "UY3 SOCIEDADE DE CRÉDITO DIRETO S/A",
       "shortName": "UY3 SCD S/A",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -3996,6 +4236,7 @@
       "compe4": "0458",
       "name": "HEDGE INVESTMENTS DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
       "shortName": "HEDGE INVESTMENTS DTVM LTDA.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4005,6 +4246,7 @@
       "compe4": "0460",
       "name": "UNAVANTI SOCIEDADE DE CRÉDITO DIRETO S/A",
       "shortName": "UNAVANTI SCD S/A",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4020,6 +4262,7 @@
       "compe4": "0461",
       "name": "ASAAS GESTÃO FINANCEIRA INSTITUIÇÃO DE PAGAMENTO S.A.",
       "shortName": "ASAAS IP S.A.",
+      "displayName": "Asaas",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -4046,6 +4289,7 @@
       "compe4": "0462",
       "name": "STARK SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "STARK SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4061,6 +4305,7 @@
       "compe4": "0463",
       "name": "AZUMI DISTRIBUIDORA DE TíTULOS E VALORES MOBILIáRIOS LTDA.",
       "shortName": "AZUMI DTVM",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4070,6 +4315,7 @@
       "compe4": "0464",
       "name": "Banco Sumitomo Mitsui Brasileiro S.A.",
       "shortName": "BCO SUMITOMO MITSUI BRASIL S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4079,6 +4325,7 @@
       "compe4": "0465",
       "name": "CAPITAL CONSIG SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "CAPITAL CONSIG SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4094,6 +4341,7 @@
       "compe4": "0467",
       "name": "MASTER S/A CORRETORA DE CÂMBIO, TÍTULOS E VALORES MOBILIÁRIOS - EM LIQUIDAÇÃO EXTRAJUDICIAL",
       "shortName": "MASTER S/A CCTVM - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4103,6 +4351,7 @@
       "compe4": "0468",
       "name": "PORTOSEG S.A. - CREDITO, FINANCIAMENTO E INVESTIMENTO",
       "shortName": "PORTOSEG S.A. CFI",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4112,6 +4361,7 @@
       "compe4": "0469",
       "name": "PICPAY INVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA",
       "shortName": "PICPAY INVEST",
+      "displayName": "PicPay Invest",
       "pix": null,
       "logo": {
         "png": "logos/png/07138049.png",
@@ -4132,6 +4382,7 @@
       "compe4": "0470",
       "name": "CDC SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "CDC SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4147,6 +4398,7 @@
       "compe4": "0473",
       "name": "Banco Caixa Geral - Brasil S.A.",
       "shortName": "BCO CAIXA GERAL BRASIL S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4156,6 +4408,7 @@
       "compe4": "0475",
       "name": "Banco Yamaha Motor do Brasil S.A.",
       "shortName": "BCO YAMAHA MOTOR S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4165,6 +4418,7 @@
       "compe4": "0476",
       "name": "IDEA MAKER INSTITUICAO DE PAGAMENTO LTDA",
       "shortName": "IDEA MAKER IP LTDA",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4180,6 +4434,7 @@
       "compe4": "0477",
       "name": "Citibank N.A.",
       "shortName": "CITIBANK N.A.",
+      "displayName": "Citibank",
       "pix": null,
       "logo": {
         "png": "logos/png/33042953.png",
@@ -4200,6 +4455,7 @@
       "compe4": "0478",
       "name": "GAZINCRED S.A. SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
       "shortName": "GAZINCRED S.A. SCFI",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4215,6 +4471,7 @@
       "compe4": "0479",
       "name": "Banco ItauBank S.A.",
       "shortName": "BCO ITAUBANK S.A.",
+      "displayName": "ItaúBank",
       "pix": null,
       "logo": {
         "png": "logos/png/60394079.png",
@@ -4235,6 +4492,7 @@
       "compe4": "0481",
       "name": "SUPERLÓGICA SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "SUPERLÓGICA SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4250,6 +4508,7 @@
       "compe4": "0482",
       "name": "ARTTA SOCIEDADE DE CRÉDITO DIRETO S.A",
       "shortName": "ARTTA SCD",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4265,6 +4524,7 @@
       "compe4": "0484",
       "name": "APEX DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
       "shortName": "APEX DTVM",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4274,6 +4534,7 @@
       "compe4": "0487",
       "name": "DEUTSCHE BANK S.A. - BANCO ALEMAO",
       "shortName": "DEUTSCHE BANK S.A.BCO ALEMAO",
+      "displayName": "Deutsche Bank",
       "pix": null,
       "logo": {
         "png": "logos/png/62331228.png",
@@ -4294,6 +4555,7 @@
       "compe4": "0488",
       "name": "JPMorgan Chase Bank, National Association",
       "shortName": "JPMORGAN CHASE BANK",
+      "displayName": "JPMorgan Chase",
       "pix": null,
       "logo": {
         "png": "logos/png/46518205.png",
@@ -4314,6 +4576,7 @@
       "compe4": "0495",
       "name": "Banco de La Provincia de Buenos Aires",
       "shortName": "BCO LA PROVINCIA B AIRES BCE",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4323,6 +4586,7 @@
       "compe4": "0496",
       "name": "BBVA BRASIL BANCO DE INVESTIMENTO S.A.",
       "shortName": "BBVA BRASIL BI S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4332,6 +4596,7 @@
       "compe4": "0505",
       "name": "BANCO UBS (BRASIL) S.A.",
       "shortName": "BCO UBS BRASIL",
+      "displayName": "UBS",
       "pix": null,
       "logo": {
         "png": "logos/png/32062580.png",
@@ -4352,6 +4617,7 @@
       "compe4": "0506",
       "name": "RJI CORRETORA DE TITULOS E VALORES MOBILIARIOS LTDA",
       "shortName": "RJI",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4361,6 +4627,7 @@
       "compe4": "0507",
       "name": "SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO EFÍ S.A.",
       "shortName": "SCFI EFÍ S.A.",
+      "displayName": "Efí Financeira",
       "pix": null,
       "logo": {
         "png": "logos/png/37229413.png",
@@ -4381,6 +4648,7 @@
       "compe4": "0508",
       "name": "AVENUE SECURITIES BANCO DE INVESTIMENTO S.A.",
       "shortName": "AVENUE SECURITIES BI S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4390,6 +4658,7 @@
       "compe4": "0509",
       "name": "CELCOIN INSTITUICAO DE PAGAMENTO S.A.",
       "shortName": "CELCOIN IP S.A.",
+      "displayName": "Celcoin",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4416,6 +4685,7 @@
       "compe4": "0510",
       "name": "FFCRED SOCIEDADE DE CRÉDITO DIRETO S.A..",
       "shortName": "FFCRED SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4431,6 +4701,7 @@
       "compe4": "0511",
       "name": "MAGNUM SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "MAGNUM SCD",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4446,6 +4717,7 @@
       "compe4": "0512",
       "name": "FINVEST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
       "shortName": "FINVEST DTVM",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4461,6 +4733,7 @@
       "compe4": "0513",
       "name": "ATF SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "ATF SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -4476,6 +4749,7 @@
       "compe4": "0514",
       "name": "EXIM SOCIEDADE CORRETORA DE CÂMBIO LTDA",
       "shortName": "EXIM SCC",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4483,8 +4757,9 @@
       "ispb": "36583700",
       "compe": "516",
       "compe4": "0516",
-      "name": "QISTA S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
-      "shortName": "QISTA S.A. CFI",
+      "name": "PLACARPAY S.A. - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
+      "shortName": "PLACARPAY S.A - SCFI",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4494,6 +4769,7 @@
       "compe4": "0517",
       "name": "PAGUEVELOZ INSTITUIÇÃO DE PAGAMENTO LTDA.",
       "shortName": "PAGUEVELOZ IP LTDA.",
+      "displayName": "PagueVeloz",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -4520,6 +4796,7 @@
       "compe4": "0518",
       "name": "MERCADO CRÉDITO SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
       "shortName": "MERCADO CRÉDITO SCFI S.A.",
+      "displayName": "Mercado Crédito",
       "pix": null,
       "logo": {
         "png": "logos/png/37679449.png",
@@ -4540,6 +4817,7 @@
       "compe4": "0519",
       "name": "LIONS TRUST DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
       "shortName": "LIONS TRUST DTVM",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4549,6 +4827,7 @@
       "compe4": "0520",
       "name": "SOMAPAY SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "SOMAPAY SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4564,6 +4843,7 @@
       "compe4": "0521",
       "name": "PEAK SOCIEDADE DE EMPRÉSTIMO ENTRE PESSOAS S.A.",
       "shortName": "PEAK SEP S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4573,6 +4853,7 @@
       "compe4": "0522",
       "name": "RED SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "RED SCD S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4582,6 +4863,7 @@
       "compe4": "0523",
       "name": "HR DIGITAL - SOCIEDADE DE CRÉDITO DIRETO S/A",
       "shortName": "HR DIGITAL SCD",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4597,6 +4879,7 @@
       "compe4": "0524",
       "name": "WNT CAPITAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
       "shortName": "WNT CAPITAL DTVM",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4606,6 +4889,7 @@
       "compe4": "0525",
       "name": "INTERCAM CORRETORA DE CÂMBIO LTDA.",
       "shortName": "INTERCAM CC LTDA",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4615,6 +4899,7 @@
       "compe4": "0526",
       "name": "MONETARIE SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "MONETARIE SCD",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4630,6 +4915,7 @@
       "compe4": "0527",
       "name": "ATICCA - SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "ATICCA SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4645,6 +4931,7 @@
       "compe4": "0528",
       "name": "CBSF DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.- EM LIQUIDAÇÃO EXTRAJUDICIAL",
       "shortName": "CBSF DTVM -EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4654,6 +4941,7 @@
       "compe4": "0529",
       "name": "PINBANK BRASIL INSTITUIÇÃO DE PAGAMENTO S.A.",
       "shortName": "PINBANK IP",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4669,6 +4957,7 @@
       "compe4": "0530",
       "name": "SER FINANCE SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "SER FINANCE SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4684,6 +4973,7 @@
       "compe4": "0531",
       "name": "BMP SOCIEDADE DE CRÉDITO DIRETO S.A",
       "shortName": "BMP SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4699,6 +4989,7 @@
       "compe4": "0532",
       "name": "FUTURO SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "FUTURO SCD",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4708,6 +4999,7 @@
       "compe4": "0533",
       "name": "SRM BANK INSTITUIÇÃO DE PAGAMENTO S/A",
       "shortName": "SRM BANK",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4723,6 +5015,7 @@
       "compe4": "0534",
       "name": "EWALLY INSTITUIÇÃO DE PAGAMENTO S.A.",
       "shortName": "EWALLY IP S.A.",
+      "displayName": "Ewally",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4749,6 +5042,7 @@
       "compe4": "0535",
       "name": "OPEA SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "OPEA SCD",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4764,6 +5058,7 @@
       "compe4": "0536",
       "name": "NEON PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO",
       "shortName": "NEON PAGAMENTOS S.A. IP",
+      "displayName": "Neon",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -4790,6 +5085,7 @@
       "compe4": "0537",
       "name": "SELECT CREDIT SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E À EMPRESA DE PEQUENO PORTE LTDA.",
       "shortName": "SELECT CREDIT SCMEPP LTDA.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4805,6 +5101,7 @@
       "compe4": "0538",
       "name": "SUDACRED SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "SUDACRED SCD S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4814,6 +5111,7 @@
       "compe4": "0539",
       "name": "SANTINVEST S.A. - CREDITO, FINANCIAMENTO E INVESTIMENTOS",
       "shortName": "SANTINVEST S.A. - CFI",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4823,6 +5121,7 @@
       "compe4": "0540",
       "name": "HBI SOCIEDADE DE CRÉDITO DIRETO S/A.",
       "shortName": "HBI SCD",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4838,6 +5137,7 @@
       "compe4": "0541",
       "name": "FUNDO GARANTIDOR DE CREDITOS - FGC",
       "shortName": "FDO GARANTIDOR CRÉDITOS",
+      "displayName": "FGC",
       "pix": null,
       "logo": {
         "png": "logos/png/00954288.png",
@@ -4858,6 +5158,7 @@
       "compe4": "0542",
       "name": "CLOUDWALK INSTITUIÇÃO DE PAGAMENTO E SERVICOS LTDA",
       "shortName": "CLOUDWALK IP LTDA",
+      "displayName": "InfinitePay",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4884,6 +5185,7 @@
       "compe4": "0543",
       "name": "COOPERATIVA DE ECONOMIA E CRÉDITO MÚTUO DOS ELETRICITÁRIOS E DOS TRABALHADORES DAS EMPRESAS DO SETOR DE ENERGIA - COOPCRECE",
       "shortName": "COOPCRECE",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4893,6 +5195,7 @@
       "compe4": "0544",
       "name": "MULTICRED SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "MULTICRED SCD S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4902,6 +5205,7 @@
       "compe4": "0546",
       "name": "OKTO INSTITUIÇÃO DE PAGAMENTO S.A.",
       "shortName": "OKTO IP",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4917,6 +5221,7 @@
       "compe4": "0547",
       "name": "BNK DIGITAL SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "BNK DIGITAL SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -4932,6 +5237,7 @@
       "compe4": "0548",
       "name": "RPW S/A SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
       "shortName": "RPW S.A. SCFI",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4941,6 +5247,7 @@
       "compe4": "0550",
       "name": "BEETELLER INSTITUIÇÃO DE PAGAMENTO LTDA.",
       "shortName": "BEETELLER IP LTDA.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4956,6 +5263,7 @@
       "compe4": "0551",
       "name": "VERT DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA",
       "shortName": "VERT DTVM LTDA.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4965,6 +5273,7 @@
       "compe4": "0552",
       "name": "UZZIPAY INSTITUIÇÃO DE PAGAMENTO S.A.",
       "shortName": "UZZIPAY IP S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -4980,6 +5289,7 @@
       "compe4": "0553",
       "name": "PERCAPITAL SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "PERCAPITAL SCD S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4989,6 +5299,7 @@
       "compe4": "0554",
       "name": "BANCO STONEX S.A.",
       "shortName": "BCO STONEX S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -4998,6 +5309,7 @@
       "compe4": "0555",
       "name": "PAN FINANCEIRA S.A. - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTOS",
       "shortName": "PAN FINAN",
+      "displayName": "Pan Financeira",
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -5024,6 +5336,7 @@
       "compe4": "0556",
       "name": "SAYGO CORRETORA DE CÂMBIO S.A.",
       "shortName": "SAYGO CÂMBIO",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -5033,6 +5346,7 @@
       "compe4": "0557",
       "name": "PAGPRIME INSTITUICAO DE PAGAMENTO LTDA",
       "shortName": "PAGPRIME IP",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5048,6 +5362,7 @@
       "compe4": "0559",
       "name": "KANASTRA FINANCEIRA S.A, CREDITO, FINANCIAMENTO E INVESTIMENTO",
       "shortName": "KANASTRA CFI",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5063,6 +5378,7 @@
       "compe4": "0560",
       "name": "MAG INSTITUICAO DE PAGAMENTO LTDA",
       "shortName": "MAG IP LTDA.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5078,6 +5394,7 @@
       "compe4": "0561",
       "name": "PAY4FUN INSTITUICAO DE PAGAMENTO S.A.",
       "shortName": "PAY4FUN IP S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5093,6 +5410,7 @@
       "compe4": "0562",
       "name": "AZIMUT BRASIL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA",
       "shortName": "AZIMUT BRASIL DTVM LTDA",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5108,6 +5426,7 @@
       "compe4": "0563",
       "name": "PROTEGE CASH INSTITUIÇÃO DE PAGAMENTO S.A.",
       "shortName": "PROTEGE CASH",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -5123,6 +5442,7 @@
       "compe4": "0564",
       "name": "ANKOR CAPITAL - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S/A",
       "shortName": "ANKOR CFI S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -5132,6 +5452,7 @@
       "compe4": "0565",
       "name": "ÁGORA CORRETORA DE TITULOS E VALORES MOBILIARIOS S.A.",
       "shortName": "ÁGORA CTVM S.A.",
+      "displayName": "Ágora",
       "pix": null,
       "logo": {
         "png": "logos/png/74014747.png",
@@ -5152,6 +5473,7 @@
       "compe4": "0566",
       "name": "FLAGSHIP INSTITUICAO DE PAGAMENTO LTDA",
       "shortName": "FLAGSHIP IP LTDA",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -5167,6 +5489,7 @@
       "compe4": "0567",
       "name": "MERCANTIL FINANCEIRA S.A. - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO.",
       "shortName": "MERCANTIL FINANCEIRA",
+      "displayName": "Mercantil Financeira",
       "pix": null,
       "logo": {
         "png": "logos/png/33040601.png",
@@ -5187,6 +5510,7 @@
       "compe4": "0568",
       "name": "BRCONDOS SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "BRCONDOS SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5202,6 +5526,7 @@
       "compe4": "0569",
       "name": "CONTA PRONTA INSTITUICAO DE PAGAMENTO LTDA",
       "shortName": "CONTA PRONTA IP",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5217,6 +5542,7 @@
       "compe4": "0571",
       "name": "MONTE BRAVO CORRETORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
       "shortName": "MONTE BRAVO CTVM S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -5226,6 +5552,7 @@
       "compe4": "0572",
       "name": "ALL IN CRED SOCIEDADE DE CREDITO DIRETO S.A.",
       "shortName": "ALL IN CRED SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5241,6 +5568,7 @@
       "compe4": "0573",
       "name": "OXY COMPANHIA HIPOTECÁRIA",
       "shortName": "OXY CH",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -5250,6 +5578,7 @@
       "compe4": "0574",
       "name": "A55 SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "A55 SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5265,6 +5594,7 @@
       "compe4": "0575",
       "name": "DGBK CREDIT S.A. - SOCIEDADE DE CRÉDITO DIRETO.",
       "shortName": "DGBK CREDIT S.A. - SOCIEDADE DE CRÉDITO DIRETO.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5280,6 +5610,7 @@
       "compe4": "0576",
       "name": "MERCADO BITCOIN INSTITUICAO DE PAGAMENTO LTDA",
       "shortName": "MERCADO BITCOIN IP LTDA",
+      "displayName": "Mercado Bitcoin",
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -5306,6 +5637,7 @@
       "compe4": "0577",
       "name": "DESENVOLVE SP - AGÊNCIA DE FOMENTO DO ESTADO DE SÃO PAULO S.A.",
       "shortName": "AF DESENVOLVE SP S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -5315,6 +5647,7 @@
       "compe4": "0579",
       "name": "QUADRA SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "QUADRA SCD",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -5324,6 +5657,7 @@
       "compe4": "0585",
       "name": "SETHI SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "SETHI SCD SA",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -5333,6 +5667,7 @@
       "compe4": "0586",
       "name": "Z1 INSTITUIÇÃO DE PAGAMENTO LTDA.",
       "shortName": "Z1 IP LTDA.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5348,6 +5683,7 @@
       "compe4": "0587",
       "name": "FIDD DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
       "shortName": "FIDD DTVM LTDA.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -5357,6 +5693,7 @@
       "compe4": "0588",
       "name": "AVANCARD PROVER INSTITUIÇÃO DE PAGAMENTO LTDA",
       "shortName": "AVANCARD PROVER IP LTDA",
+      "displayName": "Avancard",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5383,6 +5720,7 @@
       "compe4": "0589",
       "name": "G5 SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "G5 SCD SA",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5398,6 +5736,7 @@
       "compe4": "0590",
       "name": "REPASSES FINANCEIROS E SOLUCOES TECNOLOGICAS INSTITUICAO DE PAGAMENTO S.A.",
       "shortName": "REPASSES FINANCEIROS E SOLUCOES TECNOLOGICAS IP S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -5413,6 +5752,7 @@
       "compe4": "0591",
       "name": "BANVOX DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA - EM LIQUIDAÇÃO EXTRAJUDICIAL",
       "shortName": "BANVOX DTVM - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -5422,6 +5762,7 @@
       "compe4": "0592",
       "name": "INSTITUIÇÃO DE PAGAMENTOS MAPS LTDA.",
       "shortName": "MAPS IP LTDA.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5437,6 +5778,7 @@
       "compe4": "0593",
       "name": "TRANSFEERA INSTITUIÇÃO DE PAGAMENTO S.A",
       "shortName": "TRANSFEERA IP S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5452,6 +5794,7 @@
       "compe4": "0594",
       "name": "ASA SOCIEDADE DE CRÉDITO FINANCIAMENTO E INVESTIMENTO S.A.",
       "shortName": "ASA SCFI S.A.",
+      "displayName": "ASA",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5478,6 +5821,7 @@
       "compe4": "0595",
       "name": "IFOOD PAGO INSTITUIÇÃO DE PAGAMENTO S.A.",
       "shortName": "IFOOD PAGO IP",
+      "displayName": "iFood Pago",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5504,6 +5848,7 @@
       "compe4": "0596",
       "name": "CACTVS INSTITUICAO DE PAGAMENTO S.A",
       "shortName": "CACTVS IP S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5519,6 +5864,7 @@
       "compe4": "0597",
       "name": "ISSUER INSTITUICAO DE PAGAMENTO LTDA.",
       "shortName": "ISSUER IP LTDA.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5534,6 +5880,7 @@
       "compe4": "0598",
       "name": "KONECT SOCIEDADE DE CRÉDITO DIRETO S/A",
       "shortName": "KONECT SCD S/A",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -5543,6 +5890,7 @@
       "compe4": "0599",
       "name": "AGORACRED S/A SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
       "shortName": "AGORACRED S/A SCFI",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -5552,6 +5900,7 @@
       "compe4": "0600",
       "name": "Banco Luso Brasileiro S.A.",
       "shortName": "BCO LUSO BRASILEIRO S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5567,6 +5916,7 @@
       "compe4": "0604",
       "name": "Banco Industrial do Brasil S.A.",
       "shortName": "BCO INDUSTRIAL DO BRASIL S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5582,6 +5932,7 @@
       "compe4": "0610",
       "name": "Banco VR S.A.",
       "shortName": "BCO VR S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5597,6 +5948,7 @@
       "compe4": "0611",
       "name": "Banco Paulista S.A.",
       "shortName": "BCO PAULISTA S.A.",
+      "displayName": "Banco Paulista",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5623,6 +5975,7 @@
       "compe4": "0612",
       "name": "Banco Guanabara S.A.",
       "shortName": "BCO GUANABARA S.A.",
+      "displayName": "Guanabara",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5649,6 +6002,7 @@
       "compe4": "0613",
       "name": "Omni Banco S.A.",
       "shortName": "OMNI BANCO S.A.",
+      "displayName": "Omni",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5675,6 +6029,7 @@
       "compe4": "0614",
       "name": "SANTS SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "SANTS SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5690,6 +6045,7 @@
       "compe4": "0615",
       "name": "SMART SOLUTIONS GROUP INSTITUICAO DE PAGAMENTO LTDA",
       "shortName": "SMART SOLUTIONS GROUP IP LTDA",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -5699,6 +6055,7 @@
       "compe4": "0619",
       "name": "TRIO INSTITUICAO DE PAGAMENTO LTDA.",
       "shortName": "TRIO IP LTDA.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5714,6 +6071,7 @@
       "compe4": "0620",
       "name": "REVOLUT SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "REVOLUT SCD S.A.",
+      "displayName": "Revolut",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5740,6 +6098,7 @@
       "compe4": "0623",
       "name": "Banco Pan S.A.",
       "shortName": "BANCO PAN",
+      "displayName": "Banco Pan",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -5766,6 +6125,7 @@
       "compe4": "0626",
       "name": "BANCO C6 CONSIGNADO S.A.",
       "shortName": "BCO C6 CONSIG",
+      "displayName": "C6 Consignado",
       "pix": null,
       "logo": {
         "png": "logos/png/61348538.png",
@@ -5786,6 +6146,7 @@
       "compe4": "0630",
       "name": "BANCO LETSBANK S.A. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
       "shortName": "BANCO LETSBANK S.A. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -5795,6 +6156,7 @@
       "compe4": "0632",
       "name": "Z-ON SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "Z-ON SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -5810,6 +6172,7 @@
       "compe4": "0633",
       "name": "Banco Rendimento S.A.",
       "shortName": "BCO RENDIMENTO S.A.",
+      "displayName": "Rendimento",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5836,6 +6199,7 @@
       "compe4": "0634",
       "name": "BANCO TRIANGULO S.A.",
       "shortName": "BCO TRIANGULO S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5851,6 +6215,7 @@
       "compe4": "0636",
       "name": "GIRO - SOCIEDADE DE CRÉDITO DIRETO S/A",
       "shortName": "GIRO - SCD S/A",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -5860,6 +6225,7 @@
       "compe4": "0637",
       "name": "BANCO SOFISA S.A.",
       "shortName": "BCO SOFISA S.A.",
+      "displayName": "Sofisa",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5886,6 +6252,7 @@
       "compe4": "0643",
       "name": "Banco Pine S.A.",
       "shortName": "BCO PINE S.A.",
+      "displayName": "Pine",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5912,6 +6279,7 @@
       "compe4": "0644",
       "name": "321 SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "321 SCD S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -5921,6 +6289,7 @@
       "compe4": "0646",
       "name": "DM SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A",
       "shortName": "DM SCFI",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -5936,6 +6305,7 @@
       "compe4": "0651",
       "name": "PAGARE INSTITUICAO DE PAGAMENTO S.A.",
       "shortName": "PAGARE IP S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5951,6 +6321,7 @@
       "compe4": "0653",
       "name": "BANCO PLENO S.A. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
       "shortName": "BM PLENO S.A. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -5960,6 +6331,7 @@
       "compe4": "0654",
       "name": "BANCO DIGIMAIS S.A.",
       "shortName": "BCO DIGIMAIS S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -5969,6 +6341,7 @@
       "compe4": "0655",
       "name": "Banco Votorantim S.A.",
       "shortName": "BCO VOTORANTIM S.A.",
+      "displayName": "Banco Votorantim",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -5995,6 +6368,7 @@
       "compe4": "0659",
       "name": "ONEKEY PAYMENTS INSTITUICAO DE PAGAMENTO SA",
       "shortName": "ONEKEY PAYMENTS IP S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6010,6 +6384,7 @@
       "compe4": "0660",
       "name": "PAGME INSTITUIÇÃO DE PAGAMENTO LTDA.",
       "shortName": "PAGME IP LTDA",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -6025,6 +6400,7 @@
       "compe4": "0661",
       "name": "FREEX SOCIEDADE CORRETORA DE CÂMBIO S.A.",
       "shortName": "FREEX SCC S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -6034,6 +6410,7 @@
       "compe4": "0662",
       "name": "WE PAY OUT INSTITUICAO DE PAGAMENTO LTDA.",
       "shortName": "WE PAY OUT IP LTDA.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6049,6 +6426,7 @@
       "compe4": "0663",
       "name": "ACTUAL DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.",
       "shortName": "ACTUAL DTVM S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -6058,6 +6436,7 @@
       "compe4": "0665",
       "name": "STARK BANK S.A. - INSTITUICAO DE PAGAMENTO",
       "shortName": "STARK BANK S.A. - IP",
+      "displayName": "Stark Bank",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6084,6 +6463,7 @@
       "compe4": "0668",
       "name": "CELCOIN SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "CELCOIN SCD",
+      "displayName": "Celcoin Financeira",
       "pix": null,
       "logo": {
         "png": "logos/png/48632754.png",
@@ -6104,6 +6484,7 @@
       "compe4": "0669",
       "name": "TRANSFERO INSTITUICAO DE PAGAMENTO LTDA.",
       "shortName": "TRANSFERO IP LTDA.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -6119,6 +6500,7 @@
       "compe4": "0670",
       "name": "BSN PAGAMENTOS INSTITUIÇÃO DE PAGAMENTO LTDA",
       "shortName": "BSN",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -6134,6 +6516,7 @@
       "compe4": "0671",
       "name": "ZERO INSTITUIÇÃO DE PAGAMENTO S.A.",
       "shortName": "ZERO IP",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6149,6 +6532,7 @@
       "compe4": "0672",
       "name": "STONE SOCIEDADE DE CREDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
       "shortName": "STONE CFI S.A.",
+      "displayName": "Stone Financeira",
       "pix": null,
       "logo": {
         "png": "logos/png/53505601.png",
@@ -6169,6 +6553,7 @@
       "compe4": "0673",
       "name": "COOPERATIVA DE CRÉDITO RURAL DO AGRESTE ALAGOANO - COOPERAGRE",
       "shortName": "CCR DO AGRESTE ALAGOANO",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6184,6 +6569,7 @@
       "compe4": "0674",
       "name": "HINOVA PAY INSTITUICAO DE PAGAMENTO S.A.",
       "shortName": "HINOVA PAY IP S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -6199,6 +6585,7 @@
       "compe4": "0675",
       "name": "CASAS BAHIA PAY INSTITUIÇÃO DE PAGAMENTO LTDA.",
       "shortName": "CASAS BAHIA PAY IP LTDA.",
+      "displayName": "Casas Bahia Pay",
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -6225,6 +6612,7 @@
       "compe4": "0676",
       "name": "DUFRIO FINANCEIRA, CRÉDITO, FINANCIAMENTO E INVESTIMENTOS S.A.",
       "shortName": "DUFRIO CFI S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -6234,6 +6622,7 @@
       "compe4": "0677",
       "name": "GOWD INSTITUIÇÃO DE PAGAMENTO LTDA.",
       "shortName": "GOWD IP LTDA.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6249,6 +6638,7 @@
       "compe4": "0678",
       "name": "FIDEM SOCIEDADE DE CRÉDITO DIRETO S/A",
       "shortName": "FIDEM SCD S/A",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -6258,6 +6648,7 @@
       "compe4": "0679",
       "name": "PAY INSTITUICAO DE PAGAMENTO S.A.",
       "shortName": "PAY IP S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6273,6 +6664,7 @@
       "compe4": "0680",
       "name": "DELTA GLOBAL SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "DELTA GLOBAL SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6288,6 +6680,7 @@
       "compe4": "0681",
       "name": "MT INSTITUICAO DE PAGAMENTO SA",
       "shortName": "MT IP S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6303,6 +6696,7 @@
       "compe4": "0682",
       "name": "MONERY INSTITUICAO DE PAGAMENTO S.A.",
       "shortName": "MONERY IP S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -6312,6 +6706,7 @@
       "compe4": "0683",
       "name": "BRASIL CASH INSTITUICAO DE PAGAMENTO S.A",
       "shortName": "BRASIL CASH IP S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6327,6 +6722,7 @@
       "compe4": "0684",
       "name": "HARMOS S.A. - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
       "shortName": "HARMOS S.A. - SCFI",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -6336,6 +6732,7 @@
       "compe4": "0685",
       "name": "TYCOON TECHNOLOGY INSTITUICAO DE PAGAMENTO S.A",
       "shortName": "TYCOON TECHNOLOGY IIP S.A",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -6345,6 +6742,7 @@
       "compe4": "0686",
       "name": "BIZ INSTITUIÇÃO DE PAGAMENTO S.A.",
       "shortName": "BIZ IP LTDA.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6360,6 +6758,7 @@
       "compe4": "0687",
       "name": "INCO SOCIEDADE DE EMPRÉSTIMO ENTRE PESSOAS S.A.",
       "shortName": "INCO SEP S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6375,6 +6774,7 @@
       "compe4": "0688",
       "name": "KIKAI SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "KIKAI SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6390,6 +6790,7 @@
       "compe4": "0690",
       "name": "BK INSTITUIÇÃO DE PAGAMENTO S.A.",
       "shortName": "BK IP S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -6399,6 +6800,7 @@
       "compe4": "0691",
       "name": "WASU - WALLET SUPPORT INSTITUIÇÃO DE PAGAMENTO LTDA",
       "shortName": "WASU IP LTDA.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6412,8 +6814,9 @@
       "ispb": "56198117",
       "compe": "692",
       "compe4": "0692",
-      "name": "SQUID SOCIEDADE DE CRÉDITO DIRETO S.A.",
-      "shortName": "SQUID SCD S.A.",
+      "name": "ZYDI SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "ZYDI",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -6429,6 +6832,7 @@
       "compe4": "0693",
       "name": "EFEX INSTITUIÇÃO DE PAGAMENTO S.A.",
       "shortName": "EFEX IP",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -6438,6 +6842,7 @@
       "compe4": "0694",
       "name": "WOOVI INSTITUICAO DE PAGAMENTO LTDA",
       "shortName": "WOOVI IP LTDA.",
+      "displayName": "Woovi",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6464,6 +6869,7 @@
       "compe4": "0695",
       "name": "BEES INSTITUICAO DE PAGAMENTO LTDA.",
       "shortName": "BEES IP LTDA.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -6479,6 +6885,7 @@
       "compe4": "0696",
       "name": "LOAN BRASIL SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "LOAN BRASIL SCD S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -6488,6 +6895,7 @@
       "compe4": "0697",
       "name": "JM CORRETORA DE CÂMBIO LTDA.",
       "shortName": "JM CORRETORA DE CÂMBIO",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -6497,6 +6905,7 @@
       "compe4": "0698",
       "name": "BIT SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "BIT SCD S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -6506,6 +6915,7 @@
       "compe4": "0699",
       "name": "BFC SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "BFC SCD S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6521,6 +6931,7 @@
       "compe4": "0700",
       "name": "MW INSTITUICAO DE PAGAMENTO LTDA",
       "shortName": "MW IP LTDA.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6536,6 +6947,7 @@
       "compe4": "0701",
       "name": "INTEGRAÇÃO DE CRÉDITO E COBRANÇA SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "INTEGRAÇÃO DE CRÉDITO E COBRANÇA SCD",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6551,6 +6963,7 @@
       "compe4": "0703",
       "name": "GETNET ADQUIRÊNCIA E SERVIÇOS PARA MEIOS DE PAGAMENTO S.A. INSTITUIÇÃO DE PAGAMENTO",
       "shortName": "GETNET IP",
+      "displayName": "Getnet",
       "pix": null,
       "logo": {
         "png": "logos/png/10440482.png",
@@ -6571,6 +6984,7 @@
       "compe4": "0704",
       "name": "FESTOR INSTITUIÇÃO DE PAGAMENTO LTDA.",
       "shortName": "FESTOR IP LTDA.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -6580,6 +6994,7 @@
       "compe4": "0707",
       "name": "Banco Daycoval S.A.",
       "shortName": "BCO DAYCOVAL S.A",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6595,6 +7010,7 @@
       "compe4": "0708",
       "name": "BANCO INDUSCRED DE INVESTIMENTO S.A.",
       "shortName": "BCO INDUSCRED DE INVESTIM. S/A",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -6604,6 +7020,7 @@
       "compe4": "0712",
       "name": "OURIBANK S.A. BANCO MÚLTIPLO",
       "shortName": "OURIBANK S.A.",
+      "displayName": "Ouribank",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6630,6 +7047,7 @@
       "compe4": "0714",
       "name": "FINAMAX S.A. - CREDITO, FINANCIAMENTO E INVESTIMENTO",
       "shortName": "FINAMAX S.A. CFI",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -6639,6 +7057,7 @@
       "compe4": "0719",
       "name": "BANCO MASTER MÚLTIPLO S.A. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
       "shortName": "BANCO MASTER MÚLTIPLO - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -6648,6 +7067,7 @@
       "compe4": "0741",
       "name": "BANCO RIBEIRAO PRETO S.A.",
       "shortName": "BCO RIBEIRAO PRETO S.A.",
+      "displayName": "Banco Ribeirão Preto",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6674,6 +7094,7 @@
       "compe4": "0743",
       "name": "Banco Semear S.A.",
       "shortName": "BANCO SEMEAR",
+      "displayName": "Semear",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6700,6 +7121,7 @@
       "compe4": "0745",
       "name": "Banco Citibank S.A.",
       "shortName": "BCO CITIBANK S.A.",
+      "displayName": "Citibank",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6726,6 +7148,7 @@
       "compe4": "0747",
       "name": "Banco Rabobank International Brasil S.A.",
       "shortName": "BCO RABOBANK INTL BRASIL S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -6735,6 +7158,7 @@
       "compe4": "0748",
       "name": "BANCO COOPERATIVO SICREDI S.A.",
       "shortName": "BANCO COOPERATIVO SICREDI",
+      "displayName": "Sicredi",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -6761,6 +7185,7 @@
       "compe4": "0751",
       "name": "Scotiabank Brasil S.A. Banco Múltiplo",
       "shortName": "Scotiabank Brasil",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -6770,6 +7195,7 @@
       "compe4": "0752",
       "name": "Banco BNP Paribas Brasil S.A.",
       "shortName": "BCO BNP PARIBAS BRASIL S A",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6785,6 +7211,7 @@
       "compe4": "0753",
       "name": "Novo Banco Continental S.A. - Banco Múltiplo",
       "shortName": "NOVO BCO CONTINENTAL S.A. - BM",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6800,6 +7227,7 @@
       "compe4": "0754",
       "name": "Banco Sistema S.A.",
       "shortName": "BANCO SISTEMA",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -6809,6 +7237,7 @@
       "compe4": "0755",
       "name": "Bank of America Merrill Lynch Banco Múltiplo S.A.",
       "shortName": "BOFA MERRILL LYNCH BM S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6824,6 +7253,7 @@
       "compe4": "0756",
       "name": "BANCO COOPERATIVO SICOOB S.A. - BANCO SICOOB",
       "shortName": "BANCO SICOOB S.A.",
+      "displayName": "Sicoob",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -6850,6 +7280,7 @@
       "compe4": "0757",
       "name": "BANCO KEB HANA DO BRASIL S.A.",
       "shortName": "BCO KEB HANA DO BRASIL S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6865,6 +7296,7 @@
       "compe4": "0759",
       "name": "BANSUR JM SOCIEDADE DE CRÉDITO DIRETO S/A",
       "shortName": "BANSUR JM SCD S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -6874,6 +7306,7 @@
       "compe4": "0760",
       "name": "EMCASH SERVIÇOS FINANCEIROS SOCIEDADE DE EMPRÉSTIMO ENTRE PESSOAS S.A.",
       "shortName": "EMCASH SERV FINANC SEP S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -6883,6 +7316,7 @@
       "compe4": "0761",
       "name": "URBANO S.A. - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
       "shortName": "URBANO S.A. SCFI",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6898,6 +7332,7 @@
       "compe4": "0763",
       "name": "VUE INSTITUIÇÃO DE PAGAMENTO S.A.",
       "shortName": "VUE IP S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6913,6 +7348,7 @@
       "compe4": "0764",
       "name": "INDEPENDÊNCIA COOPERATIVA DE CRÉDITO E INVESTIMENTO - INDEPENDÊNCIA COOPERATIVA DE CRÉDITO",
       "shortName": "INDEPENDÊNCIA CC",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -6928,6 +7364,7 @@
       "compe4": "0765",
       "name": "PAGSMILE INSTITUIÇÃO DE PAGAMENTO LTDA.",
       "shortName": "PAGSMILE IP LTDA.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6943,6 +7380,7 @@
       "compe4": "0766",
       "name": "LB PAY INSTITUIÇÃO DE PAGAMENTO LTDA",
       "shortName": "LB PAY IP LTDA",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6958,6 +7396,7 @@
       "compe4": "0767",
       "name": "QORE DISTRIBUIDORA DE TITULOS E VALORES MOBILIÁRIOS LTDA",
       "shortName": "QORE",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -6967,6 +7406,7 @@
       "compe4": "0768",
       "name": "BECKER FINANCEIRA S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
       "shortName": "BECKER FINANCEIRA SA - CFI",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -6976,6 +7416,7 @@
       "compe4": "0769",
       "name": "99PAY INSTITUICAO DE PAGAMENTO S.A.",
       "shortName": "99PAY IP S.A.",
+      "displayName": "99Pay",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -7002,6 +7443,7 @@
       "compe4": "0770",
       "name": "V3 INSTITUICAO DE PAGAMENTO S.A.",
       "shortName": "V3 IP S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -7017,6 +7459,7 @@
       "compe4": "0771",
       "name": "WX INSTITUICAO DE PAGAMENTO LTDA",
       "shortName": "WX IP LTDA.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -7032,6 +7475,7 @@
       "compe4": "0772",
       "name": "COOPERATIVA DE CRÉDITO MÚTUO DOS EMPREGADOS DO CENTRO UNIVERSITÁRIO NEWTON PAIVA LTDA. - CREDIPAIVA",
       "shortName": "CC MECUNP",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -7041,6 +7485,7 @@
       "compe4": "0773",
       "name": "KIWIFY INSTITUICAO DE PAGAMENTO LTDA",
       "shortName": "KIWIFY IP",
+      "displayName": "Kiwify",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -7067,6 +7512,7 @@
       "compe4": "0774",
       "name": "MOVA SOCIEDADE DE EMPRÉSTIMO ENTRE PESSOAS S.A.",
       "shortName": "MOVA SEP S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -7076,6 +7522,7 @@
       "compe4": "0775",
       "name": "CONTAAZUL INSTITUICAO DE PAGAMENTO LTDA.",
       "shortName": "CONTAAZUL IP LTDA.",
+      "displayName": "ContaAzul",
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -7102,6 +7549,7 @@
       "compe4": "0778",
       "name": "PB SOCIEDADE DE CREDITO DIRETO S.A.",
       "shortName": "PB SCD",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -7111,6 +7559,7 @@
       "compe4": "0780",
       "name": "SAFETYPAY BRASIL INSTITUICAO DE PAGAMENTO LTDA",
       "shortName": "SAFETYPAY BRASIL IP LTDA",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -7120,6 +7569,7 @@
       "compe4": "0781",
       "name": "BARU DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
       "shortName": "BARU DTVM LTDA.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -7129,6 +7579,7 @@
       "compe4": "0783",
       "name": "SWAP INSTITUIÇÃO DE PAGAMENTO S.A.",
       "shortName": "SWAP IP S.A.",
+      "displayName": "Swap",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -7155,6 +7606,7 @@
       "compe4": "0785",
       "name": "LA FINTECA INSTITUICAO DE PAGAMENTO LTDA",
       "shortName": "LA FINTECA IP LTDA",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -7164,6 +7616,7 @@
       "compe4": "0786",
       "name": "AWX BRASIL  INSTITUICAO DE PAGAMENTO LTDA",
       "shortName": "AWX BRASIL IP LTDA.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -7173,6 +7626,7 @@
       "compe4": "0787",
       "name": "ATTRUS INSTITUIÇÃO DE PAGAMENTO S/A",
       "shortName": "ATTRUS IP S/A",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -7188,6 +7642,7 @@
       "compe4": "0788",
       "name": "PROTOTYPE INSTITUICAO DE PAGAMENTO S.A.",
       "shortName": "PROTOTYPE IP S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -7203,6 +7658,7 @@
       "compe4": "0789",
       "name": "APUSDIGITAL INSTITUICAO DE PAGAMENTO LTDA",
       "shortName": "APUSDIGITAL IP LTDA.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -7212,6 +7668,7 @@
       "compe4": "0790",
       "name": "MAX INSTITUIÇÃO DE PAGAMENTO LTDA",
       "shortName": "MAX IP",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -7227,6 +7684,7 @@
       "compe4": "0791",
       "name": "MULTIPLIKE FINANCEIRA S.A. SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO",
       "shortName": "MULTIPLIKE FINANCEIRA S.A. SCFI",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -7242,6 +7700,7 @@
       "compe4": "0792",
       "name": "NIXFIN SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "NIXFIN SCD",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -7257,6 +7716,7 @@
       "compe4": "0793",
       "name": "MAGALUPAY - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
       "shortName": "MAGALUPAY SCFI S.A.",
+      "displayName": "MagaluPay Financeira",
       "pix": null,
       "logo": {
         "png": "logos/png/61021673.png",
@@ -7277,6 +7737,7 @@
       "compe4": "0794",
       "name": "ATUAL SOCIEDADE CORRETORA DE CÂMBIO LTDA",
       "shortName": "ATUAL CC LTDA",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -7286,6 +7747,7 @@
       "compe4": "0795",
       "name": "BANCO TRATON BRASIL S.A.",
       "shortName": "BANCO TRATON BRASIL S.A.",
+      "displayName": null,
       "pix": null,
       "logo": null
     },
@@ -7295,6 +7757,7 @@
       "compe4": "0804",
       "name": "MÊNTORE INSTITUIÇÃO DE PAGAMENTO S.A.",
       "shortName": "MÊNTORE IP S.A.",
+      "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",

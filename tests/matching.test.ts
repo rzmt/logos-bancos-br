@@ -41,6 +41,7 @@ function config(overrides: Partial<PipelineConfig> = {}): PipelineConfig {
     nameSuggestionThreshold: 0.5,
     denylistUris: [],
     forcedUris: {},
+    displayNames: {},
     forcedMatches: {},
     brandMatches: {},
     ignoreIspb: [],

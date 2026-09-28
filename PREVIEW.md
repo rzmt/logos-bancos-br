@@ -2,7 +2,7 @@
 
 > Arquivo gerado automaticamente pelo pipeline (`npm run pipeline`) — não editar à mão.
 
-**157** instituições com logo próprio · **310** afiliadas usando o logo do seu sistema cooperativo · **620** sem logo nas fontes oficiais.
+**157** instituições com logo próprio · **310** afiliadas usando o logo do seu sistema cooperativo · **619** sem logo nas fontes oficiais.
 
 ## Logos próprios
 
@@ -517,7 +517,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 </details>
 
 
-<details><summary>Instituições sem logo (620) — consumidores devem usar um ícone genérico</summary>
+<details><summary>Instituições sem logo (619) — consumidores devem usar um ícone genérico</summary>
 
 - `0007` BNDES (ISPB 33657248)
 - `0010` CREDICOAMO (ISPB 81723108)
@@ -681,7 +681,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0512` FINVEST DTVM (ISPB 36266751)
 - `0513` ATF SCD S.A. (ISPB 44728700)
 - `0514` EXIM SCC (ISPB 73302408)
-- `0516` QISTA S.A. CFI (ISPB 36583700)
+- `0516` PLACARPAY S.A - SCFI (ISPB 36583700)
 - `0519` LIONS TRUST DTVM (ISPB 40768766)
 - `0520` SOMAPAY SCD S.A. (ISPB 44705774)
 - `0521` PEAK SEP S.A. (ISPB 44019481)
@@ -782,7 +782,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0688` KIKAI SCD S.A. (ISPB 43978697)
 - `0690` BK IP S.A. (ISPB 16814330)
 - `0691` WASU IP LTDA. (ISPB 49686505)
-- `0692` SQUID SCD S.A. (ISPB 56198117)
+- `0692` ZYDI (ISPB 56198117)
 - `0693` EFEX IP (ISPB 32820711)
 - `0695` BEES IP LTDA. (ISPB 35523352)
 - `0696` LOAN BRASIL SCD S.A. (ISPB 50032584)
@@ -968,7 +968,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` CECMF SECRETARIA DA FAZENDA MG E LIVRE ADMISSÃO (ISPB 16721078)
 - `——` COOP V. ALTO VALE (ISPB 16779741)
 - `——` APTARE IP (ISPB 16876258)
-- `——` MAGEN IP (ISPB 17028875)
+- `——` MAGEN IP LTDA. (ISPB 17028875)
 - `——` CC REG. COLAR METROPOLITANO VALE DO AÇO LTDA (ISPB 17361536)
 - `——` CECM EMPR CEMIG IND METAL E SERV PUB MUN (ISPB 17502881)
 - `——` PINPAG IP S.A. (ISPB 17768068)
@@ -1024,7 +1024,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` MOUNT PAY (ISPB 31166683)
 - `——` CONPAY IP S.A. (ISPB 31531997)
 - `——` ADOPAY INSTITUICAO DE PAGAMENT (ISPB 31841474)
-- `——` DOTZPAY IP (ISPB 32024691)
 - `——` AIBR IP LTDA. (ISPB 32246162)
 - `——` CCR DE GUACUI (ISPB 32422628)
 - `——` EXPAG SOLUÇÕES EM PAGAMENTOS (ISPB 32906701)

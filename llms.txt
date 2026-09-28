@@ -51,6 +51,9 @@ Key facts:
   URL per ISPB (all cases pre-resolved), `data/logo-urls.min.json` is a `{ISPB: url}`
   map (SVG when available else PNG, logos only): `logoUrl = map[ispb]`.
 - **Interactive gallery** (search + copy CDN URL): https://rzmt.github.io/logos-bancos-br/
+- **`displayName`**: hand-curated popular brand name ("NU PAGAMENTOS S.A. …" -> "Nubank") on the
+  main brands in `data/bancos.json` / `data/instituicoes-pix.json`; `null` when not curated (fall
+  back to `name`). Never derived automatically from the official name.
 
 ## Docs
 

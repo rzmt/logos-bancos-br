@@ -35,7 +35,11 @@
    from the Central Bank STR participants list. The **643 Pix-only institutions** (fintechs,
    payment institutions, cooperative affiliates — no COMPE) live in a separate dataset
    ([`data/instituicoes-pix.json`](data/instituicoes-pix.json)), keeping the main list lean.
-   Both carry official names, ISPB, CNPJ (Pix-only) and Pix participation attributes.
+   Both carry official names, ISPB, CNPJ (Pix-only) and Pix participation attributes. For
+   bank-picker UIs, `displayName` holds the **hand-curated popular brand name**
+   ("NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO" → `"Nubank"`) on the main brands; it is
+   `null` where not curated (fall back to `name`), and never derived automatically from the
+   official name.
 2. **Official logos, deduplicated.** **473 institutions with a logo** backed by **160 distinct
    files** (~1.7 MB): affiliates of single-brand cooperative systems (Sicoob, Sicredi, Cresol,
    Unicred) **share one file per system**, marked `logo.source.type: "brand"`. Own logos come
@@ -207,6 +211,7 @@ Exported TypeScript types: `Bank`, `PixInstitution`, `Institution`, `BankLogo`, 
   "compe4": "0341",
   "name": "Itaú Unibanco S.A.",
   "shortName": "ITAÚ UNIBANCO S.A.",
+  "displayName": "Itaú",
   "pix": { "spiParticipationType": "Direta", "pixParticipationType": "Obrigatória", "modality": "Provedor de Conta Transacional", "institutionType": "Banco Múltiplo", "authorizedByBcb": true },
   "logo": {
     "png": "logos/png/60701190.png",

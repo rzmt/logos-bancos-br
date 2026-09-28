@@ -36,7 +36,10 @@
    (fintechs, IPs e cooperativas afiliadas, sem COMPE) ficam num conjunto separado
    ([`data/instituicoes-pix.json`](data/instituicoes-pix.json)), mantendo a lista principal
    enxuta. Ambos trazem nomes oficiais, ISPB, CNPJ (só-Pix) e os atributos de participação no
-   Pix.
+   Pix. Para telas de seleção de banco, `displayName` traz o **nome popular curado à mão**
+   ("NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO" → `"Nubank"`) nas principais marcas; onde
+   não há curadoria o campo é `null` e vale usar `name`. Nunca é derivado automaticamente do
+   nome oficial — derivação produz coisas como "Banco Da Amazonia".
 2. **Logos oficiais, sem duplicação.** **473 instituições com logo** usando **160 arquivos
    distintos** (~1,7 MB): afiliadas de sistemas cooperativos de marca única (Sicoob, Sicredi,
    Cresol, Unicred) **compartilham um único arquivo por sistema** e são marcadas com
@@ -252,6 +255,7 @@ Um registro de `data/bancos.json`:
   "compe4": "0341",
   "name": "Itaú Unibanco S.A.",
   "shortName": "ITAÚ UNIBANCO S.A.",
+  "displayName": "Itaú",
   "pix": {
     "spiParticipationType": "Direta",
     "pixParticipationType": "Obrigatória",
@@ -313,7 +317,8 @@ Um registro de `data/bancos.json`:
    — e o release após o merge é automático. Nada é editado à mão.
 
 Detalhes de manutenção (rodar o pipeline localmente, promover sugestões, overrides, denylist):
-**[CONTRIBUTING.md](CONTRIBUTING.md)**.
+**[CONTRIBUTING.md](CONTRIBUTING.md)**. Operação do dia a dia — o que é automático, o que exige
+uma pessoa e como consertar quando quebra: **[RUNBOOK.md](RUNBOOK.md)**.
 
 ## Limitações conhecidas
 

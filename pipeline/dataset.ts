@@ -58,11 +58,14 @@ export function buildDatasets({
   manifest,
   pngIspbs,
   svgIspbs,
+  displayNames = {},
 }: {
   entries: MatchEntry[];
   manifest: Manifest;
   pngIspbs: Set<string>;
   svgIspbs: Set<string>;
+  /** ISPB -> nome popular curado; ausente vira `displayName: null`. */
+  displayNames?: Record<string, string>;
 }): { dataset: Dataset; pixDataset: PixDataset } {
   const sorted = [...entries].sort(
     (a, b) => (a.compe4 ?? '￿').localeCompare(b.compe4 ?? '￿') || a.ispb.localeCompare(b.ispb),
@@ -80,6 +83,7 @@ export function buildDatasets({
         compe4: entry.compe4,
         name: entry.fullName,
         shortName: entry.shortName,
+        displayName: displayNames[entry.ispb] ?? null,
         pix: entry.pix ?? null,
         logo,
       });
@@ -91,6 +95,7 @@ export function buildDatasets({
         cnpj: entry.cnpj,
         name: entry.fullName,
         shortName: entry.shortName,
+        displayName: displayNames[entry.ispb] ?? null,
         pix: entry.pix,
         logo,
       });

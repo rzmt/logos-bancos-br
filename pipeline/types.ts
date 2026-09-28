@@ -104,6 +104,14 @@ export interface PipelineConfig {
   denylistUris: string[];
   /** ISPB -> direct logo URL (bypasses the directory). */
   forcedUris: Record<string, string>;
+  /**
+   * ISPB -> popular brand name, curated by hand ("NU PAGAMENTOS S.A. …" ->
+   * "Nubank"). Only curated entries exist: a name derived automatically from
+   * the official one produces junk ("Banco Da Amazonia"), and this field is
+   * consumed downstream. Institutions without an entry keep `displayName:
+   * null` and callers fall back to `name`.
+   */
+  displayNames: Record<string, string>;
   /** ISPB -> 14-digit CNPJ of the directory organisation to use (reviewed by hand). */
   forcedMatches: Record<string, string>;
   /**
@@ -203,6 +211,8 @@ export interface Bank {
   compe4: string;
   name: string;
   shortName: string;
+  /** Popular brand name ("Nubank"), curated; null when not curated. */
+  displayName: string | null;
   /** Pix participation attributes; null when not an active Pix participant. */
   pix: PixInfo | null;
   logo: BankLogo | null;
@@ -218,6 +228,8 @@ export interface PixInstitution {
   cnpj: string;
   name: string;
   shortName: string;
+  /** Popular brand name ("Nubank"), curated; null when not curated. */
+  displayName: string | null;
   pix: PixInfo;
   logo: BankLogo | null;
 }
