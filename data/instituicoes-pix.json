@@ -1233,23 +1233,6 @@
       "logo": null
     },
     {
-      "ispb": "01896779",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "01896779000138",
-      "name": "CSU DIGITAL IP S.A.",
-      "shortName": "CSU DIGITAL IP S.A.",
-      "displayName": null,
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Instituição de Pagamento",
-        "authorizedByBcb": false
-      },
-      "logo": null
-    },
-    {
       "ispb": "02000895",
       "compe": null,
       "compe4": null,
@@ -8544,7 +8527,7 @@
         "pixParticipationType": "Facultativa",
         "modality": "Provedor de Conta Transacional",
         "institutionType": "Instituição de Pagamento",
-        "authorizedByBcb": false
+        "authorizedByBcb": true
       },
       "logo": null
     },
@@ -8646,23 +8629,6 @@
         "pixParticipationType": "Facultativa",
         "modality": "Provedor de Conta Transacional",
         "institutionType": "Instituição de Pagamento",
-        "authorizedByBcb": true
-      },
-      "logo": null
-    },
-    {
-      "ispb": "30949267",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "30949267000190",
-      "name": "CECME CHOCOLATES GAROTO LTDA",
-      "shortName": "CECME CHOCOLATES GAROTO LTDA",
-      "displayName": null,
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
         "authorizedByBcb": true
       },
       "logo": null
@@ -9826,7 +9792,18 @@
         "institutionType": "Instituição de Pagamento",
         "authorizedByBcb": true
       },
-      "logo": null
+      "logo": {
+        "png": "logos/png/40571694.png",
+        "svg": "logos/svg/40571694.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "WISE BRASIL INSTITUICAO DE PAGAMENTO LTDA",
+          "cnpj": "40571694000131",
+          "uri": "https://wise.com/imaginary-v2/images/d130ba0101974769df902bc02241671f-Wise_Logo_BrightGreen_RGB.svg",
+          "sha256": "d69760aa4c9607f51364493df1fe7c49d086137b6021c659a39f6db581f190a5",
+          "updatedAt": "2026-10-12"
+        }
+      }
     },
     {
       "ispb": "40710595",

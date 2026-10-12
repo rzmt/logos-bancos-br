@@ -2,7 +2,7 @@
 
 > Arquivo gerado automaticamente pelo pipeline (`npm run pipeline`) — não editar à mão.
 
-**157** instituições com logo próprio · **310** afiliadas usando o logo do seu sistema cooperativo · **619** sem logo nas fontes oficiais.
+**158** instituições com logo próprio · **310** afiliadas usando o logo do seu sistema cooperativo · **613** sem logo nas fontes oficiais.
 
 ## Logos próprios
 
@@ -164,6 +164,7 @@
 | <img src="logos/png/11275560.png" width="40" alt="RECARGAPAY IP LTDA."> | — | 11275560 | RECARGAPAY IP LTDA. | Open Finance — RECARGAPAY INSTITUICAO DE PAGAMENTO LTDA. |
 | <img src="logos/png/32345784.png" width="40" alt="C6 CTVM LTDA."> | — | 32345784 | C6 CTVM LTDA. | Open Finance — BCO C6 S.A. |
 | <img src="logos/png/38372267.png" width="40" alt="MAREE IP LTDA."> | — | 38372267 | MAREE IP LTDA. | Open Finance — SHOPEE |
+| <img src="logos/png/40571694.png" width="40" alt="WISE BRASIL IP LTDA."> | — | 40571694 | WISE BRASIL IP LTDA. | Open Finance — WISE BRASIL INSTITUICAO DE PAGAMENTO LTDA |
 | <img src="logos/png/60779196.png" width="40" alt="CREFISA S.A. CFI"> | — | 60779196 | CREFISA S.A. CFI | Open Finance — CREFISA S.A. CFI |
 
 ## Sistemas cooperativos
@@ -517,7 +518,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 </details>
 
 
-<details><summary>Instituições sem logo (619) — consumidores devem usar um ícone genérico</summary>
+<details><summary>Instituições sem logo (613) — consumidores devem usar um ícone genérico</summary>
 
 - `0007` BNDES (ISPB 33657248)
 - `0010` CREDICOAMO (ISPB 81723108)
@@ -609,7 +610,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0355` ÓTIMO SCD S.A. (ISPB 34335592)
 - `0359` ZEMA CFI S/A (ISPB 05351887)
 - `0360` TRINUS CAPITAL DTVM (ISPB 02276653)
-- `0365` SIMPAUL (ISPB 68757681)
+- `0365` BINANCE BRASIL (ISPB 68757681)
 - `0366` BCO SOCIETE GENERALE BRASIL (ISPB 61533584)
 - `0373` UP.P SEP S.A. (ISPB 35977097)
 - `0377` BMS SCD S.A. (ISPB 17826860)
@@ -653,7 +654,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0451` J17 - SCD S/A (ISPB 40475846)
 - `0452` CREDIFIT SCD S.A. (ISPB 39676772)
 - `0454` MÉRITO DTVM LTDA. (ISPB 41592532)
-- `0455` VIS DTVM LTDA (ISPB 38429045)
 - `0456` BCO MUFG BRASIL S.A. (ISPB 60498557)
 - `0457` UY3 SCD S/A (ISPB 39587424)
 - `0458` HEDGE INVESTMENTS DTVM LTDA. (ISPB 07253654)
@@ -688,7 +688,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0522` RED SCD S.A. (ISPB 47593544)
 - `0523` HR DIGITAL SCD (ISPB 44292580)
 - `0524` WNT CAPITAL DTVM (ISPB 45854066)
-- `0525` INTERCAM CC LTDA (ISPB 34265629)
 - `0526` MONETARIE SCD (ISPB 46026562)
 - `0527` ATICCA SCD S.A. (ISPB 44478623)
 - `0528` CBSF DTVM -EM LIQUIDAÇÃO EXTRAJUDICIAL (ISPB 34829992)
@@ -712,7 +711,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0552` UZZIPAY IP S.A. (ISPB 32192325)
 - `0553` PERCAPITAL SCD S.A. (ISPB 48707451)
 - `0554` BCO STONEX S.A. (ISPB 28811341)
-- `0556` SAYGO CÂMBIO (ISPB 40333582)
+- `0556` SAYGO CC S.A. (ISPB 40333582)
 - `0557` PAGPRIME IP (ISPB 30944783)
 - `0559` KANASTRA CFI (ISPB 49288113)
 - `0560` MAG IP LTDA. (ISPB 21995256)
@@ -721,7 +720,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0563` PROTEGE CASH (ISPB 40276692)
 - `0564` ANKOR CFI S.A. (ISPB 63019146)
 - `0566` FLAGSHIP IP LTDA (ISPB 23114447)
-- `0568` BRCONDOS SCD S.A. (ISPB 49933388)
 - `0569` CONTA PRONTA IP (ISPB 12473687)
 - `0571` MONTE BRAVO CTVM S.A. (ISPB 50489148)
 - `0572` ALL IN CRED SCD S.A. (ISPB 51414521)
@@ -818,7 +816,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0774` MOVA SEP S.A. (ISPB 33959738)
 - `0778` PB SCD (ISPB 58674454)
 - `0780` SAFETYPAY BRASIL IP LTDA (ISPB 12102128)
-- `0781` BARU DTVM LTDA. (ISPB 58006471)
+- `0781` BASE DTVM (ISPB 58006471)
 - `0785` LA FINTECA IP LTDA (ISPB 53058329)
 - `0786` AWX BRASIL IP LTDA. (ISPB 52076716)
 - `0787` ATTRUS IP S/A (ISPB 10789035)
@@ -865,7 +863,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` CCLA DE BH E CIDADES POLO DE MG (ISPB 01760242)
 - `——` UNIPRIME DO IGUAÇU - CC POUP INV (ISPB 01848322)
 - `——` CECM SERV E EMPREG PUBL MUN BH BETIM BRUMAD CONTAG IBI NL RN (ISPB 01864151)
-- `——` CSU DIGITAL IP S.A. (ISPB 01896779)
 - `——` CECM SERV POD JUD TCE ORG PUBL MUN EST FED RJ (ISPB 02000895)
 - `——` CCLA MONTES CLAROS (ISPB 02031139)
 - `——` CCLA DA REGIÃO CENTRAL DE RONDÔNIA (ISPB 02144899)
@@ -1020,7 +1017,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` WORK 8 INSTITUIÇÃO DE PAGAMENT (ISPB 29408213)
 - `——` ONLY UP (ISPB 29477089)
 - `——` SERVNET IP LTDA. (ISPB 29759316)
-- `——` CECME CHOCOLATES GAROTO LTDA (ISPB 30949267)
 - `——` MOUNT PAY (ISPB 31166683)
 - `——` CONPAY IP S.A. (ISPB 31531997)
 - `——` ADOPAY INSTITUICAO DE PAGAMENT (ISPB 31841474)
@@ -1056,7 +1052,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` MASTERBARTER (ISPB 39715262)
 - `——` MINHA KONTA (ISPB 39929224)
 - `——` BNS CAPITAL PAGAMENTOS LTDA (ISPB 40557732)
-- `——` WISE BRASIL IP LTDA. (ISPB 40571694)
 - `——` NG CASH IP (ISPB 40710595)
 - `——` JRM2 (ISPB 40735713)
 - `——` PAY BROKERS IP (ISPB 40820176)
