@@ -55,6 +55,10 @@ gravadas automaticamente. Para promover uma sugestão:
 3. Adicione em `pipeline/config.json` → `forcedMatches`: `"<ISPB(8)>": "<CNPJ(14) da organização>"`.
 4. `npm run pipeline` e confira o diff das imagens no PR (o GitHub renderiza PNG).
 
+Se a sugestão estiver **errada** (empresa diferente, logo que não serve), registre o par em
+`rejectedMatches` (mesmo formato) — ela para de aparecer no relatório semanal. Uma sugestão
+diferente para o mesmo ISPB continua aparecendo.
+
 ### Descobrindo ícones de sites oficiais (`npm run discover`)
 
 Para instituições **fora do Open Finance**, a fonte é o ícone que a própria instituição publica
@@ -112,10 +116,13 @@ Checklist de revisão para os PRs que ficam abertos:
    rode o pipeline de novo e atualize o PR.
 3. **Novos bancos** na lista (o BCB incluiu/renomeou instituições) não exigem nada — só conferir
    que os nomes fazem sentido.
-4. **Falhas persistentes** (semanas seguidas): alguns WAFs bloqueiam os IPs do GitHub Actions
-   mas aceitam requisições locais. Falha nunca remove um logo já publicado; se precisar forçar a
-   atualização de um logo que o CI não alcança, rode `npm run pipeline` localmente e suba num PR.
-5. **Sugestões novas** → avalie promover a `forcedMatches` (seção acima).
+4. **Falhas**: o relatório separa *fonte quebrada* (precisa de ação: URL nova em `forcedUris`
+   ou `denylistUris`), *certificado* (problema no servidor da instituição) e *bloqueio de rede*
+   (dobrado; alguns WAFs bloqueiam os IPs do GitHub Actions mas aceitam requisições locais).
+   Falha nunca remove um logo já publicado; se precisar forçar a atualização de um logo que o CI
+   não alcança, rode `npm run pipeline` localmente e suba num PR. Detalhes no
+   [RUNBOOK](RUNBOOK.md).
+5. **Sugestões novas** → promova a `forcedMatches` ou rejeite em `rejectedMatches` (seção acima).
 6. **Merge** → pronto. O PR já traz o bump de versão; o merge dispara o `release.yml`, que
    cria a tag + Release no GitHub e publica no npm sozinho.
 

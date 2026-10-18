@@ -43,6 +43,7 @@ function config(overrides: Partial<PipelineConfig> = {}): PipelineConfig {
     forcedUris: {},
     displayNames: {},
     forcedMatches: {},
+    rejectedMatches: {},
     brandMatches: {},
     ignoreIspb: [],
     ...overrides,
@@ -204,6 +205,36 @@ describe('buildMatches', () => {
     expect(suggestions).toHaveLength(1);
     expect(suggestions[0]?.cnpj).toBe('18236120000158');
     expect(suggestions[0]?.score).toBeGreaterThanOrEqual(0.5);
+  });
+
+  it('silences a suggestion already reviewed and rejected (exact ISPB → CNPJ pair)', () => {
+    const nubank = organisation({
+      OrganisationId: 'org-nu',
+      OrganisationName: 'Nu Pagamentos',
+      RegistrationNumber: '18236120000158',
+    });
+    const nuFinanceira = participant({
+      ispb: '12345678',
+      shortName: 'NU FINANCEIRA',
+      fullName: 'Nu Financeira S.A.',
+    });
+    const rejected = buildMatches({
+      participants: [nuFinanceira],
+      directory: [nubank],
+      config: config({ rejectedMatches: { '12345678': '18.236.120/0001-58' } }),
+      overrides: new Map(),
+    });
+    expect(rejected.suggestions).toHaveLength(0);
+    expect(rejected.entries[0]?.source).toBeNull();
+
+    // Rejecting another CNPJ does not hide this suggestion.
+    const other = buildMatches({
+      participants: [nuFinanceira],
+      directory: [nubank],
+      config: config({ rejectedMatches: { '12345678': '99999999000199' } }),
+      overrides: new Map(),
+    });
+    expect(other.suggestions).toHaveLength(1);
   });
 
   it('drops suggestions below the threshold', () => {

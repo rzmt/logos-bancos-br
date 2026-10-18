@@ -172,6 +172,7 @@ export function buildMatches({
   const ignore = new Set(config.ignoreIspb ?? []);
   const forcedUris = config.forcedUris ?? {};
   const forcedMatches = config.forcedMatches ?? {};
+  const rejectedMatches = config.rejectedMatches ?? {};
   const threshold = config.nameSuggestionThreshold ?? 0.5;
 
   // Pre-resolve brand rules to their directory organisations; a brand whose
@@ -298,7 +299,10 @@ export function buildMatches({
     // No safe match. Record a name-based suggestion for human review, but the
     // institution ships without a logo until someone promotes it to forcedMatches.
     const byName = bestByName(index, participant, threshold);
-    if (byName) {
+    const rejected = String(rejectedMatches[ispb] ?? '')
+      .replace(/\D/g, '')
+      .padStart(14, '0');
+    if (byName && byName.org.cnpj !== rejected) {
       const server = pickServer(byName.org, participant);
       suggestions.push({
         ispb,

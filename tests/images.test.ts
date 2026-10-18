@@ -2,8 +2,16 @@ import { mkdtempSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import sharp from 'sharp';
-import { afterAll, describe, expect, it } from 'vitest';
-import { isSafeSvg, looksLikeSvg, rasterize, writeIfChanged } from '../pipeline/images';
+import { afterAll, afterEach, describe, expect, it, vi } from 'vitest';
+import {
+  describeFetchError,
+  downloadLogo,
+  isSafeSvg,
+  looksLikeHtml,
+  looksLikeSvg,
+  rasterize,
+  writeIfChanged,
+} from '../pipeline/images';
 
 const TINY_SVG = `<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><rect width="10" height="10" fill="#e11" /></svg>`;
 
@@ -24,6 +32,83 @@ describe('looksLikeSvg', () => {
       .png()
       .toBuffer();
     expect(looksLikeSvg(png)).toBe(false);
+  });
+});
+
+describe('looksLikeHtml', () => {
+  it.each([
+    ['doctype', '<!DOCTYPE html><html><head></head></html>'],
+    ['leading whitespace and comment', '\n  <!-- cms --> <html lang="pt-br"><body></body></html>'],
+    ['bare head', '<head><title>x</title></head>'],
+  ])('detects an html page (%s)', (_label, text) => {
+    expect(looksLikeHtml(Buffer.from(text))).toBe(true);
+  });
+
+  it('does not flag svg documents', () => {
+    expect(looksLikeHtml(Buffer.from(TINY_SVG))).toBe(false);
+    expect(looksLikeHtml(Buffer.from(`<?xml version="1.0"?>\n${TINY_SVG}`))).toBe(false);
+  });
+});
+
+describe('describeFetchError', () => {
+  it('appends the cause code hidden behind "fetch failed"', () => {
+    const error = new TypeError('fetch failed', {
+      cause: Object.assign(new Error('unable to verify the first certificate'), {
+        code: 'UNABLE_TO_VERIFY_LEAF_SIGNATURE',
+      }),
+    });
+    expect(describeFetchError(error)).toBe('fetch failed (UNABLE_TO_VERIFY_LEAF_SIGNATURE)');
+  });
+
+  it('keeps plain messages untouched', () => {
+    expect(describeFetchError(new Error('HTTP 404'))).toBe('HTTP 404');
+  });
+});
+
+describe('downloadLogo', () => {
+  afterEach(() => vi.unstubAllGlobals());
+
+  const respond = (body: string, status = 200) =>
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async () => new Response(body, { status })),
+    );
+
+  it('returns the bytes of an image', async () => {
+    respond(TINY_SVG);
+    const bytes = await downloadLogo('https://logos.example/x.svg');
+    expect(bytes.toString()).toBe(TINY_SVG);
+  });
+
+  it('rejects an html page served with 200 (soft 404)', async () => {
+    respond('<!DOCTYPE html><html><title>Uniprime</title></html>');
+    await expect(downloadLogo('https://logos.example/logo.svg')).rejects.toThrow(
+      'página HTML em vez de imagem (URL quebrada?)',
+    );
+  });
+
+  it('tells an anti-bot challenge apart from a broken URL', async () => {
+    respond('<!DOCTYPE html><html><head><title>Just a moment...</title></head></html>');
+    await expect(downloadLogo('https://logos.example/logo.svg')).rejects.toThrow(
+      'desafio anti-bot',
+    );
+  });
+
+  it('surfaces the network cause after retrying', async () => {
+    const fetchMock = vi.fn(async () => {
+      throw new TypeError('fetch failed', {
+        cause: Object.assign(new Error('read ECONNRESET'), { code: 'ECONNRESET' }),
+      });
+    });
+    vi.stubGlobal('fetch', fetchMock);
+    await expect(downloadLogo('https://logos.example/x.png')).rejects.toThrow(
+      'fetch failed (ECONNRESET)',
+    );
+    expect(fetchMock).toHaveBeenCalledTimes(2);
+  });
+
+  it('refuses non-https URLs', async () => {
+    await expect(downloadLogo('http://logos.example/x.png')).rejects.toThrow('protocolo');
   });
 });
 
@@ -72,6 +157,29 @@ describe('rasterize', () => {
     const meta = await sharp(png).metadata();
     expect(meta.width).toBe(128);
     expect(meta.height).toBe(128);
+  });
+
+  it('draws an svg declared small at full resolution instead of upscaling it', async () => {
+    // 16×16 favicon-style SVG: at 300 DPI it would render at 67px and be
+    // blown up 3.8× (soft edges). It must match a high-resolution reference.
+    const favicon = Buffer.from(
+      `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><circle cx="8" cy="8" r="6" fill="#123456"/></svg>`,
+    );
+    const reference = await sharp(favicon, { density: 2400 })
+      .resize(256, 256, { fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } })
+      .ensureAlpha()
+      .raw()
+      .toBuffer();
+    const output = await sharp(await rasterize(favicon, { sizePx: 256 }))
+      .ensureAlpha()
+      .raw()
+      .toBuffer();
+    let diff = 0;
+    for (let i = 3; i < reference.length; i += 4) {
+      diff += Math.abs((reference[i] ?? 0) - (output[i] ?? 0));
+    }
+    // Upscaled from 67px this is ~1.08; drawn at full resolution, ~0.
+    expect(diff / (reference.length / 4)).toBeLessThan(0.2);
   });
 
   it('throws on undecodable input', async () => {

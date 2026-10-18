@@ -115,6 +115,12 @@ export interface PipelineConfig {
   /** ISPB -> 14-digit CNPJ of the directory organisation to use (reviewed by hand). */
   forcedMatches: Record<string, string>;
   /**
+   * ISPB -> 14-digit CNPJ of a name suggestion already reviewed and REJECTED
+   * (different company, wrong logo). Silences exactly that pair in the weekly
+   * report; a different suggestion for the same ISPB still shows up.
+   */
+  rejectedMatches: Record<string, string>;
+  /**
    * Single-brand cooperative systems: BRAND TOKEN -> CNPJ of the system's
    * organisation in the directory. Applies when the token appears as a whole
    * word in the institution's official name (e.g. "CC SICOOB CREDIVALE" ->

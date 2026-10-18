@@ -82,12 +82,23 @@ usa o `NPM_TOKEN` se não houver trusted publisher configurado.
 3. GitHub → Settings → Secrets and variables → Actions → atualize `NPM_TOKEN`;
 4. reexecute o release: `gh workflow run release.yml --ref main`.
 
-### WAF bloqueando o download de um logo
+### Falhas de download no relatório
 
-Vários sites (Itaú, Inter, UBS, PinBank…) bloqueiam os IPs do GitHub Actions e
-aparecem em "Falhas" no relatório. **Falha nunca remove logo já publicado.**
-Para atualizar um logo que o CI não alcança, rode `npm run pipeline`
-localmente (de casa costuma passar) e suba num PR.
+**Falha nunca remove logo já publicado.** O relatório separa as falhas em três
+grupos — só o primeiro pede ação:
+
+- **Fonte quebrada** (404, página HTML no lugar da imagem, formato inválido):
+  a URL não vai voltar sozinha. Ache a URL oficial certa (ou o novo domínio) e
+  coloque em `forcedUris`; se a URL do diretório estiver obsoleta, ponha em
+  `denylistUris`. Ex.: cooperativa que migrou de sistema e continua com o logo
+  antigo no diretório → `denylistUris` + `forcedMatches` para o sistema novo.
+- **Certificado com problema no servidor** (ex.: servidor sem o certificado
+  intermediário): só a instituição corrige; o logo anterior segue publicado.
+- **Bloqueio ou instabilidade de rede** (403, desafio anti-bot, conexão
+  resetada, timeout): vários sites (Itaú, Inter, UBS…) recusam os IPs do
+  GitHub Actions — são ~20 por semana, esperado. Para atualizar um logo que o
+  CI não alcança, rode `npm run pipeline` localmente (de casa costuma passar)
+  e suba num PR.
 
 Ao garimpar manualmente, use User-Agent de navegador — muitos servidores
 devolvem 403 para o `curl` padrão:

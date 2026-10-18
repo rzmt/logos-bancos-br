@@ -25,8 +25,35 @@ export function sha256(buffer: Buffer): string {
 }
 
 /**
+ * `fetch` hides the real network/TLS error behind "fetch failed": surface the
+ * cause code (ECONNRESET, UNABLE_TO_VERIFY_LEAF_SIGNATURE, ...) so the report
+ * says what actually happened.
+ */
+export function describeFetchError(error: unknown): string {
+  const message = error instanceof Error ? error.message : String(error);
+  const cause =
+    error instanceof Error ? (error.cause as { code?: unknown } | undefined) : undefined;
+  const code = typeof cause?.code === 'string' ? cause.code : null;
+  return code && !message.includes(code) ? `${message} (${code})` : message;
+}
+
+/** Content sniff: is this an HTML page (soft 404, WAF challenge) instead of an image? */
+export function looksLikeHtml(buffer: Buffer): boolean {
+  let head = buffer.subarray(0, 1024).toString('utf8');
+  if (head.charCodeAt(0) === 0xfeff) head = head.slice(1);
+  head = head.trimStart().replace(/^(?:<!--[\s\S]*?-->\s*)+/, '');
+  return /^<(?:!doctype\s+html|html[\s>]|head[\s>]|body[\s>])/i.test(head);
+}
+
+/** Anti-bot interstitials (Cloudflare, Akamai, Imperva...) served with HTTP 200. */
+const BOT_CHALLENGE =
+  /just a moment|attention required|cf-chl|challenge-platform|captcha|access denied|request unsuccessful|incapsula/i;
+
+/**
  * Downloads logo bytes with guardrails: https only, timeout, size cap and a
- * single retry for transient failures (timeouts, 5xx).
+ * single retry for transient failures (timeouts, 5xx). An HTML body is never
+ * an image: it is reported as such (challenge vs. plain page) instead of
+ * failing later with an opaque "unsupported image format".
  */
 export async function downloadLogo(
   uri: string,
@@ -70,13 +97,24 @@ export async function downloadLogo(
       if (buffer.byteLength === 0) throw new Error('resposta vazia');
       if (buffer.byteLength > maxBytes)
         throw new Error(`excede ${maxBytes} bytes (${buffer.byteLength})`);
+      if (looksLikeHtml(buffer)) {
+        const page = buffer.subarray(0, 8192).toString('utf8');
+        throw new Error(
+          BOT_CHALLENGE.test(page)
+            ? 'página HTML em vez de imagem (desafio anti-bot)'
+            : 'página HTML em vez de imagem (URL quebrada?)',
+        );
+      }
       return buffer;
     } catch (error) {
-      lastError = error;
-      const message = error instanceof Error ? error.message : String(error);
+      const message = describeFetchError(error);
+      lastError =
+        error instanceof Error && error.message === message
+          ? error
+          : new Error(message, { cause: error });
       // Retry only on network-ish failures.
       if (attempt === attempts || !/timeout|network|fetch failed|HTTP 5\d\d/i.test(message)) {
-        throw error;
+        throw lastError;
       }
       await new Promise((resolve) => setTimeout(resolve, 1000));
     }
@@ -117,7 +155,9 @@ export function isSafeSvg(svgText: string): boolean {
  *
  * SVGs without an intrinsic pixel size are rasterized via density (DPI); a
  * high density on a huge viewBox can blow the pixel limit, so decreasing
- * densities are tried. `limitInputPixels` (100 MP) protects against
+ * densities are tried. An SVG declared small (e.g. a 32×32 favicon) would
+ * come out of 300 DPI below `sizePx` and get upscaled (blurry): it is drawn
+ * at 2× the target instead. `limitInputPixels` (100 MP) protects against
  * decompression bombs. A palette re-encode keeps files small, with a
  * quality fallback when the result exceeds 20 KB.
  */
@@ -126,6 +166,14 @@ export async function rasterize(
   { sizePx = 256 }: { sizePx?: number } = {},
 ): Promise<Buffer> {
   const densities = [300, 150, 72];
+  if (looksLikeSvg(buffer)) {
+    // Metadata of an SVG is its size at 72 DPI.
+    const meta = await sharp(buffer, { limitInputPixels: 100_000_000 }).metadata();
+    const longest = Math.max(meta.width ?? 0, meta.height ?? 0);
+    if (longest > 0 && (longest * 300) / 72 < sizePx) {
+      densities.unshift(Math.min(Math.ceil((72 * sizePx * 2) / longest), 2400));
+    }
+  }
   let lastError: unknown;
   for (const density of densities) {
     try {

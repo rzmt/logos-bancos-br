@@ -24,6 +24,14 @@ import { fileURLToPath } from 'node:url';
 
 import { withConcurrency } from './concurrency';
 import { buildCdnIndex, buildDatasets, buildLogoUrls, toJson } from './dataset';
+import {
+  classifyFailure,
+  FAILURE_KIND_HINT,
+  FAILURE_KIND_ORDER,
+  FAILURE_KIND_SHORT,
+  FAILURE_KIND_TITLE,
+  type FailureKind,
+} from './failures';
 import { buildGalleryHtml } from './gallery';
 import { downloadLogo, isSafeSvg, looksLikeSvg, rasterize, sha256, writeIfChanged } from './images';
 import { buildMatches } from './matching';
@@ -63,6 +71,7 @@ const DEFAULT_CONFIG: PipelineConfig = {
   forcedUris: {},
   displayNames: {},
   forcedMatches: {},
+  rejectedMatches: {},
   brandMatches: {},
   ignoreIspb: [],
 };
@@ -361,6 +370,14 @@ async function main(): Promise<void> {
     dataset.banks.filter((bank) => bank.logo !== null).length +
     pixDataset.institutions.filter((i) => i.logo !== null).length;
   const totalSize = dirSizeBytes(PNG_DIR) + dirSizeBytes(SVG_DIR);
+  const failuresByKind = new Map<FailureKind, Failure[]>();
+  for (const failure of stats.failed) {
+    const kind = classifyFailure(failure.reason);
+    failuresByKind.set(kind, [...(failuresByKind.get(kind) ?? []), failure]);
+  }
+  const failureBreakdown = FAILURE_KIND_ORDER.filter((kind) => failuresByKind.has(kind))
+    .map((kind) => `${failuresByKind.get(kind)?.length} ${FAILURE_KIND_SHORT[kind]}`)
+    .join(' · ');
 
   const reportLines: string[] = [
     '## Atualização de logos — relatório',
@@ -380,7 +397,7 @@ async function main(): Promise<void> {
     `| Novos · atualizados · inalterados | ${stats.created.length} · ${stats.updated.length} · ${stats.unchanged.length} |`,
     `| Sem logo nas fontes | ${stats.noLogo.length} |`,
     `| Mantidos sem fonte atual | ${stats.keptWithoutSource.length} |`,
-    `| Falhas de download/render (asset anterior mantido) | ${stats.failed.length} |`,
+    `| Falhas de download/render (asset anterior mantido) | ${stats.failed.length}${failureBreakdown ? ` (${failureBreakdown})` : ''} |`,
     `| Sugestões por nome (não gravadas) | ${suggestions.length} |`,
     `| Órfãos (png/svg sem instituição) | ${orphanPngs.length}/${orphanSvgs.length} |`,
     `| Tamanho total dos logos | ${kb(totalSize)} |`,
@@ -390,9 +407,29 @@ async function main(): Promise<void> {
   if (stats.updated.length)
     reportLines.push('', `**Atualizados:** ${stats.updated.sort().join(', ')}`);
   if (stats.failed.length) {
-    reportLines.push('', '### Falhas (asset anterior mantido)', '');
-    for (const failure of stats.failed) {
-      reportLines.push(`- \`${failure.compe4}\` (ISPB ${failure.ispb}): ${failure.reason}`);
+    reportLines.push('', '### Falhas (asset anterior mantido)');
+    for (const kind of FAILURE_KIND_ORDER) {
+      const group = failuresByKind.get(kind) ?? [];
+      if (!group.length) continue;
+      const items = group.map(
+        (failure) => `- \`${failure.compe4}\` (ISPB ${failure.ispb}): ${failure.reason}`,
+      );
+      const title = `${FAILURE_KIND_TITLE[kind]} (${group.length})`;
+      if (kind === 'blocked') {
+        // Expected noise from CI runners: keep it folded.
+        reportLines.push(
+          '',
+          `<details><summary><b>${title}</b></summary>`,
+          '',
+          FAILURE_KIND_HINT[kind],
+          '',
+          ...items,
+          '',
+          '</details>',
+        );
+      } else {
+        reportLines.push('', `#### ${title}`, '', FAILURE_KIND_HINT[kind], '', ...items);
+      }
     }
   }
   if (stats.svgRejected.length) {
@@ -442,7 +479,9 @@ async function main(): Promise<void> {
   );
   console.log(`Sem logo (fallback do app):  ${stats.noLogo.length}`);
   console.log(`Mantidos sem fonte:          ${stats.keptWithoutSource.length}`);
-  console.log(`Falhas (mantidos):           ${stats.failed.length}`);
+  console.log(
+    `Falhas (mantidos):           ${stats.failed.length}${failureBreakdown ? ` (${failureBreakdown})` : ''}`,
+  );
   console.log(
     `Sugestões por nome:          ${suggestions.length} (revisar; ver pipeline/report.md)`,
   );
@@ -451,9 +490,11 @@ async function main(): Promise<void> {
   console.log(`Arquivos gerados:            ${generatedFiles}`);
   console.log(`Relatório:                   pipeline/report.md`);
 
-  if (stats.failed.length) {
-    console.log(`\n✖ Falhas (${stats.failed.length}) — asset anterior mantido:`);
-    for (const failure of stats.failed.slice(0, 40)) {
+  for (const kind of FAILURE_KIND_ORDER) {
+    const group = failuresByKind.get(kind) ?? [];
+    if (!group.length) continue;
+    console.log(`\n✖ ${FAILURE_KIND_TITLE[kind]} (${group.length}) — asset anterior mantido:`);
+    for (const failure of group.slice(0, 40)) {
       console.log(`  ${failure.compe4} (ISPB ${failure.ispb}): ${failure.reason}`);
     }
   }
