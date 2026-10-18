@@ -7103,7 +7103,7 @@
       "cnpj": "14796606000190",
       "name": "ADYEN DO BRASIL IP LTDA.",
       "shortName": "ADYEN DO BRASIL IP LTDA.",
-      "displayName": null,
+      "displayName": "Adyen",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -7111,7 +7111,18 @@
         "institutionType": "Instituição de Pagamento",
         "authorizedByBcb": true
       },
-      "logo": null
+      "logo": {
+        "png": "logos/png/14796606.png",
+        "svg": "logos/svg/14796606.svg",
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.adyen.com/icon.svg",
+          "sha256": "09d229e5d7af1f083460d2ac4259419a52e6181af9533d578766929948224d0c",
+          "updatedAt": "2026-10-18"
+        }
+      }
     },
     {
       "ispb": "14821124",
@@ -7954,7 +7965,7 @@
       "cnpj": "25021356000132",
       "name": "DLOCAL BRASIL IP S.A.",
       "shortName": "DLOCAL BRASIL IP S.A.",
-      "displayName": null,
+      "displayName": "dLocal",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -7962,7 +7973,18 @@
         "institutionType": "Instituição de Pagamento",
         "authorizedByBcb": true
       },
-      "logo": null
+      "logo": {
+        "png": "logos/png/25021356.png",
+        "svg": "logos/svg/25021356.svg",
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://d13wxjfb6x6swr.cloudfront.net/brand/dlocal_icon_color.svg",
+          "sha256": "6e4df1e7c4fb8841c81769cf9f3d304581de8c0704e6b11922c69820fed7866a",
+          "updatedAt": "2026-10-18"
+        }
+      }
     },
     {
       "ispb": "25238191",
@@ -8757,23 +8779,6 @@
           "updatedAt": "2026-07-17"
         }
       }
-    },
-    {
-      "ispb": "32422628",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "32422628000171",
-      "name": "CCR DE GUACUI",
-      "shortName": "CCR DE GUACUI",
-      "displayName": null,
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": true
-      },
-      "logo": null
     },
     {
       "ispb": "32428294",
@@ -9611,7 +9616,19 @@
         "institutionType": "Cooperativa de Crédito",
         "authorizedByBcb": true
       },
-      "logo": null
+      "logo": {
+        "png": "logos/png/04891850.png",
+        "svg": "logos/svg/04891850.svg",
+        "source": {
+          "type": "brand",
+          "org": "Confederacao Nacional das Cooperativas do Sicoob",
+          "cnpj": "04891850000188",
+          "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
+          "sha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
+          "updatedAt": "2026-07-17",
+          "brand": "SICOOB"
+        }
+      }
     },
     {
       "ispb": "37631058",
@@ -9799,9 +9816,9 @@
           "type": "openfinance",
           "org": "WISE BRASIL INSTITUICAO DE PAGAMENTO LTDA",
           "cnpj": "40571694000131",
-          "uri": "https://wise.com/imaginary-v2/images/d130ba0101974769df902bc02241671f-Wise_Logo_BrightGreen_RGB.svg",
-          "sha256": "d69760aa4c9607f51364493df1fe7c49d086137b6021c659a39f6db581f190a5",
-          "updatedAt": "2026-10-12"
+          "uri": "https://wise.com/imaginary-v2/images/1f8d2a36aca8100a150203726b379149-temp.svg",
+          "sha256": "20f49b0e92202c38be39c3fecd8f0f77268362f4768f942c68b505cf8230bc72",
+          "updatedAt": "2026-10-18"
         }
       }
     },
@@ -11074,8 +11091,8 @@
       "compe": null,
       "compe4": null,
       "cnpj": "67915868000192",
-      "name": "CECM TRAB CIA PROC DADOS SP",
-      "shortName": "CECM TRAB CIA PROC DADOS SP",
+      "name": "SICOOB CREDIPRODESP",
+      "shortName": "SICOOB CREDIPRODESP",
       "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
@@ -11084,7 +11101,19 @@
         "institutionType": "Cooperativa de Crédito",
         "authorizedByBcb": true
       },
-      "logo": null
+      "logo": {
+        "png": "logos/png/04891850.png",
+        "svg": "logos/svg/04891850.svg",
+        "source": {
+          "type": "brand",
+          "org": "Confederacao Nacional das Cooperativas do Sicoob",
+          "cnpj": "04891850000188",
+          "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
+          "sha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
+          "updatedAt": "2026-07-17",
+          "brand": "SICOOB"
+        }
+      }
     },
     {
       "ispb": "67960229",
@@ -12006,7 +12035,18 @@
         "institutionType": "Cooperativa de Crédito",
         "authorizedByBcb": true
       },
-      "logo": null
+      "logo": {
+        "png": "logos/png/73647935.png",
+        "svg": "logos/svg/73647935.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "Confederacao Nacional das Cooperativas do Sicoob",
+          "cnpj": "04891850000188",
+          "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
+          "sha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
+          "updatedAt": "2026-10-18"
+        }
+      }
     },
     {
       "ispb": "73750424",

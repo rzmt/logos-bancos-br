@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="24" viewBox="0 0 48 24">
+    <g fill="none" fill-rule="evenodd">
+        <g fill="#db0011">
+            <g>
+                <path d="M12 0L24 12 36 0zM12 24L36 24 24 12zM36 24L48 12 36 0zM0 12L11.947 23.981 12 24 12 0z" transform="translate(-164 -16) translate(164 16)"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -87,9 +87,20 @@
       "compe4": "0007",
       "name": "BANCO NACIONAL DE DESENVOLVIMENTO ECONOMICO E SOCIAL",
       "shortName": "BNDES",
-      "displayName": null,
+      "displayName": "BNDES",
       "pix": null,
-      "logo": null
+      "logo": {
+        "png": "logos/png/33657248.png",
+        "svg": "logos/svg/33657248.svg",
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.bndes.gov.br/wps/wcm/connect/site/79d92566-cf2c-4590-a78f-8911b1ac1c31/BNDES_arquivo_marca.svg?MOD=AJPERES",
+          "sha256": "87230aa7d5751a05c50c8041c6a636f64d1a1801628a9da213fc1b19f696dbe0",
+          "updatedAt": "2026-10-18"
+        }
+      }
     },
     {
       "ispb": "81723108",
@@ -298,9 +309,20 @@
       "compe4": "0025",
       "name": "Banco Alfa S.A.",
       "shortName": "BCO ALFA S.A.",
-      "displayName": null,
+      "displayName": "Banco Alfa",
       "pix": null,
-      "logo": null
+      "logo": {
+        "png": "logos/png/03323840.png",
+        "svg": "logos/svg/03323840.svg",
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.alfa.com.br/lumis-theme/br/com/alfa/consignado/theme/alfa-consignado/assets/images/logo-alfa.svg",
+          "sha256": "939342df43e846d40d95a11b5e3cdce8e6e314effdf1f4ea158f6bc2ba1b756b",
+          "updatedAt": "2026-10-18"
+        }
+      }
     },
     {
       "ispb": "90400888",
@@ -1084,7 +1106,7 @@
       "compe4": "0119",
       "name": "Banco Western Union do Brasil S.A.",
       "shortName": "BCO WESTERN UNION",
-      "displayName": null,
+      "displayName": "Western Union",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -1092,7 +1114,18 @@
         "institutionType": "Banco Comercial",
         "authorizedByBcb": true
       },
-      "logo": null
+      "logo": {
+        "png": "logos/png/13720915.png",
+        "svg": "logos/svg/13720915.svg",
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.westernunion.com/staticassets/media/logo_symbol_mobile.svg",
+          "sha256": "0d45ac97036533caef67fb1220a980e5e5360eea0817ceaacc03a3379ca20d6a",
+          "updatedAt": "2026-10-18"
+        }
+      }
     },
     {
       "ispb": "33603457",
@@ -1626,7 +1659,13 @@
       "name": "UNIDA DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS LTDA.",
       "shortName": "UNIDA DTVM LTDA",
       "displayName": null,
-      "pix": null,
+      "pix": {
+        "spiParticipationType": "Direta",
+        "pixParticipationType": "Facultativa",
+        "modality": "Provedor de Conta Transacional",
+        "institutionType": "Sociedade Distribuidora de TVM",
+        "authorizedByBcb": true
+      },
       "logo": null
     },
     {
@@ -1709,7 +1748,7 @@
       "compe4": "0212",
       "name": "Banco Original S.A.",
       "shortName": "BANCO ORIGINAL",
-      "displayName": null,
+      "displayName": "Banco Original",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Obrigatória",
@@ -1717,7 +1756,18 @@
         "institutionType": "Banco Múltiplo",
         "authorizedByBcb": true
       },
-      "logo": null
+      "logo": {
+        "png": "logos/png/92894922.png",
+        "svg": "logos/svg/92894922.svg",
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.original.com.br/src/img/ico-original-green.svg",
+          "sha256": "2b684ca27391631c75b4a9d37ed7dbb407738922424dc37c4375ba1618594308",
+          "updatedAt": "2026-10-18"
+        }
+      }
     },
     {
       "ispb": "54403563",
@@ -1752,9 +1802,20 @@
       "compe4": "0217",
       "name": "Banco John Deere S.A.",
       "shortName": "BANCO JOHN DEERE S.A.",
-      "displayName": null,
+      "displayName": "John Deere",
       "pix": null,
-      "logo": null
+      "logo": {
+        "png": "logos/png/91884981.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://bancojohndeere.com.br/images/logo/logo.webp",
+          "sha256": "861a341559fd353653d3d5440e6709cfec3e47bfa68049939fa2899d4b65a419",
+          "updatedAt": "2026-10-18"
+        }
+      }
     },
     {
       "ispb": "71027866",
@@ -1789,9 +1850,20 @@
       "compe4": "0222",
       "name": "BANCO CRÉDIT AGRICOLE BRASIL S.A.",
       "shortName": "BCO CRÉDIT AGRICOLE BR S.A.",
-      "displayName": null,
+      "displayName": "Crédit Agricole",
       "pix": null,
-      "logo": null
+      "logo": {
+        "png": "logos/png/75647891.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.credit-agricole.fr/content/dam/assetsca/npc/logos/icone_ca_pwa.png",
+          "sha256": "3358b6f2d9351fd1fec303210400a4514cc55a851ad97d202cfc0f840e3f54a7",
+          "updatedAt": "2026-10-18"
+        }
+      }
     },
     {
       "ispb": "58616418",
@@ -2068,7 +2140,7 @@
       "compe4": "0269",
       "name": "BANCO HSBC S.A.",
       "shortName": "BCO HSBC S.A.",
-      "displayName": null,
+      "displayName": "HSBC",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -2076,7 +2148,18 @@
         "institutionType": "Banco Múltiplo",
         "authorizedByBcb": true
       },
-      "logo": null
+      "logo": {
+        "png": "logos/png/53518684.png",
+        "svg": "logos/svg/53518684.svg",
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.business.hsbc.com.br/-/media/new-logos/svg/hsbc-logo-mobile-black.svg",
+          "sha256": "b1d007cf8c39233cd6ea96203af5980b0645d82968616a6e32fed757d4e8155b",
+          "updatedAt": "2026-10-18"
+        }
+      }
     },
     {
       "ispb": "27842177",
@@ -2153,7 +2236,7 @@
       "compe4": "0276",
       "name": "BANCO SENFF S.A.",
       "shortName": "BCO SENFF S.A.",
-      "displayName": null,
+      "displayName": "Senff",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -2161,7 +2244,18 @@
         "institutionType": "Banco Múltiplo",
         "authorizedByBcb": true
       },
-      "logo": null
+      "logo": {
+        "png": "logos/png/11970623.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://wwwsnf.s3.sa-east-1.amazonaws.com/wp-content/uploads/2022/12/05102554/cropped-banner-logo-mobile.png",
+          "sha256": "69a8d053f2351ef9f7b740301c845473c07f4991e44a7e464d0294244af368a6",
+          "updatedAt": "2026-10-18"
+        }
+      }
     },
     {
       "ispb": "27652684",
@@ -4398,9 +4492,20 @@
       "compe4": "0475",
       "name": "Banco Yamaha Motor do Brasil S.A.",
       "shortName": "BCO YAMAHA MOTOR S.A.",
-      "displayName": null,
+      "displayName": "Yamaha",
       "pix": null,
-      "logo": null
+      "logo": {
+        "png": "logos/png/10371492.png",
+        "svg": "logos/svg/10371492.svg",
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.yamaha-motor.com.br/icon.svg",
+          "sha256": "0659bf3b3c1f1936b709e8f26902d0779505fe0c916c4bff394a42645f01e114",
+          "updatedAt": "2026-10-18"
+        }
+      }
     },
     {
       "ispb": "45860531",
@@ -4921,7 +5026,7 @@
       "compe4": "0529",
       "name": "PINBANK BRASIL INSTITUIÇÃO DE PAGAMENTO S.A.",
       "shortName": "PINBANK IP",
-      "displayName": null,
+      "displayName": "PinBank",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4929,7 +5034,18 @@
         "institutionType": "Instituição de Pagamento",
         "authorizedByBcb": true
       },
-      "logo": null
+      "logo": {
+        "png": "logos/png/17079937.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.pinbank.com.br/favicon/android-icon-192x192.png",
+          "sha256": "7e3e577632dba7b237c5ffdeca506bd964b439b76b176db6862823b6e0645448",
+          "updatedAt": "2026-10-18"
+        }
+      }
     },
     {
       "ispb": "47873449",
@@ -4953,7 +5069,7 @@
       "compe4": "0531",
       "name": "BMP SOCIEDADE DE CRÉDITO DIRETO S.A",
       "shortName": "BMP SCD S.A.",
-      "displayName": null,
+      "displayName": "BMP",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -4961,7 +5077,18 @@
         "institutionType": "Sociedade de Crédito Direto",
         "authorizedByBcb": true
       },
-      "logo": null
+      "logo": {
+        "png": "logos/png/34337707.png",
+        "svg": "logos/svg/34337707.svg",
+        "source": {
+          "type": "openfinance",
+          "org": "MONEY PLUS SCMEPP LTDA",
+          "cnpj": "11581339000145",
+          "uri": "https://bmp.dbs.moneyp.com.br/bmpmoneyplus.svg",
+          "sha256": "5cfec5eb1028f7f5bd7c1d6c3a46c50d4d9d77090c22426c5306926ba7a53842",
+          "updatedAt": "2026-10-18"
+        }
+      }
     },
     {
       "ispb": "45745537",
@@ -5279,9 +5406,20 @@
       "compe4": "0554",
       "name": "BANCO STONEX S.A.",
       "shortName": "BCO STONEX S.A.",
-      "displayName": null,
+      "displayName": "StoneX",
       "pix": null,
-      "logo": null
+      "logo": {
+        "png": "logos/png/28811341.png",
+        "svg": "logos/svg/28811341.svg",
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://marketingcenter.stonex.com/m/572f3403a7dde954/original/StoneX-logo-black-137x30.svg",
+          "sha256": "12eb9ac5e891727c3620e0196a578970f1212fccffd71305557d1ad29164ccbf",
+          "updatedAt": "2026-10-18"
+        }
+      }
     },
     {
       "ispb": "02682287",
@@ -5742,7 +5880,7 @@
       "compe4": "0593",
       "name": "TRANSFEERA INSTITUIÇÃO DE PAGAMENTO S.A",
       "shortName": "TRANSFEERA IP S.A.",
-      "displayName": null,
+      "displayName": "Transfeera",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -5750,7 +5888,18 @@
         "institutionType": "Instituição de Pagamento",
         "authorizedByBcb": true
       },
-      "logo": null
+      "logo": {
+        "png": "logos/png/27084098.png",
+        "svg": "logos/svg/27084098.svg",
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://transfeera.com/wp-content/themes/assets/global/layout/images/logos/transfeera-logo-selo-verde.svg",
+          "sha256": "29ce8c9b697b341b78b6c311136d213e5bad70caa241128faf35fb0ac4c5634f",
+          "updatedAt": "2026-10-18"
+        }
+      }
     },
     {
       "ispb": "48703388",
@@ -6163,7 +6312,7 @@
       "compe4": "0634",
       "name": "BANCO TRIANGULO S.A.",
       "shortName": "BCO TRIANGULO S.A.",
-      "displayName": null,
+      "displayName": "Tribanco",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6171,7 +6320,18 @@
         "institutionType": "Banco Múltiplo",
         "authorizedByBcb": true
       },
-      "logo": null
+      "logo": {
+        "png": "logos/png/17351180.png",
+        "svg": "logos/svg/17351180.svg",
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.tribanco.com.br/wp-content/uploads/2022/04/FaviconSvg.svg",
+          "sha256": "8252607fffc21c16741318af754870d2f3bd6a7e756258595a3e2ef61ac6391b",
+          "updatedAt": "2026-10-18"
+        }
+      }
     },
     {
       "ispb": "40112555",
@@ -6295,9 +6455,20 @@
       "compe4": "0654",
       "name": "BANCO DIGIMAIS S.A.",
       "shortName": "BCO DIGIMAIS S.A.",
-      "displayName": null,
+      "displayName": "Digimais",
       "pix": null,
-      "logo": null
+      "logo": {
+        "png": "logos/png/92874270.png",
+        "svg": "logos/svg/92874270.svg",
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.bancodigimais.com.br/images/icons/logos/icon-logo-horizontal-dark.svg",
+          "sha256": "bbb876d6e1e257e1a5e577c6b6088a40736f3c4f28e1452a70c9bddb22e7a441",
+          "updatedAt": "2026-10-18"
+        }
+      }
     },
     {
       "ispb": "59588111",
@@ -6958,7 +7129,7 @@
       "compe4": "0707",
       "name": "Banco Daycoval S.A.",
       "shortName": "BCO DAYCOVAL S.A",
-      "displayName": null,
+      "displayName": "Daycoval",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -6966,7 +7137,18 @@
         "institutionType": "Banco Múltiplo",
         "authorizedByBcb": true
       },
-      "logo": null
+      "logo": {
+        "png": "logos/png/62232889.png",
+        "svg": "logos/svg/62232889.svg",
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://ri.daycoval.com.br/Content/images/empresas/logo-D.svg",
+          "sha256": "bc2f4ad0c46c3da4a379e273695c18c212a449c80080d851235075d08b4a3a48",
+          "updatedAt": "2026-10-18"
+        }
+      }
     },
     {
       "ispb": "33588252",
@@ -7159,7 +7341,7 @@
       "compe4": "0752",
       "name": "Banco BNP Paribas Brasil S.A.",
       "shortName": "BCO BNP PARIBAS BRASIL S A",
-      "displayName": null,
+      "displayName": "BNP Paribas",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -7167,7 +7349,18 @@
         "institutionType": "Banco Múltiplo",
         "authorizedByBcb": true
       },
-      "logo": null
+      "logo": {
+        "png": "logos/png/01522368.png",
+        "svg": "logos/svg/01522368.svg",
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://cdn.invest.bnpparibas/build/images/logo-bnp-mobile.svg",
+          "sha256": "d251834541121769fc8ef3fc72b84d9b6895eca0915d801be9aeeb28a04011fa",
+          "updatedAt": "2026-10-18"
+        }
+      }
     },
     {
       "ispb": "74828799",
@@ -7201,7 +7394,7 @@
       "compe4": "0755",
       "name": "Bank of America Merrill Lynch Banco Múltiplo S.A.",
       "shortName": "BOFA MERRILL LYNCH BM S.A.",
-      "displayName": null,
+      "displayName": "Bank of America",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -7209,7 +7402,18 @@
         "institutionType": "Banco Múltiplo",
         "authorizedByBcb": true
       },
-      "logo": null
+      "logo": {
+        "png": "logos/png/62073200.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://www.bankofamerica.com/content/images/ContextualSiteGraphics/Logos/en_US/logos/colored_flagscape-v2.png",
+          "sha256": "252e9d0b1f3b944fc21ca663b0a3195854d38145d4e02ae580a92f2976207991",
+          "updatedAt": "2026-10-18"
+        }
+      }
     },
     {
       "ispb": "02038232",
@@ -7296,7 +7500,7 @@
       "compe4": "0763",
       "name": "VUE INSTITUIÇÃO DE PAGAMENTO S.A.",
       "shortName": "VUE IP S.A.",
-      "displayName": null,
+      "displayName": "Vuepay",
       "pix": {
         "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
@@ -7304,7 +7508,18 @@
         "institutionType": "Instituição de Pagamento",
         "authorizedByBcb": true
       },
-      "logo": null
+      "logo": {
+        "png": "logos/png/56106523.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://internet-banking.vuepay.com.br/assets/images/vuepay/horizontal_preto_fundo_transp.png",
+          "sha256": "9701296a127b306b1847e3dd4ba399d1b4093fc5eb42cfe850d037b71c87cad7",
+          "updatedAt": "2026-10-18"
+        }
+      }
     },
     {
       "ispb": "04306351",

@@ -1,4 +1,13 @@
 {
+  "10371492": {
+    "compe4": "0475",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.yamaha-motor.com.br/icon.svg",
+    "sourceSha256": "0659bf3b3c1f1936b709e8f26902d0779505fe0c916c4bff394a42645f01e114",
+    "svg": true,
+    "updatedAt": "2026-10-18"
+  },
   "10398952": {
     "compe4": "0133",
     "org": "CRESOL CONFEDERAÇÃO",
@@ -71,6 +80,15 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
+  "11970623": {
+    "compe4": "0276",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://wwwsnf.s3.sa-east-1.amazonaws.com/wp-content/uploads/2022/12/05102554/cropped-banner-logo-mobile.png",
+    "sourceSha256": "69a8d053f2351ef9f7b740301c845473c07f4991e44a7e464d0294244af368a6",
+    "svg": false,
+    "updatedAt": "2026-10-18"
+  },
   "13009717": {
     "compe4": "0047",
     "org": "BCO DO EST. DE SE S.A.",
@@ -116,6 +134,15 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
+  "13720915": {
+    "compe4": "0119",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.westernunion.com/staticassets/media/logo_symbol_mobile.svg",
+    "sourceSha256": "0d45ac97036533caef67fb1220a980e5e5360eea0817ceaacc03a3379ca20d6a",
+    "svg": true,
+    "updatedAt": "2026-10-18"
+  },
   "13884775": {
     "compe4": "0396",
     "org": "Magalupay Instituicao de Pagamento S.A.",
@@ -151,6 +178,15 @@
     "sourceSha256": "8046bc1223254dd1f2d9ae92537930ca904cd0949d83ccdb7ff5597d93613ac7",
     "svg": false,
     "updatedAt": "2026-07-17"
+  },
+  "14796606": {
+    "compe4": null,
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.adyen.com/icon.svg",
+    "sourceSha256": "09d229e5d7af1f083460d2ac4259419a52e6181af9533d578766929948224d0c",
+    "svg": true,
+    "updatedAt": "2026-10-18"
   },
   "15111975": {
     "compe4": "0401",
@@ -188,6 +224,15 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
+  "17079937": {
+    "compe4": "0529",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.pinbank.com.br/favicon/android-icon-192x192.png",
+    "sourceSha256": "7e3e577632dba7b237c5ffdeca506bd964b439b76b176db6862823b6e0645448",
+    "svg": false,
+    "updatedAt": "2026-10-18"
+  },
   "17184037": {
     "compe4": "0389",
     "org": "BCO MERCANTIL DO BRASIL S.A.",
@@ -196,6 +241,15 @@
     "sourceSha256": "ce244740d6ba638b7c82da17b7025cfa9f2756d9c59177181b18d2ca7fe3fabd",
     "svg": true,
     "updatedAt": "2026-07-17"
+  },
+  "17351180": {
+    "compe4": "0634",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.tribanco.com.br/wp-content/uploads/2022/04/FaviconSvg.svg",
+    "sourceSha256": "8252607fffc21c16741318af754870d2f3bd6a7e756258595a3e2ef61ac6391b",
+    "svg": true,
+    "updatedAt": "2026-10-18"
   },
   "18189547": {
     "compe4": "0542",
@@ -305,6 +359,24 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
+  "25021356": {
+    "compe4": null,
+    "org": null,
+    "cnpj": null,
+    "uri": "https://d13wxjfb6x6swr.cloudfront.net/brand/dlocal_icon_color.svg",
+    "sourceSha256": "6e4df1e7c4fb8841c81769cf9f3d304581de8c0704e6b11922c69820fed7866a",
+    "svg": true,
+    "updatedAt": "2026-10-18"
+  },
+  "27084098": {
+    "compe4": "0593",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://transfeera.com/wp-content/themes/assets/global/layout/images/logos/transfeera-logo-selo-verde.svg",
+    "sourceSha256": "29ce8c9b697b341b78b6c311136d213e5bad70caa241128faf35fb0ac4c5634f",
+    "svg": true,
+    "updatedAt": "2026-10-18"
+  },
   "27098060": {
     "compe4": "0335",
     "org": "BANCO DIGIO",
@@ -358,6 +430,15 @@
     "sourceSha256": "7f560c31465e674475d8f81f48eab6685996343d76262832861b7b34af895211",
     "svg": false,
     "updatedAt": "2026-07-17"
+  },
+  "28811341": {
+    "compe4": "0554",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://marketingcenter.stonex.com/m/572f3403a7dde954/original/StoneX-logo-black-137x30.svg",
+    "sourceSha256": "12eb9ac5e891727c3620e0196a578970f1212fccffd71305557d1ad29164ccbf",
+    "svg": true,
+    "updatedAt": "2026-10-18"
   },
   "29162769": {
     "compe4": "0352",
@@ -530,6 +611,15 @@
     "svg": false,
     "updatedAt": "2026-07-17"
   },
+  "33657248": {
+    "compe4": "0007",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.bndes.gov.br/wps/wcm/connect/site/79d92566-cf2c-4590-a78f-8911b1ac1c31/BNDES_arquivo_marca.svg?MOD=AJPERES",
+    "sourceSha256": "87230aa7d5751a05c50c8041c6a636f64d1a1801628a9da213fc1b19f696dbe0",
+    "svg": true,
+    "updatedAt": "2026-10-18"
+  },
   "34088029": {
     "compe4": "0397",
     "org": "LISTO SOCIEDADE DE CREDITO DIRETO S.A.",
@@ -538,6 +628,15 @@
     "sourceSha256": "6503562f0a5f8119dad02cb69383b332247e98f0239f829222f282f9cb433bea",
     "svg": true,
     "updatedAt": "2026-07-17"
+  },
+  "34337707": {
+    "compe4": "0531",
+    "org": "MONEY PLUS SCMEPP LTDA",
+    "cnpj": "11581339000145",
+    "uri": "https://bmp.dbs.moneyp.com.br/bmpmoneyplus.svg",
+    "sourceSha256": "5cfec5eb1028f7f5bd7c1d6c3a46c50d4d9d77090c22426c5306926ba7a53842",
+    "svg": true,
+    "updatedAt": "2026-10-18"
   },
   "36113876": {
     "compe4": "0111",
@@ -615,10 +714,10 @@
     "compe4": null,
     "org": "WISE BRASIL INSTITUICAO DE PAGAMENTO LTDA",
     "cnpj": "40571694000131",
-    "uri": "https://wise.com/imaginary-v2/images/d130ba0101974769df902bc02241671f-Wise_Logo_BrightGreen_RGB.svg",
-    "sourceSha256": "d69760aa4c9607f51364493df1fe7c49d086137b6021c659a39f6db581f190a5",
+    "uri": "https://wise.com/imaginary-v2/images/1f8d2a36aca8100a150203726b379149-temp.svg",
+    "sourceSha256": "20f49b0e92202c38be39c3fecd8f0f77268362f4768f942c68b505cf8230bc72",
     "svg": true,
-    "updatedAt": "2026-10-12"
+    "updatedAt": "2026-10-18"
   },
   "42272526": {
     "compe4": "0017",
@@ -710,6 +809,15 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
+  "53518684": {
+    "compe4": "0269",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.business.hsbc.com.br/-/media/new-logos/svg/hsbc-logo-mobile-black.svg",
+    "sourceSha256": "b1d007cf8c39233cd6ea96203af5980b0645d82968616a6e32fed757d4e8155b",
+    "svg": true,
+    "updatedAt": "2026-10-18"
+  },
   "53908413": {
     "compe4": "0773",
     "org": null,
@@ -736,6 +844,15 @@
     "sourceSha256": "44635386f28b86ce8151ec98a4ccff31f48b29a5e1ddb8f9eb840961ad352e67",
     "svg": false,
     "updatedAt": "2026-07-17"
+  },
+  "56106523": {
+    "compe4": "0763",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://internet-banking.vuepay.com.br/assets/images/vuepay/horizontal_preto_fundo_transp.png",
+    "sourceSha256": "9701296a127b306b1847e3dd4ba399d1b4093fc5eb42cfe850d037b71c87cad7",
+    "svg": false,
+    "updatedAt": "2026-10-18"
   },
   "58160789": {
     "compe4": "0422",
@@ -917,6 +1034,15 @@
     "svg": false,
     "updatedAt": "2026-07-24"
   },
+  "62073200": {
+    "compe4": "0755",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.bankofamerica.com/content/images/ContextualSiteGraphics/Logos/en_US/logos/colored_flagscape-v2.png",
+    "sourceSha256": "252e9d0b1f3b944fc21ca663b0a3195854d38145d4e02ae580a92f2976207991",
+    "svg": false,
+    "updatedAt": "2026-10-18"
+  },
   "62144175": {
     "compe4": "0643",
     "org": null,
@@ -934,6 +1060,15 @@
     "sourceSha256": "a4a63bd7d76bd7f3377335ae2a4c9d1f80d602f6a69fd5dba375f46d269272a6",
     "svg": true,
     "updatedAt": "2026-07-17"
+  },
+  "62232889": {
+    "compe4": "0707",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://ri.daycoval.com.br/Content/images/empresas/logo-D.svg",
+    "sourceSha256": "bc2f4ad0c46c3da4a379e273695c18c212a449c80080d851235075d08b4a3a48",
+    "svg": true,
+    "updatedAt": "2026-10-18"
   },
   "62285390": {
     "compe4": "0363",
@@ -989,6 +1124,15 @@
     "svg": false,
     "updatedAt": "2026-07-17"
   },
+  "73647935": {
+    "compe4": null,
+    "org": "Confederacao Nacional das Cooperativas do Sicoob",
+    "cnpj": "04891850000188",
+    "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
+    "sourceSha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
+    "svg": true,
+    "updatedAt": "2026-10-18"
+  },
   "74014747": {
     "compe4": "0565",
     "org": "AGORA CTVM S.A.",
@@ -997,6 +1141,15 @@
     "sourceSha256": "8af0df804c26587d57ea58319297bbb8e5c7171dc29a6def0f0aceb2a5ea6514",
     "svg": false,
     "updatedAt": "2026-07-17"
+  },
+  "75647891": {
+    "compe4": "0222",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.credit-agricole.fr/content/dam/assetsca/npc/logos/icone_ca_pwa.png",
+    "sourceSha256": "3358b6f2d9351fd1fec303210400a4514cc55a851ad97d202cfc0f840e3f54a7",
+    "svg": false,
+    "updatedAt": "2026-10-18"
   },
   "78632767": {
     "compe4": "0712",
@@ -1016,6 +1169,15 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
+  "91884981": {
+    "compe4": "0217",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://bancojohndeere.com.br/images/logo/logo.webp",
+    "sourceSha256": "861a341559fd353653d3d5440e6709cfec3e47bfa68049939fa2899d4b65a419",
+    "svg": false,
+    "updatedAt": "2026-10-18"
+  },
   "92702067": {
     "compe4": "0041",
     "org": "BCO DO ESTADO DO RS S.A.",
@@ -1024,6 +1186,24 @@
     "sourceSha256": "e6568098371a05f49599e45741b57da407cc27271525fa436cfef776090da87d",
     "svg": true,
     "updatedAt": "2026-07-17"
+  },
+  "92874270": {
+    "compe4": "0654",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.bancodigimais.com.br/images/icons/logos/icon-logo-horizontal-dark.svg",
+    "sourceSha256": "bbb876d6e1e257e1a5e577c6b6088a40736f3c4f28e1452a70c9bddb22e7a441",
+    "svg": true,
+    "updatedAt": "2026-10-18"
+  },
+  "92894922": {
+    "compe4": "0212",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.original.com.br/src/img/ico-original-green.svg",
+    "sourceSha256": "2b684ca27391631c75b4a9d37ed7dbb407738922424dc37c4375ba1618594308",
+    "svg": true,
+    "updatedAt": "2026-10-18"
   },
   "00000000": {
     "compe4": "0001",
@@ -1151,6 +1331,15 @@
     "svg": true,
     "updatedAt": "2026-07-17"
   },
+  "01522368": {
+    "compe4": "0752",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://cdn.invest.bnpparibas/build/images/logo-bnp-mobile.svg",
+    "sourceSha256": "d251834541121769fc8ef3fc72b84d9b6895eca0915d801be9aeeb28a04011fa",
+    "svg": true,
+    "updatedAt": "2026-10-18"
+  },
   "01722480": {
     "compe4": null,
     "org": "QUERO-QUERO VERDECARD INSTITUICAO DE PAGAMENTO S.A.",
@@ -1258,6 +1447,15 @@
     "sourceSha256": "a4430c55f67f007e67a62b316c682c05cc2bab6cc5a23d92ba6a9ad685f9a0af",
     "svg": true,
     "updatedAt": "2026-07-17"
+  },
+  "03323840": {
+    "compe4": "0025",
+    "org": null,
+    "cnpj": null,
+    "uri": "https://www.alfa.com.br/lumis-theme/br/com/alfa/consignado/theme/alfa-consignado/assets/images/logo-alfa.svg",
+    "sourceSha256": "939342df43e846d40d95a11b5e3cdce8e6e314effdf1f4ea158f6bc2ba1b756b",
+    "svg": true,
+    "updatedAt": "2026-10-18"
   },
   "03609817": {
     "compe4": "0040",
