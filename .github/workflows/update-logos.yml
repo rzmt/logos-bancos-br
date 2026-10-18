@@ -3,15 +3,25 @@ name: Atualizar logos
 # Roda o pipeline contra as fontes oficiais (BCB/STR + Open Finance) e, se
 # houver mudança, abre um PR com o relatório no corpo e o diff visual dos PNGs.
 #
-# Diffs "seguros" — nenhum arquivo em logos/ alterado e churn pequeno de
-# instituições — são validados (lint + typecheck + testes + build), mergeados
-# e publicados sem intervenção humana. Qualquer mudança em logos/ continua
-# exigindo revisão visual no PR: em contexto bancário, logo errado é pior que
-# logo nenhum. Se o pipeline falhar, uma issue é aberta/atualizada (dead-man's
-# switch) — o mantenedor só age quando o robô chama.
+# Diffs "seguros" — nenhum arquivo em logos/ alterado, nenhuma instituição
+# existente com logo diferente e churn pequeno de instituições — são validados
+# (lint + typecheck + testes + build), mergeados e publicados sem intervenção
+# humana. O resto exige revisão visual no PR: em contexto bancário, logo
+# errado é pior que logo nenhum. "Logo diferente" (perdeu, ganhou ou trocou de
+# arquivo) é checado à parte porque acontece sem tocar em logos/: afiliadas de
+# cooperativas dividem um arquivo por marca e assets nunca são apagados.
+#
+# Alertas (label pipeline-falhou, um título por assunto): se este workflow
+# falhar, a issue "Pipeline semanal falhou" é aberta/atualizada (dead-man's
+# switch) e fecha sozinha na próxima rodada verde — o mantenedor só age quando
+# o robô chama. O alerta do guard de permanência fica aberto até uma pessoa
+# fechar, depois de restaurar os arquivos.
 on:
   schedule:
-    - cron: '0 9 * * 1' # segundas 09:00 UTC (06:00 em Brasília)
+    # Segundas 09:23 UTC (06:23 em Brasília). Fora do minuto cheio, o horário
+    # mais congestionado do agendador do GitHub: em '0 9' as rodadas começaram
+    # de 37 min a 9h30 atrasadas.
+    - cron: '23 9 * * 1'
   workflow_dispatch:
 
 permissions:
@@ -87,6 +97,8 @@ jobs:
               echo ''
               echo 'URLs já publicadas podem quebrar em consumidores externos. Restaurar os arquivos (ou remover conscientemente, atualizando a política no README).'
             } >> pipeline/report.md
+            # Alerta com título próprio, que não fecha sozinho numa rodada verde:
+            # uma pessoa fecha depois de restaurar os arquivos.
             aberta=$(gh issue list --label pipeline-falhou --state open --json number,title --jq '[.[] | select(.title | contains("permanência"))][0].number')
             if [ -z "$aberta" ]; then
               {
@@ -117,12 +129,19 @@ jobs:
             for (const x of antes) if (!depois.has(x)) n++;
             console.log(n);
           ")
+          # Instituição que já existia e perdeu, ganhou ou trocou de logo — pode
+          # não tocar em logos/ (afiliadas de cooperativas dividem um arquivo por
+          # marca). A lista vai para o relatório (corpo do PR). Erro aqui derruba
+          # o step: nunca vira "0" (fail closed).
+          trocas=$(npx tsx pipeline/logo-changes.ts --report pipeline/report.md)
+          case "$trocas" in ''|*[!0-9]*) echo "::error::contagem inválida de logos trocados: '$trocas'"; exit 1 ;; esac
           if [ "$mudancas" = "0" ]; then estado=sem-mudanca
           elif [ "${{ steps.permanencia.outputs.removidos }}" != "0" ]; then estado=revisao
+          elif [ "$trocas" != "0" ]; then estado=revisao
           elif [ "$logos_mudados" = "0" ] && [ "$churn" -le 3 ]; then estado=seguro
           else estado=revisao; fi
           echo "estado=$estado" >> "$GITHUB_OUTPUT"
-          echo "Diff: $mudancas arquivo(s) mudado(s), $logos_mudados em logos/, churn de instituições $churn → $estado"
+          echo "Diff: $mudancas arquivo(s) mudado(s), $logos_mudados em logos/, churn de instituições $churn, $trocas instituição(ões) com logo diferente → $estado"
 
       - name: Fechar PR órfão (fontes não divergem mais da main)
         if: steps.diff.outputs.estado == 'sem-mudanca'
@@ -254,15 +273,20 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh pr comment '${{ steps.pr.outputs.pull-request-number }}' --body \
-            'Auto-merge pulado: o diff altera arquivos de logo (ou muda muitas instituições) e precisa de revisão visual — checklist no CONTRIBUTING.md. Depois do merge, o release é automático.'
+            'Auto-merge pulado: o diff altera arquivos de logo, muda o logo de instituições que já existiam (lista no corpo do PR) ou muda muitas instituições, e precisa de revisão visual — checklist no CONTRIBUTING.md. Depois do merge, o release é automático.'
 
       - name: Fechar alerta de falha anterior
         if: success()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          # Só o alerta deste workflow. Release (release.yml) e guard de
+          # permanência usam a mesma label, mas rodada verde daqui não os
+          # resolve: uma pessoa fecha.
+          titulo='Pipeline semanal falhou'
           url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
-          for issue in $(gh issue list --label pipeline-falhou --state open --json number --jq '.[].number'); do
+          for issue in $(gh issue list --label pipeline-falhou --state open --json number,title \
+            --jq ".[] | select(.title == \"$titulo\") | .number"); do
             gh issue close "$issue" --comment "Pipeline voltou a rodar com sucesso: $url"
           done
 
@@ -271,11 +295,15 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          # Casa pelo título: a mesma label marca os alertas de release e do
+          # guard de permanência, que são outros assuntos.
+          titulo='Pipeline semanal falhou'
           url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
-          aberta=$(gh issue list --label pipeline-falhou --state open --json number --jq 'first(.[]).number')
+          aberta=$(gh issue list --label pipeline-falhou --state open --json number,title \
+            --jq "first(.[] | select(.title == \"$titulo\")).number")
           if [ -n "$aberta" ]; then
             gh issue comment "$aberta" --body "Falhou de novo: $url"
           else
-            gh issue create --title 'Pipeline semanal falhou' --label pipeline-falhou \
+            gh issue create --title "$titulo" --label pipeline-falhou \
               --body "A atualização automática falhou — sem ação, o dataset fica para trás das fontes. Run: $url"
           fi

@@ -6,19 +6,23 @@ name: Release
 # já publicada são puladas, então re-executar é sempre seguro. Se a versão do
 # HEAD já foi publicada a partir de OUTRO commit com dataset diferente, o run
 # falha de propósito (é preciso um bump novo — nunca terminar verde com o npm
-# para trás da main). Falhas abrem/atualizam a issue "pipeline-falhou".
+# para trás da main). Falhas abrem/atualizam a issue "Release automático
+# falhou" (label pipeline-falhou), que só fecha à mão.
 #
-# Gatilhos: push na main tocando package.json (merge humano do PR semanal ou
-# bump manual) e workflow_dispatch (o update-logos.yml chama após o
-# auto-merge, porque eventos feitos com o GITHUB_TOKEN não disparam gatilhos
-# de push). Autenticação no npm: trusted publishing (OIDC, sem segredo) quando
-# configurado no npmjs.com; senão, o secret NPM_TOKEN (legado — expira). Ver
-# RUNBOOK.md.
+# Gatilhos: push na main que toque package.json, data/ ou logos/ (merge humano
+# do PR semanal, bump manual, dataset alterado à mão) e workflow_dispatch (o
+# update-logos.yml chama após o auto-merge, porque eventos feitos com o
+# GITHUB_TOKEN não disparam gatilhos de push). data/ e logos/ estão aí para
+# que dataset novo sem bump não fique fora do npm em silêncio: com a versão
+# já publicada, o passo de versão órfã falha e abre o alerta. Push só de
+# workflows, docs ou código sem bump não dispara release. Autenticação no
+# npm: trusted publishing (OIDC, sem segredo) quando configurado no
+# npmjs.com; senão, o secret NPM_TOKEN (legado — expira). Ver RUNBOOK.md.
 on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [package.json]
+    paths: [package.json, 'data/**', 'logos/**']
 
 permissions:
   contents: write
@@ -112,11 +116,16 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          # Casa pelo título: a mesma label marca os alertas do pipeline
+          # semanal e do guard de permanência, que são outros assuntos. Não
+          # fecha sozinho: uma pessoa fecha quando o npm alcançar a main.
+          titulo='Release automático falhou'
           url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
-          aberta=$(gh issue list --label pipeline-falhou --state open --json number --jq 'first(.[]).number')
+          aberta=$(gh issue list --label pipeline-falhou --state open --json number,title \
+            --jq "first(.[] | select(.title == \"$titulo\")).number")
           if [ -n "$aberta" ]; then
             gh issue comment "$aberta" --body "Release falhou: $url"
           else
-            gh issue create --title 'Release automático falhou' --label pipeline-falhou \
+            gh issue create --title "$titulo" --label pipeline-falhou \
               --body "O release não completou — o npm/CDN podem estar para trás da main. Re-executar o run é seguro (idempotente). Run: $url"
           fi

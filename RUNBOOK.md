@@ -9,21 +9,25 @@ Guia de contribuição (adicionar logo, promover sugestão, rodar o pipeline):
 
 ## O ciclo normal (nenhuma ação humana)
 
-Toda segunda, 06:00 (Brasília), o workflow
+Toda segunda, 06:23 (Brasília; 09:23 UTC), o workflow
 [`update-logos.yml`](.github/workflows/update-logos.yml):
 
 1. roda o pipeline contra BCB (STR + Pix) e Open Finance;
 2. confere o **guard de permanência** (abaixo);
 3. classifica o diff:
-   - **só dados**, churn de até 3 ISPBs → valida, faz merge e libera release
-     sozinho;
-   - **mexe em `logos/`** → abre PR e **espera revisão visual humana**;
-4. em caso de falha, abre/atualiza a issue com a label `pipeline-falhou`.
+   - **só dados**, churn de até 3 ISPBs e nenhuma instituição existente com
+     logo diferente → valida, faz merge e libera release sozinho;
+   - **mexe em `logos/`**, ou alguma instituição que já existia **perdeu,
+     ganhou ou trocou de logo** (mesmo sem arquivo novo: afiliadas de
+     cooperativas dividem um arquivo por marca) → abre PR, com a lista no
+     corpo, e **espera revisão visual humana**;
+4. em caso de falha, abre/atualiza a issue `Pipeline semanal falhou` (label
+   `pipeline-falhou`), que fecha sozinha na próxima rodada verde.
 
-Merge na `main` que toque `package.json` dispara
+Push na `main` que toque `package.json`, `data/` ou `logos/` dispara
 [`release.yml`](.github/workflows/release.yml): testes → `npm publish
 --provenance` → tag → GitHub Release. É idempotente: reexecutar é sempre
-seguro.
+seguro. Push só de workflows, docs ou código sem bump não dispara release.
 
 **Portanto:** só aja quando aparecer (a) um PR aguardando revisão visual ou
 (b) uma issue `pipeline-falhou`.
@@ -37,6 +41,13 @@ acrescente a URL em `denylistUris` (`pipeline/config.json`), rode
 `npm run pipeline` localmente e atualize o PR. Aprovado, é só mergear: o
 release sai sozinho.
 
+A seção **"Logo diferente em instituições que já existiam"** do corpo do PR
+lista quem perdeu, ganhou ou trocou de arquivo — mudança que não aparece no
+diff de `logos/`. Confira cada linha. Dezenas de afiliadas de uma marca
+perdendo o logo de uma vez costuma ser a organização do sistema fora do
+diretório Open Finance naquela semana: não faça merge; a próxima rodada
+refaz o PR (ou o fecha, se não sobrar diferença).
+
 Checklist detalhado: [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Guard de permanência
@@ -49,7 +60,19 @@ O workflow baixa o `logo-urls.min.json` publicado no npm e confere que todo
 arquivo referenciado ainda existe na árvore. Se algum sumiu: o diff vira
 revisão humana, o relatório lista os ausentes e uma issue é aberta. Nesse
 caso, **restaure os arquivos** (`git checkout <commit> -- logos/...`) em vez de
-seguir em frente.
+seguir em frente, e depois feche a issue — ela não fecha sozinha.
+
+## Alertas (issues `pipeline-falhou`)
+
+Uma label, três assuntos, cada um com título próprio. Falha repetida comenta
+na issue aberta do mesmo título em vez de abrir outra, e cada passo só mexe
+no alerta do próprio assunto:
+
+| Issue | Quem abre | Quem fecha |
+|---|---|---|
+| `Pipeline semanal falhou` | `update-logos.yml` | ele mesmo, na próxima rodada verde |
+| `Release automático falhou` | `release.yml` | uma pessoa, quando o npm alcançar a `main` |
+| `Guard de permanência: asset publicado sumiu da árvore` | guard de permanência | uma pessoa, depois de restaurar os arquivos |
 
 ## Quando quebrar
 
@@ -67,8 +90,14 @@ volta a acontecer enquanto a publicação depender do `NPM_TOKEN`.
    → *GitHub Actions*;
 2. preencha (diferencia maiúsculas): organização/usuário `rzmt`, repositório
    `logos-bancos-br`, workflow `release.yml`, environment vazio;
-3. reexecute o release: `gh workflow run release.yml --ref main` (idempotente);
-4. com a publicação funcionando, em **Settings → Publishing access** marque
+3. em **Allowed actions**, marque **`npm publish`**: configurações criadas
+   depois de 03/09/2026 vêm só com `npm stage publish`, e aí o `npm publish`
+   do workflow é recusado;
+4. reexecute o release **logo em seguida** (idempotente):
+   `gh workflow run release.yml --ref main`. Configuração nova que não tiver
+   uma publicação bem-sucedida em 2 dias expira e não pode mais ser usada nem
+   editada;
+5. com a publicação funcionando, em **Settings → Publishing access** marque
    *Require two-factor authentication and disallow tokens* e apague o secret
    `NPM_TOKEN` do GitHub — não sobra segredo para vencer ou vazar.
 
@@ -109,15 +138,21 @@ curl -sL -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 
 
 ### Release não saiu depois de um merge
 
-Merge feito pela linha de comando (`gh pr merge`) não dispara o gatilho de
-push. Rode `gh workflow run release.yml --ref main`.
+O push só dispara o release se tocar `package.json`, `data/` ou `logos/`, e
+merge feito com o `GITHUB_TOKEN` (de dentro de um workflow) não dispara
+gatilho de push nenhum. Rode `gh workflow run release.yml --ref main`.
 
 ### `main` e npm divergentes
 
 `release.yml` detecta "versão órfã": se a versão do `package.json` já foi
 publicada a partir de outro commit e o dataset mudou, ele **falha de
-propósito** em vez de terminar verde com o npm defasado. Conserto: um bump
-novo (`npm version patch --no-git-tag-version`, commit, push).
+propósito** (alerta `Release automático falhou`) em vez de terminar verde
+com o npm defasado. Como push em `data/` ou `logos/` também dispara o
+release, isso aparece no próprio push que trouxe dataset sem bump (ex.: PR
+semanal cujo número de versão foi usado por um patch manual nesse
+meio-tempo). Conserto: um bump novo
+(`npm version patch --no-git-tag-version`, commit, push) — de preferência no
+mesmo push dos dados — e feche o alerta quando a versão sair.
 
 ## Ruídos conhecidos (não são bugs)
 
@@ -129,6 +164,10 @@ novo (`npm version patch --no-git-tag-version`, commit, push).
 - **`pages-build-deployment` cancelado**: dois merges seguidos; o GitHub
   cancela o deploy anterior. O último conclui.
 - **Órfãos no relatório**: esperado, ver guard de permanência.
+- **Rodada de segunda atrasada**: o agendador do GitHub atrasa cron em horário
+  de pico — no minuto cheio, a rodada chegou a começar 9h30 depois; por isso
+  o cron é 09:23 UTC. Atraso de horas ainda é possível. Se a rodada não
+  aparecer até o fim do dia, dispare à mão: `gh workflow run update-logos.yml`.
 
 ## Decisões que valem manter
 

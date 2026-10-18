@@ -99,13 +99,18 @@ Logo errado em produção? Abra issue com o template **"Logo incorreto"**.
 Toda segunda-feira o workflow `update-logos.yml` roda o pipeline e, havendo mudança, abre um PR
 (sem mudança, não abre nada). O que acontece depois depende do diff:
 
-- **Diff só de dados** (nenhum arquivo em `logos/` alterado, delta de até 3 instituições): o
-  workflow valida (typecheck + testes), dispara o CI no PR, faz o **merge sozinho** e chama o
-  `release.yml` — versão nova no npm sem intervenção humana.
-- **Diff com logos** (novos, atualizados) ou delta grande: o PR **fica aberto para revisão
-  visual humana** — em contexto bancário, logo errado é pior que logo nenhum.
-- **Pipeline falhou**: uma issue com a label `pipeline-falhou` é aberta/atualizada. Só é preciso
-  agir quando essa issue (ou um PR aguardando revisão) aparecer.
+- **Diff só de dados** (nenhum arquivo em `logos/` alterado, nenhuma instituição existente com
+  logo diferente, delta de até 3 instituições): o workflow valida (typecheck + testes), dispara
+  o CI no PR, faz o **merge sozinho** e chama o `release.yml` — versão nova no npm sem
+  intervenção humana.
+- **Diff com logos** (novos, atualizados), **instituição existente que perdeu, ganhou ou trocou
+  de logo** (mesmo sem arquivo novo — afiliadas de cooperativas dividem um arquivo por marca) ou
+  delta grande: o PR **fica aberto para revisão visual humana** — em contexto bancário, logo
+  errado é pior que logo nenhum.
+- **Pipeline falhou**: a issue `Pipeline semanal falhou` (label `pipeline-falhou`) é
+  aberta/atualizada e fecha sozinha na próxima rodada verde. Só é preciso agir quando essa issue
+  (ou um PR aguardando revisão) aparecer. Os alertas de release e do guard de permanência, com a
+  mesma label, só fecham à mão ([RUNBOOK](RUNBOOK.md#alertas-issues-pipeline-falhou)).
 
 Checklist de revisão para os PRs que ficam abertos:
 
@@ -114,17 +119,21 @@ Checklist de revisão para os PRs que ficam abertos:
    deve fazer sentido — rebrand real da instituição. Se um logo virou algo estranho (página de
    erro rasterizada, marca de parceiro), a fonte quebrou: adicione a URL em `denylistUris`,
    rode o pipeline de novo e atualize o PR.
-3. **Novos bancos** na lista (o BCB incluiu/renomeou instituições) não exigem nada — só conferir
+3. **Logo diferente em instituição existente** (seção ⚠️ no corpo do PR): quem perdeu, ganhou ou
+   trocou de arquivo sem aparecer no diff dos PNGs. Confira cada linha; dezenas de afiliadas de
+   uma marca perdendo o logo de uma vez costuma ser a organização do sistema fora do diretório
+   Open Finance naquela semana — não faça merge.
+4. **Novos bancos** na lista (o BCB incluiu/renomeou instituições) não exigem nada — só conferir
    que os nomes fazem sentido.
-4. **Falhas**: o relatório separa *fonte quebrada* (precisa de ação: URL nova em `forcedUris`
+5. **Falhas**: o relatório separa *fonte quebrada* (precisa de ação: URL nova em `forcedUris`
    ou `denylistUris`), *certificado* (problema no servidor da instituição) e *bloqueio de rede*
    (dobrado; alguns WAFs bloqueiam os IPs do GitHub Actions mas aceitam requisições locais).
    Falha nunca remove um logo já publicado; se precisar forçar a atualização de um logo que o CI
    não alcança, rode `npm run pipeline` localmente e suba num PR. Detalhes no
    [RUNBOOK](RUNBOOK.md).
-5. **Sugestões novas** → promova a `forcedMatches` ou rejeite em `rejectedMatches` (seção acima).
-6. **Merge** → pronto. O PR já traz o bump de versão; o merge dispara o `release.yml`, que
-   cria a tag + Release no GitHub e publica no npm sozinho.
+6. **Sugestões novas** → promova a `forcedMatches` ou rejeite em `rejectedMatches` (seção acima).
+7. **Merge** → pronto. O PR já traz o bump de versão (quando a atual já está no npm); o merge
+   dispara o `release.yml`, que cria a tag + Release no GitHub e publica no npm sozinho.
 
 ## Testes
 
@@ -134,19 +143,25 @@ nova de matching precisa de teste — o custo de um logo errado é alto.
 
 ## Release / publicação no npm
 
-O release é automático: o workflow `release.yml` roda a cada push na `main` que altere o
-`package.json` (e via `workflow_dispatch`) e publica **qualquer versão ainda não lançada** — cria
-a tag + Release no GitHub e publica no npm com `--provenance` (build rastreável ao commit/Action).
-É idempotente: tag já criada e versão já publicada são puladas.
+O release é automático: o workflow `release.yml` roda a cada push na `main` que altere
+`package.json`, `data/` ou `logos/` (e via `workflow_dispatch`) e publica **qualquer versão ainda
+não lançada** — cria a tag + Release no GitHub e publica no npm com `--provenance` (build
+rastreável ao commit/Action). É idempotente: tag já criada e versão já publicada são puladas. Push
+só de workflows, docs ou código sem bump não dispara nada.
 
-- **Patch semanal**: o PR automático já vem com o bump; merge = release. Nada a fazer.
+- **Patch semanal**: o PR automático traz o bump quando preciso; merge = release. Nada a fazer.
 - **Minor/major manual**: `npm version <minor|major> --no-git-tag-version`, commit
   (`build: vX.Y.Z`) e push na `main` — o `release.yml` faz o resto. Não crie a tag à mão.
+- **Logo ou dado à mão**: suba o bump no mesmo push. Se `data/` ou `logos/` mudar e a versão do
+  `package.json` já estiver no npm, o release **falha de propósito** e abre o alerta
+  `Release automático falhou` — o npm nunca fica para trás da `main` em silêncio.
 
 Pré-requisito (uma vez): *trusted publisher* do GitHub Actions configurado no npmjs.com para o
-workflow `release.yml` — publicação por OIDC, sem token para vencer. O secret `NPM_TOKEN` só é
-usado como alternativa enquanto isso não estiver configurado (passo a passo no
-[RUNBOOK](RUNBOOK.md)).
+workflow `release.yml` — publicação por OIDC, sem token para vencer. Em **Allowed actions**, marque
+`npm publish` (configurações criadas depois de 03/09/2026 vêm só com `npm stage publish`) e rode
+o release logo depois de criar: sem publicação bem-sucedida em 2 dias, a configuração expira. O
+secret `NPM_TOKEN` só é usado como alternativa enquanto isso não estiver configurado (passo a
+passo no [RUNBOOK](RUNBOOK.md)).
 
 Convenção de versão: atualização de logos/dados → `patch`; mudanças na API/CLI → `minor`;
 quebras → `major`.
