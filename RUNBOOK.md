@@ -15,19 +15,23 @@ Toda segunda, 06:23 (Brasília; 09:23 UTC), o workflow
 1. roda o pipeline contra BCB (STR + Pix) e Open Finance;
 2. confere o **guard de permanência** (abaixo);
 3. classifica o diff:
-   - **só dados**, churn de até 3 ISPBs e nenhuma instituição existente com
-     logo diferente → valida, faz merge e libera release sozinho;
+   - **só dados**, churn de até 3 ISPBs e nenhuma instituição perdendo ou
+     trocando de logo → valida, faz merge e libera release sozinho (até 3
+     instituições ganhando o logo da marca pela regra de cooperativas também
+     passam: é a cooperativa que o BCB renomeia com o nome do sistema);
    - **mexe em `logos/`**, ou alguma instituição que já existia **perdeu,
-     ganhou ou trocou de logo** (mesmo sem arquivo novo: afiliadas de
+     trocou de logo ou ganhou logo fora da regra de marca**, ou mais de 3
+     ganharam pela regra de marca (mesmo sem arquivo novo: afiliadas de
      cooperativas dividem um arquivo por marca) → abre PR, com a lista no
      corpo, e **espera revisão visual humana**;
 4. em caso de falha, abre/atualiza a issue `Pipeline semanal falhou` (label
    `pipeline-falhou`), que fecha sozinha na próxima rodada verde.
 
 Push na `main` que toque `package.json`, `data/` ou `logos/` dispara
-[`release.yml`](.github/workflows/release.yml): testes → `npm publish
---provenance` → tag → GitHub Release. É idempotente: reexecutar é sempre
-seguro. Push só de workflows, docs ou código sem bump não dispara release.
+[`release.yml`](.github/workflows/release.yml): testes → build +
+`npm run test:package` → `npm publish --provenance` → tag → GitHub Release. É
+idempotente: disparar de novo é sempre seguro. Push só de workflows, docs ou
+código sem bump não dispara release.
 
 **Portanto:** só aja quando aparecer (a) um PR aguardando revisão visual ou
 (b) uma issue `pipeline-falhou`.
@@ -41,9 +45,10 @@ acrescente a URL em `denylistUris` (`pipeline/config.json`), rode
 `npm run pipeline` localmente e atualize o PR. Aprovado, é só mergear: o
 release sai sozinho.
 
-A seção **"Logo diferente em instituições que já existiam"** do corpo do PR
-lista quem perdeu, ganhou ou trocou de arquivo — mudança que não aparece no
-diff de `logos/`. Confira cada linha. Dezenas de afiliadas de uma marca
+A seção **"Logo diferente em instituições"** do corpo do PR lista quem
+perdeu, ganhou ou trocou de arquivo, e quem entrou nas listas já com o logo
+da marca. Isso pode não aparecer no diff de `logos/`. Confira cada linha.
+Dezenas de afiliadas de uma marca
 perdendo o logo de uma vez costuma ser a organização do sistema fora do
 diretório Open Finance naquela semana: não faça merge; a próxima rodada
 refaz o PR (ou o fecha, se não sobrar diferença).
@@ -64,14 +69,15 @@ seguir em frente, e depois feche a issue — ela não fecha sozinha.
 
 ## Alertas (issues `pipeline-falhou`)
 
-Uma label, três assuntos, cada um com título próprio. Falha repetida comenta
-na issue aberta do mesmo título em vez de abrir outra, e cada passo só mexe
-no alerta do próprio assunto:
+Uma label, três assuntos, cada um com título próprio, e cada passo só mexe
+no alerta do próprio assunto. Falha repetida do pipeline ou do release
+comenta na issue aberta do mesmo título em vez de abrir outra; o guard não
+duplica a issue dele.
 
 | Issue | Quem abre | Quem fecha |
 |---|---|---|
 | `Pipeline semanal falhou` | `update-logos.yml` | ele mesmo, na próxima rodada verde |
-| `Release automático falhou` | `release.yml` | uma pessoa, quando o npm alcançar a `main` |
+| `Release automático falhou` | `release.yml` | ele mesmo, no próximo release verde na ponta da `main` (npm em dia com a `main`) |
 | `Guard de permanência: asset publicado sumiu da árvore` | guard de permanência | uma pessoa, depois de restaurar os arquivos |
 
 ## Quando quebrar
@@ -93,13 +99,20 @@ volta a acontecer enquanto a publicação depender do `NPM_TOKEN`.
 3. em **Allowed actions**, marque **`npm publish`**: configurações criadas
    depois de 03/09/2026 vêm só com `npm stage publish`, e aí o `npm publish`
    do workflow é recusado;
-4. reexecute o release **logo em seguida** (idempotente):
-   `gh workflow run release.yml --ref main`. Configuração nova que não tiver
-   uma publicação bem-sucedida em 2 dias expira e não pode mais ser usada nem
-   editada;
+4. dispare o release **logo em seguida** (idempotente):
+   `gh workflow run release.yml --ref main`. Não use *Re-run* nos runs
+   antigos linkados na issue: ele repete o commit e o workflow daquele run.
+   Configuração nova sem uma publicação bem-sucedida em 2 dias expira; aí,
+   apague e crie de novo. Se houver PR semanal aberto, faça o merge dele
+   antes (o push do merge publica a versão pendente); se a versão sair antes
+   do merge, rode `gh workflow run update-logos.yml` para o PR ganhar o bump;
 5. com a publicação funcionando, em **Settings → Publishing access** marque
    *Require two-factor authentication and disallow tokens* e apague o secret
-   `NPM_TOKEN` do GitHub — não sobra segredo para vencer ou vazar.
+   `NPM_TOKEN` do GitHub — não sobra segredo para vencer ou vazar. O token
+   vencido pode ser apagado antes: sem ele, falha de OIDC aparece como erro de
+   autenticação (`ENEEDAUTH`), e não como o E404 enganoso.
+
+A issue `Release automático falhou` fecha sozinha quando o release passar.
 
 O workflow já está pronto para os dois modos: o npm tenta OIDC primeiro e só
 usa o `NPM_TOKEN` se não houver trusted publisher configurado.
@@ -110,6 +123,14 @@ usa o `NPM_TOKEN` se não houver trusted publisher configurado.
 2. permissão de **read and write** apenas no pacote `logos-bancos-br`;
 3. GitHub → Settings → Secrets and variables → Actions → atualize `NPM_TOKEN`;
 4. reexecute o release: `gh workflow run release.yml --ref main`.
+
+### Release falhou em "Teste do pacote empacotado"
+
+Nada foi publicado: o tarball que iria para o npm não passou no
+`npm run test:package` (require/import, `logos-bancos-br/node`, dados, CLI,
+`react-native.js` e tipos). Reproduza com `npm ci && npm run build && npm run
+test:package`, corrija na `main` e dispare o release de novo
+(`gh workflow run release.yml --ref main`).
 
 ### Falhas de download no relatório
 
@@ -150,9 +171,11 @@ propósito** (alerta `Release automático falhou`) em vez de terminar verde
 com o npm defasado. Como push em `data/` ou `logos/` também dispara o
 release, isso aparece no próprio push que trouxe dataset sem bump (ex.: PR
 semanal cujo número de versão foi usado por um patch manual nesse
-meio-tempo). Conserto: um bump novo
-(`npm version patch --no-git-tag-version`, commit, push) — de preferência no
-mesmo push dos dados — e feche o alerta quando a versão sair.
+meio-tempo). Se a `main` já estiver numa versão mais nova (bump num push logo
+depois dos dados), o run antigo só deixa um aviso e o run do bump publica.
+Conserto: um bump novo (`npm version patch --no-git-tag-version`, commit,
+push), de preferência no mesmo push dos dados; o alerta fecha sozinho quando
+a versão sair.
 
 ## Ruídos conhecidos (não são bugs)
 

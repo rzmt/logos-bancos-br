@@ -99,18 +99,20 @@ Logo errado em produção? Abra issue com o template **"Logo incorreto"**.
 Toda segunda-feira o workflow `update-logos.yml` roda o pipeline e, havendo mudança, abre um PR
 (sem mudança, não abre nada). O que acontece depois depende do diff:
 
-- **Diff só de dados** (nenhum arquivo em `logos/` alterado, nenhuma instituição existente com
-  logo diferente, delta de até 3 instituições): o workflow valida (typecheck + testes), dispara
-  o CI no PR, faz o **merge sozinho** e chama o `release.yml` — versão nova no npm sem
-  intervenção humana.
-- **Diff com logos** (novos, atualizados), **instituição existente que perdeu, ganhou ou trocou
-  de logo** (mesmo sem arquivo novo — afiliadas de cooperativas dividem um arquivo por marca) ou
-  delta grande: o PR **fica aberto para revisão visual humana** — em contexto bancário, logo
-  errado é pior que logo nenhum.
+- **Diff só de dados** (nenhum arquivo em `logos/` alterado, nenhuma instituição existente
+  perdendo ou trocando de logo, delta de até 3 instituições): o workflow valida (lint +
+  typecheck + testes + build + teste do pacote), dispara o CI no PR, faz o **merge sozinho** e
+  chama o `release.yml` — versão nova no npm sem intervenção humana. Até 3 instituições ganhando
+  o logo da marca pela regra de cooperativas também passam.
+- **Diff com logos** (novos, atualizados), **instituição existente que perdeu, trocou de logo
+  ou ganhou logo fora da regra de marca**, mais de 3 ganhos pela regra de marca (mesmo sem
+  arquivo novo — afiliadas de cooperativas dividem um arquivo por marca) ou delta grande: o PR
+  **fica aberto para revisão visual humana** — em contexto bancário, logo errado é pior que
+  logo nenhum.
 - **Pipeline falhou**: a issue `Pipeline semanal falhou` (label `pipeline-falhou`) é
   aberta/atualizada e fecha sozinha na próxima rodada verde. Só é preciso agir quando essa issue
-  (ou um PR aguardando revisão) aparecer. Os alertas de release e do guard de permanência, com a
-  mesma label, só fecham à mão ([RUNBOOK](RUNBOOK.md#alertas-issues-pipeline-falhou)).
+  (ou um PR aguardando revisão) aparecer. O alerta de release fecha sozinho no próximo release
+  verde; o do guard de permanência, à mão ([RUNBOOK](RUNBOOK.md#alertas-issues-pipeline-falhou)).
 
 Checklist de revisão para os PRs que ficam abertos:
 
@@ -119,8 +121,8 @@ Checklist de revisão para os PRs que ficam abertos:
    deve fazer sentido — rebrand real da instituição. Se um logo virou algo estranho (página de
    erro rasterizada, marca de parceiro), a fonte quebrou: adicione a URL em `denylistUris`,
    rode o pipeline de novo e atualize o PR.
-3. **Logo diferente em instituição existente** (seção ⚠️ no corpo do PR): quem perdeu, ganhou ou
-   trocou de arquivo sem aparecer no diff dos PNGs. Confira cada linha; dezenas de afiliadas de
+3. **Logo diferente em instituições** (seção ⚠️ no corpo do PR): quem perdeu, ganhou ou trocou
+   de arquivo, mesmo sem aparecer no diff dos PNGs. Confira cada linha; dezenas de afiliadas de
    uma marca perdendo o logo de uma vez costuma ser a organização do sistema fora do diretório
    Open Finance naquela semana — não faça merge.
 4. **Novos bancos** na lista (o BCB incluiu/renomeou instituições) não exigem nada — só conferir
@@ -154,7 +156,7 @@ só de workflows, docs ou código sem bump não dispara nada.
   (`build: vX.Y.Z`) e push na `main` — o `release.yml` faz o resto. Não crie a tag à mão.
 - **Logo ou dado à mão**: suba o bump no mesmo push. Se `data/` ou `logos/` mudar e a versão do
   `package.json` já estiver no npm, o release **falha de propósito** e abre o alerta
-  `Release automático falhou` — o npm nunca fica para trás da `main` em silêncio.
+  `Release automático falhou` — dataset novo não fica fora do npm em silêncio.
 
 Pré-requisito (uma vez): *trusted publisher* do GitHub Actions configurado no npmjs.com para o
 workflow `release.yml` — publicação por OIDC, sem token para vencer. Em **Allowed actions**, marque
