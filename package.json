@@ -82,7 +82,8 @@
     "logos",
     "react-native.js",
     "react-native.d.ts",
-    "llms.txt"
+    "llms.txt",
+    "DISCLAIMER.md"
   ],
   "sideEffects": false,
   "scripts": {
