@@ -34,5 +34,8 @@ jobs:
       - name: Build do pacote
         run: npm run build
 
-      - name: Conteúdo do pacote (sanidade)
-        run: npm pack --dry-run
+      # Empacota (npm pack), instala o tarball num projeto consumidor e usa o
+      # que vai para o npm: require/import, ./node, dados, CLI e tipos. Cobre
+      # o antigo `npm pack --dry-run`, que só listava o conteúdo.
+      - name: Teste do pacote empacotado
+        run: npm run test:package

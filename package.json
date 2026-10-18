@@ -88,6 +88,7 @@
   "scripts": {
     "build": "tsup",
     "test": "vitest run",
+    "test:package": "node scripts/test-package.mjs",
     "typecheck": "tsc --noEmit",
     "lint": "biome check .",
     "lint:fix": "biome check --write .",

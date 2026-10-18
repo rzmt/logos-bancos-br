@@ -110,6 +110,16 @@ jobs:
         if: steps.guard.outputs.publicar
         run: npm install -g npm@11
 
+      # Pacote quebrado nunca chega ao npm: testa o tarball (com o mesmo npm
+      # que publica) antes do publish, cujo prepublishOnly refaz o mesmo build.
+      - name: Build do pacote
+        if: steps.guard.outputs.publicar
+        run: npm run build
+
+      - name: Teste do pacote empacotado
+        if: steps.guard.outputs.publicar
+        run: npm run test:package
+
       # O npm tenta OIDC (trusted publishing) primeiro e só usa o NPM_TOKEN se
       # o pacote não tiver trusted publisher configurado no npmjs.com. Token
       # vencido aparece como "E404 Not Found - PUT" (RUNBOOK).

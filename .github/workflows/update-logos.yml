@@ -165,6 +165,7 @@ jobs:
           npm run typecheck
           npm test
           npm run build
+          npm run test:package
 
       - name: Bump de versão (a partir da última publicada no npm)
         if: steps.diff.outputs.estado != 'sem-mudanca'

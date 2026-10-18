@@ -143,6 +143,11 @@ Checklist de revisão para os PRs que ficam abertos:
 (matriz de conglomerado, URI majoritária), sanitização de SVG, dataset e a API pública. Toda regra
 nova de matching precisa de teste — o custo de um logo errado é alto.
 
+`npm run test:package` (precisa de `npm run build` antes) testa o pacote como ele chega ao usuário:
+faz o `npm pack`, instala o tarball offline num projeto temporário e confere `require`/`import`,
+`logos-bancos-br/node`, os subpaths de dados, o CLI, os `require()` do `react-native.js` e os tipos
+com `tsc` (node16 ESM/CJS e bundler) — roda no CI e antes de cada publicação no npm.
+
 ## Release / publicação no npm
 
 O release é automático: o workflow `release.yml` roda a cada push na `main` que altere
