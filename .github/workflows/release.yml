@@ -11,7 +11,9 @@ name: Release
 # Gatilhos: push na main tocando package.json (merge humano do PR semanal ou
 # bump manual) e workflow_dispatch (o update-logos.yml chama após o
 # auto-merge, porque eventos feitos com o GITHUB_TOKEN não disparam gatilhos
-# de push). Requer o secret NPM_TOKEN (ver CONTRIBUTING.md).
+# de push). Autenticação no npm: trusted publishing (OIDC, sem segredo) quando
+# configurado no npmjs.com; senão, o secret NPM_TOKEN (legado — expira). Ver
+# RUNBOOK.md.
 on:
   workflow_dispatch:
   push:
@@ -21,7 +23,7 @@ on:
 permissions:
   contents: write
   issues: write
-  id-token: write # exigido pelo npm provenance
+  id-token: write # OIDC: trusted publishing + provenance no npm
 
 concurrency:
   group: release
@@ -83,6 +85,14 @@ jobs:
         if: steps.guard.outputs.publicar
         run: npm test
 
+      # Trusted publishing exige npm >= 11.5.1; o Node 22 traz o npm 10.
+      - name: Atualizar o npm
+        if: steps.guard.outputs.publicar
+        run: npm install -g npm@11
+
+      # O npm tenta OIDC (trusted publishing) primeiro e só usa o NPM_TOKEN se
+      # o pacote não tiver trusted publisher configurado no npmjs.com. Token
+      # vencido aparece como "E404 Not Found - PUT" (RUNBOOK).
       - name: Publicar no npm
         if: steps.guard.outputs.publicar
         run: npm publish --provenance --access public

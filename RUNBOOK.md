@@ -53,16 +53,34 @@ seguir em frente.
 
 ## Quando quebrar
 
-### `NPM_TOKEN` expirado (vai acontecer)
+### Publicação no npm falhou (token vencido)
 
-Tokens granulares do npm têm validade obrigatória. Quando vencer, o
-`release.yml` falha em "Publicar no npm" com erro de autenticação — e o npm
-para de receber versões enquanto a `main` avança.
+Sintoma: o `release.yml` falha em "Publicar no npm" com
+`E404 Not Found - PUT https://registry.npmjs.org/logos-bancos-br` — é assim
+que o npm responde a um token **vencido** (não aparece como erro de
+autenticação). Tokens granulares do npm têm validade obrigatória, então isso
+volta a acontecer enquanto a publicação depender do `NPM_TOKEN`.
+
+**Conserto definitivo — trusted publishing (OIDC, sem token):**
+
+1. npmjs.com → pacote `logos-bancos-br` → **Settings** → **Trusted Publisher**
+   → *GitHub Actions*;
+2. preencha (diferencia maiúsculas): organização/usuário `rzmt`, repositório
+   `logos-bancos-br`, workflow `release.yml`, environment vazio;
+3. reexecute o release: `gh workflow run release.yml --ref main` (idempotente);
+4. com a publicação funcionando, em **Settings → Publishing access** marque
+   *Require two-factor authentication and disallow tokens* e apague o secret
+   `NPM_TOKEN` do GitHub — não sobra segredo para vencer ou vazar.
+
+O workflow já está pronto para os dois modos: o npm tenta OIDC primeiro e só
+usa o `NPM_TOKEN` se não houver trusted publisher configurado.
+
+**Paliativo — token novo (vence de novo):**
 
 1. npm → Access Tokens → **Generate New Token** → *Granular Access Token*;
 2. permissão de **read and write** apenas no pacote `logos-bancos-br`;
 3. GitHub → Settings → Secrets and variables → Actions → atualize `NPM_TOKEN`;
-4. reexecute o release: `gh workflow run release.yml --ref main` (idempotente).
+4. reexecute o release: `gh workflow run release.yml --ref main`.
 
 ### WAF bloqueando o download de um logo
 
@@ -119,6 +137,6 @@ novo (`npm version patch --no-git-tag-version`, commit, push).
 | O quê | Para quê |
 |---|---|
 | Admin no repositório | mergear, editar secrets, alterar proteção da `main` |
-| Secret `NPM_TOKEN` | publicar no npm |
-| Conta npm com acesso ao pacote | gerar o token acima |
+| Trusted publisher no npmjs.com (ou secret `NPM_TOKEN`, legado) | publicar no npm |
+| Conta npm com acesso ao pacote | configurar o trusted publisher / gerar token |
 | Conta Google dona do pacote no pub.dev | publicar `logos_bancos_br` (Dart) |

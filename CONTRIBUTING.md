@@ -136,8 +136,10 @@ a tag + Release no GitHub e publica no npm com `--provenance` (build rastreável
 - **Minor/major manual**: `npm version <minor|major> --no-git-tag-version`, commit
   (`build: vX.Y.Z`) e push na `main` — o `release.yml` faz o resto. Não crie a tag à mão.
 
-Pré-requisito (uma vez): secret `NPM_TOKEN` no repositório (Settings → Secrets → Actions) com um
-*granular access token* do npm com permissão de publicação neste pacote.
+Pré-requisito (uma vez): *trusted publisher* do GitHub Actions configurado no npmjs.com para o
+workflow `release.yml` — publicação por OIDC, sem token para vencer. O secret `NPM_TOKEN` só é
+usado como alternativa enquanto isso não estiver configurado (passo a passo no
+[RUNBOOK](RUNBOOK.md)).
 
 Convenção de versão: atualização de logos/dados → `patch`; mudanças na API/CLI → `minor`;
 quebras → `major`.
