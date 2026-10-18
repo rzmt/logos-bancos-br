@@ -74,7 +74,7 @@
     "./package.json": "./package.json"
   },
   "bin": {
-    "logos-bancos-br": "./dist/cli.js"
+    "logos-bancos-br": "dist/cli.js"
   },
   "files": [
     "dist",
