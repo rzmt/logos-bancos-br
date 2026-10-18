@@ -4,7 +4,7 @@
  */
 
 import { copyFileSync, existsSync, mkdirSync } from 'node:fs';
-import { join } from 'node:path';
+import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
   allInstitutions,
@@ -14,9 +14,15 @@ import {
   normalizeIspb,
 } from './index';
 
+// Directory of the built file (dist/), one level below the package root. The
+// CJS build uses the native __dirname: tsup's import.meta.url shim builds the
+// URL from an unescaped `file:${__filename}`, so an install path containing
+// "#", "?" or "%" would resolve outside the package. The ESM build defines
+// __dirname as undefined (tsup.config.ts) and uses import.meta.url.
+const distDir = typeof __dirname === 'string' ? __dirname : dirname(fileURLToPath(import.meta.url));
+
 function packagePath(relative: string): string {
-  // dist/node.{js,cjs} lives one level below the package root.
-  return fileURLToPath(new URL(`../${relative}`, import.meta.url));
+  return join(distDir, '..', relative);
 }
 
 /** Absolute path of the bank's normalized PNG, or null when it has no logo. */
