@@ -42,6 +42,12 @@ describe('datasets', () => {
     expect(itau?.pix?.pixParticipationType).toBe('Obrigatória');
     expect(itau?.pix?.authorizedByBcb).toBe(true);
   });
+
+  it('exposes the hand-curated displayName (null when not curated)', () => {
+    expect(byCompe(1)?.displayName).toBe('Banco do Brasil');
+    expect(byIspb('18236120')?.displayName).toBe('Nubank');
+    expect(allInstitutions().some((institution) => institution.displayName === null)).toBe(true);
+  });
 });
 
 describe('lookups', () => {

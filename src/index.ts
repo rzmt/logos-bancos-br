@@ -71,6 +71,11 @@ export interface Bank {
   name: string;
   /** Official short name (Nome Reduzido). */
   shortName: string;
+  /**
+   * Popular brand name curated by hand (e.g. "Nubank"), for bank pickers; null
+   * when not curated — fall back to `name`. Never derived from the official name.
+   */
+  displayName: string | null;
   /** Pix participation attributes; null when not an active Pix participant. */
   pix: PixInfo | null;
   /** Logo info, or null when the institution has no logo in the official sources. */
@@ -91,6 +96,11 @@ export interface PixInstitution {
   cnpj: string;
   name: string;
   shortName: string;
+  /**
+   * Popular brand name curated by hand (e.g. "Nubank"), for bank pickers; null
+   * when not curated — fall back to `name`. Never derived from the official name.
+   */
+  displayName: string | null;
   pix: PixInfo;
   logo: BankLogo | null;
 }
