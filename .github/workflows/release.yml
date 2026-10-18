@@ -121,11 +121,12 @@ jobs:
         run: npm run test:package
 
       # O npm tenta OIDC (trusted publishing) primeiro e só usa o NPM_TOKEN se
-      # o pacote não tiver trusted publisher configurado no npmjs.com. Token
-      # vencido aparece como "E404 Not Found - PUT" (RUNBOOK).
+      # a troca falhar. Token vencido aparece como "E404 Not Found - PUT"
+      # (RUNBOOK). O motivo da falha do OIDC só sai em log verbose (linhas
+      # "npm verbose oidc"), por isso o --loglevel.
       - name: Publicar no npm
         if: steps.guard.outputs.publicar
-        run: npm publish --provenance --access public
+        run: npm publish --provenance --access public --loglevel verbose
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
