@@ -7,14 +7,16 @@ name: Release
 # HEAD já foi publicada a partir de OUTRO commit com dataset diferente, o run
 # falha de propósito (é preciso um bump novo — nunca terminar verde com o npm
 # para trás da main). Falhas abrem/atualizam a issue "Release automático
-# falhou" (label pipeline-falhou), que só fecha à mão.
+# falhou" (label pipeline-falhou), que fecha sozinha quando um release
+# terminar verde na ponta da main (npm em dia com a main).
 #
 # Gatilhos: push na main que toque package.json, data/ ou logos/ (merge humano
 # do PR semanal, bump manual, dataset alterado à mão) e workflow_dispatch (o
 # update-logos.yml chama após o auto-merge, porque eventos feitos com o
 # GITHUB_TOKEN não disparam gatilhos de push). data/ e logos/ estão aí para
 # que dataset novo sem bump não fique fora do npm em silêncio: com a versão
-# já publicada, o passo de versão órfã falha e abre o alerta. Push só de
+# já publicada, o passo de versão órfã falha e abre o alerta (a não ser que
+# a main já esteja numa versão mais nova, cujo push publica). Push só de
 # workflows, docs ou código sem bump não dispara release. Autenticação no
 # npm: trusted publishing (OIDC, sem segredo) quando configurado no
 # npmjs.com; senão, o secret NPM_TOKEN (legado — expira). Ver RUNBOOK.md.
@@ -72,14 +74,28 @@ jobs:
           fi
 
       - name: Detectar versão órfã (nada a fazer, mas main difere do publicado)
-        if: ${{ !steps.guard.outputs.publicar && !steps.guard.outputs.criar_tag }}
+        if: ${{ !steps.guard.outputs.publicar }}
         run: |
           v='${{ steps.guard.outputs.versao }}'
-          if ! git diff --quiet "v$v" "$GITHUB_SHA" -- data logos; then
-            echo "::error::v$v já foi publicada a partir de outro commit e o dataset da main é diferente — faça um bump de versão para publicar o conteúdo atual."
-            exit 1
+          # Commit publicado: a tag ou, sem tag (publish ok e tag falhou), o
+          # gitHead que o npm registrou.
+          base=$(git rev-parse -q --verify "refs/tags/v$v^{commit}" || npm view "logos-bancos-br@$v" gitHead)
+          [ -n "$base" ] || { echo "::error::não sei de que commit a v$v foi publicada"; exit 1; }
+          if git diff --quiet "$base" "$GITHUB_SHA" -- data logos; then
+            echo "Nada a fazer: v$v já publicada e o dataset não mudou."
+            exit 0
           fi
-          echo "Nada a fazer: v$v já publicada e o dataset não mudou."
+          # Dados e bump em pushes separados: se a main já está em outra
+          # versão, o run do push dela publica o dataset atual. Este run, de um
+          # commit anterior, só sai.
+          git fetch -q origin main
+          v_main=$(git show origin/main:package.json | node -e "process.stdout.write(JSON.parse(require('fs').readFileSync(0, 'utf8')).version)")
+          if [ "$v_main" != "$v" ]; then
+            echo "::notice::a main já está na versão $v_main; o release dela publica o dataset atual."
+            exit 0
+          fi
+          echo "::error::v$v já foi publicada a partir de outro commit e o dataset da main é diferente — faça um bump de versão para publicar o conteúdo atual."
+          exit 1
 
       - name: Instalar dependências
         if: steps.guard.outputs.publicar || steps.guard.outputs.criar_tag
@@ -109,7 +125,33 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           v='${{ steps.guard.outputs.versao }}'
-          gh release create "v$v" --target "$GITHUB_SHA" --title "v$v" --generate-notes
+          alvo=$GITHUB_SHA
+          # Versão que já estava no npm (só faltava a tag): marca o commit publicado.
+          if [ -z '${{ steps.guard.outputs.publicar }}' ]; then alvo=$(npm view "logos-bancos-br@$v" gitHead); fi
+          gh release create "v$v" --target "$alvo" --title "v$v" --generate-notes
+
+      # Run verde na ponta da main = npm em dia com a main (publicou agora, ou
+      # a versão já estava lá com o mesmo dataset): resolve o alerta de
+      # release. Nunca deixa o release vermelho por isso (continue-on-error).
+      - name: Fechar alerta de release (npm em dia com a main)
+        if: success()
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git fetch -q origin main
+          # A main pode ter andado só em arquivos que não disparam release (docs,
+          # workflows): aí nenhum run mais novo vem, e este é o último a falar.
+          if ! git diff --quiet "$GITHUB_SHA" origin/main -- package.json data logos; then
+            echo 'A main mudou package.json, data/ ou logos/ depois deste commit; o run do push mais novo cuida do alerta.'
+            exit 0
+          fi
+          titulo='Release automático falhou'
+          url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          for issue in $(gh issue list --label pipeline-falhou --state open --json number,title \
+            --jq ".[] | select(.title == \"$titulo\") | .number"); do
+            gh issue close "$issue" --comment "Release voltou a funcionar, npm em dia com a main: $url"
+          done
 
       - name: Alertar falha (dead-man's switch)
         if: failure()
@@ -117,15 +159,15 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Casa pelo título: a mesma label marca os alertas do pipeline
-          # semanal e do guard de permanência, que são outros assuntos. Não
-          # fecha sozinho: uma pessoa fecha quando o npm alcançar a main.
+          # semanal e do guard de permanência, que são outros assuntos. Fecha
+          # no passo anterior, num release verde na ponta da main.
           titulo='Release automático falhou'
           url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
           aberta=$(gh issue list --label pipeline-falhou --state open --json number,title \
             --jq "first(.[] | select(.title == \"$titulo\")).number")
           if [ -n "$aberta" ]; then
-            gh issue comment "$aberta" --body "Release falhou: $url"
+            gh issue comment "$aberta" --body "Release falhou: $url. Para tentar de novo, rode \`gh workflow run release.yml --ref main\` (não use Re-run em run antigo)."
           else
             gh issue create --title "$titulo" --label pipeline-falhou \
-              --body "O release não completou — o npm/CDN podem estar para trás da main. Re-executar o run é seguro (idempotente). Run: $url"
+              --body "O release não completou: o npm e o CDN podem estar atrás da main. Para tentar de novo, rode \`gh workflow run release.yml --ref main\` (o Re-run de um run antigo repete o commit e o workflow daquele run). Esta issue fecha sozinha no próximo release verde na ponta da main. Run: $url"
           fi
