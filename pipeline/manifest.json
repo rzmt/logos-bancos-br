@@ -102,10 +102,10 @@
     "compe4": "0450",
     "org": "FITS INSTITUICAO DE PAGAMENTO S.A.",
     "cnpj": "13203354000185",
-    "uri": "https://admin.fitbank.com.br/Contents/Images/Branding/logo-fits.svg",
-    "sourceSha256": "6bc6c391f237181955a4613129cd60abaceaf642eafe4fe043125d108166d41e",
+    "uri": "https://sharedimages.fits.com.br/sharedimages/fits_logo_512.svg",
+    "sourceSha256": "cd1d0b5899bff6690db1d1b1f5d34556e5f6896ac29be09bc9f799434190acea",
     "svg": true,
-    "updatedAt": "2026-09-07"
+    "updatedAt": "2026-10-12"
   },
   "13370835": {
     "compe4": "0301",
@@ -610,6 +610,15 @@
     "sourceSha256": "d0f656d382d872ead263aa56d9c164ffefd6d9245ca6c7c01e17ae12b6ebfbfb",
     "svg": true,
     "updatedAt": "2026-07-17"
+  },
+  "40571694": {
+    "compe4": null,
+    "org": "WISE BRASIL INSTITUICAO DE PAGAMENTO LTDA",
+    "cnpj": "40571694000131",
+    "uri": "https://wise.com/imaginary-v2/images/d130ba0101974769df902bc02241671f-Wise_Logo_BrightGreen_RGB.svg",
+    "sourceSha256": "d69760aa4c9607f51364493df1fe7c49d086137b6021c659a39f6db581f190a5",
+    "svg": true,
+    "updatedAt": "2026-10-12"
   },
   "42272526": {
     "compe4": "0017",
