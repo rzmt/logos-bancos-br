@@ -3,12 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>logos-bancos-br — logos oficiais das instituições financeiras do Brasil</title>
-<meta name="description" content="Galeria de 492 logos oficiais de bancos, fintechs, instituições de pagamento e cooperativas do Brasil. Busque por nome, COMPE ou ISPB e copie a URL de CDN. Fontes 100% oficiais (Banco Central e Open Finance), atualização semanal.">
+<title>Logos de bancos brasileiros em PNG e SVG · logos-bancos-br</title>
+<meta name="description" content="Logos de 492 bancos, fintechs, instituições de pagamento e cooperativas do Brasil em PNG e SVG. Busque por nome, COMPE ou ISPB e copie a URL de CDN. Lista do Banco Central, logos do Open Finance e dos sites oficiais, atualizados toda semana.">
 <link rel="canonical" href="https://rzmt.github.io/logos-bancos-br/">
-<meta property="og:title" content="logos-bancos-br — logos oficiais dos bancos do Brasil">
-<meta property="og:description" content="492 logos oficiais com proveniência, via CDN. Busque por nome, COMPE ou ISPB.">
-<meta property="og:image" content="https://rzmt.github.io/logos-bancos-br/banner-logos.png">
+<meta property="og:title" content="Logos de bancos brasileiros em PNG e SVG · logos-bancos-br">
+<meta property="og:description" content="Logos de 492 bancos, fintechs e cooperativas do Brasil em PNG e SVG. Busque por nome, COMPE ou ISPB e copie a URL de CDN.">
+<meta property="og:image" content="https://rzmt.github.io/logos-bancos-br/og.png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="640">
+<meta property="og:image:alt" content="Logos de Banco do Brasil, Caixa, Itaú, Bradesco, Santander, Nubank e outras instituições do Brasil">
+<meta name="twitter:card" content="summary_large_image">
 <style>
 :root{color-scheme:light dark;--bg:#f6f7f9;--fg:#1a2330;--muted:#5b6b7f;--card:#fff;--border:#dde3ea;--accent:#0b5fff}
 @media(prefers-color-scheme:dark){:root{--bg:#10151c;--fg:#e8edf3;--muted:#93a3b5;--card:#171e27;--border:#2a3441;--accent:#5b93ff}}
@@ -21,6 +25,8 @@ h1{margin:0;font-size:26px}
 .links{margin:10px 0 0;font-size:14px}
 .links a{color:var(--accent);text-decoration:none;margin-right:14px}
 .links a:hover{text-decoration:underline}
+.links a.gh{display:inline-block;padding:2px 12px;border:1px solid var(--accent);border-radius:999px;font-weight:600}
+.links a.gh:hover{text-decoration:none;background:var(--accent);color:var(--card)}
 .controls{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:22px 0 6px}
 #q{flex:1;min-width:240px;padding:10px 14px;font-size:15px;border:1px solid var(--border);border-radius:8px;background:var(--card);color:var(--fg)}
 #q:focus{outline:2px solid var(--accent);outline-offset:-1px}
@@ -45,12 +51,11 @@ footer a:hover{text-decoration:underline}
 <body>
 <header>
   <h1>logos-bancos-br</h1>
-  <p class="sub">492 logos oficiais de bancos, fintechs, instituições de pagamento e
-  cooperativas do Brasil (1079 instituições no dataset) — derivados só de fontes oficiais
-  (listas do STR e do Pix do Banco Central e diretório do Open Finance Brasil), com proveniência
-  por logo e atualização semanal. Clique para copiar a URL de CDN.</p>
+  <p class="sub">Logos de 492 bancos, fintechs, instituições de pagamento e
+  cooperativas do Brasil (1.079 instituições no dataset). Lista do Banco Central, logos
+  do Open Finance e dos sites oficiais, atualizados toda semana. Clique para copiar a URL de CDN.</p>
   <p class="links">
-    <a href="https://github.com/rzmt/logos-bancos-br">GitHub</a>
+    <a class="gh" href="https://github.com/rzmt/logos-bancos-br"><span aria-hidden="true">★</span> Código e dados no GitHub</a>
     <a href="https://www.npmjs.com/package/logos-bancos-br">npm</a>
     <a href="https://github.com/rzmt/logos-bancos-br/blob/main/CONTRIBUTING.md">Contribuir</a>
   </p>
@@ -62,8 +67,8 @@ footer a:hover{text-decoration:underline}
 </header>
 <main id="grid"></main>
 <footer>
-  <p>Falta o logo de alguma instituição? <a href="https://github.com/rzmt/logos-bancos-br/blob/main/CONTRIBUTING.md">Veja como contribuir</a> —
-  só é preciso achar a URI oficial; o pipeline faz o resto.</p>
+  <p>Falta o logo de alguma instituição? <a href="https://github.com/rzmt/logos-bancos-br/blob/main/CONTRIBUTING.md">Veja como contribuir</a>.
+  Só é preciso achar a URI oficial; o pipeline faz o resto.</p>
   <p>Os logos e as marcas pertencem às respectivas instituições e são distribuídos apenas para
   identificação (<a href="https://github.com/rzmt/logos-bancos-br/blob/main/DISCLAIMER.md">aviso legal</a>).
   Dados: <a href="https://github.com/rzmt/logos-bancos-br#as-fontes-para-confer%C3%AAncia">fontes oficiais</a>. Licença MIT.</p>
@@ -85,7 +90,7 @@ function card(r){
   if(asset){
     chip.className='chip';
     var img=document.createElement('img');
-    img.loading='lazy';img.alt='';img.src=CDN+'/logos/png/'+asset+'.png';
+    img.loading='lazy';img.alt=r[6]||nome;img.src=CDN+'/logos/png/'+asset+'.png';
     chip.appendChild(img);
   }else{
     chip.className='chip nada';chip.textContent='sem logo';
@@ -116,11 +121,11 @@ function brandLabel(t){return BRAND_NAMES[t]||t.charAt(0)+t.slice(1).toLowerCase
 function brandCard(token,info){
   var el=document.createElement('div');el.className='card';
   var chip=document.createElement('div');chip.className='chip';
-  var img=document.createElement('img');img.loading='lazy';img.alt='';
+  var img=document.createElement('img');img.loading='lazy';img.alt=brandLabel(token);
   img.src=CDN+'/logos/png/'+info.asset+'.png';chip.appendChild(img);
   el.appendChild(chip);
   var n=document.createElement('div');n.className='nome';
-  n.textContent=brandLabel(token)+' — sistema cooperativo';n.title=n.textContent;el.appendChild(n);
+  n.textContent=brandLabel(token)+' (sistema cooperativo)';n.title=n.textContent;el.appendChild(n);
   var m=document.createElement('div');m.className='meta';
   m.textContent=info.count+' cooperativas afiliadas · logo compartilhado';el.appendChild(m);
   var acts=document.createElement('div');acts.className='acts';
@@ -131,7 +136,7 @@ function brandCard(token,info){
     bs.onclick=function(){copiar(bs,CDN+'/logos/svg/'+info.asset+'.svg')};acts.appendChild(bs);
   }
   var a=document.createElement('a');a.href='#';a.textContent='listar';
-  a.onclick=function(e){e.preventDefault();q.value=brandLabel(token);render();q.focus()};
+  a.onclick=function(e){e.preventDefault();q.value=brandLabel(token);buscar();q.focus()};
   acts.appendChild(a);
   el.appendChild(acts);
   return el;
@@ -166,11 +171,29 @@ function render(){
     count.textContent=vis+(vis===1?' resultado':' resultados');
   }else{
     count.textContent=vis+' instituições'+(todos?'':' com logo próprio')+
-      (ordem.length?' + '+ordem.length+' sistemas cooperativos ('+afiliadas+' afiliadas agrupadas — cada uma aparece na busca)':'');
+      (ordem.length?' + '+ordem.length+' sistemas cooperativos ('+afiliadas+' afiliadas agrupadas; cada uma aparece na busca)':'');
   }
 }
-q.addEventListener('input',render);
+// A busca vai para a URL (?q=...) para o link poder ser compartilhado.
+// O valor entra no campo por .value, nunca como HTML.
+function lerBusca(){try{return new URLSearchParams(location.search).get('q')||''}catch(e){return ''}}
+function gravarBusca(){
+  try{
+    var p=new URLSearchParams(location.search);
+    var v=q.value.trim();
+    if(v)p.set('q',v);else p.delete('q');
+    var s=p.toString();
+    history.replaceState(null,'',location.pathname+(s?'?'+s:'')+location.hash);
+  }catch(e){}
+}
+// Grava só quando a digitação para: o Safari lança SecurityError depois de
+// ~100 replaceState em 30 s, e a URL ficaria com uma busca antiga.
+var gravarDepois;
+function buscar(){render();clearTimeout(gravarDepois);gravarDepois=setTimeout(gravarBusca,300)}
+q.addEventListener('input',buscar);
 semlogo.addEventListener('change',render);
+var inicial=lerBusca();
+if(inicial)q.value=inicial;
 render();
 </script>
 </body>
