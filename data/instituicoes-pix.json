@@ -6098,6 +6098,23 @@
       "logo": null
     },
     {
+      "ispb": "08422119",
+      "compe": null,
+      "compe4": null,
+      "cnpj": "08422119000164",
+      "name": "BULLLA IP S.A.",
+      "shortName": "BULLLA IP S.A.",
+      "displayName": null,
+      "pix": {
+        "spiParticipationType": "Indireta",
+        "pixParticipationType": "Facultativa",
+        "modality": "Provedor de Conta Transacional",
+        "institutionType": "Instituição de Pagamento",
+        "authorizedByBcb": true
+      },
+      "logo": null
+    },
+    {
       "ispb": "08488377",
       "compe": null,
       "compe4": null,

@@ -2,7 +2,7 @@
 
 > Arquivo gerado automaticamente pelo pipeline (`npm run pipeline`) — não editar à mão.
 
-**180** instituições com logo próprio · **312** afiliadas usando o logo do seu sistema cooperativo · **588** sem logo nas fontes oficiais.
+**180** instituições com logo próprio · **312** afiliadas usando o logo do seu sistema cooperativo · **589** sem logo nas fontes oficiais.
 
 ## Logos próprios
 
@@ -542,7 +542,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 </details>
 
 
-<details><summary>Instituições sem logo (588) — consumidores devem usar um ícone genérico</summary>
+<details><summary>Instituições sem logo (589) — consumidores devem usar um ícone genérico</summary>
 
 - `0010` CREDICOAMO (ISPB 81723108)
 - `0012` BANCO INBURSA (ISPB 04866275)
@@ -941,6 +941,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` CCLA TRANSPORT RODOV VEICULOS (ISPB 07789195)
 - `——` CCM CORRET SEG EST SAO PAULO (ISPB 08030602)
 - `——` COOP TRANSPOCRED (ISPB 08075352)
+- `——` BULLLA IP S.A. (ISPB 08422119)
 - `——` CECM EMPR CENT ELÉTRICAS/SC (ISPB 08850613)
 - `——` CCLA DE RIO VERDE E REGIÃO (ISPB 09033698)
 - `——` BRINKS PAY IP LTDA. (ISPB 09437293)
