@@ -82,47 +82,37 @@ duplica a issue dele.
 
 ## Quando quebrar
 
-### Publicação no npm falhou (token vencido)
+### Publicação no npm falhou
 
-Sintoma: o `release.yml` falha em "Publicar no npm" com
-`E404 Not Found - PUT https://registry.npmjs.org/logos-bancos-br` — é assim
-que o npm responde a um token **vencido** (não aparece como erro de
-autenticação). Tokens granulares do npm têm validade obrigatória, então isso
-volta a acontecer enquanto a publicação depender do `NPM_TOKEN`.
+A publicação é só por trusted publishing (OIDC): o `release.yml` troca o
+token de OIDC do GitHub por um token do npm de curta duração. Não há secret
+de npm no repositório, e o pacote fica com *Require two-factor
+authentication and disallow bypass 2fa tokens* em **Settings → Publishing
+access** (nenhum token publica). Funciona desde a v0.8.1 (18/10/2026).
 
-**Conserto definitivo — trusted publishing (OIDC, sem token):**
+Sintoma: o `release.yml` falha em "Publicar no npm", em geral com
+`E404 Not Found - PUT`, que é como o npm responde a falta de permissão. O
+motivo real está nas linhas `npm verbose oidc` do log desse passo:
 
-1. npmjs.com → pacote `logos-bancos-br` → **Settings** → **Trusted Publisher**
-   → *GitHub Actions*;
-2. preencha (diferencia maiúsculas): organização/usuário `rzmt`, repositório
-   `logos-bancos-br`, workflow `release.yml`, environment vazio;
-3. em **Allowed actions**, marque **`npm publish`**: configurações criadas
-   depois de 03/09/2026 vêm só com `npm stage publish`, e aí o `npm publish`
-   do workflow é recusado;
-4. dispare o release **logo em seguida** (idempotente):
-   `gh workflow run release.yml --ref main`. Não use *Re-run* nos runs
-   antigos linkados na issue: ele repete o commit e o workflow daquele run.
-   Configuração nova sem uma publicação bem-sucedida em 2 dias expira; aí,
-   apague e crie de novo. Se houver PR semanal aberto, faça o merge dele
-   antes (o push do merge publica a versão pendente); se a versão sair antes
-   do merge, rode `gh workflow run update-logos.yml` para o PR ganhar o bump;
-5. com a publicação funcionando, em **Settings → Publishing access** marque
-   *Require two-factor authentication and disallow tokens* e apague o secret
-   `NPM_TOKEN` do GitHub — não sobra segredo para vencer ou vazar. O token
-   vencido pode ser apagado antes: sem ele, falha de OIDC aparece como erro de
-   autenticação (`ENEEDAUTH`), e não como o E404 enganoso.
+- `OIDC token exchange error - package not found`: a configuração do trusted
+  publisher no npmjs.com não existe ou não bate com o workflow. Confira em
+  npmjs.com → pacote `logos-bancos-br` → **Settings** → **Trusted
+  Publisher** (diferencia maiúsculas): *GitHub Actions*, organização/usuário
+  `rzmt`, repositório `logos-bancos-br`, workflow `release.yml`, environment
+  vazio e **`npm publish`** marcado em *Allowed actions* (configurações
+  criadas depois de 03/09/2026 vêm só com `npm stage publish`). Se precisar
+  recriar, dispare o release logo depois: configuração nova sem publicação
+  bem-sucedida em 2 dias expira e não pode mais ser editada.
+- Nenhuma linha `oidc`: o passo nem pediu o token ao GitHub. Confira
+  `id-token: write` nas permissões do workflow e o npm >= 11.5.1 (passo
+  "Atualizar o npm").
 
-A issue `Release automático falhou` fecha sozinha quando o release passar.
-
-O workflow já está pronto para os dois modos: o npm tenta OIDC primeiro e só
-usa o `NPM_TOKEN` se não houver trusted publisher configurado.
-
-**Paliativo — token novo (vence de novo):**
-
-1. npm → Access Tokens → **Generate New Token** → *Granular Access Token*;
-2. permissão de **read and write** apenas no pacote `logos-bancos-br`;
-3. GitHub → Settings → Secrets and variables → Actions → atualize `NPM_TOKEN`;
-4. reexecute o release: `gh workflow run release.yml --ref main`.
+Consertado, dispare o release: `gh workflow run release.yml --ref main`. Não
+use *Re-run* em run antigo: ele repete o commit e o workflow daquele run. Se
+houver PR semanal aberto, faça o merge dele antes (o push do merge publica a
+versão pendente); se a versão sair antes do merge, rode
+`gh workflow run update-logos.yml` para o PR ganhar o bump. A issue
+`Release automático falhou` fecha sozinha quando o release passar.
 
 ### Release falhou em "Teste do pacote empacotado"
 
@@ -210,6 +200,6 @@ a versão sair.
 | O quê | Para quê |
 |---|---|
 | Admin no repositório | mergear, editar secrets, alterar proteção da `main` |
-| Trusted publisher no npmjs.com (ou secret `NPM_TOKEN`, legado) | publicar no npm |
+| Trusted publisher no npmjs.com (`rzmt/logos-bancos-br`, `release.yml`) | publicar no npm (não há secret de npm no GitHub) |
 | Conta npm com acesso ao pacote | configurar o trusted publisher / gerar token |
 | Conta Google dona do pacote no pub.dev | publicar `logos_bancos_br` (Dart) |

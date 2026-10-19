@@ -166,9 +166,9 @@ só de workflows, docs ou código sem bump não dispara nada.
 Pré-requisito (uma vez): *trusted publisher* do GitHub Actions configurado no npmjs.com para o
 workflow `release.yml` — publicação por OIDC, sem token para vencer. Em **Allowed actions**, marque
 `npm publish` (configurações criadas depois de 03/09/2026 vêm só com `npm stage publish`) e rode
-o release logo depois de criar: sem publicação bem-sucedida em 2 dias, a configuração expira. O
-secret `NPM_TOKEN` só é usado como alternativa enquanto isso não estiver configurado (passo a
-passo no [RUNBOOK](RUNBOOK.md)).
+o release logo depois de criar: sem publicação bem-sucedida em 2 dias, a configuração expira. Não
+há token de npm no repositório; se a publicação falhar, o passo a passo está no
+[RUNBOOK](RUNBOOK.md).
 
 Convenção de versão: atualização de logos/dados → `patch`; mudanças na API/CLI → `minor`;
 quebras → `major`.

@@ -18,8 +18,8 @@ name: Release
 # já publicada, o passo de versão órfã falha e abre o alerta (a não ser que
 # a main já esteja numa versão mais nova, cujo push publica). Push só de
 # workflows, docs ou código sem bump não dispara release. Autenticação no
-# npm: trusted publishing (OIDC, sem segredo) quando configurado no
-# npmjs.com; senão, o secret NPM_TOKEN (legado — expira). Ver RUNBOOK.md.
+# npm: só trusted publishing (OIDC, sem segredo no repositório), configurado
+# no npmjs.com para este workflow. Ver RUNBOOK.md.
 on:
   workflow_dispatch:
   push:
@@ -120,15 +120,14 @@ jobs:
         if: steps.guard.outputs.publicar
         run: npm run test:package
 
-      # O npm tenta OIDC (trusted publishing) primeiro e só usa o NPM_TOKEN se
-      # a troca falhar. Token vencido aparece como "E404 Not Found - PUT"
-      # (RUNBOOK). O motivo da falha do OIDC só sai em log verbose (linhas
-      # "npm verbose oidc"), por isso o --loglevel.
+      # Trusted publishing (OIDC): o npm troca o token de OIDC do GitHub por um
+      # token de publicação de curta duração; não há secret de npm. Se a troca
+      # falhar, o motivo sai nas linhas "npm verbose oidc" (por isso o
+      # --loglevel); "package not found" = a configuração no npmjs.com não bate
+      # com este workflow (RUNBOOK).
       - name: Publicar no npm
         if: steps.guard.outputs.publicar
         run: npm publish --provenance --access public --loglevel verbose
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Criar tag + Release no GitHub
         if: steps.guard.outputs.criar_tag
