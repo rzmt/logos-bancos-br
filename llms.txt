@@ -2,23 +2,24 @@
 
 > Dataset + official logos of Brazil's financial and payment institutions (banks, fintechs,
 > payment institutions, credit unions), rebuilt automatically every week from official sources
-> only: the Central Bank of Brazil (BCB) STR participants list, the BCB active Pix participants
-> list, and the Open Finance Brasil participants directory. npm package: `logos-bancos-br`.
+> only: the institution list from the Central Bank of Brazil (BCB) STR and active Pix participants
+> lists, the logos from the Open Finance Brasil participants directory and the institutions' own
+> official websites. npm package: `logos-bancos-br`.
 > Code and dataset are MIT; the logos are trademarks of their respective institutions,
 > redistributed for nominative use (see DISCLAIMER.md).
 
 Key facts:
 
 - The **institution list is auto-updated and split in two datasets**: `data/bancos.json` is
-  the MAIN list (the ~470 institutions with a COMPE code, from the BCB STR participants list);
-  `data/instituicoes-pix.json` is the separate Pix-only set (~643 institutions without COMPE —
+  the MAIN list (the ~460 institutions with a COMPE code, from the BCB STR participants list);
+  `data/instituicoes-pix.json` is the separate Pix-only set (~620 institutions without COMPE —
   fintechs, payment institutions, cooperative affiliates — from the BCB active Pix participants
   list, each with a 14-digit `cnpj`). Both carry `ispb`, official names, `pix` participation
   attributes (verbatim from the BCB list, or null) and `logo` (or null). API: `banks()` = main
   list, `pixInstitutions()` = Pix-only, `allInstitutions()` = both, `byIspb()` resolves across
   the two, `byCompe()` only over the main list.
-- The **logos are auto-updated and deduplicated**: ~473 institutions with a logo backed by
-  ~160 distinct files, as normalized transparent 256×256 PNGs (`logos/png/<ISPB>.png`) plus
+- The **logos are auto-updated and deduplicated**: ~490 institutions with a logo backed by
+  ~180 distinct logos, as normalized transparent 256×256 PNGs (`logos/png/<ISPB>.png`) plus
   sanitized original SVGs when available. Assets are keyed by **ISPB**. `source.type` states
   the origin: `openfinance`, `direct-uri` (institution's own official website, hand-reviewed),
   `override`, or `brand` — a logo inherited from the institution's cooperative system (Sicoob,
@@ -26,7 +27,8 @@ Key facts:
   shared file per system and carry `source.brand` with the system token.
 - **Update cadence**: a GitHub Action (`.github/workflows/update-logos.yml`) runs every Monday
   (and on demand), rebuilds the list and the logos from the official sources, and opens a pull
-  request with a report and the visual diff. Nothing is hand-curated.
+  request with a report and the visual diff. Generated files are never edited by hand; curation
+  lives in `pipeline/config.json`.
 - **Per-logo provenance**: each logo records the source URI, the SHA-256 of the original artwork
   and the last-change date in `data/bancos.json`.
 - **Matching safety**: a logo is assigned automatically only when the institution's ISPB equals
@@ -44,7 +46,7 @@ Key facts:
 - **CDN, no install**:
   `https://cdn.jsdelivr.net/npm/logos-bancos-br@0/logos/{png|svg}/<ISPB>.{png|svg}` (`@0` tracks
   the latest 0.x release; pin an exact version for immutability). The compact index
-  `data/cdn-index.min.json` (~60 KB) maps `{ispb: [compe, name, flags]}` with flags
+  `data/cdn-index.min.json` (~64 KB) maps `{ispb: [compe, name, flags]}` with flags
   0 = no logo, 1 = PNG only, 3 = PNG+SVG — resolve COMPE→ISPB and logo availability
   without installing anything. Cooperative affiliates share their system's file: those
   entries carry a 4th element with the asset ISPB to use in the URL. For a ready logo

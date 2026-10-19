@@ -1,38 +1,43 @@
 # logos-bancos-br
 
-> **Dataset + logos das instituições financeiras e de pagamento do Brasil** — bancos, fintechs,
-> IPs e cooperativas — **sempre atualizados**. Tudo derivado de três fontes 100% oficiais e
-> nomeadas: a **lista de participantes do STR** e a **lista de participantes ativos do Pix**,
-> ambas do **Banco Central do Brasil**, e o **diretório de participantes do Open Finance
-> Brasil**. Reconstruído automaticamente toda semana por CI, com proveniência verificável por
-> logo. **[English version](README.en.md)**
+Logos dos bancos, fintechs e cooperativas do Brasil em PNG e SVG, para tela de Pix, extrato ou seleção de banco. Você acha cada um pelo código COMPE ou pelo ISPB. A lista vem do Banco Central, os logos vêm do diretório do Open Finance e dos sites oficiais, e um robô atualiza tudo toda semana. [English](README.en.md)
 
+[![jsDelivr](https://data.jsdelivr.com/v1/package/npm/logos-bancos-br/badge)](https://www.jsdelivr.com/package/npm/logos-bancos-br)
+[![npm](https://img.shields.io/npm/v/logos-bancos-br)](https://www.npmjs.com/package/logos-bancos-br)
+[![downloads](https://img.shields.io/npm/dm/logos-bancos-br)](https://www.npmjs.com/package/logos-bancos-br)
 [![CI](https://github.com/rzmt/logos-bancos-br/actions/workflows/ci.yml/badge.svg)](https://github.com/rzmt/logos-bancos-br/actions/workflows/ci.yml)
 [![atualização](https://github.com/rzmt/logos-bancos-br/actions/workflows/update-logos.yml/badge.svg)](https://github.com/rzmt/logos-bancos-br/actions/workflows/update-logos.yml)
-[![npm](https://img.shields.io/npm/v/logos-bancos-br)](https://www.npmjs.com/package/logos-bancos-br)
 [![licença](https://img.shields.io/badge/licen%C3%A7a-MIT-blue)](LICENSE)
 
-<p align="center">
-  <img src="logos/png/00000000.png" width="56" alt="Banco do Brasil">
-  <img src="logos/png/00360305.png" width="56" alt="Caixa">
-  <img src="logos/png/60746948.png" width="56" alt="Bradesco">
-  <img src="logos/png/90400888.png" width="56" alt="Santander">
-  <img src="logos/png/60701190.png" width="56" alt="Itaú">
-  <img src="logos/png/18236120.png" width="56" alt="Nubank">
-  <img src="logos/png/00416968.png" width="56" alt="Inter">
-  <img src="logos/png/31872495.png" width="56" alt="C6">
-  <img src="logos/png/01181521.png" width="56" alt="Sicredi">
-  <img src="logos/png/02038232.png" width="56" alt="Sicoob">
-  <img src="logos/png/10573521.png" width="56" alt="Mercado Pago">
-  <img src="logos/png/33264668.png" width="56" alt="XP">
-</p>
-<p align="center"><a href="https://rzmt.github.io/logos-bancos-br/"><strong>→ galeria interativa</strong></a> (busca por nome/COMPE/ISPB + copiar URL de CDN) · <a href="PREVIEW.md">PREVIEW.md</a></p>
+<a href="https://rzmt.github.io/logos-bancos-br/"><img src="https://rzmt.github.io/logos-bancos-br/mosaico.png" alt="Logos de Banco do Brasil, Caixa, Itaú, Bradesco, Santander, Nubank, Inter, C6 e outras instituições"></a>
+
+Procurando um logo? A [galeria](https://rzmt.github.io/logos-bancos-br/) busca por nome, COMPE ou ISPB e copia a URL. Aqui no repositório os arquivos têm o ISPB no nome.
+
+Sem instalar nada:
+
+```html
+<img src="https://cdn.jsdelivr.net/npm/logos-bancos-br@0/logos/svg/60701190.svg"
+     width="40" alt="Itaú">
+```
+
+Com npm (`npm install logos-bancos-br`):
+
+```ts
+import { byCompe, logoCdnUrl } from 'logos-bancos-br';
+
+byCompe(260)?.displayName; // 'Nubank'
+logoCdnUrl(260);           // URL do PNG no jsDelivr, fixada na versão instalada
+```
+
+Quem usa: a [BrasilAPI](https://brasilapi.com.br/api/banks/v1), no campo `logo_url`, e o [BancosBrasileiros](https://github.com/guibranco/BancosBrasileiros), no campo `LogoUrl`.
+
+Se for útil, uma [estrela no GitHub](https://github.com/rzmt/logos-bancos-br) ajuda outras pessoas a acharem o projeto.
 
 ## O que este pacote entrega
 
 1. **A lista de instituições — atualizada automaticamente, em dois conjuntos.** A **lista
-   principal** ([`data/bancos.json`](data/bancos.json)) traz as **470 instituições com código
-   COMPE** da lista de participantes do STR do Banco Central. As **643 instituições só-Pix**
+   principal** ([`data/bancos.json`](data/bancos.json)) traz as **~460 instituições com código
+   COMPE** da lista de participantes do STR do Banco Central. As **~620 instituições só-Pix**
    (fintechs, IPs e cooperativas afiliadas, sem COMPE) ficam num conjunto separado
    ([`data/instituicoes-pix.json`](data/instituicoes-pix.json)), mantendo a lista principal
    enxuta. Ambos trazem nomes oficiais, ISPB, CNPJ (só-Pix) e os atributos de participação no
@@ -40,8 +45,8 @@
    ("NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO" → `"Nubank"`) nas principais marcas; onde
    não há curadoria o campo é `null` e vale usar `name`. Nunca é derivado automaticamente do
    nome oficial — derivação produz coisas como "Banco Da Amazonia".
-2. **Logos oficiais, sem duplicação.** **473 instituições com logo** usando **160 arquivos
-   distintos** (~1,7 MB): afiliadas de sistemas cooperativos de marca única (Sicoob, Sicredi,
+2. **Logos oficiais, sem duplicação.** **Quase 500 instituições com logo** usando **~180 logos
+   distintos** (~1,9 MB somando PNG e SVG): afiliadas de sistemas cooperativos de marca única (Sicoob, Sicredi,
    Cresol, Unicred) **compartilham um único arquivo por sistema** e são marcadas com
    `logo.source.type: "brand"`. Logos próprios vêm do diretório público do **Open Finance
    Brasil** (`openfinance`) ou do **site oficial da instituição** (`direct-uri`, com curadoria
@@ -83,8 +88,8 @@ logos), ou logos **coletados de sites variados**, sem rastreabilidade. A abordag
 - **Assets seguros** — download só via https com teto de tamanho e de pixels; SVGs
   redistribuídos apenas após sanitização (sem `script`, event handlers, `foreignObject` ou
   referências externas).
-- **Trade-off honesto** — 473 das 1.113 instituições têm logo (participantes do Open Finance,
-  afiliadas dos sistemas cooperativos e ~45 instituições cobertas pelos sites oficiais — a
+- **Trade-off honesto** — quase 500 das ~1.080 instituições têm logo (participantes do Open Finance,
+  afiliadas dos sistemas cooperativos e ~60 instituições cobertas pelos sites oficiais — a
   esmagadora maioria das contas do país). As demais são SCDs/corretoras/IPs pequenas; para elas
   seu app usa o fallback que preferir — e a cobertura cresce a cada release.
 
@@ -112,18 +117,18 @@ bundler). Zero dependências de runtime. Publicado com **npm provenance** — ve
 integridade com `npm audit signatures`.
 
 Os arquivos são nomeados pelo **ISPB** (8 dígitos, estável e universal — é o que permite cobrir
-as ~640 instituições do Pix que não têm código COMPE). As consultas aceitam **COMPE ou ISPB**.
+as ~620 instituições do Pix que não têm código COMPE). As consultas aceitam **COMPE ou ISPB**.
 
 ### JavaScript / TypeScript (Node ou web)
 
 ```ts
 import { banks, pixInstitutions, allInstitutions, byCompe, byIspb, logoCdnUrl } from 'logos-bancos-br';
 
-banks();             // lista principal: 470 instituições com COMPE
-pixInstitutions();   // conjunto separado: 643 só-Pix (fintechs, IPs, afiliadas)
-allInstitutions();   // as duas juntas (1.113)
+banks();             // lista principal: ~460 instituições com COMPE
+pixInstitutions();   // conjunto separado: ~620 só-Pix (fintechs, IPs, afiliadas)
+allInstitutions();   // as duas juntas (~1.080)
 
-byCompe(341);        // { ispb: '60701190', compe4: '0341', name: 'Itaú Unibanco S.A.', logo: {...} }
+byCompe(341);        // { ispb: '60701190', compe4: '0341', name: 'ITAÚ UNIBANCO S.A.', logo: {...} }
 byCompe('0260');     // Nubank — '260', 260 e '0260' são equivalentes
 byIspb('00000000');  // Banco do Brasil
 byIspb('11275560');  // RecargaPay — só-Pix; byIspb resolve nos DOIS conjuntos
@@ -152,7 +157,7 @@ import logos from 'logos-bancos-br/react-native'; // mapa require() estático
 
 > As chaves do mapa aceitam o COMPE com 4 dígitos (`'0341'`) **e** o ISPB (`'60701190'`;
 > instituições só-Pix aparecem apenas pelo ISPB; afiliadas apontam para o asset compartilhado do
-> sistema). Importar esse entry adiciona os **160 logos distintos** (~1,7 MB) ao bundle. Se
+> sistema). Importar esse entry adiciona os **~180 logos distintos** (~0,9 MB) ao bundle. Se
 > preferir empacotar só alguns, use o CLI abaixo e faça `require()` dos arquivos copiados.
 
 ### Node (caminho dos arquivos no disco)
@@ -190,17 +195,17 @@ dados ficam frescos sem você publicar nada (a atualização semanal vira releas
 sozinha). Prefere imutabilidade? Fixe a versão exata (ex.: `@0.5.0`).
 
 Para resolver COMPE→ISPB, nome oficial e existência de logo em qualquer stack, sem
-instalar nada, há um índice compacto (~60 KB, ~15 KB gzip):
+instalar nada, há um índice compacto (~64 KB, ~19 KB gzip):
 
 ```
 https://cdn.jsdelivr.net/npm/logos-bancos-br@0/data/cdn-index.min.json
 ```
 
-Formato: `{"institutions": {"60701190": ["341", "Itaú Unibanco S.A.", 3]}}` — cada
+Formato: `{"institutions": {"60701190": ["341", "ITAÚ UNIBANCO S.A.", 3]}}` — cada
 entrada é `[compe, nome, flags]`, com flags `0` = sem logo, `1` = só PNG,
 `3` = PNG+SVG. Afiliadas de sistemas cooperativos compartilham o arquivo do
 sistema: nesses casos há um 4º elemento com o **ISPB do arquivo**, que é o que
-deve entrar na URL (ex.: `["16", "…SICOOB CREDITRAN", 3, "04891850"]` →
+deve entrar na URL (ex.: `["016", "…SICOOB CREDITRAN", 3, "04891850"]` →
 `logos/svg/04891850.svg`).
 
 E se você só quer a URL do logo pronta por ISPB, sem montar caminho nem escolher
@@ -253,7 +258,7 @@ Um registro de `data/bancos.json`:
   "ispb": "60701190",
   "compe": "341",
   "compe4": "0341",
-  "name": "Itaú Unibanco S.A.",
+  "name": "ITAÚ UNIBANCO S.A.",
   "shortName": "ITAÚ UNIBANCO S.A.",
   "displayName": "Itaú",
   "pix": {
@@ -322,7 +327,7 @@ uma pessoa e como consertar quando quebra: **[RUNBOOK.md](RUNBOOK.md)**.
 
 ## Limitações conhecidas
 
-- Cobertura de logos: 473 de 1.113 instituições (153 na lista principal; o restante são
+- Cobertura de logos: quase 500 de ~1.080 instituições (~170 na lista principal; o restante são
   afiliadas com logo de sistema e só-Pix); cresce conforme o ecossistema e a curadoria. **Sua
   instituição está sem logo?** Abra uma issue com o template "Sugestão de match"/"Adicionar
   logo" apontando a URL no domínio oficial — promovemos rápido.
@@ -330,7 +335,7 @@ uma pessoa e como consertar quando quebra: **[RUNBOOK.md](RUNBOOK.md)**.
   cartão Atacadão). É a escolha oficial da própria instituição; se preferir outra arte no seu app,
   use um override local seu.
 - Instituições em processo de **adesão** ao Pix (segunda seção da lista do BCB) e participantes
-  sem ISPB publicado (18 hoje) não entram — só participantes ativos com ISPB.
+  sem ISPB publicado (menos de 20 hoje) não entram — só participantes ativos com ISPB.
 
 ## Marcas e remoção
 
@@ -346,8 +351,9 @@ Representa uma instituição e quer corrigir ou remover um logo? Abra uma issue 
 
 Um resumo machine-readable do projeto está em [`llms.txt`](llms.txt) (também incluído no pacote
 npm). Fatos-chave: **a lista de instituições e os logos são regenerados automaticamente toda
-semana** a partir do Banco Central (STR) e do Open Finance Brasil; arquivos nomeados por ISPB;
-consultas por COMPE ou ISPB; dataset completo em `data/bancos.json`.
+semana** a partir do Banco Central (STR e Pix), do Open Finance Brasil e dos sites oficiais;
+arquivos nomeados por ISPB; consultas por COMPE ou ISPB; dataset completo em `data/bancos.json` e
+`data/instituicoes-pix.json`.
 
 ## Licença
 
