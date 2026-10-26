@@ -2,7 +2,7 @@
 
 > Arquivo gerado automaticamente pelo pipeline (`npm run pipeline`) — não editar à mão.
 
-**180** instituições com logo próprio · **312** afiliadas usando o logo do seu sistema cooperativo · **589** sem logo nas fontes oficiais.
+**180** instituições com logo próprio · **312** afiliadas usando o logo do seu sistema cooperativo · **587** sem logo nas fontes oficiais.
 
 ## Logos próprios
 
@@ -178,11 +178,11 @@
 | <img src="logos/png/47381104.png" width="40" alt="CONTAAZUL IP LTDA."> | 0775 | 47381104 | CONTAAZUL IP LTDA. | Site oficial (revisado) |
 | <img src="logos/png/31680151.png" width="40" alt="SWAP IP S.A."> | 0783 | 31680151 | SWAP IP S.A. | Open Finance — Swap Meios de Pagamentos Instituicao de Pagamento S.A. |
 | <img src="logos/png/61021673.png" width="40" alt="MAGALUPAY SCFI S.A."> | 0793 | 61021673 | MAGALUPAY SCFI S.A. | Open Finance — Magalupay Instituicao de Pagamento S.A. |
+| <img src="logos/png/25021356.png" width="40" alt="DLOCAL BRASIL IP S.A."> | 0803 | 25021356 | DLOCAL BRASIL IP S.A. | Site oficial (revisado) |
 | <img src="logos/png/01722480.png" width="40" alt="QUERO-QUERO VERDECARD IP S.A."> | — | 01722480 | QUERO-QUERO VERDECARD IP S.A. | Open Finance — QUERO-QUERO VERDECARD INSTITUICAO DE PAGAMENTO S.A. |
 | <img src="logos/png/03130170.png" width="40" alt="BRASIL CARD IP LTDA"> | — | 03130170 | BRASIL CARD IP LTDA | Open Finance — BRASIL CARD INSTITUICAO DE PAGAMENTOS LTDA |
 | <img src="logos/png/11275560.png" width="40" alt="RECARGAPAY IP LTDA."> | — | 11275560 | RECARGAPAY IP LTDA. | Open Finance — RECARGAPAY INSTITUICAO DE PAGAMENTO LTDA. |
 | <img src="logos/png/14796606.png" width="40" alt="ADYEN DO BRASIL IP LTDA."> | — | 14796606 | ADYEN DO BRASIL IP LTDA. | Site oficial (revisado) |
-| <img src="logos/png/25021356.png" width="40" alt="DLOCAL BRASIL IP S.A."> | — | 25021356 | DLOCAL BRASIL IP S.A. | Site oficial (revisado) |
 | <img src="logos/png/32345784.png" width="40" alt="C6 CTVM LTDA."> | — | 32345784 | C6 CTVM LTDA. | Open Finance — BCO C6 S.A. |
 | <img src="logos/png/38372267.png" width="40" alt="MAREE IP LTDA."> | — | 38372267 | MAREE IP LTDA. | Open Finance — SHOPEE |
 | <img src="logos/png/40571694.png" width="40" alt="WISE BRASIL IP LTDA."> | — | 40571694 | WISE BRASIL IP LTDA. | Open Finance — WISE BRASIL INSTITUICAO DE PAGAMENTO LTDA |
@@ -499,7 +499,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` COOP SICREDI REG PROD RS/SC/MG (ISPB 89468565)
 - `——` COOP SICREDI IBIRAIARAS RS/MG (ISPB 89990501)
 - `——` COOP SICREDI INTERESTADOS (ISPB 90497256)
-- `——` COOP SICREDI SERRANA RS (ISPB 90608712)
+- `——` COOP SICREDI SERRANA (ISPB 90608712)
 - `——` COOP SICREDI CULTURAS RS/MG (ISPB 90729369)
 - `——` COOP SICREDI INTEGRAÇÃO RS/MG (ISPB 91159764)
 - `——` COOP SICREDI PIONEIRA RS (ISPB 91586982)
@@ -542,7 +542,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 </details>
 
 
-<details><summary>Instituições sem logo (589) — consumidores devem usar um ícone genérico</summary>
+<details><summary>Instituições sem logo (587) — consumidores devem usar um ícone genérico</summary>
 
 - `0010` CREDICOAMO (ISPB 81723108)
 - `0012` BANCO INBURSA (ISPB 04866275)
@@ -558,7 +558,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0081` BANCOSEGURO S.A. (ISPB 10264663)
 - `0082` BANCO TOPÁZIO S.A. (ISPB 07679404)
 - `0083` BCO DA CHINA BRASIL S.A. (ISPB 10690848)
-- `0088` BANCO RANDON S.A. (ISPB 11476673)
 - `0089` CREDISAN CC (ISPB 62109566)
 - `0093` POLOCRED SCMEPP LTDA. (ISPB 07945233)
 - `0094` BANCO FINAXIS (ISPB 11758741)
@@ -817,7 +816,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0768` BECKER FINANCEIRA SA - CFI (ISPB 20443996)
 - `0770` V3 IP S.A. (ISPB 38320462)
 - `0771` WX IP LTDA. (ISPB 57824223)
-- `0772` CC MECUNP (ISPB 20833992)
+- `0772` CC MECUNP - EM LIQUIDAÇÃO EXTRAJUDICIAL (ISPB 20833992)
 - `0774` MOVA SEP S.A. (ISPB 33959738)
 - `0778` PB SCD (ISPB 58674454)
 - `0780` SAFETYPAY BRASIL IP LTDA (ISPB 12102128)
@@ -1032,7 +1031,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` EMPRESA DE BENEFÍCIOS IP LTDA. (ISPB 33449007)
 - `——` CCLA CENTRO-SUL GOIANO (ISPB 33579731)
 - `——` CCLA ANÁPOLIS E REGIÃO (ISPB 33615055)
-- `——` EQUIS IP LTDA. (ISPB 33641877)
 - `——` B91 (ISPB 33735811)
 - `——` SIMPAY IP (ISPB 33982918)
 - `——` ASTROPAY (ISPB 34006497)

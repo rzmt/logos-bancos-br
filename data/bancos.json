@@ -817,16 +817,6 @@
       }
     },
     {
-      "ispb": "11476673",
-      "compe": "088",
-      "compe4": "0088",
-      "name": "BANCO RANDON S.A.",
-      "shortName": "BANCO RANDON S.A.",
-      "displayName": null,
-      "pix": null,
-      "logo": null
-    },
-    {
       "ispb": "62109566",
       "compe": "089",
       "compe4": "0089",
@@ -6546,13 +6536,7 @@
       "name": "WE PAY OUT INSTITUICAO DE PAGAMENTO LTDA.",
       "shortName": "WE PAY OUT IP LTDA.",
       "displayName": null,
-      "pix": {
-        "spiParticipationType": "Direta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Instituição de Pagamento",
-        "authorizedByBcb": true
-      },
+      "pix": null,
       "logo": null
     },
     {
@@ -6936,13 +6920,7 @@
       "name": "WASU - WALLET SUPPORT INSTITUIÇÃO DE PAGAMENTO LTDA",
       "shortName": "WASU IP LTDA.",
       "displayName": null,
-      "pix": {
-        "spiParticipationType": "Direta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Instituição de Pagamento",
-        "authorizedByBcb": true
-      },
+      "pix": null,
       "logo": null
     },
     {
@@ -7652,8 +7630,8 @@
       "ispb": "20833992",
       "compe": "772",
       "compe4": "0772",
-      "name": "COOPERATIVA DE CRÉDITO MÚTUO DOS EMPREGADOS DO CENTRO UNIVERSITÁRIO NEWTON PAIVA LTDA. - CREDIPAIVA",
-      "shortName": "CC MECUNP",
+      "name": "COOPERATIVA DE CRÉDITO MÚTUO DOS EMPREGADOS DO CENTRO UNIVERSITÁRIO NEWTON PAIVA LTDA. - CREDIPAIVA - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "shortName": "CC MECUNP - EM LIQUIDAÇÃO EXTRAJUDICIAL",
       "displayName": null,
       "pix": null,
       "logo": null
@@ -7929,6 +7907,33 @@
       "displayName": null,
       "pix": null,
       "logo": null
+    },
+    {
+      "ispb": "25021356",
+      "compe": "803",
+      "compe4": "0803",
+      "name": "DLOCAL BRASIL INSTITUIÇÃO DE PAGAMENTO S.A.",
+      "shortName": "DLOCAL BRASIL IP S.A.",
+      "displayName": "dLocal",
+      "pix": {
+        "spiParticipationType": "Direta",
+        "pixParticipationType": "Facultativa",
+        "modality": "Provedor de Conta Transacional",
+        "institutionType": "Instituição de Pagamento",
+        "authorizedByBcb": true
+      },
+      "logo": {
+        "png": "logos/png/25021356.png",
+        "svg": "logos/svg/25021356.svg",
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://d13wxjfb6x6swr.cloudfront.net/brand/dlocal_icon_color.svg",
+          "sha256": "6e4df1e7c4fb8841c81769cf9f3d304581de8c0704e6b11922c69820fed7866a",
+          "updatedAt": "2026-10-18"
+        }
+      }
     },
     {
       "ispb": "32343119",

@@ -7976,34 +7976,6 @@
       "logo": null
     },
     {
-      "ispb": "25021356",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "25021356000132",
-      "name": "DLOCAL BRASIL IP S.A.",
-      "shortName": "DLOCAL BRASIL IP S.A.",
-      "displayName": "dLocal",
-      "pix": {
-        "spiParticipationType": "Direta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Instituição de Pagamento",
-        "authorizedByBcb": true
-      },
-      "logo": {
-        "png": "logos/png/25021356.png",
-        "svg": "logos/svg/25021356.svg",
-        "source": {
-          "type": "direct-uri",
-          "org": null,
-          "cnpj": null,
-          "uri": "https://d13wxjfb6x6swr.cloudfront.net/brand/dlocal_icon_color.svg",
-          "sha256": "6e4df1e7c4fb8841c81769cf9f3d304581de8c0704e6b11922c69820fed7866a",
-          "updatedAt": "2026-10-18"
-        }
-      }
-    },
-    {
       "ispb": "25238191",
       "compe": null,
       "compe4": null,
@@ -9174,23 +9146,6 @@
         "modality": "Provedor de Conta Transacional",
         "institutionType": "Cooperativa de Crédito",
         "authorizedByBcb": true
-      },
-      "logo": null
-    },
-    {
-      "ispb": "33641877",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "33641877000110",
-      "name": "EQUIS IP LTDA.",
-      "shortName": "EQUIS IP LTDA.",
-      "displayName": null,
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Instituição de Pagamento",
-        "authorizedByBcb": false
       },
       "logo": null
     },
@@ -14005,8 +13960,8 @@
       "compe": null,
       "compe4": null,
       "cnpj": "90608712000180",
-      "name": "COOP SICREDI SERRANA RS",
-      "shortName": "COOP SICREDI SERRANA RS",
+      "name": "COOP SICREDI SERRANA",
+      "shortName": "COOP SICREDI SERRANA",
       "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
