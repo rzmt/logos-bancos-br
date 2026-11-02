@@ -11,7 +11,7 @@ Logos of Brazilian banks, fintechs and credit unions in PNG and SVG, for Pix scr
 
 <a href="https://rzmt.github.io/logos-bancos-br/"><img src="https://rzmt.github.io/logos-bancos-br/mosaico.png" alt="Logos of Banco do Brasil, Caixa, Itaú, Bradesco, Santander, Nubank, Inter, C6 and other institutions"></a>
 
-Looking for a logo? The [gallery](https://rzmt.github.io/logos-bancos-br/) searches by name, COMPE or ISPB and copies the URL. Files in this repository are named by ISPB.
+Looking for a logo? The [gallery](https://rzmt.github.io/logos-bancos-br/) searches by name, COMPE or ISPB and copies the URL. Files in this repository are named by ISPB; the [name index](logos/README.md) maps each institution to its files.
 
 No install:
 

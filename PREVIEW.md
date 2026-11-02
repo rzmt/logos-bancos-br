@@ -8,184 +8,184 @@
 
 | Logo | COMPE | ISPB | Instituição | Fonte do logo |
 |---|---|---|---|---|
-| <img src="logos/png/00000000.png" width="40" alt="BCO DO BRASIL S.A."> | 0001 | 00000000 | BCO DO BRASIL S.A. | Open Finance — BANCO DO BRASIL S.A. |
-| <img src="logos/png/04902979.png" width="40" alt="BCO DA AMAZONIA S.A."> | 0003 | 04902979 | BCO DA AMAZONIA S.A. | Open Finance — BCO DA AMAZONIA S.A. |
-| <img src="logos/png/07237373.png" width="40" alt="BCO DO NORDESTE DO BRASIL S.A."> | 0004 | 07237373 | BCO DO NORDESTE DO BRASIL S.A. | Open Finance — BCO DO NORDESTE DO BRASIL S.A. |
+| <img src="logos/png/00000000.png" width="40" alt="Banco do Brasil"> | 0001 | 00000000 | Banco do Brasil (BCO DO BRASIL S.A.) | Open Finance — BANCO DO BRASIL S.A. |
+| <img src="logos/png/04902979.png" width="40" alt="Banco da Amazônia"> | 0003 | 04902979 | Banco da Amazônia (BCO DA AMAZONIA S.A.) | Open Finance — BCO DA AMAZONIA S.A. |
+| <img src="logos/png/07237373.png" width="40" alt="Banco do Nordeste"> | 0004 | 07237373 | Banco do Nordeste (BCO DO NORDESTE DO BRASIL S.A.) | Open Finance — BCO DO NORDESTE DO BRASIL S.A. |
 | <img src="logos/png/33657248.png" width="40" alt="BNDES"> | 0007 | 33657248 | BNDES | Site oficial (revisado) |
-| <img src="logos/png/61809182.png" width="40" alt="UBS (BRASIL) CORRETORA DE VALORES S.A."> | 0011 | 61809182 | UBS (BRASIL) CORRETORA DE VALORES S.A. | Site oficial (revisado) |
-| <img src="logos/png/09274232.png" width="40" alt="STATE STREET BR S.A. BCO COMERCIAL"> | 0014 | 09274232 | STATE STREET BR S.A. BCO COMERCIAL | Site oficial (revisado) |
-| <img src="logos/png/02819125.png" width="40" alt="UBS BB CCTVM S.A."> | 0015 | 02819125 | UBS BB CCTVM S.A. | Site oficial (revisado) |
-| <img src="logos/png/42272526.png" width="40" alt="BNY MELLON BCO S.A."> | 0017 | 42272526 | BNY MELLON BCO S.A. | Site oficial (revisado) |
-| <img src="logos/png/28127603.png" width="40" alt="BCO BANESTES S.A."> | 0021 | 28127603 | BCO BANESTES S.A. | Open Finance — BCO BANESTES S.A. |
-| <img src="logos/png/03323840.png" width="40" alt="BCO ALFA S.A."> | 0025 | 03323840 | BCO ALFA S.A. | Site oficial (revisado) |
-| <img src="logos/png/90400888.png" width="40" alt="BCO SANTANDER (BRASIL) S.A."> | 0033 | 90400888 | BCO SANTANDER (BRASIL) S.A. | Open Finance — BCO SANTANDER (BRASIL) S.A. |
-| <img src="logos/png/06271464.png" width="40" alt="BCO BBI S.A."> | 0036 | 06271464 | BCO BBI S.A. | Open Finance — BANCO BRADESCO SA |
-| <img src="logos/png/04913711.png" width="40" alt="BCO DO EST. DO PA S.A."> | 0037 | 04913711 | BCO DO EST. DO PA S.A. | Open Finance — BCO DO EST. DO PA S.A. |
-| <img src="logos/png/03609817.png" width="40" alt="BCO CARGILL S.A."> | 0040 | 03609817 | BCO CARGILL S.A. | Site oficial (revisado) |
-| <img src="logos/png/92702067.png" width="40" alt="BCO DO ESTADO DO RS S.A."> | 0041 | 92702067 | BCO DO ESTADO DO RS S.A. | Open Finance — BCO DO ESTADO DO RS S.A. |
-| <img src="logos/png/13009717.png" width="40" alt="BCO DO EST. DE SE S.A."> | 0047 | 13009717 | BCO DO EST. DE SE S.A. | Open Finance — BCO DO EST. DE SE S.A. |
-| <img src="logos/png/04184779.png" width="40" alt="BANCO BRADESCARD"> | 0063 | 04184779 | BANCO BRADESCARD | Open Finance — BANCO BRADESCARD |
-| <img src="logos/png/04332281.png" width="40" alt="GOLDMAN SACHS DO BRASIL BM S.A"> | 0064 | 04332281 | GOLDMAN SACHS DO BRASIL BM S.A | Site oficial (revisado) |
-| <img src="logos/png/02801938.png" width="40" alt="BCO MORGAN STANLEY S.A."> | 0066 | 02801938 | BCO MORGAN STANLEY S.A. | Site oficial (revisado) |
-| <img src="logos/png/61033106.png" width="40" alt="BCO CREFISA S.A."> | 0069 | 61033106 | BCO CREFISA S.A. | Open Finance — BCO CREFISA S.A. |
-| <img src="logos/png/00000208.png" width="40" alt="BRB - BCO DE BRASILIA S.A."> | 0070 | 00000208 | BRB - BCO DE BRASILIA S.A. | Open Finance — BRB - BCO DE BRASILIA S.A. |
-| <img src="logos/png/03017677.png" width="40" alt="BCO. J.SAFRA S.A."> | 0074 | 03017677 | BCO. J.SAFRA S.A. | Open Finance — BCO SAFRA S.A. |
-| <img src="logos/png/00416968.png" width="40" alt="BANCO INTER"> | 0077 | 00416968 | BANCO INTER | Open Finance — BANCO INTER |
-| <img src="logos/png/09516419.png" width="40" alt="PICPAY BANK - BANCO MÚLTIPLO S.A"> | 0079 | 09516419 | PICPAY BANK - BANCO MÚLTIPLO S.A | Open Finance — PICPAY |
-| <img src="logos/png/02398976.png" width="40" alt="SISPRIME DO BRASIL - COOP"> | 0084 | 02398976 | SISPRIME DO BRASIL - COOP | Open Finance — SISPRIME DO BRASIL - COOPERATIVA DE CREDITO |
-| <img src="logos/png/05463212.png" width="40" alt="COOPCENTRAL AILOS"> | 0085 | 05463212 | COOPCENTRAL AILOS | Open Finance — CENTRAL AILOS |
-| <img src="logos/png/00806535.png" width="40" alt="PLANNER CV S.A."> | 0100 | 00806535 | PLANNER CV S.A. | Site oficial (revisado) |
-| <img src="logos/png/62287735.png" width="40" alt="WARREN RENA DTVM"> | 0101 | 62287735 | WARREN RENA DTVM | Site oficial (revisado) |
-| <img src="logos/png/02332886.png" width="40" alt="XP INVESTIMENTOS CCTVM S/A"> | 0102 | 02332886 | XP INVESTIMENTOS CCTVM S/A | Open Finance — BANCO XP S.A. |
-| <img src="logos/png/00360305.png" width="40" alt="CAIXA ECONOMICA FEDERAL"> | 0104 | 00360305 | CAIXA ECONOMICA FEDERAL | Open Finance — CAIXA ECONOMICA FEDERAL |
-| <img src="logos/png/07652226.png" width="40" alt="LECCA CFI S.A."> | 0105 | 07652226 | LECCA CFI S.A. | Site oficial (revisado) |
-| <img src="logos/png/15114366.png" width="40" alt="BCO BOCOM BBM S.A."> | 0107 | 15114366 | BCO BOCOM BBM S.A. | Site oficial (revisado) |
-| <img src="logos/png/36113876.png" width="40" alt="OLIVEIRA TRUST DTVM S.A."> | 0111 | 36113876 | OLIVEIRA TRUST DTVM S.A. | Site oficial (revisado) |
-| <img src="logos/png/61723847.png" width="40" alt="NEON CTVM S.A."> | 0113 | 61723847 | NEON CTVM S.A. | Open Finance — Neon Pagamentos |
-| <img src="logos/png/13720915.png" width="40" alt="BCO WESTERN UNION"> | 0119 | 13720915 | BCO WESTERN UNION | Site oficial (revisado) |
-| <img src="logos/png/33603457.png" width="40" alt="BCO RODOBENS S.A."> | 0120 | 33603457 | BCO RODOBENS S.A. | Site oficial (revisado) |
-| <img src="logos/png/10664513.png" width="40" alt="BCO AGIBANK S.A."> | 0121 | 10664513 | BCO AGIBANK S.A. | Open Finance — BCO AGIBANK S.A. |
-| <img src="logos/png/33147315.png" width="40" alt="BCO BRADESCO BERJ S.A."> | 0122 | 33147315 | BCO BRADESCO BERJ S.A. | Open Finance — BANCO BRADESCO SA |
-| <img src="logos/png/45246410.png" width="40" alt="BANCO GENIAL"> | 0125 | 45246410 | BANCO GENIAL | Open Finance — BANCO GENIAL S.A. |
-| <img src="logos/png/18520834.png" width="40" alt="UBS BB BI S.A."> | 0129 | 18520834 | UBS BB BI S.A. | Site oficial (revisado) |
-| <img src="logos/png/10398952.png" width="40" alt="CRESOL CONFEDERAÇÃO"> | 0133 | 10398952 | CRESOL CONFEDERAÇÃO | Open Finance — CRESOL CONFEDERAÇÃO |
-| <img src="logos/png/00315557.png" width="40" alt="UNICRED DO BRASIL"> | 0136 | 00315557 | UNICRED DO BRASIL | Open Finance — COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL |
-| <img src="logos/png/62169875.png" width="40" alt="NU INVESTIMENTOS S.A. - CTVM"> | 0140 | 62169875 | NU INVESTIMENTOS S.A. - CTVM | Open Finance — NU PAGAMENTOS S.A. - INSTITUICAO DE PAGAMENTO |
-| <img src="logos/png/02992317.png" width="40" alt="INTEX BANK BCO DE CÂMBIO S.A."> | 0143 | 02992317 | INTEX BANK BCO DE CÂMBIO S.A. | Site oficial (revisado) |
-| <img src="logos/png/13059145.png" width="40" alt="EBURY BCO DE CÂMBIO S.A."> | 0144 | 13059145 | EBURY BCO DE CÂMBIO S.A. | Site oficial (revisado) |
-| <img src="logos/png/43180355.png" width="40" alt="PEFISA S.A. - C.F.I."> | 0174 | 43180355 | PEFISA S.A. - C.F.I. | Open Finance — PEFISA S.A. - CFI |
-| <img src="logos/png/16501555.png" width="40" alt="STONE IP S.A."> | 0197 | 16501555 | STONE IP S.A. | Open Finance — STONE PAGAMENTOS S.A. |
-| <img src="logos/png/30306294.png" width="40" alt="BANCO BTG PACTUAL S.A."> | 0208 | 30306294 | BANCO BTG PACTUAL S.A. | Open Finance — BANCO BTG PACTUAL S.A. |
-| <img src="logos/png/92894922.png" width="40" alt="BANCO ORIGINAL"> | 0212 | 92894922 | BANCO ORIGINAL | Site oficial (revisado) |
-| <img src="logos/png/54403563.png" width="40" alt="BCO ARBI S.A."> | 0213 | 54403563 | BCO ARBI S.A. | Open Finance — BCO ARBI S.A. |
-| <img src="logos/png/91884981.png" width="40" alt="BANCO JOHN DEERE S.A."> | 0217 | 91884981 | BANCO JOHN DEERE S.A. | Site oficial (revisado) |
-| <img src="logos/png/71027866.png" width="40" alt="BCO BS2 S.A."> | 0218 | 71027866 | BCO BS2 S.A. | Site oficial (revisado) |
-| <img src="logos/png/75647891.png" width="40" alt="BCO CRÉDIT AGRICOLE BR S.A."> | 0222 | 75647891 | BCO CRÉDIT AGRICOLE BR S.A. | Site oficial (revisado) |
-| <img src="logos/png/58616418.png" width="40" alt="BCO FIBRA S.A."> | 0224 | 58616418 | BCO FIBRA S.A. | Site oficial (revisado) |
-| <img src="logos/png/62421979.png" width="40" alt="BANCO BMG SOLUÇÕES FINANCEIRAS S.A."> | 0233 | 62421979 | BANCO BMG SOLUÇÕES FINANCEIRAS S.A. | Open Finance — BCO BMG S.A. |
-| <img src="logos/png/60746948.png" width="40" alt="BCO BRADESCO S.A."> | 0237 | 60746948 | BCO BRADESCO S.A. | Open Finance — BANCO BRADESCO SA |
-| <img src="logos/png/28195667.png" width="40" alt="BCO ABC BRASIL S.A."> | 0246 | 28195667 | BCO ABC BRASIL S.A. | Site oficial (revisado) |
-| <img src="logos/png/50585090.png" width="40" alt="BANCO BMG CONSIGNADO S.A."> | 0250 | 50585090 | BANCO BMG CONSIGNADO S.A. | Open Finance — BCO BMG S.A. |
-| <img src="logos/png/14388334.png" width="40" alt="PARANA BCO S.A."> | 0254 | 14388334 | PARANA BCO S.A. | Site oficial (revisado) |
-| <img src="logos/png/18236120.png" width="40" alt="NU PAGAMENTOS - IP"> | 0260 | 18236120 | NU PAGAMENTOS - IP | Open Finance — NU PAGAMENTOS S.A. - INSTITUICAO DE PAGAMENTO |
-| <img src="logos/png/33644196.png" width="40" alt="BCO FATOR S.A."> | 0265 | 33644196 | BCO FATOR S.A. | Site oficial (revisado) |
-| <img src="logos/png/14511781.png" width="40" alt="BARI CIA HIPOTECÁRIA"> | 0268 | 14511781 | BARI CIA HIPOTECÁRIA | Site oficial (revisado) |
-| <img src="logos/png/53518684.png" width="40" alt="BCO HSBC S.A."> | 0269 | 53518684 | BCO HSBC S.A. | Site oficial (revisado) |
-| <img src="logos/png/11581339.png" width="40" alt="BMP SCMEPP LTDA"> | 0274 | 11581339 | BMP SCMEPP LTDA | Open Finance — MONEY PLUS SCMEPP LTDA |
-| <img src="logos/png/11970623.png" width="40" alt="BCO SENFF S.A."> | 0276 | 11970623 | BCO SENFF S.A. | Site oficial (revisado) |
-| <img src="logos/png/08561701.png" width="40" alt="PAGSEGURO INTERNET IP S.A."> | 0290 | 08561701 | PAGSEGURO INTERNET IP S.A. | Open Finance — PAGSEGURO |
-| <img src="logos/png/28650236.png" width="40" alt="GALAPAGOS DTVM S.A."> | 0292 | 28650236 | GALAPAGOS DTVM S.A. | Site oficial (revisado) |
-| <img src="logos/png/33042151.png" width="40" alt="BCO LA NACION ARGENTINA"> | 0300 | 33042151 | BCO LA NACION ARGENTINA | Open Finance — BCO LA NACION ARGENTINA |
-| <img src="logos/png/13370835.png" width="40" alt="DOCK IP S.A."> | 0301 | 13370835 | DOCK IP S.A. | Open Finance — DOCK INSTITUICAO DE PAGAMENTO S.A. |
-| <img src="logos/png/22610500.png" width="40" alt="VORTX DTVM LTDA."> | 0310 | 22610500 | VORTX DTVM LTDA. | Site oficial (revisado) |
-| <img src="logos/png/61186680.png" width="40" alt="BCO BMG S.A."> | 0318 | 61186680 | BCO BMG S.A. | Open Finance — BCO BMG S.A. |
-| <img src="logos/png/10573521.png" width="40" alt="MERCADO PAGO IP LTDA."> | 0323 | 10573521 | MERCADO PAGO IP LTDA. | Open Finance — MERCADO PAGO INSTITUICAO DE PAGAMENTO LTDA |
-| <img src="logos/png/03311443.png" width="40" alt="MEUTUDO SCFI"> | 0326 | 03311443 | MEUTUDO SCFI | Open Finance — PARATI - CFI S.A. |
-| <img src="logos/png/32402502.png" width="40" alt="QI SCD S.A."> | 0329 | 32402502 | QI SCD S.A. | Open Finance — QI SCD S.A. |
-| <img src="logos/png/00556603.png" width="40" alt="BANCO BARI S.A."> | 0330 | 00556603 | BANCO BARI S.A. | Site oficial (revisado) |
-| <img src="logos/png/13140088.png" width="40" alt="ACESSO SOLUÇÕES DE PAGAMENTO S.A. - INSTITUIÇÃO DE PAGAMENTO"> | 0332 | 13140088 | ACESSO SOLUÇÕES DE PAGAMENTO S.A. - INSTITUIÇÃO DE PAGAMENTO | Open Finance — ACESSO SOLUCOES PAGAMENTO SA |
-| <img src="logos/png/27098060.png" width="40" alt="BANCO DIGIO"> | 0335 | 27098060 | BANCO DIGIO | Open Finance — BANCO DIGIO |
-| <img src="logos/png/31872495.png" width="40" alt="BCO C6 S.A."> | 0336 | 31872495 | BCO C6 S.A. | Open Finance — BCO C6 S.A. |
-| <img src="logos/png/60701190.png" width="40" alt="ITAÚ UNIBANCO S.A."> | 0341 | 60701190 | ITAÚ UNIBANCO S.A. | Open Finance — ITAU UNIBANCO S.A. |
-| <img src="logos/png/33264668.png" width="40" alt="BCO XP S.A."> | 0348 | 33264668 | BCO XP S.A. | Open Finance — BANCO XP S.A. |
-| <img src="logos/png/29162769.png" width="40" alt="SANTANDER CTVM S.A."> | 0352 | 29162769 | SANTANDER CTVM S.A. | Open Finance — Santander CTVM S.A. |
-| <img src="logos/png/09464032.png" width="40" alt="MIDWAY S.A. - SCFI"> | 0358 | 09464032 | MIDWAY S.A. - SCFI | Open Finance — MIDWAY S.A. - SCFI |
-| <img src="logos/png/01027058.png" width="40" alt="CIELO IP S.A."> | 0362 | 01027058 | CIELO IP S.A. | Open Finance — CIELO S.A. |
-| <img src="logos/png/62285390.png" width="40" alt="QI CTVM S.A."> | 0363 | 62285390 | QI CTVM S.A. | Open Finance — QI SCD S.A. |
-| <img src="logos/png/09089356.png" width="40" alt="EFÍ S.A. - IP"> | 0364 | 09089356 | EFÍ S.A. - IP | Open Finance — EFI S.A. - INSTITUICAO DE PAGAMENTO |
-| <img src="logos/png/08357240.png" width="40" alt="BCO CSF S.A."> | 0368 | 08357240 | BCO CSF S.A. | Open Finance — BANCO CSF S/A |
-| <img src="logos/png/61088183.png" width="40" alt="BCO MIZUHO S.A."> | 0370 | 61088183 | BCO MIZUHO S.A. | Site oficial (revisado) |
-| <img src="logos/png/27351731.png" width="40" alt="REALIZE SCFI S.A."> | 0374 | 27351731 | REALIZE SCFI S.A. | Open Finance — REALIZE SOCIEDADE DE CREDITO, FINANCIAMENTO E INVESTIMENTO S.A. |
-| <img src="logos/png/33172537.png" width="40" alt="BCO J.P. MORGAN S.A."> | 0376 | 33172537 | BCO J.P. MORGAN S.A. | Site oficial (revisado) |
-| <img src="logos/png/22896431.png" width="40" alt="PICPAY"> | 0380 | 22896431 | PICPAY | Open Finance — PICPAY |
-| <img src="logos/png/60814191.png" width="40" alt="BCO MERCEDES-BENZ S.A."> | 0381 | 60814191 | BCO MERCEDES-BENZ S.A. | Site oficial (revisado) |
-| <img src="logos/png/21018182.png" width="40" alt="EBANX IP LTDA."> | 0383 | 21018182 | EBANX IP LTDA. | Open Finance — Ebanx Instituicao de Pagamento Ltda. |
-| <img src="logos/png/30680829.png" width="40" alt="NU FINANCEIRA S.A. CFI"> | 0386 | 30680829 | NU FINANCEIRA S.A. CFI | Open Finance — NU PAGAMENTOS S.A. - INSTITUICAO DE PAGAMENTO |
-| <img src="logos/png/17184037.png" width="40" alt="BCO MERCANTIL DO BRASIL S.A."> | 0389 | 17184037 | BCO MERCANTIL DO BRASIL S.A. | Open Finance — BCO MERCANTIL DO BRASIL S.A. |
-| <img src="logos/png/59109165.png" width="40" alt="BCO VOLKSWAGEN S.A"> | 0393 | 59109165 | BCO VOLKSWAGEN S.A | Site oficial (revisado) |
-| <img src="logos/png/07207996.png" width="40" alt="BCO BRADESCO FINANC. S.A."> | 0394 | 07207996 | BCO BRADESCO FINANC. S.A. | Open Finance — BCO BRADESCO FINANC. S.A. |
-| <img src="logos/png/13884775.png" width="40" alt="MAGALUPAY"> | 0396 | 13884775 | MAGALUPAY | Open Finance — Magalupay Instituicao de Pagamento S.A. |
-| <img src="logos/png/34088029.png" width="40" alt="LISTO SCD S.A."> | 0397 | 34088029 | LISTO SCD S.A. | Open Finance — LISTO SOCIEDADE DE CREDITO DIRETO S.A. |
-| <img src="logos/png/15111975.png" width="40" alt="IUGU IP S.A."> | 0401 | 15111975 | IUGU IP S.A. | Open Finance — IUGU INSTITUICAO DE PAGAMENTO S.A. |
-| <img src="logos/png/37880206.png" width="40" alt="CORA SCFI"> | 0403 | 37880206 | CORA SCFI | Open Finance — CORA SCD S.A. |
-| <img src="logos/png/37241230.png" width="40" alt="SUMUP SCFI S.A"> | 0404 | 37241230 | SUMUP SCFI S.A | Open Finance — SUMUP SCD S.A. |
-| <img src="logos/png/37715993.png" width="40" alt="ACCREDITO SCD S.A."> | 0406 | 37715993 | ACCREDITO SCD S.A. | Open Finance — ACCREDITO - SOCIEDADE DE CREDITO DIRETO S.A. |
+| <img src="logos/png/61809182.png" width="40" alt="UBS Corretora"> | 0011 | 61809182 | UBS Corretora (UBS (BRASIL) CORRETORA DE VALORES S.A.) | Site oficial (revisado) |
+| <img src="logos/png/09274232.png" width="40" alt="State Street"> | 0014 | 09274232 | State Street (STATE STREET BR S.A. BCO COMERCIAL) | Site oficial (revisado) |
+| <img src="logos/png/02819125.png" width="40" alt="UBS BB Corretora"> | 0015 | 02819125 | UBS BB Corretora (UBS BB CCTVM S.A.) | Site oficial (revisado) |
+| <img src="logos/png/42272526.png" width="40" alt="BNY Mellon"> | 0017 | 42272526 | BNY Mellon (BNY MELLON BCO S.A.) | Site oficial (revisado) |
+| <img src="logos/png/28127603.png" width="40" alt="Banestes"> | 0021 | 28127603 | Banestes (BCO BANESTES S.A.) | Open Finance — BCO BANESTES S.A. |
+| <img src="logos/png/03323840.png" width="40" alt="Banco Alfa"> | 0025 | 03323840 | Banco Alfa (BCO ALFA S.A.) | Site oficial (revisado) |
+| <img src="logos/png/90400888.png" width="40" alt="Santander"> | 0033 | 90400888 | Santander (BCO SANTANDER (BRASIL) S.A.) | Open Finance — BCO SANTANDER (BRASIL) S.A. |
+| <img src="logos/png/06271464.png" width="40" alt="Bradesco BBI"> | 0036 | 06271464 | Bradesco BBI (BCO BBI S.A.) | Open Finance — BANCO BRADESCO SA |
+| <img src="logos/png/04913711.png" width="40" alt="Banpará"> | 0037 | 04913711 | Banpará (BCO DO EST. DO PA S.A.) | Open Finance — BCO DO EST. DO PA S.A. |
+| <img src="logos/png/03609817.png" width="40" alt="Banco Cargill"> | 0040 | 03609817 | Banco Cargill (BCO CARGILL S.A.) | Site oficial (revisado) |
+| <img src="logos/png/92702067.png" width="40" alt="Banrisul"> | 0041 | 92702067 | Banrisul (BCO DO ESTADO DO RS S.A.) | Open Finance — BCO DO ESTADO DO RS S.A. |
+| <img src="logos/png/13009717.png" width="40" alt="Banese"> | 0047 | 13009717 | Banese (BCO DO EST. DE SE S.A.) | Open Finance — BCO DO EST. DE SE S.A. |
+| <img src="logos/png/04184779.png" width="40" alt="Bradescard"> | 0063 | 04184779 | Bradescard (BANCO BRADESCARD) | Open Finance — BANCO BRADESCARD |
+| <img src="logos/png/04332281.png" width="40" alt="Goldman Sachs"> | 0064 | 04332281 | Goldman Sachs (GOLDMAN SACHS DO BRASIL BM S.A) | Site oficial (revisado) |
+| <img src="logos/png/02801938.png" width="40" alt="Morgan Stanley"> | 0066 | 02801938 | Morgan Stanley (BCO MORGAN STANLEY S.A.) | Site oficial (revisado) |
+| <img src="logos/png/61033106.png" width="40" alt="Crefisa"> | 0069 | 61033106 | Crefisa (BCO CREFISA S.A.) | Open Finance — BCO CREFISA S.A. |
+| <img src="logos/png/00000208.png" width="40" alt="BRB"> | 0070 | 00000208 | BRB (BRB - BCO DE BRASILIA S.A.) | Open Finance — BRB - BCO DE BRASILIA S.A. |
+| <img src="logos/png/03017677.png" width="40" alt="J. Safra"> | 0074 | 03017677 | J. Safra (BCO. J.SAFRA S.A.) | Open Finance — BCO SAFRA S.A. |
+| <img src="logos/png/00416968.png" width="40" alt="Inter"> | 0077 | 00416968 | Inter (BANCO INTER) | Open Finance — BANCO INTER |
+| <img src="logos/png/09516419.png" width="40" alt="PicPay Bank"> | 0079 | 09516419 | PicPay Bank (PICPAY BANK - BANCO MÚLTIPLO S.A) | Open Finance — PICPAY |
+| <img src="logos/png/02398976.png" width="40" alt="Sisprime"> | 0084 | 02398976 | Sisprime (SISPRIME DO BRASIL - COOP) | Open Finance — SISPRIME DO BRASIL - COOPERATIVA DE CREDITO |
+| <img src="logos/png/05463212.png" width="40" alt="Ailos"> | 0085 | 05463212 | Ailos (COOPCENTRAL AILOS) | Open Finance — CENTRAL AILOS |
+| <img src="logos/png/00806535.png" width="40" alt="Planner"> | 0100 | 00806535 | Planner (PLANNER CV S.A.) | Site oficial (revisado) |
+| <img src="logos/png/62287735.png" width="40" alt="Warren"> | 0101 | 62287735 | Warren (WARREN RENA DTVM) | Site oficial (revisado) |
+| <img src="logos/png/02332886.png" width="40" alt="XP Investimentos"> | 0102 | 02332886 | XP Investimentos (XP INVESTIMENTOS CCTVM S/A) | Open Finance — BANCO XP S.A. |
+| <img src="logos/png/00360305.png" width="40" alt="Caixa"> | 0104 | 00360305 | Caixa (CAIXA ECONOMICA FEDERAL) | Open Finance — CAIXA ECONOMICA FEDERAL |
+| <img src="logos/png/07652226.png" width="40" alt="Lecca"> | 0105 | 07652226 | Lecca (LECCA CFI S.A.) | Site oficial (revisado) |
+| <img src="logos/png/15114366.png" width="40" alt="Bocom BBM"> | 0107 | 15114366 | Bocom BBM (BCO BOCOM BBM S.A.) | Site oficial (revisado) |
+| <img src="logos/png/36113876.png" width="40" alt="Oliveira Trust"> | 0111 | 36113876 | Oliveira Trust (OLIVEIRA TRUST DTVM S.A.) | Site oficial (revisado) |
+| <img src="logos/png/61723847.png" width="40" alt="Neon Corretora"> | 0113 | 61723847 | Neon Corretora (NEON CTVM S.A.) | Open Finance — Neon Pagamentos |
+| <img src="logos/png/13720915.png" width="40" alt="Western Union"> | 0119 | 13720915 | Western Union (BCO WESTERN UNION) | Site oficial (revisado) |
+| <img src="logos/png/33603457.png" width="40" alt="Rodobens"> | 0120 | 33603457 | Rodobens (BCO RODOBENS S.A.) | Site oficial (revisado) |
+| <img src="logos/png/10664513.png" width="40" alt="Agibank"> | 0121 | 10664513 | Agibank (BCO AGIBANK S.A.) | Open Finance — BCO AGIBANK S.A. |
+| <img src="logos/png/33147315.png" width="40" alt="Bradesco BERJ"> | 0122 | 33147315 | Bradesco BERJ (BCO BRADESCO BERJ S.A.) | Open Finance — BANCO BRADESCO SA |
+| <img src="logos/png/45246410.png" width="40" alt="Genial"> | 0125 | 45246410 | Genial (BANCO GENIAL) | Open Finance — BANCO GENIAL S.A. |
+| <img src="logos/png/18520834.png" width="40" alt="UBS BB"> | 0129 | 18520834 | UBS BB (UBS BB BI S.A.) | Site oficial (revisado) |
+| <img src="logos/png/10398952.png" width="40" alt="Cresol"> | 0133 | 10398952 | Cresol (CRESOL CONFEDERAÇÃO) | Open Finance — CRESOL CONFEDERAÇÃO |
+| <img src="logos/png/00315557.png" width="40" alt="Unicred"> | 0136 | 00315557 | Unicred (UNICRED DO BRASIL) | Open Finance — COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL |
+| <img src="logos/png/62169875.png" width="40" alt="Nu Investimentos"> | 0140 | 62169875 | Nu Investimentos (NU INVESTIMENTOS S.A. - CTVM) | Open Finance — NU PAGAMENTOS S.A. - INSTITUICAO DE PAGAMENTO |
+| <img src="logos/png/02992317.png" width="40" alt="Intex Bank"> | 0143 | 02992317 | Intex Bank (INTEX BANK BCO DE CÂMBIO S.A.) | Site oficial (revisado) |
+| <img src="logos/png/13059145.png" width="40" alt="Ebury"> | 0144 | 13059145 | Ebury (EBURY BCO DE CÂMBIO S.A.) | Site oficial (revisado) |
+| <img src="logos/png/43180355.png" width="40" alt="Pefisa"> | 0174 | 43180355 | Pefisa (PEFISA S.A. - C.F.I.) | Open Finance — PEFISA S.A. - CFI |
+| <img src="logos/png/16501555.png" width="40" alt="Stone"> | 0197 | 16501555 | Stone (STONE IP S.A.) | Open Finance — STONE PAGAMENTOS S.A. |
+| <img src="logos/png/30306294.png" width="40" alt="BTG Pactual"> | 0208 | 30306294 | BTG Pactual (BANCO BTG PACTUAL S.A.) | Open Finance — BANCO BTG PACTUAL S.A. |
+| <img src="logos/png/92894922.png" width="40" alt="Banco Original"> | 0212 | 92894922 | Banco Original | Site oficial (revisado) |
+| <img src="logos/png/54403563.png" width="40" alt="Arbi"> | 0213 | 54403563 | Arbi (BCO ARBI S.A.) | Open Finance — BCO ARBI S.A. |
+| <img src="logos/png/91884981.png" width="40" alt="John Deere"> | 0217 | 91884981 | John Deere (BANCO JOHN DEERE S.A.) | Site oficial (revisado) |
+| <img src="logos/png/71027866.png" width="40" alt="BS2"> | 0218 | 71027866 | BS2 (BCO BS2 S.A.) | Site oficial (revisado) |
+| <img src="logos/png/75647891.png" width="40" alt="Crédit Agricole"> | 0222 | 75647891 | Crédit Agricole (BCO CRÉDIT AGRICOLE BR S.A.) | Site oficial (revisado) |
+| <img src="logos/png/58616418.png" width="40" alt="Fibra"> | 0224 | 58616418 | Fibra (BCO FIBRA S.A.) | Site oficial (revisado) |
+| <img src="logos/png/62421979.png" width="40" alt="BMG Soluções Financeiras"> | 0233 | 62421979 | BMG Soluções Financeiras (BANCO BMG SOLUÇÕES FINANCEIRAS S.A.) | Open Finance — BCO BMG S.A. |
+| <img src="logos/png/60746948.png" width="40" alt="Bradesco"> | 0237 | 60746948 | Bradesco (BCO BRADESCO S.A.) | Open Finance — BANCO BRADESCO SA |
+| <img src="logos/png/28195667.png" width="40" alt="ABC Brasil"> | 0246 | 28195667 | ABC Brasil (BCO ABC BRASIL S.A.) | Site oficial (revisado) |
+| <img src="logos/png/50585090.png" width="40" alt="BMG Consignado"> | 0250 | 50585090 | BMG Consignado (BANCO BMG CONSIGNADO S.A.) | Open Finance — BCO BMG S.A. |
+| <img src="logos/png/14388334.png" width="40" alt="Paraná Banco"> | 0254 | 14388334 | Paraná Banco (PARANA BCO S.A.) | Site oficial (revisado) |
+| <img src="logos/png/18236120.png" width="40" alt="Nubank"> | 0260 | 18236120 | Nubank (NU PAGAMENTOS - IP) | Open Finance — NU PAGAMENTOS S.A. - INSTITUICAO DE PAGAMENTO |
+| <img src="logos/png/33644196.png" width="40" alt="Fator"> | 0265 | 33644196 | Fator (BCO FATOR S.A.) | Site oficial (revisado) |
+| <img src="logos/png/14511781.png" width="40" alt="Bari"> | 0268 | 14511781 | Bari (BARI CIA HIPOTECÁRIA) | Site oficial (revisado) |
+| <img src="logos/png/53518684.png" width="40" alt="HSBC"> | 0269 | 53518684 | HSBC (BCO HSBC S.A.) | Site oficial (revisado) |
+| <img src="logos/png/11581339.png" width="40" alt="BMP"> | 0274 | 11581339 | BMP (BMP SCMEPP LTDA) | Open Finance — MONEY PLUS SCMEPP LTDA |
+| <img src="logos/png/11970623.png" width="40" alt="Senff"> | 0276 | 11970623 | Senff (BCO SENFF S.A.) | Site oficial (revisado) |
+| <img src="logos/png/08561701.png" width="40" alt="PagBank"> | 0290 | 08561701 | PagBank (PAGSEGURO INTERNET IP S.A.) | Open Finance — PAGSEGURO |
+| <img src="logos/png/28650236.png" width="40" alt="Galapagos Capital"> | 0292 | 28650236 | Galapagos Capital (GALAPAGOS DTVM S.A.) | Site oficial (revisado) |
+| <img src="logos/png/33042151.png" width="40" alt="Banco de la Nación Argentina"> | 0300 | 33042151 | Banco de la Nación Argentina (BCO LA NACION ARGENTINA) | Open Finance — BCO LA NACION ARGENTINA |
+| <img src="logos/png/13370835.png" width="40" alt="Dock"> | 0301 | 13370835 | Dock (DOCK IP S.A.) | Open Finance — DOCK INSTITUICAO DE PAGAMENTO S.A. |
+| <img src="logos/png/22610500.png" width="40" alt="Vórtx"> | 0310 | 22610500 | Vórtx (VORTX DTVM LTDA.) | Site oficial (revisado) |
+| <img src="logos/png/61186680.png" width="40" alt="BMG"> | 0318 | 61186680 | BMG (BCO BMG S.A.) | Open Finance — BCO BMG S.A. |
+| <img src="logos/png/10573521.png" width="40" alt="Mercado Pago"> | 0323 | 10573521 | Mercado Pago (MERCADO PAGO IP LTDA.) | Open Finance — MERCADO PAGO INSTITUICAO DE PAGAMENTO LTDA |
+| <img src="logos/png/03311443.png" width="40" alt="meutudo"> | 0326 | 03311443 | meutudo (MEUTUDO SCFI) | Open Finance — PARATI - CFI S.A. |
+| <img src="logos/png/32402502.png" width="40" alt="QI Tech"> | 0329 | 32402502 | QI Tech (QI SCD S.A.) | Open Finance — QI SCD S.A. |
+| <img src="logos/png/00556603.png" width="40" alt="Banco Bari"> | 0330 | 00556603 | Banco Bari (BANCO BARI S.A.) | Site oficial (revisado) |
+| <img src="logos/png/13140088.png" width="40" alt="Acesso"> | 0332 | 13140088 | Acesso (ACESSO SOLUÇÕES DE PAGAMENTO S.A. - INSTITUIÇÃO DE PAGAMENTO) | Open Finance — ACESSO SOLUCOES PAGAMENTO SA |
+| <img src="logos/png/27098060.png" width="40" alt="Digio"> | 0335 | 27098060 | Digio (BANCO DIGIO) | Open Finance — BANCO DIGIO |
+| <img src="logos/png/31872495.png" width="40" alt="C6 Bank"> | 0336 | 31872495 | C6 Bank (BCO C6 S.A.) | Open Finance — BCO C6 S.A. |
+| <img src="logos/png/60701190.png" width="40" alt="Itaú"> | 0341 | 60701190 | Itaú (ITAÚ UNIBANCO S.A.) | Open Finance — ITAU UNIBANCO S.A. |
+| <img src="logos/png/33264668.png" width="40" alt="Banco XP"> | 0348 | 33264668 | Banco XP (BCO XP S.A.) | Open Finance — BANCO XP S.A. |
+| <img src="logos/png/29162769.png" width="40" alt="Santander Corretora"> | 0352 | 29162769 | Santander Corretora (SANTANDER CTVM S.A.) | Open Finance — Santander CTVM S.A. |
+| <img src="logos/png/09464032.png" width="40" alt="Midway"> | 0358 | 09464032 | Midway (MIDWAY S.A. - SCFI) | Open Finance — MIDWAY S.A. - SCFI |
+| <img src="logos/png/01027058.png" width="40" alt="Cielo"> | 0362 | 01027058 | Cielo (CIELO IP S.A.) | Open Finance — CIELO S.A. |
+| <img src="logos/png/62285390.png" width="40" alt="QI Corretora"> | 0363 | 62285390 | QI Corretora (QI CTVM S.A.) | Open Finance — QI SCD S.A. |
+| <img src="logos/png/09089356.png" width="40" alt="Efí"> | 0364 | 09089356 | Efí (EFÍ S.A. - IP) | Open Finance — EFI S.A. - INSTITUICAO DE PAGAMENTO |
+| <img src="logos/png/08357240.png" width="40" alt="Banco Carrefour"> | 0368 | 08357240 | Banco Carrefour (BCO CSF S.A.) | Open Finance — BANCO CSF S/A |
+| <img src="logos/png/61088183.png" width="40" alt="Mizuho"> | 0370 | 61088183 | Mizuho (BCO MIZUHO S.A.) | Site oficial (revisado) |
+| <img src="logos/png/27351731.png" width="40" alt="Realize"> | 0374 | 27351731 | Realize (REALIZE SCFI S.A.) | Open Finance — REALIZE SOCIEDADE DE CREDITO, FINANCIAMENTO E INVESTIMENTO S.A. |
+| <img src="logos/png/33172537.png" width="40" alt="J.P. Morgan"> | 0376 | 33172537 | J.P. Morgan (BCO J.P. MORGAN S.A.) | Site oficial (revisado) |
+| <img src="logos/png/22896431.png" width="40" alt="PicPay"> | 0380 | 22896431 | PicPay | Open Finance — PICPAY |
+| <img src="logos/png/60814191.png" width="40" alt="Mercedes-Benz"> | 0381 | 60814191 | Mercedes-Benz (BCO MERCEDES-BENZ S.A.) | Site oficial (revisado) |
+| <img src="logos/png/21018182.png" width="40" alt="EBANX"> | 0383 | 21018182 | EBANX (EBANX IP LTDA.) | Open Finance — Ebanx Instituicao de Pagamento Ltda. |
+| <img src="logos/png/30680829.png" width="40" alt="Nu Financeira"> | 0386 | 30680829 | Nu Financeira (NU FINANCEIRA S.A. CFI) | Open Finance — NU PAGAMENTOS S.A. - INSTITUICAO DE PAGAMENTO |
+| <img src="logos/png/17184037.png" width="40" alt="Mercantil"> | 0389 | 17184037 | Mercantil (BCO MERCANTIL DO BRASIL S.A.) | Open Finance — BCO MERCANTIL DO BRASIL S.A. |
+| <img src="logos/png/59109165.png" width="40" alt="Volkswagen"> | 0393 | 59109165 | Volkswagen (BCO VOLKSWAGEN S.A) | Site oficial (revisado) |
+| <img src="logos/png/07207996.png" width="40" alt="Bradesco Financiamentos"> | 0394 | 07207996 | Bradesco Financiamentos (BCO BRADESCO FINANC. S.A.) | Open Finance — BCO BRADESCO FINANC. S.A. |
+| <img src="logos/png/13884775.png" width="40" alt="MagaluPay"> | 0396 | 13884775 | MagaluPay | Open Finance — Magalupay Instituicao de Pagamento S.A. |
+| <img src="logos/png/34088029.png" width="40" alt="Listo"> | 0397 | 34088029 | Listo (LISTO SCD S.A.) | Open Finance — LISTO SOCIEDADE DE CREDITO DIRETO S.A. |
+| <img src="logos/png/15111975.png" width="40" alt="iugu"> | 0401 | 15111975 | iugu (IUGU IP S.A.) | Open Finance — IUGU INSTITUICAO DE PAGAMENTO S.A. |
+| <img src="logos/png/37880206.png" width="40" alt="Cora"> | 0403 | 37880206 | Cora (CORA SCFI) | Open Finance — CORA SCD S.A. |
+| <img src="logos/png/37241230.png" width="40" alt="SumUp"> | 0404 | 37241230 | SumUp (SUMUP SCFI S.A) | Open Finance — SUMUP SCD S.A. |
+| <img src="logos/png/37715993.png" width="40" alt="Accredito"> | 0406 | 37715993 | Accredito (ACCREDITO SCD S.A.) | Open Finance — ACCREDITO - SOCIEDADE DE CREDITO DIRETO S.A. |
 | <img src="logos/png/00329598.png" width="40" alt="SEFER INVESTIMENTOS DTVM LTDA - EM LIQUIDAÇÃO EXTRAJUDICIAL"> | 0407 | 00329598 | SEFER INVESTIMENTOS DTVM LTDA - EM LIQUIDAÇÃO EXTRAJUDICIAL | Open Finance — SEFER INVESTIMENTOS DTVM LTDA |
-| <img src="logos/png/15173776.png" width="40" alt="SOCIAL BANK S/A"> | 0412 | 15173776 | SOCIAL BANK S/A | Site oficial (revisado) |
-| <img src="logos/png/01858774.png" width="40" alt="BCO BV S.A."> | 0413 | 01858774 | BCO BV S.A. | Open Finance — BCO VOTORANTIM S.A. |
-| <img src="logos/png/58160789.png" width="40" alt="BCO SAFRA S.A."> | 0422 | 58160789 | BCO SAFRA S.A. | Open Finance — BCO SAFRA S.A. |
-| <img src="logos/png/11285104.png" width="40" alt="NEON FINANCEIRA - SCFI S.A."> | 0426 | 11285104 | NEON FINANCEIRA - SCFI S.A. | Open Finance — Neon Pagamentos |
-| <img src="logos/png/39664698.png" width="40" alt="CREDSYSTEM SCD S.A."> | 0428 | 39664698 | CREDSYSTEM SCD S.A. | Open Finance — CRED SYSTEM SOCIEDADE DE CREDITO DIRETO SA |
+| <img src="logos/png/15173776.png" width="40" alt="Social Bank"> | 0412 | 15173776 | Social Bank (SOCIAL BANK S/A) | Site oficial (revisado) |
+| <img src="logos/png/01858774.png" width="40" alt="BV"> | 0413 | 01858774 | BV (BCO BV S.A.) | Open Finance — BCO VOTORANTIM S.A. |
+| <img src="logos/png/58160789.png" width="40" alt="Safra"> | 0422 | 58160789 | Safra (BCO SAFRA S.A.) | Open Finance — BCO SAFRA S.A. |
+| <img src="logos/png/11285104.png" width="40" alt="Neon Financeira"> | 0426 | 11285104 | Neon Financeira (NEON FINANCEIRA - SCFI S.A.) | Open Finance — Neon Pagamentos |
+| <img src="logos/png/39664698.png" width="40" alt="CredSystem"> | 0428 | 39664698 | CredSystem (CREDSYSTEM SCD S.A.) | Open Finance — CRED SYSTEM SOCIEDADE DE CREDITO DIRETO SA |
 | <img src="logos/png/13203354.png" width="40" alt="FITS IP"> | 0450 | 13203354 | FITS IP | Open Finance — FITS INSTITUICAO DE PAGAMENTO S.A. |
-| <img src="logos/png/19540550.png" width="40" alt="ASAAS IP S.A."> | 0461 | 19540550 | ASAAS IP S.A. | Open Finance — ASAAS GESTAO FINANCEIRA INSTITUICAO DE PAGAMENTO S.A. |
-| <img src="logos/png/07138049.png" width="40" alt="PICPAY INVEST"> | 0469 | 07138049 | PICPAY INVEST | Open Finance — PICPAY |
-| <img src="logos/png/10371492.png" width="40" alt="BCO YAMAHA MOTOR S.A."> | 0475 | 10371492 | BCO YAMAHA MOTOR S.A. | Site oficial (revisado) |
-| <img src="logos/png/33042953.png" width="40" alt="CITIBANK N.A."> | 0477 | 33042953 | CITIBANK N.A. | Open Finance — BCO CITIBANK S.A. |
-| <img src="logos/png/60394079.png" width="40" alt="BCO ITAUBANK S.A."> | 0479 | 60394079 | BCO ITAUBANK S.A. | Open Finance — ITAU UNIBANCO S.A. |
-| <img src="logos/png/62331228.png" width="40" alt="DEUTSCHE BANK S.A.BCO ALEMAO"> | 0487 | 62331228 | DEUTSCHE BANK S.A.BCO ALEMAO | Site oficial (revisado) |
-| <img src="logos/png/46518205.png" width="40" alt="JPMORGAN CHASE BANK"> | 0488 | 46518205 | JPMORGAN CHASE BANK | Site oficial (revisado) |
-| <img src="logos/png/32062580.png" width="40" alt="BCO UBS BRASIL"> | 0505 | 32062580 | BCO UBS BRASIL | Site oficial (revisado) |
-| <img src="logos/png/37229413.png" width="40" alt="SCFI EFÍ S.A."> | 0507 | 37229413 | SCFI EFÍ S.A. | Open Finance — EFI S.A. - INSTITUICAO DE PAGAMENTO |
-| <img src="logos/png/13935893.png" width="40" alt="CELCOIN IP S.A."> | 0509 | 13935893 | CELCOIN IP S.A. | Open Finance — CELCOIN INSTITUICAO DE PAGAMENTO S.A. |
-| <img src="logos/png/03816413.png" width="40" alt="PAGUEVELOZ IP LTDA."> | 0517 | 03816413 | PAGUEVELOZ IP LTDA. | Open Finance — PAGUEVELOZ INSTITUICAO DE PAGAMENTO LTDA |
-| <img src="logos/png/37679449.png" width="40" alt="MERCADO CRÉDITO SCFI S.A."> | 0518 | 37679449 | MERCADO CRÉDITO SCFI S.A. | Open Finance — MERCADO PAGO INSTITUICAO DE PAGAMENTO LTDA |
-| <img src="logos/png/17079937.png" width="40" alt="PINBANK IP"> | 0529 | 17079937 | PINBANK IP | Site oficial (revisado) |
-| <img src="logos/png/34337707.png" width="40" alt="BMP SCD S.A."> | 0531 | 34337707 | BMP SCD S.A. | Open Finance — MONEY PLUS SCMEPP LTDA |
-| <img src="logos/png/00714671.png" width="40" alt="EWALLY IP S.A."> | 0534 | 00714671 | EWALLY IP S.A. | Site oficial (revisado) |
-| <img src="logos/png/20855875.png" width="40" alt="NEON PAGAMENTOS S.A. IP"> | 0536 | 20855875 | NEON PAGAMENTOS S.A. IP | Open Finance — Neon Pagamentos |
-| <img src="logos/png/00954288.png" width="40" alt="FDO GARANTIDOR CRÉDITOS"> | 0541 | 00954288 | FDO GARANTIDOR CRÉDITOS | Site oficial (revisado) |
-| <img src="logos/png/18189547.png" width="40" alt="CLOUDWALK IP LTDA"> | 0542 | 18189547 | CLOUDWALK IP LTDA | Open Finance — CLOUDWALK INSTITUICAO DE PAGAMENTO E SERVICOS LTDA |
-| <img src="logos/png/28811341.png" width="40" alt="BCO STONEX S.A."> | 0554 | 28811341 | BCO STONEX S.A. | Site oficial (revisado) |
-| <img src="logos/png/02682287.png" width="40" alt="PAN FINAN"> | 0555 | 02682287 | PAN FINAN | Open Finance — BANCO PAN |
-| <img src="logos/png/74014747.png" width="40" alt="ÁGORA CTVM S.A."> | 0565 | 74014747 | ÁGORA CTVM S.A. | Open Finance — AGORA CTVM S.A. |
-| <img src="logos/png/33040601.png" width="40" alt="MERCANTIL FINANCEIRA"> | 0567 | 33040601 | MERCANTIL FINANCEIRA | Open Finance — BCO MERCANTIL DO BRASIL S.A. |
-| <img src="logos/png/11351086.png" width="40" alt="MERCADO BITCOIN IP LTDA"> | 0576 | 11351086 | MERCADO BITCOIN IP LTDA | Open Finance — MERCADO BITCOIN INSTITUICAO DE PAGAMENTO LTDA |
-| <img src="logos/png/20308187.png" width="40" alt="AVANCARD PROVER IP LTDA"> | 0588 | 20308187 | AVANCARD PROVER IP LTDA | Open Finance — PROVER PROMOCAO DE VENDAS INSTITUICAO DE PAGAMENTO LTDA |
-| <img src="logos/png/27084098.png" width="40" alt="TRANSFEERA IP S.A."> | 0593 | 27084098 | TRANSFEERA IP S.A. | Site oficial (revisado) |
-| <img src="logos/png/48703388.png" width="40" alt="ASA SCFI S.A."> | 0594 | 48703388 | ASA SCFI S.A. | Open Finance — ASA SOCIEDADE DE CREDITO FINANCIAMENTO E INVESTIMENTO S.A. |
-| <img src="logos/png/19468242.png" width="40" alt="IFOOD PAGO IP"> | 0595 | 19468242 | IFOOD PAGO IP | Open Finance — IFood Pago Instituicao de Pagamento S.A. |
-| <img src="logos/png/61820817.png" width="40" alt="BCO PAULISTA S.A."> | 0611 | 61820817 | BCO PAULISTA S.A. | Site oficial (revisado) |
-| <img src="logos/png/31880826.png" width="40" alt="BCO GUANABARA S.A."> | 0612 | 31880826 | BCO GUANABARA S.A. | Open Finance — BCO GUANABARA S.A. |
-| <img src="logos/png/60850229.png" width="40" alt="OMNI BANCO S.A."> | 0613 | 60850229 | OMNI BANCO S.A. | Site oficial (revisado) |
-| <img src="logos/png/51342763.png" width="40" alt="REVOLUT SCD S.A."> | 0620 | 51342763 | REVOLUT SCD S.A. | Open Finance — REVOLUT SOCIEDADE DE CREDITO DIRETO S.A. |
-| <img src="logos/png/59285411.png" width="40" alt="BANCO PAN"> | 0623 | 59285411 | BANCO PAN | Open Finance — BANCO PAN |
-| <img src="logos/png/61348538.png" width="40" alt="BCO C6 CONSIG"> | 0626 | 61348538 | BCO C6 CONSIG | Open Finance — BCO C6 S.A. |
-| <img src="logos/png/68900810.png" width="40" alt="BCO RENDIMENTO S.A."> | 0633 | 68900810 | BCO RENDIMENTO S.A. | Open Finance — BCO RENDIMENTO S.A. |
-| <img src="logos/png/17351180.png" width="40" alt="BCO TRIANGULO S.A."> | 0634 | 17351180 | BCO TRIANGULO S.A. | Site oficial (revisado) |
-| <img src="logos/png/60889128.png" width="40" alt="BCO SOFISA S.A."> | 0637 | 60889128 | BCO SOFISA S.A. | Open Finance — BCO SOFISA S.A. |
-| <img src="logos/png/62144175.png" width="40" alt="BCO PINE S.A."> | 0643 | 62144175 | BCO PINE S.A. | Site oficial (revisado) |
-| <img src="logos/png/92874270.png" width="40" alt="BCO DIGIMAIS S.A."> | 0654 | 92874270 | BCO DIGIMAIS S.A. | Site oficial (revisado) |
-| <img src="logos/png/59588111.png" width="40" alt="BCO VOTORANTIM S.A."> | 0655 | 59588111 | BCO VOTORANTIM S.A. | Open Finance — BCO VOTORANTIM S.A. |
-| <img src="logos/png/20018183.png" width="40" alt="STARK BANK S.A. - IP"> | 0665 | 20018183 | STARK BANK S.A. - IP | Site oficial (revisado) |
-| <img src="logos/png/48632754.png" width="40" alt="CELCOIN SCD"> | 0668 | 48632754 | CELCOIN SCD | Open Finance — CELCOIN INSTITUICAO DE PAGAMENTO S.A. |
-| <img src="logos/png/53505601.png" width="40" alt="STONE CFI S.A."> | 0672 | 53505601 | STONE CFI S.A. | Open Finance — STONE PAGAMENTOS S.A. |
-| <img src="logos/png/30723871.png" width="40" alt="CASAS BAHIA PAY IP LTDA."> | 0675 | 30723871 | CASAS BAHIA PAY IP LTDA. | Open Finance — CASAS BAHIA PAY INSTITUICAO DE PAGAMENTO LTDA |
-| <img src="logos/png/54811417.png" width="40" alt="WOOVI IP LTDA."> | 0694 | 54811417 | WOOVI IP LTDA. | Site oficial (revisado) |
-| <img src="logos/png/10440482.png" width="40" alt="GETNET IP"> | 0703 | 10440482 | GETNET IP | Open Finance — GETNET ADQUIRENCIA E SERVICOS PARA MEIOS DE PAGAMENTO S A |
-| <img src="logos/png/62232889.png" width="40" alt="BCO DAYCOVAL S.A"> | 0707 | 62232889 | BCO DAYCOVAL S.A | Site oficial (revisado) |
-| <img src="logos/png/78632767.png" width="40" alt="OURIBANK S.A."> | 0712 | 78632767 | OURIBANK S.A. | Site oficial (revisado) |
-| <img src="logos/png/00517645.png" width="40" alt="BCO RIBEIRAO PRETO S.A."> | 0741 | 00517645 | BCO RIBEIRAO PRETO S.A. | Open Finance — BCO RIBEIRAO PRETO S.A. |
-| <img src="logos/png/00795423.png" width="40" alt="BANCO SEMEAR"> | 0743 | 00795423 | BANCO SEMEAR | Open Finance — BANCO SEMEAR |
-| <img src="logos/png/33479023.png" width="40" alt="BCO CITIBANK S.A."> | 0745 | 33479023 | BCO CITIBANK S.A. | Open Finance — BCO CITIBANK S.A. |
-| <img src="logos/png/01181521.png" width="40" alt="BANCO COOPERATIVO SICREDI"> | 0748 | 01181521 | BANCO COOPERATIVO SICREDI | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
-| <img src="logos/png/01522368.png" width="40" alt="BCO BNP PARIBAS BRASIL S A"> | 0752 | 01522368 | BCO BNP PARIBAS BRASIL S A | Site oficial (revisado) |
-| <img src="logos/png/62073200.png" width="40" alt="BOFA MERRILL LYNCH BM S.A."> | 0755 | 62073200 | BOFA MERRILL LYNCH BM S.A. | Site oficial (revisado) |
-| <img src="logos/png/02038232.png" width="40" alt="BANCO SICOOB S.A."> | 0756 | 02038232 | BANCO SICOOB S.A. | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
-| <img src="logos/png/56106523.png" width="40" alt="VUE IP S.A."> | 0763 | 56106523 | VUE IP S.A. | Site oficial (revisado) |
-| <img src="logos/png/24313102.png" width="40" alt="99PAY IP S.A."> | 0769 | 24313102 | 99PAY IP S.A. | Open Finance — 99PAY INSTITUICAO DE PAGAMENTO S.A. |
-| <img src="logos/png/53908413.png" width="40" alt="KIWIFY IP"> | 0773 | 53908413 | KIWIFY IP | Site oficial (revisado) |
-| <img src="logos/png/47381104.png" width="40" alt="CONTAAZUL IP LTDA."> | 0775 | 47381104 | CONTAAZUL IP LTDA. | Site oficial (revisado) |
-| <img src="logos/png/31680151.png" width="40" alt="SWAP IP S.A."> | 0783 | 31680151 | SWAP IP S.A. | Open Finance — Swap Meios de Pagamentos Instituicao de Pagamento S.A. |
-| <img src="logos/png/61021673.png" width="40" alt="MAGALUPAY SCFI S.A."> | 0793 | 61021673 | MAGALUPAY SCFI S.A. | Open Finance — Magalupay Instituicao de Pagamento S.A. |
-| <img src="logos/png/25021356.png" width="40" alt="DLOCAL BRASIL IP S.A."> | 0803 | 25021356 | DLOCAL BRASIL IP S.A. | Site oficial (revisado) |
-| <img src="logos/png/01722480.png" width="40" alt="QUERO-QUERO VERDECARD IP S.A."> | — | 01722480 | QUERO-QUERO VERDECARD IP S.A. | Open Finance — QUERO-QUERO VERDECARD INSTITUICAO DE PAGAMENTO S.A. |
-| <img src="logos/png/03130170.png" width="40" alt="BRASIL CARD IP LTDA"> | — | 03130170 | BRASIL CARD IP LTDA | Open Finance — BRASIL CARD INSTITUICAO DE PAGAMENTOS LTDA |
-| <img src="logos/png/11275560.png" width="40" alt="RECARGAPAY IP LTDA."> | — | 11275560 | RECARGAPAY IP LTDA. | Open Finance — RECARGAPAY INSTITUICAO DE PAGAMENTO LTDA. |
-| <img src="logos/png/14796606.png" width="40" alt="ADYEN DO BRASIL IP LTDA."> | — | 14796606 | ADYEN DO BRASIL IP LTDA. | Site oficial (revisado) |
-| <img src="logos/png/32345784.png" width="40" alt="C6 CTVM LTDA."> | — | 32345784 | C6 CTVM LTDA. | Open Finance — BCO C6 S.A. |
-| <img src="logos/png/38372267.png" width="40" alt="MAREE IP LTDA."> | — | 38372267 | MAREE IP LTDA. | Open Finance — SHOPEE |
+| <img src="logos/png/19540550.png" width="40" alt="Asaas"> | 0461 | 19540550 | Asaas (ASAAS IP S.A.) | Open Finance — ASAAS GESTAO FINANCEIRA INSTITUICAO DE PAGAMENTO S.A. |
+| <img src="logos/png/07138049.png" width="40" alt="PicPay Invest"> | 0469 | 07138049 | PicPay Invest | Open Finance — PICPAY |
+| <img src="logos/png/10371492.png" width="40" alt="Yamaha"> | 0475 | 10371492 | Yamaha (BCO YAMAHA MOTOR S.A.) | Site oficial (revisado) |
+| <img src="logos/png/33042953.png" width="40" alt="Citibank"> | 0477 | 33042953 | Citibank (CITIBANK N.A.) | Open Finance — BCO CITIBANK S.A. |
+| <img src="logos/png/60394079.png" width="40" alt="ItaúBank"> | 0479 | 60394079 | ItaúBank (BCO ITAUBANK S.A.) | Open Finance — ITAU UNIBANCO S.A. |
+| <img src="logos/png/62331228.png" width="40" alt="Deutsche Bank"> | 0487 | 62331228 | Deutsche Bank (DEUTSCHE BANK S.A.BCO ALEMAO) | Site oficial (revisado) |
+| <img src="logos/png/46518205.png" width="40" alt="JPMorgan Chase"> | 0488 | 46518205 | JPMorgan Chase (JPMORGAN CHASE BANK) | Site oficial (revisado) |
+| <img src="logos/png/32062580.png" width="40" alt="UBS"> | 0505 | 32062580 | UBS (BCO UBS BRASIL) | Site oficial (revisado) |
+| <img src="logos/png/37229413.png" width="40" alt="Efí Financeira"> | 0507 | 37229413 | Efí Financeira (SCFI EFÍ S.A.) | Open Finance — EFI S.A. - INSTITUICAO DE PAGAMENTO |
+| <img src="logos/png/13935893.png" width="40" alt="Celcoin"> | 0509 | 13935893 | Celcoin (CELCOIN IP S.A.) | Open Finance — CELCOIN INSTITUICAO DE PAGAMENTO S.A. |
+| <img src="logos/png/03816413.png" width="40" alt="PagueVeloz"> | 0517 | 03816413 | PagueVeloz (PAGUEVELOZ IP LTDA.) | Open Finance — PAGUEVELOZ INSTITUICAO DE PAGAMENTO LTDA |
+| <img src="logos/png/37679449.png" width="40" alt="Mercado Crédito"> | 0518 | 37679449 | Mercado Crédito (MERCADO CRÉDITO SCFI S.A.) | Open Finance — MERCADO PAGO INSTITUICAO DE PAGAMENTO LTDA |
+| <img src="logos/png/17079937.png" width="40" alt="PinBank"> | 0529 | 17079937 | PinBank (PINBANK IP) | Site oficial (revisado) |
+| <img src="logos/png/34337707.png" width="40" alt="BMP"> | 0531 | 34337707 | BMP (BMP SCD S.A.) | Open Finance — MONEY PLUS SCMEPP LTDA |
+| <img src="logos/png/00714671.png" width="40" alt="Ewally"> | 0534 | 00714671 | Ewally (EWALLY IP S.A.) | Site oficial (revisado) |
+| <img src="logos/png/20855875.png" width="40" alt="Neon"> | 0536 | 20855875 | Neon (NEON PAGAMENTOS S.A. IP) | Open Finance — Neon Pagamentos |
+| <img src="logos/png/00954288.png" width="40" alt="FGC"> | 0541 | 00954288 | FGC (FDO GARANTIDOR CRÉDITOS) | Site oficial (revisado) |
+| <img src="logos/png/18189547.png" width="40" alt="InfinitePay"> | 0542 | 18189547 | InfinitePay (CLOUDWALK IP LTDA) | Open Finance — CLOUDWALK INSTITUICAO DE PAGAMENTO E SERVICOS LTDA |
+| <img src="logos/png/28811341.png" width="40" alt="StoneX"> | 0554 | 28811341 | StoneX (BCO STONEX S.A.) | Site oficial (revisado) |
+| <img src="logos/png/02682287.png" width="40" alt="Pan Financeira"> | 0555 | 02682287 | Pan Financeira (PAN FINAN) | Open Finance — BANCO PAN |
+| <img src="logos/png/74014747.png" width="40" alt="Ágora"> | 0565 | 74014747 | Ágora (ÁGORA CTVM S.A.) | Open Finance — AGORA CTVM S.A. |
+| <img src="logos/png/33040601.png" width="40" alt="Mercantil Financeira"> | 0567 | 33040601 | Mercantil Financeira | Open Finance — BCO MERCANTIL DO BRASIL S.A. |
+| <img src="logos/png/11351086.png" width="40" alt="Mercado Bitcoin"> | 0576 | 11351086 | Mercado Bitcoin (MERCADO BITCOIN IP LTDA) | Open Finance — MERCADO BITCOIN INSTITUICAO DE PAGAMENTO LTDA |
+| <img src="logos/png/20308187.png" width="40" alt="Avancard"> | 0588 | 20308187 | Avancard (AVANCARD PROVER IP LTDA) | Open Finance — PROVER PROMOCAO DE VENDAS INSTITUICAO DE PAGAMENTO LTDA |
+| <img src="logos/png/27084098.png" width="40" alt="Transfeera"> | 0593 | 27084098 | Transfeera (TRANSFEERA IP S.A.) | Site oficial (revisado) |
+| <img src="logos/png/48703388.png" width="40" alt="ASA"> | 0594 | 48703388 | ASA (ASA SCFI S.A.) | Open Finance — ASA SOCIEDADE DE CREDITO FINANCIAMENTO E INVESTIMENTO S.A. |
+| <img src="logos/png/19468242.png" width="40" alt="iFood Pago"> | 0595 | 19468242 | iFood Pago (IFOOD PAGO IP) | Open Finance — IFood Pago Instituicao de Pagamento S.A. |
+| <img src="logos/png/61820817.png" width="40" alt="Banco Paulista"> | 0611 | 61820817 | Banco Paulista (BCO PAULISTA S.A.) | Site oficial (revisado) |
+| <img src="logos/png/31880826.png" width="40" alt="Guanabara"> | 0612 | 31880826 | Guanabara (BCO GUANABARA S.A.) | Open Finance — BCO GUANABARA S.A. |
+| <img src="logos/png/60850229.png" width="40" alt="Omni"> | 0613 | 60850229 | Omni (OMNI BANCO S.A.) | Site oficial (revisado) |
+| <img src="logos/png/51342763.png" width="40" alt="Revolut"> | 0620 | 51342763 | Revolut (REVOLUT SCD S.A.) | Open Finance — REVOLUT SOCIEDADE DE CREDITO DIRETO S.A. |
+| <img src="logos/png/59285411.png" width="40" alt="Banco Pan"> | 0623 | 59285411 | Banco Pan | Open Finance — BANCO PAN |
+| <img src="logos/png/61348538.png" width="40" alt="C6 Consignado"> | 0626 | 61348538 | C6 Consignado (BCO C6 CONSIG) | Open Finance — BCO C6 S.A. |
+| <img src="logos/png/68900810.png" width="40" alt="Rendimento"> | 0633 | 68900810 | Rendimento (BCO RENDIMENTO S.A.) | Open Finance — BCO RENDIMENTO S.A. |
+| <img src="logos/png/17351180.png" width="40" alt="Tribanco"> | 0634 | 17351180 | Tribanco (BCO TRIANGULO S.A.) | Site oficial (revisado) |
+| <img src="logos/png/60889128.png" width="40" alt="Sofisa"> | 0637 | 60889128 | Sofisa (BCO SOFISA S.A.) | Open Finance — BCO SOFISA S.A. |
+| <img src="logos/png/62144175.png" width="40" alt="Pine"> | 0643 | 62144175 | Pine (BCO PINE S.A.) | Site oficial (revisado) |
+| <img src="logos/png/92874270.png" width="40" alt="Digimais"> | 0654 | 92874270 | Digimais (BCO DIGIMAIS S.A.) | Site oficial (revisado) |
+| <img src="logos/png/59588111.png" width="40" alt="Banco Votorantim"> | 0655 | 59588111 | Banco Votorantim (BCO VOTORANTIM S.A.) | Open Finance — BCO VOTORANTIM S.A. |
+| <img src="logos/png/20018183.png" width="40" alt="Stark Bank"> | 0665 | 20018183 | Stark Bank (STARK BANK S.A. - IP) | Site oficial (revisado) |
+| <img src="logos/png/48632754.png" width="40" alt="Celcoin Financeira"> | 0668 | 48632754 | Celcoin Financeira (CELCOIN SCD) | Open Finance — CELCOIN INSTITUICAO DE PAGAMENTO S.A. |
+| <img src="logos/png/53505601.png" width="40" alt="Stone Financeira"> | 0672 | 53505601 | Stone Financeira (STONE CFI S.A.) | Open Finance — STONE PAGAMENTOS S.A. |
+| <img src="logos/png/30723871.png" width="40" alt="Casas Bahia Pay"> | 0675 | 30723871 | Casas Bahia Pay (CASAS BAHIA PAY IP LTDA.) | Open Finance — CASAS BAHIA PAY INSTITUICAO DE PAGAMENTO LTDA |
+| <img src="logos/png/54811417.png" width="40" alt="Woovi"> | 0694 | 54811417 | Woovi (WOOVI IP LTDA.) | Site oficial (revisado) |
+| <img src="logos/png/10440482.png" width="40" alt="Getnet"> | 0703 | 10440482 | Getnet (GETNET IP) | Open Finance — GETNET ADQUIRENCIA E SERVICOS PARA MEIOS DE PAGAMENTO S A |
+| <img src="logos/png/62232889.png" width="40" alt="Daycoval"> | 0707 | 62232889 | Daycoval (BCO DAYCOVAL S.A) | Site oficial (revisado) |
+| <img src="logos/png/78632767.png" width="40" alt="Ouribank"> | 0712 | 78632767 | Ouribank (OURIBANK S.A.) | Site oficial (revisado) |
+| <img src="logos/png/00517645.png" width="40" alt="Banco Ribeirão Preto"> | 0741 | 00517645 | Banco Ribeirão Preto (BCO RIBEIRAO PRETO S.A.) | Open Finance — BCO RIBEIRAO PRETO S.A. |
+| <img src="logos/png/00795423.png" width="40" alt="Semear"> | 0743 | 00795423 | Semear (BANCO SEMEAR) | Open Finance — BANCO SEMEAR |
+| <img src="logos/png/33479023.png" width="40" alt="Citibank"> | 0745 | 33479023 | Citibank (BCO CITIBANK S.A.) | Open Finance — BCO CITIBANK S.A. |
+| <img src="logos/png/01181521.png" width="40" alt="Sicredi"> | 0748 | 01181521 | Sicredi (BANCO COOPERATIVO SICREDI) | Open Finance — CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI |
+| <img src="logos/png/01522368.png" width="40" alt="BNP Paribas"> | 0752 | 01522368 | BNP Paribas (BCO BNP PARIBAS BRASIL S A) | Site oficial (revisado) |
+| <img src="logos/png/62073200.png" width="40" alt="Bank of America"> | 0755 | 62073200 | Bank of America (BOFA MERRILL LYNCH BM S.A.) | Site oficial (revisado) |
+| <img src="logos/png/02038232.png" width="40" alt="Sicoob"> | 0756 | 02038232 | Sicoob (BANCO SICOOB S.A.) | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
+| <img src="logos/png/56106523.png" width="40" alt="Vuepay"> | 0763 | 56106523 | Vuepay (VUE IP S.A.) | Site oficial (revisado) |
+| <img src="logos/png/24313102.png" width="40" alt="99Pay"> | 0769 | 24313102 | 99Pay (99PAY IP S.A.) | Open Finance — 99PAY INSTITUICAO DE PAGAMENTO S.A. |
+| <img src="logos/png/53908413.png" width="40" alt="Kiwify"> | 0773 | 53908413 | Kiwify (KIWIFY IP) | Site oficial (revisado) |
+| <img src="logos/png/47381104.png" width="40" alt="ContaAzul"> | 0775 | 47381104 | ContaAzul (CONTAAZUL IP LTDA.) | Site oficial (revisado) |
+| <img src="logos/png/31680151.png" width="40" alt="Swap"> | 0783 | 31680151 | Swap (SWAP IP S.A.) | Open Finance — Swap Meios de Pagamentos Instituicao de Pagamento S.A. |
+| <img src="logos/png/61021673.png" width="40" alt="MagaluPay Financeira"> | 0793 | 61021673 | MagaluPay Financeira (MAGALUPAY SCFI S.A.) | Open Finance — Magalupay Instituicao de Pagamento S.A. |
+| <img src="logos/png/25021356.png" width="40" alt="dLocal"> | 0803 | 25021356 | dLocal (DLOCAL BRASIL IP S.A.) | Site oficial (revisado) |
+| <img src="logos/png/01722480.png" width="40" alt="Verdecard"> | — | 01722480 | Verdecard (QUERO-QUERO VERDECARD IP S.A.) | Open Finance — QUERO-QUERO VERDECARD INSTITUICAO DE PAGAMENTO S.A. |
+| <img src="logos/png/03130170.png" width="40" alt="Brasil Card"> | — | 03130170 | Brasil Card (BRASIL CARD IP LTDA) | Open Finance — BRASIL CARD INSTITUICAO DE PAGAMENTOS LTDA |
+| <img src="logos/png/11275560.png" width="40" alt="RecargaPay"> | — | 11275560 | RecargaPay (RECARGAPAY IP LTDA.) | Open Finance — RECARGAPAY INSTITUICAO DE PAGAMENTO LTDA. |
+| <img src="logos/png/14796606.png" width="40" alt="Adyen"> | — | 14796606 | Adyen (ADYEN DO BRASIL IP LTDA.) | Site oficial (revisado) |
+| <img src="logos/png/32345784.png" width="40" alt="C6 Corretora"> | — | 32345784 | C6 Corretora (C6 CTVM LTDA.) | Open Finance — BCO C6 S.A. |
+| <img src="logos/png/38372267.png" width="40" alt="Maree"> | — | 38372267 | Maree (MAREE IP LTDA.) | Open Finance — SHOPEE |
 | <img src="logos/png/40571694.png" width="40" alt="WISE BRASIL IP LTDA."> | — | 40571694 | WISE BRASIL IP LTDA. | Open Finance — WISE BRASIL INSTITUICAO DE PAGAMENTO LTDA |
-| <img src="logos/png/60779196.png" width="40" alt="CREFISA S.A. CFI"> | — | 60779196 | CREFISA S.A. CFI | Open Finance — CREFISA S.A. CFI |
+| <img src="logos/png/60779196.png" width="40" alt="Crefisa Financeira"> | — | 60779196 | Crefisa Financeira (CREFISA S.A. CFI) | Open Finance — CREFISA S.A. CFI |
 | <img src="logos/png/73647935.png" width="40" alt="COOP UNIQUE BR LTDA."> | — | 73647935 | COOP UNIQUE BR LTDA. | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
 
 ## Sistemas cooperativos

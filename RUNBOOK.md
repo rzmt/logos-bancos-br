@@ -19,7 +19,7 @@ Toda segunda, 06:23 (Brasília; 09:23 UTC), o workflow
      trocando de logo → valida, faz merge e libera release sozinho (até 3
      instituições ganhando o logo da marca pela regra de cooperativas também
      passam: é a cooperativa que o BCB renomeia com o nome do sistema);
-   - **mexe em `logos/`**, ou alguma instituição que já existia **perdeu,
+   - **mexe em `logos/png` ou `logos/svg`**, ou alguma instituição que já existia **perdeu,
      trocou de logo ou ganhou logo fora da regra de marca**, ou mais de 3
      ganharam pela regra de marca (mesmo sem arquivo novo: afiliadas de
      cooperativas dividem um arquivo por marca) → abre PR, com a lista no
@@ -27,7 +27,7 @@ Toda segunda, 06:23 (Brasília; 09:23 UTC), o workflow
 4. em caso de falha, abre/atualiza a issue `Pipeline semanal falhou` (label
    `pipeline-falhou`), que fecha sozinha na próxima rodada verde.
 
-Push na `main` que toque `package.json`, `data/` ou `logos/` dispara
+Push na `main` que toque `package.json`, `data/`, `logos/png` ou `logos/svg` dispara
 [`release.yml`](.github/workflows/release.yml): testes → build +
 `npm run test:package` → `npm publish --provenance` → tag → GitHub Release. É
 idempotente: disparar de novo é sempre seguro. Push só de workflows, docs ou
@@ -149,7 +149,8 @@ curl -sL -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 
 
 ### Release não saiu depois de um merge
 
-O push só dispara o release se tocar `package.json`, `data/` ou `logos/`, e
+O push só dispara o release se tocar `package.json`, `data/`, `logos/png` ou
+`logos/svg`, e
 merge feito com o `GITHUB_TOKEN` (de dentro de um workflow) não dispara
 gatilho de push nenhum. Rode `gh workflow run release.yml --ref main`.
 
@@ -158,7 +159,7 @@ gatilho de push nenhum. Rode `gh workflow run release.yml --ref main`.
 `release.yml` detecta "versão órfã": se a versão do `package.json` já foi
 publicada a partir de outro commit e o dataset mudou, ele **falha de
 propósito** (alerta `Release automático falhou`) em vez de terminar verde
-com o npm defasado. Como push em `data/` ou `logos/` também dispara o
+com o npm defasado. Como push em `data/` ou nos logos também dispara o
 release, isso aparece no próprio push que trouxe dataset sem bump (ex.: PR
 semanal cujo número de versão foi usado por um patch manual nesse
 meio-tempo). Se a `main` já estiver numa versão mais nova (bump num push logo

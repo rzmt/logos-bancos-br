@@ -62,6 +62,7 @@ Key facts:
 - [README (português)](README.md)
 - [README (English)](README.en.md)
 - [Gallery of all shipped logos](PREVIEW.md)
+- [Logo files by institution name](logos/README.md)
 - [Trademark notice and takedown policy](DISCLAIMER.md)
 - [Maintenance and pipeline guide](CONTRIBUTING.md)
 

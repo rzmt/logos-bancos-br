@@ -35,7 +35,8 @@ ouro: fonte fora do ar aborta sem tocar em nada; falha de download **nunca apaga
 publicado; arquivos órfãos só são removidos manualmente.
 
 Saídas geradas (commitadas): `data/bancos.json`, `logos/png/<ispb>.png`,
-`logos/svg/<ispb>.svg`, `PREVIEW.md`, `react-native.js`, `pipeline/manifest.json`.
+`logos/svg/<ispb>.svg`, `logos/README.md` (índice por nome, fica fora do pacote npm), `PREVIEW.md`,
+`react-native.js`, `pipeline/manifest.json`.
 
 ## Primeira contribuição (e Hacktoberfest)
 

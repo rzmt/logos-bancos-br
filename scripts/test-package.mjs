@@ -351,7 +351,14 @@ await verificar('logos citados no dataset e no logo-urls.min.json estão no paco
   }
   const ausentes = [...caminhos].filter((caminho) => !existsSync(join(instalado, caminho)));
   if (ausentes.length) throw new Error(`ausentes no pacote: ${ausentes.join(', ')}`);
-  return `${caminhos.size} arquivos`;
+  // Quem lista a pasta logos/ do pacote espera só png/ e svg/. O índice por
+  // nome (logos/README.md) é para quem navega no GitHub e fica fora do npm.
+  const extras = readdirSync(join(instalado, 'logos')).filter(
+    (nome) => !['png', 'svg'].includes(nome),
+  );
+  if (extras.length)
+    throw new Error(`logos/ do pacote tem mais que png/ e svg/: ${extras.join(', ')}`);
+  return `${caminhos.size} arquivos; logos/ só com png/ e svg/`;
 });
 
 await verificar('tipos node16 ESM (.mts)', () => conferirTipos('tipos.mts', TS_NODE16));

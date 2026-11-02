@@ -79,7 +79,8 @@
   "files": [
     "dist",
     "data",
-    "logos",
+    "logos/png",
+    "logos/svg",
     "react-native.js",
     "react-native.d.ts",
     "llms.txt",

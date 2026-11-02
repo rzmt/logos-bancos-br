@@ -11,7 +11,7 @@ Logos dos bancos, fintechs e cooperativas do Brasil em PNG e SVG, para tela de P
 
 <a href="https://rzmt.github.io/logos-bancos-br/"><img src="https://rzmt.github.io/logos-bancos-br/mosaico.png" alt="Logos de Banco do Brasil, Caixa, Itaú, Bradesco, Santander, Nubank, Inter, C6 e outras instituições"></a>
 
-Procurando um logo? A [galeria](https://rzmt.github.io/logos-bancos-br/) busca por nome, COMPE ou ISPB e copia a URL. Aqui no repositório os arquivos têm o ISPB no nome.
+Procurando um logo? A [galeria](https://rzmt.github.io/logos-bancos-br/) busca por nome, COMPE ou ISPB e copia a URL. Aqui no repositório os arquivos têm o ISPB no nome, e o [índice por nome](logos/README.md) diz qual é qual.
 
 Sem instalar nada:
 
