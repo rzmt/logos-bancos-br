@@ -1,4 +1,4 @@
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { buildDatasets } from '../pipeline/dataset';
@@ -50,7 +50,7 @@ describe('displayName', () => {
 });
 
 describe('dataset distribuído', () => {
-  it('todo displayName do config aparece no dataset, e são não-vazios', () => {
+  it('todo displayName do config é aplicado no dataset, e são não-vazios', () => {
     const curados = load('pipeline/config.json').displayNames as Record<string, string>;
     const todas = [
       ...load('data/bancos.json').banks,
@@ -60,7 +60,16 @@ describe('dataset distribuído', () => {
     for (const [ispb, nome] of Object.entries(curados)) {
       expect(nome.trim(), `displayName vazio em ${ispb}`).not.toBe('');
       const inst = porIspb.get(ispb);
-      expect(inst, `ISPB curado ${ispb} não existe no dataset`).toBeDefined();
+      if (!inst) {
+        // Instituição que saiu das listas do BCB (ex.: Genial Investimentos
+        // CVM, 27652684, em nov/2026) não pode travar o robô semanal: o logo
+        // dela continua publicado (política de permanência) e o nome curado
+        // volta a valer se ela voltar. ISPB digitado errado no config não tem
+        // logo publicado, então continua falhando aqui.
+        const publicado = existsSync(join(ROOT, 'logos', 'png', `${ispb}.png`));
+        expect(publicado, `ISPB curado ${ispb} não está no dataset nem tem logo`).toBe(true);
+        continue;
+      }
       expect(inst.displayName, `displayName não aplicado em ${ispb}`).toBe(nome);
     }
     // quem não foi curado fica null — nunca string vazia
