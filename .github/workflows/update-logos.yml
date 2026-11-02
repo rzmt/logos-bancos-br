@@ -117,7 +117,9 @@ jobs:
         id: diff
         run: |
           mudancas=$(git status --porcelain -- data logos PREVIEW.md react-native.js pipeline/manifest.json | wc -l | tr -d ' ')
-          logos_mudados=$(git status --porcelain -- logos | wc -l | tr -d ' ')
+          # Só arquivos de imagem contam: o índice logos/README.md muda junto com
+          # nomes do dataset e não é logo.
+          logos_mudados=$(git status --porcelain -- logos/png logos/svg | wc -l | tr -d ' ')
           # churn = entradas + saídas de ISPBs (variação líquida esconderia troca de entidades)
           churn=$(node -e "
             const fs = require('fs');
@@ -145,7 +147,7 @@ jobs:
           elif [ "$logos_mudados" = "0" ] && [ "$churn" -le 3 ]; then estado=seguro
           else estado=revisao; fi
           echo "estado=$estado" >> "$GITHUB_OUTPUT"
-          echo "Diff: $mudancas arquivo(s) mudado(s), $logos_mudados em logos/, churn de instituições $churn, $trocas mudança(s) de logo que exigem revisão → $estado"
+          echo "Diff: $mudancas arquivo(s) mudado(s), $logos_mudados em logos/png e logos/svg, churn de instituições $churn, $trocas mudança(s) de logo que exigem revisão → $estado"
 
       - name: Fechar PR órfão (fontes não divergem mais da main)
         if: steps.diff.outputs.estado == 'sem-mudanca'

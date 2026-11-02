@@ -10,11 +10,12 @@ name: Release
 # falhou" (label pipeline-falhou), que fecha sozinha quando um release
 # terminar verde na ponta da main (npm em dia com a main).
 #
-# Gatilhos: push na main que toque package.json, data/ ou logos/ (merge humano
-# do PR semanal, bump manual, dataset alterado à mão) e workflow_dispatch (o
-# update-logos.yml chama após o auto-merge, porque eventos feitos com o
-# GITHUB_TOKEN não disparam gatilhos de push). data/ e logos/ estão aí para
-# que dataset novo sem bump não fique fora do npm em silêncio: com a versão
+# Gatilhos: push na main que toque package.json, data/, logos/png ou logos/svg
+# (merge humano do PR semanal, bump manual, dataset alterado à mão) e
+# workflow_dispatch (o update-logos.yml chama após o auto-merge, porque eventos
+# feitos com o GITHUB_TOKEN não disparam gatilhos de push). data/ e os logos
+# estão aí para que dataset novo sem bump não fique fora do npm em silêncio
+# (o índice logos/README.md não vai no pacote e não conta): com a versão
 # já publicada, o passo de versão órfã falha e abre o alerta (a não ser que
 # a main já esteja numa versão mais nova, cujo push publica). Push só de
 # workflows, docs ou código sem bump não dispara release. Autenticação no
@@ -24,7 +25,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [package.json, 'data/**', 'logos/**']
+    paths: [package.json, 'data/**', 'logos/png/**', 'logos/svg/**']
 
 permissions:
   contents: write
@@ -81,7 +82,7 @@ jobs:
           # gitHead que o npm registrou.
           base=$(git rev-parse -q --verify "refs/tags/v$v^{commit}" || npm view "logos-bancos-br@$v" gitHead)
           [ -n "$base" ] || { echo "::error::não sei de que commit a v$v foi publicada"; exit 1; }
-          if git diff --quiet "$base" "$GITHUB_SHA" -- data logos; then
+          if git diff --quiet "$base" "$GITHUB_SHA" -- data logos/png logos/svg; then
             echo "Nada a fazer: v$v já publicada e o dataset não mudou."
             exit 0
           fi
@@ -152,8 +153,8 @@ jobs:
           git fetch -q origin main
           # A main pode ter andado só em arquivos que não disparam release (docs,
           # workflows): aí nenhum run mais novo vem, e este é o último a falar.
-          if ! git diff --quiet "$GITHUB_SHA" origin/main -- package.json data logos; then
-            echo 'A main mudou package.json, data/ ou logos/ depois deste commit; o run do push mais novo cuida do alerta.'
+          if ! git diff --quiet "$GITHUB_SHA" origin/main -- package.json data logos/png logos/svg; then
+            echo 'A main mudou package.json, data/ ou os logos depois deste commit; o run do push mais novo cuida do alerta.'
             exit 0
           fi
           titulo='Release automático falhou'
