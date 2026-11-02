@@ -6,7 +6,8 @@ partir das fontes oficiais).
 
 ## Setup
 
-Requisitos: Node >= 20.
+Requisitos: Node >= 22.18 para desenvolver (o build usa o tsup 9). Quem só instala o pacote continua
+precisando de Node >= 20.
 
 ```bash
 npm install
