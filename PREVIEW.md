@@ -2,7 +2,7 @@
 
 > Arquivo gerado automaticamente pelo pipeline (`npm run pipeline`) — não editar à mão.
 
-**180** instituições com logo próprio · **312** afiliadas usando o logo do seu sistema cooperativo · **587** sem logo nas fontes oficiais.
+**179** instituições com logo próprio · **312** afiliadas usando o logo do seu sistema cooperativo · **587** sem logo nas fontes oficiais.
 
 ## Logos próprios
 
@@ -73,7 +73,6 @@
 | <img src="logos/png/53518684.png" width="40" alt="BCO HSBC S.A."> | 0269 | 53518684 | BCO HSBC S.A. | Site oficial (revisado) |
 | <img src="logos/png/11581339.png" width="40" alt="BMP SCMEPP LTDA"> | 0274 | 11581339 | BMP SCMEPP LTDA | Open Finance — MONEY PLUS SCMEPP LTDA |
 | <img src="logos/png/11970623.png" width="40" alt="BCO SENFF S.A."> | 0276 | 11970623 | BCO SENFF S.A. | Site oficial (revisado) |
-| <img src="logos/png/27652684.png" width="40" alt="GENIAL INVESTIMENTOS CVM S.A."> | 0278 | 27652684 | GENIAL INVESTIMENTOS CVM S.A. | Open Finance — BANCO GENIAL S.A. |
 | <img src="logos/png/08561701.png" width="40" alt="PAGSEGURO INTERNET IP S.A."> | 0290 | 08561701 | PAGSEGURO INTERNET IP S.A. | Open Finance — PAGSEGURO |
 | <img src="logos/png/28650236.png" width="40" alt="GALAPAGOS DTVM S.A."> | 0292 | 28650236 | GALAPAGOS DTVM S.A. | Site oficial (revisado) |
 | <img src="logos/png/33042151.png" width="40" alt="BCO LA NACION ARGENTINA"> | 0300 | 33042151 | BCO LA NACION ARGENTINA | Open Finance — BCO LA NACION ARGENTINA |
@@ -606,7 +605,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0288` CAROL DTVM LTDA. (ISPB 62237649)
 - `0289` EFX CC LTDA. (ISPB 94968518)
 - `0293` LASTRO RDV DTVM LTDA (ISPB 71590442)
-- `0296` OZ CORRETORA DE CÂMBIO S.A. (ISPB 04062902)
+- `0296` OZ CÂMBIO (ISPB 04062902)
 - `0298` VIPS CC S.A. (ISPB 17772370)
 - `0299` BCO AFINZ S.A. - BM (ISPB 04814563)
 - `0305` FOURTRADE COR. DE CAMBIO LTDA (ISPB 40353377)
@@ -787,7 +786,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0687` INCO SEP S.A. (ISPB 35340796)
 - `0688` KIKAI SCD S.A. (ISPB 43978697)
 - `0690` BK IP S.A. (ISPB 16814330)
-- `0691` WASU IP LTDA. (ISPB 49686505)
 - `0692` ZYDI (ISPB 56198117)
 - `0693` EFEX IP (ISPB 32820711)
 - `0695` BEES IP LTDA. (ISPB 35523352)
@@ -795,7 +793,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0697` JM CORRETORA DE CÂMBIO (ISPB 45056494)
 - `0698` BIT SCD S.A. (ISPB 58367961)
 - `0699` BFC SCD S.A. (ISPB 59396084)
-- `0700` MW IP LTDA. (ISPB 53822116)
+- `0700` MW IP LTDA. - EM LIQUIDAÇÃO EXTRAJUDICIAL (ISPB 53822116)
 - `0701` INTEGRAÇÃO DE CRÉDITO E COBRANÇA SCD (ISPB 51118615)
 - `0704` FESTOR IP LTDA. (ISPB 44663846)
 - `0708` BCO INDUSCRED DE INVESTIM. S/A (ISPB 33588252)
@@ -832,6 +830,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0794` ATUAL CC LTDA (ISPB 44323831)
 - `0795` BANCO TRATON BRASIL S.A. (ISPB 52067630)
 - `0804` MÊNTORE IP S.A. (ISPB 32343119)
+- `0805` BCO DES. DE MG S.A. (ISPB 38486817)
 - `——` CC ARACREDI LTDA. (ISPB 00068987)
 - `——` CCC DOS EST DE MT, MS E MUN DE CACOAL/RO (ISPB 00106180)
 - `——` CCC ESTADO MG - CECREMGE (ISPB 00309024)

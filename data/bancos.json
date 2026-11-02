@@ -2248,27 +2248,6 @@
       }
     },
     {
-      "ispb": "27652684",
-      "compe": "278",
-      "compe4": "0278",
-      "name": "Genial Investimentos Corretora de Valores Mobiliários S.A.",
-      "shortName": "GENIAL INVESTIMENTOS CVM S.A.",
-      "displayName": "Genial Investimentos",
-      "pix": null,
-      "logo": {
-        "png": "logos/png/27652684.png",
-        "svg": "logos/svg/27652684.svg",
-        "source": {
-          "type": "openfinance",
-          "org": "BANCO GENIAL S.A.",
-          "cnpj": "45246410000155",
-          "uri": "https://media-genial-cms.genialinvestimentos.com.br/wp-content/uploads/2021/08/20161050/logo-genial.svg",
-          "sha256": "e67e2bb3fab72c3165471ad1c44884775a7588177febcbaa7d343062fb567533",
-          "updatedAt": "2026-07-17"
-        }
-      }
-    },
-    {
       "ispb": "23862762",
       "compe": "280",
       "compe4": "0280",
@@ -2392,8 +2371,8 @@
       "ispb": "04062902",
       "compe": "296",
       "compe4": "0296",
-      "name": "OZ CORRETORA DE CÂMBIO S.A.",
-      "shortName": "OZ CORRETORA DE CÂMBIO S.A.",
+      "name": "OZ SOCIEDADE CORRETORA DE CÂMBIO S.A.",
+      "shortName": "OZ CÂMBIO",
       "displayName": null,
       "pix": null,
       "logo": null
@@ -4017,13 +3996,7 @@
       "name": "COOPERATIVA DE CRÉDITO DOS SERVIDORES DA UNIVERSIDADE FEDERAL DO ESPIRITO SANTO",
       "shortName": "CRED.UFES",
       "displayName": null,
-      "pix": {
-        "spiParticipationType": "Direta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": true
-      },
+      "pix": null,
       "logo": null
     },
     {
@@ -6914,16 +6887,6 @@
       "logo": null
     },
     {
-      "ispb": "49686505",
-      "compe": "691",
-      "compe4": "0691",
-      "name": "WASU - WALLET SUPPORT INSTITUIÇÃO DE PAGAMENTO LTDA",
-      "shortName": "WASU IP LTDA.",
-      "displayName": null,
-      "pix": null,
-      "logo": null
-    },
-    {
       "ispb": "56198117",
       "compe": "692",
       "compe4": "0692",
@@ -7042,16 +7005,10 @@
       "ispb": "53822116",
       "compe": "700",
       "compe4": "0700",
-      "name": "MW INSTITUICAO DE PAGAMENTO LTDA",
-      "shortName": "MW IP LTDA.",
+      "name": "MW INSTITUICAO DE PAGAMENTO LTDA - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "shortName": "MW IP LTDA. - EM LIQUIDAÇÃO EXTRAJUDICIAL",
       "displayName": null,
-      "pix": {
-        "spiParticipationType": "Direta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Instituição de Pagamento",
-        "authorizedByBcb": true
-      },
+      "pix": null,
       "logo": null
     },
     {
@@ -7943,12 +7900,22 @@
       "shortName": "MÊNTORE IP S.A.",
       "displayName": null,
       "pix": {
-        "spiParticipationType": "Indireta",
+        "spiParticipationType": "Direta",
         "pixParticipationType": "Facultativa",
         "modality": "Provedor de Conta Transacional",
         "institutionType": "Instituição de Pagamento",
         "authorizedByBcb": true
       },
+      "logo": null
+    },
+    {
+      "ispb": "38486817",
+      "compe": "805",
+      "compe4": "0805",
+      "name": "BANCO DE DESENVOLVIMENTO DE MINAS GERAIS S.A.-BDMG",
+      "shortName": "BCO DES. DE MG S.A.",
+      "displayName": null,
+      "pix": null,
       "logo": null
     }
   ]
