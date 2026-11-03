@@ -97,6 +97,7 @@
     "pipeline": "tsx pipeline/run.ts",
     "discover": "tsx pipeline/discover.ts",
     "discover:ai": "tsx pipeline/discover-ai.ts",
+    "metricas": "tsx pipeline/metricas.ts",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {

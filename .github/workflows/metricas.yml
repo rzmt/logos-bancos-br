@@ -1,0 +1,57 @@
+name: Métricas
+
+# Toda segunda, salva na branch metricas o tráfego do repositório no GitHub
+# (visitas e clones por dia, origens e páginas mais vistas), que a API só
+# guarda por 14 dias, e as estrelas. Ler o tráfego exige o secret
+# TRAFFIC_TOKEN (token fine-grained só deste repositório, Administration
+# somente leitura), porque o GITHUB_TOKEN não tem essa permissão. Sem o
+# secret, o run anota só as estrelas e deixa um aviso. Com o token vencido, o
+# run falha e o GitHub manda e-mail. Ver RUNBOOK.md.
+on:
+  schedule:
+    - cron: '47 10 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write # push na branch metricas
+
+concurrency:
+  group: metricas
+  cancel-in-progress: false
+
+jobs:
+  metricas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/checkout@v7
+        with:
+          ref: metricas
+          path: metricas
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Coletar
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
+        run: npm run metricas -- metricas
+
+      - name: Salvar na branch metricas
+        working-directory: metricas
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo 'Nada novo.'
+            exit 0
+          fi
+          git -c user.name='github-actions[bot]' \
+            -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+            commit -q -m "métricas de $(date -u +%F)"
+          git push -q origin HEAD:metricas

@@ -168,6 +168,20 @@ Conserto: um bump novo (`npm version patch --no-git-tag-version`, commit,
 push), de preferência no mesmo push dos dados; o alerta fecha sozinho quando
 a versão sair.
 
+## Métricas semanais
+
+Toda segunda, o workflow `metricas.yml` salva na branch `metricas` o que a API
+do GitHub só guarda por 14 dias: visitas e clones por dia (`diario.csv`) e as
+origens e páginas mais vistas (`origens.csv` e `paginas.csv`, uma leva por
+coleta, cada uma cobrindo os 14 dias anteriores). Também anota as estrelas
+(`estrelas.csv`).
+
+Ler o tráfego exige o secret `TRAFFIC_TOKEN`: um token fine-grained com acesso
+só a este repositório e a permissão Administration em somente leitura (o
+`GITHUB_TOKEN` não lê tráfego). Sem o secret, o run anota só as estrelas e
+deixa um aviso. Quando o token vence, o run falha com "O TRAFFIC_TOKEN venceu"
+e o GitHub manda e-mail: gere outro igual e troque o valor do secret.
+
 ## Ruídos conhecidos (não são bugs)
 
 - **CI vermelho semanal na branch `auto/atualizar-logos`**: nasce um run do
@@ -207,3 +221,4 @@ a versão sair.
 | Conta npm com acesso ao pacote | configurar o trusted publisher / gerar token |
 | Conta Google dona do pacote no pub.dev | publicar `logos_bancos_br` (Dart) |
 | Conta Google com a propriedade `https://rzmt.github.io/logos-bancos-br/` no Search Console | ver por quais buscas as pessoas chegam à galeria |
+| Secret `TRAFFIC_TOKEN` (token fine-grained, Administration: leitura) | registro semanal do tráfego na branch `metricas` |
