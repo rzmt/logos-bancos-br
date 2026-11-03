@@ -195,6 +195,8 @@ a versão sair.
   instituições.
 - **Emissão determinística.** Os arquivos gerados não têm timestamp, para o
   `writeIfChanged` não produzir diff vazio toda semana.
+- **`docs/google9bac509c8baf881b.html` fica.** É a verificação da galeria no
+  Google Search Console; apagar o arquivo derruba a verificação.
 
 ## Acessos necessários
 
@@ -204,3 +206,4 @@ a versão sair.
 | Trusted publisher no npmjs.com (`rzmt/logos-bancos-br`, `release.yml`) | publicar no npm (não há secret de npm no GitHub) |
 | Conta npm com acesso ao pacote | configurar o trusted publisher / gerar token |
 | Conta Google dona do pacote no pub.dev | publicar `logos_bancos_br` (Dart) |
+| Conta Google com a propriedade `https://rzmt.github.io/logos-bancos-br/` no Search Console | ver por quais buscas as pessoas chegam à galeria |
