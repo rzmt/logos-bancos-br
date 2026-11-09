@@ -12,7 +12,8 @@ Guia de contribuição (adicionar logo, promover sugestão, rodar o pipeline):
 Toda segunda, 06:23 (Brasília; 09:23 UTC), o workflow
 [`update-logos.yml`](.github/workflows/update-logos.yml):
 
-1. roda o pipeline contra BCB (STR + Pix) e Open Finance;
+1. roda o pipeline contra BCB (STR, Pix e cadastro de cooperativas) e Open
+   Finance;
 2. confere o **guard de permanência** (abaixo);
 3. classifica o diff:
    - **só dados**, churn de até 3 ISPBs e nenhuma instituição perdendo ou
@@ -52,6 +53,11 @@ Dezenas de afiliadas de uma marca
 perdendo o logo de uma vez costuma ser a organização do sistema fora do
 diretório Open Finance naquela semana: não faça merge; a próxima rodada
 refaz o PR (ou o fecha, se não sobrar diferença).
+
+A seção **"Trava de filiação"**, quando aparece, lista cooperativas com a
+marca no nome que o cadastro do BCB dá como filiadas a central de outro
+sistema. Elas ficam sem o logo da marca. O caso comum é a cooperativa que
+trocou de sistema antes de mudar de nome: ficar sem logo é o certo.
 
 Checklist detalhado: [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -147,6 +153,15 @@ devolvem 403 para o `curl` padrão:
 curl -sL -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" <url> -o logo.png
 ```
 
+### Cadastro de cooperativas fora do ar
+
+A regra de marca lê o nome completo das cooperativas na API do BCB (Olinda).
+Se a consulta falhar, o pipeline usa a cópia `pipeline/cooperativas.json` e o
+relatório diz "cópia de <data>; a consulta falhou: …". Não precisa fazer
+nada. Se a falha durar semanas, confira se o endereço da API mudou (está na
+tabela de fontes do README). Sem a API e sem a cópia, o pipeline para sem
+mexer em nada, então não apague o arquivo.
+
 ### Release não saiu depois de um merge
 
 O push só dispara o release se tocar `package.json`, `data/`, `logos/png` ou
@@ -205,8 +220,10 @@ e o GitHub manda e-mail: gere outro igual e troque o valor do secret.
   produz "Banco Da Amazonia"). Sem curadoria, o campo é `null`.
 - **Afiliadas de sistemas cooperativos compartilham um arquivo** sob o ISPB do
   sistema. Monte URLs pelo caminho real do asset (ou pelo
-  `logo-urls.min.json`), nunca pelo ISPB da afiliada — daria 404 em ~310
+  `logo-urls.min.json`), nunca pelo ISPB da afiliada — daria 404 em ~440
   instituições.
+- **O cadastro de cooperativas só alimenta a regra de marca.** O nome
+  publicado no dataset continua sendo o das listas do STR e do Pix.
 - **Emissão determinística.** Os arquivos gerados não têm timestamp, para o
   `writeIfChanged` não produzir diff vazio toda semana.
 - **`docs/google9bac509c8baf881b.html` fica.** É a verificação da galeria no

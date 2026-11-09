@@ -37,7 +37,7 @@ If it's useful, a [star on GitHub](https://github.com/rzmt/logos-bancos-br) help
 
 1. **The list of institutions — auto-updated, in two sets.** The **main list**
    ([`data/bancos.json`](data/bancos.json)) carries the **~460 institutions with a COMPE code**
-   from the Central Bank STR participants list. The **~620 Pix-only institutions** (fintechs,
+   from the Central Bank STR participants list. The **~610 Pix-only institutions** (fintechs,
    payment institutions, cooperative affiliates — no COMPE) live in a separate dataset
    ([`data/instituicoes-pix.json`](data/instituicoes-pix.json)), keeping the main list lean.
    Both carry official names, ISPB, CNPJ (Pix-only) and Pix participation attributes. For
@@ -45,7 +45,7 @@ If it's useful, a [star on GitHub](https://github.com/rzmt/logos-bancos-br) help
    ("NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO" → `"Nubank"`) on the main brands; it is
    `null` where not curated (fall back to `name`), and never derived automatically from the
    official name.
-2. **Official logos, deduplicated.** **Nearly 500 institutions with a logo** backed by **~180 distinct
+2. **Official logos, deduplicated.** **Over 600 institutions with a logo** backed by **~180 distinct
    logos** (~1.9 MB of PNG and SVG): affiliates of single-brand cooperative systems (Sicoob, Sicredi, Cresol,
    Unicred) **share one file per system**, marked `logo.source.type: "brand"`. Own logos come
    from the public **Open Finance Brasil** directory (`openfinance`) or the **institution's own
@@ -76,8 +76,9 @@ the year, and banks redesign their brands. Existing libraries ship either **data
 logos) or logos **collected from assorted websites** with no traceability. The approach here:
 
 - **Official sources, and only them** — the STR and Pix participants CSVs (updated daily by the
-  Central Bank itself), the Open Finance Brasil participants directory and, for non-participants,
-  the icon the institution publishes **on its own official website** (hand-reviewed). No images
+  Central Bank itself), the Central Bank credit cooperative registry, the Open Finance Brasil
+  participants directory and, for non-participants, the icon the institution publishes **on its
+  own official website** (hand-reviewed). No images
   "found on Google" or from aggregators. Open Finance purists can filter:
   `banks().filter(b => b.logo?.source.type === 'openfinance')`.
 - **Per-logo provenance** — `data/bancos.json` records each logo's source URI, SHA-256 of the
@@ -87,7 +88,7 @@ logos) or logos **collected from assorted websites** with no traceability. The a
   In a banking context, a wrong logo is worse than no logo.
 - **Safe assets** — https-only downloads with size/pixel caps; SVGs redistributed only after
   sanitization (no scripts, event handlers, `foreignObject` or external references).
-- **Honest trade-off** — nearly 500 of the ~1,080 institutions have a logo (Open Finance participants,
+- **Honest trade-off** — over 600 of the ~1,070 institutions have a logo (Open Finance participants,
   cooperative-system affiliates and ~60 institutions covered via official sites — the vast
   majority of accounts in Brazil). The rest are small SCDs/brokers/payment institutions — your
   app picks the fallback, and coverage grows every release.
@@ -100,6 +101,7 @@ The same public endpoints the pipeline consumes — anyone can check them:
 |---|---|---|---|
 | STR participants list | Central Bank of Brazil | ISPB, COMPE code and official names (main list) | [page](https://www.bcb.gov.br/estabilidadefinanceira/participantesstr) · [CSV](https://www.bcb.gov.br/content/estabilidadefinanceira/str1/ParticipantesSTR.csv) |
 | Active Pix participants list | Central Bank of Brazil | Pix institutions (incl. COMPE-less), CNPJ and participation attributes | [page](https://www.bcb.gov.br/estabilidadefinanceira/participantespix) (the daily CSV is linked there) |
+| Credit cooperative registry | Central Bank of Brazil | Full official name and central of affiliation of each cooperative (used only by the brand rule) | [page](https://dadosabertos.bcb.gov.br/dataset/relacao-de-instituicoes-em-funcionamento-no-pais) · [API](https://olinda.bcb.gov.br/olinda/servico/Instituicoes_em_funcionamento/versao/v1/odata/SedesCooperativas?$format=json) |
 | Participants directory | Open Finance Brasil | The logo each institution publishes, keyed by CNPJ | [public JSON](https://data.directory.openbankingbrasil.org.br/participants) |
 
 Each logo's `logo.source.uri` in [`data/bancos.json`](data/bancos.json) points at the exact
@@ -238,7 +240,11 @@ The pipeline unions the Central Bank's STR and active-Pix participants lists (wh
 exist, keyed by ISPB) and joins them with the Open Finance directory (their logos), bridged by
 `ISPB == first 8 digits of the CNPJ`; hand-reviewed `forcedMatches` cover second brands (XP
 CCTVM, Nu Invest, Bradesco BBI…), and a curated brand rule gives cooperative-system affiliates
-(Sicoob/Sicredi/Cresol/Unicred) their system's logo. For institutions outside Open Finance,
+(Sicoob/Sicredi/Cresol/Unicred) their system's logo. The Pix list only has an abbreviation for
+cooperatives ("CC CREDICERIPA"), so the rule also reads the full official name from the Central
+Bank cooperative registry ("… - SICOOB CREDICERIPA"); a cooperative the registry lists as
+affiliated with another system's central does not inherit the brand, and a committed copy
+(`pipeline/cooperativas.json`) covers registry outages. For institutions outside Open Finance,
 discovery tools (`npm run discover` / `discover:ai`) find the icon published on the institution's
 official website — nothing ships without visual curation (brand + domain reviewed); approvals
 become `forcedUris` (`source.type: "direct-uri"`). The weekly workflow regenerates

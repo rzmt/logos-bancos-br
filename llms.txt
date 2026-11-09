@@ -12,19 +12,21 @@ Key facts:
 
 - The **institution list is auto-updated and split in two datasets**: `data/bancos.json` is
   the MAIN list (the ~460 institutions with a COMPE code, from the BCB STR participants list);
-  `data/instituicoes-pix.json` is the separate Pix-only set (~620 institutions without COMPE —
+  `data/instituicoes-pix.json` is the separate Pix-only set (~610 institutions without COMPE —
   fintechs, payment institutions, cooperative affiliates — from the BCB active Pix participants
   list, each with a 14-digit `cnpj`). Both carry `ispb`, official names, `pix` participation
   attributes (verbatim from the BCB list, or null) and `logo` (or null). API: `banks()` = main
   list, `pixInstitutions()` = Pix-only, `allInstitutions()` = both, `byIspb()` resolves across
   the two, `byCompe()` only over the main list.
-- The **logos are auto-updated and deduplicated**: ~490 institutions with a logo backed by
+- The **logos are auto-updated and deduplicated**: ~620 institutions with a logo backed by
   ~180 distinct logos, as normalized transparent 256×256 PNGs (`logos/png/<ISPB>.png`) plus
   sanitized original SVGs when available. Assets are keyed by **ISPB**. `source.type` states
   the origin: `openfinance`, `direct-uri` (institution's own official website, hand-reviewed),
   `override`, or `brand` — a logo inherited from the institution's cooperative system (Sicoob,
-  Sicredi, Cresol, Unicred) via a curated whole-word rule; brand affiliates all reference ONE
-  shared file per system and carry `source.brand` with the system token.
+  Sicredi, Cresol, Unicred) via a curated whole-word rule over the official name (STR/Pix lists
+  or the full name in the BCB credit cooperative registry; a cooperative affiliated with
+  another system's central is skipped); brand affiliates all reference ONE shared file per
+  system and carry `source.brand` with the system token.
 - **Update cadence**: a GitHub Action (`.github/workflows/update-logos.yml`) runs every Monday
   (and on demand), rebuilds the list and the logos from the official sources, and opens a pull
   request with a report and the visual diff. Generated files are never edited by hand; curation
@@ -70,4 +72,5 @@ Key facts:
 
 - [BCB STR participants CSV](https://www.bcb.gov.br/content/estabilidadefinanceira/str1/ParticipantesSTR.csv) ([page](https://www.bcb.gov.br/estabilidadefinanceira/participantesstr))
 - [BCB active Pix participants page](https://www.bcb.gov.br/estabilidadefinanceira/participantespix) (daily dated CSV linked there)
+- [BCB credit cooperative registry](https://dadosabertos.bcb.gov.br/dataset/relacao-de-instituicoes-em-funcionamento-no-pais) ([API](https://olinda.bcb.gov.br/olinda/servico/Instituicoes_em_funcionamento/versao/v1/odata/SedesCooperativas?$format=json); full official names for the cooperative brand rule)
 - [Open Finance Brasil participants directory](https://data.directory.openbankingbrasil.org.br/participants)

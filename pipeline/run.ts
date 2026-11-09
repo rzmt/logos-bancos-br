@@ -2,8 +2,9 @@
  * Logo collection pipeline — orchestration.
  *
  * Official sources only: the combined Central Bank backbone (STR participants
- * with a COMPE number ∪ active Pix participants, keyed by ISPB) and the Open
- * Finance Brasil directory (logos by CNPJ).
+ * with a COMPE number ∪ active Pix participants, keyed by ISPB), the Open
+ * Finance Brasil directory (logos by CNPJ) and the Central Bank cooperative
+ * registry (full official names for the brand rule).
  *
  * Usage:
  *   npm run pipeline
@@ -11,7 +12,8 @@
  *   npm run pipeline -- --only 341,0260  # subset by COMPE or ISPB (debugging)
  *   npm run pipeline -- --force          # re-download/re-encode everything
  *
- * Golden rules: if a source is unreachable, abort without touching anything;
+ * Golden rules: if a source is unreachable, abort without touching anything
+ * (the cooperative registry falls back to its committed snapshot instead);
  * a failed download never deletes a previously shipped logo; files that lose
  * their source become "orphans" in the report and são MANTIDOS: a URL já pode
  * ter sido publicada e fixada por consumidores externos (política de
@@ -38,12 +40,23 @@ import { buildMatches } from './matching';
 import { buildLogoIndexMarkdown, buildPreviewMarkdown } from './preview';
 import { buildReactNativeMap } from './rn-map';
 import {
+  cooperativeSnapshot,
+  fetchCooperativeRegistry,
   fetchOpenFinanceDirectory,
   fetchPixParticipants,
   fetchStrParticipants,
   mergeBackbone,
+  registryFromSnapshot,
+  sameCooperativeSnapshot,
 } from './sources';
-import type { Manifest, ManifestEntry, MatchEntry, PipelineConfig } from './types';
+import type {
+  CooperativeRegistry,
+  CooperativeSnapshot,
+  Manifest,
+  ManifestEntry,
+  MatchEntry,
+  PipelineConfig,
+} from './types';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -52,6 +65,7 @@ const SVG_DIR = join(ROOT, 'logos', 'svg');
 const OVERRIDES_DIR = join(__dirname, 'overrides');
 const CONFIG_PATH = join(__dirname, 'config.json');
 const MANIFEST_PATH = join(__dirname, 'manifest.json');
+const COOPERATIVES_PATH = join(__dirname, 'cooperativas.json');
 const REPORT_PATH = join(__dirname, 'report.md');
 const DATASET_PATH = join(ROOT, 'data', 'bancos.json');
 const PIX_DATASET_PATH = join(ROOT, 'data', 'instituicoes-pix.json');
@@ -158,7 +172,18 @@ async function main(): Promise<void> {
   const today = new Date().toISOString().slice(0, 10);
 
   console.log(`Atualizando logos de instituições${dryRun ? ' (dry-run)' : ''}...`);
-  console.log('Baixando fontes oficiais (BCB/STR + BCB/Pix + diretório Open Finance)...');
+  console.log(
+    'Baixando fontes oficiais (BCB/STR + BCB/Pix + diretório Open Finance + cadastro de cooperativas do BCB)...',
+  );
+  // The registry only feeds the brand rule: when the API fails, the committed
+  // snapshot stands in instead of aborting the run.
+  const freshCooperatives = fetchCooperativeRegistry({ timeoutMs: 30_000 }).then(
+    (registry) => ({ registry, error: '' }),
+    (error: unknown) => ({
+      registry: null,
+      error: error instanceof Error ? error.message : String(error),
+    }),
+  );
   let strParticipants: Awaited<ReturnType<typeof fetchStrParticipants>>;
   let pixResult: Awaited<ReturnType<typeof fetchPixParticipants>>;
   let directory: Awaited<ReturnType<typeof fetchOpenFinanceDirectory>>;
@@ -174,6 +199,24 @@ async function main(): Promise<void> {
     console.error('  Nada foi alterado.');
     process.exit(1);
   }
+  const fresh = await freshCooperatives;
+  const storedCooperatives = readJson<CooperativeSnapshot | null>(COOPERATIVES_PATH, null);
+  let cooperatives: CooperativeRegistry;
+  let cooperativesOrigin: string;
+  if (fresh.registry) {
+    cooperatives = fresh.registry;
+    cooperativesOrigin = 'consulta de hoje';
+  } else if (storedCooperatives) {
+    cooperatives = registryFromSnapshot(storedCooperatives);
+    cooperativesOrigin = `cópia de ${storedCooperatives.atualizadoEm} em pipeline/cooperativas.json; a consulta falhou: ${fresh.error}`;
+  } else {
+    console.error(
+      `\n✖ Cadastro de cooperativas do BCB indisponível e sem cópia em pipeline/cooperativas.json: ${fresh.error}`,
+    );
+    console.error('  Nada foi alterado.');
+    process.exit(1);
+  }
+
   const participants = mergeBackbone(strParticipants, pixResult.participants);
   const pixOnlyCount = participants.filter((p) => p.compe === null).length;
   console.log(`  BCB/STR: ${strParticipants.length} instituições com código COMPE.`);
@@ -183,14 +226,17 @@ async function main(): Promise<void> {
   );
   console.log(`  Espinha combinada: ${participants.length} instituições únicas por ISPB.`);
   console.log(`  Open Finance: ${directory.length} organizações no diretório.`);
+  console.log(`  Cooperativas no cadastro do BCB: ${cooperatives.size} (${cooperativesOrigin}).`);
   console.log(`  Overrides locais: ${overrides.size}.`);
 
-  const { entries, suggestions, unusedOverrides } = buildMatches({
+  const { entries, suggestions, unusedOverrides, affiliationLocks } = buildMatches({
     participants,
     directory,
     config,
     overrides,
+    cooperatives,
   });
+  const brandFromRegistry = entries.filter((entry) => entry.brandFromRegistry).length;
 
   const bySource: Record<string, number> = {};
   for (const entry of entries) {
@@ -367,7 +413,17 @@ async function main(): Promise<void> {
       buildReactNativeMap([...dataset.banks, ...pixDataset.institutions]),
     );
     writeFileSync(MANIFEST_PATH, `${JSON.stringify(sortedManifest, null, 2)}\n`);
-    generatedFiles = `bancos.json ${datasetStatus} · instituicoes-pix.json ${pixStatus} · cdn-index.min.json ${cdnStatus} · logo-urls.min.json ${logoUrlsStatus} · docs/index.html ${galleryStatus} · PREVIEW.md ${previewStatus} · logos/README.md ${indexStatus} · react-native.js ${rnStatus}`;
+    // The copy only changes with the data: same names and affiliations keep
+    // the old file (and its date).
+    let cooperativesStatus = 'inalterado';
+    if (fresh.registry) {
+      const snapshot = cooperativeSnapshot(fresh.registry, today);
+      if (!storedCooperatives || !sameCooperativeSnapshot(storedCooperatives, snapshot)) {
+        writeFileSync(COOPERATIVES_PATH, `${JSON.stringify(snapshot, null, 2)}\n`);
+        cooperativesStatus = storedCooperatives ? 'atualizado' : 'criado';
+      }
+    }
+    generatedFiles = `bancos.json ${datasetStatus} · instituicoes-pix.json ${pixStatus} · cdn-index.min.json ${cdnStatus} · logo-urls.min.json ${logoUrlsStatus} · docs/index.html ${galleryStatus} · PREVIEW.md ${previewStatus} · logos/README.md ${indexStatus} · react-native.js ${rnStatus} · pipeline/cooperativas.json ${cooperativesStatus}`;
   }
 
   // ---- report ----
@@ -387,7 +443,7 @@ async function main(): Promise<void> {
   const reportLines: string[] = [
     '## Atualização de logos — relatório',
     '',
-    `Fontes oficiais: listas de participantes do STR e do Pix (Banco Central) + diretório de participantes do Open Finance Brasil. Rodada de ${today}${dryRun ? ' (dry-run)' : ''}.`,
+    `Fontes oficiais: listas de participantes do STR e do Pix e cadastro de cooperativas (Banco Central) + diretório de participantes do Open Finance Brasil. Rodada de ${today}${dryRun ? ' (dry-run)' : ''}.`,
     '',
     '| Métrica | Valor |',
     '|---|---|',
@@ -396,7 +452,8 @@ async function main(): Promise<void> {
     `| Conjunto separado (instituicoes-pix.json, só-Pix) | ${pixDataset.institutions.length} |`,
     `| Com logo | ${withLogo} |`,
     `| Match automático por ISPB | ${bySource.ispb ?? 0} |`,
-    `| Marca de sistema cooperativo (regra curada) | ${bySource['brand-match'] ?? 0} (compartilhando ${seenAssets.size ? [...seenAssets].filter((a) => entries.some((e) => e.assetIspb === a)).length : 0} arquivo(s)) |`,
+    `| Marca de sistema cooperativo (regra curada) | ${bySource['brand-match'] ?? 0}, ${brandFromRegistry} pelo nome do cadastro do BCB (compartilhando ${seenAssets.size ? [...seenAssets].filter((a) => entries.some((e) => e.assetIspb === a)).length : 0} arquivo(s)) |`,
+    `| Cadastro de cooperativas do BCB | ${cooperatives.size} (${cooperativesOrigin}) |`,
     `| Matches forçados (revisados) | ${(bySource['forced-match'] ?? 0) + (bySource['forced-uri'] ?? 0)} |`,
     `| Overrides manuais | ${bySource.override ?? 0} |`,
     `| Novos · atualizados · inalterados | ${stats.created.length} · ${stats.updated.length} · ${stats.unchanged.length} |`,
@@ -457,6 +514,20 @@ async function main(): Promise<void> {
       );
     }
   }
+  if (affiliationLocks.length) {
+    reportLines.push(
+      '',
+      '### Trava de filiação (marca no nome, mas filiada a central de outro sistema: fica sem o logo da marca)',
+      '',
+      '| ISPB | Nome | Marca no nome | Filiação no cadastro do BCB |',
+      '|---|---|---|---|',
+    );
+    for (const lock of affiliationLocks) {
+      reportLines.push(
+        `| ${lock.ispb} | ${lock.name} | ${lock.brandToken} | ${lock.affiliation} |`,
+      );
+    }
+  }
   if (orphanPngs.length || orphanSvgs.length) {
     reportLines.push(
       '',
@@ -477,8 +548,11 @@ async function main(): Promise<void> {
   console.log(`Instituições (espinha):      ${entries.length}`);
   console.log(`Com logo:                    ${withLogo}${dryRun ? ' (estimado)' : ''}`);
   console.log(
-    `  ↳ ISPB ${bySource.ispb ?? 0} · marca ${bySource['brand-match'] ?? 0} · forçados ${(bySource['forced-match'] ?? 0) + (bySource['forced-uri'] ?? 0)} · override ${bySource.override ?? 0}`,
+    `  ↳ ISPB ${bySource.ispb ?? 0} · marca ${bySource['brand-match'] ?? 0} (${brandFromRegistry} pelo cadastro) · forçados ${(bySource['forced-match'] ?? 0) + (bySource['forced-uri'] ?? 0)} · override ${bySource.override ?? 0}`,
   );
+  if (affiliationLocks.length) {
+    console.log(`Trava de filiação:           ${affiliationLocks.length} (ver pipeline/report.md)`);
+  }
   console.log(
     `  ↳ novos ${stats.created.length} · atualizados ${stats.updated.length} · inalterados ${stats.unchanged.length}`,
   );

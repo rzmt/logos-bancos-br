@@ -10,6 +10,7 @@
 import { jaccard, stripAccents, tokenize } from './text';
 import type {
   BackboneParticipant,
+  CooperativeRegistry,
   DirectoryIndex,
   DirectoryOrganisation,
   DirectoryServer,
@@ -145,11 +146,23 @@ function bestByName(
   return best && bestScore >= threshold ? { org: best, score: bestScore } : null;
 }
 
+/**
+ * Brand token in the name, but the Central Bank registry lists the
+ * cooperative as affiliated with a central of another system: no brand logo.
+ */
+export interface AffiliationLock {
+  ispb: string;
+  name: string;
+  brandToken: string;
+  affiliation: string;
+}
+
 export interface MatchResult {
   entries: MatchEntry[];
   suggestions: NameSuggestion[];
   /** Override files whose ISPB is not in the STR backbone (likely stale). */
   unusedOverrides: string[];
+  affiliationLocks: AffiliationLock[];
 }
 
 /**
@@ -162,11 +175,14 @@ export function buildMatches({
   directory,
   config,
   overrides,
+  cooperatives = new Map(),
 }: {
   participants: BackboneParticipant[];
   directory: RawOrganisation[];
   config: PipelineConfig;
   overrides: Map<string, string>;
+  /** Central Bank cooperative registry: full official names for the brand rule. */
+  cooperatives?: CooperativeRegistry;
 }): MatchResult {
   const index = indexDirectory(directory, { denylistUris: config.denylistUris });
   const ignore = new Set(config.ignoreIspb ?? []);
@@ -209,10 +225,34 @@ export function buildMatches({
       uri: server.uri,
     });
   }
-  const brandFor = (participant: BackboneParticipant): BrandRule | null => {
-    const name = stripAccents(`${participant.shortName} ${participant.fullName}`).toUpperCase();
+  // The token may be in the STR/Pix names or only in the registry's full
+  // name: the Pix list abbreviates cooperatives ("CC CREDICERIPA"). A
+  // registry affiliation with a central of another system blocks the brand.
+  const affiliationLocks: AffiliationLock[] = [];
+  const brandFor = (
+    participant: BackboneParticipant,
+  ): { rule: BrandRule; fromRegistry: boolean } | null => {
+    const listed = stripAccents(`${participant.shortName} ${participant.fullName}`).toUpperCase();
+    const cooperative = cooperatives.get(participant.ispb);
+    const official = stripAccents(cooperative?.name ?? '').toUpperCase();
+    const affiliation = stripAccents(cooperative?.affiliation ?? '').toUpperCase();
+    let locked: BrandRule | null = null;
     for (const rule of brandRules) {
-      if (rule.pattern.test(name)) return rule;
+      const inListed = rule.pattern.test(listed);
+      if (!inListed && !rule.pattern.test(official)) continue;
+      if (affiliation && !rule.pattern.test(affiliation)) {
+        locked ??= rule;
+        continue;
+      }
+      return { rule, fromRegistry: !inListed };
+    }
+    if (locked && cooperative) {
+      affiliationLocks.push({
+        ispb: participant.ispb,
+        name: participant.shortName || participant.fullName,
+        brandToken: locked.token,
+        affiliation: cooperative.affiliation,
+      });
     }
     return null;
   };
@@ -282,16 +322,17 @@ export function buildMatches({
     // Curated brand rule: affiliates of single-brand cooperative systems
     // (e.g. "SICOOB <nome>") carry the system's logo — sharing ONE asset file
     // keyed by the system organisation's CNPJ root.
-    const brandRule = brandFor(participant);
-    if (brandRule) {
+    const brand = brandFor(participant);
+    if (brand) {
       entries.push({
         ...base,
         source: 'brand-match',
-        uri: brandRule.uri,
-        orgName: brandRule.org.name,
-        orgCnpj: brandRule.org.cnpj,
-        assetIspb: brandRule.org.cnpjRoot,
-        brandToken: brandRule.token,
+        uri: brand.rule.uri,
+        orgName: brand.rule.org.name,
+        orgCnpj: brand.rule.org.cnpj,
+        assetIspb: brand.rule.org.cnpjRoot,
+        brandToken: brand.rule.token,
+        brandFromRegistry: brand.fromRegistry,
       });
       continue;
     }
@@ -319,5 +360,5 @@ export function buildMatches({
 
   const unusedOverrides = [...overrides.keys()].filter((ispb) => !seen.has(ispb)).sort();
   suggestions.sort((a, b) => b.score - a.score);
-  return { entries, suggestions, unusedOverrides };
+  return { entries, suggestions, unusedOverrides, affiliationLocks };
 }

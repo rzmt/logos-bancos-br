@@ -209,6 +209,7 @@ jobs:
             PREVIEW.md
             react-native.js
             pipeline/manifest.json
+            pipeline/cooperativas.json
             package.json
             package-lock.json
 

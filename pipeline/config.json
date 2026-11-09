@@ -1,5 +1,5 @@
 {
-  "$comment": "Config do pipeline. forcedMatches: ISPB(8) -> CNPJ(14) da organização do diretório Open Finance (revisado à mão; promova sugestões do relatório para cá). rejectedMatches: ISPB(8) -> CNPJ(14) de sugestão por nome já revisada e REJEITADA (some do relatório semanal). brandMatches: MARCA (palavra inteira no nome oficial) -> CNPJ(14) da organização do sistema cooperativo de marca única. forcedUris: ISPB -> URL https direta. denylistUris: URLs de logo a ignorar. ignoreIspb: ISPBs a pular.",
+  "$comment": "Config do pipeline. forcedMatches: ISPB(8) -> CNPJ(14) da organização do diretório Open Finance (revisado à mão; promova sugestões do relatório para cá). rejectedMatches: ISPB(8) -> CNPJ(14) de sugestão por nome já revisada e REJEITADA (some do relatório semanal). brandMatches: MARCA (palavra inteira no nome oficial: listas do STR/Pix ou nome completo no cadastro de cooperativas do BCB; filiada a central de outro sistema não herda) -> CNPJ(14) da organização do sistema cooperativo de marca única. forcedUris: ISPB -> URL https direta. denylistUris: URLs de logo a ignorar. ignoreIspb: ISPBs a pular.",
   "pngSizePx": 256,
   "maxDownloadBytes": 2097152,
   "timeoutMs": 15000,

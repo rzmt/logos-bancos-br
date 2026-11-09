@@ -56,6 +56,32 @@ export interface BackboneParticipant {
   pix: PixInfo | null;
 }
 
+/** One credit cooperative in the Central Bank registry (SedesCooperativas). */
+export interface CooperativeInfo {
+  /** Full official name, e.g. "COOPERATIVA DE CREDITO CREDICERIPA - SICOOB CREDICERIPA". */
+  name: string;
+  /** Central the cooperative is affiliated with, as published (usually empty). */
+  affiliation: string;
+}
+
+/** Central Bank cooperative registry, keyed by the 8-digit CNPJ root (== ISPB). */
+export type CooperativeRegistry = Map<string, CooperativeInfo>;
+
+/**
+ * Committed copy of the registry (pipeline/cooperativas.json). The pipeline
+ * queries the API on every run and falls back to this file when it fails.
+ */
+export interface CooperativeSnapshot {
+  $comment?: string;
+  fonte: string;
+  /** Date the content last changed (YYYY-MM-DD). */
+  atualizadoEm: string;
+  /** CNPJ root -> full official name. */
+  nomes: Record<string, string>;
+  /** CNPJ root -> central of affiliation; only the non-empty ones. */
+  filiacoes: Record<string, string>;
+}
+
 /** Raw organisation as returned by the Open Finance Brasil participants directory. */
 export interface RawOrganisation {
   Status?: string;
@@ -124,8 +150,11 @@ export interface PipelineConfig {
    * Single-brand cooperative systems: BRAND TOKEN -> CNPJ of the system's
    * organisation in the directory. Applies when the token appears as a whole
    * word in the institution's official name (e.g. "CC SICOOB CREDIVALE" ->
-   * Sicoob). Curated by hand — this is an explicit brand rule, not fuzzy
-   * name similarity.
+   * Sicoob): the STR/Pix names or the full name in the Central Bank
+   * cooperative registry (the Pix list only has an abbreviation such as
+   * "CC CREDICERIPA"). A cooperative the registry lists as affiliated with a
+   * central of another system never inherits the brand. Curated by hand —
+   * this is an explicit brand rule, not fuzzy name similarity.
    */
   brandMatches: Record<string, string>;
   /** ISPBs to skip entirely. */
@@ -160,6 +189,11 @@ export interface MatchEntry {
   assetIspb?: string;
   /** Brand token that matched (e.g. "SICOOB") for `brand-match` entries. */
   brandToken?: string;
+  /**
+   * `brand-match` only: true when the token is only in the full name from
+   * the Central Bank cooperative registry, not in the STR/Pix names.
+   */
+  brandFromRegistry?: boolean;
 }
 
 export interface NameSuggestion {

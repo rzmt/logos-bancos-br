@@ -31,12 +31,14 @@ npm run pipeline -- --force       # re-baixa e re-encoda tudo (ignora o manifest
 
 O pipeline é **idempotente**: rodar duas vezes seguidas não deve alterar nada na segunda. Ele
 imprime um resumo e grava `pipeline/report.md` (usado como corpo do PR automático). Regras de
-ouro: fonte fora do ar aborta sem tocar em nada; falha de download **nunca apaga** um logo já
+ouro: fonte fora do ar aborta sem tocar em nada (a exceção é o cadastro de cooperativas do BCB,
+que tem cópia em `pipeline/cooperativas.json`); falha de download **nunca apaga** um logo já
 publicado; arquivos órfãos só são removidos manualmente.
 
 Saídas geradas (commitadas): `data/bancos.json`, `logos/png/<ispb>.png`,
 `logos/svg/<ispb>.svg`, `logos/README.md` (índice por nome, fica fora do pacote npm), `PREVIEW.md`,
-`react-native.js`, `pipeline/manifest.json`.
+`react-native.js`, `pipeline/manifest.json`, `pipeline/cooperativas.json` (cópia do cadastro de
+cooperativas do BCB; só muda quando o cadastro muda).
 
 ## Primeira contribuição (e Hacktoberfest)
 
@@ -126,7 +128,9 @@ Checklist de revisão para os PRs que ficam abertos:
 3. **Logo diferente em instituições** (seção ⚠️ no corpo do PR): quem perdeu, ganhou ou trocou
    de arquivo, mesmo sem aparecer no diff dos PNGs. Confira cada linha; dezenas de afiliadas de
    uma marca perdendo o logo de uma vez costuma ser a organização do sistema fora do diretório
-   Open Finance naquela semana — não faça merge.
+   Open Finance naquela semana — não faça merge. A seção **Trava de filiação** lista
+   cooperativas com a marca no nome que o cadastro do BCB dá como filiadas a central de outro
+   sistema: elas ficam sem o logo da marca, o que é o certo para quem trocou de sistema.
 4. **Novos bancos** na lista (o BCB incluiu/renomeou instituições) não exigem nada — só conferir
    que os nomes fazem sentido.
 5. **Falhas**: o relatório separa *fonte quebrada* (precisa de ação: URL nova em `forcedUris`

@@ -37,7 +37,7 @@ Se for útil, uma [estrela no GitHub](https://github.com/rzmt/logos-bancos-br) a
 
 1. **A lista de instituições — atualizada automaticamente, em dois conjuntos.** A **lista
    principal** ([`data/bancos.json`](data/bancos.json)) traz as **~460 instituições com código
-   COMPE** da lista de participantes do STR do Banco Central. As **~620 instituições só-Pix**
+   COMPE** da lista de participantes do STR do Banco Central. As **~610 instituições só-Pix**
    (fintechs, IPs e cooperativas afiliadas, sem COMPE) ficam num conjunto separado
    ([`data/instituicoes-pix.json`](data/instituicoes-pix.json)), mantendo a lista principal
    enxuta. Ambos trazem nomes oficiais, ISPB, CNPJ (só-Pix) e os atributos de participação no
@@ -45,7 +45,7 @@ Se for útil, uma [estrela no GitHub](https://github.com/rzmt/logos-bancos-br) a
    ("NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO" → `"Nubank"`) nas principais marcas; onde
    não há curadoria o campo é `null` e vale usar `name`. Nunca é derivado automaticamente do
    nome oficial — derivação produz coisas como "Banco Da Amazonia".
-2. **Logos oficiais, sem duplicação.** **Quase 500 instituições com logo** usando **~180 logos
+2. **Logos oficiais, sem duplicação.** **Mais de 600 instituições com logo** usando **~180 logos
    distintos** (~1,9 MB somando PNG e SVG): afiliadas de sistemas cooperativos de marca única (Sicoob, Sicredi,
    Cresol, Unicred) **compartilham um único arquivo por sistema** e são marcadas com
    `logo.source.type: "brand"`. Logos próprios vêm do diretório público do **Open Finance
@@ -76,10 +76,11 @@ ano, e os bancos redesenham suas marcas. As bibliotecas existentes ou trazem **s
 logos), ou logos **coletados de sites variados**, sem rastreabilidade. A abordagem aqui:
 
 - **Fontes oficiais, e apenas elas** — os CSVs de participantes do STR e do Pix (que o próprio
-  BCB atualiza diariamente), o diretório de participantes do Open Finance Brasil e, para quem não
-  participa do Open Finance, o ícone que a própria instituição publica **no site oficial dela**
-  (revisado à mão). Nenhuma imagem "achada no Google" ou de agregador. Quem quiser só a fonte
-  Open Finance filtra: `banks().filter(b => b.logo?.source.type === 'openfinance')`.
+  BCB atualiza diariamente), o cadastro de cooperativas do BCB, o diretório de participantes do
+  Open Finance Brasil e, para quem não participa do Open Finance, o ícone que a própria
+  instituição publica **no site oficial dela** (revisado à mão). Nenhuma imagem "achada no
+  Google" ou de agregador. Quem quiser só a fonte Open Finance filtra:
+  `banks().filter(b => b.logo?.source.type === 'openfinance')`.
 - **Proveniência por logo** — `data/bancos.json` registra a URI de origem, o SHA-256 do arquivo
   original e a data de cada logo. O diff do git é a auditoria.
 - **Correspondência segura** — match automático **somente por ISPB** (= raiz do CNPJ).
@@ -88,7 +89,7 @@ logos), ou logos **coletados de sites variados**, sem rastreabilidade. A abordag
 - **Assets seguros** — download só via https com teto de tamanho e de pixels; SVGs
   redistribuídos apenas após sanitização (sem `script`, event handlers, `foreignObject` ou
   referências externas).
-- **Trade-off honesto** — quase 500 das ~1.080 instituições têm logo (participantes do Open Finance,
+- **Trade-off honesto** — mais de 600 das ~1.070 instituições têm logo (participantes do Open Finance,
   afiliadas dos sistemas cooperativos e ~60 instituições cobertas pelos sites oficiais — a
   esmagadora maioria das contas do país). As demais são SCDs/corretoras/IPs pequenas; para elas
   seu app usa o fallback que preferir — e a cobertura cresce a cada release.
@@ -101,6 +102,7 @@ Os mesmos endereços públicos que o pipeline consome — qualquer pessoa pode v
 |---|---|---|---|
 | Lista de participantes do STR | Banco Central do Brasil | ISPB, código COMPE e nomes oficiais (lista principal) | [página](https://www.bcb.gov.br/estabilidadefinanceira/participantesstr) · [CSV](https://www.bcb.gov.br/content/estabilidadefinanceira/str1/ParticipantesSTR.csv) |
 | Lista de participantes ativos do Pix | Banco Central do Brasil | Instituições do Pix (inclusive sem COMPE), CNPJ e atributos de participação | [página](https://www.bcb.gov.br/estabilidadefinanceira/participantespix) (o CSV diário é linkado nela) |
+| Cadastro de cooperativas de crédito | Banco Central do Brasil | Nome oficial completo e central de filiação de cada cooperativa (só a regra de marca usa) | [página](https://dadosabertos.bcb.gov.br/dataset/relacao-de-instituicoes-em-funcionamento-no-pais) · [API](https://olinda.bcb.gov.br/olinda/servico/Instituicoes_em_funcionamento/versao/v1/odata/SedesCooperativas?$format=json) |
 | Diretório de participantes | Open Finance Brasil | Logo publicado pela própria instituição, identificado por CNPJ | [JSON público](https://data.directory.openbankingbrasil.org.br/participants) |
 
 O campo `logo.source.uri` de cada logo em [`data/bancos.json`](data/bancos.json) aponta o
@@ -117,7 +119,7 @@ bundler). Zero dependências de runtime. Publicado com **npm provenance** — ve
 integridade com `npm audit signatures`.
 
 Os arquivos são nomeados pelo **ISPB** (8 dígitos, estável e universal — é o que permite cobrir
-as ~620 instituições do Pix que não têm código COMPE). As consultas aceitam **COMPE ou ISPB**.
+as ~610 instituições do Pix que não têm código COMPE). As consultas aceitam **COMPE ou ISPB**.
 
 ### JavaScript / TypeScript (Node ou web)
 
@@ -125,8 +127,8 @@ as ~620 instituições do Pix que não têm código COMPE). As consultas aceitam
 import { banks, pixInstitutions, allInstitutions, byCompe, byIspb, logoCdnUrl } from 'logos-bancos-br';
 
 banks();             // lista principal: ~460 instituições com COMPE
-pixInstitutions();   // conjunto separado: ~620 só-Pix (fintechs, IPs, afiliadas)
-allInstitutions();   // as duas juntas (~1.080)
+pixInstitutions();   // conjunto separado: ~610 só-Pix (fintechs, IPs, afiliadas)
+allInstitutions();   // as duas juntas (~1.070)
 
 byCompe(341);        // { ispb: '60701190', compe4: '0341', name: 'ITAÚ UNIBANCO S.A.', logo: {...} }
 byCompe('0260');     // Nubank — '260', 260 e '0260' são equivalentes
@@ -310,7 +312,11 @@ Um registro de `data/bancos.json`:
 4. **Sistemas cooperativos**: afiliadas que carregam a marca do sistema no nome oficial
    (Sicoob, Sicredi, Cresol, Unicred) recebem o logo do sistema por regra curada — explícita e
    auditável, não semelhança fuzzy — e **compartilham um único arquivo por marca** (nada de
-   centenas de cópias do mesmo PNG).
+   centenas de cópias do mesmo PNG). Como a lista do Pix só traz a sigla da cooperativa
+   ("CC CREDICERIPA"), a regra também lê o nome completo no cadastro de cooperativas do BCB
+   ("… - SICOOB CREDICERIPA"). Cooperativa que o cadastro dá como filiada a central de outro
+   sistema não herda a marca. Se a consulta ao cadastro falhar, vale a cópia versionada em
+   `pipeline/cooperativas.json`.
 5. **Fora do Open Finance**: ferramentas de descoberta (`npm run discover` e `discover:ai`)
    acham o ícone publicado no site oficial da instituição; **nada entra sem curadoria visual**
    (o revisor confere marca e domínio) — aprovados viram `forcedUris`.
@@ -327,7 +333,7 @@ uma pessoa e como consertar quando quebra: **[RUNBOOK.md](RUNBOOK.md)**.
 
 ## Limitações conhecidas
 
-- Cobertura de logos: quase 500 de ~1.080 instituições (~170 na lista principal; o restante são
+- Cobertura de logos: mais de 600 de ~1.070 instituições (~170 na lista principal; o restante são
   afiliadas com logo de sistema e só-Pix); cresce conforme o ecossistema e a curadoria. **Sua
   instituição está sem logo?** Abra uma issue com o template "Sugestão de match"/"Adicionar
   logo" apontando a URL no domínio oficial — promovemos rápido.

@@ -11,10 +11,23 @@
  * 3. Open Finance Brasil — participants directory (public JSON): each
  *    institution publishes and maintains its own logo
  *    (AuthorisationServers[].CustomerFriendlyLogoUri), identified by CNPJ.
+ * 4. Central Bank of Brazil — registry of credit cooperatives
+ *    ("Relação de Instituições em Funcionamento no País", Olinda API): the
+ *    full official name of each cooperative, which usually ends with the
+ *    system brand ("… - SICOOB CREDICERIPA") while the Pix list only has an
+ *    abbreviation ("CC CREDICERIPA"), plus the central it is affiliated
+ *    with. Feeds only the brand rule; a committed snapshot covers outages.
  */
 
 import { stripAccents } from './text';
-import type { BackboneParticipant, PixParticipant, RawOrganisation, StrParticipant } from './types';
+import type {
+  BackboneParticipant,
+  CooperativeRegistry,
+  CooperativeSnapshot,
+  PixParticipant,
+  RawOrganisation,
+  StrParticipant,
+} from './types';
 
 export const STR_CSV_URL =
   'https://www.bcb.gov.br/content/estabilidadefinanceira/str1/ParticipantesSTR.csv';
@@ -335,4 +348,85 @@ export function mergeBackbone(
     });
   }
   return merged;
+}
+
+export const COOPERATIVES_URL =
+  'https://olinda.bcb.gov.br/olinda/servico/Instituicoes_em_funcionamento/versao/v1/odata/SedesCooperativas?$format=json&$select=CNPJ,NOME_INSTITUICAO,FILIACAO';
+
+/** Address recorded in the snapshot: the resource, without the query. */
+const COOPERATIVES_SOURCE = COOPERATIVES_URL.split('?')[0] as string;
+
+/**
+ * Parses the Olinda response ({ value: [...] }) into the registry keyed by
+ * CNPJ root. Rows without CNPJ or name are skipped; exact repeats (the API
+ * lists the Sicredi confederation twice) keep the first row. A paged or
+ * suspiciously small answer throws, so the caller falls back to the snapshot.
+ */
+export function parseCooperativeRegistry(
+  data: unknown,
+  { minRows = 300 }: { minRows?: number } = {},
+): CooperativeRegistry {
+  const body = data as { value?: unknown; '@odata.nextLink'?: unknown } | null;
+  if (!body || !Array.isArray(body.value)) {
+    throw new Error('JSON do cadastro de cooperativas do BCB inesperado.');
+  }
+  if (body['@odata.nextLink']) {
+    throw new Error('Cadastro de cooperativas do BCB veio paginado; resposta incompleta.');
+  }
+  const registry: CooperativeRegistry = new Map();
+  for (const row of body.value as Array<Record<string, unknown> | null>) {
+    const digits = String(row?.CNPJ ?? '').replace(/\D/g, '');
+    const name = String(row?.NOME_INSTITUICAO ?? '').trim();
+    if (!digits || digits.length > 14 || !name) continue;
+    const root = digits.length > 8 ? digits.padStart(14, '0').slice(0, 8) : digits.padStart(8, '0');
+    if (registry.has(root)) continue;
+    registry.set(root, { name, affiliation: String(row?.FILIACAO ?? '').trim() });
+  }
+  if (registry.size < minRows) {
+    throw new Error(`Poucas cooperativas no cadastro do BCB (${registry.size}); fonte suspeita.`);
+  }
+  return registry;
+}
+
+export async function fetchCooperativeRegistry({
+  timeoutMs = 30_000,
+}: {
+  timeoutMs?: number;
+} = {}): Promise<CooperativeRegistry> {
+  const response = await fetchWithRetry(COOPERATIVES_URL, { timeoutMs });
+  return parseCooperativeRegistry(await response.json());
+}
+
+/** Snapshot sorted by CNPJ root, so the committed file only changes with the data. */
+export function cooperativeSnapshot(
+  registry: CooperativeRegistry,
+  updatedAt: string,
+): CooperativeSnapshot {
+  const nomes: Record<string, string> = {};
+  const filiacoes: Record<string, string> = {};
+  for (const [root, info] of [...registry.entries()].sort(([a], [b]) => a.localeCompare(b))) {
+    nomes[root] = info.name;
+    if (info.affiliation) filiacoes[root] = info.affiliation;
+  }
+  return {
+    $comment:
+      'Cópia do cadastro de cooperativas do BCB, gerada pelo pipeline (não edite à mão). A regra de marca usa o nome oficial completo e a filiação. O pipeline consulta a API a cada rodada e só usa esta cópia quando a consulta falha.',
+    fonte: COOPERATIVES_SOURCE,
+    atualizadoEm: updatedAt,
+    nomes,
+    filiacoes,
+  };
+}
+
+export function registryFromSnapshot(snapshot: CooperativeSnapshot): CooperativeRegistry {
+  const registry: CooperativeRegistry = new Map();
+  for (const [root, name] of Object.entries(snapshot.nomes ?? {})) {
+    registry.set(root, { name, affiliation: snapshot.filiacoes?.[root] ?? '' });
+  }
+  return registry;
+}
+
+/** Same names and affiliations (ignores the date and the comment). */
+export function sameCooperativeSnapshot(a: CooperativeSnapshot, b: CooperativeSnapshot): boolean {
+  return JSON.stringify([a.nomes, a.filiacoes]) === JSON.stringify([b.nomes, b.filiacoes]);
 }

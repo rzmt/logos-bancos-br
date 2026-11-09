@@ -495,4 +495,153 @@ describe('brandMatches (regra curada de sistemas cooperativos)', () => {
     });
     expect(entries[0]?.source).toBeNull();
   });
+
+  // A lista do Pix abrevia cooperativas ("CC CREDICERIPA"); o nome completo
+  // está no cadastro de cooperativas do BCB.
+  const crediceripa = participant({
+    ispb: '00966246',
+    compe: null,
+    compe4: null,
+    shortName: 'CC CREDICERIPA',
+    fullName: 'CC CREDICERIPA',
+  });
+
+  it('finds the brand in the full name from the Central Bank cooperative registry', () => {
+    const { entries } = buildMatches({
+      participants: [crediceripa],
+      directory: [sicoobConfed],
+      config: brandConfig,
+      overrides: new Map(),
+      cooperatives: new Map([
+        [
+          '00966246',
+          { name: 'COOPERATIVA DE CREDITO CREDICERIPA - SICOOB CREDICERIPA', affiliation: '' },
+        ],
+      ]),
+    });
+    expect(entries[0]?.source).toBe('brand-match');
+    expect(entries[0]?.assetIspb).toBe('04891850');
+    expect(entries[0]?.brandFromRegistry).toBe(true);
+
+    const withoutRegistry = buildMatches({
+      participants: [crediceripa],
+      directory: [sicoobConfed],
+      config: brandConfig,
+      overrides: new Map(),
+    });
+    expect(withoutRegistry.entries[0]?.source).toBeNull();
+  });
+
+  it('keeps the brand from the STR/Pix name even when the registry name lacks it', () => {
+    const { entries } = buildMatches({
+      participants: [
+        participant({
+          ispb: '00815319',
+          compe: null,
+          compe4: null,
+          shortName: 'SICOOB SUL-SERRANO',
+          fullName: 'SICOOB SUL-SERRANO',
+        }),
+      ],
+      directory: [sicoobConfed],
+      config: brandConfig,
+      overrides: new Map(),
+      cooperatives: new Map([
+        [
+          '00815319',
+          { name: 'COOPERATIVA DE CRÉDITO SUL-SERRANA DO ESPÍRITO SANTO', affiliation: '' },
+        ],
+      ]),
+    });
+    expect(entries[0]?.source).toBe('brand-match');
+    expect(entries[0]?.brandFromRegistry).toBe(false);
+  });
+
+  it('locks the brand when the registry affiliates the cooperative with another system', () => {
+    const { entries, affiliationLocks } = buildMatches({
+      participants: [
+        participant({
+          ispb: '33333333',
+          compe: null,
+          compe4: null,
+          shortName: 'CC SICOOB EXEMPLO',
+          fullName: 'CC SICOOB EXEMPLO',
+        }),
+      ],
+      directory: [sicoobConfed],
+      config: brandConfig,
+      overrides: new Map(),
+      cooperatives: new Map([
+        [
+          '33333333',
+          {
+            name: 'COOPERATIVA DE CRÉDITO EXEMPLO - SICOOB EXEMPLO',
+            affiliation: 'CREDISIS - CENTRAL DE COOPERATIVAS DE CRÉDITO',
+          },
+        ],
+      ]),
+    });
+    expect(entries[0]?.source).toBeNull();
+    expect(affiliationLocks).toEqual([
+      {
+        ispb: '33333333',
+        name: 'CC SICOOB EXEMPLO',
+        brandToken: 'SICOOB',
+        affiliation: 'CREDISIS - CENTRAL DE COOPERATIVAS DE CRÉDITO',
+      },
+    ]);
+  });
+
+  it('accepts an affiliation with a central of the same system', () => {
+    const { entries, affiliationLocks } = buildMatches({
+      participants: [crediceripa],
+      directory: [sicoobConfed],
+      config: brandConfig,
+      overrides: new Map(),
+      cooperatives: new Map([
+        [
+          '00966246',
+          {
+            name: 'COOPERATIVA DE CREDITO CREDICERIPA - SICOOB CREDICERIPA',
+            affiliation: 'COOPERATIVA CENTRAL DE CRÉDITO DO ESTADO DE SÃO PAULO - SICOOB SÃO PAULO',
+          },
+        ],
+      ]),
+    });
+    expect(entries[0]?.source).toBe('brand-match');
+    expect(affiliationLocks).toHaveLength(0);
+  });
+
+  it('with two brands in the name, the affiliation picks the system', () => {
+    const unicredConfed = organisation({
+      OrganisationId: 'org-unicred',
+      OrganisationName: 'Unicred do Brasil',
+      RegistrationNumber: '00315557000111',
+      AuthorisationServers: [
+        {
+          AuthorisationServerId: 'as-unicred',
+          CustomerFriendlyName: 'Unicred',
+          CustomerFriendlyLogoUri: 'https://logos.example/unicred.svg',
+        },
+      ],
+    });
+    const { entries } = buildMatches({
+      participants: [crediceripa],
+      directory: [sicoobConfed, unicredConfed],
+      config: config({
+        brandMatches: { SICOOB: '04891850000188', UNICRED: '00315557000111' },
+      }),
+      overrides: new Map(),
+      cooperatives: new Map([
+        [
+          '00966246',
+          {
+            name: 'COOPERATIVA EX-SICOOB AGORA UNICRED',
+            affiliation: 'UNICRED CENTRAL EXEMPLO',
+          },
+        ],
+      ]),
+    });
+    expect(entries[0]?.brandToken).toBe('UNICRED');
+  });
 });
