@@ -1212,19 +1212,7 @@
         "institutionType": "Cooperativa de Crédito",
         "authorizedByBcb": true
       },
-      "logo": {
-        "png": "logos/png/04891850.png",
-        "svg": "logos/svg/04891850.svg",
-        "source": {
-          "type": "brand",
-          "org": "Confederacao Nacional das Cooperativas do Sicoob",
-          "cnpj": "04891850000188",
-          "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-          "sha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-          "updatedAt": "2026-07-17",
-          "brand": "SICOOB"
-        }
-      }
+      "logo": null
     },
     {
       "ispb": "01705236",
