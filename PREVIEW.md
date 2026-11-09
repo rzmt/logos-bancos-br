@@ -2,7 +2,7 @@
 
 > Arquivo gerado automaticamente pelo pipeline (`npm run pipeline`) — não editar à mão.
 
-**180** instituições com logo próprio · **443** afiliadas usando o logo do seu sistema cooperativo · **445** sem logo nas fontes oficiais.
+**180** instituições com logo próprio · **442** afiliadas usando o logo do seu sistema cooperativo · **446** sem logo nas fontes oficiais.
 
 ## Logos próprios
 
@@ -256,9 +256,9 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 
 ### SICOOB
 
-<img src="logos/png/04891850.png" width="56" alt="SICOOB"> — usado por **270** afiliada(s).
+<img src="logos/png/04891850.png" width="56" alt="SICOOB"> — usado por **269** afiliada(s).
 
-<details><summary>Ver afiliadas (270)</summary>
+<details><summary>Ver afiliadas (269)</summary>
 
 - `0016` CCM DESP TRÂNS SC E RS (ISPB 04715685)
 - `——` CC ARACREDI LTDA. (ISPB 00068987)
@@ -291,7 +291,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` CCLA CREDINOVA LTDA. - SICOOB CREDINOVA (ISPB 01667766)
 - `——` CCLA DO PLANALTO SERRANO (ISPB 01692448)
 - `——` CCLA REGIÃO GUAXUPÉ (ISPB 01699652)
-- `——` CCLA UNIÃO CENTRO OESTE MINAS (ISPB 01703620)
 - `——` CCLA REG. CTR. E OESTE MINEIRO (ISPB 01736516)
 - `——` CCLA LAGOA DA PRATA (ISPB 01739375)
 - `——` CCLA DE BH E CIDADES POLO DE MG (ISPB 01760242)
@@ -673,7 +672,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 </details>
 
 
-<details><summary>Instituições sem logo (445) — consumidores devem usar um ícone genérico</summary>
+<details><summary>Instituições sem logo (446) — consumidores devem usar um ícone genérico</summary>
 
 - `0009` STN (ISPB 00394460)
 - `0010` CREDICOAMO (ISPB 81723108)
@@ -973,6 +972,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` COOP DO ESTADO DO ACRE LTDA. (ISPB 01608685)
 - `——` CCLA VALE DO PARANAPANEMA (ISPB 01637949)
 - `——` NSTECH IP S.A. (ISPB 01648418)
+- `——` CCLA UNIÃO CENTRO OESTE MINAS (ISPB 01703620)
 - `——` UNIPRIME DO IGUAÇU - CC POUP INV (ISPB 01848322)
 - `——` CECM SERV POD JUD TCE ORG PUBL MUN EST FED RJ (ISPB 02000895)
 - `——` COOP CENTRO NORTE BRASILEIRO (ISPB 02282709)
