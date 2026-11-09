@@ -129,6 +129,7 @@ Para ver as imagens, use a [galeria com busca](https://rzmt.github.io/logos-banc
 | Neon (NEON PAGAMENTOS S.A. IP) | 0536 | 20855875 | [png](png/20855875.png) · [svg](svg/20855875.svg) |
 | Neon Corretora (NEON CTVM S.A.) | 0113 | 61723847 | [png](png/61723847.png) · [svg](svg/61723847.svg) |
 | Neon Financeira (NEON FINANCEIRA - SCFI S.A.) | 0426 | 11285104 | [png](png/11285104.png) · [svg](svg/11285104.svg) |
+| NG.CASH (NG CASH IP) |  | 40710595 | [png](png/40710595.png) |
 | Nu Financeira (NU FINANCEIRA S.A. CFI) | 0386 | 30680829 | [png](png/30680829.png) · [svg](svg/30680829.svg) |
 | Nu Investimentos (NU INVESTIMENTOS S.A. - CTVM) | 0140 | 62169875 | [png](png/62169875.png) · [svg](svg/62169875.svg) |
 | Nubank (NU PAGAMENTOS - IP) | 0260 | 18236120 | [png](png/18236120.png) · [svg](svg/18236120.svg) |

@@ -103,6 +103,22 @@
       }
     },
     {
+      "ispb": "00394460",
+      "compe": "009",
+      "compe4": "0009",
+      "name": "Secretaria do Tesouro Nacional - STN",
+      "shortName": "STN",
+      "displayName": null,
+      "pix": {
+        "spiParticipationType": "Direta",
+        "pixParticipationType": "Facultativa",
+        "modality": "Ente Governamental",
+        "institutionType": "Governo",
+        "authorizedByBcb": false
+      },
+      "logo": null
+    },
+    {
       "ispb": "81723108",
       "compe": "010",
       "compe4": "0010",

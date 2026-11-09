@@ -2,7 +2,7 @@
 
 > Arquivo gerado automaticamente pelo pipeline (`npm run pipeline`) — não editar à mão.
 
-**179** instituições com logo próprio · **312** afiliadas usando o logo do seu sistema cooperativo · **587** sem logo nas fontes oficiais.
+**180** instituições com logo próprio · **310** afiliadas usando o logo do seu sistema cooperativo · **578** sem logo nas fontes oficiais.
 
 ## Logos próprios
 
@@ -185,6 +185,7 @@
 | <img src="logos/png/32345784.png" width="40" alt="C6 Corretora"> | — | 32345784 | C6 Corretora (C6 CTVM LTDA.) | Open Finance — BCO C6 S.A. |
 | <img src="logos/png/38372267.png" width="40" alt="Maree"> | — | 38372267 | Maree (MAREE IP LTDA.) | Open Finance — SHOPEE |
 | <img src="logos/png/40571694.png" width="40" alt="WISE BRASIL IP LTDA."> | — | 40571694 | WISE BRASIL IP LTDA. | Open Finance — WISE BRASIL INSTITUICAO DE PAGAMENTO LTDA |
+| <img src="logos/png/40710595.png" width="40" alt="NG.CASH"> | — | 40710595 | NG.CASH (NG CASH IP) | Site oficial (revisado) |
 | <img src="logos/png/60779196.png" width="40" alt="Crefisa Financeira"> | — | 60779196 | Crefisa Financeira (CREFISA S.A. CFI) | Open Finance — CREFISA S.A. CFI |
 | <img src="logos/png/73647935.png" width="40" alt="COOP UNIQUE BR LTDA."> | — | 73647935 | COOP UNIQUE BR LTDA. | Open Finance — Confederacao Nacional das Cooperativas do Sicoob |
 
@@ -194,9 +195,9 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 
 ### CRESOL
 
-<img src="logos/png/10398952.png" width="56" alt="CRESOL"> — usado por **54** afiliada(s).
+<img src="logos/png/10398952.png" width="56" alt="CRESOL"> — usado por **51** afiliada(s).
 
-<details><summary>Ver afiliadas (54)</summary>
+<details><summary>Ver afiliadas (51)</summary>
 
 - `——` COOP CRESOL PIONEIRA (ISPB 00971300)
 - `——` COOP CRESOL CENTRO SERRA (ISPB 01155801)
@@ -208,13 +209,12 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` COOP CRESOL JACUTINGA (ISPB 02904125)
 - `——` COOP CRESOL CENTRO SUL (ISPB 02910987)
 - `——` COOP CRESOL LIDERANCA (ISPB 02934201)
-- `——` COOP CRESOL SÃO VALENTIM (ISPB 03015152)
+- `——` COOP CRESOL PROSPERAR (ISPB 03015152)
 - `——` COOP CRESOL ENCOSTAS DA SERRA GERAL (ISPB 03485130)
 - `——` COOP CRESOL VANGUARDA (ISPB 03965737)
 - `——` COOP CRESOL TRANSFORMAÇÃO (ISPB 04261151)
 - `——` COOP CRESOL TRADICAO (ISPB 04350225)
 - `——` COOP CRESOL GOIAS (ISPB 04490531)
-- `——` COOP CRESOL ARATIBA (ISPB 04565791)
 - `——` COOP CRESOL INOVAÇAO (ISPB 05070112)
 - `——` COOP CRESOL ORIGENS (ISPB 05220243)
 - `——` COOP CRESOL UNIAO DOS VALES (ISPB 05231945)
@@ -243,9 +243,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` COOP CRESOL MISSÕES FRONTEIRA RS (ISPB 08488377)
 - `——` COOP CRESOL TRIUNFO (ISPB 08560508)
 - `——` COOP CRESOL MINAS GERAIS (ISPB 08624548)
-- `——` COOP CRESOL TREZE DE MAIO (ISPB 09330158)
-- `——` COOP CRESOL JACINTO MACHADO (ISPB 09463721)
-- `——` COOP CRESOL COOPERACRED (ISPB 09488496)
+- `——` COOP CRESOL COOPERACRED (ISPB 09463721)
 - `——` COOP CRESOL AMAZONIA (ISPB 10520232)
 - `——` COOP CRESOL CONEXÃO (ISPB 11969853)
 - `——` COOP CRESOL RAIZ (ISPB 17343510)
@@ -257,9 +255,9 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 
 ### SICOOB
 
-<img src="logos/png/04891850.png" width="56" alt="SICOOB"> — usado por **141** afiliada(s).
+<img src="logos/png/04891850.png" width="56" alt="SICOOB"> — usado por **142** afiliada(s).
 
-<details><summary>Ver afiliadas (141)</summary>
+<details><summary>Ver afiliadas (142)</summary>
 
 - `0016` CCM DESP TRÂNS SC E RS (ISPB 04715685)
 - `——` CCLA SICOOB UNIMAIS METROPOLITANA (ISPB 00259231)
@@ -314,6 +312,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` COOP SICOOB BRMIL LTDA. (ISPB 04649337)
 - `——` CC INV DE RONDÔNIA - SICOOB CREDJURD (ISPB 04751713)
 - `——` CECM SICOOB METALCRED (ISPB 04833655)
+- `——` COOP SICOOB CONFIANÇA MAIS (ISPB 04876393)
 - `——` CCC UNICOOB-SICOOB CENTR UNIC (ISPB 05036532)
 - `——` SICOOB AMAZÔNIA (ISPB 05203605)
 - `——` COOP SICOOB CERRADO (ISPB 05222094)
@@ -325,7 +324,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` SICOOB EMPRESARIAL (ISPB 05856736)
 - `——` CC SICOOB ALIANÇA (ISPB 06174009)
 - `——` CCLA SICOOB ARENITO PARANÁ / SÃO PAULO (ISPB 07026923)
-- `——` COOP SICOOB CONFIANÇA (ISPB 07097064)
 - `——` CC INTEGRADO - SICOOB INTEGRADO (ISPB 07122321)
 - `——` CC SICOOB HORIZONTE (ISPB 07194313)
 - `——` COOP  SICOOB MÉDIO OESTE (ISPB 07318874)
@@ -339,6 +337,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` CECM SICOOB CRED-ACILPA (ISPB 09004796)
 - `——` CC CENTRO LESTE NORTE MARANHENSE - SICOOB CENTROLESTE (ISPB 09403026)
 - `——` CCLA DO OESTE MARANHENSE - SICOOB OESTE MARANHENSE (ISPB 09424988)
+- `——` SICOOB ALVORE (ISPB 10175348)
 - `——` CCLA DO ESTADO DE SÃO PAULO - SICOOB PAULISTA (ISPB 10262276)
 - `——` CCLA DA PARAÍBA - SICOOB PARAÍBA (ISPB 11907520)
 - `——` COOPCENTRAL DE ECON. E CRÉDITO SICOOB UNIMAIS RIO LTDA. (ISPB 14568725)
@@ -541,8 +540,9 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 </details>
 
 
-<details><summary>Instituições sem logo (587) — consumidores devem usar um ícone genérico</summary>
+<details><summary>Instituições sem logo (578) — consumidores devem usar um ícone genérico</summary>
 
+- `0009` STN (ISPB 00394460)
 - `0010` CREDICOAMO (ISPB 81723108)
 - `0012` BANCO INBURSA (ISPB 04866275)
 - `0018` BCO TRICURY S.A. (ISPB 57839805)
@@ -834,7 +834,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` CC ARACREDI LTDA. (ISPB 00068987)
 - `——` CCC DOS EST DE MT, MS E MUN DE CACOAL/RO (ISPB 00106180)
 - `——` CCC ESTADO MG - CECREMGE (ISPB 00309024)
-- `——` STN (ISPB 00394460)
 - `——` CC CREDIAGRO (ISPB 00429890)
 - `——` CC SERV. MUN SANTO ANDRÉ SP - CECRESA (ISPB 00512839)
 - `——` APE POUPEX (ISPB 00655522)
@@ -856,7 +855,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` CC CREDICAMPINA (ISPB 01609345)
 - `——` CCLA VALE DO PARANAPANEMA (ISPB 01637949)
 - `——` NSTECH IP S.A. (ISPB 01648418)
-- `——` CCLA SEBASTIAO PARAISO (ISPB 01657678)
 - `——` CCLA DO PLANALTO SERRANO (ISPB 01692448)
 - `——` CCLA REGIÃO GUAXUPÉ (ISPB 01699652)
 - `——` CCLA UNIÃO CENTRO OESTE MINAS (ISPB 01703620)
@@ -902,15 +900,12 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` CREDISIS SUDOESTE/RO (ISPB 03985375)
 - `——` CCLA DE PITANGUI E REGIAO LTDA (ISPB 04181542)
 - `——` CC DE EMPRESÁRIOS (ISPB 04247370)
-- `——` COOP DO ESTADO DE GOIÁS (ISPB 04406371)
 - `——` CCM DO ABC - COOPER 7 (ISPB 04414354)
 - `——` CECM MILITARES ESTADUAIS DE SC (ISPB 04572960)
 - `——` CREDJUST - CCM INTEGRANTES DA (ISPB 04608925)
 - `——` COOP INVEST INT SOL VALE DAS ÁGUAS PR/MG (ISPB 04663561)
-- `——` CECM INTEG. MF DP ESTADO RJ (ISPB 04694278)
 - `——` COOP CRESERV CREDISIS (ISPB 04831810)
 - `——` AVIV INSTITUICAO DE PAGAMENTO (ISPB 04838403)
-- `——` CCLA TRÊS FRONTEIRAS (ISPB 04876393)
 - `——` FISERV DO BRASIL IP (ISPB 04962772)
 - `——` CREDISIS OESTE - CCI DO OESTE (ISPB 04985665)
 - `——` CC SERV FIN CTBA E REG (ISPB 05097757)
@@ -922,7 +917,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` CCM DA ADVOCACIA (ISPB 05861932)
 - `——` COOP SUL (ISPB 05888589)
 - `——` COOPER CARD IP (ISPB 05938780)
-- `——` CCMS MUNICIPAIS DE BEBEDOURO (ISPB 05969937)
 - `——` CREDCREA (ISPB 05979692)
 - `——` NDD (ISPB 06255692)
 - `——` CC CREDINOSSO (ISPB 06324872)
@@ -949,7 +943,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` COOP CREDICOMIN (ISPB 09590601)
 - `——` CCLA JATAÍ E REGIÃO (ISPB 10143499)
 - `——` CREVISC (ISPB 10143743)
-- `——` CCMLA REGIãO ADMINISTRATIVA DE SOROCABA (ISPB 10175348)
 - `——` CCLA DA GRANDE GOIÂNIA LTDA. (ISPB 10209619)
 - `——` CIVIA COOP CRED (ISPB 10218474)
 - `——` COOP EVOLUA (ISPB 10311218)
@@ -970,7 +963,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` APTARE IP (ISPB 16876258)
 - `——` MAGEN IP LTDA. (ISPB 17028875)
 - `——` CC REG. COLAR METROPOLITANO VALE DO AÇO LTDA (ISPB 17361536)
-- `——` CECM EMPR CEMIG IND METAL E SERV PUB MUN (ISPB 17502881)
 - `——` PINPAG IP S.A. (ISPB 17768068)
 - `——` PAGCERTO IP LTDA. (ISPB 17819084)
 - `——` E2E PAY INSTITUICAO DE PAGAMEN (ISPB 18639407)
@@ -1019,7 +1011,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` WORK 8 INSTITUIÇÃO DE PAGAMENT (ISPB 29408213)
 - `——` ONLY UP (ISPB 29477089)
 - `——` SERVNET IP LTDA. (ISPB 29759316)
-- `——` MOUNT PAY (ISPB 31166683)
+- `——` MOUNT PAY IP LTDA (ISPB 31166683)
 - `——` CONPAY IP S.A. (ISPB 31531997)
 - `——` ADOPAY INSTITUICAO DE PAGAMENT (ISPB 31841474)
 - `——` AIBR IP LTDA. (ISPB 32246162)
@@ -1051,7 +1043,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` MASTERBARTER (ISPB 39715262)
 - `——` MINHA KONTA (ISPB 39929224)
 - `——` BNS CAPITAL PAGAMENTOS LTDA (ISPB 40557732)
-- `——` NG CASH IP (ISPB 40710595)
 - `——` JRM2 (ISPB 40735713)
 - `——` PAY BROKERS IP (ISPB 40820176)
 - `——` BIPA IP (ISPB 40910463)
@@ -1064,7 +1055,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` CC CREDIFOR LTDA (ISPB 41931445)
 - `——` CC AGROCREDI LTDA (ISPB 42873828)
 - `——` CECM MEDICOS E PROFISSIONAIS AREA SAUDE DO BRASIL (ISPB 42898825)
-- `——` CC CREDIPIMENTA (ISPB 42934794)
 - `——` GOOGLE PAY BRASIL IP LTDA. (ISPB 43394419)
 - `——` COOP UNIPRIME CREDICANA (ISPB 44373041)
 - `——` ZIMPLER BRASIL IP LTDA. (ISPB 44704839)

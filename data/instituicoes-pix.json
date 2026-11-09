@@ -110,23 +110,6 @@
       "logo": null
     },
     {
-      "ispb": "00394460",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "00394460040950",
-      "name": "STN",
-      "shortName": "STN",
-      "displayName": null,
-      "pix": {
-        "spiParticipationType": "Direta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Ente Governamental",
-        "institutionType": "Governo",
-        "authorizedByBcb": false
-      },
-      "logo": null
-    },
-    {
       "ispb": "00429890",
       "compe": null,
       "compe4": null,
@@ -914,23 +897,6 @@
         "pixParticipationType": "Facultativa",
         "modality": "Provedor de Conta Transacional",
         "institutionType": "Instituição de Pagamento",
-        "authorizedByBcb": true
-      },
-      "logo": null
-    },
-    {
-      "ispb": "01657678",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "01657678000104",
-      "name": "CCLA SEBASTIAO PARAISO",
-      "shortName": "CCLA SEBASTIAO PARAISO",
-      "displayName": null,
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
         "authorizedByBcb": true
       },
       "logo": null
@@ -2396,8 +2362,8 @@
       "compe": null,
       "compe4": null,
       "cnpj": "03015152000156",
-      "name": "COOP CRESOL SÃO VALENTIM",
-      "shortName": "COOP CRESOL SÃO VALENTIM",
+      "name": "COOP CRESOL PROSPERAR",
+      "shortName": "COOP CRESOL PROSPERAR",
       "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
@@ -2812,7 +2778,7 @@
         "pixParticipationType": "Facultativa",
         "modality": "Provedor de Conta Transacional",
         "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": true
+        "authorizedByBcb": false
       },
       "logo": null
     },
@@ -3671,23 +3637,6 @@
       }
     },
     {
-      "ispb": "04406371",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "04406371000129",
-      "name": "COOP DO ESTADO DE GOIÁS",
-      "shortName": "COOP DO ESTADO DE GOIÁS",
-      "displayName": null,
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": true
-      },
-      "logo": null
-    },
-    {
       "ispb": "04414354",
       "compe": null,
       "compe4": null,
@@ -3879,35 +3828,6 @@
       }
     },
     {
-      "ispb": "04565791",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "04565791000158",
-      "name": "COOP CRESOL ARATIBA",
-      "shortName": "COOP CRESOL ARATIBA",
-      "displayName": null,
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": true
-      },
-      "logo": {
-        "png": "logos/png/10398952.png",
-        "svg": "logos/svg/10398952.svg",
-        "source": {
-          "type": "brand",
-          "org": "CRESOL CONFEDERAÇÃO",
-          "cnpj": "10398952000169",
-          "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-          "sha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-          "updatedAt": "2026-07-17",
-          "brand": "CRESOL"
-        }
-      }
-    },
-    {
       "ispb": "04572960",
       "compe": null,
       "compe4": null,
@@ -3977,23 +3897,6 @@
       "cnpj": "04663561000121",
       "name": "COOP INVEST INT SOL VALE DAS ÁGUAS PR/MG",
       "shortName": "COOP INVEST INT SOL VALE DAS ÁGUAS PR/MG",
-      "displayName": null,
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": true
-      },
-      "logo": null
-    },
-    {
-      "ispb": "04694278",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "04694278000167",
-      "name": "CECM INTEG. MF DP ESTADO RJ",
-      "shortName": "CECM INTEG. MF DP ESTADO RJ",
       "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
@@ -4130,8 +4033,8 @@
       "compe": null,
       "compe4": null,
       "cnpj": "04876393000152",
-      "name": "CCLA TRÊS FRONTEIRAS",
-      "shortName": "CCLA TRÊS FRONTEIRAS",
+      "name": "COOP SICOOB CONFIANÇA MAIS",
+      "shortName": "COOP SICOOB CONFIANÇA MAIS",
       "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
@@ -4140,7 +4043,19 @@
         "institutionType": "Cooperativa de Crédito",
         "authorizedByBcb": true
       },
-      "logo": null
+      "logo": {
+        "png": "logos/png/04891850.png",
+        "svg": "logos/svg/04891850.svg",
+        "source": {
+          "type": "brand",
+          "org": "Confederacao Nacional das Cooperativas do Sicoob",
+          "cnpj": "04891850000188",
+          "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
+          "sha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
+          "updatedAt": "2026-07-17",
+          "brand": "SICOOB"
+        }
+      }
     },
     {
       "ispb": "04886317",
@@ -4968,23 +4883,6 @@
       "logo": null
     },
     {
-      "ispb": "05969937",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "05969937000193",
-      "name": "CCMS MUNICIPAIS DE BEBEDOURO",
-      "shortName": "CCMS MUNICIPAIS DE BEBEDOURO",
-      "displayName": null,
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": true
-      },
-      "logo": null
-    },
-    {
       "ispb": "05979692",
       "compe": null,
       "compe4": null,
@@ -5327,35 +5225,6 @@
           "sha256": "046e1c6e7cd6c28502f1dcc3ae24f359a64fbf325751f7be7f9a2e752e6b5088",
           "updatedAt": "2026-07-17",
           "brand": "SICREDI"
-        }
-      }
-    },
-    {
-      "ispb": "07097064",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "07097064000100",
-      "name": "COOP SICOOB CONFIANÇA",
-      "shortName": "COOP SICOOB CONFIANÇA",
-      "displayName": null,
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": true
-      },
-      "logo": {
-        "png": "logos/png/04891850.png",
-        "svg": "logos/svg/04891850.svg",
-        "source": {
-          "type": "brand",
-          "org": "Confederacao Nacional das Cooperativas do Sicoob",
-          "cnpj": "04891850000188",
-          "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
-          "sha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
-          "updatedAt": "2026-07-17",
-          "brand": "SICOOB"
         }
       }
     },
@@ -6272,7 +6141,7 @@
         "pixParticipationType": "Facultativa",
         "modality": "Provedor de Conta Transacional",
         "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": true
+        "authorizedByBcb": false
       },
       "logo": {
         "png": "logos/png/04891850.png",
@@ -6350,35 +6219,6 @@
         "authorizedByBcb": true
       },
       "logo": null
-    },
-    {
-      "ispb": "09330158",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "09330158000102",
-      "name": "COOP CRESOL TREZE DE MAIO",
-      "shortName": "COOP CRESOL TREZE DE MAIO",
-      "displayName": null,
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": true
-      },
-      "logo": {
-        "png": "logos/png/10398952.png",
-        "svg": "logos/svg/10398952.svg",
-        "source": {
-          "type": "brand",
-          "org": "CRESOL CONFEDERAÇÃO",
-          "cnpj": "10398952000169",
-          "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-          "sha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-          "updatedAt": "2026-07-17",
-          "brand": "CRESOL"
-        }
-      }
     },
     {
       "ispb": "09343038",
@@ -6489,35 +6329,6 @@
       "compe": null,
       "compe4": null,
       "cnpj": "09463721000102",
-      "name": "COOP CRESOL JACINTO MACHADO",
-      "shortName": "COOP CRESOL JACINTO MACHADO",
-      "displayName": null,
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": true
-      },
-      "logo": {
-        "png": "logos/png/10398952.png",
-        "svg": "logos/svg/10398952.svg",
-        "source": {
-          "type": "brand",
-          "org": "CRESOL CONFEDERAÇÃO",
-          "cnpj": "10398952000169",
-          "uri": "https://cresol.com.br/util/cresol-logo-obk.svg",
-          "sha256": "431bbb26f8526ad35c2f75450c4e68ff24161ce66f58bad03de01bbec71c66db",
-          "updatedAt": "2026-07-17",
-          "brand": "CRESOL"
-        }
-      }
-    },
-    {
-      "ispb": "09488496",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "09488496000169",
       "name": "COOP CRESOL COOPERACRED",
       "shortName": "COOP CRESOL COOPERACRED",
       "displayName": null,
@@ -6649,8 +6460,8 @@
       "compe": null,
       "compe4": null,
       "cnpj": "10175348000173",
-      "name": "CCMLA REGIãO ADMINISTRATIVA DE SOROCABA",
-      "shortName": "CCMLA REGIãO ADMINISTRATIVA DE SOROCABA",
+      "name": "SICOOB ALVORE",
+      "shortName": "SICOOB ALVORE",
       "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
@@ -6659,7 +6470,19 @@
         "institutionType": "Cooperativa de Crédito",
         "authorizedByBcb": true
       },
-      "logo": null
+      "logo": {
+        "png": "logos/png/04891850.png",
+        "svg": "logos/svg/04891850.svg",
+        "source": {
+          "type": "brand",
+          "org": "Confederacao Nacional das Cooperativas do Sicoob",
+          "cnpj": "04891850000188",
+          "uri": "https://sicoob-openbanking.s3.sa-east-1.amazonaws.com/icone-sicoob.svg",
+          "sha256": "8d4b418f1c75262ad4526137a70d6828902c7a10d1243480824f747e33555ca3",
+          "updatedAt": "2026-07-17",
+          "brand": "SICOOB"
+        }
+      }
     },
     {
       "ispb": "10209619",
@@ -7337,23 +7160,6 @@
       "cnpj": "17361536000135",
       "name": "CC REG. COLAR METROPOLITANO VALE DO AÇO LTDA",
       "shortName": "CC REG. COLAR METROPOLITANO VALE DO AÇO LTDA",
-      "displayName": null,
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": true
-      },
-      "logo": null
-    },
-    {
-      "ispb": "17502881",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "17502881000141",
-      "name": "CECM EMPR CEMIG IND METAL E SERV PUB MUN",
-      "shortName": "CECM EMPR CEMIG IND METAL E SERV PUB MUN",
       "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
@@ -8649,14 +8455,14 @@
       "compe": null,
       "compe4": null,
       "cnpj": "31166683000185",
-      "name": "MOUNT PAY",
-      "shortName": "MOUNT PAY",
+      "name": "MOUNT PAY IP LTDA",
+      "shortName": "MOUNT PAY IP LTDA",
       "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
         "modality": "Provedor de Conta Transacional",
-        "institutionType": "Instituição de Pagamento não sujeita à autorização pelo BCB",
+        "institutionType": "Instituição de Pagamento",
         "authorizedByBcb": false
       },
       "logo": null
@@ -9801,7 +9607,7 @@
       "cnpj": "40710595000193",
       "name": "NG CASH IP",
       "shortName": "NG CASH IP",
-      "displayName": null,
+      "displayName": "NG.CASH",
       "pix": {
         "spiParticipationType": "Indireta",
         "pixParticipationType": "Facultativa",
@@ -9809,7 +9615,18 @@
         "institutionType": "Instituição de Pagamento",
         "authorizedByBcb": true
       },
-      "logo": null
+      "logo": {
+        "png": "logos/png/40710595.png",
+        "svg": null,
+        "source": {
+          "type": "direct-uri",
+          "org": null,
+          "cnpj": null,
+          "uri": "https://cdn.prod.website-files.com/677d2671cb3b8b73c5c62129/67b87b450971fd19e0318082_NG.CASH%20FavIcon%20(1).png",
+          "sha256": "242738300a021890aaceb353dfd2a2b03a9454818c68c8477b6f408e7a2e0b61",
+          "updatedAt": "2026-11-09"
+        }
+      }
     },
     {
       "ispb": "40735713",
@@ -10179,23 +9996,6 @@
       "cnpj": "42898825000115",
       "name": "CECM MEDICOS E PROFISSIONAIS AREA SAUDE DO BRASIL",
       "shortName": "CECM MEDICOS E PROFISSIONAIS AREA SAUDE DO BRASIL",
-      "displayName": null,
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": true
-      },
-      "logo": null
-    },
-    {
-      "ispb": "42934794",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "42934794000100",
-      "name": "CC CREDIPIMENTA",
-      "shortName": "CC CREDIPIMENTA",
       "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
@@ -11901,7 +11701,7 @@
         "pixParticipationType": "Facultativa",
         "modality": "Provedor de Conta Transacional",
         "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": true
+        "authorizedByBcb": false
       },
       "logo": {
         "png": "logos/png/04891850.png",
