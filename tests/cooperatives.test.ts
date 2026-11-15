@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import {
+  carryOverCooperatives,
   cooperativeSnapshot,
   parseCooperativeRegistry,
   registryFromSnapshot,
@@ -83,5 +84,46 @@ describe('cópia do cadastro (pipeline/cooperativas.json)', () => {
     const renamed = new Map(registry);
     renamed.set('05494591', { name: 'CRESOL NASCENTE - NOVO NOME', affiliation: '' });
     expect(sameCooperativeSnapshot(before, cooperativeSnapshot(renamed, '2026-11-09'))).toBe(false);
+
+    // Comentário novo no código também regrava a cópia.
+    expect(sameCooperativeSnapshot({ ...before, $comment: 'antigo' }, sameData)).toBe(false);
+  });
+});
+
+describe('carryOverCooperatives (saiu do cadastro, mas continua nas listas)', () => {
+  // Cópia de uma semana antes: Credesp ainda no cadastro.
+  const stored = cooperativeSnapshot(
+    new Map([
+      [
+        '01703620',
+        {
+          name: 'COOPERATIVA DE CRÉDITO DE LIVRE ADMISSÃO UNIÃO DO CENTRO OESTE DE MINAS LTDA - SICOOB CREDESP',
+          affiliation: '',
+        },
+      ],
+      ['05494591', { name: 'CRESOL NASCENTE', affiliation: '' }],
+      ['99999999', { name: 'COOPERATIVA QUE JÁ SAIU DE TUDO - SICOOB X', affiliation: '' }],
+    ]),
+    '2026-11-09',
+  );
+  // Consulta de hoje: Credesp e a 99999999 sumiram; Cresol Nascente mudou de nome.
+  const fresh = new Map([['05494591', { name: 'CRESOL NASCENTE - NOVO NOME', affiliation: '' }]]);
+  const listed = new Set(['01703620', '05494591']);
+
+  it('mantém o último nome de quem ainda está nas listas e descarta quem saiu delas', () => {
+    const { registry, carried } = carryOverCooperatives(fresh, stored, listed);
+    expect(carried).toEqual(['01703620']);
+    expect(registry.get('01703620')?.name).toMatch(/SICOOB CREDESP$/);
+    expect(registry.has('99999999')).toBe(false);
+    // O que veio na consulta de hoje vence a cópia.
+    expect(registry.get('05494591')?.name).toBe('CRESOL NASCENTE - NOVO NOME');
+    // Não altera o cadastro recebido.
+    expect(fresh.has('01703620')).toBe(false);
+  });
+
+  it('sem cópia anterior, fica só com a consulta de hoje', () => {
+    const { registry, carried } = carryOverCooperatives(fresh, null, listed);
+    expect(carried).toEqual([]);
+    expect([...registry.keys()]).toEqual(['05494591']);
   });
 });

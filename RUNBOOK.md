@@ -59,6 +59,10 @@ marca no nome que o cadastro do BCB dá como filiadas a central de outro
 sistema. Elas ficam sem o logo da marca. O caso comum é a cooperativa que
 trocou de sistema antes de mudar de nome: ficar sem logo é o certo.
 
+Cooperativa incorporada sai do cadastro antes de sair da lista do Pix. Nesse
+intervalo ela mantém o último nome conhecido (e o logo da marca), e a linha
+do cadastro no relatório lista essas ISPBs. Não precisa fazer nada.
+
 Checklist detalhado: [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Guard de permanência

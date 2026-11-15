@@ -40,6 +40,7 @@ import { buildMatches } from './matching';
 import { buildLogoIndexMarkdown, buildPreviewMarkdown } from './preview';
 import { buildReactNativeMap } from './rn-map';
 import {
+  carryOverCooperatives,
   cooperativeSnapshot,
   fetchCooperativeRegistry,
   fetchOpenFinanceDirectory,
@@ -199,13 +200,18 @@ async function main(): Promise<void> {
     console.error('  Nada foi alterado.');
     process.exit(1);
   }
+  const participants = mergeBackbone(strParticipants, pixResult.participants);
   const fresh = await freshCooperatives;
   const storedCooperatives = readJson<CooperativeSnapshot | null>(COOPERATIVES_PATH, null);
   let cooperatives: CooperativeRegistry;
   let cooperativesOrigin: string;
   if (fresh.registry) {
-    cooperatives = fresh.registry;
-    cooperativesOrigin = 'consulta de hoje';
+    const listed = new Set(participants.map((p) => p.ispb));
+    const { registry, carried } = carryOverCooperatives(fresh.registry, storedCooperatives, listed);
+    cooperatives = registry;
+    cooperativesOrigin = carried.length
+      ? `consulta de hoje; fora do cadastro mas ainda nas listas, com o último nome conhecido: ${carried.join(', ')}`
+      : 'consulta de hoje';
   } else if (storedCooperatives) {
     cooperatives = registryFromSnapshot(storedCooperatives);
     cooperativesOrigin = `cópia de ${storedCooperatives.atualizadoEm} em pipeline/cooperativas.json; a consulta falhou: ${fresh.error}`;
@@ -217,7 +223,6 @@ async function main(): Promise<void> {
     process.exit(1);
   }
 
-  const participants = mergeBackbone(strParticipants, pixResult.participants);
   const pixOnlyCount = participants.filter((p) => p.compe === null).length;
   console.log(`  BCB/STR: ${strParticipants.length} instituições com código COMPE.`);
   console.log(
@@ -413,11 +418,12 @@ async function main(): Promise<void> {
       buildReactNativeMap([...dataset.banks, ...pixDataset.institutions]),
     );
     writeFileSync(MANIFEST_PATH, `${JSON.stringify(sortedManifest, null, 2)}\n`);
-    // The copy only changes with the data: same names and affiliations keep
-    // the old file (and its date).
+    // The copy only changes with its content (today's registry plus the
+    // cooperatives kept while still listed); same content keeps the old file
+    // and its date.
     let cooperativesStatus = 'inalterado';
     if (fresh.registry) {
-      const snapshot = cooperativeSnapshot(fresh.registry, today);
+      const snapshot = cooperativeSnapshot(cooperatives, today);
       if (!storedCooperatives || !sameCooperativeSnapshot(storedCooperatives, snapshot)) {
         writeFileSync(COOPERATIVES_PATH, `${JSON.stringify(snapshot, null, 2)}\n`);
         cooperativesStatus = storedCooperatives ? 'atualizado' : 'criado';

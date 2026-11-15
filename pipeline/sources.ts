@@ -410,7 +410,7 @@ export function cooperativeSnapshot(
   }
   return {
     $comment:
-      'Cópia do cadastro de cooperativas do BCB, gerada pelo pipeline (não edite à mão). A regra de marca usa o nome oficial completo e a filiação. O pipeline consulta a API a cada rodada e só usa esta cópia quando a consulta falha.',
+      'Cópia do cadastro de cooperativas do BCB, gerada pelo pipeline (não edite à mão). A regra de marca usa o nome oficial completo e a filiação. O pipeline consulta a API a cada rodada e só usa esta cópia quando a consulta falha. Cooperativa que sai do cadastro mas continua nas listas do STR ou do Pix fica aqui com o último nome conhecido.',
     fonte: COOPERATIVES_SOURCE,
     atualizadoEm: updatedAt,
     nomes,
@@ -426,7 +426,32 @@ export function registryFromSnapshot(snapshot: CooperativeSnapshot): Cooperative
   return registry;
 }
 
-/** Same names and affiliations (ignores the date and the comment). */
+/** Same content: everything but the date, so a new comment also rewrites the file. */
 export function sameCooperativeSnapshot(a: CooperativeSnapshot, b: CooperativeSnapshot): boolean {
-  return JSON.stringify([a.nomes, a.filiacoes]) === JSON.stringify([b.nomes, b.filiacoes]);
+  const content = (s: CooperativeSnapshot) =>
+    JSON.stringify([s.$comment, s.fonte, s.nomes, s.filiacoes]);
+  return content(a) === content(b);
+}
+
+/**
+ * A cooperative that leaves the registry but is still on the STR/Pix lists
+ * (usually an incorporation in progress) keeps its last known entry from the
+ * snapshot: its brand logo stays right until it leaves the lists too. Fresh
+ * entries always win; entries of institutions off the lists are dropped.
+ */
+export function carryOverCooperatives(
+  fresh: CooperativeRegistry,
+  stored: CooperativeSnapshot | null,
+  listed: ReadonlySet<string>,
+): { registry: CooperativeRegistry; carried: string[] } {
+  const registry: CooperativeRegistry = new Map(fresh);
+  const carried: string[] = [];
+  if (stored) {
+    for (const [root, info] of registryFromSnapshot(stored)) {
+      if (registry.has(root) || !listed.has(root)) continue;
+      registry.set(root, info);
+      carried.push(root);
+    }
+  }
+  return { registry, carried: carried.sort() };
 }
