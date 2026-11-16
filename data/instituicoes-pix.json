@@ -1065,23 +1065,6 @@
       }
     },
     {
-      "ispb": "01648418",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "01648418000172",
-      "name": "NSTECH IP S.A.",
-      "shortName": "NSTECH IP S.A.",
-      "displayName": null,
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Instituição de Pagamento",
-        "authorizedByBcb": true
-      },
-      "logo": null
-    },
-    {
       "ispb": "01667352",
       "compe": null,
       "compe4": null,
@@ -1210,7 +1193,7 @@
         "pixParticipationType": "Facultativa",
         "modality": "Provedor de Conta Transacional",
         "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": true
+        "authorizedByBcb": false
       },
       "logo": {
         "png": "logos/png/04891850.png",
@@ -3244,23 +3227,6 @@
           "brand": "SICOOB"
         }
       }
-    },
-    {
-      "ispb": "03461243",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "03461243000115",
-      "name": "CC DO NORTE CATARINENSE",
-      "shortName": "CC DO NORTE CATARINENSE",
-      "displayName": null,
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": false
-      },
-      "logo": null
     },
     {
       "ispb": "03485130",
@@ -9888,7 +9854,7 @@
         "pixParticipationType": "Facultativa",
         "modality": "Provedor de Conta Transacional",
         "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": true
+        "authorizedByBcb": false
       },
       "logo": {
         "png": "logos/png/03795072.png",
@@ -10054,23 +10020,6 @@
       "cnpj": "33735811000190",
       "name": "B91",
       "shortName": "B91",
-      "displayName": null,
-      "pix": {
-        "spiParticipationType": "Indireta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Instituição de Pagamento não sujeita à autorização pelo BCB",
-        "authorizedByBcb": false
-      },
-      "logo": null
-    },
-    {
-      "ispb": "33982918",
-      "compe": null,
-      "compe4": null,
-      "cnpj": "33982918000132",
-      "name": "SIMPAY IP",
-      "shortName": "SIMPAY IP",
       "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",
@@ -10430,8 +10379,8 @@
       "compe": null,
       "compe4": null,
       "cnpj": "37442605000142",
-      "name": "COOP SICREDI GRANDES RIOS",
-      "shortName": "COOP SICREDI GRANDES RIOS",
+      "name": "COOP SICREDI GRANDES RIOS E BIOMAS",
+      "shortName": "COOP SICREDI GRANDES RIOS E BIOMAS",
       "displayName": null,
       "pix": {
         "spiParticipationType": "Indireta",

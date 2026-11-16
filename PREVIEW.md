@@ -2,7 +2,7 @@
 
 > Arquivo gerado automaticamente pelo pipeline (`npm run pipeline`) — não editar à mão.
 
-**180** instituições com logo próprio · **443** afiliadas usando o logo do seu sistema cooperativo · **445** sem logo nas fontes oficiais.
+**180** instituições com logo próprio · **443** afiliadas usando o logo do seu sistema cooperativo · **442** sem logo nas fontes oficiais.
 
 ## Logos próprios
 
@@ -576,7 +576,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` COOP SICREDI ARAXINGU (ISPB 33021064)
 - `——` COOP SICREDI BIOMAS (ISPB 33022690)
 - `——` COOP SICREDI EVOLUÇÃO (ISPB 35571249)
-- `——` COOP SICREDI GRANDES RIOS (ISPB 37442605)
+- `——` COOP SICREDI GRANDES RIOS E BIOMAS (ISPB 37442605)
 - `——` COOP SICREDI EXPANSÃO (ISPB 41180092)
 - `——` COOP SICREDI CENTRO PERNAMBUCANA PE (ISPB 41255225)
 - `——` COOP SICREDI RIO GRANDE DO NORTE (ISPB 70038237)
@@ -673,7 +673,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 </details>
 
 
-<details><summary>Instituições sem logo (445) — consumidores devem usar um ícone genérico</summary>
+<details><summary>Instituições sem logo (442) — consumidores devem usar um ícone genérico</summary>
 
 - `0009` STN (ISPB 00394460)
 - `0010` CREDICOAMO (ISPB 81723108)
@@ -718,7 +718,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0180` CM CAPITAL MARKETS CCTVM LTDA (ISPB 02685483)
 - `0183` SOCRED SA - SCMEPP (ISPB 09210106)
 - `0188` ATIVA S.A. INVESTIMENTOS CCTVM (ISPB 33775974)
-- `0189` HS FINANCEIRA (ISPB 07512441)
 - `0190` SERVICOOP (ISPB 03973814)
 - `0191` NOVA FUTURA CTVM LTDA. (ISPB 04257795)
 - `0194` UNIDA DTVM LTDA (ISPB 20155248)
@@ -766,7 +765,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0382` FIDUCIA SCMEPP LTDA (ISPB 04307598)
 - `0384` GLOBAL SCM LTDA (ISPB 11165756)
 - `0385` CECM DOS TRAB.PORT. DA G.VITOR (ISPB 03844699)
-- `0387` BCO TOYOTA DO BRASIL S.A. (ISPB 03215790)
 - `0390` BCO GM S.A. (ISPB 59274605)
 - `0391` CCR DE IBIAM (ISPB 08240446)
 - `0395` F D GOLD DTVM LTDA (ISPB 08673569)
@@ -903,7 +901,7 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0669` TRANSFERO IP LTDA. (ISPB 47133056)
 - `0670` BSN (ISPB 11491029)
 - `0671` ZERO IP (ISPB 26264220)
-- `0673` CCR DO AGRESTE ALAGOANO (ISPB 08482873)
+- `0673` CCR DO AGRESTE ALAGOANO - EM LIQUIDAÇÃO EXTRAJUDICIAL (ISPB 08482873)
 - `0674` HINOVA PAY IP S.A. (ISPB 27970567)
 - `0676` DUFRIO CFI S.A. (ISPB 35479592)
 - `0677` GOWD IP LTDA. (ISPB 33630661)
@@ -947,8 +945,8 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0768` BECKER FINANCEIRA SA - CFI (ISPB 20443996)
 - `0770` V3 IP S.A. (ISPB 38320462)
 - `0771` WX IP LTDA. (ISPB 57824223)
-- `0772` CC MECUNP - EM LIQUIDAÇÃO EXTRAJUDICIAL (ISPB 20833992)
 - `0774` MOVA SEP S.A. (ISPB 33959738)
+- `0776` ONCRED - SCD S.A. (ISPB 44650156)
 - `0778` PB SCD (ISPB 58674454)
 - `0780` SAFETYPAY BRASIL IP LTDA (ISPB 12102128)
 - `0781` BASE DTVM (ISPB 58006471)
@@ -962,8 +960,10 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `0792` NIXFIN SCD (ISPB 44921281)
 - `0794` ATUAL CC LTDA (ISPB 44323831)
 - `0795` BANCO TRATON BRASIL S.A. (ISPB 52067630)
+- `0798` NSTECH IP S.A. (ISPB 01648418)
 - `0804` MÊNTORE IP S.A. (ISPB 32343119)
 - `0805` BCO DES. DE MG S.A. (ISPB 38486817)
+- `0807` GUARDIAN SCD S.A. (ISPB 63822040)
 - `——` CC SERV. MUN SANTO ANDRÉ SP - CECRESA (ISPB 00512839)
 - `——` APE POUPEX (ISPB 00655522)
 - `——` CECM DOS FUNCIONARIOS DA COMIGO (ISPB 01062439)
@@ -972,7 +972,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` COOP UNIPRIME SUL (ISPB 01572667)
 - `——` COOP DO ESTADO DO ACRE LTDA. (ISPB 01608685)
 - `——` CCLA VALE DO PARANAPANEMA (ISPB 01637949)
-- `——` NSTECH IP S.A. (ISPB 01648418)
 - `——` UNIPRIME DO IGUAÇU - CC POUP INV (ISPB 01848322)
 - `——` CECM SERV POD JUD TCE ORG PUBL MUN EST FED RJ (ISPB 02000895)
 - `——` COOP CENTRO NORTE BRASILEIRO (ISPB 02282709)
@@ -981,7 +980,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` COOP ÚNILOS (ISPB 02405189)
 - `——` CREDISIS CREDIARI COOP LTDA. (ISPB 03222753)
 - `——` CCLA DO SUL CATARINENSE (ISPB 03427097)
-- `——` CC DO NORTE CATARINENSE (ISPB 03461243)
 - `——` CCM SERV PUBLICOS - CREDI SP (ISPB 03612679)
 - `——` CECM EMP INST SF SÃO PAULO CAM (ISPB 03674133)
 - `——` VOLUS IP LTDA. (ISPB 03817702)
@@ -1065,7 +1063,6 @@ Afiliadas de sistemas de marca única usam o logo do sistema (regra curada — u
 - `——` CCLA CENTRO-SUL GOIANO (ISPB 33579731)
 - `——` CCLA ANÁPOLIS E REGIÃO (ISPB 33615055)
 - `——` B91 (ISPB 33735811)
-- `——` SIMPAY IP (ISPB 33982918)
 - `——` ASTROPAY (ISPB 34006497)
 - `——` KREDIT IP S/A (ISPB 34678263)
 - `——` BITSO IP LTDA (ISPB 35136120)
