@@ -1623,16 +1623,6 @@
       "logo": null
     },
     {
-      "ispb": "07512441",
-      "compe": "189",
-      "compe4": "0189",
-      "name": "HS FINANCEIRA S/A CREDITO, FINANCIAMENTO E INVESTIMENTOS",
-      "shortName": "HS FINANCEIRA",
-      "displayName": null,
-      "pix": null,
-      "logo": null
-    },
-    {
       "ispb": "03973814",
       "compe": "190",
       "compe4": "0190",
@@ -3412,16 +3402,6 @@
           "updatedAt": "2026-07-17"
         }
       }
-    },
-    {
-      "ispb": "03215790",
-      "compe": "387",
-      "compe4": "0387",
-      "name": "Banco Toyota do Brasil S.A.",
-      "shortName": "BCO TOYOTA DO BRASIL S.A.",
-      "displayName": null,
-      "pix": null,
-      "logo": null
     },
     {
       "ispb": "17184037",
@@ -5660,13 +5640,7 @@
       "name": "A55 SOCIEDADE DE CRÉDITO DIRETO S.A.",
       "shortName": "A55 SCD S.A.",
       "displayName": null,
-      "pix": {
-        "spiParticipationType": "Direta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Sociedade de Crédito Direto",
-        "authorizedByBcb": true
-      },
+      "pix": null,
       "logo": null
     },
     {
@@ -6659,16 +6633,10 @@
       "ispb": "08482873",
       "compe": "673",
       "compe4": "0673",
-      "name": "COOPERATIVA DE CRÉDITO RURAL DO AGRESTE ALAGOANO - COOPERAGRE",
-      "shortName": "CCR DO AGRESTE ALAGOANO",
+      "name": "COOPERATIVA DE CRÉDITO RURAL DO AGRESTE ALAGOANO - COOPERAGRE - EM LIQUIDAÇÃO EXTRAJUDICIAL",
+      "shortName": "CCR DO AGRESTE ALAGOANO - EM LIQUIDAÇÃO EXTRAJUDICIAL",
       "displayName": null,
-      "pix": {
-        "spiParticipationType": "Direta",
-        "pixParticipationType": "Facultativa",
-        "modality": "Provedor de Conta Transacional",
-        "institutionType": "Cooperativa de Crédito",
-        "authorizedByBcb": true
-      },
+      "pix": null,
       "logo": null
     },
     {
@@ -6805,7 +6773,13 @@
       "name": "MONERY INSTITUICAO DE PAGAMENTO S.A.",
       "shortName": "MONERY IP S.A.",
       "displayName": null,
-      "pix": null,
+      "pix": {
+        "spiParticipationType": "Direta",
+        "pixParticipationType": "Facultativa",
+        "modality": "Provedor de Conta Transacional",
+        "institutionType": "Instituição de Pagamento",
+        "authorizedByBcb": true
+      },
       "logo": null
     },
     {
@@ -7600,16 +7574,6 @@
       "logo": null
     },
     {
-      "ispb": "20833992",
-      "compe": "772",
-      "compe4": "0772",
-      "name": "COOPERATIVA DE CRÉDITO MÚTUO DOS EMPREGADOS DO CENTRO UNIVERSITÁRIO NEWTON PAIVA LTDA. - CREDIPAIVA - EM LIQUIDAÇÃO EXTRAJUDICIAL",
-      "shortName": "CC MECUNP - EM LIQUIDAÇÃO EXTRAJUDICIAL",
-      "displayName": null,
-      "pix": null,
-      "logo": null
-    },
-    {
       "ispb": "53908413",
       "compe": "773",
       "compe4": "0773",
@@ -7672,6 +7636,16 @@
           "updatedAt": "2026-07-17"
         }
       }
+    },
+    {
+      "ispb": "44650156",
+      "compe": "776",
+      "compe4": "0776",
+      "name": "ONCRED - SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "ONCRED - SCD S.A.",
+      "displayName": null,
+      "pix": null,
+      "logo": null
     },
     {
       "ispb": "58674454",
@@ -7882,6 +7856,32 @@
       "logo": null
     },
     {
+      "ispb": "48786608",
+      "compe": "796",
+      "compe4": "0796",
+      "name": "ASAAS SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A.",
+      "shortName": "ASAAS CFI S.A",
+      "displayName": null,
+      "pix": null,
+      "logo": null
+    },
+    {
+      "ispb": "01648418",
+      "compe": "798",
+      "compe4": "0798",
+      "name": "NSTECH IP INSTITUICAO DE PAGAMENTO S.A.",
+      "shortName": "NSTECH IP S.A.",
+      "displayName": null,
+      "pix": {
+        "spiParticipationType": "Indireta",
+        "pixParticipationType": "Facultativa",
+        "modality": "Provedor de Conta Transacional",
+        "institutionType": "Instituição de Pagamento",
+        "authorizedByBcb": true
+      },
+      "logo": null
+    },
+    {
       "ispb": "25021356",
       "compe": "803",
       "compe4": "0803",
@@ -7930,6 +7930,26 @@
       "compe4": "0805",
       "name": "BANCO DE DESENVOLVIMENTO DE MINAS GERAIS S.A.-BDMG",
       "shortName": "BCO DES. DE MG S.A.",
+      "displayName": null,
+      "pix": null,
+      "logo": null
+    },
+    {
+      "ispb": "63822040",
+      "compe": "807",
+      "compe4": "0807",
+      "name": "GUARDIAN SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "GUARDIAN SCD S.A.",
+      "displayName": null,
+      "pix": null,
+      "logo": null
+    },
+    {
+      "ispb": "40867163",
+      "compe": "808",
+      "compe4": "0808",
+      "name": "RENDIMENTO SOCIEDADE DE CRÉDITO DIRETO S.A.",
+      "shortName": "RENDIMENTO SCD",
       "displayName": null,
       "pix": null,
       "logo": null
